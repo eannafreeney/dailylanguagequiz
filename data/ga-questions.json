@@ -1,0 +1,408 @@
+[
+  {
+    "id": "ga-001",
+    "question": "Complete: ___ ag foghlaim Gaeilge.",
+    "options": ["Tá mé", "Táim a", "Is mé"],
+    "correctAnswer": 0,
+    "explanation": "Tá mé ag foghlaim Gaeilge means “I am learning Irish.” The progressive construction uses tá + ag + verbal noun."
+  },
+  {
+    "id": "ga-002",
+    "question": "Complete: Is ___ mé. (I am a teacher.)",
+    "options": ["múinteoir", "múinteora", "an múinteoir"],
+    "correctAnswer": 0,
+    "explanation": "Is múinteoir mé is a standard way to say “I am a teacher.”"
+  },
+  {
+    "id": "ga-003",
+    "question": "How do you say “I have a book”?",
+    "options": ["Tá leabhar agam.", "Tá mé leabhar.", "Is leabhar mé."],
+    "correctAnswer": 0,
+    "explanation": "Irish expresses possession with tá + thing + ag + person: Tá leabhar agam."
+  },
+  {
+    "id": "ga-004",
+    "question": "Complete: Tá an cat ___ an chathaoir. (The cat is on the chair.)",
+    "options": ["ar", "chuig", "ó"],
+    "correctAnswer": 0,
+    "explanation": "Ar means “on”. Ar an gcathaoir means “on the chair”."
+  },
+  {
+    "id": "ga-005",
+    "question": "Which is a common Irish greeting?",
+    "options": ["Dia duit.", "Oíche mhaith.", "Slán."],
+    "correctAnswer": 0,
+    "explanation": "Dia duit is a common way to say “hello”. Oíche mhaith means “good night”, and slán means “goodbye”."
+  },
+  {
+    "id": "ga-006",
+    "question": "Complete: Chuaigh mé ___ an siopa. (I went to the shop.)",
+    "options": ["chuig", "ag", "ó"],
+    "correctAnswer": 0,
+    "explanation": "Chuig can mean “to” or “towards” and introduces a destination."
+  },
+  {
+    "id": "ga-007",
+    "question": "How do you say “I am tired”?",
+    "options": ["Tá tuirse orm.", "Tá mé tuirse.", "Is tuirse mé."],
+    "correctAnswer": 0,
+    "explanation": "Tá tuirse orm is a common expression meaning “I am tired”, literally “tiredness is on me”."
+  },
+  {
+    "id": "ga-008",
+    "question": "Complete: ___ sé anseo anois. (He is here now.)",
+    "options": ["Tá", "Bhí", "Beidh"],
+    "correctAnswer": 0,
+    "explanation": "Tá is the present form of bí. Bhí is past tense, and beidh is future tense."
+  },
+  {
+    "id": "ga-009",
+    "question": "How do you say “She speaks Irish”?",
+    "options": [
+      "Labhraíonn sí Gaeilge.",
+      "Labhraíonn Gaeilge sí.",
+      "Sí labhraíonn Gaeilge."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The usual word order is verb + subject + object: Labhraíonn sí Gaeilge."
+  },
+  {
+    "id": "ga-010",
+    "question": "Complete: Tá siad ag ___ peile. (They are playing football.)",
+    "options": ["imirt", "imríonn", "imirtí"],
+    "correctAnswer": 0,
+    "explanation": "After ag in this progressive construction, use the verbal noun: ag imirt."
+  },
+  {
+    "id": "ga-011",
+    "question": "How do you say “We went home”?",
+    "options": [
+      "Chuaigh muid abhaile.",
+      "Téann muid abhaile.",
+      "Tá muid abhaile."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chuaigh is the past-tense form of téigh, meaning “to go”. Abhaile means “home” when describing movement towards home."
+  },
+  {
+    "id": "ga-012",
+    "question": "Complete: D’ith mé ___. (I ate the apple.)",
+    "options": ["an t-úll", "na húlla", "úll an"],
+    "correctAnswer": 0,
+    "explanation": "An t-úll means “the apple”. The t- is used before a vowel after the singular definite article."
+  },
+  {
+    "id": "ga-013",
+    "question": "How do you say “I don’t understand”?",
+    "options": ["Ní thuigim.", "Ní tuigim.", "Níl tuigim."],
+    "correctAnswer": 0,
+    "explanation": "Ní thuigim means “I don't understand”. The verb form is lenited after ní."
+  },
+  {
+    "id": "ga-014",
+    "question": "Which means “I am going home now”?",
+    "options": [
+      "Tá mé ag dul abhaile anois.",
+      "Tá mé sa bhaile anois.",
+      "Chuaigh mé abhaile inné."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ag dul abhaile means “going home”. Sa bhaile means “at home”, while inné means “yesterday”."
+  },
+  {
+    "id": "ga-015",
+    "question": "How do you ask “Where are you?”",
+    "options": ["Cá bhfuil tú?", "Cad atá tú?", "Cé atá tú?"],
+    "correctAnswer": 0,
+    "explanation": "Cá bhfuil tú? asks about someone's location. Cad means “what” and cé means “who”."
+  },
+  {
+    "id": "ga-016",
+    "question": "Complete: ___ is ainm duit? (What is your name?)",
+    "options": ["Cad", "Cá", "Cé"],
+    "correctAnswer": 0,
+    "explanation": "Cad is ainm duit? is a common way to ask someone's name."
+  },
+  {
+    "id": "ga-017",
+    "question": "Which is a common response to “Go raibh maith agat”?",
+    "options": ["Fáilte romhat.", "Maidin mhaith.", "Oíche mhaith."],
+    "correctAnswer": 0,
+    "explanation": "Fáilte romhat is a common response meaning “you're welcome”."
+  },
+  {
+    "id": "ga-018",
+    "question": "Complete: Tá cupán tae ___ an mbord. (There is a cup of tea on the table.)",
+    "options": ["ar", "faoi", "ó"],
+    "correctAnswer": 0,
+    "explanation": "Ar an mbord means “on the table”. The form of the noun changes after the preposition and article."
+  },
+  {
+    "id": "ga-019",
+    "question": "How do you say “I like music”?",
+    "options": [
+      "Is maith liom ceol.",
+      "Tá maith liom ceol.",
+      "Is maith mé ceol."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Is maith liom expresses liking. Literally, it means something like “music is good with me”."
+  },
+  {
+    "id": "ga-020",
+    "question": "Complete: Ní maith ___ caife. (I don't like coffee.)",
+    "options": ["liom", "mé", "agam"],
+    "correctAnswer": 0,
+    "explanation": "Ní maith liom means “I don't like”. Liom is part of this expression."
+  },
+  {
+    "id": "ga-021",
+    "question": "Choose the sentence meaning “The children are playing.”",
+    "options": [
+      "Tá na páistí ag súgradh.",
+      "Tá ag súgradh na páistí.",
+      "Na páistí tá súgradh."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The progressive construction uses tá + subject + ag + verbal noun."
+  },
+  {
+    "id": "ga-022",
+    "question": "Complete: Bhí mé ___ an bhaile inné. (I was at home yesterday.)",
+    "options": ["sa", "chuig", "ó"],
+    "correctAnswer": 0,
+    "explanation": "Sa bhaile means “at home”. Bhí is the past form of bí, and inné means “yesterday”."
+  },
+  {
+    "id": "ga-023",
+    "question": "How do you say “I saw the woman”?",
+    "options": [
+      "Chonaic mé an bhean.",
+      "Feic mé an bhean.",
+      "Chonaic an bhean mé."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chonaic mé means “I saw”. Chonaic an bhean mé would mean “The woman saw me”."
+  },
+  {
+    "id": "ga-024",
+    "question": "Complete: Tá dhá ___ agam. (I have two cats.)",
+    "options": ["chat", "cat", "chait"],
+    "correctAnswer": 0,
+    "explanation": "The noun after dhá is commonly lenited: dhá chat, “two cats”."
+  },
+  {
+    "id": "ga-025",
+    "question": "Which means “the books”?",
+    "options": ["na leabhair", "na leabhar", "an leabhair"],
+    "correctAnswer": 0,
+    "explanation": "Leabhair is the plural of leabhar, and na is used with plural definite nouns."
+  },
+  {
+    "id": "ga-026",
+    "question": "Complete: Tá mé níos ___ inniu. (I am better today.)",
+    "options": ["fearr", "maith", "go maith"],
+    "correctAnswer": 0,
+    "explanation": "Níos fearr means “better”. Fearr is the comparative form of maith."
+  },
+  {
+    "id": "ga-027",
+    "question": "How do you say “She is older than me”?",
+    "options": [
+      "Tá sí níos sine ná mé.",
+      "Tá sí sean ná mé.",
+      "Is sí níos sine mé."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Níos sine ná means “older than”. Ná introduces the comparison."
+  },
+  {
+    "id": "ga-028",
+    "question": "Complete: Tá am ___ agam. (You have time.)",
+    "options": ["agat", "ort", "duit"],
+    "correctAnswer": 0,
+    "explanation": "Agat means “at you” and is used in expressions of possession: tá am agat, “you have time”."
+  },
+  {
+    "id": "ga-029",
+    "question": "How do you say “I can speak a little Irish”?",
+    "options": [
+      "Is féidir liom beagán Gaeilge a labhairt.",
+      "Tá mé féidir Gaeilge.",
+      "Is féidir mé labhairt Gaeilge beagán."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Is féidir liom is a common construction meaning “I can” or “it is possible for me”."
+  },
+  {
+    "id": "ga-030",
+    "question": "Complete: Ba mhaith liom ___ a ithe. (I'd like to eat something.)",
+    "options": ["rud éigin", "duine éigin", "áit éigin"],
+    "correctAnswer": 0,
+    "explanation": "Rud éigin means “something”; duine éigin means “someone”, and áit éigin means “somewhere”."
+  },
+  {
+    "id": "ga-031",
+    "question": "How do you say “I have no money”?",
+    "options": ["Níl aon airgead agam.", "Níl airgead mé.", "Ní agam airgead."],
+    "correctAnswer": 0,
+    "explanation": "Níl aon airgead agam means “I have no money”. Irish expresses possession with agam."
+  },
+  {
+    "id": "ga-032",
+    "question": "Complete: Tá an leabhar ___ spéisiúil. (The book is very interesting.)",
+    "options": ["an-", "ní", "nach"],
+    "correctAnswer": 0,
+    "explanation": "An- intensifies an adjective: an-spéisiúil means “very interesting”."
+  },
+  {
+    "id": "ga-033",
+    "question": "How do you say “I will go tomorrow”?",
+    "options": [
+      "Rachaidh mé amárach.",
+      "Chuaigh mé amárach.",
+      "Téann mé amárach."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rachaidh is the future form of téigh, “to go”. Amárach means “tomorrow”."
+  },
+  {
+    "id": "ga-034",
+    "question": "Complete: Nuair a ___ mé óg, bhí mé i mo chónaí sa Ghaeltacht. (When I was young...)",
+    "options": ["bhí", "tá", "beidh"],
+    "correctAnswer": 0,
+    "explanation": "Bhí is the past form of bí. Nuair a bhí mé óg means “when I was young”."
+  },
+  {
+    "id": "ga-035",
+    "question": "Choose the word meaning “because”.",
+    "options": ["mar", "ach", "nó"],
+    "correctAnswer": 0,
+    "explanation": "Mar means “because”; ach means “but”, and nó means “or”."
+  },
+  {
+    "id": "ga-036",
+    "question": "Complete: Tá sé ag obair ___ a dheartháir. (He is working with his brother.)",
+    "options": ["lena", "ó", "faoi"],
+    "correctAnswer": 0,
+    "explanation": "Le means “with”. Lena dheartháir means “with his brother”."
+  },
+  {
+    "id": "ga-037",
+    "question": "How do you say “I gave her the book”?",
+    "options": [
+      "Thug mé an leabhar di.",
+      "Thug mé an leabhar dom.",
+      "Thug sí an leabhar dom."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Thug mé an leabhar di means “I gave her the book”. Di means “to her”."
+  },
+  {
+    "id": "ga-038",
+    "question": "Complete: Is as ___ mé. (I am from Ireland.)",
+    "options": ["Éirinn", "Éireann", "Éire"],
+    "correctAnswer": 0,
+    "explanation": "Is as Éirinn mé is the standard expression for “I am from Ireland”."
+  },
+  {
+    "id": "ga-039",
+    "question": "How do you ask “What are you doing?”",
+    "options": [
+      "Cad atá tú a dhéanamh?",
+      "Cá bhfuil tú ag déanamh?",
+      "Cé atá tú a dhéanamh?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cad atá tú a dhéanamh? asks what someone is doing."
+  },
+  {
+    "id": "ga-040",
+    "question": "Which word means “here”?",
+    "options": ["anseo", "inné", "amárach"],
+    "correctAnswer": 0,
+    "explanation": "Anseo means “here”; inné means “yesterday”, and amárach means “tomorrow”."
+  },
+  {
+    "id": "ga-041",
+    "question": "Which sentence expresses living somewhere for two years, continuing until now?",
+    "options": [
+      "Tá mé i mo chónaí anseo le dhá bhliain.",
+      "Bhí mé i mo chónaí anseo dhá bhliain ó shin.",
+      "Tá mé i mo chónaí anseo amárach."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le dhá bhliain can describe a situation that has continued for two years. Ó shin means “ago”."
+  },
+  {
+    "id": "ga-042",
+    "question": "Complete: Ní raibh ___ agam. (I had no choice.)",
+    "options": ["aon rogha", "roghaí aon", "aon roghaí"],
+    "correctAnswer": 0,
+    "explanation": "Ní raibh aon rogha agam means “I had no choice”. Aon rogha means “any choice”."
+  },
+  {
+    "id": "ga-043",
+    "question": "Which expression means “although”?",
+    "options": ["cé go", "mar", "má"],
+    "correctAnswer": 0,
+    "explanation": "Cé go means “although”; mar means “because”, and má means “if”."
+  },
+  {
+    "id": "ga-044",
+    "question": "Complete: Tá sí níos airde ___ a deirfiúr. (She is taller than her sister.)",
+    "options": ["ná", "le", "ó"],
+    "correctAnswer": 0,
+    "explanation": "Ná introduces a comparison: níos airde ná means “taller than”."
+  },
+  {
+    "id": "ga-045",
+    "question": "How do you say “I would like a cup of tea”?",
+    "options": [
+      "Ba mhaith liom cupán tae.",
+      "Is maith liom cupán tae anois.",
+      "Ba mhaith mé cupán tae."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ba mhaith liom expresses “I would like”."
+  },
+  {
+    "id": "ga-046",
+    "question": "Complete: Dá mbeadh níos mó ama agam, ___ níos mó leabhar. (If I had more time, I would read more books.)",
+    "options": ["léifinn", "léigh mé", "léim"],
+    "correctAnswer": 0,
+    "explanation": "Léifinn means “I would read”. Dá mbeadh introduces a hypothetical condition."
+  },
+  {
+    "id": "ga-047",
+    "question": "Which expression means “I used to play football”?",
+    "options": [
+      "Ba ghnách liom peil a imirt.",
+      "Tá mé ag imirt peile.",
+      "Imreoidh mé peil."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ba ghnách liom + verbal noun expresses a habitual past action: “I used to…”."
+  },
+  {
+    "id": "ga-048",
+    "question": "Complete: Tá súil ___ go mbeidh tú ann. (I hope you'll be there.)",
+    "options": ["agam", "liom", "duit"],
+    "correctAnswer": 0,
+    "explanation": "Tá súil agam means “I hope”."
+  },
+  {
+    "id": "ga-049",
+    "question": "Complete: ___ tá am agat, cuir glaoch orm. (If you have time, call me.)",
+    "options": ["Má", "Nuair", "Cé go"],
+    "correctAnswer": 0,
+    "explanation": "Má means “if”; nuair means “when”, and cé go means “although”."
+  },
+  {
+    "id": "ga-050",
+    "question": "Complete: Ní hamháin go bhfuil sí cliste, ___ tá sí cineálta freisin. (Not only is she clever, but she is also kind.)",
+    "options": ["ach", "nó", "mar"],
+    "correctAnswer": 0,
+    "explanation": "Ní hamháin ... ach ... freisin means “not only ... but also”."
+  }
+]

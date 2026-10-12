@@ -1,0 +1,10 @@
+{
+  "name": "mydaily-quiz",
+  "main": "src/index.tsx", // path to your entry file
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public" },
+  "routes": [
+    { "pattern": "mydaily.irish", "custom_domain": true },
+    { "pattern": "www.mydaily.irish", "custom_domain": true },
+  ],
+}
