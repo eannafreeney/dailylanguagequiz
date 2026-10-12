@@ -20,7 +20,7 @@ const LanguagePage = ({ langCode }: Props) => {
       languageName={language?.name ?? ""}
       siteName={language?.siteName ?? ""}
     >
-      <section class="flex flex-col gap-6 mx-auto max-w-2xl">
+      <section class="flex flex-col gap-6 mx-auto max-w-2xl ">
         <div>
           <h1 class="text-3xl font-bold">
             {language?.flag} {language?.name}

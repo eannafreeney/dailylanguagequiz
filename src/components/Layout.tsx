@@ -31,7 +31,7 @@ const Layout = ({ title, languageName, siteName, children }: Props) => {
       </head>
       <body>
         <Header siteName={siteName} languageName={languageName} />
-        <main class="my-4">{children}</main>
+        <main class="my-4 px-4">{children}</main>
         <Footer />
       </body>
     </html>
