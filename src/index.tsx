@@ -112,8 +112,9 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
   return c.html(<Answer langCode={langCode} status="correct" question={question} nextNumber={questionNumber + 1} dailyQuestionsLength={dailyQuestions.length} />);
 });
 
-async function sendDailyEmails(env: Env) {
-  const now = new Date();
+async function sendDailyEmails(env: Env, scheduledTime: number) {
+  // Use the scheduled instant, not runtime start time, to avoid missing the 08:00 window if execution is delayed.
+  const now = new Date(scheduledTime);
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Dublin", year: "numeric", month: "2-digit", day: "2-digit",
     hour: "2-digit", minute: "2-digit", hourCycle: "h23",
@@ -154,6 +155,6 @@ async function sendDailyEmails(env: Env) {
 }
 export default {
   fetch: app.fetch,
-  scheduled(_controller: SchedulerController, env: Env, ctx: SchedulerContext) { ctx.waitUntil(sendDailyEmails(env)); },
+  scheduled(controller: SchedulerController, env: Env, ctx: SchedulerContext) { ctx.waitUntil(sendDailyEmails(env, controller.scheduledTime)); },
 };
 export { app };
