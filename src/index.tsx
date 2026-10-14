@@ -113,9 +113,18 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
 });
 
 async function sendDailyEmails(env: Env) {
-  const localTime = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Dublin", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
-  if (localTime !== "08:00") return;
-  const { results } = await env.DB.prepare("SELECT email, lang_code, token, site_url FROM subscribers WHERE confirmed=1 AND unsubscribed=0").all<Subscriber>();
+  const now = new Date();
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Dublin", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  }).formatToParts(now);
+  const part = (type: string) => parts.find((item) => item.type === type)?.value ?? "";
+  if (part("hour") !== "08" || part("minute") !== "00") return;
+  const localDate = `${part("year")}-${part("month")}-${part("day")}`;
+
+  const { results } = await env.DB.prepare(
+    "SELECT email, lang_code, token, site_url FROM subscribers WHERE confirmed=1 AND unsubscribed=0",
+  ).all<Subscriber>();
   for (const subscriber of results) {
     const language = languages.find((item) => item.langCode === subscriber.lang_code);
     if (!language) continue;
@@ -123,9 +132,16 @@ async function sendDailyEmails(env: Env) {
     const unsubscribeUrl = new URL("/unsubscribe", subscriber.site_url);
     unsubscribeUrl.searchParams.set("token", subscriber.token);
     try {
+      // Claim this recipient/date before sending so a retried scheduled event won't resend.
+      const claim = await env.DB.prepare(
+        "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, ?, ?)",
+      ).bind(subscriber.email, subscriber.lang_code, localDate).run();
+      if (!claim.success) continue;
       await sendEmail(env, subscriber.email, `Your daily ${language.englishName} quiz is ready`,
         `<p>Good morning!</p><p>Your daily ${language.englishName} practice is ready. Take five questions and build your skills a little every day.</p><p><a href="${quizUrl}">Start today's quiz</a></p><p style="font-size:12px;color:#666">You're receiving this because you subscribed to the daily quiz. <a href="${unsubscribeUrl}">Unsubscribe</a>.</p>`);
-    } catch (error) { console.error("Could not send daily quiz email", subscriber.lang_code, error); }
+    } catch (error) {
+      console.error("Could not send daily quiz email", subscriber.lang_code, error);
+    }
   }
 }
 export default {
