@@ -134,12 +134,15 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
 
   if (!isCorrect) {
     return c.html(
-      <Answer
-        status="incorrect"
-        langCode={langCode}
-        nextNumber={questionNumber}
-        dailyQuestionsLength={dailyQuestions.length}
-      />,
+      <>
+        <CheckAnswerButton />
+        <Answer
+          status="incorrect"
+          langCode={langCode}
+          nextNumber={questionNumber}
+          dailyQuestionsLength={dailyQuestions.length}
+        />
+      </>,
     );
   }
 

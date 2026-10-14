@@ -10,7 +10,7 @@ const CompleteBanner = () => {
         skills.
       </p>
 
-      <div class="mt-5 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
+      {/* <div class="mt-5 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
         <p class="text-lg font-bold text-slate-900">
           Ready to go beyond the daily quiz?
         </p>
@@ -30,7 +30,7 @@ const CompleteBanner = () => {
           Explore Langkraft
           <span aria-hidden="true">↗</span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
