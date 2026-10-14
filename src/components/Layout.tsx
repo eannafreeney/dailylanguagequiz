@@ -16,6 +16,7 @@ const Layout = ({ title, languageName, siteName, children }: Props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
         <link rel="stylesheet" href="/tailwind.css" />
+        <style>[x-cloak] {{ display: none !important; }}</style>
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"
