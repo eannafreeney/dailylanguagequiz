@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "mydaily-quiz-subscribers",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "74a12d87-7918-44fe-8918-d6ac0b632bdf",
       "migrations_dir": "migrations"
     }
   ]
