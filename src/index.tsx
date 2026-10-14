@@ -140,6 +140,14 @@ async function sendDailyEmails(env: Env) {
       await sendEmail(env, subscriber.email, `Your daily ${language.englishName} quiz is ready`,
         `<p>Good morning!</p><p>Your daily ${language.englishName} practice is ready. Take five questions and build your skills a little every day.</p><p><a href="${quizUrl}">Start today's quiz</a></p><p style="font-size:12px;color:#666">You're receiving this because you subscribed to the daily quiz. <a href="${unsubscribeUrl}">Unsubscribe</a>.</p>`);
     } catch (error) {
+      // Remove the claim if sending failed, allowing a later scheduled retry to try again.
+      try {
+        await env.DB.prepare(
+          "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = ? AND local_date = ?",
+        ).bind(subscriber.email, subscriber.lang_code, localDate).run();
+      } catch (cleanupError) {
+        console.error("Could not release failed email claim", subscriber.lang_code, cleanupError);
+      }
       console.error("Could not send daily quiz email", subscriber.lang_code, error);
     }
   }
