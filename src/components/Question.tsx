@@ -1,4 +1,5 @@
 import { LangCode } from "../types";
+import CheckAnswerButton from "./CheckAnswerButton";
 
 type Props = {
   question: {
@@ -19,14 +20,14 @@ const Question = ({
   questionNumber,
   totalQuestions,
 }: Props) => {
-  const progress = (questionNumber / totalQuestions) * 100;
+  const progress = ((questionNumber + 1) / totalQuestions) * 100;
 
   return (
     <section id="quiz" class="flex flex-col gap-4 mx-auto w-full max-w-2xl">
       <div class="flex items-center justify-between">
         <span class="text-sm font-medium text-slate-500">Daily practice</span>
         <span class="text-sm font-semibold text-slate-700">
-          Question {questionNumber} of {totalQuestions}
+          Question {questionNumber + 1} of {totalQuestions}
         </span>
       </div>
 
@@ -50,7 +51,7 @@ const Question = ({
           x-data="{ selectedAnswer: '' }"
           method="post"
           action={`/${langCode}/answer/${questionNumber}`}
-          x-target="answer"
+          x-target="answer check-answer-button"
           class="space-y-3"
         >
           <input type="hidden" name="id" value={question.id} />
@@ -77,15 +78,7 @@ const Question = ({
             </label>
           ))}
 
-          <button
-            type="submit"
-            disabled
-            x-bind:disabled="selectedAnswer === ''"
-            class="cursor-pointer mt-4 w-full rounded-2xl bg-emerald-600 px-6 py-4 font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Check answer
-            <span aria-hidden="true">→</span>
-          </button>
+          <CheckAnswerButton />
         </form>
 
         <div id="answer" class="mt-5" />

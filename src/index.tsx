@@ -5,6 +5,7 @@ import { serveStatic } from "@hono/node-server/serve-static";
 import { getDailyQuestions } from "./utils";
 import Question from "./components/Question";
 import Answer from "./components/Answer";
+import CheckAnswerButton from "./components/CheckAnswerButton";
 
 const DOMAIN_TO_LANG: Record<string, string> = {
   "mydaily.irish": "ga",
@@ -87,13 +88,16 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
     Number(number) !== questionNumber
   ) {
     return c.html(
-      <Answer
-        status="invalid"
-        nextNumber={questionNumber}
-        langCode={langCode}
-        dailyQuestionsLength={0}
-        message="Your submission is invalid. Please try again."
-      />,
+      <>
+        <CheckAnswerButton />
+        <Answer
+          status="invalid"
+          nextNumber={questionNumber}
+          langCode={langCode}
+          dailyQuestionsLength={0}
+          message="Your submission is invalid. Please try again."
+        />
+      </>,
       400,
     );
   }

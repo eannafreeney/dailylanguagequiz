@@ -57,8 +57,6 @@ const Answer = ({
   return (
     <div
       id="answer"
-      role="status"
-      aria-live="polite"
       class={`mt-6 rounded-2xl border p-5 shadow-sm sm:p-6 ${styles.card}`}
     >
       <div class="flex items-start gap-3">
