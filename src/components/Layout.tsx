@@ -1,20 +1,25 @@
-import type { FC, PropsWithChildren } from "hono/jsx";
+import type { PropsWithChildren } from "hono/jsx";
 import Header from "./Header";
 import Footer from "./Footer";
+import { LangCode } from "../types";
+import { languages } from "../lib/languages";
 
 type Props = PropsWithChildren<{
-  title: string;
-  languageName: string;
-  siteName: string;
+  langCode: LangCode;
 }>;
 
-const Layout = ({ title, languageName, siteName, children }: Props) => {
+const Layout = ({ langCode, children }: Props) => {
+  const language = languages.find((language) => language.langCode === langCode);
+  if (!language) {
+    return null;
+  }
+  const { siteName, name, flag, englishName } = language;
   return (
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{title}</title>
+        <title>{siteName}</title>
         <link rel="stylesheet" href="/tailwind.css" />
         <script
           defer
@@ -30,7 +35,12 @@ const Layout = ({ title, languageName, siteName, children }: Props) => {
         ></script>
       </head>
       <body>
-        <Header siteName={siteName} languageName={languageName} />
+        <Header
+          siteName={siteName}
+          languageName={name}
+          flag={flag}
+          englishName={englishName}
+        />
         <main class="my-4 px-4">{children}</main>
         <Footer />
       </body>

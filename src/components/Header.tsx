@@ -1,10 +1,11 @@
-const Header = ({
-  siteName,
-  languageName,
-}: {
+type Props = {
   siteName: string;
   languageName: string;
-}) => {
+  flag: string;
+  englishName: string;
+};
+
+const Header = ({ siteName, languageName, flag, englishName }: Props) => {
   return (
     <header class="border-b border-slate-200 bg-white">
       <nav
@@ -33,10 +34,10 @@ const Header = ({
               class="block text-lg font-bold
                            tracking-tight text-slate-900"
             >
-              {siteName}
+              {flag} {siteName}
             </span>
             <span class="block text-xs text-slate-500">
-              A little {languageName}, every day
+              {englishName} practice — five questions a day.
             </span>
           </span>
         </a>

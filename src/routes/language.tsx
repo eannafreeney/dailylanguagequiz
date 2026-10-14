@@ -3,34 +3,19 @@ import Layout from "../components/Layout";
 import Question from "../components/Question";
 import { languages } from "../lib/languages";
 import { getDailyQuestions } from "../utils";
+import ReminderPanel from "../components/ReminderPanel";
 
-type Props = {
-  langCode: LangCode;
-};
+type Props = { langCode: LangCode };
 
 const LanguagePage = ({ langCode }: Props) => {
   const dailyQuestions = getDailyQuestions(langCode);
   const firstQuestion = dailyQuestions[0];
-
   const language = languages.find((language) => language.langCode === langCode);
-
   return (
-    <Layout
-      title={language?.siteName ?? ""}
-      languageName={language?.name ?? ""}
-      siteName={language?.siteName ?? ""}
-    >
-      <section class="flex flex-col gap-6 mx-auto max-w-2xl ">
-        <div>
-          <h1 class="text-3xl font-bold">
-            {language?.flag} {language?.name}
-          </h1>
-          <p class=" text-gray-600">
-            {language?.englishName} practice — five questions a day.
-          </p>
-        </div>
-
-        <div id="quiz" class="">
+    <Layout langCode={langCode}>
+      <section class="mx-auto flex max-w-2xl flex-col gap-6">
+        <ReminderPanel langCode={langCode} />
+        <div id="quiz">
           <Question
             question={firstQuestion}
             questionNumber={0}
@@ -42,5 +27,4 @@ const LanguagePage = ({ langCode }: Props) => {
     </Layout>
   );
 };
-
 export default LanguagePage;
