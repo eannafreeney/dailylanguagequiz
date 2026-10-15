@@ -218,7 +218,7 @@
   },
   {
     "id": "ga-028",
-    "question": "Complete: Tá am ___ agam. (You have time.)",
+    "question": "Complete: Tá am ___ . (You have time.)",
     "options": ["agat", "ort", "duit"],
     "correctAnswer": 0,
     "explanation": "Agat means “at you” and is used in expressions of possession: tá am agat, “you have time”."
