@@ -1,4 +1,9 @@
-const Footer = () => {
+type Props = {
+  title: string;
+  kicker: string;
+};
+
+const Footer = ({ title, kicker }: Props) => {
   return (
     <footer
       class="mt-auto border-t border-slate-200
@@ -27,15 +32,14 @@ const Footer = () => {
               >
                 D.
               </span>
-              Daily Words
+              {title}
             </a>
 
             <p
               class="mt-3 max-w-sm text-sm leading-6
                         text-slate-400"
             >
-              Small steps. Stronger language skills. Make a little progress
-              every day.
+              {kicker}
             </p>
           </div>
 

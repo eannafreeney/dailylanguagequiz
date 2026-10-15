@@ -13,7 +13,11 @@ const Layout = ({ langCode, children }: Props) => {
   if (!language) {
     return null;
   }
-  const { siteName, name, flag, englishName } = language;
+  const { siteName, flag, englishName } = language;
+
+  const title = `${flag} ${englishName}`;
+  const kicker = "Daily practice — five questions a day.";
+
   return (
     <html lang="en">
       <head>
@@ -35,14 +39,9 @@ const Layout = ({ langCode, children }: Props) => {
         ></script>
       </head>
       <body>
-        <Header
-          siteName={siteName}
-          languageName={name}
-          flag={flag}
-          englishName={englishName}
-        />
+        <Header title={title} kicker={kicker} />
         <main class="my-4 px-4">{children}</main>
-        <Footer />
+        <Footer title={title} kicker={kicker} />
       </body>
     </html>
   );

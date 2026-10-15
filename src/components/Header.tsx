@@ -1,30 +1,25 @@
 type Props = {
-  siteName: string;
-  languageName: string;
-  flag: string;
-  englishName: string;
+  title: string;
+  kicker: string;
 };
 
-const Header = ({ siteName, languageName, flag, englishName }: Props) => {
+const Header = ({ title, kicker }: Props) => {
   return (
     <header class="border-b border-slate-200 bg-white">
       <nav
         class="mx-auto flex max-w-6xl items-center
                  justify-between px-4 py-4 sm:px-6 lg:px-8"
-        aria-label="Main navigation"
       >
         <a
           href="/"
           class="flex items-center gap-3 rounded-lg
                    focus-visible:outline-2
                    focus-visible:outline-emerald-700"
-          aria-label="Daily Words home"
         >
           <span
             class="flex h-10 w-10 items-center
                      justify-center rounded-xl
                      bg-emerald-700 text-xl text-white"
-            aria-hidden="true"
           >
             <span class="font-bold">D.</span>
           </span>
@@ -34,11 +29,9 @@ const Header = ({ siteName, languageName, flag, englishName }: Props) => {
               class="block text-lg font-bold
                            tracking-tight text-slate-900"
             >
-              {flag} {siteName}
+              {title}
             </span>
-            <span class="block text-xs text-slate-500">
-              {englishName} practice — five questions a day.
-            </span>
+            <span class="block text-xs text-slate-500">{kicker}</span>
           </span>
         </a>
 
