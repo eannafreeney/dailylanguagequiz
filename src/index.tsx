@@ -63,7 +63,7 @@ app.get("/:langCode/question/:questionNumber", async (c) => {
 
   if (questionNumber === 0) {
     try {
-      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode, true);
+      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode);
     } catch (error) {
       console.error("Failed to record quiz start", error);
     }
@@ -154,7 +154,7 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
 
   if (questionNumber + 1 >= dailyQuestions.length) {
     try {
-      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode);
+      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode, true);
     } catch (error) {
       console.error("Failed to record quiz completion", error);
     }
