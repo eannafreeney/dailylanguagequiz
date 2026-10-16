@@ -48,7 +48,7 @@ app.get("/analytics", (c) =>
   analyticsDashboard(c, (c as unknown as { env: Env }).env),
 );
 
-app.get("/:langCode/question/:questionNumber", (c) => {
+app.get("/:langCode/question/:questionNumber", async (c) => {
   const langCode = c.req.param("langCode") as "ga" | "en";
   const questionNumber = Number(c.req.param("questionNumber"));
   const dailyQuestions = getDailyQuestions(langCode);
@@ -60,6 +60,14 @@ app.get("/:langCode/question/:questionNumber", (c) => {
     questionNumber >= dailyQuestions.length
   )
     return c.html("<p>Daily quiz complete!</p>");
+
+  if (questionNumber === 0) {
+    try {
+      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode, true);
+    } catch (error) {
+      console.error("Failed to record quiz start", error);
+    }
+  }
 
   return c.html(
     <Question
