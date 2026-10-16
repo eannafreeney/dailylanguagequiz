@@ -5,6 +5,7 @@ import { confirmHandler } from "./routes/confirm";
 import { unsubscribeHandler } from "./routes/unsubscribe";
 import { languages } from "./lib/languages";
 import { Env, sendDailyEmails } from "./lib/email";
+import { analyticsDashboard, recordDailyParticipant } from "./lib/analytics";
 import { getDailyQuestions } from "./utils";
 import Question from "./components/Question";
 import Answer from "./components/Answer";
@@ -43,6 +44,9 @@ app.get("/", (c) => {
 app.post("/subscribe", subscribeHandler);
 app.get("/confirm", confirmHandler);
 app.get("/unsubscribe", unsubscribeHandler);
+app.get("/analytics", (c) =>
+  analyticsDashboard(c, (c as unknown as { env: Env }).env),
+);
 
 app.get("/:langCode/question/:questionNumber", (c) => {
   const langCode = c.req.param("langCode") as "ga" | "en";
@@ -138,6 +142,14 @@ app.post("/:langCode/answer/:questionNumber", async (c) => {
         />
       </>,
     );
+  }
+
+  if (questionNumber + 1 >= dailyQuestions.length) {
+    try {
+      await recordDailyParticipant(c, (c as unknown as { env: Env }).env, langCode);
+    } catch (error) {
+      console.error("Failed to record quiz completion", error);
+    }
   }
 
   return c.html(
