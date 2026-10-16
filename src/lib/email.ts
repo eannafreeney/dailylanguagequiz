@@ -13,6 +13,7 @@ export type Env = {
   DB: { prepare(sql: string): Statement };
   RESEND_API_KEY: string;
   EMAIL_FROM: string;
+  ANALYTICS_PASSWORD?: string;
 };
 
 export const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
