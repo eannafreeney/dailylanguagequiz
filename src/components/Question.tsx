@@ -65,7 +65,7 @@ const Question = ({
                 value={option}
                 x-model="selectedAnswer"
                 required
-                class="cursor-pointer h-5 w-5 accent-emerald-600"
+                class="appearance-none h-5 w-5 shrink-0 cursor-pointer rounded-full border-2 border-slate-300 bg-white checked:border-emerald-600 checked:bg-[radial-gradient(circle,_#059669_35%,_white_40%)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
               />
 
               <span class="flex-1 text-base font-medium text-slate-800">

@@ -19,7 +19,7 @@ const Layout = ({ langCode, children }: Props) => {
   const kicker = "Daily practice — five questions a day.";
 
   return (
-    <html lang="en">
+    <html lang="en" data-theme="bumblebee">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,9 +38,9 @@ const Layout = ({ langCode, children }: Props) => {
           src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
       </head>
-      <body>
+      <body class="bg-white">
         <Header title={title} kicker={kicker} />
-        <main class="my-4 px-4">{children}</main>
+        <main class="my-4 px-4 ">{children}</main>
         <Footer title={title} kicker={kicker} />
       </body>
     </html>

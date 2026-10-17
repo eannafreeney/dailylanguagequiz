@@ -10,7 +10,7 @@ type Props = { langCode: LangCode };
 const LanguagePage = ({ langCode }: Props) => {
   const dailyQuestions = getDailyQuestions(langCode);
   const firstQuestion = dailyQuestions[0];
-  const language = languages.find((language) => language.langCode === langCode);
+
   return (
     <Layout langCode={langCode}>
       <section class="mx-auto flex max-w-2xl flex-col gap-6">

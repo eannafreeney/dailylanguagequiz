@@ -1,3 +1,5 @@
+import { LINKS } from "../constants/constants";
+
 type Props = {
   title: string;
   kicker: string;
@@ -13,10 +15,7 @@ const Footer = ({ title, kicker }: Props) => {
         class="mx-auto max-w-6xl px-4 py-10
                     sm:px-6 lg:px-8"
       >
-        <div
-          class="grid gap-8 sm:grid-cols-2
-                      sm:items-start"
-        >
+        <div class="flex flex-col sm:flex-row sm:justify-between gap-8">
           <div>
             <a
               href="/"
@@ -43,23 +42,20 @@ const Footer = ({ title, kicker }: Props) => {
             </p>
           </div>
 
-          <div class="sm:text-right">
+          <div class="text-right flex flex-col gap-2">
             <p class="font-semibold text-white">Want to keep learning?</p>
-            <p class="mt-2 text-sm leading-6 text-slate-400">
-              Discover more at Langkraft.
-            </p>
-
-            <a
-              href="https://langkraft.app/?utm_source=daily-quiz&utm_medium=referral&utm_content=footer"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-4 inline-flex items-center gap-2
-                       font-semibold text-emerald-300
+            {LINKS.map((link) => (
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-semibold text-emerald-300
                        transition hover:text-emerald-200"
-            >
-              Explore Langkraft
-              <span aria-hidden="true">↗</span>
-            </a>
+              >
+                {link.label}
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            ))}
           </div>
         </div>
 
