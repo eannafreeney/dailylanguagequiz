@@ -5,10 +5,16 @@
   "assets": { "directory": "./public" },
   "routes": [
     { "pattern": "mydaily.irish", "custom_domain": true },
-    { "pattern": "www.mydaily.irish", "custom_domain": true }
+    { "pattern": "www.mydaily.irish", "custom_domain": true },
   ],
   "vars": {
-    "EMAIL_FROM": "Daily Quiz <quiz@mydaily.irish>"
+    "EMAIL_FROM": "Daily Quiz <quiz@mydaily.irish>",
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+    },
   },
   "triggers": { "crons": ["0 * * * *"] },
   "d1_databases": [
@@ -16,7 +22,7 @@
       "binding": "DB",
       "database_name": "mydaily-quiz-subscribers",
       "database_id": "74a12d87-7918-44fe-8918-d6ac0b632bdf",
-      "migrations_dir": "migrations"
-    }
-  ]
+      "migrations_dir": "migrations",
+    },
+  ],
 }
