@@ -139,14 +139,14 @@
   },
   {
     "id": "ga-019",
-    "question": "How do you say “I like music”?",
+    "question": "How do you say “I don't like coffee?",
     "options": [
-      "Is maith liom ceol.",
-      "Tá maith liom ceol.",
-      "Is maith mé ceol."
+      "Ní maith liom caife.",
+      "Níl maith liom caife.",
+      "Ní maith mé caife."
     ],
     "correctAnswer": 0,
-    "explanation": "Is maith liom expresses liking. Literally, it means something like “music is good with me”."
+    "explanation": "Ní maith liom caife means “I don't like coffee”. "
   },
   {
     "id": "ga-020",
