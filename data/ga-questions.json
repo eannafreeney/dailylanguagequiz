@@ -1270,5 +1270,379 @@
     ],
     "correctAnswer": 2,
     "explanation": "Tá súil agam means “I hope,” and go bhfeicfidh mé thú arís means “that I will see you again.”"
+  },
+  {
+    "id": "ga-151",
+    "question": "What does “a cúig” mean?",
+    "options": ["five", "three", "seven"],
+    "correctAnswer": 0,
+    "explanation": "A cúig is the counting form of “five”. Trí is “three” and seacht is “seven”."
+  },
+  {
+    "id": "ga-152",
+    "question": "Which Irish word means “ten”?",
+    "options": ["fiche", "deich", "seacht"],
+    "correctAnswer": 1,
+    "explanation": "Deich means “ten”. Fiche means “twenty” and seacht means “seven”."
+  },
+  {
+    "id": "ga-153",
+    "question": "What does “fiche” mean?",
+    "options": ["twenty", "one hundred", "twelve"],
+    "correctAnswer": 0,
+    "explanation": "Fiche means “twenty”. “Twelve” is dhá dheag and “one hundred” is céad."
+  },
+  {
+    "id": "ga-154",
+    "question": "What is “Monday” in Irish?",
+    "options": ["Dé hAoine", "Dé Luain", "Dé Máirt"],
+    "correctAnswer": 1,
+    "explanation": "Dé Luain is Monday. Dé Máirt is Tuesday and Dé hAoine is Friday."
+  },
+  {
+    "id": "ga-155",
+    "question": "What does “Dé Sathairn” mean?",
+    "options": ["Saturday", "Friday", "Sunday"],
+    "correctAnswer": 0,
+    "explanation": "Dé Sathairn is Saturday. Dé Domhnaigh is Sunday and Dé hAoine is Friday."
+  },
+  {
+    "id": "ga-156",
+    "question": "What does “dearg” mean?",
+    "options": ["green", "red", "blue"],
+    "correctAnswer": 1,
+    "explanation": "Dearg means “red”. Glas is “green” and gorm is “blue”."
+  },
+  {
+    "id": "ga-157",
+    "question": "Choose the Irish word for “green”.",
+    "options": ["buí", "glas", "gorm"],
+    "correctAnswer": 1,
+    "explanation": "Glas means “green”. Gorm is “blue” and buí is “yellow”."
+  },
+  {
+    "id": "ga-158",
+    "question": "What does “bán” mean?",
+    "options": ["white", "yellow", "black"],
+    "correctAnswer": 0,
+    "explanation": "Bán means “white”. Dubh is “black” and buí is “yellow”."
+  },
+  {
+    "id": "ga-159",
+    "question": "How do you say “my brother” in Irish?",
+    "options": ["mo deartháir", "mo dheartháir", "mo dheirfiúr"],
+    "correctAnswer": 1,
+    "explanation": "Mo causes lenition, so deartháir becomes dheartháir. Mo dheirfiúr means “my sister”."
+  },
+  {
+    "id": "ga-160",
+    "question": "What does “arán” mean?",
+    "options": ["bread", "butter", "milk"],
+    "correctAnswer": 0,
+    "explanation": "Arán means “bread”. Im is “butter” and bainne is “milk”."
+  },
+  {
+    "id": "ga-161",
+    "question": "What does “uibheacha” mean?",
+    "options": ["cheese", "eggs", "fish"],
+    "correctAnswer": 1,
+    "explanation": "Uibheacha is the plural of ubh, “egg”. Cáis is “cheese” and iasc is “fish”."
+  },
+  {
+    "id": "ga-162",
+    "question": "What does “Cén t-am é?” mean?",
+    "options": ["What day is it?", "Where is the time?", "What time is it?"],
+    "correctAnswer": 2,
+    "explanation": "Cén t-am é? asks the time. Cén lá é? would ask the day."
+  },
+  {
+    "id": "ga-163",
+    "question": "How do you say “It is one o'clock” in Irish?",
+    "options": [
+      "Tá sé a naoi a chlog.",
+      "Tá sé a haon a chlog.",
+      "Tá sé a trí a chlog."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tá sé a haon a chlog means “It is one o'clock”. The other options give three and nine o'clock."
+  },
+  {
+    "id": "ga-164",
+    "question": "What does “ceann” mean?",
+    "options": ["hand", "head", "foot"],
+    "correctAnswer": 1,
+    "explanation": "Ceann means “head”. Lámh is “hand” and cos is “foot”."
+  },
+  {
+    "id": "ga-165",
+    "question": "What does “Tá pian i mo chos” mean?",
+    "options": [
+      "I have a pain in my head.",
+      "I have a pain in my hand.",
+      "I have a pain in my foot."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cos means “foot”, and it is lenited after mo: i mo chos."
+  },
+  {
+    "id": "ga-166",
+    "question": "What does “ar chlé” mean?",
+    "options": ["straight ahead", "on the left", "on the right"],
+    "correctAnswer": 1,
+    "explanation": "Ar chlé means “on the left”. Ar dheis is “on the right” and díreach ar aghaidh is “straight ahead”."
+  },
+  {
+    "id": "ga-167",
+    "question": "How do you say “Turn right” in Irish?",
+    "options": ["Cas ar dheis.", "Téigh díreach ar aghaidh.", "Cas ar chlé."],
+    "correctAnswer": 0,
+    "explanation": "Cas ar dheis means “Turn right”. Cas ar chlé means “Turn left”."
+  },
+  {
+    "id": "ga-168",
+    "question": "Which Irish word means “January”?",
+    "options": ["Márta", "Feabhra", "Eanáir"],
+    "correctAnswer": 2,
+    "explanation": "Eanáir is January. Feabhra is February and Márta is March."
+  },
+  {
+    "id": "ga-169",
+    "question": "What does “Meitheamh” mean?",
+    "options": ["June", "May", "July"],
+    "correctAnswer": 0,
+    "explanation": "Meitheamh is June. Bealtaine is May and Iúil is July."
+  },
+  {
+    "id": "ga-170",
+    "question": "What does “samhradh” mean?",
+    "options": ["spring", "winter", "summer"],
+    "correctAnswer": 2,
+    "explanation": "Samhradh is “summer”. Geimhreadh is “winter” and earrach is “spring”."
+  },
+  {
+    "id": "ga-171",
+    "question": "Which Irish word means “autumn”?",
+    "options": ["earrach", "samhradh", "fómhar"],
+    "correctAnswer": 2,
+    "explanation": "Fómhar is “autumn”. Earrach is “spring” and samhradh is “summer”."
+  },
+  {
+    "id": "ga-172",
+    "question": "Complete: An ___ tú ag obair? (Are you working?)",
+    "options": ["bhí", "tá", "bhfuil"],
+    "correctAnswer": 2,
+    "explanation": "Questions use an + the eclipsed form bhfuil: An bhfuil tú ag obair?"
+  },
+  {
+    "id": "ga-173",
+    "question": "What is the usual answer meaning “yes” to “An bhfuil tú ag obair?”",
+    "options": ["Tá.", "Is ea.", "Ní hea."],
+    "correctAnswer": 0,
+    "explanation": "Irish answers a yes/no question by repeating the verb: An bhfuil...? → Tá (yes) or Níl (no). Is ea / Ní hea answer questions with is."
+  },
+  {
+    "id": "ga-174",
+    "question": "What does “Bím ag obair gach lá” mean?",
+    "options": [
+      "I worked yesterday.",
+      "I (usually) work every day.",
+      "I will work tomorrow."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bím is the habitual present of bí and describes something that happens regularly."
+  },
+  {
+    "id": "ga-175",
+    "question": "How do you say “I close the door” in Irish?",
+    "options": [
+      "Dúnaim an doras.",
+      "Cnagaim ar an doras.",
+      "Osclaím an doras."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dúnaim means “I close”. Osclaím means “I open” and cnagaim means “I knock”."
+  },
+  {
+    "id": "ga-176",
+    "question": "What does “Dún an doras” mean?",
+    "options": ["Knock on the door.", "Open the door.", "Close the door."],
+    "correctAnswer": 2,
+    "explanation": "Dún is the imperative of dún, “to close”."
+  },
+  {
+    "id": "ga-177",
+    "question": "Which means “the door of the house”?",
+    "options": ["doras an teach", "doras an tí", "doras na tí"],
+    "correctAnswer": 1,
+    "explanation": "After a noun, the genitive of teach with the article is an tí: doras an tí."
+  },
+  {
+    "id": "ga-178",
+    "question": "What is the plural of “teach” (house)?",
+    "options": ["tigh", "teacha", "tithe"],
+    "correctAnswer": 2,
+    "explanation": "Tithe is the plural of teach."
+  },
+  {
+    "id": "ga-179",
+    "question": "Which means “the boys”?",
+    "options": ["na buachaill", "na buachaillí", "an buachaillí"],
+    "correctAnswer": 1,
+    "explanation": "Buachaillí is the plural of buachaill, and na is the plural article."
+  },
+  {
+    "id": "ga-180",
+    "question": "Choose the Irish for “her house”.",
+    "options": ["a teach", "a dteach", "a theach"],
+    "correctAnswer": 0,
+    "explanation": "A (her) causes no mutation: a teach. A (his) lenites (a theach) and a (their) eclipses (a dteach)."
+  },
+  {
+    "id": "ga-181",
+    "question": "Choose the Irish for “my mother”.",
+    "options": ["mo máthair", "ár máthair", "mo mháthair"],
+    "correctAnswer": 2,
+    "explanation": "Mo lenites the next consonant: mo mháthair. Ár means “our”."
+  },
+  {
+    "id": "ga-182",
+    "question": "Which means “with you” (one person)?",
+    "options": ["leis", "linn", "leat"],
+    "correctAnswer": 2,
+    "explanation": "Leat means “with you”. Leis is “with him” and linn is “with us”."
+  },
+  {
+    "id": "ga-183",
+    "question": "Which means “on him”?",
+    "options": ["orm", "air", "uirthi"],
+    "correctAnswer": 1,
+    "explanation": "Air means “on him”. Uirthi is “on her” and orm is “on me”."
+  },
+  {
+    "id": "ga-184",
+    "question": "How do you ask “How are you?” in Irish?",
+    "options": ["Conas atá tú?", "Cad is ainm duit?", "Cá bhfuil tú?"],
+    "correctAnswer": 0,
+    "explanation": "Conas atá tú? means “How are you?” Cad is ainm duit? asks for a name."
+  },
+  {
+    "id": "ga-185",
+    "question": "How do you say “I'm well, thank you”?",
+    "options": [
+      "Is mise Seán, go raibh maith agat.",
+      "Tá mé go dona, go raibh maith agat.",
+      "Tá mé go maith, go raibh maith agat."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Go maith means “well”. Go dona means “badly”."
+  },
+  {
+    "id": "ga-186",
+    "question": "What does “Slán abhaile” mean?",
+    "options": ["Safe home (goodbye)", "Welcome home", "Come home"],
+    "correctAnswer": 0,
+    "explanation": "Slán abhaile is a friendly goodbye wishing someone a safe journey home."
+  },
+  {
+    "id": "ga-187",
+    "question": "Which means “Good morning”?",
+    "options": ["Oíche mhaith", "Maidin mhaith", "Tráthnóna maith"],
+    "correctAnswer": 1,
+    "explanation": "Maidin mhaith is “good morning”. Tráthnóna maith is “good afternoon/evening” and oíche mhaith is “good night”."
+  },
+  {
+    "id": "ga-188",
+    "question": "What does “Go n-éirí leat” mean?",
+    "options": ["Goodbye", "Thank you", "Good luck"],
+    "correctAnswer": 2,
+    "explanation": "Go n-éirí leat means “may you succeed”, used to say good luck."
+  },
+  {
+    "id": "ga-189",
+    "question": "What does “Lá breithe sona duit” mean?",
+    "options": ["Happy birthday", "Happy Christmas", "Happy New Year"],
+    "correctAnswer": 0,
+    "explanation": "Lá breithe sona duit means “happy birthday”. Nollaig shona duit means “happy Christmas”."
+  },
+  {
+    "id": "ga-190",
+    "question": "Complete: ___ raibh mé ann. (I wasn't there.)",
+    "options": ["Níl", "Ní", "Nach"],
+    "correctAnswer": 1,
+    "explanation": "Ní raibh is the negative past of bí. Níl is the negative present."
+  },
+  {
+    "id": "ga-191",
+    "question": "What does “Nach bhfuil tú sásta?” mean?",
+    "options": ["Are you happy?", "You are not happy.", "Aren't you happy?"],
+    "correctAnswer": 2,
+    "explanation": "Nach bhfuil...? is the negative question form, meaning “isn't/aren't...?”"
+  },
+  {
+    "id": "ga-192",
+    "question": "What does “Ní raibh sé fuar” mean?",
+    "options": ["It wasn't cold.", "It isn't cold.", "It won't be cold."],
+    "correctAnswer": 0,
+    "explanation": "Ní raibh is the negative past of bí, so the sentence is in the past tense."
+  },
+  {
+    "id": "ga-193",
+    "question": "Complete: Má ___ an aimsir go maith, rachaidh mé amach. (If the weather is good, I'll go out.)",
+    "options": ["tá", "bhí", "beidh"],
+    "correctAnswer": 0,
+    "explanation": "After má, the present tense of bí is used for a future-looking condition: Má tá an aimsir go maith..."
+  },
+  {
+    "id": "ga-194",
+    "question": "What does “Teastaíonn uisce uaim” mean?",
+    "options": ["I need water.", "I drink water.", "I give water."],
+    "correctAnswer": 0,
+    "explanation": "Teastaíonn ... uaim means “I need/want ...”."
+  },
+  {
+    "id": "ga-195",
+    "question": "What does “Cathain” mean?",
+    "options": ["how", "when", "why"],
+    "correctAnswer": 1,
+    "explanation": "Cathain means “when”. Cén fáth is “why” and conas is “how”."
+  },
+  {
+    "id": "ga-196",
+    "question": "Which question word means “why”?",
+    "options": ["Conas", "Cén fáth", "Cathain"],
+    "correctAnswer": 1,
+    "explanation": "Cén fáth means “why”. Cathain is “when” and conas is “how”."
+  },
+  {
+    "id": "ga-197",
+    "question": "What does “Cé mhéad?” mean?",
+    "options": ["How old?", "How much? / How many?", "How long?"],
+    "correctAnswer": 1,
+    "explanation": "Cé mhéad? asks about quantity or price."
+  },
+  {
+    "id": "ga-198",
+    "question": "What does “Cén aois thú?” mean?",
+    "options": ["Where are you from?", "What time is it?", "How old are you?"],
+    "correctAnswer": 2,
+    "explanation": "Cén aois thú? asks someone's age."
+  },
+  {
+    "id": "ga-199",
+    "question": "What does “Gabh mo leithscéal” mean?",
+    "options": ["Excuse me.", "Thank you.", "Goodbye."],
+    "correctAnswer": 0,
+    "explanation": "Gabh mo leithscéal means “excuse me” or “pardon me”."
+  },
+  {
+    "id": "ga-200",
+    "question": "How do you say “Thank you very much”?",
+    "options": [
+      "Dia duit.",
+      "Go raibh míle maith agat.",
+      "Go raibh maith agat."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Go raibh míle maith agat means “thank you very much”. Go raibh maith agat is plain “thank you”."
   }
 ]
