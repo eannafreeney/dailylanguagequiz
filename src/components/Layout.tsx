@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
+import { quizzes } from "../lib/quizzes";
 
 type Props = PropsWithChildren<{
   langCode: LangCode;
@@ -39,7 +40,11 @@ const Layout = ({ langCode, children }: Props) => {
         ></script>
       </head>
       <body class="bg-white">
-        <Header title={title} kicker={kicker} />
+        <Header
+          title={title}
+          kicker={kicker}
+          questionCount={quizzes[langCode as keyof typeof quizzes].length}
+        />
         <main class="my-4 px-4 ">{children}</main>
         <Footer title={title} kicker={kicker} />
       </body>

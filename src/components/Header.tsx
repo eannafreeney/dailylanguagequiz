@@ -3,9 +3,10 @@ import { LINKS } from "../constants/constants";
 type Props = {
   title: string;
   kicker: string;
+  questionCount: number;
 };
 
-const Header = ({ title, kicker }: Props) => {
+const Header = ({ title, kicker, questionCount }: Props) => {
   return (
     <header class="border-b border-slate-200 bg-white">
       <nav
@@ -37,7 +38,12 @@ const Header = ({ title, kicker }: Props) => {
           </span>
         </a>
 
-        <details class="dropdown dropdown-end">
+        <div class="flex items-center gap-3">
+          <span class="text-sm font-medium text-slate-500">
+            {questionCount} questions
+          </span>
+
+          <details class="dropdown dropdown-end">
           <summary
             class="cursor-pointer inline-flex items-center gap-1
                      rounded-lg bg-emerald-50 px-3 py-2
@@ -52,7 +58,8 @@ const Header = ({ title, kicker }: Props) => {
               <Link key={link.href} href={link.href} label={link.label} />
             ))}
           </ul>
-        </details>
+          </details>
+        </div>
       </nav>
     </header>
   );
