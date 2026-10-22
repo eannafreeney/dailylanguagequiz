@@ -2,25 +2,24 @@ import { LangCode } from "./types";
 import { quizzes } from "./lib/quizzes";
 
 const DAILY_QUESTION_COUNT = 5;
+const DAY_MS = 86_400_000;
+// One shuffle for the life of a bank. The day only picks the next slice.
+const DECK_SEED = 0x9e3779b9;
 
-export function getDailyQuestions(langCode: LangCode) {
-  const today = new Date().toISOString().slice(0, 10);
+export function getDailyQuestions(langCode: LangCode, now = new Date()) {
+  const deck = [...quizzes[langCode as keyof typeof quizzes]];
 
-  // Create a repeatable daily seed.
-  let seed = 0;
-  for (const char of today) {
-    seed = (seed * 31 + char.charCodeAt(0)) >>> 0;
-  }
-
-  // Copy the bank so we don't change the original array.
-  const shuffled = [...quizzes[langCode as keyof typeof quizzes]];
-
-  // Deterministic shuffle.
-  for (let i = shuffled.length - 1; i > 0; i--) {
+  let seed = DECK_SEED;
+  for (let i = deck.length - 1; i > 0; i--) {
     seed = (seed * 1664525 + 1013904223) >>> 0;
     const j = seed % (i + 1);
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    [deck[i], deck[j]] = [deck[j], deck[i]];
   }
 
-  return shuffled.slice(0, Math.min(DAILY_QUESTION_COUNT, shuffled.length));
+  // ponytail: drop length % 5 so two days never share a question.
+  // Those leftovers come back once the bank is a multiple of 5.
+  const usable = deck.length - (deck.length % DAILY_QUESTION_COUNT);
+  const day = Math.floor(now.getTime() / DAY_MS);
+  const start = (day % (usable / DAILY_QUESTION_COUNT)) * DAILY_QUESTION_COUNT;
+  return deck.slice(start, start + DAILY_QUESTION_COUNT);
 }

@@ -46,6 +46,7 @@ export async function sendEmail(
 export async function sendDailyEmails(env: Env, scheduledTime: number) {
   // Use the scheduled instant, not runtime start time, to avoid missing the 08:00 window if execution is delayed.
   const now = new Date(scheduledTime);
+  console.log("[daily-email] Scheduled time:", now.toISOString());
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Dublin",
     year: "numeric",
@@ -57,12 +58,26 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
   }).formatToParts(now);
   const part = (type: string) =>
     parts.find((item) => item.type === type)?.value ?? "";
-  if (part("hour") !== "08" || part("minute") !== "00") return;
+  const dublinHour = part("hour");
+  const dublinMinute = part("minute");
+
+  console.log("[daily-email] Dublin time:", {
+    date: `${part("year")}-${part("month")}-${part("day")}`,
+    hour: dublinHour,
+    minute: dublinMinute,
+  });
+
+  if (dublinHour !== "08" || dublinMinute !== "00") {
+    console.log("[daily-email] Skipping: not 08:00 in Dublin.");
+    return;
+  }
+
   const localDate = `${part("year")}-${part("month")}-${part("day")}`;
 
   const { results } = await env.DB.prepare(
     "SELECT email, lang_code, token, site_url FROM subscribers WHERE confirmed=1 AND unsubscribed=0",
   ).all<Subscriber>();
+  console.log("[daily-email] Eligible subscribers:", results.length);
   for (const subscriber of results) {
     const language = languages.find(
       (item) => item.langCode === subscriber.lang_code,
@@ -79,13 +94,22 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
         .bind(subscriber.email, subscriber.lang_code, localDate)
         .run();
       if (claim.meta?.changes !== 1) continue;
+      console.log(
+        "[daily-email] Sending reminder for language:",
+        subscriber.lang_code,
+      );
       await sendEmail(
         env,
         subscriber.email,
         `Your daily ${language.englishName} quiz is ready`,
         `<p>Good morning!</p><p>Your daily ${language.englishName} practice is ready. Take five questions and build your skills a little every day.</p><p><a href="${quizUrl}">Start today's quiz</a></p><p style="font-size:12px;color:#666">You're receiving this because you subscribed to the daily quiz. <a href="${unsubscribeUrl}">Unsubscribe</a>.</p>`,
       );
+      console.log(
+        "[daily-email] Resend accepted reminder for language:",
+        subscriber.lang_code,
+      );
     } catch (error) {
+      console.error("[daily-email] Reminder send failed:", error);
       // Remove the claim if sending failed, allowing a later scheduled retry to try again.
       try {
         await env.DB.prepare(
