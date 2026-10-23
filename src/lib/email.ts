@@ -14,6 +14,7 @@ export type Env = {
   RESEND_API_KEY: string;
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
+  ADMIN_EMAIL?: string;
 };
 
 export const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
@@ -73,6 +74,7 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
   }
 
   const localDate = `${part("year")}-${part("month")}-${part("day")}`;
+  await sendAdminDigest(env, localDate);
 
   const { results } = await env.DB.prepare(
     "SELECT email, lang_code, token, site_url FROM subscribers WHERE confirmed=1 AND unsubscribed=0",
@@ -129,6 +131,65 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
         subscriber.lang_code,
         error,
       );
+    }
+  }
+}
+
+export function dublinYesterday(todayYmd: string) {
+  const [year, month, day] = todayYmd.split("-").map(Number);
+  return new Date(Date.UTC(year, month - 1, day - 1)).toISOString().slice(0, 10);
+}
+
+type DigestRow = { lang_code: string; started: number; finished: number };
+
+export function adminDigest(yesterday: string, rows: DigestRow[]) {
+  const tracked = languages.filter(
+    (language) => language.langCode === "ga" || language.langCode === "de",
+  );
+  const sections = tracked.map((language) => {
+    const row = rows.find((item) => item.lang_code === language.langCode);
+    const started = row?.started ?? 0;
+    const finished = row?.finished ?? 0;
+    return `<p>${language.englishName}: ${started} started, ${finished} finished.</p>`;
+  });
+  const started = rows.reduce((sum, row) => sum + row.started, 0);
+  return {
+    subject: `Yesterday's quiz: ${started} ${started === 1 ? "person" : "people"}`,
+    html: `<p>${yesterday}</p>${sections.join("")}`,
+  };
+}
+
+async function sendAdminDigest(env: Env, localDate: string) {
+  if (!env.ADMIN_EMAIL) {
+    console.log("[daily-email] No ADMIN_EMAIL, skipping admin digest.");
+    return;
+  }
+  const yesterday = dublinYesterday(localDate);
+  const claim = await env.DB.prepare(
+    "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, 'admin', ?)",
+  )
+    .bind(env.ADMIN_EMAIL, yesterday)
+    .run();
+  if (claim.meta?.changes !== 1) return;
+  try {
+    const { results } = await env.DB.prepare(
+      "SELECT lang_code, COUNT(*) AS started, COUNT(completed_at) AS finished FROM quiz_daily_participants WHERE local_date = ? GROUP BY lang_code",
+    )
+      .bind(yesterday)
+      .all<DigestRow>();
+    const { subject, html } = adminDigest(yesterday, results);
+    console.log("[daily-email] Sending admin digest for", yesterday);
+    await sendEmail(env, env.ADMIN_EMAIL, subject, html);
+  } catch (error) {
+    console.error("[daily-email] Admin digest failed:", error);
+    try {
+      await env.DB.prepare(
+        "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = 'admin' AND local_date = ?",
+      )
+        .bind(env.ADMIN_EMAIL, yesterday)
+        .run();
+    } catch (cleanupError) {
+      console.error("[daily-email] Could not release admin digest claim", cleanupError);
     }
   }
 }
