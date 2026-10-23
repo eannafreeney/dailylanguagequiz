@@ -16,7 +16,7 @@ const CompleteBanner = () => {
         </p>
 
         <a
-          href="https://langkraft.app/?utm_source=daily-quiz&utm_medium=referral&utm_campaign=quiz-completion"
+          href="https://langkraft.app/learn/ga?utm_source=daily-quiz&utm_medium=referral&utm_campaign=quiz-completion"
           target="_blank"
           rel="noopener noreferrer"
           class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-700 p-4 font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:w-auto"
