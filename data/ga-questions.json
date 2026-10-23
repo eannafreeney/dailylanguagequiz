@@ -1644,5 +1644,44 @@
     ],
     "correctAnswer": 1,
     "explanation": "Go raibh míle maith agat means “thank you very much”. Go raibh maith agat is plain “thank you”. Literally: Go raibh míle maith agat = “may-be a-thousand good at you”."
+  },
+  {
+    "id": "ga-201",
+    "question": "Complete: Tá cónaí ar mo dheirfiúr i ___. (My sister lives in Cork.)",
+    "options": ["Corcaigh", "Chorcaigh", "gCorcaigh"],
+    "correctAnswer": 2,
+    "explanation": "The preposition i (“in”) eclipses a following consonant, so c becomes gc: i gCorcaigh. Tá cónaí ar is a common way to say someone lives somewhere. Literally: Tá cónaí ar mo dheirfiúr i gCorcaigh = “is living on my sister in Cork”."
+  },
+  {
+    "id": "ga-202",
+    "question": "Which means “four children”?",
+    "options": ["ceithre páistí", "ceathrar páistí", "ceathair páiste"],
+    "correctAnswer": 1,
+    "explanation": "When counting people, Irish uses the personal numbers (beirt, triúr, ceathrar…): ceathrar páistí. Ceithre needs a singular noun (ceithre pháiste), and ceathair is only used for counting on its own. Literally: ceathrar páistí = “a foursome of children”."
+  },
+  {
+    "id": "ga-203",
+    "question": "Complete: ___ sí an doras. (She didn’t close the door.)",
+    "options": ["Níor dhún", "Ní dhún", "Níor dún"],
+    "correctAnswer": 0,
+    "explanation": "Regular verbs form the negative past tense with níor plus lenition: dún becomes níor dhún. Ní is used in other tenses, and the verb must be lenited after níor. Literally: Níor dhún sí an doras = “did not close she the door”."
+  },
+  {
+    "id": "ga-204",
+    "question": "Which means “about her”?",
+    "options": ["faoi", "fúinn", "fúithi"],
+    "correctAnswer": 2,
+    "explanation": "The preposition faoi (“under, about”) combines with pronouns: faoi (about him), fúithi (about her), fúinn (about us). Literally: fúithi = “under/about her”."
+  },
+  {
+    "id": "ga-205",
+    "question": "How do you say “I was born in Belfast”?",
+    "options": [
+      "Rug mé i mBéal Feirste.",
+      "Rugadh mé i mBéal Feirste.",
+      "Rugadh liom i mBéal Feirste."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Irish uses the autonomous (impersonal) past form rugadh for “was born”. Rug mé means “I caught” or “I gave birth”, and liom doesn’t fit here. Note the eclipsis after i: Béal → mBéal. Literally: Rugadh mé i mBéal Feirste = “was born me in Belfast”."
   }
 ]
