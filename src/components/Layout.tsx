@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
 import { quizzes } from "../lib/quizzes";
-import { languageConfig } from "../config/language-config";
 
 type Props = PropsWithChildren<{ langCode: LangCode }>;
 
@@ -14,10 +13,9 @@ const Layout = ({ langCode, children }: Props) => {
   const { siteName, flag, englishName } = language;
   const title = `${flag} ${englishName}`;
   const kicker = "Daily practice — five questions a day.";
-  const theme = languageConfig[langCode].theme;
 
   return (
-    <html lang={langCode === "ga" ? "ga" : langCode === "de" ? "de" : "ru"} data-theme={langCode === "de" ? "dark" : "emerald"}>
+    <html lang={langCode === "ga" ? "ga" : langCode === "de" ? "de" : "ru"} data-theme="emerald">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,11 +27,10 @@ const Layout = ({ langCode, children }: Props) => {
       </head>
       <body class="bg-white">
         <Header title={title} kicker={kicker} questionCount={quizzes[langCode].length} langCode={langCode} />
-        <main class={`my-4 px-4 ${langCode === "de" ? "accent-german" : ""}`}>{children}</main>
+        <main class="my-4 px-4">{children}</main>
         <Footer title={title} kicker={kicker} langCode={langCode} />
       </body>
     </html>
   );
 };
-
 export default Layout;
