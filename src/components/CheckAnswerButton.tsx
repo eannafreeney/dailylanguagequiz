@@ -1,16 +1,13 @@
-const CheckAnswerButton = () => {
+import type { LangCode } from "../types";
+import { languageConfig } from "../config/language-config";
+
+const CheckAnswerButton = ({ langCode }: { langCode: LangCode }) => {
+  const { theme } = languageConfig[langCode];
   return (
-    <button
-      id="check-answer-button"
-      type="submit"
-      disabled
-      x-bind:disabled="selectedAnswer === ''"
-      class="cursor-pointer mt-4 w-full rounded-2xl bg-emerald-600 px-6 py-4 font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-40"
-    >
-      Check answer
-      <span aria-hidden="true">→</span>
+    <button id="check-answer-button" type="submit" disabled x-bind:disabled="selectedAnswer === ''"
+      class={`mt-4 w-full cursor-pointer rounded-2xl px-6 py-4 font-semibold text-white transition disabled:cursor-not-allowed disabled:opacity-40 ${theme.accent} ${theme.accentHover}`}>
+      Check answer <span aria-hidden="true">→</span>
     </button>
   );
 };
-
 export default CheckAnswerButton;
