@@ -1,12 +1,7 @@
 import { languageConfig } from "../config/language-config";
 import type { LangCode } from "../types";
 
-type Props = {
-  title: string;
-  kicker: string;
-  questionCount: number;
-  langCode: LangCode;
-};
+type Props = { title: string; kicker: string; questionCount: number; langCode: LangCode };
 
 const Header = ({ title, kicker, questionCount, langCode }: Props) => {
   const { links, theme } = languageConfig[langCode];
@@ -30,7 +25,7 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
                 Links <span aria-hidden="true">↗</span>
               </summary>
               <ul class="dropdown-content menu z-50 mt-2 w-52 rounded-box border border-slate-200 bg-white p-2 shadow-lg">
-                {links.map((link) => <Link key={link.href} href={link.href} label={link.label} theme={theme} />)}
+                {links.map((link) => <Link key={link.href} href={link.href} label={link.label} />)}
               </ul>
             </details>
           )}
@@ -39,12 +34,11 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
     </header>
   );
 };
-
 export default Header;
 
-const Link = ({ href, label, theme }: { href: string; label: string; theme: { accentSoft: string; accentText: string } }) => (
+const Link = ({ href, label }: { href: string; label: string }) => (
   <li>
-    <a href={href} target="_blank" rel="noopener noreferrer" class={`block px-4 py-2 text-sm font-medium text-slate-700 hover:${theme.accentSoft} hover:${theme.accentText}`}>
+    <a href={href} target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
       {label} <span aria-hidden="true">↗</span>
     </a>
   </li>
