@@ -17,7 +17,7 @@
     "question": "What does 'Guten Morgen' mean?",
     "options": ["Good evening", "Good afternoon", "Good morning", "Good night"],
     "correctAnswer": 2,
-    "explanation": "'Guten Morgen' is used to greet someone in the morning.",
+    "explanation": "'Guten Morgen' is used to greet someone in the morning. Literally: “(I wish you a) good morning”.",
     "phrase": "Guten Morgen",
     "tags": ["greetings", "time"]
   },
@@ -28,7 +28,7 @@
     "question": "What does 'Guten Tag' mean?",
     "options": ["Good day", "Goodbye", "See you tomorrow", "Good night"],
     "correctAnswer": 0,
-    "explanation": "'Guten Tag' is a polite greeting used during the day.",
+    "explanation": "'Guten Tag' is a polite greeting used during the day. Literally: “(I wish you a) good day”.",
     "phrase": "Guten Tag",
     "tags": ["greetings"]
   },
@@ -39,7 +39,7 @@
     "question": "What does 'Guten Abend' mean?",
     "options": ["Good morning", "Good evening", "Good afternoon", "Good luck"],
     "correctAnswer": 1,
-    "explanation": "'Guten Abend' is a greeting used in the evening.",
+    "explanation": "'Guten Abend' is a greeting used in the evening. Literally: “(I wish you a) good evening”.",
     "phrase": "Guten Abend",
     "tags": ["greetings", "time"]
   },
@@ -50,7 +50,7 @@
     "question": "What does 'Gute Nacht' mean?",
     "options": ["Good morning", "See you soon", "Good night", "Good day"],
     "correctAnswer": 2,
-    "explanation": "'Gute Nacht' is said when someone is going to bed or when parting at night.",
+    "explanation": "'Gute Nacht' is said when someone is going to bed or when parting at night. Literally: “(I wish you a) good night”.",
     "phrase": "Gute Nacht",
     "tags": ["greetings", "time"]
   },
@@ -61,7 +61,7 @@
     "question": "What does 'Tschüss' mean?",
     "options": ["Thank you", "Hello", "Excuse me", "Bye"],
     "correctAnswer": 3,
-    "explanation": "'Tschüss' is an informal way to say goodbye.",
+    "explanation": "'Tschüss' is an informal way to say goodbye. Literally: borrowed from adieu / adiós, “(I commend you) to God”.",
     "phrase": "Tschüss",
     "tags": ["greetings"]
   },
@@ -72,7 +72,7 @@
     "question": "What does 'Auf Wiedersehen' mean?",
     "options": ["Goodbye", "Welcome", "Good morning", "Please"],
     "correctAnswer": 0,
-    "explanation": "'Auf Wiedersehen' is a polite way to say goodbye.",
+    "explanation": "'Auf Wiedersehen' is a polite way to say goodbye. Literally: “on seeing-again” (until we see each other again).",
     "phrase": "Auf Wiedersehen",
     "tags": ["greetings", "politeness"]
   },
@@ -88,7 +88,7 @@
       "See you next year"
     ],
     "correctAnswer": 1,
-    "explanation": "'Bis bald' means 'See you soon'.",
+    "explanation": "'Bis bald' means 'See you soon'. Literally: “until soon”.",
     "phrase": "Bis bald",
     "tags": ["greetings"]
   },
@@ -104,7 +104,7 @@
       "How old are you?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Wie geht's?' is a shortened form of 'Wie geht es dir?' and asks how someone is doing.",
+    "explanation": "'Wie geht's?' is a shortened form of 'Wie geht es dir?' and asks how someone is doing. Literally: “how goes-it?” (full form: Wie geht es dir? = “how goes it to-you?”).",
     "phrase": "Wie geht's?",
     "tags": ["greetings", "conversation"]
   },
@@ -115,7 +115,7 @@
     "question": "What does 'Mir geht's gut' mean?",
     "options": ["I'm tired", "I'm hungry", "I'm lost", "I'm doing well"],
     "correctAnswer": 3,
-    "explanation": "'Mir geht's gut' is a common response meaning 'I'm doing well'.",
+    "explanation": "'Mir geht's gut' is a common response meaning 'I'm doing well'. Literally: “to-me goes-it well”.",
     "phrase": "Mir geht's gut",
     "tags": ["greetings", "feelings"]
   },
@@ -126,7 +126,7 @@
     "question": "What does 'Bitte' mean?",
     "options": ["Please / You're welcome", "Goodbye", "Sorry", "Tomorrow"],
     "correctAnswer": 0,
-    "explanation": "'Bitte' can mean 'please' or 'you're welcome', depending on the context.",
+    "explanation": "'Bitte' can mean 'please' or 'you're welcome', depending on the context. Literally: from bitten, “to request” – so “(I) request / ask”.",
     "phrase": "Bitte",
     "tags": ["politeness"]
   },
@@ -169,7 +169,7 @@
       "Excuse me / Sorry"
     ],
     "correctAnswer": 3,
-    "explanation": "'Entschuldigung' is used to apologize or politely get someone's attention.",
+    "explanation": "'Entschuldigung' is used to apologize or politely get someone's attention. Literally: “de-guilting” (ent- = away, Schuld = guilt).",
     "phrase": "Entschuldigung",
     "tags": ["politeness"]
   },
@@ -180,7 +180,7 @@
     "question": "What does 'Es tut mir leid' mean?",
     "options": ["I'm sorry", "I'm happy", "I'm ready", "I'm busy"],
     "correctAnswer": 0,
-    "explanation": "'Es tut mir leid' is a common expression used to apologize or express sympathy.",
+    "explanation": "'Es tut mir leid' is a common expression used to apologize or express sympathy. Literally: “it does to-me sorrow” (leid = sorrow, pain).",
     "phrase": "Es tut mir leid",
     "tags": ["politeness", "feelings"]
   },
@@ -207,7 +207,7 @@
       "Good morning"
     ],
     "correctAnswer": 2,
-    "explanation": "'Gern geschehen' is a polite response to someone thanking you.",
+    "explanation": "'Gern geschehen' is a polite response to someone thanking you. Literally: “gladly happened”.",
     "phrase": "Gern geschehen",
     "tags": ["politeness"]
   },
@@ -223,7 +223,7 @@
       "Here you are / You're welcome"
     ],
     "correctAnswer": 3,
-    "explanation": "'Bitte schön' can accompany handing something to someone or responding to thanks.",
+    "explanation": "'Bitte schön' can accompany handing something to someone or responding to thanks. Literally: “please beautifully” (schön = beautiful, nice).",
     "phrase": "Bitte schön",
     "tags": ["politeness"]
   },
@@ -239,7 +239,7 @@
       "What do you do?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Wie heißt du?' is the informal way to ask someone's name.",
+    "explanation": "'Wie heißt du?' is the informal way to ask someone's name. Literally: “how are-called you?”.",
     "phrase": "Wie heißt du?",
     "tags": ["introductions", "questions"]
   },
@@ -255,7 +255,7 @@
       "I live in Anna"
     ],
     "correctAnswer": 1,
-    "explanation": "'Ich heiße Anna' is a common way to introduce yourself by name.",
+    "explanation": "'Ich heiße Anna' is a common way to introduce yourself by name. Literally: “I am-called Anna”.",
     "phrase": "Ich heiße Anna",
     "tags": ["introductions"]
   },
@@ -271,7 +271,7 @@
       "I speak German"
     ],
     "correctAnswer": 2,
-    "explanation": "'Ich bin aus Deutschland' tells someone that you are from Germany.",
+    "explanation": "'Ich bin aus Deutschland' tells someone that you are from Germany. Literally: “I am out-of Germany”.",
     "phrase": "Ich bin aus Deutschland",
     "tags": ["introductions", "countries"]
   },
@@ -287,7 +287,7 @@
       "Where are you from?"
     ],
     "correctAnswer": 3,
-    "explanation": "'Woher kommst du?' asks about someone's place of origin.",
+    "explanation": "'Woher kommst du?' asks about someone's place of origin. Literally: “whence come you?” (woher = from where).",
     "phrase": "Woher kommst du?",
     "tags": ["introductions", "questions"]
   },
@@ -303,7 +303,7 @@
       "See you tomorrow"
     ],
     "correctAnswer": 0,
-    "explanation": "'Freut mich' is a shortened form of 'Es freut mich' and is used when meeting someone.",
+    "explanation": "'Freut mich' is a shortened form of 'Es freut mich' and is used when meeting someone. Literally: “pleases me”.",
     "phrase": "Freut mich",
     "tags": ["introductions", "greetings"]
   },
@@ -476,7 +476,7 @@
     "question": "What does 'der Lehrer' mean?",
     "options": ["The student", "The male teacher", "The doctor", "The driver"],
     "correctAnswer": 1,
-    "explanation": "'Der Lehrer' means 'the male teacher'.",
+    "explanation": "'Der Lehrer' means 'the male teacher'. Literally: “teach-er” (lehren = to teach).",
     "phrase": "der Lehrer",
     "tags": ["people", "education", "nouns"]
   },
@@ -492,7 +492,7 @@
       "The secretary"
     ],
     "correctAnswer": 2,
-    "explanation": "'Die Lehrerin' means 'the female teacher'. The ending '-in' commonly forms feminine job titles.",
+    "explanation": "'Die Lehrerin' means 'the female teacher'. The ending '-in' commonly forms feminine job titles. Literally: “teach-er + -in (female)”.",
     "phrase": "die Lehrerin",
     "tags": ["people", "education", "nouns"]
   },
@@ -623,7 +623,7 @@
       "How old is it?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Wie spät ist es?' is the usual way to ask for the time.",
+    "explanation": "'Wie spät ist es?' is the usual way to ask for the time. Literally: “how late is it?”.",
     "phrase": "Wie spät ist es?",
     "tags": ["daily_life", "time", "questions"]
   },
@@ -639,7 +639,7 @@
       "It is three minutes"
     ],
     "correctAnswer": 2,
-    "explanation": "'Es ist drei Uhr' means 'It is three o'clock'.",
+    "explanation": "'Es ist drei Uhr' means 'It is three o'clock'. Literally: “it is three clock/hour” (Uhr = clock, hour).",
     "phrase": "Es ist drei Uhr",
     "tags": ["daily_life", "time", "numbers"]
   },
@@ -655,7 +655,7 @@
       "Today is Monday"
     ],
     "correctAnswer": 3,
-    "explanation": "'Heute' means 'today', and 'Montag' means 'Monday'.",
+    "explanation": "'Heute' means 'today', and 'Montag' means 'Monday'. Literally: Montag = “Moon-day”.",
     "phrase": "Heute ist Montag",
     "tags": ["daily_life", "days"]
   },
@@ -753,7 +753,7 @@
       "The train station"
     ],
     "correctAnswer": 3,
-    "explanation": "'Der Bahnhof' means 'the train station'.",
+    "explanation": "'Der Bahnhof' means 'the train station'. Literally: “railway-yard” (Bahn = railway, Hof = yard).",
     "phrase": "der Bahnhof",
     "tags": ["places", "travel", "nouns"]
   },
@@ -769,7 +769,7 @@
       "The school"
     ],
     "correctAnswer": 0,
-    "explanation": "'Der Flughafen' means 'the airport'.",
+    "explanation": "'Der Flughafen' means 'the airport'. Literally: “flight-harbour” (Flug = flight, Hafen = harbour).",
     "phrase": "der Flughafen",
     "tags": ["places", "travel", "nouns"]
   },
@@ -823,7 +823,7 @@
       "The police station"
     ],
     "correctAnswer": 0,
-    "explanation": "'Das Krankenhaus' means 'the hospital'.",
+    "explanation": "'Das Krankenhaus' means 'the hospital'. Literally: “sick-house” (krank = sick).",
     "phrase": "das Krankenhaus",
     "tags": ["places", "health", "nouns"]
   },
@@ -839,7 +839,7 @@
       "What size is this?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Wie viel kostet das?' is used to ask the price of something.",
+    "explanation": "'Wie viel kostet das?' is used to ask the price of something. Literally: “how much costs that?”.",
     "phrase": "Wie viel kostet das?",
     "tags": ["shopping", "questions"]
   },
@@ -871,7 +871,7 @@
       "I'll take that"
     ],
     "correctAnswer": 3,
-    "explanation": "'Ich nehme das' is a common way to say you want to buy or choose something.",
+    "explanation": "'Ich nehme das' is a common way to say you want to buy or choose something. Literally: “I take that”.",
     "phrase": "Ich nehme das",
     "tags": ["shopping"]
   },
@@ -887,7 +887,7 @@
       "Can you call me?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Können Sie mir helfen?' is the polite way to ask someone for help.",
+    "explanation": "'Können Sie mir helfen?' is the polite way to ask someone for help. Literally: “can you to-me help?” (Sie = formal “you”).",
     "phrase": "Können Sie mir helfen?",
     "tags": ["basics", "questions", "politeness"]
   },
@@ -903,7 +903,7 @@
       "How much is the ticket?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Abfahren' means to depart. The separable verb places 'ab' at the end of this question.",
+    "explanation": "'Abfahren' means to depart. The separable verb places 'ab' at the end of this question. Literally: “when drives the train off?” (abfahren = drive off).",
     "phrase": "Wann fährt der Zug ab?",
     "tags": ["travel", "transport", "questions"]
   },
@@ -919,7 +919,7 @@
       "The train is cancelled"
     ],
     "correctAnswer": 2,
-    "explanation": "'Verspätung haben' means to be delayed or late.",
+    "explanation": "'Verspätung haben' means to be delayed or late. Literally: “the train has lateness”.",
     "phrase": "Der Zug hat Verspätung",
     "tags": ["travel", "transport"]
   },
@@ -935,7 +935,7 @@
       "One ticket to Berlin, please"
     ],
     "correctAnswer": 3,
-    "explanation": "At a ticket counter, 'Einmal nach Berlin, bitte' is a common way to request one ticket to Berlin.",
+    "explanation": "At a ticket counter, 'Einmal nach Berlin, bitte' is a common way to request one ticket to Berlin. Literally: “one-time to Berlin, please”.",
     "phrase": "Einmal nach Berlin, bitte",
     "tags": ["travel", "tickets", "politeness"]
   },
@@ -951,7 +951,7 @@
       "Where is the exit?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Umsteigen' means to change trains, buses, or other forms of transport.",
+    "explanation": "'Umsteigen' means to change trains, buses, or other forms of transport. Literally: “where must I over-climb?” (um = over/around, steigen = climb).",
     "phrase": "Wo muss ich umsteigen?",
     "tags": ["travel", "transport", "questions"]
   },
@@ -967,7 +967,7 @@
       "I've arrived early"
     ],
     "correctAnswer": 1,
-    "explanation": "'Sich verlaufen' means to get lost while walking.",
+    "explanation": "'Sich verlaufen' means to get lost while walking. Literally: “I have myself mis-walked” (ver- = wrongly, laufen = run/walk).",
     "phrase": "Ich habe mich verlaufen",
     "tags": ["travel", "directions"]
   },
@@ -983,7 +983,7 @@
       "Can you repeat the address?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Den Weg zeigen' means to show someone the way.",
+    "explanation": "'Den Weg zeigen' means to show someone the way. Literally: “can you to-me the way show?”.",
     "phrase": "Können Sie mir den Weg zeigen?",
     "tags": ["travel", "directions", "politeness"]
   },
@@ -1015,7 +1015,7 @@
       "Is the room upstairs?"
     ],
     "correctAnswer": 0,
-    "explanation": "In this context, 'frei' means available rather than free of charge.",
+    "explanation": "In this context, 'frei' means available rather than free of charge. Literally: “is the room still free?”.",
     "phrase": "Ist das Zimmer noch frei?",
     "tags": ["travel", "hotels", "questions"]
   },
@@ -1031,7 +1031,7 @@
       "I am visiting a friend"
     ],
     "correctAnswer": 1,
-    "explanation": "'Wohnen' means to live or reside, and 'die Wohnung' means apartment.",
+    "explanation": "'Wohnen' means to live or reside, and 'die Wohnung' means apartment. Literally: “I dwell in a dwelling” (wohnen = dwell, Wohnung = dwelling).",
     "phrase": "Ich wohne in einer Wohnung",
     "tags": ["home", "housing"]
   },
@@ -1047,7 +1047,7 @@
       "The kitchen is behind the house"
     ],
     "correctAnswer": 2,
-    "explanation": "'Neben' means next to. 'Dem Wohnzimmer' is the dative form after this preposition.",
+    "explanation": "'Neben' means next to. 'Dem Wohnzimmer' is the dative form after this preposition. Literally: “the kitchen is next-to the living-room” (Wohnzimmer = “dwelling-room”).",
     "phrase": "Die Küche ist neben dem Wohnzimmer",
     "tags": ["home", "rooms", "prepositions"]
   },
@@ -1063,7 +1063,7 @@
       "I have to do the laundry"
     ],
     "correctAnswer": 3,
-    "explanation": "'Die Wäsche waschen' means to wash the laundry.",
+    "explanation": "'Die Wäsche waschen' means to wash the laundry. Literally: “I must the laundry wash” (Wäsche = “washing”).",
     "phrase": "Ich muss die Wäsche waschen",
     "tags": ["home", "chores"]
   },
@@ -1079,7 +1079,7 @@
       "Can you turn on the light?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Öffnen' means to open. 'Kannst du' is the informal way to ask whether someone can do something.",
+    "explanation": "'Öffnen' means to open. 'Kannst du' is the informal way to ask whether someone can do something. Literally: “can you the window open?”.",
     "phrase": "Kannst du das Fenster öffnen?",
     "tags": ["home", "requests"]
   },
@@ -1095,7 +1095,7 @@
       "The water is too hot"
     ],
     "correctAnswer": 1,
-    "explanation": "'Funktionieren' means to function or work. The sentence reports a problem with the heating.",
+    "explanation": "'Funktionieren' means to function or work. The sentence reports a problem with the heating. Literally: “the heating functions not”.",
     "phrase": "Die Heizung funktioniert nicht",
     "tags": ["home", "problems"]
   },
@@ -1111,7 +1111,7 @@
       "I'm moving to another country"
     ],
     "correctAnswer": 2,
-    "explanation": "'Größer' is the comparative form of 'groß', meaning bigger or larger.",
+    "explanation": "'Größer' is the comparative form of 'groß', meaning bigger or larger. Literally: “I seek a bigger dwelling”.",
     "phrase": "Ich suche eine größere Wohnung",
     "tags": ["home", "housing", "comparatives"]
   },
@@ -1127,7 +1127,7 @@
       "Please turn off the light"
     ],
     "correctAnswer": 3,
-    "explanation": "'Ausmachen' means to switch off. It is a separable verb, so 'aus' appears at the end.",
+    "explanation": "'Ausmachen' means to switch off. It is a separable verb, so 'aus' appears at the end. Literally: “make please the light out”.",
     "phrase": "Mach bitte das Licht aus",
     "tags": ["home", "daily_life", "separable_verbs"]
   },
@@ -1143,7 +1143,7 @@
       "How long is the break?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Beginnen' means to begin or start.",
+    "explanation": "'Beginnen' means to begin or start. Literally: “at how-much clock begins the work?”.",
     "phrase": "Um wie viel Uhr beginnt die Arbeit?",
     "tags": ["work", "time", "questions"]
   },
@@ -1175,7 +1175,7 @@
       "I have to travel today"
     ],
     "correctAnswer": 2,
-    "explanation": "'Viel zu tun haben' means to have a lot to do.",
+    "explanation": "'Viel zu tun haben' means to have a lot to do. Literally: “I have today much to do”.",
     "phrase": "Ich habe heute viel zu tun",
     "tags": ["work", "daily_life"]
   },
@@ -1191,7 +1191,7 @@
       "Can we arrange an appointment?"
     ],
     "correctAnswer": 3,
-    "explanation": "'Einen Termin vereinbaren' means to arrange an appointment or meeting.",
+    "explanation": "'Einen Termin vereinbaren' means to arrange an appointment or meeting. Literally: “can we an appointment agree-upon?”.",
     "phrase": "Können wir einen Termin vereinbaren?",
     "tags": ["work", "appointments", "politeness"]
   },
@@ -1207,7 +1207,7 @@
       "I'm late for the task"
     ],
     "correctAnswer": 0,
-    "explanation": "'Mit etwas fertig sein' means to be finished with something.",
+    "explanation": "'Mit etwas fertig sein' means to be finished with something. Literally: “I am with the task finished”.",
     "phrase": "Ich bin mit der Aufgabe fertig",
     "tags": ["work", "education"]
   },
@@ -1223,7 +1223,7 @@
       "I have forgotten the exam"
     ],
     "correctAnswer": 1,
-    "explanation": "'Für eine Prüfung lernen' means to study for an exam.",
+    "explanation": "'Für eine Prüfung lernen' means to study for an exam. Literally: “I must for the exam learn”.",
     "phrase": "Ich muss für die Prüfung lernen",
     "tags": ["education", "exams"]
   },
@@ -1239,7 +1239,7 @@
       "Where did you read this word?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Wie schreibt man ...?' asks how something is written or spelled.",
+    "explanation": "'Wie schreibt man ...?' asks how something is written or spelled. Literally: “how writes one this word?”.",
     "phrase": "Wie schreibt man dieses Wort?",
     "tags": ["education", "language", "questions"]
   },
@@ -1255,7 +1255,7 @@
       "I didn't understand the question"
     ],
     "correctAnswer": 3,
-    "explanation": "'Verstanden' is the past participle of 'verstehen', meaning to understand.",
+    "explanation": "'Verstanden' is the past participle of 'verstehen', meaning to understand. Literally: “I have the question not understood”.",
     "phrase": "Ich habe die Frage nicht verstanden",
     "tags": ["education", "communication", "past_tense"]
   },
@@ -1271,7 +1271,7 @@
       "I am feeling cold"
     ],
     "correctAnswer": 0,
-    "explanation": "'Mir ist schlecht' commonly means 'I feel sick' or 'I feel nauseous'.",
+    "explanation": "'Mir ist schlecht' commonly means 'I feel sick' or 'I feel nauseous'. Literally: “to-me is bad”.",
     "phrase": "Mir ist schlecht",
     "tags": ["health", "feelings"]
   },
@@ -1287,7 +1287,7 @@
       "I have a cough"
     ],
     "correctAnswer": 1,
-    "explanation": "'Kopfschmerzen' means headache. German commonly uses 'Schmerzen haben' to describe pain.",
+    "explanation": "'Kopfschmerzen' means headache. German commonly uses 'Schmerzen haben' to describe pain. Literally: “I have head-pains” (Kopf = head, Schmerzen = pains).",
     "phrase": "Ich habe Kopfschmerzen",
     "tags": ["health", "symptoms"]
   },
@@ -1303,7 +1303,7 @@
       "How strong is the pain?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Seit wann' asks when something began and is often used when discussing symptoms.",
+    "explanation": "'Seit wann' asks when something began and is often used when discussing symptoms. Literally: “since when have you the pains?”.",
     "phrase": "Seit wann haben Sie die Schmerzen?",
     "tags": ["health", "questions", "politeness"]
   },
@@ -1335,7 +1335,7 @@
       "Buy these tablets tomorrow"
     ],
     "correctAnswer": 0,
-    "explanation": "'Zweimal täglich' means twice daily. 'Nehmen Sie' is a formal instruction.",
+    "explanation": "'Zweimal täglich' means twice daily. 'Nehmen Sie' is a formal instruction. Literally: “take you these tablets twice daily”.",
     "phrase": "Nehmen Sie diese Tabletten zweimal täglich",
     "tags": ["health", "medicine", "instructions"]
   },
@@ -1351,7 +1351,7 @@
       "I need to sleep today"
     ],
     "correctAnswer": 1,
-    "explanation": "'Sich besser fühlen' means to feel better.",
+    "explanation": "'Sich besser fühlen' means to feel better. Literally: “I feel myself today better”.",
     "phrase": "Ich fühle mich heute besser",
     "tags": ["health", "feelings", "comparatives"]
   },
@@ -1367,7 +1367,7 @@
       "I have already eaten salad"
     ],
     "correctAnswer": 2,
-    "explanation": "'Ich hätte gern ...' is a polite way to order something or express what you would like.",
+    "explanation": "'Ich hätte gern ...' is a polite way to order something or express what you would like. Literally: “I would-have gladly a salad”.",
     "phrase": "Ich hätte gern einen Salat",
     "tags": ["food", "restaurants", "politeness"]
   },
@@ -1415,7 +1415,7 @@
       "I never drink coffee"
     ],
     "correctAnswer": 1,
-    "explanation": "'Etwas nicht vertragen' means not to tolerate something, often referring to food or drink.",
+    "explanation": "'Etwas nicht vertragen' means not to tolerate something, often referring to food or drink. Literally: “I endure no milk” (vertragen = to bear, endure).",
     "phrase": "Ich vertrage keine Milch",
     "tags": ["food", "health"]
   },
@@ -1431,7 +1431,7 @@
       "Can we reserve a table?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Die Speisekarte' means 'the menu', and 'sehen' means 'to see'.",
+    "explanation": "'Die Speisekarte' means 'the menu', and 'sehen' means 'to see'. Literally: “can we the food-card see?” (Speise = food, Karte = card).",
     "phrase": "Können wir die Speisekarte sehen?",
     "tags": ["food", "restaurants", "questions"]
   },
@@ -1463,7 +1463,7 @@
       "What day is it today?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Am Wochenende' means 'at the weekend' or 'on the weekend'.",
+    "explanation": "'Am Wochenende' means 'at the weekend' or 'on the weekend'. Literally: “what make you at-the week-end?”.",
     "phrase": "Was machst du am Wochenende?",
     "tags": ["social", "plans", "questions"]
   },
@@ -1479,7 +1479,7 @@
       "Can you find the cinema?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Lust haben, etwas zu tun' means to feel like doing something.",
+    "explanation": "'Lust haben, etwas zu tun' means to feel like doing something. Literally: “have you desire, into-the cinema to go?”.",
     "phrase": "Hast du Lust, ins Kino zu gehen?",
     "tags": ["social", "invitations"]
   },
@@ -1495,7 +1495,7 @@
       "I am already at the cinema"
     ],
     "correctAnswer": 2,
-    "explanation": "'Etwas vorhaben' means to have plans or an arrangement.",
+    "explanation": "'Etwas vorhaben' means to have plans or an arrangement. Literally: “unfortunately have I already something before” (vorhaben = “to have before (one)”).",
     "phrase": "Leider habe ich schon etwas vor",
     "tags": ["social", "plans"]
   },
@@ -1511,7 +1511,7 @@
       "I'm looking forward to your visit"
     ],
     "correctAnswer": 3,
-    "explanation": "'Sich auf etwas freuen' means to look forward to something.",
+    "explanation": "'Sich auf etwas freuen' means to look forward to something. Literally: “I gladden myself on your visit”.",
     "phrase": "Ich freue mich auf deinen Besuch",
     "tags": ["social", "feelings"]
   },
@@ -1527,7 +1527,7 @@
       "It was too long"
     ],
     "correctAnswer": 0,
-    "explanation": "'Spaß machen' means to be fun. This sentence refers to an enjoyable past experience.",
+    "explanation": "'Spaß machen' means to be fun. This sentence refers to an enjoyable past experience. Literally: “it has fun made”.",
     "phrase": "Es hat Spaß gemacht",
     "tags": ["social", "feelings", "past_tense"]
   },
@@ -1543,7 +1543,7 @@
       "We saw each other yesterday"
     ],
     "correctAnswer": 1,
-    "explanation": "'Lange nicht gesehen' is a common expression used when meeting someone after a long time.",
+    "explanation": "'Lange nicht gesehen' is a common expression used when meeting someone after a long time. Literally: “we have each-other long not seen”.",
     "phrase": "Wir haben uns lange nicht gesehen",
     "tags": ["social", "relationships", "past_tense"]
   },
@@ -1559,7 +1559,7 @@
       "Can I borrow this?"
     ],
     "correctAnswer": 2,
-    "explanation": "'Anprobieren' means to try on clothes or other wearable items.",
+    "explanation": "'Anprobieren' means to try on clothes or other wearable items. Literally: “can I that on-try?” (probieren = to try).",
     "phrase": "Kann ich das anprobieren?",
     "tags": ["shopping", "clothing", "questions"]
   },
@@ -1575,7 +1575,7 @@
       "Do you have this in another size?"
     ],
     "correctAnswer": 3,
-    "explanation": "'In einer anderen Größe' means 'in another size'.",
+    "explanation": "'In einer anderen Größe' means 'in another size'. Literally: “have you that in an other size?”.",
     "phrase": "Haben Sie das in einer anderen Größe?",
     "tags": ["shopping", "clothing", "politeness"]
   },
@@ -1591,7 +1591,7 @@
       "I'd like to order this online"
     ],
     "correctAnswer": 0,
-    "explanation": "'Umtauschen' means to exchange an item, often in a shop.",
+    "explanation": "'Umtauschen' means to exchange an item, often in a shop. Literally: “I would-like that over-swap” (um- = over, tauschen = swap).",
     "phrase": "Ich möchte das umtauschen",
     "tags": ["shopping", "returns"]
   },
@@ -1607,7 +1607,7 @@
       "Can I pay tomorrow?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Mit Karte bezahlen' means to pay by card.",
+    "explanation": "'Mit Karte bezahlen' means to pay by card. Literally: “can I with card pay?”.",
     "phrase": "Kann ich mit Karte bezahlen?",
     "tags": ["shopping", "money", "questions"]
   },
@@ -1623,7 +1623,7 @@
       "The offer starts tomorrow"
     ],
     "correctAnswer": 2,
-    "explanation": "'Das Angebot gilt' means 'the offer is valid'. 'Nur heute' means 'today only'.",
+    "explanation": "'Das Angebot gilt' means 'the offer is valid'. 'Nur heute' means 'today only'. Literally: “the offer is-valid only today”.",
     "phrase": "Das Angebot gilt nur heute",
     "tags": ["shopping", "money", "time"]
   },
@@ -1639,7 +1639,7 @@
       "It will probably rain today"
     ],
     "correctAnswer": 3,
-    "explanation": "'Wahrscheinlich' means probably, and 'regnen' means to rain.",
+    "explanation": "'Wahrscheinlich' means probably, and 'regnen' means to rain. Literally: “it becomes today probably rain” (werden = become; wahrscheinlich = “true-seeming”).",
     "phrase": "Es wird heute wahrscheinlich regnen",
     "tags": ["weather", "future"]
   },
@@ -1655,7 +1655,7 @@
       "You should open the window"
     ],
     "correctAnswer": 0,
-    "explanation": "'Mitnehmen' means to take something along. 'Lieber' suggests what would be better to do.",
+    "explanation": "'Mitnehmen' means to take something along. 'Lieber' suggests what would be better to do. Literally: “take rather an rain-shield with” (Regenschirm = “rain screen”).",
     "phrase": "Nimm lieber einen Regenschirm mit",
     "tags": ["weather", "advice", "separable_verbs"]
   },
@@ -1671,7 +1671,7 @@
       "The journey takes ten hours"
     ],
     "correctAnswer": 1,
-    "explanation": "'Die Temperatur liegt bei zehn Grad' is a way to report a temperature of ten degrees.",
+    "explanation": "'Die Temperatur liegt bei zehn Grad' is a way to report a temperature of ten degrees. Literally: “the temperature lies at ten degrees”.",
     "phrase": "Die Temperatur liegt bei zehn Grad",
     "tags": ["weather", "numbers"]
   },
@@ -1687,7 +1687,7 @@
       "It is hot in summer"
     ],
     "correctAnswer": 2,
-    "explanation": "'Im Frühling' means 'in spring', and 'wärmer' means 'warmer'.",
+    "explanation": "'Im Frühling' means 'in spring', and 'wärmer' means 'warmer'. Literally: “in-the spring becomes it warmer”.",
     "phrase": "Im Frühling wird es wärmer",
     "tags": ["weather", "seasons", "comparatives"]
   },
@@ -1703,7 +1703,7 @@
       "I usually get up at seven"
     ],
     "correctAnswer": 3,
-    "explanation": "'Aufstehen' means to get up. It is a separable verb, so 'auf' appears at the end.",
+    "explanation": "'Aufstehen' means to get up. It is a separable verb, so 'auf' appears at the end. Literally: “I stand normally at seven up”.",
     "phrase": "Ich stehe normalerweise um sieben auf",
     "tags": ["daily_life", "routine", "separable_verbs"]
   },
@@ -1719,7 +1719,7 @@
       "I bought too much bread"
     ],
     "correctAnswer": 0,
-    "explanation": "'Vergessen, etwas zu tun' means to forget to do something.",
+    "explanation": "'Vergessen, etwas zu tun' means to forget to do something. Literally: “I have forgotten, bread to buy”.",
     "phrase": "Ich habe vergessen, Brot zu kaufen",
     "tags": ["daily_life", "shopping", "past_tense"]
   },
@@ -1735,7 +1735,7 @@
       "Let's take a taxi instead"
     ],
     "correctAnswer": 1,
-    "explanation": "'Sich beeilen' means to hurry, while 'den Bus verpassen' means to miss the bus.",
+    "explanation": "'Sich beeilen' means to hurry, while 'den Bus verpassen' means to miss the bus. Literally: “hurry yourself, otherwise miss we the bus”.",
     "phrase": "Beeil dich, sonst verpassen wir den Bus",
     "tags": ["daily_life", "transport", "commands"]
   },
@@ -1751,7 +1751,7 @@
       "I need to make a phone call"
     ],
     "correctAnswer": 2,
-    "explanation": "'Sich fertig machen' means to get ready, for example before going out.",
+    "explanation": "'Sich fertig machen' means to get ready, for example before going out. Literally: “I must myself still ready make”.",
     "phrase": "Ich muss mich noch fertig machen",
     "tags": ["daily_life", "routine", "reflexive_verbs"]
   },
@@ -1767,7 +1767,7 @@
       "That depends on the weather"
     ],
     "correctAnswer": 3,
-    "explanation": "'Von etwas abhängen' means to depend on something. 'Abhängen' is separable.",
+    "explanation": "'Von etwas abhängen' means to depend on something. 'Abhängen' is separable. Literally: “that hangs from-the weather off”.",
     "phrase": "Das hängt vom Wetter ab",
     "tags": ["daily_life", "weather", "separable_verbs"]
   },
@@ -1783,7 +1783,7 @@
       "I'm responsible for it"
     ],
     "correctAnswer": 0,
-    "explanation": "'An etwas gewöhnt sein' means to be accustomed or used to something.",
+    "explanation": "'An etwas gewöhnt sein' means to be accustomed or used to something. Literally: “I am thereto accustomed”.",
     "phrase": "Ich bin daran gewöhnt",
     "tags": ["daily_life", "expressions"]
   },
@@ -1799,7 +1799,7 @@
       "Go straight for two kilometres"
     ],
     "correctAnswer": 1,
-    "explanation": "'Nach links' means to the left. 'Gehen Sie' is the formal imperative of 'gehen'.",
+    "explanation": "'Nach links' means to the left. 'Gehen Sie' is the formal imperative of 'gehen'. Literally: “go you at the traffic-light to left”.",
     "phrase": "Gehen Sie an der Ampel nach links",
     "tags": ["directions", "travel", "politeness"]
   },
@@ -1815,7 +1815,7 @@
       "The bank is next to the airport"
     ],
     "correctAnswer": 2,
-    "explanation": "'Gegenüber' means opposite or across from. It is commonly used when giving directions.",
+    "explanation": "'Gegenüber' means opposite or across from. It is commonly used when giving directions. Literally: “the bank lies opposite the post”.",
     "phrase": "Die Bank liegt gegenüber der Post",
     "tags": ["directions", "places", "prepositions"]
   },
@@ -1831,7 +1831,7 @@
       "It takes about twenty minutes"
     ],
     "correctAnswer": 3,
-    "explanation": "'Ungefähr' means approximately, and 'dauern' means to take time or last.",
+    "explanation": "'Ungefähr' means approximately, and 'dauern' means to take time or last. Literally: “it lasts approximately twenty minutes”.",
     "phrase": "Es dauert ungefähr zwanzig Minuten",
     "tags": ["directions", "time", "numbers"]
   },
@@ -1847,7 +1847,7 @@
       "Go back to the main road"
     ],
     "correctAnswer": 0,
-    "explanation": "'Die zweite Straße rechts' means 'the second street on the right'.",
+    "explanation": "'Die zweite Straße rechts' means 'the second street on the right'. Literally: “take you the second street right”.",
     "phrase": "Nehmen Sie die zweite Straße rechts",
     "tags": ["directions", "travel", "ordinal_numbers"]
   },
@@ -1863,7 +1863,7 @@
       "Could you speak English?"
     ],
     "correctAnswer": 1,
-    "explanation": "'Wiederholen' means to repeat. 'Könnten Sie' is a polite way to make a request.",
+    "explanation": "'Wiederholen' means to repeat. 'Könnten Sie' is a polite way to make a request. Literally: “could you that please again-fetch?” (wieder = again, holen = fetch).",
     "phrase": "Könnten Sie das bitte wiederholen?",
     "tags": ["communication", "politeness", "questions"]
   },
@@ -1879,7 +1879,7 @@
       "I'll wait for you outside"
     ],
     "correctAnswer": 2,
-    "explanation": "'Zurückrufen' means to call someone back. It is a separable verb.",
+    "explanation": "'Zurückrufen' means to call someone back. It is a separable verb. Literally: “I call you later back”.",
     "phrase": "Ich rufe dich später zurück",
     "tags": ["communication", "phone", "separable_verbs"]
   },
@@ -1895,7 +1895,7 @@
       "I received your message"
     ],
     "correctAnswer": 3,
-    "explanation": "'Bekommen' means to receive or get something.",
+    "explanation": "'Bekommen' means to receive or get something. Literally: “I have your message gotten”.",
     "phrase": "Ich habe deine Nachricht bekommen",
     "tags": ["communication", "messages", "past_tense"]
   },
@@ -1911,7 +1911,7 @@
       "What did you say yesterday?"
     ],
     "correctAnswer": 0,
-    "explanation": "'Was meinst du damit?' asks someone to clarify what they mean.",
+    "explanation": "'Was meinst du damit?' asks someone to clarify what they mean. Literally: “what mean you therewith?”.",
     "phrase": "Was meinst du damit?",
     "tags": ["communication", "questions"]
   },
@@ -1927,7 +1927,7 @@
       "We are leaving through the entrance"
     ],
     "correctAnswer": 1,
-    "explanation": "'Sich treffen' means to meet, and 'vor dem Eingang' means in front of the entrance.",
+    "explanation": "'Sich treffen' means to meet, and 'vor dem Eingang' means in front of the entrance. Literally: “we meet each-other before the entrance”.",
     "phrase": "Wir treffen uns vor dem Eingang",
     "tags": ["plans", "meetings", "prepositions"]
   },
@@ -1943,7 +1943,7 @@
       "I have to leave immediately"
     ],
     "correctAnswer": 2,
-    "explanation": "'Vielleicht' means maybe, and 'etwas später' means a little later.",
+    "explanation": "'Vielleicht' means maybe, and 'etwas später' means a little later. Literally: “I come perhaps somewhat later”.",
     "phrase": "Ich komme vielleicht etwas später",
     "tags": ["plans", "time"]
   },
@@ -1959,7 +1959,7 @@
       "I booked the flight online"
     ],
     "correctAnswer": 3,
-    "explanation": "'Gebucht' is the past participle of 'buchen', meaning to book or reserve.",
+    "explanation": "'Gebucht' is the past participle of 'buchen', meaning to book or reserve. Literally: “I have the flight online booked”.",
     "phrase": "Ich habe den Flug online gebucht",
     "tags": ["plans", "travel", "past_tense"]
   },
@@ -1970,7 +1970,7 @@
     "question": "Wenn ich mehr Zeit ___, würde ich öfter kochen.",
     "options": ["habe", "hatte", "hätte", "haben"],
     "correctAnswer": 2,
-    "explanation": "Für irreale Bedingungen verwendet man „wenn“ mit Konjunktiv II: „Wenn ich mehr Zeit hätte …“",
+    "explanation": "For unreal (hypothetical) conditions, wenn is used with Konjunktiv II: “Wenn ich mehr Zeit hätte …”. Literally: “If I more time had(subjunctive), would I more-often cook.”",
     "phrase": "Wenn ich mehr Zeit hätte, würde ich öfter kochen.",
     "tags": ["Konjunktiv II", "Bedingungssatz"]
   },
@@ -1981,7 +1981,7 @@
     "question": "Sie interessiert sich ___ moderne Kunst.",
     "options": ["an", "für", "über", "mit"],
     "correctAnswer": 1,
-    "explanation": "Das Verb „sich interessieren“ steht mit „für“ und Akkusativ.",
+    "explanation": "The verb sich interessieren takes für + accusative. Literally: “She interests herself for modern art.”",
     "phrase": "Sie interessiert sich für moderne Kunst.",
     "tags": ["Verben mit Präpositionen", "Akkusativ"]
   },
@@ -1992,7 +1992,7 @@
     "question": "Obwohl es stark regnete, ___ wir spazieren.",
     "options": ["gingen", "gehen", "gegangen", "ging"],
     "correctAnswer": 0,
-    "explanation": "„Obwohl“ leitet einen Nebensatz ein; im Hauptsatz steht das finite Verb an zweiter Stelle. „Wir“ verlangt hier die Verbform „gingen“.",
+    "explanation": "Obwohl introduces a subordinate clause; in the main clause the finite verb comes second. With wir, the past form is gingen. Literally: “Although it heavily rained, went we walking.”",
     "phrase": "Obwohl es stark regnete, gingen wir spazieren.",
     "tags": ["Obwohl", "Präteritum"]
   },
@@ -2003,7 +2003,7 @@
     "question": "Ich freue mich darauf, dich bald ___.",
     "options": ["sehen", "zu sehen", "gesehen", "sehe"],
     "correctAnswer": 1,
-    "explanation": "Nach „sich darauf freuen“ folgt bei einer Infinitivkonstruktion „zu“ plus Infinitiv.",
+    "explanation": "After sich darauf freuen, an infinitive clause takes zu + infinitive. Literally: “I gladden myself there-on, you soon to see.”",
     "phrase": "Ich freue mich darauf, dich bald zu sehen.",
     "tags": ["Infinitiv mit zu", "Reflexive Verben"]
   },
@@ -2011,15 +2011,15 @@
     "id": "DE139",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „zuverlässig“?",
+    "question": "What does 'zuverlässig' mean?",
     "options": [
-      "Immer pünktlich und vertrauenswürdig",
-      "Sehr ungeduldig",
-      "Oft krank",
-      "Besonders laut"
+      "Always punctual and trustworthy",
+      "Very impatient",
+      "Often ill",
+      "Especially loud"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine zuverlässige Person hält Absprachen ein und ist vertrauenswürdig.",
+    "explanation": "A zuverlässig person keeps agreements and can be trusted – reliable. Literally: “My colleague is very reliable.”",
     "phrase": "Meine Kollegin ist sehr zuverlässig.",
     "tags": ["Adjektive", "Charakter"]
   },
@@ -2030,7 +2030,7 @@
     "question": "Das ist der Mann, ___ Tochter in Berlin studiert.",
     "options": ["dessen", "deren", "dem", "denen"],
     "correctAnswer": 0,
-    "explanation": "„Dessen“ ist das Relativpronomen im Genitiv für ein männliches Bezugswort im Singular.",
+    "explanation": "Dessen is the genitive relative pronoun for a masculine singular antecedent. Literally: “That is the man, whose daughter in Berlin studies.”",
     "phrase": "Das ist der Mann, dessen Tochter in Berlin studiert.",
     "tags": ["Relativsätze", "Genitiv"]
   },
@@ -2041,7 +2041,7 @@
     "question": "Ich habe vergessen, die Tür ___.",
     "options": ["abschließen", "abgeschlossen", "abzuschließen", "schließe ab"],
     "correctAnswer": 2,
-    "explanation": "Bei trennbaren Verben steht „zu“ zwischen der Vorsilbe und dem Infinitiv: „abzuschließen“.",
+    "explanation": "With separable verbs, zu goes between the prefix and the infinitive: abzuschließen. Literally: “I have forgotten, the door off-to-close (to lock).”",
     "phrase": "Ich habe vergessen, die Tür abzuschließen.",
     "tags": ["Trennbare Verben", "Infinitiv mit zu"]
   },
@@ -2049,15 +2049,15 @@
     "id": "DE142",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „eine Entscheidung treffen“?",
+    "question": "What does 'eine Entscheidung treffen' mean?",
     "options": [
-      "Eine Wahl machen",
-      "Einen Termin verschieben",
-      "Eine Rechnung bezahlen",
-      "Einen Fehler erklären"
+      "To make a choice",
+      "To postpone an appointment",
+      "To pay a bill",
+      "To explain a mistake"
     ],
     "correctAnswer": 0,
-    "explanation": "„Eine Entscheidung treffen“ bedeutet, zwischen Möglichkeiten zu wählen.",
+    "explanation": "Eine Entscheidung treffen means to choose between options. Literally: “We must today a decision hit/meet.” (treffen = to hit, meet)",
     "phrase": "Wir müssen heute eine Entscheidung treffen.",
     "tags": ["Wortverbindungen", "Alltag"]
   },
@@ -2068,7 +2068,7 @@
     "question": "Er sagte, dass er morgen nicht kommen ___.",
     "options": ["kann", "könne", "konnte", "gekonnt"],
     "correctAnswer": 1,
-    "explanation": "In der indirekten Rede kann der Konjunktiv I verwendet werden: „er könne“.",
+    "explanation": "In reported speech, Konjunktiv I can be used: er könne. Literally: “He said that he tomorrow not come could(subjunctive I).”",
     "phrase": "Er sagte, dass er morgen nicht kommen könne.",
     "tags": ["Indirekte Rede", "Konjunktiv I"]
   },
@@ -2079,7 +2079,7 @@
     "question": "Je länger ich übe, ___ sicherer werde ich.",
     "options": ["desto", "obwohl", "damit", "während"],
     "correctAnswer": 0,
-    "explanation": "Die feste Struktur lautet „je …, desto …“ oder „je …, umso …“.",
+    "explanation": "The fixed structure is je …, desto … (or je …, umso …). Literally: “The longer I practise, the more-sure become I.”",
     "phrase": "Je länger ich übe, desto sicherer werde ich.",
     "tags": ["Satzverbindungen", "Je desto"]
   },
@@ -2087,10 +2087,10 @@
     "id": "DE145",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was ist das Gegenteil von „vermeiden“?",
-    "options": ["Umgehen", "Suchen", "Herbeiführen", "Verhindern"],
+    "question": "What is the opposite of 'vermeiden'?",
+    "options": ["To get around", "To look for", "To bring about", "To prevent"],
     "correctAnswer": 2,
-    "explanation": "„Vermeiden“ bedeutet, etwas nicht geschehen zu lassen; „herbeiführen“ bedeutet, etwas zu bewirken.",
+    "explanation": "Vermeiden means to not let something happen; herbeiführen means to bring something about. Literally: herbeiführen = “hither-lead”; “We should unnecessary conflicts avoid.”",
     "phrase": "Wir sollten unnötige Konflikte vermeiden.",
     "tags": ["Wortschatz", "Gegenteile"]
   },
@@ -2101,7 +2101,7 @@
     "question": "Nachdem sie gegessen ___, ging sie ins Büro.",
     "options": ["hat", "hatte", "haben", "hätte"],
     "correctAnswer": 1,
-    "explanation": "Bei einer Vorvergangenheit vor einem Ereignis in der Vergangenheit steht häufig das Plusquamperfekt: „gegessen hatte“.",
+    "explanation": "Before a past event, the pluperfect (Plusquamperfekt) is often used: gegessen hatte. Literally: “After she eaten had, went she into-the office.”",
     "phrase": "Nachdem sie gegessen hatte, ging sie ins Büro.",
     "tags": ["Plusquamperfekt", "Nachdem"]
   },
@@ -2109,15 +2109,10 @@
     "id": "DE147",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „sich bemühen“?",
-    "options": [
-      "Sich anstrengen",
-      "Sich ausruhen",
-      "Sich beschweren",
-      "Sich verspäten"
-    ],
+    "question": "What does 'sich bemühen' mean?",
+    "options": ["To make an effort", "To rest", "To complain", "To be late"],
     "correctAnswer": 0,
-    "explanation": "„Sich bemühen“ bedeutet, sich anzustrengen, um ein Ziel zu erreichen.",
+    "explanation": "Sich bemühen means to make an effort to reach a goal. Literally: “I endeavour myself, every day German to learn.”",
     "phrase": "Ich bemühe mich, jeden Tag Deutsch zu lernen.",
     "tags": ["Reflexive Verben", "Wortschatz"]
   },
@@ -2128,7 +2123,7 @@
     "question": "Der Bericht muss bis Freitag ___ werden.",
     "options": ["schreiben", "geschrieben", "geschreibt", "schrieb"],
     "correctAnswer": 1,
-    "explanation": "Das Passiv mit Modalverb wird mit Modalverb plus Partizip II und „werden“ gebildet.",
+    "explanation": "Passive with a modal verb: modal + past participle + werden. Literally: “The report must until Friday written be.”",
     "phrase": "Der Bericht muss bis Freitag geschrieben werden.",
     "tags": ["Passiv", "Modalverben"]
   },
@@ -2139,7 +2134,7 @@
     "question": "Sie wartet schon eine Stunde ___ den Bus.",
     "options": ["auf", "an", "für", "bei"],
     "correctAnswer": 0,
-    "explanation": "Das Verb „warten“ wird mit „auf“ und Akkusativ verwendet.",
+    "explanation": "The verb warten takes auf + accusative. Literally: “She waits already an hour on the bus.”",
     "phrase": "Sie wartet schon eine Stunde auf den Bus.",
     "tags": ["Verben mit Präpositionen", "Akkusativ"]
   },
@@ -2147,15 +2142,15 @@
     "id": "DE150",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Voraussetzung“?",
+    "question": "What does 'die Voraussetzung' mean?",
     "options": [
-      "Eine notwendige Bedingung",
-      "Ein späteres Ergebnis",
-      "Eine zufällige Begegnung",
-      "Eine persönliche Meinung"
+      "A necessary condition",
+      "A later result",
+      "A chance encounter",
+      "A personal opinion"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Voraussetzung ist etwas, das erfüllt sein muss, damit etwas anderes möglich ist.",
+    "explanation": "A Voraussetzung is something that must be met for something else to be possible. Literally: “Good German-knowledge are a fore-setting (prerequisite) for this position.” (voraus = ahead, setzen = set)",
     "phrase": "Gute Deutschkenntnisse sind eine Voraussetzung für diese Stelle.",
     "tags": ["Abstrakte Begriffe", "Beruf"]
   },
@@ -2166,7 +2161,7 @@
     "question": "Wenn ich das früher gewusst hätte, ___ ich dir geholfen.",
     "options": ["habe", "hatte", "hätte", "werde"],
     "correctAnswer": 2,
-    "explanation": "Für eine irreale Bedingung in der Vergangenheit verwendet man den Konjunktiv II der Vergangenheit.",
+    "explanation": "For an unreal condition in the past, use Konjunktiv II of the past. Literally: “If I that earlier known had, had I you helped.”",
     "phrase": "Wenn ich das früher gewusst hätte, hätte ich dir geholfen.",
     "tags": ["Konjunktiv II", "Vergangenheit"]
   },
@@ -2177,7 +2172,7 @@
     "question": "Das ist ein Problem, ___ wir dringend lösen müssen.",
     "options": ["das", "dessen", "dem", "deren"],
     "correctAnswer": 0,
-    "explanation": "Das Relativpronomen „das“ steht hier im Akkusativ, weil es das Objekt von „lösen“ ist.",
+    "explanation": "The relative pronoun das is accusative here because it is the object of lösen. Literally: “That is a problem, that we urgently solve must.”",
     "phrase": "Das ist ein Problem, das wir dringend lösen müssen.",
     "tags": ["Relativsätze", "Akkusativ"]
   },
@@ -2185,15 +2180,15 @@
     "id": "DE153",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „sich auf etwas verlassen“?",
+    "question": "What does 'sich auf etwas verlassen' mean?",
     "options": [
-      "Etwas vergessen",
-      "Jemandem vertrauen",
-      "Etwas verkaufen",
-      "Jemanden überraschen"
+      "To forget something",
+      "To trust someone",
+      "To sell something",
+      "To surprise someone"
     ],
     "correctAnswer": 1,
-    "explanation": "Wer sich auf jemanden verlassen kann, kann dieser Person vertrauen.",
+    "explanation": "Whoever can sich auf jemanden verlassen can trust that person. Literally: “You can yourself at-any-time on me leave.” (verlassen = to leave, hence “rely on”)",
     "phrase": "Du kannst dich jederzeit auf mich verlassen.",
     "tags": ["Reflexive Verben", "Vertrauen"]
   },
@@ -2204,7 +2199,7 @@
     "question": "Er spricht, ___ er alles besser wüsste.",
     "options": ["als ob", "damit", "sobald", "bevor"],
     "correctAnswer": 0,
-    "explanation": "„Als ob“ leitet einen Vergleichssatz ein und steht häufig mit Konjunktiv II.",
+    "explanation": "Als ob introduces a comparison clause and is often used with Konjunktiv II. Literally: “He speaks, as if he everything better knew.”",
     "phrase": "Er spricht, als ob er alles besser wüsste.",
     "tags": ["Als ob", "Konjunktiv II"]
   },
@@ -2212,15 +2207,15 @@
     "id": "DE155",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Auswirkung“?",
+    "question": "What does 'die Auswirkung' mean?",
     "options": [
-      "Die Folge oder Wirkung von etwas",
-      "Der Beginn eines Projekts",
-      "Eine kurze Pause",
-      "Eine persönliche Einladung"
+      "The consequence or effect of something",
+      "The start of a project",
+      "A short break",
+      "A personal invitation"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Auswirkung ist eine Folge, die ein Ereignis oder eine Handlung hat.",
+    "explanation": "An Auswirkung is a consequence that an event or action has. Literally: Auswirkung = “out-working”; “Climate change has large out-workings on the environment.”",
     "phrase": "Der Klimawandel hat große Auswirkungen auf die Umwelt.",
     "tags": ["Wortschatz", "Umwelt"]
   },
@@ -2231,7 +2226,7 @@
     "question": "Sie hat sich entschieden, im Ausland ___.",
     "options": ["arbeiten", "arbeitet", "zu arbeiten", "gearbeitet"],
     "correctAnswer": 2,
-    "explanation": "Nach „sich entscheiden“ folgt bei dieser Konstruktion ein Infinitiv mit „zu“.",
+    "explanation": "After sich entscheiden, this construction takes an infinitive with zu. Literally: “She has herself decided, abroad to work.”",
     "phrase": "Sie hat sich entschieden, im Ausland zu arbeiten.",
     "tags": ["Infinitiv mit zu", "Reflexive Verben"]
   },
@@ -2242,7 +2237,7 @@
     "question": "Er konnte nicht kommen, ___ er krank war.",
     "options": ["deshalb", "trotzdem", "weil", "denn dass"],
     "correctAnswer": 2,
-    "explanation": "„Weil“ leitet einen kausalen Nebensatz ein; das Verb steht am Ende.",
+    "explanation": "Weil introduces a causal subordinate clause; the verb goes to the end. Literally: “He could not come, because he sick was.”",
     "phrase": "Er konnte nicht kommen, weil er krank war.",
     "tags": ["Kausalsätze", "Nebensätze"]
   },
@@ -2250,15 +2245,15 @@
     "id": "DE158",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „eine Aufgabe erledigen“?",
+    "question": "What does 'eine Aufgabe erledigen' mean?",
     "options": [
-      "Eine Aufgabe abschließen",
-      "Eine Aufgabe vergessen",
-      "Eine Aufgabe ablehnen",
-      "Eine Aufgabe verschieben"
+      "To complete a task",
+      "To forget a task",
+      "To refuse a task",
+      "To postpone a task"
     ],
     "correctAnswer": 0,
-    "explanation": "„Erledigen“ bedeutet, eine Aufgabe fertig zu machen.",
+    "explanation": "Erledigen means to finish a task. Literally: “I must before lunch still some tasks finish.”",
     "phrase": "Ich muss vor dem Mittagessen noch einige Aufgaben erledigen.",
     "tags": ["Wortverbindungen", "Arbeit"]
   },
@@ -2269,7 +2264,7 @@
     "question": "Ob du mitkommst, ___ ich noch nicht.",
     "options": ["weiß", "wisse", "gewusst", "wusste"],
     "correctAnswer": 0,
-    "explanation": "Der indirekte Fragesatz steht als Satzglied; im Hauptsatz steht das finite Verb an zweiter Stelle.",
+    "explanation": "An indirect question can come first; the finite verb of the main clause then stays in second position. Literally: “Whether you along-come, know I yet not.”",
     "phrase": "Ob du mitkommst, weiß ich noch nicht.",
     "tags": ["Indirekte Fragen", "Wortstellung"]
   },
@@ -2280,7 +2275,7 @@
     "question": "Die Straße ist wegen des Schnees ___ worden.",
     "options": ["gesperrt", "sperren", "sperrte", "sperrend"],
     "correctAnswer": 0,
-    "explanation": "Das Vorgangspassiv in der Vergangenheit wird mit „sein“ beziehungsweise hier „ist“ plus Partizip II und „worden“ gebildet.",
+    "explanation": "The past passive is formed with ist + past participle + worden. Literally: “The street is because-of the snow blocked been.”",
     "phrase": "Die Straße ist wegen des Schnees gesperrt worden.",
     "tags": ["Passiv", "Perfekt"]
   },
@@ -2288,15 +2283,15 @@
     "id": "DE161",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „berücksichtigen“?",
+    "question": "What does 'berücksichtigen' mean?",
     "options": [
-      "Etwas in Betracht ziehen",
-      "Etwas absichtlich zerstören",
-      "Etwas sofort ablehnen",
-      "Etwas laut wiederholen"
+      "To take something into account",
+      "To destroy something on purpose",
+      "To reject something immediately",
+      "To repeat something aloud"
     ],
     "correctAnswer": 0,
-    "explanation": "„Berücksichtigen“ bedeutet, etwas bei einer Entscheidung oder Planung zu beachten.",
+    "explanation": "Berücksichtigen means to take something into account in a decision or plan. Literally: from Rücksicht, “back-sight” (consideration); “Please take-into-account my experience in your decision.”",
     "phrase": "Bitte berücksichtigen Sie meine Erfahrung bei Ihrer Entscheidung.",
     "tags": ["Wortschatz", "Beruf"]
   },
@@ -2307,7 +2302,7 @@
     "question": "Je früher wir losfahren, ___ eher kommen wir an.",
     "options": ["umso", "ob", "denn", "während"],
     "correctAnswer": 0,
-    "explanation": "„Je …, umso …“ verbindet zwei Entwicklungen miteinander.",
+    "explanation": "“Je …, umso …” links two developments. Literally: “The earlier we off-drive, the-more soon arrive we.”",
     "phrase": "Je früher wir losfahren, umso eher kommen wir an.",
     "tags": ["Satzverbindungen", "Je desto"]
   },
@@ -2315,53 +2310,31 @@
     "id": "DE163",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was ist eine „Verpflichtung“?",
+    "question": "What is a 'Verpflichtung'?",
     "options": [
-      "Etwas, das man tun muss",
-      "Etwas, das man zufällig findet",
-      "Ein unverbindlicher Vorschlag",
-      "Ein unerwarteter Gewinn"
+      "Something you have to do",
+      "Something you find by chance",
+      "A non-binding suggestion",
+      "An unexpected gain"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Verpflichtung ist eine Aufgabe oder Verantwortung, der man nachkommen muss.",
+    "explanation": "A Verpflichtung is a task or responsibility one must fulfil. Literally: from Pflicht, “duty”; “The care of-my children is an important obligation.”",
     "phrase": "Die Betreuung meiner Kinder ist eine wichtige Verpflichtung.",
     "tags": ["Wortschatz", "Verantwortung"]
-  },
-  {
-    "id": "DE164",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Ich bin es gewohnt, früh ___.",
-    "options": ["aufstehen", "aufgestanden", "aufzustehen", "stehe auf"],
-    "correctAnswer": 2,
-    "explanation": "Nach „gewohnt sein“ steht häufig ein Infinitiv mit „zu“; bei trennbaren Verben wird „zu“ eingeschoben.",
-    "phrase": "Ich bin es gewohnt, früh aufzustehen.",
-    "tags": ["Infinitiv mit zu", "Trennbare Verben"]
-  },
-  {
-    "id": "DE165",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Sie hat den Zug verpasst, ___ sie zu spät losgegangen ist.",
-    "options": ["obwohl", "weil", "damit", "sodass"],
-    "correctAnswer": 1,
-    "explanation": "„Weil“ gibt den Grund an, warum sie den Zug verpasst hat.",
-    "phrase": "Sie hat den Zug verpasst, weil sie zu spät losgegangen ist.",
-    "tags": ["Kausalsätze", "Konjunktionen"]
   },
   {
     "id": "DE166",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Gelegenheit nutzen“?",
+    "question": "What does 'die Gelegenheit nutzen' mean?",
     "options": [
-      "Eine Chance ergreifen",
-      "Eine Einladung ablehnen",
-      "Einen Fehler wiederholen",
-      "Eine Arbeit unterbrechen"
+      "To seize a chance",
+      "To decline an invitation",
+      "To repeat a mistake",
+      "To interrupt work"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer eine Gelegenheit nutzt, ergreift eine günstige Chance.",
+    "explanation": "Whoever uses an opportunity seizes a favourable chance. Literally: “I would-like the opportunity use, in-order-to myself to introduce.”",
     "phrase": "Ich möchte die Gelegenheit nutzen, um mich vorzustellen.",
     "tags": ["Wortverbindungen", "Kommunikation"]
   },
@@ -2372,7 +2345,7 @@
     "question": "Er fragte mich, ___ ich ihm helfen könne.",
     "options": ["ob", "dass", "denn", "damit"],
     "correctAnswer": 0,
-    "explanation": "Bei einer indirekten Ja-Nein-Frage verwendet man „ob“.",
+    "explanation": "For an indirect yes/no question, use ob. Literally: “He asked me, whether I him help could.”",
     "phrase": "Er fragte mich, ob ich ihm helfen könne.",
     "tags": ["Indirekte Fragen", "Konjunktiv I"]
   },
@@ -2380,15 +2353,15 @@
     "id": "DE168",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „etwas in Anspruch nehmen“?",
+    "question": "What does 'etwas in Anspruch nehmen' mean?",
     "options": [
-      "Etwas nutzen oder beanspruchen",
-      "Etwas verschenken",
-      "Etwas vermeiden",
-      "Etwas reparieren"
+      "To use or make use of something",
+      "To give something away",
+      "To avoid something",
+      "To repair something"
     ],
     "correctAnswer": 0,
-    "explanation": "„In Anspruch nehmen“ bedeutet, eine Leistung oder Hilfe zu nutzen.",
+    "explanation": "In Anspruch nehmen means to make use of a service or help. Literally: “in claim take”; “For the advice can you our free service in claim take.”",
     "phrase": "Für die Beratung können Sie unseren kostenlosen Service in Anspruch nehmen.",
     "tags": ["Wortverbindungen", "Dienstleistungen"]
   },
@@ -2399,7 +2372,7 @@
     "question": "Das Fahrrad, mit ___ ich zur Arbeit fahre, ist neu.",
     "options": ["das", "dem", "dessen", "den"],
     "correctAnswer": 1,
-    "explanation": "Nach der Präposition „mit“ steht der Dativ; deshalb heißt es „mit dem“.",
+    "explanation": "After the preposition mit, the dative is used, so mit dem. Literally: “The bicycle, with which I to work ride, is new.”",
     "phrase": "Das Fahrrad, mit dem ich zur Arbeit fahre, ist neu.",
     "tags": ["Relativsätze", "Dativ"]
   },
@@ -2407,15 +2380,15 @@
     "id": "DE170",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Rücksicht nehmen auf“?",
+    "question": "What does 'Rücksicht nehmen auf' mean?",
     "options": [
-      "Die Bedürfnisse anderer beachten",
-      "Jemanden absichtlich ignorieren",
-      "Eine Entscheidung zurücknehmen",
-      "Etwas schnell erledigen"
+      "To consider other people's needs",
+      "To deliberately ignore someone",
+      "To take back a decision",
+      "To get something done quickly"
     ],
     "correctAnswer": 0,
-    "explanation": "„Rücksicht nehmen auf“ bedeutet, die Situation oder Gefühle anderer zu beachten.",
+    "explanation": "Rücksicht nehmen auf means to consider other people’s situation or feelings. Literally: “consideration take on”; “Please take consideration on the other passengers.”",
     "phrase": "Bitte nehmen Sie Rücksicht auf die anderen Fahrgäste.",
     "tags": ["Wortverbindungen", "Soziales Verhalten"]
   },
@@ -2426,7 +2399,7 @@
     "question": "Er spart Geld, ___ er sich ein Auto kaufen kann.",
     "options": ["obwohl", "damit", "während", "sobald"],
     "correctAnswer": 1,
-    "explanation": "„Damit“ leitet einen Finalsatz ein, der ein Ziel oder einen Zweck ausdrückt.",
+    "explanation": "Damit introduces a purpose clause expressing a goal. Literally: “He saves money, so-that he himself a car buy can.”",
     "phrase": "Er spart Geld, damit er sich ein Auto kaufen kann.",
     "tags": ["Finalsätze", "Nebensätze"]
   },
@@ -2434,42 +2407,31 @@
     "id": "DE172",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „sich durchsetzen“?",
+    "question": "What does 'sich durchsetzen' mean?",
     "options": [
-      "Mit seiner Meinung oder seinem Plan Erfolg haben",
-      "Eine Aufgabe sofort aufgeben",
-      "Sich bei jemandem entschuldigen",
-      "Eine Reise vorbereiten"
+      "To succeed with your opinion or plan",
+      "To give up a task immediately",
+      "To apologise to someone",
+      "To prepare a trip"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer sich durchsetzt, erreicht, dass die eigene Position akzeptiert wird.",
+    "explanation": "Whoever sich durchsetzt gets their own position accepted. Literally: “to set oneself through”; “She could herself with her proposal through-set.”",
     "phrase": "Sie konnte sich mit ihrem Vorschlag durchsetzen.",
     "tags": ["Reflexive Verben", "Diskussion"]
-  },
-  {
-    "id": "DE173",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Nachdem der Film zu Ende gewesen war, ___ wir nach Hause.",
-    "options": ["gingen", "gehen", "gegangen", "ging"],
-    "correctAnswer": 0,
-    "explanation": "„Wir“ verlangt im Präteritum die Verbform „gingen“.",
-    "phrase": "Nachdem der Film zu Ende gewesen war, gingen wir nach Hause.",
-    "tags": ["Präteritum", "Plusquamperfekt"]
   },
   {
     "id": "DE174",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „eine Behauptung aufstellen“?",
+    "question": "What does 'eine Behauptung aufstellen' mean?",
     "options": [
-      "Etwas als wahr darstellen",
-      "Eine Frage höflich beantworten",
-      "Einen Vertrag unterschreiben",
-      "Eine Aufgabe verteilen"
+      "To present something as true",
+      "To politely answer a question",
+      "To sign a contract",
+      "To distribute a task"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Behauptung ist eine Aussage, die als wahr dargestellt wird, ohne dass sie unbedingt bewiesen ist.",
+    "explanation": "A Behauptung is a statement presented as true, not necessarily proven. Literally: “to set up an assertion”; “He set-up the assertion, that nobody informed been be.”",
     "phrase": "Er stellte die Behauptung auf, dass niemand informiert worden sei.",
     "tags": ["Wortverbindungen", "Diskussion"]
   },
@@ -2480,7 +2442,7 @@
     "question": "Das Ergebnis hängt davon ab, wie sorgfältig du ___.",
     "options": ["arbeitest", "arbeiten", "gearbeitet", "arbeitest du"],
     "correctAnswer": 0,
-    "explanation": "In indirekten Fragen steht das finite Verb am Ende des Nebensatzes.",
+    "explanation": "In indirect questions, the finite verb goes to the end of the subordinate clause. Literally: “The result hangs there-of off, how carefully you work.”",
     "phrase": "Das Ergebnis hängt davon ab, wie sorgfältig du arbeitest.",
     "tags": ["Indirekte Fragen", "Wortstellung"]
   },
@@ -2488,42 +2450,31 @@
     "id": "DE176",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Fähigkeit“?",
+    "question": "What does 'die Fähigkeit' mean?",
     "options": [
-      "Das Können, etwas zu tun",
-      "Die Pflicht, etwas zu bezahlen",
-      "Die Angst vor etwas",
-      "Der Wunsch nach Urlaub"
+      "The ability to do something",
+      "The duty to pay something",
+      "The fear of something",
+      "The wish for a holiday"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Fähigkeit ist das Können oder die Begabung, etwas auszuführen.",
+    "explanation": "A Fähigkeit is the ability or talent to do something. Literally: from fähig, “capable”; “Communication-ability is in this profession especially important.”",
     "phrase": "Kommunikationsfähigkeit ist in diesem Beruf besonders wichtig.",
     "tags": ["Wortschatz", "Beruf"]
-  },
-  {
-    "id": "DE177",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Er tat so, ___ hätte er nichts gehört.",
-    "options": ["als ob", "weil", "bevor", "sodass"],
-    "correctAnswer": 0,
-    "explanation": "Die Konstruktion „so tun, als ob“ wird oft mit Konjunktiv II verwendet.",
-    "phrase": "Er tat so, als ob er nichts gehört hätte.",
-    "tags": ["Als ob", "Konjunktiv II"]
   },
   {
     "id": "DE178",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „einen Kompromiss schließen“?",
+    "question": "What does 'einen Kompromiss schließen' mean?",
     "options": [
-      "Eine gemeinsame Lösung finden",
-      "Einen Streit absichtlich verlängern",
-      "Eine Vereinbarung geheim halten",
-      "Eine Aufgabe ablehnen"
+      "To find a shared solution",
+      "To deliberately prolong a dispute",
+      "To keep an agreement secret",
+      "To refuse a task"
     ],
     "correctAnswer": 0,
-    "explanation": "Bei einem Kompromiss kommen mehrere Seiten einander entgegen.",
+    "explanation": "In a Kompromiss, several sides come towards each other. Literally: “a compromise close” (schließen = close, conclude); “After long discussion could both sides a compromise close.”",
     "phrase": "Nach langer Diskussion konnten beide Seiten einen Kompromiss schließen.",
     "tags": ["Wortverbindungen", "Konfliktlösung"]
   },
@@ -2534,7 +2485,7 @@
     "question": "Trotz ___ Wetters fand das Konzert statt.",
     "options": ["schlechtes", "schlechtem", "schlechten", "schlechter"],
     "correctAnswer": 2,
-    "explanation": "„Trotz“ wird standardsprachlich mit dem Genitiv verwendet: „trotz schlechten Wetters“.",
+    "explanation": "In standard German, trotz takes the genitive: trotz schlechten Wetters. Literally: “Despite bad weather’s took-place the concert.”",
     "phrase": "Trotz schlechten Wetters fand das Konzert statt.",
     "tags": ["Genitiv", "Präpositionen"]
   },
@@ -2542,15 +2493,15 @@
     "id": "DE180",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „etwas nachweisen“?",
+    "question": "What does 'etwas nachweisen' mean?",
     "options": [
-      "Etwas beweisen oder belegen",
-      "Etwas versehentlich verlieren",
-      "Etwas später bezahlen",
-      "Etwas sorgfältig verpacken"
+      "To prove or document something",
+      "To lose something by mistake",
+      "To pay for something later",
+      "To pack something carefully"
     ],
     "correctAnswer": 0,
-    "explanation": "„Nachweisen“ bedeutet, mit Belegen oder Beweisen zu zeigen, dass etwas zutrifft.",
+    "explanation": "Nachweisen means to show with evidence that something is true. Literally: “after-point” (nach = after, weisen = point); “She could her work-experience through certificates prove.”",
     "phrase": "Sie konnte ihre Berufserfahrung durch Zeugnisse nachweisen.",
     "tags": ["Wortschatz", "Beweise"]
   },
@@ -2566,7 +2517,7 @@
       "verabschiedete"
     ],
     "correctAnswer": 2,
-    "explanation": "Nach „ohne“ steht bei einer Infinitivkonstruktion „zu“ plus Infinitiv.",
+    "explanation": "After ohne, an infinitive clause takes zu + infinitive. Literally: “He is gone, without himself to say-goodbye.”",
     "phrase": "Er ist gegangen, ohne sich zu verabschieden.",
     "tags": ["Infinitiv mit zu", "Ohne zu"]
   },
@@ -2574,15 +2525,15 @@
     "id": "DE182",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Maßnahme“?",
+    "question": "What does 'die Maßnahme' mean?",
     "options": [
-      "Eine Handlung, um ein Ziel zu erreichen",
-      "Eine zufällige Beobachtung",
-      "Eine persönliche Erinnerung",
-      "Eine unnötige Verzögerung"
+      "An action taken to achieve a goal",
+      "A chance observation",
+      "A personal memory",
+      "An unnecessary delay"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Maßnahme ist eine gezielte Handlung, die einem bestimmten Zweck dient.",
+    "explanation": "A Maßnahme is a deliberate action serving a specific purpose. Literally: “measure-taking” (Maß = measure, nehmen = take); “The new measures should the traffic safer make.”",
     "phrase": "Die neuen Maßnahmen sollen den Verkehr sicherer machen.",
     "tags": ["Wortschatz", "Gesellschaft"]
   },
@@ -2593,7 +2544,7 @@
     "question": "Er ist nicht nur freundlich, ___ auch sehr hilfsbereit.",
     "options": ["sondern", "aber", "denn", "oder"],
     "correctAnswer": 0,
-    "explanation": "Die feste Verbindung lautet „nicht nur …, sondern auch …“.",
+    "explanation": "The fixed pair is nicht nur …, sondern auch … Literally: “He is not only friendly, but also very help-ready.” (hilfsbereit = “help-ready”)",
     "phrase": "Er ist nicht nur freundlich, sondern auch sehr hilfsbereit.",
     "tags": ["Doppelkonjunktionen", "Satzverbindungen"]
   },
@@ -2601,15 +2552,15 @@
     "id": "DE184",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „sich einer Herausforderung stellen“?",
+    "question": "What does 'sich einer Herausforderung stellen' mean?",
     "options": [
-      "Eine schwierige Aufgabe annehmen",
-      "Eine Aufgabe heimlich vermeiden",
-      "Eine Person öffentlich kritisieren",
-      "Einen Termin absagen"
+      "To take on a difficult task",
+      "To secretly avoid a task",
+      "To publicly criticise a person",
+      "To cancel an appointment"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer sich einer Herausforderung stellt, ist bereit, eine schwierige Situation anzugehen.",
+    "explanation": "Whoever sich einer Herausforderung stellt is ready to tackle a difficult situation. Literally: “to place oneself to a challenge”; Herausforderung = “out-demand”.",
     "phrase": "Sie möchte sich einer neuen beruflichen Herausforderung stellen.",
     "tags": ["Wortverbindungen", "Motivation"]
   },
@@ -2620,7 +2571,7 @@
     "question": "Das Buch wurde von einer bekannten Autorin ___.",
     "options": ["schreiben", "geschrieben", "schrieb", "geschreibt"],
     "correctAnswer": 1,
-    "explanation": "Das Passiv im Präteritum wird mit „wurde“ und dem Partizip II gebildet.",
+    "explanation": "The simple-past passive uses wurde + past participle. Literally: “The book became by a famous author written.”",
     "phrase": "Das Buch wurde von einer bekannten Autorin geschrieben.",
     "tags": ["Passiv", "Partizip II"]
   },
@@ -2628,69 +2579,47 @@
     "id": "DE186",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „etwas in Frage stellen“?",
+    "question": "What does 'etwas in Frage stellen' mean?",
     "options": [
-      "Zweifel an etwas äußern",
-      "Etwas endgültig bestätigen",
-      "Eine Frage schriftlich beantworten",
-      "Eine Entscheidung sofort umsetzen"
+      "To express doubt about something",
+      "To confirm something for good",
+      "To answer a question in writing",
+      "To implement a decision immediately"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer etwas in Frage stellt, bezweifelt, dass es richtig oder sinnvoll ist.",
+    "explanation": "Whoever puts something in Frage doubts that it is right or sensible. Literally: “in question put”; “Nobody wanted his decision publicly in question put.”",
     "phrase": "Niemand wollte seine Entscheidung öffentlich in Frage stellen.",
     "tags": ["Wortverbindungen", "Meinung"]
-  },
-  {
-    "id": "DE187",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Sie ging früher nach Hause, ___ sie sich nicht gut fühlte.",
-    "options": ["obwohl", "weil", "damit", "während"],
-    "correctAnswer": 1,
-    "explanation": "„Weil“ erklärt den Grund für das frühere Nach-Hause-Gehen.",
-    "phrase": "Sie ging früher nach Hause, weil sie sich nicht gut fühlte.",
-    "tags": ["Kausalsätze", "Konjunktionen"]
   },
   {
     "id": "DE188",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Verantwortung übernehmen“?",
+    "question": "What does 'die Verantwortung übernehmen' mean?",
     "options": [
-      "Für etwas zuständig sein und dafür einstehen",
-      "Eine Aufgabe an jemand anderen abgeben",
-      "Eine Frage unbeantwortet lassen",
-      "Einen Vorschlag ignorieren"
+      "To be responsible for something and stand by it",
+      "To hand a task over to someone else",
+      "To leave a question unanswered",
+      "To ignore a proposal"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer Verantwortung übernimmt, steht für eine Aufgabe oder deren Folgen ein.",
+    "explanation": "Whoever takes responsibility answers for a task or its consequences. Literally: “the responsibility over-take”; Verantwortung = “answer-ing”.",
     "phrase": "Sie übernimmt die Verantwortung für das gesamte Projekt.",
     "tags": ["Wortverbindungen", "Verantwortung"]
-  },
-  {
-    "id": "DE189",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Je mehr man liest, ___ größer wird der Wortschatz.",
-    "options": ["desto", "ob", "denn", "damit"],
-    "correctAnswer": 0,
-    "explanation": "Die Vergleichskonstruktion lautet „je …, desto …“.",
-    "phrase": "Je mehr man liest, desto größer wird der Wortschatz.",
-    "tags": ["Je desto", "Komparativ"]
   },
   {
     "id": "DE190",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Absicht“?",
+    "question": "What does 'die Absicht' mean?",
     "options": [
-      "Ein Plan oder das Ziel, etwas zu tun",
-      "Eine unvorhersehbare Folge",
-      "Ein Beweis für einen Fehler",
-      "Eine gesetzliche Strafe"
+      "A plan or goal to do something",
+      "An unforeseeable consequence",
+      "Proof of a mistake",
+      "A legal penalty"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Absicht ist das, was jemand tun möchte oder beabsichtigt.",
+    "explanation": "An Absicht is what someone wants or intends to do. Literally: “I had not the intention, you to hurt.”",
     "phrase": "Ich hatte nicht die Absicht, dich zu verletzen.",
     "tags": ["Wortschatz", "Abstrakte Begriffe"]
   },
@@ -2701,7 +2630,7 @@
     "question": "Anstatt lange zu diskutieren, ___ wir sofort mit der Arbeit.",
     "options": ["begannen", "beginnen wir", "begonnen", "beginnt"],
     "correctAnswer": 0,
-    "explanation": "Der Satz verwendet das Präteritum „begannen“ für eine abgeschlossene Handlung in der Vergangenheit.",
+    "explanation": "The sentence uses the simple past begannen for a completed past action. Literally: “Instead-of long to discuss, began we immediately with-the work.”",
     "phrase": "Anstatt lange zu diskutieren, begannen wir sofort mit der Arbeit.",
     "tags": ["Anstatt zu", "Präteritum"]
   },
@@ -2709,69 +2638,47 @@
     "id": "DE192",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „eine Frist einhalten“?",
+    "question": "What does 'eine Frist einhalten' mean?",
     "options": [
-      "Etwas rechtzeitig erledigen",
-      "Eine Aufgabe vollständig vergessen",
-      "Eine Besprechung verlängern",
-      "Einen Vertrag ablehnen"
+      "To get something done on time",
+      "To completely forget a task",
+      "To extend a meeting",
+      "To reject a contract"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Frist einzuhalten bedeutet, etwas bis zum festgelegten Zeitpunkt zu erledigen.",
+    "explanation": "Keeping a Frist means getting something done by the set deadline. Literally: “a deadline hold-in” (einhalten); “Please hold the deadline for the application in.”",
     "phrase": "Bitte halten Sie die Frist für die Bewerbung ein.",
     "tags": ["Wortverbindungen", "Organisation"]
-  },
-  {
-    "id": "DE193",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Ich hätte gern gewusst, ___ der Zug Verspätung hat.",
-    "options": ["ob", "dass", "denn", "damit"],
-    "correctAnswer": 0,
-    "explanation": "Bei einer indirekten Ja-Nein-Frage steht „ob“.",
-    "phrase": "Ich hätte gern gewusst, ob der Zug Verspätung hat.",
-    "tags": ["Indirekte Fragen", "Konjunktiv II"]
   },
   {
     "id": "DE194",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „die Fähigkeit erwerben“?",
+    "question": "What does 'die Fähigkeit erwerben' mean?",
     "options": [
-      "Etwas lernen und entwickeln",
-      "Eine Fähigkeit absichtlich verlieren",
-      "Eine Aufgabe weitergeben",
-      "Eine Meinung zurückziehen"
+      "To learn and develop something",
+      "To deliberately lose an ability",
+      "To pass on a task",
+      "To withdraw an opinion"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Fähigkeit erwirbt man, indem man etwas lernt oder übt.",
+    "explanation": "You acquire an ability by learning or practising. Literally: “an ability acquire”; “Through regular training can one new abilities acquire.”",
     "phrase": "Durch regelmäßiges Training kann man neue Fähigkeiten erwerben.",
     "tags": ["Wortverbindungen", "Lernen"]
-  },
-  {
-    "id": "DE195",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Nachdem er die Prüfung bestanden hatte, ___ er eine Feier.",
-    "options": ["organisierte", "organisieren", "organisiert", "organisiere"],
-    "correctAnswer": 0,
-    "explanation": "„Organisierte“ ist die passende Präteritumform für die Handlung im Hauptsatz.",
-    "phrase": "Nachdem er die Prüfung bestanden hatte, organisierte er eine Feier.",
-    "tags": ["Plusquamperfekt", "Präteritum"]
   },
   {
     "id": "DE196",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „einen Eindruck hinterlassen“?",
+    "question": "What does 'einen Eindruck hinterlassen' mean?",
     "options": [
-      "Bei anderen eine bestimmte Wirkung erzeugen",
-      "Eine Nachricht nicht abschicken",
-      "Eine Aufgabe unvollständig lassen",
-      "Eine Einladung vergessen"
+      "To create a certain effect on others",
+      "To not send a message",
+      "To leave a task unfinished",
+      "To forget an invitation"
     ],
     "correctAnswer": 0,
-    "explanation": "Wer einen Eindruck hinterlässt, beeinflusst, wie andere ihn wahrnehmen.",
+    "explanation": "Whoever leaves an impression influences how others perceive them. Literally: “an impression behind-leave”; “The applicant has at-the interview a good impression behind-left.”",
     "phrase": "Der Bewerber hat beim Gespräch einen guten Eindruck hinterlassen.",
     "tags": ["Wortverbindungen", "Kommunikation"]
   },
@@ -2782,7 +2689,7 @@
     "question": "Er hat die Unterlagen vorbereitet, ___ wir sofort anfangen können.",
     "options": ["sodass", "obwohl", "bevor", "während"],
     "correctAnswer": 0,
-    "explanation": "„Sodass“ leitet einen Konsekutivsatz ein und beschreibt eine Folge.",
+    "explanation": "Sodass introduces a consecutive clause describing a result. Literally: “He has the documents prepared, so-that we immediately begin can.”",
     "phrase": "Er hat die Unterlagen vorbereitet, sodass wir sofort anfangen können.",
     "tags": ["Konsekutivsätze", "Nebensätze"]
   },
@@ -2790,15 +2697,15 @@
     "id": "DE198",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „sich an etwas gewöhnen“?",
+    "question": "What does 'sich an etwas gewöhnen' mean?",
     "options": [
-      "Etwas mit der Zeit als normal empfinden",
-      "Etwas sofort ablehnen",
-      "Etwas absichtlich vergessen",
-      "Etwas für jemand anderen erledigen"
+      "To come to feel something is normal over time",
+      "To reject something immediately",
+      "To forget something on purpose",
+      "To do something for someone else"
     ],
     "correctAnswer": 0,
-    "explanation": "Wenn man sich an etwas gewöhnt, wird es einem mit der Zeit vertraut oder normal.",
+    "explanation": "When you get used to something, it becomes familiar or normal over time. Literally: “oneself on something accustom”; “At the start was the work hard, but I have myself there-to accustomed.”",
     "phrase": "Am Anfang war die Arbeit schwierig, aber ich habe mich daran gewöhnt.",
     "tags": ["Reflexive Verben", "Alltag"]
   },
@@ -2809,7 +2716,7 @@
     "question": "Sie fragte, wann der nächste Bus ___.",
     "options": ["abfährt", "fährt ab", "abfahren", "abgefahren"],
     "correctAnswer": 0,
-    "explanation": "In einer indirekten Frage steht das finite Verb am Ende des Nebensatzes; bei trennbaren Verben bleibt die Vorsilbe beim Verb.",
+    "explanation": "In an indirect question, the finite verb goes to the end; with separable verbs the prefix stays attached to the verb. Literally: “She asked, when the next bus off-drives.”",
     "phrase": "Sie fragte, wann der nächste Bus abfährt.",
     "tags": ["Indirekte Fragen", "Trennbare Verben"]
   },
@@ -2817,15 +2724,15 @@
     "id": "DE200",
     "category": "Vocabulary",
     "level": "B1",
-    "question": "Was bedeutet „eine Schlussfolgerung ziehen“?",
+    "question": "What does 'eine Schlussfolgerung ziehen' mean?",
     "options": [
-      "Aus Informationen ein Ergebnis ableiten",
-      "Eine Diskussion ohne Ergebnis beenden",
-      "Eine Aufgabe an jemand anderen übertragen",
-      "Einen Plan spontan ändern"
+      "To derive a result from information",
+      "To end a discussion without a result",
+      "To hand a task over to someone else",
+      "To change a plan spontaneously"
     ],
     "correctAnswer": 0,
-    "explanation": "Eine Schlussfolgerung ist ein Ergebnis, das man aus Informationen oder Beobachtungen ableitet.",
+    "explanation": "A Schlussfolgerung is a result you derive from information or observations. Literally: “conclusion-following” (Schluss = end, conclusion); “From the results can we an important conclusion draw.”",
     "phrase": "Aus den Ergebnissen können wir eine wichtige Schlussfolgerung ziehen.",
     "tags": ["Wortverbindungen", "Argumentation"]
   }

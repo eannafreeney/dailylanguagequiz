@@ -6,6 +6,8 @@ export type Question = {
   options: string[];
   answer?: string;
   explanation?: string;
+  level?: string;
+  phrase?: string;
   correctAnswer: number;
 };
 

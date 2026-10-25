@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { getDailyQuestions } from "./utils";
+import { getDailyQuestions, redirectUrl } from "./utils";
 
 const start = new Date("2026-01-01T12:00:00.000Z");
 const day = (n: number) => new Date(start.getTime() + n * 86_400_000);
@@ -29,3 +29,14 @@ for (const lang of ["ga", "de", "ru"] as const) {
   );
   console.log(lang, "unique days", period, "questions", seen.size);
 }
+
+assert.equal(
+  redirectUrl("https://mydaily.irish/ga/question/2?x=1"),
+  "https://dailyirishquiz.com/ga/question/2?x=1",
+);
+assert.equal(
+  redirectUrl("https://www.mydaily.irish/confirm?token=abc"),
+  "https://dailyirishquiz.com/confirm?token=abc",
+);
+assert.equal(redirectUrl("https://dailyirishquiz.com/"), undefined);
+assert.equal(redirectUrl("https://dailygermanquiz.com/"), undefined);

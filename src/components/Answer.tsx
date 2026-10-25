@@ -46,6 +46,7 @@ const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, 
           {!isCorrect && <p class={`mt-2 leading-relaxed ${styles.text}`}>{message ?? styles.description}</p>}
           {isCorrect && (
             <div class="mt-2 flex flex-col gap-4">
+              {question?.phrase && <p class={`text-lg font-semibold ${styles.heading}`}>{question.phrase}</p>}
               {question?.explanation && <p class={`leading-relaxed ${styles.text}`}>{question.explanation}</p>}
               {!isComplete && <NextQuestionButton nextNumber={nextNumber} langCode={langCode} />}
             </div>

@@ -4,6 +4,10 @@
   "compatibility_date": "2026-10-01",
   "assets": { "directory": "./public" },
   "routes": [
+    { "pattern": "dailyirishquiz.com", "custom_domain": true },
+    { "pattern": "www.dailyirishquiz.com", "custom_domain": true },
+    { "pattern": "dailygermanquiz.com", "custom_domain": true },
+    { "pattern": "www.dailygermanquiz.com", "custom_domain": true },
     { "pattern": "mydaily.irish", "custom_domain": true },
     { "pattern": "www.mydaily.irish", "custom_domain": true },
   ],

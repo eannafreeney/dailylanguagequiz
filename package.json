@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "node scripts/dev.mjs",
     "typecheck": "tsc --noEmit",
     "deploy": "npm run build:css && wrangler deploy",
     "build:css": "tailwindcss -i ./src/styles.css -o ./public/tailwind.css --minify"

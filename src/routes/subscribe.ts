@@ -1,12 +1,6 @@
 import { Context } from "hono";
-import { languages } from "../lib/languages";
+import { DOMAIN_TO_LANG, languages } from "../lib/languages";
 import { getEnv, sendEmail } from "../lib/email";
-
-const DOMAIN_TO_LANG: Record<string, string> = {
-  "mydaily.irish": "ga", "www.mydaily.irish": "ga",
-  "mydailygermanquiz.com": "de", "www.mydailygermanquiz.com": "de",
-  "ga.localhost": "ga", "de.localhost": "de",
-};
 
 export async function subscribeHandler(c: Context) {
   const env = getEnv(c);

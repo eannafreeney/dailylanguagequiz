@@ -81,13 +81,8 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
   ).all<Subscriber>();
   console.log("[daily-email] Eligible subscribers:", results.length);
   for (const subscriber of results) {
-    const language = languages.find(
-      (item) => item.langCode === subscriber.lang_code,
-    );
-    if (!language) continue;
-    const quizUrl = new URL("/", subscriber.site_url).toString();
-    const unsubscribeUrl = new URL("/unsubscribe", subscriber.site_url);
-    unsubscribeUrl.searchParams.set("token", subscriber.token);
+    const message = reminderMessage(subscriber);
+    if (!message) continue;
     try {
       // Claim this recipient/date before sending so a retried scheduled event won't resend.
       const claim = await env.DB.prepare(
@@ -100,12 +95,7 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
         "[daily-email] Sending reminder for language:",
         subscriber.lang_code,
       );
-      await sendEmail(
-        env,
-        subscriber.email,
-        `Your daily ${language.englishName} quiz is ready`,
-        `<p>Good morning!</p><p>Your daily ${language.englishName} practice is ready. Take five questions and build your skills a little every day.</p><p><a href="${quizUrl}">Start today's quiz</a></p><p style="font-size:12px;color:#666">You're receiving this because you subscribed to the daily quiz. <a href="${unsubscribeUrl}">Unsubscribe</a>.</p>`,
-      );
+      await sendEmail(env, subscriber.email, message.subject, message.html);
       console.log(
         "[daily-email] Resend accepted reminder for language:",
         subscriber.lang_code,
@@ -133,6 +123,18 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
       );
     }
   }
+}
+
+export function reminderMessage(subscriber: Pick<Subscriber, "lang_code" | "token">) {
+  const language = languages.find((item) => item.langCode === subscriber.lang_code);
+  if (!language?.siteUrl) return;
+  const quizUrl = new URL("/", language.siteUrl).toString();
+  const unsubscribeUrl = new URL("/unsubscribe", language.siteUrl);
+  unsubscribeUrl.searchParams.set("token", subscriber.token);
+  return {
+    subject: `Your daily ${language.englishName} quiz is ready`,
+    html: `<p>Good morning!</p><p>Your daily ${language.englishName} practice is ready. Take five questions and build your skills a little every day.</p><p><a href="${quizUrl}">Start today's quiz</a></p><p style="font-size:12px;color:#666">You're receiving this because you subscribed to the daily ${language.englishName} quiz. <a href="${unsubscribeUrl}">Unsubscribe</a>.</p>`,
+  };
 }
 
 export function dublinYesterday(todayYmd: string) {

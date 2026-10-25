@@ -1,5 +1,7 @@
 import { LangCode } from "./types";
 import { quizzes } from "./lib/quizzes";
+import { DOMAIN_TO_LANG, HOST_REDIRECTS, languages } from "./lib/languages";
+import { Context } from "hono";
 
 const DAILY_QUESTION_COUNT = 5;
 const DAY_MS = 86_400_000;
@@ -23,3 +25,16 @@ export function getDailyQuestions(langCode: LangCode, now = new Date()) {
   const start = (day % (usable / DAILY_QUESTION_COUNT)) * DAILY_QUESTION_COUNT;
   return deck.slice(start, start + DAILY_QUESTION_COUNT);
 }
+
+export const getHostLang = (c: Context) =>
+  DOMAIN_TO_LANG[new URL(c.req.url).hostname];
+
+export function redirectUrl(requestUrl: string) {
+  const url = new URL(requestUrl);
+  const target = HOST_REDIRECTS[url.hostname];
+  if (!target) return;
+  return new URL(url.pathname + url.search, target).toString();
+}
+
+export const isLangCode = (value: string): value is LangCode =>
+  languages.some((item) => item.langCode === value);
