@@ -26,7 +26,7 @@ const Layout = ({ langCode, children }: Props) => {
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
       </head>
       <body class="bg-white">
-        <Header title={title} kicker={kicker} questionCount={quizzes[langCode].length} langCode={langCode} />
+        <Header title={title} kicker={kicker} questionCount={quizzes[langCode as keyof typeof quizzes].length} langCode={langCode} />
         <main class="my-4 px-4">{children}</main>
         <Footer title={title} kicker={kicker} langCode={langCode} />
       </body>
