@@ -20,7 +20,6 @@ const LanguagePage = ({ langCode }: Props) => {
           <h1 class="text-2xl font-bold tracking-tight text-slate-900">
             Daily {language.englishName} quiz
           </h1>
-          <p class="mt-2 text-base leading-relaxed text-slate-600">{language.description}</p>
         </div>
         <ReminderPanel langCode={langCode} />
         <div id="quiz">

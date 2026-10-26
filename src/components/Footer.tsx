@@ -6,7 +6,14 @@ type Props = { title: string; kicker: string; langCode: LangCode };
 
 const Footer = ({ title, kicker, langCode }: Props) => {
   const { links, theme } = languageConfig[langCode];
-  const siteName = languages.find((item) => item.langCode === langCode)?.siteName;
+  const language = languages.find((item) => item.langCode === langCode);
+
+  if (!language) {
+    return null;
+  }
+
+  const { siteName, description } = language;
+
   const logoHover = `hover:text-${theme.accentText}`;
   const linkColor = `text-${theme.accentText} hover:text-${theme.accentText}200`;
 
@@ -29,6 +36,9 @@ const Footer = ({ title, kicker, langCode }: Props) => {
             </a>
             <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">
               {kicker}
+            </p>
+            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">
+              {description}
             </p>
           </div>
           {links.length > 0 && (
