@@ -66,6 +66,27 @@ const germanTheme: LanguageTheme = {
     "mt-auto border-t-4 border-amber-400 bg-neutral-950 text-slate-300",
 };
 
+const italianTheme: LanguageTheme = {
+  accent: "bg-green-700",
+  accentHover: "hover:bg-green-800",
+  accentSoft: "bg-green-50",
+  accentBorder: "border-green-200",
+  accentText: "text-green-800",
+  focus: "focus-visible:outline-green-700",
+  progress: "bg-red-500",
+  progressTrack: "bg-slate-200",
+  radio:
+    "checked:border-green-600 checked:bg-[radial-gradient(circle,_#16a34a_35%,_white_40%)]",
+  selectedOption: "has-[:checked]:border-green-600 has-[:checked]:bg-green-50",
+  optionHover: "hover:border-green-400 hover:bg-green-50",
+  kicker: "text-red-700",
+  headerBar: "border-b-2 border-green-700 bg-white",
+  headerTitle: "text-slate-900",
+  headerMuted: "text-slate-500",
+  markText: "text-white",
+  footerBar: "mt-auto border-t border-green-900 bg-green-950 text-green-100",
+};
+
 // Language navigation and visual tokens are isolated here so the German
 // identity cannot bleed into the existing Irish quiz.
 export const languageConfig: Record<LangCode, LanguageConfig> = {
@@ -87,7 +108,6 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
     theme: irishTheme,
   },
   de: {
-    // Keep German navigation separate; add German-specific destinations here.
     links: [
       {
         href: "https://langkraft.app/learn/german?utm_source=daily-quiz&utm_medium=referral&utm_content=header",
@@ -97,4 +117,5 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
     theme: germanTheme,
   },
   ru: { links: [], theme: irishTheme },
+  it: { links: [], theme: italianTheme },
 };

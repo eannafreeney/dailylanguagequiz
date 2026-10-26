@@ -2357,5 +2357,64 @@
     "explanation": "Irish uses the autonomous (impersonal) past form rugadh for “was born”. Rug mé means “I caught” or “I gave birth”, and liom doesn’t fit here. Note the eclipsis after i: Béal → mBéal. Literally: Rugadh mé i mBéal Feirste = “was born me in Belfast”.",
     "phrase": "Rugadh mé i mBéal Feirste.",
     "tags": ["passive", "past_tense", "eclipsis", "places"]
+  },
+  {
+    "id": "ga-206",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Which means “the top of the street”?",
+    "options": ["barr an sráid", "barr na sráid", "barr na sráide"],
+    "correctAnswer": 2,
+    "explanation": "Sráid is a feminine noun, so in the genitive the article becomes na and the noun takes its genitive form sráide. Barr an sráid uses the wrong article, and barr na sráid forgets to change the noun. Literally: barr na sráide = “top of-the street”.",
+    "phrase": "barr na sráide",
+    "tags": ["genitive_case", "feminine_nouns", "places"]
+  },
+  {
+    "id": "ga-207",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "How do you say “I am doing it” (it = an tionscadal, the project)?",
+    "options": ["Tá mé á dhéanamh.", "Tá mé ag déanamh é.", "Tá mé á déanamh."],
+    "correctAnswer": 0,
+    "explanation": "When the object of a verbal noun is a pronoun, Irish puts it before the verbal noun using á. Tionscadal is masculine, so á lenites: á dhéanamh. Á déanamh would refer to a feminine noun, and ag déanamh é is an anglicism. Literally: Tá mé á dhéanamh = “am I at-its doing”.",
+    "phrase": "Tá mé á dhéanamh.",
+    "tags": ["verbal_noun", "object_pronouns", "lenition"]
+  },
+  {
+    "id": "ga-208",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “leabharlann” mean?",
+    "options": ["bookshop", "library", "bookcase"],
+    "correctAnswer": 1,
+    "explanation": "Leabharlann combines leabhar (book) and lann (a place or building), so it means a library. A bookshop is siopa leabhar. Literally: leabharlann = “book-place”.",
+    "phrase": "leabharlann",
+    "tags": ["places", "compound_words"]
+  },
+  {
+    "id": "ga-209",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Which means “the man who lives next door”?",
+    "options": [
+      "an fear tá ina chónaí béal dorais",
+      "an fear a bhfuil ina chónaí béal dorais",
+      "an fear atá ina chónaí béal dorais"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the relative clause refers to the subject, tá becomes the direct relative form atá (a + tá). A bhfuil is the indirect relative, used in phrases like an fear a bhfuil a mhac tinn, and plain tá can’t follow the noun here. Literally: an fear atá ina chónaí béal dorais = “the man who-is in his dwelling mouth of door”.",
+    "phrase": "an fear atá ina chónaí béal dorais",
+    "tags": ["relative_clauses", "present_tense", "people"]
+  },
+  {
+    "id": "ga-210",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Complete: ___ tú an bainne? (Did you drink the milk?)",
+    "options": ["Ar ól", "An ól", "Ar d’ól"],
+    "correctAnswer": 0,
+    "explanation": "Regular verbs form past-tense questions with ar, which replaces the d’ of the statement: D’ól tú becomes Ar ól tú? An is used for present and future questions. Literally: Ar ól tú an bainne? = “did-drink you the milk?”.",
+    "phrase": "Ar ól tú an bainne?",
+    "tags": ["past_tense", "questions", "verbs"]
   }
 ]

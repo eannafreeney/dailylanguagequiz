@@ -1,0 +1,2435 @@
+[
+  {
+    "id": "IT001",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Ciao' mean?",
+    "options": ["Excuse me", "Hello / bye (informal)", "Thank you", "Please"],
+    "correctAnswer": 1,
+    "explanation": "'Ciao' means 'Hello / bye (informal)'. Used for both hello and goodbye. Literally: “(I am) your slave – from Venetian s-ciào”.",
+    "phrase": "Ciao, come stai?",
+    "tags": ["greetings", "informal"]
+  },
+  {
+    "id": "IT002",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Buongiorno' mean?",
+    "options": [
+      "Good night",
+      "Goodbye",
+      "Good evening",
+      "Good morning / good day"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Buongiorno' means 'Good morning / good day'. Literally: “good day”.",
+    "phrase": "Buongiorno, signora Rossi.",
+    "tags": ["greetings", "formal"]
+  },
+  {
+    "id": "IT003",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Buonasera' mean?",
+    "options": ["See you soon", "Good evening", "Good night", "Good morning"],
+    "correctAnswer": 1,
+    "explanation": "'Buonasera' means 'Good evening'. Literally: “good evening”.",
+    "phrase": "Buonasera, come va?",
+    "tags": ["greetings", "formal"]
+  },
+  {
+    "id": "IT004",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Buonanotte' mean?",
+    "options": ["Good morning", "Good night", "Goodbye", "Good evening"],
+    "correctAnswer": 1,
+    "explanation": "'Buonanotte' means 'Good night'. Literally: “good night”.",
+    "phrase": "Buonanotte, dormi bene.",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "IT005",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Arrivederci' mean?",
+    "options": ["Goodbye", "Hello", "Thank you", "Welcome"],
+    "correctAnswer": 0,
+    "explanation": "'Arrivederci' means 'Goodbye'. Literally: “to seeing-again”.",
+    "phrase": "Arrivederci e a presto.",
+    "tags": ["greetings", "formal"]
+  },
+  {
+    "id": "IT006",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'A presto' mean?",
+    "options": ["Good luck", "Right away", "See you yesterday", "See you soon"],
+    "correctAnswer": 3,
+    "explanation": "'A presto' means 'See you soon'. Literally: “to soon”.",
+    "phrase": "Ci sentiamo domani, a presto!",
+    "tags": ["greetings", "informal"]
+  },
+  {
+    "id": "IT007",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Come stai?' mean?",
+    "options": [
+      "How old are you?",
+      "Where are you?",
+      "How are you?",
+      "Who are you?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Come stai?' means 'How are you?'. 'Stare' (to stay) is used for health and wellbeing. Literally: “how stay-you?”.",
+    "phrase": "Come stai oggi?",
+    "tags": ["greetings", "questions"]
+  },
+  {
+    "id": "IT008",
+    "category": "greetings",
+    "level": "A1",
+    "question": "What does 'Sto bene, grazie' mean?",
+    "options": [
+      "I'm fine, thank you",
+      "I'm late, sorry",
+      "I'm leaving, goodbye",
+      "I'm hungry, thanks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Sto bene, grazie' means 'I'm fine, thank you'. Literally: “I-stay well, thanks”.",
+    "phrase": "Sto bene, grazie, e tu?",
+    "tags": ["greetings", "responses"]
+  },
+  {
+    "id": "IT009",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does 'Grazie' mean?",
+    "options": ["Thank you", "Please", "Sorry", "You're welcome"],
+    "correctAnswer": 0,
+    "explanation": "'Grazie' means 'Thank you'. Literally: “thanks (from grazia, “grace”)”.",
+    "phrase": "Grazie mille per l'aiuto.",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "IT010",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does 'Prego' mean?",
+    "options": [
+      "Goodbye",
+      "Thank you",
+      "Excuse me",
+      "You're welcome / please go ahead"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Prego' means 'You're welcome / please go ahead'. Used to answer 'grazie' and to invite someone to go ahead. Literally: “(I) pray / ask”.",
+    "phrase": "Prego, si accomodi.",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "IT011",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does 'Per favore' mean?",
+    "options": ["Please", "Thank you", "Sorry", "Excuse me"],
+    "correctAnswer": 0,
+    "explanation": "'Per favore' means 'Please'. Literally: “for favour”.",
+    "phrase": "Un caffè, per favore.",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "IT012",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does 'Scusi' mean?",
+    "options": ["Excuse me (formal)", "Goodbye", "Thank you", "You're welcome"],
+    "correctAnswer": 0,
+    "explanation": "'Scusi' means 'Excuse me (formal)'. Literally: “(you) excuse (me)”.",
+    "phrase": "Scusi, dov'è la stazione?",
+    "tags": ["politeness", "formal"]
+  },
+  {
+    "id": "IT013",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does 'Mi dispiace' mean?",
+    "options": ["I'm tired", "I'm sorry", "I'm happy", "I like it"],
+    "correctAnswer": 1,
+    "explanation": "'Mi dispiace' means 'I'm sorry'. Literally: “to-me it-displeases”.",
+    "phrase": "Mi dispiace, sono in ritardo.",
+    "tags": ["politeness", "apology"]
+  },
+  {
+    "id": "IT014",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Come ti chiami?' mean?",
+    "options": [
+      "Where are you from?",
+      "What do you do?",
+      "How old are you?",
+      "What's your name?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Come ti chiami?' means 'What's your name?'. Literally: “how yourself call-you?”.",
+    "phrase": "Come ti chiami e di dove sei?",
+    "tags": ["introductions", "questions"]
+  },
+  {
+    "id": "IT015",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Mi chiamo Marco' mean?",
+    "options": [
+      "I know Marco",
+      "I like Marco",
+      "My name is Marco",
+      "I live in Marco"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Mi chiamo Marco' means 'My name is Marco'. Literally: “myself I-call Marco”.",
+    "phrase": "Mi chiamo Marco e abito a Torino.",
+    "tags": ["introductions"]
+  },
+  {
+    "id": "IT016",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Piacere' mean?",
+    "options": ["Nice to meet you", "Please", "Goodbye", "Thank you"],
+    "correctAnswer": 0,
+    "explanation": "'Piacere' means 'Nice to meet you'. Literally: “pleasure”.",
+    "phrase": "Piacere, sono Anna.",
+    "tags": ["introductions"]
+  },
+  {
+    "id": "IT017",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Sono di Roma' mean?",
+    "options": [
+      "I'm from Rome",
+      "I live near Rome",
+      "I'm going to Rome",
+      "I like Rome"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Sono di Roma' means 'I'm from Rome'. Literally: “I-am of Rome”.",
+    "phrase": "Sono di Roma ma vivo a Milano.",
+    "tags": ["introductions", "origin"]
+  },
+  {
+    "id": "IT018",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Di dove sei?' mean?",
+    "options": [
+      "Where do you work?",
+      "Where is it?",
+      "Where are you from?",
+      "Where are you going?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Di dove sei?' means 'Where are you from?'. Literally: “of where are-you?”.",
+    "phrase": "Di dove sei, Luca?",
+    "tags": ["introductions", "questions"]
+  },
+  {
+    "id": "IT019",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Quanti anni hai?' mean?",
+    "options": [
+      "What is your name?",
+      "What time is it?",
+      "Where do you live?",
+      "How old are you?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Quanti anni hai?' means 'How old are you?'. Italian uses 'avere' (to have) for age. Literally: “how-many years have-you?”.",
+    "phrase": "Quanti anni hai, Sara?",
+    "tags": ["introductions", "questions"]
+  },
+  {
+    "id": "IT020",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does 'Ho vent'anni' mean?",
+    "options": [
+      "I have twenty friends",
+      "I'm twenty years old",
+      "I'm twenty minutes late",
+      "I have twenty euros"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ho vent'anni' means 'I'm twenty years old'. Literally: “I-have twenty-years”.",
+    "phrase": "Ho vent'anni e studio medicina.",
+    "tags": ["introductions", "numbers"]
+  },
+  {
+    "id": "IT021",
+    "category": "introductions",
+    "level": "A1",
+    "question": "Io ___ studente. (I am a student)",
+    "options": ["sono", "sei", "è", "ho"],
+    "correctAnswer": 0,
+    "explanation": "'Essere' (to be) in the 'io' form is 'sono'. Literally: “I am student”.",
+    "phrase": "Io sono studente.",
+    "tags": ["verbs", "essere"]
+  },
+  {
+    "id": "IT022",
+    "category": "people",
+    "level": "A1",
+    "question": "Lei ___ due fratelli. (She has two brothers)",
+    "options": ["ho", "hai", "ha", "è"],
+    "correctAnswer": 2,
+    "explanation": "'Avere' (to have) in the 'lei' form is 'ha'. Literally: “She has two brothers”.",
+    "phrase": "Lei ha due fratelli.",
+    "tags": ["verbs", "avere", "family"]
+  },
+  {
+    "id": "IT023",
+    "category": "people",
+    "level": "A1",
+    "question": "What does 'il fratello' mean?",
+    "options": ["the cousin", "the son", "the brother", "the uncle"],
+    "correctAnswer": 2,
+    "explanation": "'il fratello' means 'the brother'. Literally: “the brother”.",
+    "phrase": "Mio fratello abita a Milano.",
+    "tags": ["people", "family", "nouns"]
+  },
+  {
+    "id": "IT024",
+    "category": "people",
+    "level": "A1",
+    "question": "What does 'la sorella' mean?",
+    "options": ["the aunt", "the sister", "the niece", "the daughter"],
+    "correctAnswer": 1,
+    "explanation": "'la sorella' means 'the sister'. Literally: “the sister”.",
+    "phrase": "Mia sorella studia medicina.",
+    "tags": ["people", "family", "nouns"]
+  },
+  {
+    "id": "IT025",
+    "category": "people",
+    "level": "A1",
+    "question": "What does 'i genitori' mean?",
+    "options": [
+      "the relatives",
+      "the grandparents",
+      "the parents",
+      "the children"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'i genitori' means 'the parents'. False friend: 'relatives' in Italian is 'i parenti'. Literally: “the parents”.",
+    "phrase": "I miei genitori vivono a Napoli.",
+    "tags": ["people", "family", "false_friends"]
+  },
+  {
+    "id": "IT026",
+    "category": "people",
+    "level": "A1",
+    "question": "What does 'l'amico' mean?",
+    "options": [
+      "the teacher",
+      "the friend (male)",
+      "the colleague",
+      "the neighbour"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'l'amico' means 'the friend (male)'. Literally: “the friend”.",
+    "phrase": "Il mio amico si chiama Luca.",
+    "tags": ["people", "nouns"]
+  },
+  {
+    "id": "IT027",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'il caffè' mean?",
+    "options": ["the coffee", "the tea", "the milk", "the juice"],
+    "correctAnswer": 0,
+    "explanation": "'il caffè' means 'the coffee'. Literally: “the coffee”.",
+    "phrase": "Vorrei un caffè, per favore.",
+    "tags": ["food", "drinks", "nouns"]
+  },
+  {
+    "id": "IT028",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'l'acqua' mean?",
+    "options": ["the wine", "the milk", "the beer", "the water"],
+    "correctAnswer": 3,
+    "explanation": "'l'acqua' means 'the water'. Literally: “the water”.",
+    "phrase": "Bevo un bicchiere d'acqua.",
+    "tags": ["food", "drinks", "nouns"]
+  },
+  {
+    "id": "IT029",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'il pane' mean?",
+    "options": ["the rice", "the cheese", "the butter", "the bread"],
+    "correctAnswer": 3,
+    "explanation": "'il pane' means 'the bread'. Literally: “the bread”.",
+    "phrase": "Il pane è ancora caldo.",
+    "tags": ["food", "nouns"]
+  },
+  {
+    "id": "IT030",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'il formaggio' mean?",
+    "options": ["the ham", "the cheese", "the egg", "the bread"],
+    "correctAnswer": 1,
+    "explanation": "'il formaggio' means 'the cheese'. Literally: “the cheese (from forma, “mould”)”.",
+    "phrase": "Mi piace il formaggio.",
+    "tags": ["food", "nouns"]
+  },
+  {
+    "id": "IT031",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'la mela' mean?",
+    "options": ["the peach", "the grape", "the pear", "the apple"],
+    "correctAnswer": 3,
+    "explanation": "'la mela' means 'the apple'. Literally: “the apple”.",
+    "phrase": "Mangio una mela ogni giorno.",
+    "tags": ["food", "fruit", "nouns"]
+  },
+  {
+    "id": "IT032",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'Ho fame' mean?",
+    "options": ["I'm thirsty", "I'm tired", "I'm cold", "I'm hungry"],
+    "correctAnswer": 3,
+    "explanation": "'Ho fame' means 'I'm hungry'. Italian uses 'avere' (to have) for hunger and thirst. Literally: “I-have hunger”.",
+    "phrase": "Ho fame, andiamo a mangiare.",
+    "tags": ["food", "feelings"]
+  },
+  {
+    "id": "IT033",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'Ho sete' mean?",
+    "options": ["I'm afraid", "I'm thirsty", "I'm hot", "I'm hungry"],
+    "correctAnswer": 1,
+    "explanation": "'Ho sete' means 'I'm thirsty'. Literally: “I-have thirst”.",
+    "phrase": "Ho sete, vorrei dell'acqua.",
+    "tags": ["food", "feelings"]
+  },
+  {
+    "id": "IT034",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'Vorrei una pizza' mean?",
+    "options": [
+      "I have a pizza",
+      "I'd like a pizza",
+      "I don't like pizza",
+      "I'm making a pizza"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Vorrei una pizza' means 'I'd like a pizza'. Literally: “I-would-like a pizza”.",
+    "phrase": "Vorrei una pizza margherita.",
+    "tags": ["food", "restaurants", "conditional"]
+  },
+  {
+    "id": "IT035",
+    "category": "food",
+    "level": "A1",
+    "question": "What does 'Il conto, per favore' mean?",
+    "options": [
+      "The table, please",
+      "The menu, please",
+      "The bill, please",
+      "The water, please"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Il conto, per favore' means 'The bill, please'. Literally: “the account, for favour”.",
+    "phrase": "Il conto, per favore, signore.",
+    "tags": ["food", "restaurants"]
+  },
+  {
+    "id": "IT036",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'tre' mean?",
+    "options": ["two", "thirteen", "three", "five"],
+    "correctAnswer": 2,
+    "explanation": "'tre' means 'three'. Literally: “three”.",
+    "phrase": "Ho tre gatti.",
+    "tags": ["numbers"]
+  },
+  {
+    "id": "IT037",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'dieci' mean?",
+    "options": ["two", "hundred", "twelve", "ten"],
+    "correctAnswer": 3,
+    "explanation": "'dieci' means 'ten'. Literally: “ten”.",
+    "phrase": "Ci sono dieci studenti.",
+    "tags": ["numbers"]
+  },
+  {
+    "id": "IT038",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'venti' mean?",
+    "options": ["thirty", "twenty", "twelve", "two hundred"],
+    "correctAnswer": 1,
+    "explanation": "'venti' means 'twenty'. Literally: “twenty”.",
+    "phrase": "Abbiamo venti minuti.",
+    "tags": ["numbers"]
+  },
+  {
+    "id": "IT039",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "What does 'lunedì' mean?",
+    "options": ["Monday", "Tuesday", "Saturday", "Sunday"],
+    "correctAnswer": 0,
+    "explanation": "'lunedì' means 'Monday'. Literally: “day of the Moon (luna)”.",
+    "phrase": "Lunedì lavoro tutto il giorno.",
+    "tags": ["days", "time"]
+  },
+  {
+    "id": "IT040",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "What does 'domenica' mean?",
+    "options": ["Monday", "Sunday", "Saturday", "Friday"],
+    "correctAnswer": 1,
+    "explanation": "'domenica' means 'Sunday'. Literally: “the Lord's day (dies dominica)”.",
+    "phrase": "Domenica pranzo dai nonni.",
+    "tags": ["days", "time"]
+  },
+  {
+    "id": "IT041",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'rosso' mean?",
+    "options": ["blue", "red", "green", "yellow"],
+    "correctAnswer": 1,
+    "explanation": "'rosso' means 'red'. Adjectives agree in gender: 'rossa' for 'macchina' (feminine). Literally: “red”.",
+    "phrase": "La mia macchina è rossa.",
+    "tags": ["colours", "adjectives"]
+  },
+  {
+    "id": "IT042",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'verde' mean?",
+    "options": ["white", "red", "black", "green"],
+    "correctAnswer": 3,
+    "explanation": "'verde' means 'green'. Literally: “green”.",
+    "phrase": "L'erba è verde.",
+    "tags": ["colours", "adjectives"]
+  },
+  {
+    "id": "IT043",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'nero' mean?",
+    "options": ["grey", "brown", "white", "black"],
+    "correctAnswer": 3,
+    "explanation": "'nero' means 'black'. Literally: “black”.",
+    "phrase": "Il gatto è nero.",
+    "tags": ["colours", "adjectives"]
+  },
+  {
+    "id": "IT044",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does 'bianco' mean?",
+    "options": ["black", "white", "red", "pink"],
+    "correctAnswer": 1,
+    "explanation": "'bianco' means 'white'. Literally: “white”.",
+    "phrase": "La neve è bianca.",
+    "tags": ["colours", "adjectives"]
+  },
+  {
+    "id": "IT045",
+    "category": "home",
+    "level": "A1",
+    "question": "What does 'la casa' mean?",
+    "options": ["the house", "the building site", "the garden", "the street"],
+    "correctAnswer": 0,
+    "explanation": "'la casa' means 'the house'. Literally: “the house”.",
+    "phrase": "La casa è grande.",
+    "tags": ["home", "nouns"]
+  },
+  {
+    "id": "IT046",
+    "category": "home",
+    "level": "A1",
+    "question": "What does 'la cucina' mean?",
+    "options": [
+      "the bedroom",
+      "the living room",
+      "the bathroom",
+      "the kitchen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'la cucina' means 'the kitchen'. Literally: “the kitchen (also “cooking”)”.",
+    "phrase": "La cucina è piccola.",
+    "tags": ["home", "nouns"]
+  },
+  {
+    "id": "IT047",
+    "category": "home",
+    "level": "A1",
+    "question": "What does 'la camera da letto' mean?",
+    "options": ["the kitchen", "the bathroom", "the bedroom", "the balcony"],
+    "correctAnswer": 2,
+    "explanation": "'la camera da letto' means 'the bedroom'. Literally: “the room of bed”.",
+    "phrase": "La camera da letto è al primo piano.",
+    "tags": ["home", "nouns"]
+  },
+  {
+    "id": "IT048",
+    "category": "places",
+    "level": "A1",
+    "question": "What does 'la stazione' mean?",
+    "options": ["the church", "the airport", "the station", "the square"],
+    "correctAnswer": 2,
+    "explanation": "'la stazione' means 'the station'. Literally: “the station”.",
+    "phrase": "La stazione è vicina.",
+    "tags": ["places", "travel", "nouns"]
+  },
+  {
+    "id": "IT049",
+    "category": "travel",
+    "level": "A1",
+    "question": "What does 'l'aeroporto' mean?",
+    "options": ["the bus stop", "the station", "the port", "the airport"],
+    "correctAnswer": 3,
+    "explanation": "'l'aeroporto' means 'the airport'. Literally: “the airport”.",
+    "phrase": "L'aeroporto è lontano dal centro.",
+    "tags": ["travel", "places", "nouns"]
+  },
+  {
+    "id": "IT050",
+    "category": "travel",
+    "level": "A1",
+    "question": "What does 'il biglietto' mean?",
+    "options": ["the ticket", "the passport", "the bag", "the map"],
+    "correctAnswer": 0,
+    "explanation": "'il biglietto' means 'the ticket'. Literally: “the ticket”.",
+    "phrase": "Vorrei un biglietto per Roma.",
+    "tags": ["travel", "nouns"]
+  },
+  {
+    "id": "IT051",
+    "category": "directions",
+    "level": "A1",
+    "question": "What does 'Dov'è la stazione?' mean?",
+    "options": [
+      "What time is it?",
+      "Where is the station?",
+      "How much is the ticket?",
+      "When is the train?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Dov'è la stazione?' means 'Where is the station?'. Literally: “where-is the station?”.",
+    "phrase": "Scusi, dov'è la stazione?",
+    "tags": ["directions", "questions"]
+  },
+  {
+    "id": "IT052",
+    "category": "directions",
+    "level": "A1",
+    "question": "What does 'a destra' mean?",
+    "options": ["behind", "to the left", "to the right", "straight ahead"],
+    "correctAnswer": 2,
+    "explanation": "'a destra' means 'to the right'. Literally: “to right”.",
+    "phrase": "Giri a destra al semaforo.",
+    "tags": ["directions"]
+  },
+  {
+    "id": "IT053",
+    "category": "directions",
+    "level": "A1",
+    "question": "What does 'a sinistra' mean?",
+    "options": ["to the left", "straight on", "in front", "to the right"],
+    "correctAnswer": 0,
+    "explanation": "'a sinistra' means 'to the left'. Literally: “to left”.",
+    "phrase": "La banca è a sinistra.",
+    "tags": ["directions"]
+  },
+  {
+    "id": "IT054",
+    "category": "directions",
+    "level": "A1",
+    "question": "What does 'sempre dritto' mean?",
+    "options": ["straight ahead", "on the left", "next to", "turn around"],
+    "correctAnswer": 0,
+    "explanation": "'sempre dritto' means 'straight ahead'. Literally: “always straight”.",
+    "phrase": "Vada sempre dritto fino al semaforo.",
+    "tags": ["directions"]
+  },
+  {
+    "id": "IT055",
+    "category": "shopping",
+    "level": "A1",
+    "question": "What does 'Quanto costa?' mean?",
+    "options": [
+      "How many are there?",
+      "Where is it?",
+      "What is it?",
+      "How much does it cost?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Quanto costa?' means 'How much does it cost?'. Literally: “how-much costs?”.",
+    "phrase": "Quanto costa questo libro?",
+    "tags": ["shopping", "questions", "money"]
+  },
+  {
+    "id": "IT056",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "What does 'Che ore sono?' mean?",
+    "options": [
+      "Where are you?",
+      "How are you?",
+      "What day is it?",
+      "What time is it?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Che ore sono?' means 'What time is it?'. Literally: “what hours are?”.",
+    "phrase": "Scusi, che ore sono?",
+    "tags": ["time", "questions"]
+  },
+  {
+    "id": "IT057",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does 'Che tempo fa?' mean?",
+    "options": [
+      "How are you?",
+      "What day is it?",
+      "What time is it?",
+      "What's the weather like?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Che tempo fa?' means 'What's the weather like?'. Literally: “what weather makes?”.",
+    "phrase": "Che tempo fa a Roma?",
+    "tags": ["weather", "questions"]
+  },
+  {
+    "id": "IT058",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does 'Piove' mean?",
+    "options": ["It's windy", "It's sunny", "It's raining", "It's snowing"],
+    "correctAnswer": 2,
+    "explanation": "'Piove' means 'It's raining'. Literally: “it-rains”.",
+    "phrase": "Oggi piove molto.",
+    "tags": ["weather"]
+  },
+  {
+    "id": "IT059",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does 'Fa caldo' mean?",
+    "options": ["It's rainy", "It's cloudy", "It's hot", "It's cold"],
+    "correctAnswer": 2,
+    "explanation": "'Fa caldo' means 'It's hot'. Literally: “it-makes hot”.",
+    "phrase": "In estate fa molto caldo.",
+    "tags": ["weather"]
+  },
+  {
+    "id": "IT060",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does 'Fa freddo' mean?",
+    "options": ["It's humid", "It's cold", "It's hot", "It's sunny"],
+    "correctAnswer": 1,
+    "explanation": "'Fa freddo' means 'It's cold'. Literally: “it-makes cold”.",
+    "phrase": "In inverno fa freddo.",
+    "tags": ["weather"]
+  },
+  {
+    "id": "IT061",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "___ libro è sul tavolo. (The book is on the table)",
+    "options": ["La", "Lo", "Il", "L'"],
+    "correctAnswer": 2,
+    "explanation": "Masculine nouns starting with a normal consonant take 'il'. Literally: “The book is on-the table”.",
+    "phrase": "Il libro è sul tavolo.",
+    "tags": ["articles", "gender"]
+  },
+  {
+    "id": "IT062",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "___ ragazza è simpatica. (The girl is nice)",
+    "options": ["I", "Lo", "La", "Il"],
+    "correctAnswer": 2,
+    "explanation": "Feminine singular nouns take 'la'. Literally: “The girl is nice”.",
+    "phrase": "La ragazza è simpatica.",
+    "tags": ["articles", "gender"]
+  },
+  {
+    "id": "IT063",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "Ho due ___. (I have two cats)",
+    "options": ["gatti", "gatte", "gatto", "gati"],
+    "correctAnswer": 0,
+    "explanation": "Masculine nouns ending in -o form the plural with -i. Literally: “I-have two cats”.",
+    "phrase": "Ho due gatti.",
+    "tags": ["plurals", "nouns"]
+  },
+  {
+    "id": "IT064",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "Mi ___ la pizza. (I like pizza)",
+    "options": ["piaci", "piacciono", "piace", "piacete"],
+    "correctAnswer": 2,
+    "explanation": "'Piacere' agrees with the thing liked: singular 'la pizza' takes 'piace'. Literally: “To-me pleases the pizza”.",
+    "phrase": "Mi piace la pizza.",
+    "tags": ["verbs", "piacere"]
+  },
+  {
+    "id": "IT065",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "Io ___ italiano. (I speak Italian)",
+    "options": ["parlo", "parla", "parli", "parlano"],
+    "correctAnswer": 0,
+    "explanation": "Regular -are verbs take -o in the 'io' form. Literally: “I speak Italian”.",
+    "phrase": "Io parlo italiano.",
+    "tags": ["verbs", "present_tense"]
+  },
+  {
+    "id": "IT066",
+    "category": "Grammar",
+    "level": "A1",
+    "question": "Dove ___ (tu)? (Where do you live? (informal))",
+    "options": ["abitiamo", "abita", "abito", "abiti"],
+    "correctAnswer": 3,
+    "explanation": "The 'tu' form of -are verbs ends in -i. Literally: “Where live-you?”.",
+    "phrase": "Dove abiti (tu)?",
+    "tags": ["verbs", "present_tense", "questions"]
+  },
+  {
+    "id": "IT067",
+    "category": "work_study",
+    "level": "A1",
+    "question": "What does 'il lavoro' mean?",
+    "options": [
+      "the holiday",
+      "the lesson",
+      "the office",
+      "the work / the job"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'il lavoro' means 'the work / the job'. Literally: “the work”.",
+    "phrase": "Il lavoro inizia alle nove.",
+    "tags": ["work_study", "nouns"]
+  },
+  {
+    "id": "IT068",
+    "category": "daily_life",
+    "level": "A2",
+    "question": "What does 'Ieri sono andato al mercato' mean?",
+    "options": [
+      "Tomorrow I'm going to the market",
+      "Yesterday I went to the market",
+      "I always go to the market",
+      "I'd like to go to the market"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ieri sono andato al mercato' means 'Yesterday I went to the market'. 'Andare' forms the passato prossimo with 'essere'. Literally: “yesterday I-am gone to-the market”.",
+    "phrase": "Ieri sono andato al mercato.",
+    "tags": ["past_tense", "passato_prossimo"]
+  },
+  {
+    "id": "IT069",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Ieri ___ al cinema. (Yesterday we went to the cinema)",
+    "options": ["abbiamo andati", "siamo andato", "andiamo", "siamo andati"],
+    "correctAnswer": 3,
+    "explanation": "'Andare' takes 'essere', and the participle agrees with the subject. Literally: “Yesterday we-are gone to-the cinema”.",
+    "phrase": "Ieri siamo andati al cinema.",
+    "tags": ["passato_prossimo", "essere", "agreement"]
+  },
+  {
+    "id": "IT070",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Ho ___ la cena. (I have prepared dinner)",
+    "options": ["preparo", "preparare", "preparata", "preparato"],
+    "correctAnswer": 3,
+    "explanation": "With 'avere', the participle stays -ato (no agreement with the subject). Literally: “I-have prepared the dinner”.",
+    "phrase": "Ho preparato la cena.",
+    "tags": ["passato_prossimo", "avere"]
+  },
+  {
+    "id": "IT071",
+    "category": "plans",
+    "level": "A2",
+    "question": "What does 'Domani vado a Firenze' mean?",
+    "options": [
+      "Yesterday I went to Florence",
+      "Tomorrow I'm going to Florence",
+      "I never go to Florence",
+      "I live in Florence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Domani vado a Firenze' means 'Tomorrow I'm going to Florence'. The present tense often expresses near-future plans. Literally: “tomorrow I-go to Florence”.",
+    "phrase": "Domani vado a Firenze in treno.",
+    "tags": ["plans", "present_for_future"]
+  },
+  {
+    "id": "IT072",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Il mese prossimo ___ in Spagna. (Next month I will go to Spain)",
+    "options": ["andare", "andando", "andato", "andrò"],
+    "correctAnswer": 3,
+    "explanation": "'Andare' has an irregular future stem: andr-. Literally: “The month next I-will-go in Spain”.",
+    "phrase": "Il mese prossimo andrò in Spagna.",
+    "tags": ["future_tense", "irregular_verbs"]
+  },
+  {
+    "id": "IT073",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Da bambino ___ sempre al parco. (As a child I always went to the park)",
+    "options": ["vado", "andare", "andavo", "andato"],
+    "correctAnswer": 2,
+    "explanation": "The imperfect (andavo) describes habits in the past. Literally: “As child I-used-to-go always to-the park”.",
+    "phrase": "Da bambino andavo sempre al parco.",
+    "tags": ["imperfetto", "habits"]
+  },
+  {
+    "id": "IT074",
+    "category": "travel",
+    "level": "A2",
+    "question": "What does 'Prendo il treno delle otto' mean?",
+    "options": [
+      "I'm waiting for eight trains",
+      "The train leaves at eight tomorrow",
+      "I missed the eight o'clock train",
+      "I'm taking the eight o'clock train"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Prendo il treno delle otto' means 'I'm taking the eight o'clock train'. Literally: “I-take the train of-the eight”.",
+    "phrase": "Prendo il treno delle otto per Roma.",
+    "tags": ["travel", "time"]
+  },
+  {
+    "id": "IT075",
+    "category": "travel",
+    "level": "A2",
+    "question": "What does 'il ritardo' mean?",
+    "options": ["the delay", "the arrival", "the departure", "the platform"],
+    "correctAnswer": 0,
+    "explanation": "'il ritardo' means 'the delay'. Literally: “the delay”.",
+    "phrase": "Il treno ha un'ora di ritardo.",
+    "tags": ["travel", "nouns"]
+  },
+  {
+    "id": "IT076",
+    "category": "travel",
+    "level": "A2",
+    "question": "What does 'Il treno è in ritardo' mean?",
+    "options": [
+      "The train is late",
+      "The train is cancelled",
+      "The train is full",
+      "The train is early"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Il treno è in ritardo' means 'The train is late'. Literally: “the train is in delay”.",
+    "phrase": "Il treno per Milano è in ritardo.",
+    "tags": ["travel"]
+  },
+  {
+    "id": "IT077",
+    "category": "travel",
+    "level": "A2",
+    "question": "What does 'andata e ritorno' mean?",
+    "options": ["direct", "round trip", "one way", "first class"],
+    "correctAnswer": 1,
+    "explanation": "'andata e ritorno' means 'round trip'. Literally: “going and return”.",
+    "phrase": "Vorrei un biglietto di andata e ritorno.",
+    "tags": ["travel", "tickets"]
+  },
+  {
+    "id": "IT078",
+    "category": "food",
+    "level": "A2",
+    "question": "What does 'Vorrei prenotare un tavolo' mean?",
+    "options": [
+      "I'd like to order wine",
+      "I'd like to see the menu",
+      "I'd like to book a table",
+      "I'd like to pay the bill"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Vorrei prenotare un tavolo' means 'I'd like to book a table'. Literally: “I-would-like to-book a table”.",
+    "phrase": "Vorrei prenotare un tavolo per stasera.",
+    "tags": ["food", "restaurants"]
+  },
+  {
+    "id": "IT079",
+    "category": "food",
+    "level": "A2",
+    "question": "What does 'per due persone' mean?",
+    "options": [
+      "for two people",
+      "for two days",
+      "with two friends",
+      "for two hours"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'per due persone' means 'for two people'. Literally: “for two persons”.",
+    "phrase": "Un tavolo per due persone, per favore.",
+    "tags": ["food", "restaurants", "numbers"]
+  },
+  {
+    "id": "IT080",
+    "category": "food",
+    "level": "A2",
+    "question": "What does 'Che cosa mi consiglia?' mean?",
+    "options": [
+      "What do you recommend?",
+      "What is that?",
+      "What do you want?",
+      "What do you think?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Che cosa mi consiglia?' means 'What do you recommend?'. Literally: “what thing to-me advise-you?”.",
+    "phrase": "Che cosa mi consiglia come primo?",
+    "tags": ["food", "restaurants", "questions"]
+  },
+  {
+    "id": "IT081",
+    "category": "food",
+    "level": "A2",
+    "question": "What does 'senza glutine' mean?",
+    "options": ["gluten-free", "low-fat", "without sugar", "vegetarian"],
+    "correctAnswer": 0,
+    "explanation": "'senza glutine' means 'gluten-free'. Literally: “without gluten”.",
+    "phrase": "Avete una pizza senza glutine?",
+    "tags": ["food", "diet"]
+  },
+  {
+    "id": "IT082",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'Ho mal di testa' mean?",
+    "options": [
+      "I have a headache",
+      "I have a cold",
+      "I have a fever",
+      "I have a stomachache"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Ho mal di testa' means 'I have a headache'. Literally: “I-have pain of head”.",
+    "phrase": "Ho mal di testa da stamattina.",
+    "tags": ["health", "body"]
+  },
+  {
+    "id": "IT083",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'Mi fa male la gola' mean?",
+    "options": [
+      "My back hurts",
+      "My throat hurts",
+      "My head hurts",
+      "My leg hurts"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Mi fa male la gola' means 'My throat hurts'. Literally: “to-me makes pain the throat”.",
+    "phrase": "Mi fa male la gola quando mangio.",
+    "tags": ["health", "body"]
+  },
+  {
+    "id": "IT084",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'Ho la febbre' mean?",
+    "options": [
+      "I have an allergy",
+      "I have a cough",
+      "I have a fever",
+      "I have a cold"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Ho la febbre' means 'I have a fever'. Literally: “I-have the fever”.",
+    "phrase": "Ho la febbre e devo restare a letto.",
+    "tags": ["health"]
+  },
+  {
+    "id": "IT085",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'la farmacia' mean?",
+    "options": [
+      "the bakery",
+      "the pharmacy",
+      "the doctor's office",
+      "the hospital"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'la farmacia' means 'the pharmacy'. Literally: “the pharmacy”.",
+    "phrase": "La farmacia è aperta fino alle otto.",
+    "tags": ["health", "places", "nouns"]
+  },
+  {
+    "id": "IT086",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'Non mi sento bene' mean?",
+    "options": [
+      "I don't see well",
+      "I don't feel like it",
+      "I don't hear well",
+      "I don't feel well"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Non mi sento bene' means 'I don't feel well'. Literally: “not myself I-feel well”.",
+    "phrase": "Non mi sento bene, vado a casa.",
+    "tags": ["health", "reflexive"]
+  },
+  {
+    "id": "IT087",
+    "category": "health",
+    "level": "A2",
+    "question": "What does 'il medico' mean?",
+    "options": ["the pharmacist", "the doctor", "the dentist", "the nurse"],
+    "correctAnswer": 1,
+    "explanation": "'il medico' means 'the doctor'. Literally: “the medic”.",
+    "phrase": "Devo andare dal medico.",
+    "tags": ["health", "work", "nouns"]
+  },
+  {
+    "id": "IT088",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'fare la spesa' mean?",
+    "options": [
+      "to pay the bill",
+      "to spend a lot",
+      "to go grocery shopping",
+      "to window-shop"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'fare la spesa' means 'to go grocery shopping'. Literally: “to make the spending”.",
+    "phrase": "Sabato faccio la spesa al supermercato.",
+    "tags": ["shopping", "idioms"]
+  },
+  {
+    "id": "IT089",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'Quanto costa questa giacca?' mean?",
+    "options": [
+      "Which jacket do you like?",
+      "Where is this jacket?",
+      "Is this jacket mine?",
+      "How much is this jacket?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Quanto costa questa giacca?' means 'How much is this jacket?'. Literally: “how-much costs this jacket?”.",
+    "phrase": "Scusi, quanto costa questa giacca?",
+    "tags": ["shopping", "clothes", "questions"]
+  },
+  {
+    "id": "IT090",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'È troppo caro' mean?",
+    "options": [
+      "It's not available",
+      "It's too expensive",
+      "It's very cheap",
+      "It's too small"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'È troppo caro' means 'It's too expensive'. Literally: “it-is too dear”.",
+    "phrase": "Questo vestito è troppo caro.",
+    "tags": ["shopping", "money"]
+  },
+  {
+    "id": "IT091",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'i saldi' mean?",
+    "options": ["the receipts", "the shops", "the discounts card", "the sales"],
+    "correctAnswer": 3,
+    "explanation": "'i saldi' means 'the sales'. Literally: “the balances”.",
+    "phrase": "Ci sono i saldi in tutti i negozi.",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "IT092",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'Posso pagare con la carta?' mean?",
+    "options": [
+      "Can I pay by card?",
+      "Can I pay in cash?",
+      "Can I get a receipt?",
+      "Can I try it on?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Posso pagare con la carta?' means 'Can I pay by card?'. Literally: “can I pay with the card?”.",
+    "phrase": "Posso pagare con la carta di credito?",
+    "tags": ["shopping", "money", "questions"]
+  },
+  {
+    "id": "IT093",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'lo scontrino' mean?",
+    "options": ["the receipt", "the price tag", "the bag", "the change"],
+    "correctAnswer": 0,
+    "explanation": "'lo scontrino' means 'the receipt'. Literally: “the receipt”.",
+    "phrase": "Mi serve lo scontrino per il cambio.",
+    "tags": ["shopping", "nouns"]
+  },
+  {
+    "id": "IT094",
+    "category": "shopping",
+    "level": "A2",
+    "question": "What does 'Cerco un regalo per mia madre' mean?",
+    "options": [
+      "I received a gift from my mother",
+      "I bought a gift for my mother",
+      "I'm looking for a gift for my mother",
+      "I'm sending a gift to my mother"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Cerco un regalo per mia madre' means 'I'm looking for a gift for my mother'. Literally: “I-seek a gift for my mother”.",
+    "phrase": "Cerco un regalo per mia madre.",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "IT095",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'il fine settimana' mean?",
+    "options": ["the week", "the weekend", "the month", "the holiday"],
+    "correctAnswer": 1,
+    "explanation": "'il fine settimana' means 'the weekend'. Literally: “the end week”.",
+    "phrase": "Nel fine settimana vado al mare.",
+    "tags": ["social", "time"]
+  },
+  {
+    "id": "IT096",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'Che cosa fai nel tempo libero?' mean?",
+    "options": [
+      "What do you do in your free time?",
+      "What will you do tomorrow?",
+      "What do you do for work?",
+      "What did you do yesterday?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Che cosa fai nel tempo libero?' means 'What do you do in your free time?'. Literally: “what do you in-the time free?”.",
+    "phrase": "Che cosa fai nel tempo libero?",
+    "tags": ["social", "questions", "hobbies"]
+  },
+  {
+    "id": "IT097",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'Mi piace leggere' mean?",
+    "options": [
+      "I like reading",
+      "I have to read",
+      "I'm learning to read",
+      "I want to write"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Mi piace leggere' means 'I like reading'. Literally: “to-me pleases to-read”.",
+    "phrase": "Mi piace leggere prima di dormire.",
+    "tags": ["social", "hobbies", "piacere"]
+  },
+  {
+    "id": "IT098",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'Ti va di uscire?' mean?",
+    "options": [
+      "Are you going out?",
+      "Do you feel like going out?",
+      "Can you open it?",
+      "Did you go out?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ti va di uscire?' means 'Do you feel like going out?'. Literally: “to-you goes of to-go-out?”.",
+    "phrase": "Ti va di uscire stasera?",
+    "tags": ["social", "invitations"]
+  },
+  {
+    "id": "IT099",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'Non vedo l'ora' mean?",
+    "options": [
+      "I'm not on time",
+      "I can't wait",
+      "I don't see the time",
+      "I have no time"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Non vedo l'ora' means 'I can't wait'. Literally: “not I-see the hour”.",
+    "phrase": "Non vedo l'ora di vederti.",
+    "tags": ["social", "idioms", "feelings"]
+  },
+  {
+    "id": "IT100",
+    "category": "social",
+    "level": "A2",
+    "question": "What does 'Ci vediamo domani' mean?",
+    "options": [
+      "See you tomorrow",
+      "We'll never meet",
+      "I can't see you",
+      "We saw each other yesterday"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Ci vediamo domani' means 'See you tomorrow'. Literally: “us we-see tomorrow”.",
+    "phrase": "Ci vediamo domani alle otto.",
+    "tags": ["social", "plans"]
+  },
+  {
+    "id": "IT101",
+    "category": "daily_life",
+    "level": "A2",
+    "question": "What does 'A che ora inizia il film?' mean?",
+    "options": [
+      "What time does the film start?",
+      "Who is in the film?",
+      "Where is the film?",
+      "How long is the film?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'A che ora inizia il film?' means 'What time does the film start?'. Literally: “at what hour begins the film?”.",
+    "phrase": "A che ora inizia il film?",
+    "tags": ["time", "questions"]
+  },
+  {
+    "id": "IT102",
+    "category": "weather",
+    "level": "A2",
+    "question": "What does 'Oggi c'è il sole' mean?",
+    "options": [
+      "Today it's sunny",
+      "Today it's cloudy",
+      "Today it's windy",
+      "Today it's raining"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Oggi c'è il sole' means 'Today it's sunny'. Literally: “today there-is the sun”.",
+    "phrase": "Oggi c'è il sole e fa caldo.",
+    "tags": ["weather"]
+  },
+  {
+    "id": "IT103",
+    "category": "weather",
+    "level": "A2",
+    "question": "What does 'Domani nevicherà' mean?",
+    "options": [
+      "It snowed yesterday",
+      "It will snow tomorrow",
+      "It never snows",
+      "It's snowing now"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Domani nevicherà' means 'It will snow tomorrow'. Literally: “tomorrow it-will-snow”.",
+    "phrase": "Domani nevicherà in montagna.",
+    "tags": ["weather", "future_tense"]
+  },
+  {
+    "id": "IT104",
+    "category": "weather",
+    "level": "A2",
+    "question": "What does 'l'ombrello' mean?",
+    "options": ["the raincoat", "the boot", "the scarf", "the umbrella"],
+    "correctAnswer": 3,
+    "explanation": "'l'ombrello' means 'the umbrella'. Literally: “the umbrella (from ombra, “shade”)”.",
+    "phrase": "Prendi l'ombrello perché piove.",
+    "tags": ["weather", "nouns"]
+  },
+  {
+    "id": "IT105",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Se ___ bel tempo, andiamo al mare. (If the weather is nice, we'll go to the sea)",
+    "options": ["fare", "fa", "farà", "faceva"],
+    "correctAnswer": 1,
+    "explanation": "Real conditions use the present in both parts of the sentence. Literally: “If makes nice weather, we-go to-the sea”.",
+    "phrase": "Se fa bel tempo, andiamo al mare.",
+    "tags": ["conditionals", "present_tense", "weather"]
+  },
+  {
+    "id": "IT106",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Mi ___ alle sette. (I wake up at seven)",
+    "options": ["sveglia", "svegli", "sveglio", "svegliamo"],
+    "correctAnswer": 2,
+    "explanation": "Reflexive verbs need the reflexive pronoun 'mi' plus the 'io' form. Literally: “Myself I-wake at-the seven”.",
+    "phrase": "Mi sveglio alle sette.",
+    "tags": ["reflexive_verbs"]
+  },
+  {
+    "id": "IT107",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Lui si ___ presto la mattina. (He gets up early in the morning)",
+    "options": ["alza", "alzano", "alzi", "alzo"],
+    "correctAnswer": 0,
+    "explanation": "The 'lui' form of -are verbs ends in -a. Literally: “He himself raises early the morning”.",
+    "phrase": "Lui si alza presto la mattina.",
+    "tags": ["reflexive_verbs"]
+  },
+  {
+    "id": "IT108",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Dobbiamo ___ il treno. (We have to catch the train)",
+    "options": ["prende", "prendere", "preso", "prendiamo"],
+    "correctAnswer": 1,
+    "explanation": "After a modal verb such as 'dovere', use the infinitive. Literally: “We-must take the train”.",
+    "phrase": "Dobbiamo prendere il treno.",
+    "tags": ["modal_verbs", "infinitive"]
+  },
+  {
+    "id": "IT109",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Posso ___ una domanda? (Can I ask a question?)",
+    "options": ["fatto", "faccio", "fare", "fa"],
+    "correctAnswer": 2,
+    "explanation": "'Fare una domanda' means 'to ask a question'; after 'potere', use the infinitive. Literally: “Can-I make a question?”.",
+    "phrase": "Posso fare una domanda?",
+    "tags": ["modal_verbs", "idioms"]
+  },
+  {
+    "id": "IT110",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Non ___ capito. (I didn't understand)",
+    "options": ["sono", "ho", "ha", "ero"],
+    "correctAnswer": 1,
+    "explanation": "'Capire' forms the passato prossimo with 'avere'. Literally: “Not I-have understood”.",
+    "phrase": "Non ho capito.",
+    "tags": ["passato_prossimo", "avere", "negation"]
+  },
+  {
+    "id": "IT111",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Il ___ amico è simpatico. (My friend is nice)",
+    "options": ["mio", "miei", "mie", "mia"],
+    "correctAnswer": 0,
+    "explanation": "Possessives agree with the noun: 'amico' is masculine singular, so 'mio'. Literally: “The my friend is nice”.",
+    "phrase": "Il mio amico è simpatico.",
+    "tags": ["possessives", "agreement"]
+  },
+  {
+    "id": "IT112",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Vivo ___ Italia. (I live in Italy)",
+    "options": ["in", "a", "da", "di"],
+    "correctAnswer": 0,
+    "explanation": "Countries use 'in' for location. Literally: “I-live in Italy”.",
+    "phrase": "Vivo in Italia.",
+    "tags": ["prepositions", "places"]
+  },
+  {
+    "id": "IT113",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Vado ___ Roma in treno. (I'm going to Rome by train)",
+    "options": ["su", "in", "da", "a"],
+    "correctAnswer": 3,
+    "explanation": "Cities use 'a' for 'to' and 'in'. Literally: “I-go to Rome in train”.",
+    "phrase": "Vado a Roma in treno.",
+    "tags": ["prepositions", "places"]
+  },
+  {
+    "id": "IT114",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Il libro è ___ tavolo. (The book is on the table)",
+    "options": ["del", "sul", "dal", "nel"],
+    "correctAnswer": 1,
+    "explanation": "'Su' + 'il' combine into 'sul'. Literally: “The book is on-the table”.",
+    "phrase": "Il libro è sul tavolo.",
+    "tags": ["prepositions", "articulated_prepositions"]
+  },
+  {
+    "id": "IT115",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Vengo ___ Spagna. (I come from Spain)",
+    "options": ["nella", "della", "dalla", "alla"],
+    "correctAnswer": 2,
+    "explanation": "'Da' + 'la' combine into 'dalla' (origin). Literally: “I-come from-the Spain”.",
+    "phrase": "Vengo dalla Spagna.",
+    "tags": ["prepositions", "articulated_prepositions"]
+  },
+  {
+    "id": "IT116",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Ci sono molti ___ in centro. (There are many shops downtown)",
+    "options": ["negozio", "negozii", "negozi", "negozie"],
+    "correctAnswer": 2,
+    "explanation": "Masculine nouns in -o form the plural with -i. Literally: “There are many shops in centre”.",
+    "phrase": "Ci sono molti negozi in centro.",
+    "tags": ["plurals", "nouns"]
+  },
+  {
+    "id": "IT117",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Quanti ___ hai? (How many brothers do you have?)",
+    "options": ["fratelle", "fratella", "fratelli", "fratello"],
+    "correctAnswer": 2,
+    "explanation": "The plural of 'fratello' is 'fratelli'. Literally: “How-many brothers have-you?”.",
+    "phrase": "Quanti fratelli hai?",
+    "tags": ["plurals", "family"]
+  },
+  {
+    "id": "IT118",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Questi ragazzi sono ___. (These boys are tall)",
+    "options": ["alte", "alti", "alta", "alto"],
+    "correctAnswer": 1,
+    "explanation": "Adjectives agree in gender and number: masculine plural -i. Literally: “These boys are tall”.",
+    "phrase": "Questi ragazzi sono alti.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "IT119",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Le mie amiche sono molto ___. (My friends are very nice)",
+    "options": ["simpatico", "simpatici", "simpatiche", "simpatica"],
+    "correctAnswer": 2,
+    "explanation": "Feminine plural adjectives end in -e (here -che). Literally: “The my friends are very nice”.",
+    "phrase": "Le mie amiche sono molto simpatiche.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "IT120",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'volentieri' mean?",
+    "options": ["never", "badly", "gladly", "slowly"],
+    "correctAnswer": 2,
+    "explanation": "'volentieri' means 'gladly'. Literally: “willingly”.",
+    "phrase": "Vengo volentieri alla festa.",
+    "tags": ["adverbs"]
+  },
+  {
+    "id": "IT121",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'adesso' mean?",
+    "options": ["never", "later", "always", "now"],
+    "correctAnswer": 3,
+    "explanation": "'adesso' means 'now'. Literally: “now”.",
+    "phrase": "Adesso devo andare.",
+    "tags": ["adverbs", "time"]
+  },
+  {
+    "id": "IT122",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'spesso' mean?",
+    "options": ["often", "already", "never", "rarely"],
+    "correctAnswer": 0,
+    "explanation": "'spesso' means 'often'. Literally: “often”.",
+    "phrase": "Vado spesso in palestra.",
+    "tags": ["adverbs", "frequency"]
+  },
+  {
+    "id": "IT123",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'mai' mean?",
+    "options": ["often", "still", "always", "never / ever"],
+    "correctAnswer": 3,
+    "explanation": "'mai' means 'never / ever'. Used with 'non' it means 'never'. Literally: “ever”.",
+    "phrase": "Non vado mai al cinema.",
+    "tags": ["adverbs", "frequency"]
+  },
+  {
+    "id": "IT124",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'di solito' mean?",
+    "options": ["suddenly", "usually", "rarely", "finally"],
+    "correctAnswer": 1,
+    "explanation": "'di solito' means 'usually'. Literally: “of usual”.",
+    "phrase": "Di solito mangio all'una.",
+    "tags": ["adverbs", "frequency"]
+  },
+  {
+    "id": "IT125",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'già' mean?",
+    "options": ["never", "soon", "already", "still"],
+    "correctAnswer": 2,
+    "explanation": "'già' means 'already'. Literally: “already”.",
+    "phrase": "Ho già finito.",
+    "tags": ["adverbs", "time"]
+  },
+  {
+    "id": "IT126",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'ancora' mean?",
+    "options": ["soon", "already", "never", "still / yet / again"],
+    "correctAnswer": 3,
+    "explanation": "'ancora' means 'still / yet / again'. Literally: “still / again”.",
+    "phrase": "Non ho ancora mangiato.",
+    "tags": ["adverbs", "time"]
+  },
+  {
+    "id": "IT127",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'vicino' mean?",
+    "options": ["far", "above", "behind", "near"],
+    "correctAnswer": 3,
+    "explanation": "'vicino' means 'near'. Literally: “near”.",
+    "phrase": "La farmacia è vicino alla stazione.",
+    "tags": ["adverbs", "places"]
+  },
+  {
+    "id": "IT128",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'lontano' mean?",
+    "options": ["far", "inside", "outside", "near"],
+    "correctAnswer": 0,
+    "explanation": "'lontano' means 'far'. Literally: “far”.",
+    "phrase": "Il mare è lontano da qui.",
+    "tags": ["adverbs", "places"]
+  },
+  {
+    "id": "IT129",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "What does 'la settimana prossima' mean?",
+    "options": ["every week", "last week", "next week", "this week"],
+    "correctAnswer": 2,
+    "explanation": "'la settimana prossima' means 'next week'. Literally: “the week next”.",
+    "phrase": "La settimana prossima parto per Parigi.",
+    "tags": ["time", "plans"]
+  },
+  {
+    "id": "IT130",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Penso che lui ___ ragione. (I think he is right)",
+    "options": ["abbia", "avere", "ha", "avrei"],
+    "correctAnswer": 0,
+    "explanation": "'Pensare che' triggers the subjunctive (congiuntivo presente). Literally: “I-think that he have reason”.",
+    "phrase": "Penso che lui abbia ragione.",
+    "tags": ["congiuntivo", "opinions"]
+  },
+  {
+    "id": "IT131",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Credo che Marco ___ già partito. (I believe Marco has already left)",
+    "options": ["sarà", "sia", "è", "ha"],
+    "correctAnswer": 1,
+    "explanation": "After 'credo che', use the subjunctive: 'sia partito'. Literally: “I-believe that Marco be already left”.",
+    "phrase": "Credo che Marco sia già partito.",
+    "tags": ["congiuntivo", "passato"]
+  },
+  {
+    "id": "IT132",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Spero che tu ___ bene. (I hope you are well)",
+    "options": ["stare", "stai", "stia", "sta"],
+    "correctAnswer": 2,
+    "explanation": "'Sperare che' takes the subjunctive; 'stare' becomes 'stia'. Literally: “I-hope that you stay well”.",
+    "phrase": "Spero che tu stia bene.",
+    "tags": ["congiuntivo", "hopes"]
+  },
+  {
+    "id": "IT133",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Sebbene ___ stanco, ha continuato. (Although he was tired, he kept going)",
+    "options": ["fosse", "è", "era", "sarà"],
+    "correctAnswer": 0,
+    "explanation": "'Sebbene' (although) is followed by the subjunctive, here the imperfect subjunctive. Literally: “Although he-were tired, he-has continued”.",
+    "phrase": "Sebbene fosse stanco, ha continuato.",
+    "tags": ["congiuntivo", "concessive"]
+  },
+  {
+    "id": "IT134",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Se avessi più tempo, ___ di più. (If I had more time, I'd read more)",
+    "options": ["leggo", "leggerei", "leggevo", "leggerò"],
+    "correctAnswer": 1,
+    "explanation": "Unreal conditions use the imperfect subjunctive + conditional. Literally: “If I-had more time, I-would-read more”.",
+    "phrase": "Se avessi più tempo, leggerei di più.",
+    "tags": ["conditionals", "periodo_ipotetico"]
+  },
+  {
+    "id": "IT135",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Se fossi in te, ___ quel lavoro. (If I were you, I'd accept that job)",
+    "options": ["accetterei", "accetto", "accetterò", "accettavo"],
+    "correctAnswer": 0,
+    "explanation": "'Se fossi in te' is followed by the conditional. Literally: “If I-were in you, I-would-accept that job”.",
+    "phrase": "Se fossi in te, accetterei quel lavoro.",
+    "tags": ["conditionals", "advice"]
+  },
+  {
+    "id": "IT136",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Se avessi saputo, ___ venuto. (If I had known, I would have come)",
+    "options": ["sono", "sarei", "ero", "sarò"],
+    "correctAnswer": 1,
+    "explanation": "Past unreal conditions use the pluperfect subjunctive + past conditional. Literally: “If I-had known, I-would-be come”.",
+    "phrase": "Se avessi saputo, sarei venuto.",
+    "tags": ["conditionals", "past"]
+  },
+  {
+    "id": "IT137",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Mentre ___, ha squillato il telefono. (While I was cooking, the phone rang)",
+    "options": ["cucinerò", "ho cucinato", "cucino", "cucinavo"],
+    "correctAnswer": 3,
+    "explanation": "The imperfect gives the background action; the passato prossimo is the interruption. Literally: “While I-was-cooking, has rung the phone”.",
+    "phrase": "Mentre cucinavo, ha squillato il telefono.",
+    "tags": ["imperfetto", "passato_prossimo"]
+  },
+  {
+    "id": "IT138",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Quando sono arrivato, il film era già ___. (When I arrived, the film had already started)",
+    "options": ["iniziato", "iniziando", "inizia", "iniziare"],
+    "correctAnswer": 0,
+    "explanation": "The trapassato prossimo (era + participle) marks an earlier past action. Literally: “When I-am arrived, the film was already started”.",
+    "phrase": "Quando sono arrivato, il film era già iniziato.",
+    "tags": ["trapassato", "participles"]
+  },
+  {
+    "id": "IT139",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "___ aiutarmi, per favore? (Could you help me, please?)",
+    "options": ["Potere", "Potrai", "Potevi", "Potresti"],
+    "correctAnswer": 3,
+    "explanation": "The conditional 'potresti' is a polite request. Literally: “Could-you help-me, for favour?”.",
+    "phrase": "Potresti aiutarmi, per favore?",
+    "tags": ["conditionals", "politeness"]
+  },
+  {
+    "id": "IT140",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Vorrei che tu ___ con me. (I'd like you to come with me)",
+    "options": ["verrai", "vieni", "venire", "venissi"],
+    "correctAnswer": 3,
+    "explanation": "'Vorrei che' needs the imperfect subjunctive. Literally: “I-would-like that you came with me”.",
+    "phrase": "Vorrei che tu venissi con me.",
+    "tags": ["congiuntivo", "wishes"]
+  },
+  {
+    "id": "IT141",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Hai visto Maria? ___ ho vista ieri. (Have you seen Maria? I saw her yesterday)",
+    "options": ["Gli", "Lo", "Le", "L'"],
+    "correctAnswer": 3,
+    "explanation": "'La' elides to 'l'' before 'ho', and the participle agrees: 'vista'. Literally: “Her I-have seen yesterday”.",
+    "phrase": "Hai visto Maria? L' ho vista ieri.",
+    "tags": ["pronouns", "direct_object", "agreement"]
+  },
+  {
+    "id": "IT142",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Ho comprato dei fiori e ___ ho regalati ad Anna. (I bought some flowers and I gave them to Anna)",
+    "options": ["gli", "le", "li", "ci"],
+    "correctAnswer": 2,
+    "explanation": "'Li' replaces masculine plural direct objects; the participle agrees (regalati). Literally: “I-have bought some flowers and them I-have given to Anna”.",
+    "phrase": "Ho comprato dei fiori e li ho regalati ad Anna.",
+    "tags": ["pronouns", "direct_object"]
+  },
+  {
+    "id": "IT143",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Dai il libro a Luca? Sì, ___ do il libro. (Do you give Luca the book? Yes, I give him the book)",
+    "options": ["li", "le", "gli", "lo"],
+    "correctAnswer": 2,
+    "explanation": "'Gli' is the indirect object pronoun 'to him'. Literally: “Give-you the book to Luca? Yes, to-him I-give the book”.",
+    "phrase": "Dai il libro a Luca? Sì, gli do il libro.",
+    "tags": ["pronouns", "indirect_object"]
+  },
+  {
+    "id": "IT144",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Non ___ preoccupare! (Don't worry! (informal))",
+    "options": ["si", "te", "ti", "ci"],
+    "correctAnswer": 2,
+    "explanation": "Reflexive 'preoccuparsi' keeps its pronoun in the negative imperative. Literally: “Not yourself worry!”.",
+    "phrase": "Non ti preoccupare!",
+    "tags": ["imperative", "reflexive_verbs"]
+  },
+  {
+    "id": "IT145",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Penso ___ andare al mare. (I'm thinking of going to the sea)",
+    "options": ["a", "di", "da", "per"],
+    "correctAnswer": 1,
+    "explanation": "'Pensare di + infinitive' means 'to plan / think of doing'. Literally: “I-think of to-go to-the sea”.",
+    "phrase": "Penso di andare al mare.",
+    "tags": ["prepositions", "verbs"]
+  },
+  {
+    "id": "IT146",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Ho smesso ___ fumare. (I stopped smoking)",
+    "options": ["da", "in", "di", "a"],
+    "correctAnswer": 2,
+    "explanation": "'Smettere di + infinitive' means 'to stop doing'. Literally: “I-have stopped of to-smoke”.",
+    "phrase": "Ho smesso di fumare.",
+    "tags": ["prepositions", "verbs"]
+  },
+  {
+    "id": "IT147",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Sono riuscito ___ aprire la porta. (I managed to open the door)",
+    "options": ["a", "per", "da", "di"],
+    "correctAnswer": 0,
+    "explanation": "'Riuscire a + infinitive' means 'to succeed in doing'. Literally: “I-am succeeded to to-open the door”.",
+    "phrase": "Sono riuscito a aprire la porta.",
+    "tags": ["prepositions", "verbs"]
+  },
+  {
+    "id": "IT148",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Ho voglia ___ un gelato. (I feel like having an ice cream)",
+    "options": ["a", "di", "da", "per"],
+    "correctAnswer": 1,
+    "explanation": "'Avere voglia di' means 'to feel like'. Literally: “I-have desire of an ice-cream”.",
+    "phrase": "Ho voglia di un gelato.",
+    "tags": ["prepositions", "idioms"]
+  },
+  {
+    "id": "IT149",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Il libro ___ scritto da un autore famoso. (The book was written by a famous author)",
+    "options": ["è sono", "ha stato", "stato", "è stato"],
+    "correctAnswer": 3,
+    "explanation": "The passive uses 'essere' + past participle; in the passato prossimo: è stato scritto. Literally: “The book is been written by an author famous”.",
+    "phrase": "Il libro è stato scritto da un autore famoso.",
+    "tags": ["passive", "essere"]
+  },
+  {
+    "id": "IT150",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Questa casa ___ costruita nel 1950. (This house was built in 1950)",
+    "options": ["è", "è stata", "ha stata", "ha"],
+    "correctAnswer": 1,
+    "explanation": "The participle agrees with the feminine subject: stata, costruita. Literally: “This house is been built in-the 1950”.",
+    "phrase": "Questa casa è stata costruita nel 1950.",
+    "tags": ["passive", "agreement"]
+  },
+  {
+    "id": "IT151",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "È importante che tutti ___ le regole. (It's important that everyone follows the rules)",
+    "options": ["rispettano", "rispettino", "rispetteranno", "rispettare"],
+    "correctAnswer": 1,
+    "explanation": "After impersonal expressions like 'è importante che', use the subjunctive. Literally: “It-is important that all respect the rules”.",
+    "phrase": "È importante che tutti rispettino le regole.",
+    "tags": ["congiuntivo", "impersonal"]
+  },
+  {
+    "id": "IT152",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Bisogna che tu ___ subito. (You need to leave right away)",
+    "options": ["parti", "parta", "partirai", "partire"],
+    "correctAnswer": 1,
+    "explanation": "'Bisogna che' requires the subjunctive. Literally: “It-is-necessary that you leave at-once”.",
+    "phrase": "Bisogna che tu parta subito.",
+    "tags": ["congiuntivo", "necessity"]
+  },
+  {
+    "id": "IT153",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Prima che tu ___, dimmi la verità. (Before you go, tell me the truth)",
+    "options": ["partirai", "partendo", "parta", "partito"],
+    "correctAnswer": 2,
+    "explanation": "'Prima che' is always followed by the subjunctive. Literally: “Before that you leave, tell-me the truth”.",
+    "phrase": "Prima che tu parta, dimmi la verità.",
+    "tags": ["congiuntivo", "conjunctions"]
+  },
+  {
+    "id": "IT154",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Dopo ___ mangiato, siamo usciti. (After having eaten, we went out)",
+    "options": ["aver", "aveva", "essere", "avuto"],
+    "correctAnswer": 0,
+    "explanation": "'Dopo' + past infinitive (aver + participle) means 'after having done'. Literally: “After to-have eaten, we-are gone-out”.",
+    "phrase": "Dopo aver mangiato, siamo usciti.",
+    "tags": ["past_infinitive", "conjunctions"]
+  },
+  {
+    "id": "IT155",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'nonostante' mean?",
+    "options": ["despite / although", "because of", "unless", "therefore"],
+    "correctAnswer": 0,
+    "explanation": "'nonostante' means 'despite / although'. Literally: “notwithstanding”.",
+    "phrase": "Sono uscito nonostante la pioggia.",
+    "tags": ["connectors", "concessive"]
+  },
+  {
+    "id": "IT156",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'tuttavia' mean?",
+    "options": ["moreover", "however / nevertheless", "therefore", "meanwhile"],
+    "correctAnswer": 1,
+    "explanation": "'tuttavia' means 'however / nevertheless'. Literally: “all-the-way (tutta + via)”.",
+    "phrase": "Era stanco; tuttavia ha continuato.",
+    "tags": ["connectors"]
+  },
+  {
+    "id": "IT157",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'perciò' mean?",
+    "options": ["however", "moreover", "therefore", "although"],
+    "correctAnswer": 2,
+    "explanation": "'perciò' means 'therefore'. Literally: “for-this”.",
+    "phrase": "Era stanco, perciò è andato a letto.",
+    "tags": ["connectors"]
+  },
+  {
+    "id": "IT158",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'inoltre' mean?",
+    "options": ["instead", "therefore", "moreover / besides", "however"],
+    "correctAnswer": 2,
+    "explanation": "'inoltre' means 'moreover / besides'. Literally: “in-beyond”.",
+    "phrase": "L'hotel è bello; inoltre costa poco.",
+    "tags": ["connectors"]
+  },
+  {
+    "id": "IT159",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'purtroppo' mean?",
+    "options": ["finally", "fortunately", "unfortunately", "probably"],
+    "correctAnswer": 2,
+    "explanation": "'purtroppo' means 'unfortunately'. Literally: “even-too-much”.",
+    "phrase": "Purtroppo non posso venire.",
+    "tags": ["adverbs", "connectors"]
+  },
+  {
+    "id": "IT160",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'comunque' mean?",
+    "options": ["together", "therefore", "never", "anyway / however"],
+    "correctAnswer": 3,
+    "explanation": "'comunque' means 'anyway / however'. Literally: “however (come + unque)”.",
+    "phrase": "Comunque, ho già deciso.",
+    "tags": ["connectors"]
+  },
+  {
+    "id": "IT161",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'affatto' mean?",
+    "options": ["never", "at all", "almost", "a lot"],
+    "correctAnswer": 1,
+    "explanation": "'affatto' means 'at all'. Used with 'non' to mean 'not at all'. Literally: “in-fact”.",
+    "phrase": "Non sono affatto stanco.",
+    "tags": ["adverbs", "negation"]
+  },
+  {
+    "id": "IT162",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'appena' mean?",
+    "options": ["never", "instead", "although", "as soon as / just"],
+    "correctAnswer": 3,
+    "explanation": "'appena' means 'as soon as / just'. Literally: “just”.",
+    "phrase": "Appena arrivo, ti chiamo.",
+    "tags": ["connectors", "time"]
+  },
+  {
+    "id": "IT163",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'fare brutta figura' mean?",
+    "options": [
+      "to draw badly",
+      "to make a bad impression",
+      "to cut a fine figure",
+      "to count the money"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'fare brutta figura' means 'to make a bad impression'. Literally: “to make ugly figure”.",
+    "phrase": "Ho fatto brutta figura alla cena.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT164",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'avere a che fare con' mean?",
+    "options": [
+      "to forget about",
+      "to deal a hand",
+      "to fight with",
+      "to have to do with"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'avere a che fare con' means 'to have to do with'. Literally: “to-have at what to-do with”.",
+    "phrase": "Non ho niente a che fare con questa storia.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT165",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'darsi da fare' mean?",
+    "options": [
+      "to give up",
+      "to give oneself away",
+      "to take a break",
+      "to get busy / make an effort"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'darsi da fare' means 'to get busy / make an effort'. Literally: “to-give-oneself to do”.",
+    "phrase": "Se vuoi riuscire, devi darti da fare.",
+    "tags": ["idioms", "reflexive_verbs"]
+  },
+  {
+    "id": "IT166",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'prendere in giro' mean?",
+    "options": [
+      "to tease / make fun of",
+      "to take seriously",
+      "to take for a walk",
+      "to take a trip"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'prendere in giro' means 'to tease / make fun of'. Literally: “to-take in round”.",
+    "phrase": "Mi stai prendendo in giro?",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT167",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'in bocca al lupo' mean?",
+    "options": ["watch out for wolves", "goodbye", "good luck", "be careful"],
+    "correctAnswer": 2,
+    "explanation": "'in bocca al lupo' means 'good luck'. The traditional reply is 'Crepi!'. Literally: “in mouth to-the wolf”.",
+    "phrase": "In bocca al lupo per l'esame!",
+    "tags": ["idioms", "wishes"]
+  },
+  {
+    "id": "IT168",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'far finta di' mean?",
+    "options": [
+      "to forget to",
+      "to feel like",
+      "to be afraid of",
+      "to pretend to"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'far finta di' means 'to pretend to'. Literally: “to-make pretence of”.",
+    "phrase": "Fa finta di non capire.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT169",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'mettersi d'accordo' mean?",
+    "options": [
+      "to sit down",
+      "to come to an agreement",
+      "to fall out",
+      "to get dressed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'mettersi d'accordo' means 'to come to an agreement'. Literally: “to-put-oneself of accord”.",
+    "phrase": "Dobbiamo metterci d'accordo sul prezzo.",
+    "tags": ["idioms", "reflexive_verbs"]
+  },
+  {
+    "id": "IT170",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'avere ragione' mean?",
+    "options": [
+      "to be right",
+      "to be wrong",
+      "to be reasonable",
+      "to be angry"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'avere ragione' means 'to be right'. Literally: “to-have reason”.",
+    "phrase": "Hai ragione, scusami.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT171",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'Ci tengo molto' mean?",
+    "options": [
+      "I have it here",
+      "It matters a lot to me",
+      "I hold it tightly",
+      "I'm holding on"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ci tengo molto' means 'It matters a lot to me'. Literally: “there I-hold much”.",
+    "phrase": "Ci tengo molto alla tua opinione.",
+    "tags": ["idioms", "feelings"]
+  },
+  {
+    "id": "IT172",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'cavarsela' mean?",
+    "options": [
+      "to take it off",
+      "to pull it out",
+      "to manage / get by",
+      "to get lost"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'cavarsela' means 'to manage / get by'. Literally: “to-pull-oneself-it”.",
+    "phrase": "Me la cavo bene in inglese.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT173",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'fare il possibile' mean?",
+    "options": [
+      "to do one's best",
+      "to be possible",
+      "to do the impossible",
+      "to make a guess"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'fare il possibile' means 'to do one's best'. Literally: “to-make the possible”.",
+    "phrase": "Faremo il possibile per aiutarti.",
+    "tags": ["idioms"]
+  },
+  {
+    "id": "IT174",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'stare per' mean?",
+    "options": ["to stand by", "to wait for", "to stay for", "to be about to"],
+    "correctAnswer": 3,
+    "explanation": "'stare per' means 'to be about to'. Literally: “to-stay for”.",
+    "phrase": "Il film sta per iniziare.",
+    "tags": ["idioms", "verbs"]
+  },
+  {
+    "id": "IT175",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'essere abituato a' mean?",
+    "options": [
+      "to be happy with",
+      "to be late for",
+      "to be used to",
+      "to be afraid of"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'essere abituato a' means 'to be used to'. Literally: “to-be accustomed to”.",
+    "phrase": "Sono abituato a svegliarmi presto.",
+    "tags": ["idioms", "habits"]
+  },
+  {
+    "id": "IT176",
+    "category": "work_study",
+    "level": "B1",
+    "question": "What does 'il colloquio di lavoro' mean?",
+    "options": [
+      "the work contract",
+      "the meeting room",
+      "the day off",
+      "the job interview"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'il colloquio di lavoro' means 'the job interview'. Literally: “the conversation of work”.",
+    "phrase": "Domani ho un colloquio di lavoro.",
+    "tags": ["work_study", "interviews"]
+  },
+  {
+    "id": "IT177",
+    "category": "work_study",
+    "level": "B1",
+    "question": "What does 'il curriculum' mean?",
+    "options": [
+      "the CV / résumé",
+      "the curriculum (school)",
+      "the contract",
+      "the diploma"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'il curriculum' means 'the CV / résumé'. Literally: “the curriculum”.",
+    "phrase": "Ho inviato il curriculum all'azienda.",
+    "tags": ["work_study", "nouns"]
+  },
+  {
+    "id": "IT178",
+    "category": "work_study",
+    "level": "B1",
+    "question": "What does 'lo stipendio' mean?",
+    "options": ["the bonus", "the tax", "the pension", "the salary"],
+    "correctAnswer": 3,
+    "explanation": "'lo stipendio' means 'the salary'. Literally: “the stipend”.",
+    "phrase": "Lo stipendio arriva a fine mese.",
+    "tags": ["work_study", "money", "nouns"]
+  },
+  {
+    "id": "IT179",
+    "category": "work_study",
+    "level": "B1",
+    "question": "What does 'assumere' mean?",
+    "options": ["to promote", "to resign", "to hire", "to assume"],
+    "correctAnswer": 2,
+    "explanation": "'assumere' means 'to hire'. False friend: it means 'to hire', not 'to assume'. Literally: “to-assume”.",
+    "phrase": "L'azienda assumerà dieci persone.",
+    "tags": ["work_study", "verbs", "false_friends"]
+  },
+  {
+    "id": "IT180",
+    "category": "work_study",
+    "level": "B1",
+    "question": "What does 'licenziare' mean?",
+    "options": ["to allow", "to hire", "to dismiss / fire", "to graduate"],
+    "correctAnswer": 2,
+    "explanation": "'licenziare' means 'to dismiss / fire'. Literally: “to-license-away”.",
+    "phrase": "L'hanno licenziato ieri.",
+    "tags": ["work_study", "verbs"]
+  },
+  {
+    "id": "IT181",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'il traguardo' mean?",
+    "options": [
+      "the train",
+      "the target price",
+      "the road sign",
+      "the goal / finish line"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'il traguardo' means 'the goal / finish line'. Literally: “the finish-line”.",
+    "phrase": "Ha raggiunto il suo traguardo.",
+    "tags": ["nouns"]
+  },
+  {
+    "id": "IT182",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'l'ambiente' mean?",
+    "options": [
+      "the ambience",
+      "the environment",
+      "the room",
+      "the atmosphere"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'l'ambiente' means 'the environment'. Literally: “the environment”.",
+    "phrase": "Dobbiamo proteggere l'ambiente.",
+    "tags": ["environment", "nouns"]
+  },
+  {
+    "id": "IT183",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'la raccolta differenziata' mean?",
+    "options": [
+      "a charity collection",
+      "the harvest",
+      "the recycling bin",
+      "separate waste collection"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'la raccolta differenziata' means 'separate waste collection'. Literally: “the collection differentiated”.",
+    "phrase": "La raccolta differenziata è obbligatoria.",
+    "tags": ["environment"]
+  },
+  {
+    "id": "IT184",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'il rapporto' mean?",
+    "options": [
+      "the rapport",
+      "the weight",
+      "relationship / report",
+      "the proof"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'il rapporto' means 'relationship / report'. Literally: “the report / relation”.",
+    "phrase": "Ho un buon rapporto con i colleghi.",
+    "tags": ["nouns", "work_study"]
+  },
+  {
+    "id": "IT185",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'affidabile' mean?",
+    "options": ["affable", "lazy", "cheap", "reliable"],
+    "correctAnswer": 3,
+    "explanation": "'affidabile' means 'reliable'. Literally: “entrust-able”.",
+    "phrase": "Marta è una collega molto affidabile.",
+    "tags": ["adjectives", "personality"]
+  },
+  {
+    "id": "IT186",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'disponibile' mean?",
+    "options": ["available / helpful", "disposable", "expensive", "unable"],
+    "correctAnswer": 0,
+    "explanation": "'disponibile' means 'available / helpful'. Literally: “dispose-able”.",
+    "phrase": "Il mio collega è sempre disponibile.",
+    "tags": ["adjectives", "personality"]
+  },
+  {
+    "id": "IT187",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'soddisfatto' mean?",
+    "options": ["angry", "satisfied", "surprised", "tired"],
+    "correctAnswer": 1,
+    "explanation": "'soddisfatto' means 'satisfied'. Literally: “satisfied”.",
+    "phrase": "Sono soddisfatto del risultato.",
+    "tags": ["adjectives", "feelings"]
+  },
+  {
+    "id": "IT188",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'deluso' mean?",
+    "options": ["deluded", "disappointed", "annoyed", "delighted"],
+    "correctAnswer": 1,
+    "explanation": "'deluso' means 'disappointed'. Literally: “disappointed”.",
+    "phrase": "Sono rimasto deluso dal film.",
+    "tags": ["adjectives", "feelings"]
+  },
+  {
+    "id": "IT189",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'preoccupato' mean?",
+    "options": ["worried", "pre-occupied", "relaxed", "excited"],
+    "correctAnswer": 0,
+    "explanation": "'preoccupato' means 'worried'. Literally: “pre-occupied”.",
+    "phrase": "Sono preoccupato per l'esame.",
+    "tags": ["adjectives", "feelings"]
+  },
+  {
+    "id": "IT190",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'sviluppare' mean?",
+    "options": ["to solve", "to unwrap", "to remove", "to develop"],
+    "correctAnswer": 3,
+    "explanation": "'sviluppare' means 'to develop'. Literally: “to-unwrap”.",
+    "phrase": "Vogliamo sviluppare un nuovo progetto.",
+    "tags": ["verbs", "work_study"]
+  },
+  {
+    "id": "IT191",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'richiedere' mean?",
+    "options": ["to require / request", "to refuse", "to pay", "to ask again"],
+    "correctAnswer": 0,
+    "explanation": "'richiedere' means 'to require / request'. Literally: “to-re-ask”.",
+    "phrase": "Il lavoro richiede molta pazienza.",
+    "tags": ["verbs"]
+  },
+  {
+    "id": "IT192",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'la scelta' mean?",
+    "options": ["the shelf", "the choice", "the shell", "the scene"],
+    "correctAnswer": 1,
+    "explanation": "'la scelta' means 'the choice'. Literally: “the choosing”.",
+    "phrase": "È stata una scelta difficile.",
+    "tags": ["nouns"]
+  },
+  {
+    "id": "IT193",
+    "category": "Vocabulary",
+    "level": "B1",
+    "question": "What does 'Magari' mean?",
+    "options": ["Of course", "Never", "If only / maybe", "Unfortunately"],
+    "correctAnswer": 2,
+    "explanation": "'Magari' means 'If only / maybe'. Literally: “maybe (from Greek makários, “blessed”)”.",
+    "phrase": "Magari vincessi alla lotteria!",
+    "tags": ["connectors", "wishes"]
+  }
+]

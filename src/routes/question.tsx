@@ -19,7 +19,7 @@ export const getQuestionHandler = async (c: Context) => {
     questionNumber < 0 ||
     questionNumber >= dailyQuestions.length
   ) {
-    return c.html("<p>Daily quiz complete!</p>");
+    return c.html("<p>Daily quiz complete!</p>", 200, { "X-Robots-Tag": "noindex" });
   }
   const question = dailyQuestions[questionNumber];
   if (questionNumber === 0) {
@@ -40,6 +40,8 @@ export const getQuestionHandler = async (c: Context) => {
       totalQuestions={dailyQuestions.length}
       langCode={langCode}
     />,
+    200,
+    { "X-Robots-Tag": "noindex" },
   );
 };
 

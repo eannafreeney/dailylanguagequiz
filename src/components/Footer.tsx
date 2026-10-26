@@ -1,10 +1,12 @@
 import { languageConfig } from "../config/language-config";
+import { languages } from "../lib/languages";
 import type { LangCode } from "../types";
 
 type Props = { title: string; kicker: string; langCode: LangCode };
 
 const Footer = ({ title, kicker, langCode }: Props) => {
   const { links, theme } = languageConfig[langCode];
+  const siteName = languages.find((item) => item.langCode === langCode)?.siteName;
   const logoHover = `hover:text-${theme.accentText}`;
   const linkColor = `text-${theme.accentText} hover:text-${theme.accentText}200`;
 
@@ -49,7 +51,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
         </div>
         <div class="mt-8 border-t border-slate-800 pt-5">
           <p class="text-xs text-slate-500">
-            © {new Date().getFullYear()} Daily Words. Made for curious learners.
+            © {new Date().getFullYear()} {siteName}. Made for curious learners.
           </p>
         </div>
       </div>
