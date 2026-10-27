@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
-import { quizzes } from "../lib/quizzes";
 
 type Props = PropsWithChildren<{ langCode: LangCode }>;
 
@@ -12,7 +11,7 @@ const Layout = ({ langCode, children }: Props) => {
   if (!language) return null;
   const { siteName, siteUrl, flag, englishName, description } = language;
   const title = `${flag} ${englishName}`;
-  const questionCount = langCode === "zh" ? 10 : 5;
+  const questionCount = 5;
   const pageTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
   const kicker = `Daily practice — ${questionCount} questions a day.`;
   const canonical = siteUrl ? `${siteUrl}/` : undefined;
@@ -51,7 +50,7 @@ const Layout = ({ langCode, children }: Props) => {
       <body class="bg-white">
         <Header
           title={title}
-          questionCount={quizzes[langCode as keyof typeof quizzes].length}
+          questionCount={questionCount}
           langCode={langCode}
         />
         <main class="my-4 px-4">{children}</main>
