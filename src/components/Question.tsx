@@ -78,7 +78,7 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
       </div>
       <p class="mt-5 text-center text-sm text-slate-500">{isChinese ? "Five questions a day. Every answer includes pinyin and an explanation." : "Five minutes a day can make a difference."}</p>
     </section>
-    <aside id="answer-panel" aria-live="polite" class="w-full min-w-0 lg:sticky lg:top-6">
+    <aside id="answer" aria-live="polite" class="w-full min-w-0 lg:sticky lg:top-6">
       <div class="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 sm:p-8">
         <p class="text-lg font-bold text-slate-800">Your answer</p>
         <p class="mt-2 leading-relaxed text-slate-600">Choose an option on the left. Your result and explanation will appear here automatically.</p>
