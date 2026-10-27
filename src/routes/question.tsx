@@ -52,7 +52,11 @@ export const answerQuestionHandler = async (c: Context) => {
   const langCode = rawLangCode;
   const questionNumber = Number(c.req.param("questionNumber"));
   const body = await c.req.parseBody();
-  const { id, answer, number } = body;
+  const { id, answer, number, script: submittedScript } = body;
+  const script =
+    langCode === "zh" && submittedScript === "traditional"
+      ? "traditional"
+      : "simplified";
 
   if (
     typeof id !== "string" ||
@@ -71,6 +75,7 @@ export const answerQuestionHandler = async (c: Context) => {
           langCode={langCode}
           dailyQuestionsLength={0}
           message="Your submission is invalid. Please try again."
+          script={script}
         />
       </>,
       400,
@@ -87,6 +92,7 @@ export const answerQuestionHandler = async (c: Context) => {
         nextNumber={questionNumber}
         dailyQuestionsLength={dailyQuestions.length}
         message="We couldn't find that question. Please refresh and try again."
+        script={script}
       />,
       400,
     );
@@ -98,6 +104,8 @@ export const answerQuestionHandler = async (c: Context) => {
         langCode={langCode}
         nextNumber={questionNumber}
         dailyQuestionsLength={dailyQuestions.length}
+        question={question}
+        script={script}
       />,
       400,
     );
@@ -113,6 +121,8 @@ export const answerQuestionHandler = async (c: Context) => {
           langCode={langCode}
           nextNumber={questionNumber}
           dailyQuestionsLength={dailyQuestions.length}
+          question={question}
+          script={script}
         />
       </>,
     );
@@ -137,6 +147,7 @@ export const answerQuestionHandler = async (c: Context) => {
       question={question}
       nextNumber={questionNumber + 1}
       dailyQuestionsLength={dailyQuestions.length}
+      script={script}
     />,
   );
 };
