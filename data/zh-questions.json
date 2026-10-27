@@ -1,0 +1,361 @@
+[
+  {
+    "id": "ZH001",
+    "category": "greetings",
+    "level": "A1",
+    "question": "How do you say “hello” in Chinese?",
+    "options": [
+      "Goodbye",
+      "Hello",
+      "Thank you",
+      "Please"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "再见",
+      "你好",
+      "谢谢",
+      "请"
+    ],
+    "traditionalOptions": [
+      "再見",
+      "你好",
+      "謝謝",
+      "請"
+    ],
+    "optionPinyin": [
+      "zàijiàn",
+      "nǐ hǎo",
+      "xièxie",
+      "qǐng"
+    ],
+    "explanation": "你好 (nǐ hǎo) is the standard friendly greeting. Literally, the characters mean “you good.”",
+    "tags": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "ZH002",
+    "category": "requests",
+    "level": "A2",
+    "question": "Which phrase politely asks, “Could you help me?”?",
+    "options": [
+      "I don't understand",
+      "Could you help me?",
+      "I'll be right back",
+      "That's okay"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我不明白",
+      "可以帮我吗？",
+      "我马上回来",
+      "没关系"
+    ],
+    "traditionalOptions": [
+      "我不明白",
+      "可以幫我嗎？",
+      "我馬上回來",
+      "沒關係"
+    ],
+    "optionPinyin": [
+      "wǒ bù míngbai",
+      "kěyǐ bāng wǒ ma?",
+      "wǒ mǎshàng huílái",
+      "méi guānxi"
+    ],
+    "explanation": "可以 (kěyǐ) means “can/may”; 帮我 (bāng wǒ) means “help me.” 吗 / 嗎 turns the phrase into a yes-or-no question.",
+    "tags": [
+      "requests",
+      "politeness"
+    ]
+  },
+  {
+    "id": "ZH003",
+    "category": "opinions",
+    "level": "B1",
+    "question": "Which phrase means, “I think this is a good idea”?",
+    "options": [
+      "I think this is a good idea",
+      "I forgot to bring my keys",
+      "He arrived earlier than me",
+      "Please close the door"
+    ],
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我觉得这个主意不错。",
+      "我忘了带钥匙。",
+      "他比我来得早。",
+      "请把门关上。"
+    ],
+    "traditionalOptions": [
+      "我覺得這個主意不錯。",
+      "我忘了帶鑰匙。",
+      "他比我來得早。",
+      "請把門關上。"
+    ],
+    "optionPinyin": [
+      "wǒ juéde zhège zhǔyi búcuò",
+      "wǒ wàng le dài yàoshi",
+      "tā bǐ wǒ lái de zǎo",
+      "qǐng bǎ mén guān shàng"
+    ],
+    "explanation": "我觉得 / 我覺得 (wǒ juéde) means “I think,” while 不错 / 不錯 (búcuò) means “not bad” or “pretty good.”",
+    "tags": [
+      "opinions",
+      "sentences"
+    ]
+  },
+  {
+    "id": "ZH004",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Choose the sentence that means, “Although I was tired, I still finished the work.”",
+    "options": [
+      "If I have time, I'll go",
+      "Although I was tired, I still finished the work",
+      "Because it rained, we didn't go out",
+      "It is not only cheap, but also useful"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "如果有时间，我就去。",
+      "虽然很累，但是我还是完成了工作。",
+      "因为下雨，所以我们没出门。",
+      "不但便宜，而且很好用。"
+    ],
+    "traditionalOptions": [
+      "如果有時間，我就去。",
+      "雖然很累，但是我還是完成了工作。",
+      "因為下雨，所以我們沒出門。",
+      "不但便宜，而且很好用。"
+    ],
+    "optionPinyin": [
+      "rúguǒ yǒu shíjiān, wǒ jiù qù",
+      "suīrán hěn lèi, dànshì wǒ háishi wánchéng le gōngzuò",
+      "yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūmén",
+      "bùdàn piányi, érqiě hěn hǎo yòng"
+    ],
+    "explanation": "虽然 / 雖然 (suīrán) introduces a concession (“although”); 但是 (dànshì) introduces the contrast (“but”).",
+    "tags": [
+      "contrast",
+      "grammar"
+    ]
+  },
+  {
+    "id": "ZH005",
+    "category": "everyday",
+    "level": "A1",
+    "question": "Which phrase asks, “What is this?”",
+    "options": [
+      "What is your name?",
+      "What is this?",
+      "Where do you live?",
+      "What time is it now?"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "你叫什么名字？",
+      "这是什么？",
+      "你住在哪里？",
+      "现在几点？"
+    ],
+    "traditionalOptions": [
+      "你叫什麼名字？",
+      "這是什麼？",
+      "你住在哪裡？",
+      "現在幾點？"
+    ],
+    "optionPinyin": [
+      "nǐ jiào shénme míngzi?",
+      "zhè shì shénme?",
+      "nǐ zhù zài nǎlǐ?",
+      "xiànzài jǐ diǎn?"
+    ],
+    "explanation": "这 / 這 (zhè) means “this,” 是 (shì) means “is,” and 什么 / 什麼 (shénme) means “what.”",
+    "tags": [
+      "questions",
+      "everyday"
+    ]
+  },
+  {
+    "id": "ZH006",
+    "category": "plans",
+    "level": "B1",
+    "question": "Which sentence means, “I plan to travel next month”?",
+    "options": [
+      "I have already travelled for a month",
+      "I plan to travel next month",
+      "I am busy every month",
+      "I don't really like flying"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我已经旅行了一个月。",
+      "我打算下个月去旅行。",
+      "我每个月都很忙。",
+      "我不太喜欢坐飞机。"
+    ],
+    "traditionalOptions": [
+      "我已經旅行了一個月。",
+      "我打算下個月去旅行。",
+      "我每個月都很忙。",
+      "我不太喜歡坐飛機。"
+    ],
+    "optionPinyin": [
+      "wǒ yǐjīng lǚxíng le yí ge yuè",
+      "wǒ dǎsuàn xià ge yuè qù lǚxíng",
+      "wǒ měi ge yuè dōu hěn máng",
+      "wǒ bú tài xǐhuan zuò fēijī"
+    ],
+    "explanation": "打算 (dǎsuàn) means “to plan to,” and 下个月 / 下個月 (xià ge yuè) means “next month.”",
+    "tags": [
+      "plans",
+      "future"
+    ]
+  },
+  {
+    "id": "ZH007",
+    "category": "daily-life",
+    "level": "A2",
+    "question": "Which sentence means, “I take the bus to work every day”?",
+    "options": [
+      "I take the bus to work every day",
+      "I walked home yesterday",
+      "I cook at home on weekends",
+      "I usually get up at seven"
+    ],
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我每天坐公交车上班。",
+      "我昨天走路回家。",
+      "我周末在家做饭。",
+      "我通常七点起床。"
+    ],
+    "traditionalOptions": [
+      "我每天坐公車上班。",
+      "我昨天走路回家。",
+      "我週末在家做飯。",
+      "我通常七點起床。"
+    ],
+    "optionPinyin": [
+      "wǒ měitiān zuò gōngjiāochē shàngbān",
+      "wǒ zuótiān zǒulù huí jiā",
+      "wǒ zhōumò zài jiā zuò fàn",
+      "wǒ tōngcháng qī diǎn qǐchuáng"
+    ],
+    "explanation": "每天 (měitiān) means “every day”; 坐公交车 / 坐公車 (zuò gōngjiāochē) means “take the bus.”",
+    "tags": [
+      "daily-life",
+      "transport"
+    ]
+  },
+  {
+    "id": "ZH008",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Choose the sentence that means, “If we prepare in advance, we won’t be so nervous.”",
+    "options": [
+      "Although we're busy, we're happy",
+      "We prepared better than yesterday",
+      "If we prepare in advance, we won't be so nervous",
+      "We chat while eating"
+    ],
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我们虽然很忙，但是很开心。",
+      "我们准备得比昨天好。",
+      "如果提前准备，就不会这么紧张。",
+      "我们一边吃饭，一边聊天。"
+    ],
+    "traditionalOptions": [
+      "我們雖然很忙，但是很開心。",
+      "我們準備得比昨天好。",
+      "如果提前準備，就不會這麼緊張。",
+      "我們一邊吃飯，一邊聊天。"
+    ],
+    "optionPinyin": [
+      "wǒmen suīrán hěn máng, dànshì hěn kāixīn",
+      "wǒmen zhǔnbèi de bǐ zuótiān hǎo",
+      "rúguǒ tíqián zhǔnbèi, jiù bú huì zhème jǐnzhāng",
+      "wǒmen yìbiān chīfàn, yìbiān liáotiān"
+    ],
+    "explanation": "如果 (rúguǒ) means “if,” and 就 (jiù) introduces the result. 提前 (tíqián) means “in advance.”",
+    "tags": [
+      "conditionals",
+      "grammar"
+    ]
+  },
+  {
+    "id": "ZH009",
+    "category": "preferences",
+    "level": "A2",
+    "question": "Which sentence means, “I prefer drinking tea”?",
+    "options": [
+      "I prefer drinking tea",
+      "I rarely drink coffee",
+      "I want to buy a cup of water",
+      "I don't like this flavour"
+    ],
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我比较喜欢喝茶。",
+      "我很少喝咖啡。",
+      "我想买一杯水。",
+      "我不喜欢这个味道。"
+    ],
+    "traditionalOptions": [
+      "我比較喜歡喝茶。",
+      "我很少喝咖啡。",
+      "我想買一杯水。",
+      "我不喜歡這個味道。"
+    ],
+    "optionPinyin": [
+      "wǒ bǐjiào xǐhuan hē chá",
+      "wǒ hěn shǎo hē kāfēi",
+      "wǒ xiǎng mǎi yì bēi shuǐ",
+      "wǒ bù xǐhuan zhège wèidào"
+    ],
+    "explanation": "比较 / 比較 (bǐjiào) softens a comparison and here means “rather/prefer”; 喜欢 / 喜歡 (xǐhuan) means “like.”",
+    "tags": [
+      "preferences",
+      "food-drink"
+    ]
+  },
+  {
+    "id": "ZH010",
+    "category": "experiences",
+    "level": "B1",
+    "question": "Which sentence means, “This is my first time visiting China”?",
+    "options": [
+      "I visited China twice last year",
+      "This is my first time visiting China",
+      "My friend lives in northern China",
+      "I plan to work in China for three years"
+    ],
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我去年去过中国两次。",
+      "这是我第一次来中国。",
+      "我朋友住在中国北方。",
+      "我打算在中国工作三年。"
+    ],
+    "traditionalOptions": [
+      "我去年去過中國兩次。",
+      "這是我第一次來中國。",
+      "我朋友住在中國北方。",
+      "我打算在中國工作三年。"
+    ],
+    "optionPinyin": [
+      "wǒ qùnián qù guo Zhōngguó liǎng cì",
+      "zhè shì wǒ dì-yī cì lái Zhōngguó",
+      "wǒ péngyou zhù zài Zhōngguó běifāng",
+      "wǒ dǎsuàn zài Zhōngguó gōngzuò sān nián"
+    ],
+    "explanation": "第一次 (dì-yī cì) means “the first time.” 来中国 / 來中國 (lái Zhōngguó) means “come to China.”",
+    "tags": [
+      "experiences",
+      "time"
+    ]
+  }
+]
