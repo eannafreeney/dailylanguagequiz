@@ -46,7 +46,7 @@ const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, 
       : undefined;
 
   return (
-    <div id="answer" class={`mt-6 rounded-2xl border p-5 shadow-sm sm:p-6 ${styles.card}`}>
+    <div id="answer" class={`w-full min-w-0 rounded-2xl border p-5 shadow-sm sm:p-6 lg:sticky lg:top-6 ${styles.card}`}>
       <div class="flex items-start gap-3">
         <span aria-hidden="true" class={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xl font-bold ${styles.icon}`}>{styles.iconText}</span>
         <div class="min-w-0 flex-1">
