@@ -3,7 +3,7 @@
     "id": "ZH001",
     "category": "greetings",
     "level": "A1",
-    "question": "How do you say “hello” in Chinese?",
+    "question": "Select the Chinese greeting for “hello.”",
     "options": [
       "Goodbye",
       "Hello",
@@ -38,7 +38,7 @@
     "id": "ZH002",
     "category": "requests",
     "level": "A2",
-    "question": "Which phrase politely asks, “Could you help me?”",
+    "question": "Select the polite request for help.",
     "options": [
       "I don't understand",
       "Could you help me?",
@@ -74,7 +74,7 @@
     "id": "ZH003",
     "category": "opinions",
     "level": "B1",
-    "question": "Which phrase means, “I think this is a good idea”?",
+    "question": "Select the sentence expressing a positive opinion.",
     "options": [
       "I think this is a good idea",
       "I forgot to bring my keys",
@@ -110,7 +110,7 @@
     "id": "ZH004",
     "category": "grammar",
     "level": "B2",
-    "question": "Choose the sentence that means, “Although I was tired, I still finished the work.”",
+    "question": "Select the sentence using an “although…but” contrast.",
     "options": [
       "If I have time, I'll go",
       "Although I was tired, I still finished the work",
@@ -146,7 +146,7 @@
     "id": "ZH005",
     "category": "everyday",
     "level": "A1",
-    "question": "Which phrase asks, “What is this?”",
+    "question": "Select the Chinese question “What is this?”",
     "options": [
       "What is your name?",
       "What is this?",
@@ -182,7 +182,7 @@
     "id": "ZH006",
     "category": "plans",
     "level": "B1",
-    "question": "Which sentence means, “I plan to travel next month”?",
+    "question": "Select the sentence about plans for next month.",
     "options": [
       "I have already travelled for a month",
       "I plan to travel next month",
@@ -218,7 +218,7 @@
     "id": "ZH007",
     "category": "daily-life",
     "level": "A2",
-    "question": "Which sentence means, “I take the bus to work every day”?",
+    "question": "Select the sentence about commuting by bus every day.",
     "options": [
       "I take the bus to work every day",
       "I walked home yesterday",
@@ -254,7 +254,7 @@
     "id": "ZH008",
     "category": "grammar",
     "level": "B2",
-    "question": "Choose the sentence that means, “If we prepare in advance, we won’t be so nervous.”",
+    "question": "Select the conditional sentence about preparing in advance.",
     "options": [
       "Although we're busy, we're happy",
       "We prepared better than yesterday",
@@ -290,7 +290,7 @@
     "id": "ZH009",
     "category": "preferences",
     "level": "A2",
-    "question": "Which sentence means, “I prefer drinking tea”?",
+    "question": "Select the sentence expressing a preference for tea.",
     "options": [
       "I prefer drinking tea",
       "I rarely drink coffee",
@@ -326,7 +326,7 @@
     "id": "ZH010",
     "category": "experiences",
     "level": "B1",
-    "question": "Which sentence means, “This is my first time visiting China”?",
+    "question": "Select the sentence about a first visit to China.",
     "options": [
       "I visited China twice last year",
       "This is my first time visiting China",
