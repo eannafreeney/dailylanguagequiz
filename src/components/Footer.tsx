@@ -23,7 +23,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
         <div class="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div>
             <a
-              href="/"
+              href={langCode === "zh" ? "/zh" : "/"}
               class={`inline-flex items-center gap-2 text-lg font-bold tracking-tight text-white ${logoHover}`}
             >
               <span
