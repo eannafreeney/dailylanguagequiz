@@ -12,8 +12,9 @@ const Layout = ({ langCode, children }: Props) => {
   if (!language) return null;
   const { siteName, siteUrl, flag, englishName, description } = language;
   const title = `${flag} ${englishName}`;
-  const pageTitle = `Daily ${englishName} quiz — five questions a day`;
-  const kicker = "Daily practice — five questions a day.";
+  const questionCount = langCode === "zh" ? 10 : 5;
+  const pageTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
+  const kicker = `Daily practice — ${questionCount} questions a day.`;
   const canonical = siteUrl ? `${siteUrl}/` : undefined;
 
   return (
