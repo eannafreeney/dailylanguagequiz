@@ -5,11 +5,12 @@ import { languages } from "../lib/languages";
 const CompleteBanner = ({ langCode }: { langCode: LangCode }) => {
   const language = languages.find((item) => item.langCode === langCode)!;
   const { theme } = languageConfig[langCode];
+  const questionCount = langCode === "zh" ? 10 : 5;
   return (
     <div class={`mt-6 border-t pt-6 ${langCode === "ga" ? "border-emerald-200" : theme.accentBorder}`}>
       <p class={`text-xl font-bold ${langCode === "ga" ? "text-emerald-950" : theme.accentText}`}>🎉 You’ve completed today’s quiz!</p>
       <p class={`mt-2 leading-relaxed ${langCode === "ga" ? "text-emerald-800" : "text-slate-700"}`}>
-        Five questions done. Come back tomorrow to keep building your {language.englishName} skills.
+        {questionCount} questions done. Come back tomorrow to keep building your {language.englishName} skills.
       </p>
       {langCode === "ga" && (
         <div class="mt-5 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
