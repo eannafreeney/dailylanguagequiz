@@ -16,12 +16,19 @@ if (config.includes('"routes"')) {
 
 writeFileSync("wrangler.dev.jsonc", config);
 
+const css = spawn(
+  "node_modules/.bin/tailwindcss",
+  ["-i", "./src/styles.css", "-o", "./public/tailwind.css", "--watch"],
+  { stdio: "inherit" },
+);
+
 const child = spawn(
   process.execPath,
   ["node_modules/wrangler/bin/wrangler.js", "dev", "--config", "wrangler.dev.jsonc"],
   { stdio: "inherit" },
 );
 child.on("exit", (code, signal) => {
+  css.kill();
   if (signal) process.kill(process.pid, signal);
   process.exit(code ?? 0);
 });

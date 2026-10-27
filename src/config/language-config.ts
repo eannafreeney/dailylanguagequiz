@@ -1,9 +1,10 @@
 import type { LangCode } from "../types";
 
-export type LanguageLink = { href: string; label: string };
+export type LanguageLink = { href: string; title: string; description: string };
 export type LanguageTheme = {
   accent: string;
   accentHover: string;
+  accentBorderHover: string;
   accentSoft: string;
   accentBorder: string;
   accentText: string;
@@ -25,6 +26,7 @@ export type LanguageConfig = { links: LanguageLink[]; theme: LanguageTheme };
 const irishTheme: LanguageTheme = {
   accent: "bg-emerald-700",
   accentHover: "hover:bg-emerald-800",
+  accentBorderHover: "hover:border-emerald-800",
   accentSoft: "bg-emerald-50",
   accentBorder: "border-emerald-200",
   accentText: "text-emerald-800",
@@ -36,17 +38,18 @@ const irishTheme: LanguageTheme = {
   selectedOption:
     "has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50",
   optionHover: "hover:border-emerald-400 hover:bg-emerald-50",
-  kicker: "text-emerald-700",
-  headerBar: "border-b border-slate-200 bg-white",
+  kicker: "text-orange-700",
+  headerBar: "bg-white",
   headerTitle: "text-slate-900",
   headerMuted: "text-slate-500",
   markText: "text-white",
-  footerBar: "mt-auto border-t border-slate-200 bg-slate-950 text-slate-300",
+  footerBar: "mt-auto border-t-2 border-orange-400 bg-slate-950 text-slate-300",
 };
 
 const germanTheme: LanguageTheme = {
   accent: "bg-red-700",
   accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
   accentSoft: "bg-amber-50",
   accentBorder: "border-amber-400",
   accentText: "text-red-800",
@@ -58,7 +61,7 @@ const germanTheme: LanguageTheme = {
   selectedOption: "has-[:checked]:border-red-700 has-[:checked]:bg-amber-50",
   optionHover: "hover:border-amber-400 hover:bg-amber-50",
   kicker: "text-red-700",
-  headerBar: "border-b-4 border-red-600 bg-neutral-950",
+  headerBar: "bg-neutral-950 border-b-2 border-red-700",
   headerTitle: "text-white",
   headerMuted: "text-amber-200",
   markText: "text-amber-300",
@@ -69,6 +72,7 @@ const germanTheme: LanguageTheme = {
 const italianTheme: LanguageTheme = {
   accent: "bg-green-700",
   accentHover: "hover:bg-green-800",
+  accentBorderHover: "hover:border-green-800",
   accentSoft: "bg-green-50",
   accentBorder: "border-green-200",
   accentText: "text-green-800",
@@ -80,7 +84,7 @@ const italianTheme: LanguageTheme = {
   selectedOption: "has-[:checked]:border-green-600 has-[:checked]:bg-green-50",
   optionHover: "hover:border-green-400 hover:bg-green-50",
   kicker: "text-red-700",
-  headerBar: "border-b-2 border-green-700 bg-white",
+  headerBar: "bg-green-700",
   headerTitle: "text-slate-900",
   headerMuted: "text-slate-500",
   markText: "text-white",
@@ -93,16 +97,29 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   ga: {
     links: [
       {
-        href: "https://langkraft.app/learn/irish?utm_source=daily-quiz&utm_medium=referral&utm_content=header",
-        label: "Langkraft",
+        href: "https://langkraft.app/learn/irish",
+        title: "LangKraft Irish Course",
+        description: "A fun and effective way to learn Irish.",
       },
       {
-        href: "https://www.skool.com/learn-irish-with-eanna-5552/about",
-        label: "Skool",
+        href: "https://comhra.irish",
+        title: "Comhrá.Irish",
+        description: "A place to practice Irish everyday with others.",
       },
       {
-        href: "https://www.italki.com/en/teacher/3759793?lv=1",
-        label: "Lessons",
+        href: "https://www.youtube.com/@storiesinirish7621",
+        title: "Youtube",
+        description: "Children's stories in Irish.",
+      },
+      {
+        href: "https://irishstories.ie",
+        title: "Lessons",
+        description: "Take a lesson with a native speaker.",
+      },
+      {
+        href: "Skool",
+        title: "Skool Community",
+        description: "Learn Irish with Eanna",
       },
     ],
     theme: irishTheme,
@@ -110,8 +127,9 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   de: {
     links: [
       {
-        href: "https://langkraft.app/learn/german?utm_source=daily-quiz&utm_medium=referral&utm_content=header",
-        label: "Langkraft German",
+        href: "https://langkraft.ie/learn/german",
+        title: "LangKraft German Course",
+        description: "A fun and effective way to learn German.",
       },
     ],
     theme: germanTheme,

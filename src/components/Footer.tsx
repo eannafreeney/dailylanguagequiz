@@ -52,7 +52,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
                   rel="noopener noreferrer"
                   class={`font-semibold transition ${linkColor}`}
                 >
-                  {link.label}
+                  {link.title}
                   <span aria-hidden="true"> ↗</span>
                 </a>
               ))}

@@ -4,6 +4,7 @@ import Question from "../components/Question";
 import { languages } from "../lib/languages";
 import { getDailyQuestions } from "../utils";
 import ReminderPanel from "../components/ReminderPanel";
+import SponsorStack from "../components/SponsorStack";
 
 type Props = { langCode: LangCode };
 
@@ -31,6 +32,7 @@ const LanguagePage = ({ langCode }: Props) => {
           />
         </div>
       </section>
+      <SponsorStack langCode={langCode} />
     </Layout>
   );
 };

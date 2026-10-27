@@ -3,13 +3,12 @@ import type { LangCode } from "../types";
 
 type Props = {
   title: string;
-  kicker: string;
   questionCount: number;
   langCode: LangCode;
 };
 
-const Header = ({ title, kicker, questionCount, langCode }: Props) => {
-  const { links, theme } = languageConfig[langCode];
+const Header = ({ title, questionCount, langCode }: Props) => {
+  const { theme } = languageConfig[langCode];
   return (
     <header class={theme.headerBar}>
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -28,7 +27,6 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
             >
               {title}
             </span>
-            {/* <span class={`block text-xs ${theme.headerMuted}`}>{kicker}</span> */}
           </span>
         </a>
         <div class="flex items-center gap-3">
@@ -37,7 +35,7 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
           >
             {questionCount} questions
           </span>
-          {links.length > 0 && (
+          {/* {links.length > 0 && (
             <details class="dropdown dropdown-end">
               <summary
                 class={`inline-flex cursor-pointer items-center gap-1 rounded-lg ${theme.accentSoft} px-3 py-2 text-sm font-semibold ${theme.accentText} transition`}
@@ -50,7 +48,7 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
                 ))}
               </ul>
             </details>
-          )}
+          )} */}
         </div>
       </nav>
     </header>
@@ -58,15 +56,15 @@ const Header = ({ title, kicker, questionCount, langCode }: Props) => {
 };
 export default Header;
 
-const Link = ({ href, label }: { href: string; label: string }) => (
-  <li>
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800"
-    >
-      {label} <span aria-hidden="true">↗</span>
-    </a>
-  </li>
-);
+// const Link = ({ href, label }: { href: string; label: string }) => (
+//   <li>
+//     <a
+//       href={href}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       class="block px-4 py-2 text-sm font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800"
+//     >
+//       {label} <span aria-hidden="true">↗</span>
+//     </a>
+//   </li>
+// );
