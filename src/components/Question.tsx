@@ -41,9 +41,12 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
         {isChinese ? (
           <div class="mb-5 flex items-center justify-between gap-3">
             <p class={`text-sm font-semibold uppercase tracking-wider ${theme.kicker}`}>Chinese · 中文</p>
-            <div class="inline-flex rounded-xl border border-slate-200 bg-slate-50 p-1" role="group" aria-label="Chinese character set">
-              <button type="button" x-on:click="script = 'simplified'; localStorage.setItem('zh-script', script)" x-bind:aria-pressed="script === 'simplified'" class="rounded-lg px-3 py-2 text-sm font-semibold" x-bind:class="script === 'simplified' ? 'bg-white text-red-700 shadow-sm' : 'text-slate-500'">简体</button>
-              <button type="button" x-on:click="script = 'traditional'; localStorage.setItem('zh-script', script)" x-bind:aria-pressed="script === 'traditional'" class="rounded-lg px-3 py-2 text-sm font-semibold" x-bind:class="script === 'traditional' ? 'bg-white text-red-700 shadow-sm' : 'text-slate-500'">繁體</button>
+            <div class="flex items-center gap-2 text-sm" aria-label="Chinese script">
+              <span x-bind:class="script === 'simplified' ? 'font-bold text-blue-900' : 'text-slate-500'">Simplified</span>
+              <button type="button" role="switch" aria-label="Toggle Simplified or Traditional Chinese" x-bind:aria-checked="script === 'traditional'" x-on:click="script = script === 'simplified' ? 'traditional' : 'simplified'; localStorage.setItem('zh-script', script)" class="relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700" x-bind:class="script === 'traditional' ? 'bg-blue-800' : 'bg-slate-300'">
+                <span class="inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform" x-bind:class="script === 'traditional' ? 'translate-x-5' : 'translate-x-0.5'"></span>
+              </button>
+              <span x-bind:class="script === 'traditional' ? 'font-bold text-blue-900' : 'text-slate-500'">Traditional</span>
             </div>
           </div>
         ) : (
@@ -75,7 +78,7 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
         </form>
         <div id="answer" class="mt-5" />
       </div>
-      <p class="mt-5 text-center text-sm text-slate-500">{isChinese ? "Ten questions a day. Every answer includes pinyin and an explanation." : "Five minutes a day can make a difference."}</p>
+      <p class="mt-5 text-center text-sm text-slate-500">{isChinese ? "Five questions a day. Every answer includes pinyin and an explanation." : "Five minutes a day can make a difference."}</p>
     </section>
   );
 };
