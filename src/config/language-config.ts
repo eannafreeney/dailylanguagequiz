@@ -91,8 +91,29 @@ const italianTheme: LanguageTheme = {
   footerBar: "mt-auto border-t border-green-900 bg-green-950 text-green-100",
 };
 
-// Language navigation and visual tokens are isolated here so the German
-// identity cannot bleed into the existing Irish quiz.
+const chineseTheme: LanguageTheme = {
+  accent: "bg-red-700",
+  accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
+  accentSoft: "bg-red-50",
+  accentBorder: "border-red-200",
+  accentText: "text-red-800",
+  focus: "focus-visible:outline-red-700",
+  progress: "bg-red-600",
+  progressTrack: "bg-slate-200",
+  radio:
+    "checked:border-red-600 checked:bg-[radial-gradient(circle,_#dc2626_35%,_white_40%)]",
+  selectedOption: "has-[:checked]:border-red-600 has-[:checked]:bg-red-50",
+  optionHover: "hover:border-red-300 hover:bg-red-50",
+  kicker: "text-red-700",
+  headerBar: "bg-red-700",
+  headerTitle: "text-white",
+  headerMuted: "text-red-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-yellow-400 bg-red-950 text-red-100",
+};
+
+// Language navigation and visual tokens are isolated here so language identities stay separate.
 export const languageConfig: Record<LangCode, LanguageConfig> = {
   ga: {
     links: [
@@ -119,7 +140,7 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
       {
         href: "Skool",
         title: "Skool Community",
-        description: "Learn Irish with Eanna",
+        description: "Learn Irish with Learn Irish",
       },
     ],
     theme: irishTheme,
@@ -136,4 +157,5 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   },
   ru: { links: [], theme: irishTheme },
   it: { links: [], theme: italianTheme },
+  zh: { links: [], theme: chineseTheme },
 };
