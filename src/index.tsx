@@ -28,6 +28,11 @@ app.get("/", (c) => {
   const language = languages.find((item) => item.langCode === getHostLang(c));
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
+app.get("/:langCode", (c) => {
+  const langCode = c.req.param("langCode");
+  if (!isLangCode(langCode)) return c.notFound();
+  return c.html(<LanguagePage langCode={langCode} />);
+});
 
 app.post("/subscribe", subscribeHandler);
 app.get("/confirm", confirmHandler);
