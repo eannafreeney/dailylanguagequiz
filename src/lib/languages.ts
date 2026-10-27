@@ -8,6 +8,7 @@ export const DOMAIN_TO_LANG: Record<string, string> = {
   "ga.localhost": "ga",
   "de.localhost": "de",
   "it.localhost": "it",
+  "zh.localhost": "zh",
 };
 
 export const HOST_REDIRECTS: Record<string, string> = {
@@ -56,5 +57,14 @@ export const languages = [
     flag: "🇮🇹",
     siteName: "My Daily Italian",
     siteUrl: "https://dailyitalianquiz.com",
+  },
+  {
+    langCode: "zh",
+    name: "中文",
+    englishName: "Chinese",
+    description:
+      "A daily Chinese quiz with ten mixed-level questions. Practise Simplified and Traditional Chinese with pinyin, vocabulary, and grammar from A1 to B2.",
+    flag: "🇨🇳",
+    siteName: "My Daily Chinese",
   },
 ];
