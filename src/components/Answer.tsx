@@ -11,9 +11,10 @@ type Props = {
   langCode: LangCode;
   dailyQuestionsLength: number;
   message?: string;
+  script?: string;
 };
 
-const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, message }: Props) => {
+const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, message, script = "simplified" }: Props) => {
   const isCorrect = status === "correct";
   const isComplete = isCorrect && nextNumber >= dailyQuestionsLength;
   const theme = languageConfig[langCode].theme;
@@ -36,6 +37,13 @@ const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, 
       title: "Choose an answer", description: "Please select one of the choices above.",
     },
   }[status];
+  const correctOption = question?.options[question.correctAnswer];
+  const chineseOption =
+    question && langCode === "zh"
+      ? (script === "traditional"
+          ? question.traditionalOptions?.[question.correctAnswer]
+          : question.simplifiedOptions?.[question.correctAnswer]) ?? correctOption
+      : undefined;
 
   return (
     <div id="answer" class={`mt-6 rounded-2xl border p-5 shadow-sm sm:p-6 ${styles.card}`}>
@@ -44,6 +52,14 @@ const Answer = ({ status, question, nextNumber, langCode, dailyQuestionsLength, 
         <div class="min-w-0 flex-1">
           <p class={`text-lg font-bold ${styles.heading}`}>{styles.title}</p>
           {!isCorrect && <p class={`mt-2 leading-relaxed ${styles.text}`}>{message ?? styles.description}</p>}
+          {question && langCode === "zh" && status !== "invalid" && (
+            <div class="mt-3 rounded-xl border border-red-100 bg-white/80 p-4">
+              <p class="text-sm font-medium text-slate-500">Correct answer</p>
+              <p lang="zh" class="mt-1 text-2xl font-bold text-slate-900">{chineseOption}</p>
+              <p class="mt-1 text-sm font-semibold text-red-700">{question.optionPinyin?.[question.correctAnswer]}</p>
+              <p class="mt-1 text-sm text-slate-600">{correctOption}</p>
+            </div>
+          )}
           {isCorrect && (
             <div class="mt-2 flex flex-col gap-4">
               {question?.phrase && <p class={`text-lg font-semibold ${styles.heading}`}>{question.phrase}</p>}
