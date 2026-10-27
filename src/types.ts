@@ -9,6 +9,9 @@ export type Question = {
   level?: string;
   phrase?: string;
   correctAnswer: number;
+  simplifiedOptions?: string[];
+  traditionalOptions?: string[];
+  optionPinyin?: string[];
 };
 
 export type LangCode = (typeof languages)[number]["langCode"];
