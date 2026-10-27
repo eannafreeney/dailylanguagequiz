@@ -1,6 +1,5 @@
 import type { LangCode, Question as QuizQuestion } from "../types";
 import { languageConfig } from "../config/language-config";
-import CheckAnswerButton from "./CheckAnswerButton";
 
 type Props = {
   question: QuizQuestion;
@@ -15,7 +14,7 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
   const isChinese = langCode === "zh";
 
   return (
-    <div class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-8">
+    <div class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:gap-8 lg:px-8">
     <section
       id="quiz"
       class="flex w-full min-w-0 flex-col gap-4"
@@ -54,13 +53,13 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
           <p class={`mb-3 text-sm font-semibold uppercase tracking-wider ${theme.kicker}`}>Complete the sentence</p>
         )}
         <h2 lang={isChinese ? "en" : langCode} class="mb-8 text-2xl font-bold leading-snug text-slate-900 sm:text-3xl">{question.question}</h2>
-        <form x-data="{ selectedAnswer: '' }" method="post" action={`/${langCode}/answer/${questionNumber}`} x-target="answer check-answer-button" class="space-y-3">
+        <form x-data="{ selectedAnswer: '' }" method="post" action={`/${langCode}/answer/${questionNumber}`} x-target="answer" class="space-y-3">
           <input type="hidden" name="id" value={question.id} />
           <input type="hidden" name="number" value={questionNumber} />
           {isChinese && <input type="hidden" name="script" x-bind:value="script" />}
           {question.options.map((option, index) => (
             <label key={option} class={`flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-4 transition ${theme.optionHover} ${theme.selectedOption}`}>
-              <input type="radio" name="answer" value={option} x-model="selectedAnswer" required class={`h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-slate-300 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.radio} ${theme.focus}`} />
+              <input type="radio" name="answer" value={option} x-model="selectedAnswer" x-on:change="$el.form.requestSubmit()" required class={`h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-slate-300 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.radio} ${theme.focus}`} />
               <span class="flex-1">
                 {isChinese ? (
                   <>
@@ -75,15 +74,14 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
               <span class="text-sm text-slate-400">{String.fromCharCode(65 + index)}</span>
             </label>
           ))}
-          <CheckAnswerButton langCode={langCode} />
         </form>
       </div>
       <p class="mt-5 text-center text-sm text-slate-500">{isChinese ? "Five questions a day. Every answer includes pinyin and an explanation." : "Five minutes a day can make a difference."}</p>
     </section>
-    <aside id="answer" aria-live="polite" class="w-full min-w-0 lg:sticky lg:top-6">
+    <aside id="answer-panel" aria-live="polite" class="w-full min-w-0 lg:sticky lg:top-6">
       <div class="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 sm:p-8">
         <p class="text-lg font-bold text-slate-800">Your answer</p>
-        <p class="mt-2 leading-relaxed text-slate-600">Choose an option on the left and select <span class="font-semibold">Check answer</span>. Your result and explanation will appear here.</p>
+        <p class="mt-2 leading-relaxed text-slate-600">Choose an option on the left. Your result and explanation will appear here automatically.</p>
         <div class="mt-5 flex items-center gap-3 text-sm text-slate-500">
           <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg">↳</span>
           <span>No need to scroll back and forth.</span>
