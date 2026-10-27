@@ -4,7 +4,7 @@ import { DOMAIN_TO_LANG, HOST_REDIRECTS, languages } from "./lib/languages";
 import { Context } from "hono";
 
 const DEFAULT_DAILY_QUESTION_COUNT = 5;
-const DAILY_QUESTION_COUNTS: Partial<Record<LangCode, number>> = { zh: 10 };
+const DAILY_QUESTION_COUNTS: Partial<Record<LangCode, number>> = {};
 const DAY_MS = 86_400_000;
 // One shuffle for the life of a bank. The day only picks the next slice.
 const DECK_SEED = 0x9e3779b9;
