@@ -4,759 +4,1242 @@
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «Привет» mean?",
-    "options": ["Goodbye", "Hello / Hi", "Thank you", "Please"],
+    "options": [
+      "Goodbye",
+      "Hello / Hi",
+      "Thank you"
+    ],
     "correctAnswer": 1,
     "explanation": "«Привет» is an informal greeting used with friends and people you know.",
     "phrase": "Привет! Как дела? — Hi! How are you?",
-    "tags": ["Greetings", "Basic vocabulary"]
+    "tags": [
+      "Greetings",
+      "Basic vocabulary"
+    ]
   },
   {
     "id": "RU002",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Thank you» in Russian?",
-    "options": ["Пожалуйста", "Извините", "Спасибо", "Здравствуйте"],
+    "options": [
+      "Пожалуйста",
+      "Извините",
+      "Спасибо"
+    ],
     "correctAnswer": 2,
     "explanation": "«Спасибо» means thank you.",
     "phrase": "Спасибо за помощь. — Thank you for the help.",
-    "tags": ["Politeness", "Basic vocabulary"]
+    "tags": [
+      "Politeness",
+      "Basic vocabulary"
+    ]
   },
   {
     "id": "RU003",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «Да» mean?",
-    "options": ["No", "Maybe", "Please", "Yes"],
-    "correctAnswer": 3,
+    "options": [
+      "Maybe",
+      "Please",
+      "Yes"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Да» is the Russian word for yes.",
     "phrase": "Да, я понимаю. — Yes, I understand.",
-    "tags": ["Basic vocabulary", "Yes and no"]
+    "tags": [
+      "Basic vocabulary",
+      "Yes and no"
+    ]
   },
   {
     "id": "RU004",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «water»?",
-    "options": ["Вода", "Еда", "Молоко", "Чай"],
+    "options": [
+      "Вода",
+      "Еда",
+      "Молоко"
+    ],
     "correctAnswer": 0,
     "explanation": "«Вода» means water.",
     "phrase": "Я пью воду. — I drink water.",
-    "tags": ["Food and drink", "Nouns"]
+    "tags": [
+      "Food and drink",
+      "Nouns"
+    ]
   },
   {
     "id": "RU005",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «дом» mean?",
-    "options": ["School", "House / home", "Shop", "Street"],
+    "options": [
+      "School",
+      "House / home",
+      "Shop"
+    ],
     "correctAnswer": 1,
     "explanation": "«Дом» means house or home.",
     "phrase": "Это мой дом. — This is my house.",
-    "tags": ["Home", "Nouns"]
+    "tags": [
+      "Home",
+      "Nouns"
+    ]
   },
   {
     "id": "RU006",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Good morning» in Russian?",
-    "options": ["Спокойной ночи", "Добрый вечер", "Доброе утро", "До свидания"],
+    "options": [
+      "Спокойной ночи",
+      "Добрый вечер",
+      "Доброе утро"
+    ],
     "correctAnswer": 2,
     "explanation": "«Доброе утро» is the standard greeting for the morning.",
     "phrase": "Доброе утро, мама! — Good morning, Mom!",
-    "tags": ["Greetings", "Time of day"]
+    "tags": [
+      "Greetings",
+      "Time of day"
+    ]
   },
   {
     "id": "RU007",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct pronoun: «___ студент».",
-    "options": ["Я", "Меня", "Мне", "Мной"],
+    "options": [
+      "Я",
+      "Меня",
+      "Мне"
+    ],
     "correctAnswer": 0,
     "explanation": "«Я» means I and is used as the subject of the sentence.",
     "phrase": "Я студент. — I am a student.",
-    "tags": ["Pronouns", "Basic sentences"]
+    "tags": [
+      "Pronouns",
+      "Basic sentences"
+    ]
   },
   {
     "id": "RU008",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «book»?",
-    "options": ["Ручка", "Книга", "Стол", "Окно"],
+    "options": [
+      "Ручка",
+      "Книга",
+      "Стол"
+    ],
     "correctAnswer": 1,
     "explanation": "«Книга» means book.",
     "phrase": "Это интересная книга. — This is an interesting book.",
-    "tags": ["School", "Nouns"]
+    "tags": [
+      "School",
+      "Nouns"
+    ]
   },
   {
     "id": "RU009",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Она ___ дома».",
-    "options": ["живу", "живёшь", "живёт", "живём"],
+    "options": [
+      "живу",
+      "живёшь",
+      "живёт"
+    ],
     "correctAnswer": 2,
     "explanation": "The third-person singular form of «жить» is «живёт».",
     "phrase": "Она живёт дома. — She lives at home.",
-    "tags": ["Present tense", "Verb conjugation"]
+    "tags": [
+      "Present tense",
+      "Verb conjugation"
+    ]
   },
   {
     "id": "RU010",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «кошка» mean?",
-    "options": ["Dog", "Bird", "Horse", "Cat"],
-    "correctAnswer": 3,
+    "options": [
+      "Bird",
+      "Horse",
+      "Cat"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Кошка» means cat.",
     "phrase": "У меня есть кошка. — I have a cat.",
-    "tags": ["Animals", "Nouns"]
+    "tags": [
+      "Animals",
+      "Nouns"
+    ]
   },
   {
     "id": "RU011",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Please» in Russian when making a request?",
-    "options": ["Пожалуйста", "Спасибо", "Простите", "Пока"],
+    "options": [
+      "Пожалуйста",
+      "Спасибо",
+      "Простите"
+    ],
     "correctAnswer": 0,
     "explanation": "«Пожалуйста» can mean please or you're welcome, depending on context.",
     "phrase": "Воду, пожалуйста. — Water, please.",
-    "tags": ["Politeness", "Everyday expressions"]
+    "tags": [
+      "Politeness",
+      "Everyday expressions"
+    ]
   },
   {
     "id": "RU012",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «mother»?",
-    "options": ["Отец", "Мать", "Брат", "Сын"],
+    "options": [
+      "Отец",
+      "Мать",
+      "Брат"
+    ],
     "correctAnswer": 1,
     "explanation": "«Мать» means mother; «мама» is the common, affectionate everyday form.",
     "phrase": "Моя мама дома. — My mother is at home.",
-    "tags": ["Family", "Nouns"]
+    "tags": [
+      "Family",
+      "Nouns"
+    ]
   },
   {
     "id": "RU013",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Ты ___ по-русски».",
-    "options": ["говорю", "говорит", "говоришь", "говорим"],
+    "options": [
+      "говорю",
+      "говорит",
+      "говоришь"
+    ],
     "correctAnswer": 2,
     "explanation": "With «ты» (you, singular informal), the verb form is «говоришь».",
     "phrase": "Ты говоришь по-русски. — You speak Russian.",
-    "tags": ["Present tense", "Verb conjugation"]
+    "tags": [
+      "Present tense",
+      "Verb conjugation"
+    ]
   },
   {
     "id": "RU014",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «большой» mean?",
-    "options": ["Small", "Old", "New", "Big"],
-    "correctAnswer": 3,
+    "options": [
+      "Old",
+      "New",
+      "Big"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Большой» means big or large.",
     "phrase": "Это большой город. — This is a big city.",
-    "tags": ["Adjectives", "Size"]
+    "tags": [
+      "Adjectives",
+      "Size"
+    ]
   },
   {
     "id": "RU015",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «bread»?",
-    "options": ["Хлеб", "Сыр", "Рис", "Суп"],
+    "options": [
+      "Хлеб",
+      "Сыр",
+      "Рис"
+    ],
     "correctAnswer": 0,
     "explanation": "«Хлеб» means bread.",
     "phrase": "Я покупаю хлеб. — I am buying bread.",
-    "tags": ["Food", "Nouns"]
+    "tags": [
+      "Food",
+      "Nouns"
+    ]
   },
   {
     "id": "RU016",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «школа» mean?",
-    "options": ["Hospital", "School", "Library", "Station"],
+    "options": [
+      "Hospital",
+      "School",
+      "Library"
+    ],
     "correctAnswer": 1,
     "explanation": "«Школа» means school.",
     "phrase": "Дети идут в школу. — The children are going to school.",
-    "tags": ["Education", "Places"]
+    "tags": [
+      "Education",
+      "Places"
+    ]
   },
   {
     "id": "RU017",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Мы ___ в Москве».",
-    "options": ["живёшь", "живёт", "живём", "живу"],
+    "options": [
+      "живёшь",
+      "живёт",
+      "живём"
+    ],
     "correctAnswer": 2,
     "explanation": "With «мы» (we), the correct present-tense form is «живём».",
     "phrase": "Мы живём в Москве. — We live in Moscow.",
-    "tags": ["Present tense", "Verb conjugation"]
+    "tags": [
+      "Present tense",
+      "Verb conjugation"
+    ]
   },
   {
     "id": "RU018",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «friend» (male)?",
-    "options": ["Сестра", "Подруга", "Девочка", "Друг"],
-    "correctAnswer": 3,
+    "options": [
+      "Подруга",
+      "Девочка",
+      "Друг"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Друг» means a male friend; «подруга» means a female friend.",
     "phrase": "Он мой друг. — He is my friend.",
-    "tags": ["People", "Nouns"]
+    "tags": [
+      "People",
+      "Nouns"
+    ]
   },
   {
     "id": "RU019",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Goodbye» in Russian?",
-    "options": ["До свидания", "Доброе утро", "Пожалуйста", "Спасибо"],
+    "options": [
+      "До свидания",
+      "Доброе утро",
+      "Пожалуйста"
+    ],
     "correctAnswer": 0,
     "explanation": "«До свидания» is a polite, standard way to say goodbye.",
     "phrase": "До свидания! До завтра! — Goodbye! See you tomorrow!",
-    "tags": ["Greetings", "Politeness"]
+    "tags": [
+      "Greetings",
+      "Politeness"
+    ]
   },
   {
     "id": "RU020",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Он ___ кофе».",
-    "options": ["пью", "пьёт", "пьёшь", "пьём"],
+    "options": [
+      "пью",
+      "пьёт",
+      "пьёшь"
+    ],
     "correctAnswer": 1,
     "explanation": "The third-person singular form of «пить» is «пьёт».",
     "phrase": "Он пьёт кофе. — He drinks coffee.",
-    "tags": ["Present tense", "Food and drink"]
+    "tags": [
+      "Present tense",
+      "Food and drink"
+    ]
   },
   {
     "id": "RU021",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «сегодня» mean?",
-    "options": ["Tomorrow", "Yesterday", "Today", "Tonight"],
+    "options": [
+      "Tomorrow",
+      "Yesterday",
+      "Today"
+    ],
     "correctAnswer": 2,
     "explanation": "«Сегодня» means today.",
     "phrase": "Сегодня понедельник. — Today is Monday.",
-    "tags": ["Time", "Days"]
+    "tags": [
+      "Time",
+      "Days"
+    ]
   },
   {
     "id": "RU022",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «apple»?",
-    "options": ["Груша", "Банан", "Апельсин", "Яблоко"],
-    "correctAnswer": 3,
+    "options": [
+      "Банан",
+      "Апельсин",
+      "Яблоко"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Яблоко» means apple.",
     "phrase": "Я ем яблоко. — I am eating an apple.",
-    "tags": ["Fruit", "Food"]
+    "tags": [
+      "Fruit",
+      "Food"
+    ]
   },
   {
     "id": "RU023",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Они ___ английский язык».",
-    "options": ["изучают", "изучаю", "изучаешь", "изучаем"],
+    "options": [
+      "изучают",
+      "изучаю",
+      "изучаешь"
+    ],
     "correctAnswer": 0,
     "explanation": "With «они» (they), the correct present-tense form is «изучают».",
     "phrase": "Они изучают английский язык. — They study English.",
-    "tags": ["Present tense", "Languages"]
+    "tags": [
+      "Present tense",
+      "Languages"
+    ]
   },
   {
     "id": "RU024",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «холодный» mean?",
-    "options": ["Hot", "Cold", "Warm", "Dry"],
+    "options": [
+      "Hot",
+      "Cold",
+      "Warm"
+    ],
     "correctAnswer": 1,
     "explanation": "«Холодный» means cold.",
     "phrase": "Сегодня холодный день. — Today is a cold day.",
-    "tags": ["Adjectives", "Weather"]
+    "tags": [
+      "Adjectives",
+      "Weather"
+    ]
   },
   {
     "id": "RU025",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «watermelon»?",
-    "options": ["Картофель", "Морковь", "Арбуз", "Огурец"],
+    "options": [
+      "Картофель",
+      "Морковь",
+      "Арбуз"
+    ],
     "correctAnswer": 2,
     "explanation": "«Арбуз» means watermelon.",
     "phrase": "Летом я люблю арбуз. — I like watermelon in summer.",
-    "tags": ["Food", "Fruit"]
+    "tags": [
+      "Food",
+      "Fruit"
+    ]
   },
   {
     "id": "RU026",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct pronoun: «Это ___ книга».",
-    "options": ["мой", "моё", "мои", "моя"],
-    "correctAnswer": 3,
+    "options": [
+      "моё",
+      "мои",
+      "моя"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Книга» is feminine, so the possessive pronoun is «моя».",
     "phrase": "Это моя книга. — This is my book.",
-    "tags": ["Possessives", "Gender"]
+    "tags": [
+      "Possessives",
+      "Gender"
+    ]
   },
   {
     "id": "RU027",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «магазин» mean?",
-    "options": ["Shop / store", "Restaurant", "Office", "Museum"],
+    "options": [
+      "Shop / store",
+      "Restaurant",
+      "Office"
+    ],
     "correctAnswer": 0,
     "explanation": "«Магазин» means shop or store.",
     "phrase": "Магазин открыт. — The shop is open.",
-    "tags": ["Places", "Everyday vocabulary"]
+    "tags": [
+      "Places",
+      "Everyday vocabulary"
+    ]
   },
   {
     "id": "RU028",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Excuse me» politely in Russian?",
-    "options": ["Пока", "Извините", "Привет", "Спокойной ночи"],
+    "options": [
+      "Пока",
+      "Извините",
+      "Привет"
+    ],
     "correctAnswer": 1,
     "explanation": "«Извините» is a polite way to say excuse me or sorry.",
     "phrase": "Извините, где вокзал? — Excuse me, where is the train station?",
-    "tags": ["Politeness", "Directions"]
+    "tags": [
+      "Politeness",
+      "Directions"
+    ]
   },
   {
     "id": "RU029",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Я ___ музыку».",
-    "options": ["слушаешь", "слушает", "слушаю", "слушаем"],
+    "options": [
+      "слушаешь",
+      "слушает",
+      "слушаю"
+    ],
     "correctAnswer": 2,
     "explanation": "With «я» (I), the correct form of «слушать» is «слушаю».",
     "phrase": "Я слушаю музыку. — I listen to music.",
-    "tags": ["Present tense", "Hobbies"]
+    "tags": [
+      "Present tense",
+      "Hobbies"
+    ]
   },
   {
     "id": "RU030",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «семья» mean?",
-    "options": ["Friend", "Neighbour", "Teacher", "Family"],
-    "correctAnswer": 3,
+    "options": [
+      "Neighbour",
+      "Teacher",
+      "Family"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Семья» means family.",
     "phrase": "У меня большая семья. — I have a big family.",
-    "tags": ["Family", "Nouns"]
+    "tags": [
+      "Family",
+      "Nouns"
+    ]
   },
   {
     "id": "RU031",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «milk»?",
-    "options": ["Молоко", "Мясо", "Масло", "Мука"],
+    "options": [
+      "Молоко",
+      "Мясо",
+      "Масло"
+    ],
     "correctAnswer": 0,
     "explanation": "«Молоко» means milk.",
     "phrase": "Я пью молоко утром. — I drink milk in the morning.",
-    "tags": ["Food and drink", "Nouns"]
+    "tags": [
+      "Food and drink",
+      "Nouns"
+    ]
   },
   {
     "id": "RU032",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Вы ___ по-английски?»",
-    "options": ["говорю", "говорите", "говорит", "говоришь"],
+    "options": [
+      "говорю",
+      "говорите",
+      "говорит"
+    ],
     "correctAnswer": 1,
     "explanation": "With «вы», the verb form is «говорите». It is used for plural you and polite singular you.",
     "phrase": "Вы говорите по-английски? — Do you speak English?",
-    "tags": ["Verb conjugation", "Polite forms"]
+    "tags": [
+      "Verb conjugation",
+      "Polite forms"
+    ]
   },
   {
     "id": "RU033",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «красивый» mean?",
-    "options": ["Ugly", "Expensive", "Beautiful", "Difficult"],
+    "options": [
+      "Ugly",
+      "Expensive",
+      "Beautiful"
+    ],
     "correctAnswer": 2,
     "explanation": "«Красивый» means beautiful or handsome; its ending changes with grammatical gender and number.",
     "phrase": "Это красивый парк. — This is a beautiful park.",
-    "tags": ["Adjectives", "Descriptions"]
+    "tags": [
+      "Adjectives",
+      "Descriptions"
+    ]
   },
   {
     "id": "RU034",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «table»?",
-    "options": ["Стул", "Дверь", "Кровать", "Стол"],
-    "correctAnswer": 3,
+    "options": [
+      "Дверь",
+      "Кровать",
+      "Стол"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Стол» means table or desk.",
     "phrase": "Книга лежит на столе. — The book is lying on the table.",
-    "tags": ["Furniture", "Nouns"]
+    "tags": [
+      "Furniture",
+      "Nouns"
+    ]
   },
   {
     "id": "RU035",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «У меня ___ брат».",
-    "options": ["есть", "быть", "будет есть", "были"],
+    "options": [
+      "есть",
+      "быть",
+      "будет есть"
+    ],
     "correctAnswer": 0,
     "explanation": "The construction «у меня есть» means I have.",
     "phrase": "У меня есть брат. — I have a brother.",
-    "tags": ["Possession", "Basic grammar"]
+    "tags": [
+      "Possession",
+      "Basic grammar"
+    ]
   },
   {
     "id": "RU036",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «вчера» mean?",
-    "options": ["Today", "Yesterday", "Tomorrow", "Soon"],
+    "options": [
+      "Today",
+      "Yesterday",
+      "Tomorrow"
+    ],
     "correctAnswer": 1,
     "explanation": "«Вчера» means yesterday.",
     "phrase": "Вчера я был дома. — Yesterday I was at home. (said by a male speaker)",
-    "tags": ["Time", "Past"]
+    "tags": [
+      "Time",
+      "Past"
+    ]
   },
   {
     "id": "RU037",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «window»?",
-    "options": ["Пол", "Стена", "Окно", "Потолок"],
+    "options": [
+      "Пол",
+      "Стена",
+      "Окно"
+    ],
     "correctAnswer": 2,
     "explanation": "«Окно» means window.",
     "phrase": "Окно открыто. — The window is open.",
-    "tags": ["Home", "Nouns"]
+    "tags": [
+      "Home",
+      "Nouns"
+    ]
   },
   {
     "id": "RU038",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Она ___ врач».",
-    "options": ["хороший", "хорошее", "хорошую", "хороший"],
+    "options": [
+      "хороший",
+      "хорошее",
+      "хорошую"
+    ],
     "correctAnswer": 0,
     "explanation": "This item tests a common expression with a profession, but the options do not correctly complete the sentence. The natural sentence is «Она врач» or «Она хороший врач».",
     "phrase": "Она врач. — She is a doctor.",
-    "tags": ["Professions", "Sentence structure"]
+    "tags": [
+      "Professions",
+      "Sentence structure"
+    ]
   },
   {
     "id": "RU039",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «быстро» mean?",
-    "options": ["Quickly", "Quietly", "Carefully", "Rarely"],
+    "options": [
+      "Quickly",
+      "Quietly",
+      "Carefully"
+    ],
     "correctAnswer": 0,
     "explanation": "«Быстро» means quickly or fast.",
     "phrase": "Он быстро говорит. — He speaks quickly.",
-    "tags": ["Adverbs", "Descriptions"]
+    "tags": [
+      "Adverbs",
+      "Descriptions"
+    ]
   },
   {
     "id": "RU040",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «Good night» in Russian?",
-    "options": ["Добрый день", "Спокойной ночи", "Доброе утро", "Добрый вечер"],
+    "options": [
+      "Добрый день",
+      "Спокойной ночи",
+      "Доброе утро"
+    ],
     "correctAnswer": 1,
     "explanation": "«Спокойной ночи» is the usual expression for wishing someone a good night.",
     "phrase": "Спокойной ночи! — Good night!",
-    "tags": ["Greetings", "Time of day"]
+    "tags": [
+      "Greetings",
+      "Time of day"
+    ]
   },
   {
     "id": "RU041",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Мы ___ чай».",
-    "options": ["пьёшь", "пью", "пьём", "пьёт"],
+    "options": [
+      "пьёшь",
+      "пью",
+      "пьём"
+    ],
     "correctAnswer": 2,
     "explanation": "With «мы», the correct form of «пить» is «пьём».",
     "phrase": "Мы пьём чай. — We drink tea.",
-    "tags": ["Present tense", "Food and drink"]
+    "tags": [
+      "Present tense",
+      "Food and drink"
+    ]
   },
   {
     "id": "RU042",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «city»?",
-    "options": ["Деревня", "Страна", "Улица", "Город"],
-    "correctAnswer": 3,
+    "options": [
+      "Страна",
+      "Улица",
+      "Город"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Город» means city or town.",
     "phrase": "Санкт-Петербург — красивый город. — Saint Petersburg is a beautiful city.",
-    "tags": ["Places", "Nouns"]
+    "tags": [
+      "Places",
+      "Nouns"
+    ]
   },
   {
     "id": "RU043",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «маленький» mean?",
-    "options": ["Small", "Tall", "Wide", "Heavy"],
+    "options": [
+      "Small",
+      "Tall",
+      "Wide"
+    ],
     "correctAnswer": 0,
     "explanation": "«Маленький» means small or little.",
     "phrase": "У меня маленькая собака. — I have a small dog.",
-    "tags": ["Adjectives", "Size"]
+    "tags": [
+      "Adjectives",
+      "Size"
+    ]
   },
   {
     "id": "RU044",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct pronoun: «___ зовут Анна».",
-    "options": ["Меня", "Мне", "Мной", "Моё"],
+    "options": [
+      "Меня",
+      "Мне",
+      "Мной"
+    ],
     "correctAnswer": 0,
     "explanation": "Russian uses «меня зовут» to introduce a person's name literally meaning they call me.",
     "phrase": "Меня зовут Анна. — My name is Anna.",
-    "tags": ["Introductions", "Pronouns"]
+    "tags": [
+      "Introductions",
+      "Pronouns"
+    ]
   },
   {
     "id": "RU045",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «coffee»?",
-    "options": ["Сок", "Кофе", "Вода", "Молоко"],
+    "options": [
+      "Сок",
+      "Кофе",
+      "Вода"
+    ],
     "correctAnswer": 1,
     "explanation": "«Кофе» means coffee. In standard usage, it is grammatically masculine.",
     "phrase": "Я хочу кофе. — I want coffee.",
-    "tags": ["Food and drink", "Nouns"]
+    "tags": [
+      "Food and drink",
+      "Nouns"
+    ]
   },
   {
     "id": "RU046",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Они ___ в университете».",
-    "options": ["учусь", "учишься", "учится", "учатся"],
-    "correctAnswer": 3,
+    "options": [
+      "учишься",
+      "учится",
+      "учатся"
+    ],
+    "correctAnswer": 2,
     "explanation": "The third-person plural form of «учиться» is «учатся».",
     "phrase": "Они учатся в университете. — They study at university.",
-    "tags": ["Reflexive verbs", "Present tense"]
+    "tags": [
+      "Reflexive verbs",
+      "Present tense"
+    ]
   },
   {
     "id": "RU047",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «дорогой» mean when describing a product?",
-    "options": ["Expensive", "Cheap", "Free", "Broken"],
+    "options": [
+      "Expensive",
+      "Cheap",
+      "Free"
+    ],
     "correctAnswer": 0,
     "explanation": "«Дорогой» means expensive when referring to a price; it can also mean dear or beloved.",
     "phrase": "Этот телефон дорогой. — This phone is expensive.",
-    "tags": ["Adjectives", "Shopping"]
+    "tags": [
+      "Adjectives",
+      "Shopping"
+    ]
   },
   {
     "id": "RU048",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «street»?",
-    "options": ["Площадь", "Улица", "Мост", "Парк"],
+    "options": [
+      "Площадь",
+      "Улица",
+      "Мост"
+    ],
     "correctAnswer": 1,
     "explanation": "«Улица» means street.",
     "phrase": "Моя улица тихая. — My street is quiet.",
-    "tags": ["Places", "Directions"]
+    "tags": [
+      "Places",
+      "Directions"
+    ]
   },
   {
     "id": "RU049",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Ты ___ в школе?»",
-    "options": ["работаю", "работает", "работаешь", "работаем"],
+    "options": [
+      "работаю",
+      "работает",
+      "работаешь"
+    ],
     "correctAnswer": 2,
     "explanation": "With «ты», the correct form of «работать» is «работаешь».",
     "phrase": "Ты работаешь в школе? — Do you work at a school?",
-    "tags": ["Present tense", "Verb conjugation"]
+    "tags": [
+      "Present tense",
+      "Verb conjugation"
+    ]
   },
   {
     "id": "RU050",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «собака» mean?",
-    "options": ["Cat", "Mouse", "Rabbit", "Dog"],
-    "correctAnswer": 3,
+    "options": [
+      "Mouse",
+      "Rabbit",
+      "Dog"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Собака» means dog.",
     "phrase": "Собака играет в саду. — The dog is playing in the garden.",
-    "tags": ["Animals", "Nouns"]
+    "tags": [
+      "Animals",
+      "Nouns"
+    ]
   },
   {
     "id": "RU051",
     "category": "Vocabulary",
     "level": "A1",
     "question": "How do you say «I don't understand» in Russian?",
-    "options": ["Я не понимаю", "Я не знаю", "Я не говорю", "Я не хочу"],
+    "options": [
+      "Я не понимаю",
+      "Я не знаю",
+      "Я не говорю"
+    ],
     "correctAnswer": 0,
     "explanation": "«Я не понимаю» means I don't understand.",
     "phrase": "Извините, я не понимаю. — Sorry, I don't understand.",
-    "tags": ["Communication", "Negation"]
+    "tags": [
+      "Communication",
+      "Negation"
+    ]
   },
   {
     "id": "RU052",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Это ___ яблоко».",
-    "options": ["моя", "моё", "мой", "мои"],
+    "options": [
+      "моя",
+      "моё",
+      "мой"
+    ],
     "correctAnswer": 1,
     "explanation": "«Яблоко» is neuter, so the possessive pronoun is «моё».",
     "phrase": "Это моё яблоко. — This is my apple.",
-    "tags": ["Possessives", "Gender"]
+    "tags": [
+      "Possessives",
+      "Gender"
+    ]
   },
   {
     "id": "RU053",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «teacher»?",
-    "options": ["Врач", "Инженер", "Учитель", "Водитель"],
+    "options": [
+      "Врач",
+      "Инженер",
+      "Учитель"
+    ],
     "correctAnswer": 2,
     "explanation": "«Учитель» means male teacher or teacher in general; «учительница» refers to a female teacher.",
     "phrase": "Наш учитель добрый. — Our teacher is kind.",
-    "tags": ["Professions", "People"]
+    "tags": [
+      "Professions",
+      "People"
+    ]
   },
   {
     "id": "RU054",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «завтра» mean?",
-    "options": ["Yesterday", "Today", "Last week", "Tomorrow"],
-    "correctAnswer": 3,
+    "options": [
+      "Today",
+      "Last week",
+      "Tomorrow"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Завтра» means tomorrow.",
     "phrase": "Завтра я работаю. — I am working tomorrow.",
-    "tags": ["Time", "Future"]
+    "tags": [
+      "Time",
+      "Future"
+    ]
   },
   {
     "id": "RU055",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Я ___ из Германии».",
-    "options": ["из", "в", "на", "к"],
+    "options": [
+      "из",
+      "в",
+      "на"
+    ],
     "correctAnswer": 0,
     "explanation": "The preposition «из» means from when describing a person's country of origin.",
     "phrase": "Я из Германии. — I am from Germany.",
-    "tags": ["Prepositions", "Countries"]
+    "tags": [
+      "Prepositions",
+      "Countries"
+    ]
   },
   {
     "id": "RU056",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «red»?",
-    "options": ["Синий", "Красный", "Зелёный", "Белый"],
+    "options": [
+      "Синий",
+      "Красный",
+      "Зелёный"
+    ],
     "correctAnswer": 1,
     "explanation": "«Красный» is the masculine form of the adjective meaning red.",
     "phrase": "У неё красная сумка. — She has a red bag.",
-    "tags": ["Colours", "Adjectives"]
+    "tags": [
+      "Colours",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU057",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Он ___ в футбол».",
-    "options": ["играю", "играешь", "играет", "играем"],
+    "options": [
+      "играю",
+      "играешь",
+      "играет"
+    ],
     "correctAnswer": 2,
     "explanation": "With «он», the correct present-tense form is «играет».",
     "phrase": "Он играет в футбол. — He plays football.",
-    "tags": ["Present tense", "Sports"]
+    "tags": [
+      "Present tense",
+      "Sports"
+    ]
   },
   {
     "id": "RU058",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «сейчас» mean?",
-    "options": ["Later", "Never", "Sometimes", "Now"],
-    "correctAnswer": 3,
+    "options": [
+      "Never",
+      "Sometimes",
+      "Now"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Сейчас» means now or at the moment.",
     "phrase": "Я сейчас занят. — I am busy right now. (said by a male speaker)",
-    "tags": ["Time", "Adverbs"]
+    "tags": [
+      "Time",
+      "Adverbs"
+    ]
   },
   {
     "id": "RU059",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «restaurant»?",
-    "options": ["Ресторан", "Больница", "Аптека", "Библиотека"],
+    "options": [
+      "Ресторан",
+      "Больница",
+      "Аптека"
+    ],
     "correctAnswer": 0,
     "explanation": "«Ресторан» means restaurant.",
     "phrase": "Мы идём в ресторан. — We are going to a restaurant.",
-    "tags": ["Places", "Food"]
+    "tags": [
+      "Places",
+      "Food"
+    ]
   },
   {
     "id": "RU060",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Мне ___ двадцать лет».",
-    "options": ["есть", "лет", "быть", "год"],
+    "options": [
+      "есть",
+      "лет",
+      "быть"
+    ],
     "correctAnswer": 1,
     "explanation": "Russian expresses age with «мне» plus the number and «лет» for ages such as twenty.",
     "phrase": "Мне двадцать лет. — I am twenty years old.",
-    "tags": ["Age", "Numbers"]
+    "tags": [
+      "Age",
+      "Numbers"
+    ]
   },
   {
     "id": "RU061",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «работа» mean?",
-    "options": ["Holiday", "Money", "Work / job", "Food"],
+    "options": [
+      "Holiday",
+      "Money",
+      "Work / job"
+    ],
     "correctAnswer": 2,
     "explanation": "«Работа» means work or job.",
     "phrase": "Моя работа интересная. — My job is interesting.",
-    "tags": ["Work", "Nouns"]
+    "tags": [
+      "Work",
+      "Nouns"
+    ]
   },
   {
     "id": "RU062",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «family»?",
-    "options": ["Друзья", "Родители", "Дети", "Семья"],
-    "correctAnswer": 3,
+    "options": [
+      "Родители",
+      "Дети",
+      "Семья"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Семья» means family.",
     "phrase": "Моя семья живёт в России. — My family lives in Russia.",
-    "tags": ["Family", "Nouns"]
+    "tags": [
+      "Family",
+      "Nouns"
+    ]
   },
   {
     "id": "RU063",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «Я хочу ___ русский язык».",
-    "options": ["изучать", "изучаю", "изучает", "изучал"],
+    "options": [
+      "изучать",
+      "изучаю",
+      "изучает"
+    ],
     "correctAnswer": 0,
     "explanation": "After «хотеть» (to want), another verb commonly appears in the infinitive.",
     "phrase": "Я хочу изучать русский язык. — I want to study Russian.",
-    "tags": ["Infinitives", "Learning"]
+    "tags": [
+      "Infinitives",
+      "Learning"
+    ]
   },
   {
     "id": "RU064",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «налево» mean?",
-    "options": ["Straight ahead", "To the left", "To the right", "Behind"],
+    "options": [
+      "Straight ahead",
+      "To the left",
+      "To the right"
+    ],
     "correctAnswer": 1,
     "explanation": "«Налево» means to the left.",
     "phrase": "Поверните налево. — Turn left.",
-    "tags": ["Directions", "Travel"]
+    "tags": [
+      "Directions",
+      "Travel"
+    ]
   },
   {
     "id": "RU065",
     "category": "Grammar",
     "level": "A1",
     "question": "Choose the correct form: «У неё ___ кошка».",
-    "options": ["мой", "моё", "есть", "мои"],
+    "options": [
+      "мой",
+      "моё",
+      "есть"
+    ],
     "correctAnswer": 2,
     "explanation": "«У неё есть» means she has.",
     "phrase": "У неё есть кошка. — She has a cat.",
-    "tags": ["Possession", "Basic grammar"]
+    "tags": [
+      "Possession",
+      "Basic grammar"
+    ]
   },
   {
     "id": "RU066",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What is the Russian word for «Sunday»?",
-    "options": ["Понедельник", "Среда", "Пятница", "Воскресенье"],
-    "correctAnswer": 3,
+    "options": [
+      "Среда",
+      "Пятница",
+      "Воскресенье"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Воскресенье» means Sunday.",
     "phrase": "В воскресенье я отдыхаю. — I rest on Sunday.",
-    "tags": ["Days of the week", "Time"]
+    "tags": [
+      "Days of the week",
+      "Time"
+    ]
   },
   {
     "id": "RU067",
     "category": "Vocabulary",
     "level": "A1",
     "question": "What does «Я не знаю» mean?",
-    "options": ["I don't know", "I don't want", "I don't see", "I don't hear"],
+    "options": [
+      "I don't know",
+      "I don't want",
+      "I don't see"
+    ],
     "correctAnswer": 0,
     "explanation": "«Я не знаю» means I don't know.",
     "phrase": "Извините, я не знаю ответа. — Sorry, I don't know the answer.",
-    "tags": ["Communication", "Negation"]
+    "tags": [
+      "Communication",
+      "Negation"
+    ]
   },
   {
     "id": "RU068",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct past-tense form: «Вчера она ___ письмо».",
-    "options": ["писал", "писала", "писали", "пишет"],
+    "options": [
+      "писал",
+      "писала",
+      "писали"
+    ],
     "correctAnswer": 1,
     "explanation": "The past-tense form of a Russian verb agrees with the subject's gender and number. «Она» takes «писала».",
     "phrase": "Вчера она писала письмо. — Yesterday she was writing a letter.",
-    "tags": ["Past tense", "Gender"]
+    "tags": [
+      "Past tense",
+      "Gender"
+    ]
   },
   {
     "id": "RU069",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «путешествовать» mean?",
-    "options": ["To cook", "To travel", "To study", "To sleep"],
+    "options": [
+      "To cook",
+      "To travel",
+      "To study"
+    ],
     "correctAnswer": 1,
     "explanation": "«Путешествовать» means to travel or go on journeys.",
     "phrase": "Я люблю путешествовать по России. — I like travelling around Russia.",
-    "tags": ["Travel", "Verbs"]
+    "tags": [
+      "Travel",
+      "Verbs"
+    ]
   },
   {
     "id": "RU070",
@@ -766,35 +1249,51 @@
     "options": [
       "русская литература",
       "русскую литературу",
-      "русской литературой",
-      "русской литературы"
+      "русской литературой"
     ],
     "correctAnswer": 2,
     "explanation": "The verb «интересоваться» takes the instrumental case.",
     "phrase": "Я интересуюсь русской литературой. — I am interested in Russian literature.",
-    "tags": ["Instrumental case", "Verbs with cases"]
+    "tags": [
+      "Instrumental case",
+      "Verbs with cases"
+    ]
   },
   {
     "id": "RU071",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «опаздывать» mean?",
-    "options": ["To arrive late", "To get lost", "To hurry up", "To wake up"],
+    "options": [
+      "To arrive late",
+      "To get lost",
+      "To hurry up"
+    ],
     "correctAnswer": 0,
     "explanation": "«Опаздывать» means to be late or arrive later than planned.",
     "phrase": "Я часто опаздываю на автобус. — I am often late for the bus.",
-    "tags": ["Daily routine", "Verbs"]
+    "tags": [
+      "Daily routine",
+      "Verbs"
+    ]
   },
   {
     "id": "RU072",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «У меня нет ___».",
-    "options": ["новая машина", "новую машину", "новая машина", "новой машины"],
-    "correctAnswer": 3,
+    "options": [
+      "новую машину",
+      "новая машина",
+      "новой машины"
+    ],
+    "correctAnswer": 2,
     "explanation": "The construction «нет» expressing absence normally takes the genitive case.",
     "phrase": "У меня нет новой машины. — I don't have a new car.",
-    "tags": ["Genitive case", "Possession"]
+    "tags": [
+      "Genitive case",
+      "Possession"
+    ]
   },
   {
     "id": "RU073",
@@ -804,13 +1303,15 @@
     "options": [
       "Possibly",
       "Definitely / without fail",
-      "Rarely",
-      "Accidentally"
+      "Rarely"
     ],
     "correctAnswer": 1,
     "explanation": "«Обязательно» means definitely, certainly, or without fail, depending on context.",
     "phrase": "Обязательно позвони мне вечером. — Be sure to call me this evening.",
-    "tags": ["Adverbs", "Everyday expressions"]
+    "tags": [
+      "Adverbs",
+      "Everyday expressions"
+    ]
   },
   {
     "id": "RU074",
@@ -820,46 +1321,69 @@
     "options": [
       "новый магазин",
       "нового магазина",
-      "в новый магазин",
-      "новым магазином"
+      "в новый магазин"
     ],
     "correctAnswer": 2,
     "explanation": "Movement towards a destination is commonly expressed with «в» plus the accusative case.",
     "phrase": "Мы поехали в новый магазин. — We went to a new shop.",
-    "tags": ["Accusative case", "Movement"]
+    "tags": [
+      "Accusative case",
+      "Movement"
+    ]
   },
   {
     "id": "RU075",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «удобный» mean?",
-    "options": ["Convenient / comfortable", "Dangerous", "Crowded", "Noisy"],
+    "options": [
+      "Convenient / comfortable",
+      "Dangerous",
+      "Crowded"
+    ],
     "correctAnswer": 0,
     "explanation": "«Удобный» describes something convenient, practical, or comfortable.",
     "phrase": "Это удобное кресло. — This is a comfortable armchair.",
-    "tags": ["Adjectives", "Descriptions"]
+    "tags": [
+      "Adjectives",
+      "Descriptions"
+    ]
   },
   {
     "id": "RU076",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я жду ___».",
-    "options": ["мой друг", "моему другу", "моим другом", "моего друга"],
-    "correctAnswer": 3,
+    "options": [
+      "моему другу",
+      "моим другом",
+      "моего друга"
+    ],
+    "correctAnswer": 2,
     "explanation": "The verb «ждать» commonly takes the genitive case when referring to a person being waited for.",
     "phrase": "Я жду моего друга. — I am waiting for my friend.",
-    "tags": ["Genitive case", "Verbs with cases"]
+    "tags": [
+      "Genitive case",
+      "Verbs with cases"
+    ]
   },
   {
     "id": "RU077",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «покупать» mean?",
-    "options": ["To sell", "To buy", "To borrow", "To return"],
+    "options": [
+      "To sell",
+      "To buy",
+      "To borrow"
+    ],
     "correctAnswer": 1,
     "explanation": "«Покупать» is the imperfective verb meaning to buy or purchase.",
     "phrase": "Я покупаю продукты каждую субботу. — I buy groceries every Saturday.",
-    "tags": ["Shopping", "Verbs"]
+    "tags": [
+      "Shopping",
+      "Verbs"
+    ]
   },
   {
     "id": "RU078",
@@ -869,13 +1393,15 @@
     "options": [
       "свой сестра",
       "свою сестру",
-      "со своей сестрой",
-      "своей сестре"
+      "со своей сестрой"
     ],
     "correctAnswer": 2,
     "explanation": "The preposition «с» meaning with takes the instrumental case.",
     "phrase": "Она говорит со своей сестрой. — She is talking with her sister.",
-    "tags": ["Instrumental case", "Prepositions"]
+    "tags": [
+      "Instrumental case",
+      "Prepositions"
+    ]
   },
   {
     "id": "RU079",
@@ -885,46 +1411,69 @@
     "options": [
       "At first / first",
       "Finally",
-      "Usually",
-      "Immediately afterward"
+      "Usually"
     ],
     "correctAnswer": 0,
     "explanation": "«Сначала» means first or at the beginning, often when describing a sequence.",
     "phrase": "Сначала мы позавтракаем, потом пойдём гулять. — First we'll have breakfast, then we'll go for a walk.",
-    "tags": ["Sequence", "Adverbs"]
+    "tags": [
+      "Sequence",
+      "Adverbs"
+    ]
   },
   {
     "id": "RU080",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Вчера я ___ фильм до конца».",
-    "options": ["смотрю", "посмотрю", "смотреть", "посмотрел"],
-    "correctAnswer": 3,
+    "options": [
+      "посмотрю",
+      "смотреть",
+      "посмотрел"
+    ],
+    "correctAnswer": 2,
     "explanation": "The perfective past form «посмотрел» emphasizes completing the film. It is the masculine form used by a male speaker.",
     "phrase": "Вчера я посмотрел фильм до конца. — Yesterday I watched the film to the end. (said by a male speaker)",
-    "tags": ["Aspect", "Past tense"]
+    "tags": [
+      "Aspect",
+      "Past tense"
+    ]
   },
   {
     "id": "RU081",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «здоровье» mean?",
-    "options": ["Weather", "Health", "Happiness", "Wealth"],
+    "options": [
+      "Weather",
+      "Health",
+      "Happiness"
+    ],
     "correctAnswer": 1,
     "explanation": "«Здоровье» means health.",
     "phrase": "Здоровье очень важно. — Health is very important.",
-    "tags": ["Health", "Nouns"]
+    "tags": [
+      "Health",
+      "Nouns"
+    ]
   },
   {
     "id": "RU082",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «После работы я иду ___».",
-    "options": ["парк", "парка", "в парк", "парком"],
+    "options": [
+      "парк",
+      "парка",
+      "в парк"
+    ],
     "correctAnswer": 2,
     "explanation": "The preposition «в» with the accusative case expresses movement into or towards a place.",
     "phrase": "После работы я иду в парк. — After work I am going to the park.",
-    "tags": ["Prepositions", "Movement"]
+    "tags": [
+      "Prepositions",
+      "Movement"
+    ]
   },
   {
     "id": "RU083",
@@ -934,145 +1483,231 @@
     "options": [
       "To meet / see each other",
       "To explain",
-      "To forget",
-      "To move house"
+      "To forget"
     ],
     "correctAnswer": 0,
     "explanation": "«Встречаться» means to meet or see one another; it can also mean to date.",
     "phrase": "Мы встречаемся с друзьями по пятницам. — We meet our friends on Fridays.",
-    "tags": ["Social life", "Reflexive verbs"]
+    "tags": [
+      "Social life",
+      "Reflexive verbs"
+    ]
   },
   {
     "id": "RU084",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я дал книгу ___».",
-    "options": ["мой брат", "моего брата", "моим братом", "моему брату"],
-    "correctAnswer": 3,
+    "options": [
+      "моего брата",
+      "моим братом",
+      "моему брату"
+    ],
+    "correctAnswer": 2,
     "explanation": "The person receiving something is expressed in the dative case.",
     "phrase": "Я дал книгу моему брату. — I gave the book to my brother.",
-    "tags": ["Dative case", "Giving"]
+    "tags": [
+      "Dative case",
+      "Giving"
+    ]
   },
   {
     "id": "RU085",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «приглашать» mean?",
-    "options": ["To refuse", "To invite", "To promise", "To explain"],
+    "options": [
+      "To refuse",
+      "To invite",
+      "To promise"
+    ],
     "correctAnswer": 1,
     "explanation": "«Приглашать» means to invite someone.",
     "phrase": "Я хочу пригласить тебя на ужин. — I want to invite you to dinner.",
-    "tags": ["Social life", "Verbs"]
+    "tags": [
+      "Social life",
+      "Verbs"
+    ]
   },
   {
     "id": "RU086",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Она интересуется ___».",
-    "options": ["история", "историю", "историей", "истории"],
+    "options": [
+      "история",
+      "историю",
+      "историей"
+    ],
     "correctAnswer": 2,
     "explanation": "The verb «интересоваться» takes the instrumental case: «историей».",
     "phrase": "Она интересуется историей. — She is interested in history.",
-    "tags": ["Instrumental case", "Hobbies"]
+    "tags": [
+      "Instrumental case",
+      "Hobbies"
+    ]
   },
   {
     "id": "RU087",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «занятый» mean?",
-    "options": ["Busy / occupied", "Free of charge", "Bored", "Surprised"],
+    "options": [
+      "Busy / occupied",
+      "Free of charge",
+      "Bored"
+    ],
     "correctAnswer": 0,
     "explanation": "«Занятый» means busy or occupied.",
     "phrase": "Сегодня я очень занят. — I am very busy today. (said by a male speaker)",
-    "tags": ["Adjectives", "Daily life"]
+    "tags": [
+      "Adjectives",
+      "Daily life"
+    ]
   },
   {
     "id": "RU088",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Мы говорили ___ погоде».",
-    "options": ["о хорошая", "хорошую", "хорошей", "о хорошей"],
-    "correctAnswer": 3,
+    "options": [
+      "хорошую",
+      "хорошей",
+      "о хорошей"
+    ],
+    "correctAnswer": 2,
     "explanation": "The preposition «о» meaning about takes the prepositional case.",
     "phrase": "Мы говорили о хорошей погоде. — We talked about the good weather.",
-    "tags": ["Prepositional case", "Prepositions"]
+    "tags": [
+      "Prepositional case",
+      "Prepositions"
+    ]
   },
   {
     "id": "RU089",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «впервые» mean?",
-    "options": ["Again", "For the first time", "Every day", "By chance"],
+    "options": [
+      "Again",
+      "For the first time",
+      "Every day"
+    ],
     "correctAnswer": 1,
     "explanation": "«Впервые» means for the first time.",
     "phrase": "Я впервые был в Москве. — I was in Moscow for the first time. (said by a male speaker)",
-    "tags": ["Time", "Adverbs"]
+    "tags": [
+      "Time",
+      "Adverbs"
+    ]
   },
   {
     "id": "RU090",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Если будет тепло, мы ___ на дачу».",
-    "options": ["поехали", "ехать", "поедем", "ездили"],
+    "options": [
+      "поехали",
+      "ехать",
+      "поедем"
+    ],
     "correctAnswer": 2,
     "explanation": "For a likely future condition, Russian uses «если» with a future or present form in the condition and the appropriate future form in the result.",
     "phrase": "Если будет тепло, мы поедем на дачу. — If it is warm, we'll go to the country house.",
-    "tags": ["Future tense", "Conditionals"]
+    "tags": [
+      "Future tense",
+      "Conditionals"
+    ]
   },
   {
     "id": "RU091",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «советовать» mean?",
-    "options": ["To advise", "To complain", "To borrow", "To invite"],
+    "options": [
+      "To advise",
+      "To complain",
+      "To borrow"
+    ],
     "correctAnswer": 0,
     "explanation": "«Советовать» means to advise or recommend.",
     "phrase": "Что ты мне посоветуешь? — What would you advise me to do?",
-    "tags": ["Communication", "Verbs"]
+    "tags": [
+      "Communication",
+      "Verbs"
+    ]
   },
   {
     "id": "RU092",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я занимаюсь ___».",
-    "options": ["спорт", "спорта", "спортом", "спорту"],
+    "options": [
+      "спорт",
+      "спорта",
+      "спортом"
+    ],
     "correctAnswer": 2,
     "explanation": "The verb «заниматься» takes the instrumental case when naming an activity.",
     "phrase": "Я занимаюсь спортом. — I do sports / exercise.",
-    "tags": ["Instrumental case", "Hobbies"]
+    "tags": [
+      "Instrumental case",
+      "Hobbies"
+    ]
   },
   {
     "id": "RU093",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «погода» mean?",
-    "options": ["Season", "Weather", "Temperature", "Climate change"],
+    "options": [
+      "Season",
+      "Weather",
+      "Temperature"
+    ],
     "correctAnswer": 1,
     "explanation": "«Погода» means weather.",
     "phrase": "Сегодня хорошая погода. — The weather is nice today.",
-    "tags": ["Weather", "Nouns"]
+    "tags": [
+      "Weather",
+      "Nouns"
+    ]
   },
   {
     "id": "RU094",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Он приехал ___».",
-    "options": ["из Москва", "с Москва", "от Москва", "из Москвы"],
-    "correctAnswer": 3,
+    "options": [
+      "с Москва",
+      "от Москва",
+      "из Москвы"
+    ],
+    "correctAnswer": 2,
     "explanation": "The preposition «из» meaning from takes the genitive case for a place of origin.",
     "phrase": "Он приехал из Москвы. — He arrived from Moscow.",
-    "tags": ["Genitive case", "Travel"]
+    "tags": [
+      "Genitive case",
+      "Travel"
+    ]
   },
   {
     "id": "RU095",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «свободное время» mean?",
-    "options": ["Free time", "Working hours", "A short break", "A busy day"],
+    "options": [
+      "Free time",
+      "Working hours",
+      "A short break"
+    ],
     "correctAnswer": 0,
     "explanation": "«Свободное время» means free time or leisure time.",
     "phrase": "В свободное время я читаю. — In my free time, I read.",
-    "tags": ["Leisure", "Everyday expressions"]
+    "tags": [
+      "Leisure",
+      "Everyday expressions"
+    ]
   },
   {
     "id": "RU096",
@@ -1082,13 +1717,15 @@
     "options": [
       "мой учитель",
       "моего учителя",
-      "с моим учителем",
-      "моему учителю"
+      "с моим учителем"
     ],
     "correctAnswer": 2,
     "explanation": "The preposition «с» meaning with takes the instrumental case.",
     "phrase": "Я разговаривал с моим учителем. — I talked with my teacher. (said by a male speaker)",
-    "tags": ["Instrumental case", "Communication"]
+    "tags": [
+      "Instrumental case",
+      "Communication"
+    ]
   },
   {
     "id": "RU097",
@@ -1098,79 +1735,123 @@
     "options": [
       "To cancel an exam",
       "To take an exam",
-      "To teach a class",
-      "To skip school"
+      "To teach a class"
     ],
     "correctAnswer": 1,
     "explanation": "«Сдавать экзамен» means to take or sit an exam; the perfective «сдать» often emphasizes passing or completing it.",
     "phrase": "Завтра я сдаю экзамен по русскому языку. — Tomorrow I am taking a Russian exam.",
-    "tags": ["Education", "Verbs"]
+    "tags": [
+      "Education",
+      "Verbs"
+    ]
   },
   {
     "id": "RU098",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «На столе лежат три ___».",
-    "options": ["книга", "книги", "книгами", "книгу"],
+    "options": [
+      "книга",
+      "книги",
+      "книгами"
+    ],
     "correctAnswer": 1,
     "explanation": "After numbers two, three, and four, Russian nouns usually take the genitive singular form, which for «книга» is «книги».",
     "phrase": "На столе лежат три книги. — Three books are lying on the table.",
-    "tags": ["Numbers", "Noun forms"]
+    "tags": [
+      "Numbers",
+      "Noun forms"
+    ]
   },
   {
     "id": "RU099",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «забывать» mean?",
-    "options": ["To remember", "To decide", "To forget", "To repeat"],
+    "options": [
+      "To remember",
+      "To decide",
+      "To forget"
+    ],
     "correctAnswer": 2,
     "explanation": "«Забывать» is the imperfective verb meaning to forget.",
     "phrase": "Я часто забываю имена. — I often forget names.",
-    "tags": ["Memory", "Verbs"]
+    "tags": [
+      "Memory",
+      "Verbs"
+    ]
   },
   {
     "id": "RU100",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Она хочет ___ новую работу».",
-    "options": ["найдёт", "нашла", "находит", "найти"],
-    "correctAnswer": 3,
+    "options": [
+      "нашла",
+      "находит",
+      "найти"
+    ],
+    "correctAnswer": 2,
     "explanation": "The verb «хотеть» is followed by an infinitive. «Найти» is the perfective infinitive meaning to find.",
     "phrase": "Она хочет найти новую работу. — She wants to find a new job.",
-    "tags": ["Infinitives", "Aspect"]
+    "tags": [
+      "Infinitives",
+      "Aspect"
+    ]
   },
   {
     "id": "RU101",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «вкусный» mean?",
-    "options": ["Tasty / delicious", "Bitter", "Freshly cooked", "Salty"],
+    "options": [
+      "Tasty / delicious",
+      "Bitter",
+      "Freshly cooked"
+    ],
     "correctAnswer": 0,
     "explanation": "«Вкусный» means tasty or delicious.",
     "phrase": "Этот суп очень вкусный. — This soup is very tasty.",
-    "tags": ["Food", "Adjectives"]
+    "tags": [
+      "Food",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU102",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я купил подарок ___».",
-    "options": ["моя мама", "моей маме", "мою маму", "моей мамой"],
+    "options": [
+      "моя мама",
+      "моей маме",
+      "мою маму"
+    ],
     "correctAnswer": 1,
     "explanation": "The recipient of a gift is expressed with the dative case.",
     "phrase": "Я купил подарок моей маме. — I bought a present for my mother. (said by a male speaker)",
-    "tags": ["Dative case", "Family"]
+    "tags": [
+      "Dative case",
+      "Family"
+    ]
   },
   {
     "id": "RU103",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «поэтому» mean?",
-    "options": ["Although", "Because", "Therefore / that's why", "Meanwhile"],
+    "options": [
+      "Although",
+      "Because",
+      "Therefore / that's why"
+    ],
     "correctAnswer": 2,
     "explanation": "«Поэтому» introduces a result or consequence.",
     "phrase": "Я устал, поэтому остался дома. — I was tired, so I stayed at home. (said by a male speaker)",
-    "tags": ["Conjunctions", "Cause and effect"]
+    "tags": [
+      "Conjunctions",
+      "Cause and effect"
+    ]
   },
   {
     "id": "RU104",
@@ -1178,48 +1859,71 @@
     "level": "A2",
     "question": "Choose the correct form: «Мы познакомились ___».",
     "options": [
-      "прошлый год",
       "прошлым годом",
       "прошлому году",
       "в прошлом году"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "The time expression «в прошлом году» means last year.",
     "phrase": "Мы познакомились в прошлом году. — We met last year.",
-    "tags": ["Time expressions", "Past tense"]
+    "tags": [
+      "Time expressions",
+      "Past tense"
+    ]
   },
   {
     "id": "RU105",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «выбирать» mean?",
-    "options": ["To choose", "To change", "To exchange", "To refuse"],
+    "options": [
+      "To choose",
+      "To change",
+      "To exchange"
+    ],
     "correctAnswer": 0,
     "explanation": "«Выбирать» is the imperfective verb meaning to choose or select.",
     "phrase": "Я выбираю подарок для друга. — I am choosing a present for a friend.",
-    "tags": ["Shopping", "Verbs"]
+    "tags": [
+      "Shopping",
+      "Verbs"
+    ]
   },
   {
     "id": "RU106",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Она умеет ___».",
-    "options": ["плавает", "плавать", "плавала", "поплывёт"],
+    "options": [
+      "плавает",
+      "плавать",
+      "плавала"
+    ],
     "correctAnswer": 1,
     "explanation": "The verb «уметь» is followed by an infinitive to describe a learned skill.",
     "phrase": "Она умеет плавать. — She can swim.",
-    "tags": ["Modal verbs", "Infinitives"]
+    "tags": [
+      "Modal verbs",
+      "Infinitives"
+    ]
   },
   {
     "id": "RU107",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «вежливый» mean?",
-    "options": ["Shy", "Impatient", "Polite", "Careless"],
+    "options": [
+      "Shy",
+      "Impatient",
+      "Polite"
+    ],
     "correctAnswer": 2,
     "explanation": "«Вежливый» means polite or courteous.",
     "phrase": "Он всегда вежлив с клиентами. — He is always polite to customers.",
-    "tags": ["Personality", "Adjectives"]
+    "tags": [
+      "Personality",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU108",
@@ -1227,15 +1931,17 @@
     "level": "A2",
     "question": "Choose the correct form: «Я живу ___».",
     "options": [
-      "третий этаж",
       "третий этаже",
       "третьего этажа",
       "на третьем этаже"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "The location expression «на третьем этаже» uses «на» with the prepositional case.",
     "phrase": "Я живу на третьем этаже. — I live on the third floor.",
-    "tags": ["Prepositional case", "Housing"]
+    "tags": [
+      "Prepositional case",
+      "Housing"
+    ]
   },
   {
     "id": "RU109",
@@ -1245,46 +1951,69 @@
     "options": [
       "Immediately / right away",
       "Eventually",
-      "Yesterday",
-      "Occasionally"
+      "Yesterday"
     ],
     "correctAnswer": 0,
     "explanation": "«Сразу» means immediately, at once, or right away.",
     "phrase": "Я отвечу тебе сразу. — I'll answer you right away.",
-    "tags": ["Adverbs", "Time"]
+    "tags": [
+      "Adverbs",
+      "Time"
+    ]
   },
   {
     "id": "RU110",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «У меня болит ___».",
-    "options": ["голова", "голову", "головой", "голове"],
+    "options": [
+      "голова",
+      "голову",
+      "головой"
+    ],
     "correctAnswer": 0,
     "explanation": "The body part that hurts is the grammatical subject and is in the nominative case.",
     "phrase": "У меня болит голова. — I have a headache.",
-    "tags": ["Health", "Nominative case"]
+    "tags": [
+      "Health",
+      "Nominative case"
+    ]
   },
   {
     "id": "RU111",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «ремонтировать» mean?",
-    "options": ["To rent", "To repair", "To replace", "To clean"],
+    "options": [
+      "To rent",
+      "To repair",
+      "To replace"
+    ],
     "correctAnswer": 1,
     "explanation": "«Ремонтировать» means to repair or fix something.",
     "phrase": "Мне нужно ремонтировать велосипед. — I need to repair the bicycle.",
-    "tags": ["Household", "Verbs"]
+    "tags": [
+      "Household",
+      "Verbs"
+    ]
   },
   {
     "id": "RU112",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я предпочитаю чай ___».",
-    "options": ["кофе", "кофу", "кофе", "кофем"],
+    "options": [
+      "кофе",
+      "кофу",
+      "кофе"
+    ],
     "correctAnswer": 0,
     "explanation": "The verb «предпочитать» takes the accusative for the thing preferred; «кофе» has the same form in the nominative and accusative.",
     "phrase": "Я предпочитаю чай кофе. — I prefer tea to coffee.",
-    "tags": ["Preferences", "Cases"]
+    "tags": [
+      "Preferences",
+      "Cases"
+    ]
   },
   {
     "id": "RU113",
@@ -1294,46 +2023,69 @@
     "options": [
       "To describe physically",
       "To complain",
-      "To explain",
-      "To translate"
+      "To explain"
     ],
     "correctAnswer": 2,
     "explanation": "«Объяснять» means to explain or clarify something.",
     "phrase": "Учитель объясняет новое правило. — The teacher is explaining a new rule.",
-    "tags": ["Education", "Communication"]
+    "tags": [
+      "Education",
+      "Communication"
+    ]
   },
   {
     "id": "RU114",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Мы гордимся ___».",
-    "options": ["наш брат", "нашего брата", "нашему брату", "нашим братом"],
-    "correctAnswer": 3,
+    "options": [
+      "нашего брата",
+      "нашему брату",
+      "нашим братом"
+    ],
+    "correctAnswer": 2,
     "explanation": "The verb «гордиться» takes the instrumental case.",
     "phrase": "Мы гордимся нашим братом. — We are proud of our brother.",
-    "tags": ["Instrumental case", "Family"]
+    "tags": [
+      "Instrumental case",
+      "Family"
+    ]
   },
   {
     "id": "RU115",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «редко» mean?",
-    "options": ["Rarely", "Often", "Always", "Daily"],
+    "options": [
+      "Rarely",
+      "Often",
+      "Always"
+    ],
     "correctAnswer": 0,
     "explanation": "«Редко» means rarely or infrequently.",
     "phrase": "Я редко ем в ресторанах. — I rarely eat in restaurants.",
-    "tags": ["Frequency", "Adverbs"]
+    "tags": [
+      "Frequency",
+      "Adverbs"
+    ]
   },
   {
     "id": "RU116",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Она пришла ___».",
-    "options": ["без зонт", "без зонта", "без зонтом", "без зонту"],
+    "options": [
+      "без зонт",
+      "без зонта",
+      "без зонтом"
+    ],
     "correctAnswer": 1,
     "explanation": "The preposition «без» (without) takes the genitive case.",
     "phrase": "Она пришла без зонта. — She arrived without an umbrella.",
-    "tags": ["Genitive case", "Prepositions"]
+    "tags": [
+      "Genitive case",
+      "Prepositions"
+    ]
   },
   {
     "id": "RU117",
@@ -1343,13 +2095,15 @@
     "options": [
       "To buy an apartment",
       "To clean an apartment",
-      "To rent out an apartment",
-      "To move into an apartment"
+      "To rent out an apartment"
     ],
     "correctAnswer": 2,
     "explanation": "«Сдавать квартиру» means to rent out an apartment to someone else.",
     "phrase": "Они сдают квартиру студентам. — They rent out the apartment to students.",
-    "tags": ["Housing", "Verbs"]
+    "tags": [
+      "Housing",
+      "Verbs"
+    ]
   },
   {
     "id": "RU118",
@@ -1357,158 +2111,251 @@
     "level": "A2",
     "question": "Choose the correct form: «Я давно не видел ___».",
     "options": [
-      "мой старый друг",
       "мой старого друга",
       "моему старому другу",
       "моего старого друга"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "The verb «видеть» takes the accusative case. For masculine animate nouns, the accusative matches the genitive.",
     "phrase": "Я давно не видел моего старого друга. — I haven't seen my old friend for a long time. (said by a male speaker)",
-    "tags": ["Accusative case", "Animate nouns"]
+    "tags": [
+      "Accusative case",
+      "Animate nouns"
+    ]
   },
   {
     "id": "RU119",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «привычка» mean?",
-    "options": ["Habit", "Opportunity", "Mistake", "Advice"],
+    "options": [
+      "Habit",
+      "Opportunity",
+      "Mistake"
+    ],
     "correctAnswer": 0,
     "explanation": "«Привычка» means a habit or customary behaviour.",
     "phrase": "У меня есть привычка читать перед сном. — I have a habit of reading before bed.",
-    "tags": ["Daily routine", "Nouns"]
+    "tags": [
+      "Daily routine",
+      "Nouns"
+    ]
   },
   {
     "id": "RU120",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Когда я ___ маленьким, я жил в деревне».",
-    "options": ["буду", "был", "есть", "бываю"],
+    "options": [
+      "буду",
+      "был",
+      "есть"
+    ],
     "correctAnswer": 1,
     "explanation": "The past tense of «быть» is «был» for a masculine singular subject.",
     "phrase": "Когда я был маленьким, я жил в деревне. — When I was little, I lived in a village. (said by a male speaker)",
-    "tags": ["Past tense", "Childhood"]
+    "tags": [
+      "Past tense",
+      "Childhood"
+    ]
   },
   {
     "id": "RU121",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «полезный» mean?",
-    "options": ["Harmful", "Useless", "Useful / beneficial", "Complicated"],
+    "options": [
+      "Harmful",
+      "Useless",
+      "Useful / beneficial"
+    ],
     "correctAnswer": 2,
     "explanation": "«Полезный» means useful or beneficial.",
     "phrase": "Овощи полезны для здоровья. — Vegetables are good for your health.",
-    "tags": ["Adjectives", "Health"]
+    "tags": [
+      "Adjectives",
+      "Health"
+    ]
   },
   {
     "id": "RU122",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Он занимается ___ каждый день».",
-    "options": ["английский", "английского", "английскому", "английским"],
-    "correctAnswer": 3,
+    "options": [
+      "английского",
+      "английскому",
+      "английским"
+    ],
+    "correctAnswer": 2,
     "explanation": "The phrase «заниматься английским» uses the instrumental case to name the subject being studied.",
     "phrase": "Он занимается английским каждый день. — He studies English every day.",
-    "tags": ["Instrumental case", "Languages"]
+    "tags": [
+      "Instrumental case",
+      "Languages"
+    ]
   },
   {
     "id": "RU123",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «починить» mean?",
-    "options": ["To fix / repair", "To throw away", "To break", "To lend"],
+    "options": [
+      "To fix / repair",
+      "To throw away",
+      "To break"
+    ],
     "correctAnswer": 0,
     "explanation": "«Починить» is a perfective verb meaning to fix or repair something, with emphasis on completion.",
     "phrase": "Я хочу починить свой телефон. — I want to fix my phone.",
-    "tags": ["Aspect", "Household"]
+    "tags": [
+      "Aspect",
+      "Household"
+    ]
   },
   {
     "id": "RU124",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Она написала письмо ___».",
-    "options": ["синяя ручка", "синей ручкой", "синюю ручку", "синей ручке"],
+    "options": [
+      "синяя ручка",
+      "синей ручкой",
+      "синюю ручку"
+    ],
     "correctAnswer": 1,
     "explanation": "The instrumental case expresses the tool used to write: «синей ручкой».",
     "phrase": "Она написала письмо синей ручкой. — She wrote the letter with a blue pen.",
-    "tags": ["Instrumental case", "Everyday objects"]
+    "tags": [
+      "Instrumental case",
+      "Everyday objects"
+    ]
   },
   {
     "id": "RU125",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «счастливый» mean?",
-    "options": ["Worried", "Angry", "Happy", "Tired"],
+    "options": [
+      "Worried",
+      "Angry",
+      "Happy"
+    ],
     "correctAnswer": 2,
     "explanation": "«Счастливый» means happy or fortunate.",
     "phrase": "Это был счастливый день. — It was a happy day.",
-    "tags": ["Emotions", "Adjectives"]
+    "tags": [
+      "Emotions",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU126",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Я хочу, чтобы ты ___ мне».",
-    "options": ["помогаешь", "помогал бы", "помогать", "помог"],
-    "correctAnswer": 3,
+    "options": [
+      "помогал бы",
+      "помогать",
+      "помог"
+    ],
+    "correctAnswer": 2,
     "explanation": "After «чтобы», Russian commonly uses a past-tense verb form to express a desired or intended action. Here «помог» is masculine singular.",
     "phrase": "Я хочу, чтобы ты помог мне. — I want you to help me.",
-    "tags": ["Subordinate clauses", "Requests"]
+    "tags": [
+      "Subordinate clauses",
+      "Requests"
+    ]
   },
   {
     "id": "RU127",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «проверять» mean?",
-    "options": ["To check / verify", "To forget", "To borrow", "To celebrate"],
+    "options": [
+      "To check / verify",
+      "To forget",
+      "To borrow"
+    ],
     "correctAnswer": 0,
     "explanation": "«Проверять» means to check, inspect, or verify.",
     "phrase": "Я проверяю электронную почту утром. — I check my email in the morning.",
-    "tags": ["Work", "Verbs"]
+    "tags": [
+      "Work",
+      "Verbs"
+    ]
   },
   {
     "id": "RU128",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Мы пошли в кафе, ___ пообедать».",
-    "options": ["потому что", "чтобы", "хотя", "если"],
+    "options": [
+      "потому что",
+      "чтобы",
+      "хотя"
+    ],
     "correctAnswer": 1,
     "explanation": "«Чтобы» introduces a purpose: the reason for going to the café was to have lunch.",
     "phrase": "Мы пошли в кафе, чтобы пообедать. — We went to a café to have lunch.",
-    "tags": ["Purpose", "Infinitives"]
+    "tags": [
+      "Purpose",
+      "Infinitives"
+    ]
   },
   {
     "id": "RU129",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «обслуживание» mean?",
-    "options": ["Competition", "Transport", "Service", "Accommodation"],
+    "options": [
+      "Competition",
+      "Transport",
+      "Service"
+    ],
     "correctAnswer": 2,
     "explanation": "«Обслуживание» means service, such as customer service in a restaurant or shop.",
     "phrase": "В этом ресторане хорошее обслуживание. — The service in this restaurant is good.",
-    "tags": ["Restaurants", "Nouns"]
+    "tags": [
+      "Restaurants",
+      "Nouns"
+    ]
   },
   {
     "id": "RU130",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «У меня больше нет ___».",
-    "options": ["время", "временем", "времени", "времению"],
+    "options": [
+      "время",
+      "временем",
+      "времени"
+    ],
     "correctAnswer": 2,
     "explanation": "The noun «время» takes the genitive form «времени» after «нет».",
     "phrase": "У меня больше нет времени. — I don't have any more time.",
-    "tags": ["Genitive case", "Time"]
+    "tags": [
+      "Genitive case",
+      "Time"
+    ]
   },
   {
     "id": "RU131",
     "category": "Vocabulary",
     "level": "A2",
     "question": "What does «предлагать» mean?",
-    "options": ["To offer / suggest", "To refuse", "To promise", "To warn"],
+    "options": [
+      "To offer / suggest",
+      "To refuse",
+      "To promise"
+    ],
     "correctAnswer": 0,
     "explanation": "«Предлагать» means to offer or suggest something.",
     "phrase": "Я предлагаю пойти пешком. — I suggest going on foot.",
-    "tags": ["Communication", "Verbs"]
+    "tags": [
+      "Communication",
+      "Verbs"
+    ]
   },
   {
     "id": "RU132",
@@ -1518,13 +2365,15 @@
     "options": [
       "прошлая неделя",
       "на прошлой неделе",
-      "прошлую неделю",
-      "прошлой неделей"
+      "прошлую неделю"
     ],
     "correctAnswer": 1,
     "explanation": "The time expression «на прошлой неделе» means last week and uses the prepositional case.",
     "phrase": "Я приехал сюда на прошлой неделе. — I arrived here last week. (said by a male speaker)",
-    "tags": ["Time expressions", "Prepositional case"]
+    "tags": [
+      "Time expressions",
+      "Prepositional case"
+    ]
   },
   {
     "id": "RU133",
@@ -1534,47 +2383,70 @@
     "options": [
       "To create a problem",
       "To ignore a problem",
-      "To solve a problem",
-      "To describe a problem"
+      "To solve a problem"
     ],
     "correctAnswer": 2,
     "explanation": "«Решать проблему» means to work on or solve a problem.",
     "phrase": "Нам нужно решить эту проблему. — We need to solve this problem.",
-    "tags": ["Problem solving", "Verbs"]
+    "tags": [
+      "Problem solving",
+      "Verbs"
+    ]
   },
   {
     "id": "RU134",
     "category": "Grammar",
     "level": "A2",
     "question": "Choose the correct form: «Несмотря на дождь, мы ___ гулять».",
-    "options": ["продолжаем", "продолжили бы", "продолжать", "продолжали бы"],
+    "options": [
+      "продолжаем",
+      "продолжили бы",
+      "продолжать"
+    ],
     "correctAnswer": 0,
     "explanation": "«Несмотря на дождь» means despite the rain. «Продолжаем» is the present-tense first-person plural form of «продолжать».",
     "phrase": "Несмотря на дождь, мы продолжаем гулять. — Despite the rain, we continue walking.",
-    "tags": ["Concessive expressions", "Present tense"]
+    "tags": [
+      "Concessive expressions",
+      "Present tense"
+    ]
   },
-
   {
     "id": "RU135",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct verb: «Когда я пришёл домой, мама уже ___ ужин».",
-    "options": ["приготовит", "приготовила", "готовить", "приготовит бы"],
+    "options": [
+      "приготовит",
+      "приготовила",
+      "готовить"
+    ],
     "correctAnswer": 1,
     "explanation": "The past-tense perfective form «приготовила» indicates that the dinner was already prepared before the speaker arrived.",
     "phrase": "Когда я пришёл домой, мама уже приготовила ужин. — When I came home, Mum had already prepared dinner.",
-    "tags": ["Past tense", "Aspect", "Sequence of events"]
+    "tags": [
+      "Past tense",
+      "Aspect",
+      "Sequence of events"
+    ]
   },
   {
     "id": "RU136",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «несмотря на» mean?",
-    "options": ["Because of", "Instead of", "Despite", "According to"],
+    "options": [
+      "Because of",
+      "Instead of",
+      "Despite"
+    ],
     "correctAnswer": 2,
     "explanation": "«Несмотря на» means despite or in spite of and introduces a circumstance that does not prevent an action.",
     "phrase": "Несмотря на усталость, она продолжала работать. — Despite her tiredness, she continued working.",
-    "tags": ["Conjunctions", "Useful expressions"]
+    "tags": [
+      "Conjunctions",
+      "Useful expressions"
+    ]
   },
   {
     "id": "RU137",
@@ -1584,13 +2456,15 @@
     "options": [
       "путешествую",
       "путешествовал бы",
-      "путешествовать",
-      "путешествую бы"
+      "путешествовать"
     ],
     "correctAnswer": 1,
     "explanation": "A hypothetical condition with «если бы» is commonly followed by a past-tense verb plus «бы» in the result clause.",
     "phrase": "Если бы у меня было больше времени, я путешествовал бы чаще. — If I had more time, I would travel more often. (said by a male speaker)",
-    "tags": ["Conditionals", "Hypothetical situations"]
+    "tags": [
+      "Conditionals",
+      "Hypothetical situations"
+    ]
   },
   {
     "id": "RU138",
@@ -1598,26 +2472,35 @@
     "level": "B1",
     "question": "What does «достигать цели» mean?",
     "options": [
-      "To change plans",
       "To set a deadline",
       "To avoid responsibility",
       "To achieve a goal"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "«Достигать цели» means to achieve or reach a goal.",
     "phrase": "Чтобы достичь цели, нужно много работать. — To achieve a goal, you need to work hard.",
-    "tags": ["Goals", "Verbs"]
+    "tags": [
+      "Goals",
+      "Verbs"
+    ]
   },
   {
     "id": "RU139",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct relative pronoun: «Это книга, ___ я тебе рассказывал».",
-    "options": ["о которой", "которую", "которой", "которую о"],
+    "options": [
+      "о которой",
+      "которую",
+      "которой"
+    ],
     "correctAnswer": 0,
     "explanation": "The verb «рассказывать о» requires «о» plus the prepositional case. The feminine relative form is «о которой».",
     "phrase": "Это книга, о которой я тебе рассказывал. — This is the book I told you about. (said by a male speaker)",
-    "tags": ["Relative pronouns", "Prepositional case"]
+    "tags": [
+      "Relative pronouns",
+      "Prepositional case"
+    ]
   },
   {
     "id": "RU140",
@@ -1627,200 +2510,321 @@
     "options": [
       "To depend on",
       "To influence",
-      "To take part in",
-      "To consist of"
+      "To take part in"
     ],
     "correctAnswer": 1,
     "explanation": "«Влиять на» means to influence or affect and takes the accusative case.",
     "phrase": "Погода влияет на моё настроение. — The weather affects my mood.",
-    "tags": ["Relationships", "Verbs with prepositions"]
+    "tags": [
+      "Relationships",
+      "Verbs with prepositions"
+    ]
   },
   {
     "id": "RU141",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Он спросил меня, ___ я живу».",
-    "options": ["что", "кто", "где", "куда"],
+    "options": [
+      "что",
+      "кто",
+      "где"
+    ],
     "correctAnswer": 2,
     "explanation": "«Где» asks about a location and is appropriate when asking where someone lives.",
     "phrase": "Он спросил меня, где я живу. — He asked me where I live.",
-    "tags": ["Indirect questions", "Reported speech"]
+    "tags": [
+      "Indirect questions",
+      "Reported speech"
+    ]
   },
   {
     "id": "RU142",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «преимущество» mean?",
-    "options": ["Advantage", "Disadvantage", "Requirement", "Experience"],
+    "options": [
+      "Advantage",
+      "Disadvantage",
+      "Requirement"
+    ],
     "correctAnswer": 0,
     "explanation": "«Преимущество» means an advantage or a beneficial feature.",
     "phrase": "Главное преимущество этого плана — его простота. — The main advantage of this plan is its simplicity.",
-    "tags": ["Abstract nouns", "Work"]
+    "tags": [
+      "Abstract nouns",
+      "Work"
+    ]
   },
   {
     "id": "RU143",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Она привыкла ___ рано».",
-    "options": ["вставала", "вставать", "встаёт", "встала"],
+    "options": [
+      "вставала",
+      "вставать",
+      "встаёт"
+    ],
     "correctAnswer": 1,
     "explanation": "The construction «привыкнуть / привыкать» plus an infinitive expresses becoming accustomed to doing something.",
     "phrase": "Она привыкла вставать рано. — She is used to getting up early.",
-    "tags": ["Infinitives", "Habits"]
+    "tags": [
+      "Infinitives",
+      "Habits"
+    ]
   },
   {
     "id": "RU144",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «обстоятельство» mean?",
-    "options": ["Personality", "Opportunity", "Achievement", "Circumstance"],
-    "correctAnswer": 3,
+    "options": [
+      "Opportunity",
+      "Achievement",
+      "Circumstance"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Обстоятельство» means a circumstance or condition surrounding an event.",
     "phrase": "При таких обстоятельствах лучше остаться дома. — Under these circumstances, it is better to stay home.",
-    "tags": ["Abstract nouns", "Useful expressions"]
+    "tags": [
+      "Abstract nouns",
+      "Useful expressions"
+    ]
   },
   {
     "id": "RU145",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я рад, что ты ___ на встречу».",
-    "options": ["пришёл", "приходить", "придёшь бы", "приходя"],
+    "options": [
+      "пришёл",
+      "приходить",
+      "придёшь бы"
+    ],
     "correctAnswer": 0,
     "explanation": "The past-tense form «пришёл» describes an action that has already happened. It agrees with «ты» when addressing a male person.",
     "phrase": "Я рад, что ты пришёл на встречу. — I'm glad you came to the meeting. (addressing a male person)",
-    "tags": ["Subordinate clauses", "Past tense"]
+    "tags": [
+      "Subordinate clauses",
+      "Past tense"
+    ]
   },
   {
     "id": "RU146",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «сомневаться» mean?",
-    "options": ["To insist", "To doubt", "To remember", "To approve"],
+    "options": [
+      "To insist",
+      "To doubt",
+      "To remember"
+    ],
     "correctAnswer": 1,
     "explanation": "«Сомневаться» means to doubt or feel uncertain about something.",
     "phrase": "Я сомневаюсь, что это хорошая идея. — I doubt that this is a good idea.",
-    "tags": ["Thinking", "Reflexive verbs"]
+    "tags": [
+      "Thinking",
+      "Reflexive verbs"
+    ]
   },
   {
     "id": "RU147",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Чем больше читаешь, тем больше ___».",
-    "options": ["узнавал", "узнавать", "узнаёшь", "узнал бы"],
+    "options": [
+      "узнавал",
+      "узнавать",
+      "узнаёшь"
+    ],
     "correctAnswer": 2,
     "explanation": "The pattern «чем ..., тем ...» expresses a relationship between two changing quantities. The present tense fits a general observation.",
     "phrase": "Чем больше читаешь, тем больше узнаёшь. — The more you read, the more you learn.",
-    "tags": ["Comparisons", "Sentence patterns"]
+    "tags": [
+      "Comparisons",
+      "Sentence patterns"
+    ]
   },
   {
     "id": "RU148",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «ответственность» mean?",
-    "options": ["Responsibility", "Curiosity", "Permission", "Confidence"],
+    "options": [
+      "Responsibility",
+      "Curiosity",
+      "Permission"
+    ],
     "correctAnswer": 0,
     "explanation": "«Ответственность» means responsibility or accountability.",
     "phrase": "Руководитель несёт ответственность за команду. — The manager is responsible for the team.",
-    "tags": ["Work", "Abstract nouns"]
+    "tags": [
+      "Work",
+      "Abstract nouns"
+    ]
   },
   {
     "id": "RU149",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Несколько студентов ___ на экзамен».",
-    "options": ["пришёл", "пришла", "пришло", "пришли"],
-    "correctAnswer": 3,
+    "options": [
+      "пришла",
+      "пришло",
+      "пришли"
+    ],
+    "correctAnswer": 2,
     "explanation": "With «несколько студентов», plural agreement «пришли» is natural when referring to several people.",
     "phrase": "Несколько студентов пришли на экзамен. — Several students came to the exam.",
-    "tags": ["Agreement", "Plural nouns"]
+    "tags": [
+      "Agreement",
+      "Plural nouns"
+    ]
   },
   {
     "id": "RU150",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «предполагать» mean?",
-    "options": ["To prove", "To assume / suppose", "To forbid", "To forget"],
+    "options": [
+      "To prove",
+      "To assume / suppose",
+      "To forbid"
+    ],
     "correctAnswer": 1,
     "explanation": "«Предполагать» means to suppose, assume, or expect something to be true.",
     "phrase": "Я предполагаю, что поезд опоздает. — I assume the train will be late.",
-    "tags": ["Thinking", "Verbs"]
+    "tags": [
+      "Thinking",
+      "Verbs"
+    ]
   },
   {
     "id": "RU151",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Она поблагодарила меня ___ помощь».",
-    "options": ["за", "на", "о", "с"],
+    "options": [
+      "за",
+      "на",
+      "о"
+    ],
     "correctAnswer": 0,
     "explanation": "The construction «поблагодарить за что-либо» means to thank someone for something.",
     "phrase": "Она поблагодарила меня за помощь. — She thanked me for the help.",
-    "tags": ["Prepositions", "Communication"]
+    "tags": [
+      "Prepositions",
+      "Communication"
+    ]
   },
   {
     "id": "RU152",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «предотвращать» mean?",
-    "options": ["To postpone", "To discover", "To prevent", "To repeat"],
+    "options": [
+      "To postpone",
+      "To discover",
+      "To prevent"
+    ],
     "correctAnswer": 2,
     "explanation": "«Предотвращать» means to prevent something from happening.",
     "phrase": "Важно предотвращать ошибки заранее. — It is important to prevent mistakes in advance.",
-    "tags": ["Problem solving", "Verbs"]
+    "tags": [
+      "Problem solving",
+      "Verbs"
+    ]
   },
   {
     "id": "RU153",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я не уверен, ___ ли он придёт».",
-    "options": ["что", "если", "чтобы", "придёт ли"],
+    "options": [
+      "что",
+      "если",
+      "чтобы"
+    ],
     "correctAnswer": 0,
     "explanation": "The phrase «не уверен, что...» introduces uncertainty about whether something will happen. In this sentence, «что» is followed by «ли» in a slightly marked but grammatical structure; the more usual phrasing is «Я не уверен, придёт ли он».",
     "phrase": "Я не уверен, что он придёт. — I'm not sure that he will come.",
-    "tags": ["Subordinate clauses", "Uncertainty"]
+    "tags": [
+      "Subordinate clauses",
+      "Uncertainty"
+    ]
   },
   {
     "id": "RU154",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «впечатление» mean?",
-    "options": ["Impression", "Intention", "Argument", "Habit"],
+    "options": [
+      "Impression",
+      "Intention",
+      "Argument"
+    ],
     "correctAnswer": 0,
     "explanation": "«Впечатление» means an impression or the effect something has on someone.",
     "phrase": "Поездка произвела на меня сильное впечатление. — The trip made a strong impression on me.",
-    "tags": ["Abstract nouns", "Experiences"]
+    "tags": [
+      "Abstract nouns",
+      "Experiences"
+    ]
   },
   {
     "id": "RU155",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Несмотря на то что он ___, он продолжал работать».",
-    "options": ["устал", "уставать", "устанет бы", "устал бы"],
+    "options": [
+      "устал",
+      "уставать",
+      "устанет бы"
+    ],
     "correctAnswer": 0,
     "explanation": "«Несмотря на то что» means although or despite the fact that. The past form «устал» describes the state that did not stop him working.",
     "phrase": "Несмотря на то что он устал, он продолжал работать. — Although he was tired, he continued working.",
-    "tags": ["Concessive clauses", "Past tense"]
+    "tags": [
+      "Concessive clauses",
+      "Past tense"
+    ]
   },
   {
     "id": "RU156",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «убедительный» mean?",
-    "options": ["Confusing", "Convincing", "Unusual", "Unimportant"],
+    "options": [
+      "Confusing",
+      "Convincing",
+      "Unusual"
+    ],
     "correctAnswer": 1,
     "explanation": "«Убедительный» means convincing or persuasive.",
     "phrase": "У него были убедительные аргументы. — He had convincing arguments.",
-    "tags": ["Adjectives", "Discussion"]
+    "tags": [
+      "Adjectives",
+      "Discussion"
+    ]
   },
   {
     "id": "RU157",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я привык к ___ климату».",
-    "options": ["холодный", "холодного", "холодным", "холодному"],
-    "correctAnswer": 3,
+    "options": [
+      "холодного",
+      "холодным",
+      "холодному"
+    ],
+    "correctAnswer": 2,
     "explanation": "The construction «привыкнуть к» takes the dative case, so «холодный» becomes «холодному».",
     "phrase": "Я привык к холодному климату. — I am used to the cold climate. (said by a male speaker)",
-    "tags": ["Dative case", "Adjectives"]
+    "tags": [
+      "Dative case",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU158",
@@ -1828,26 +2832,35 @@
     "level": "B1",
     "question": "What does «оказывать влияние» mean?",
     "options": [
-      "To make a decision",
       "To provide information",
       "To take a break",
       "To exert influence"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "«Оказывать влияние» means to exert or have an influence on something or someone.",
     "phrase": "Родители оказывают большое влияние на детей. — Parents have a great influence on children.",
-    "tags": ["Collocations", "Relationships"]
+    "tags": [
+      "Collocations",
+      "Relationships"
+    ]
   },
   {
     "id": "RU159",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Он говорил так, будто всё ___».",
-    "options": ["знает", "знал", "узнать", "узнает бы"],
+    "options": [
+      "знает",
+      "знал",
+      "узнать"
+    ],
     "correctAnswer": 1,
     "explanation": "«Будто» means as if. The past-tense form «знал» can describe an imagined or apparent state in this context.",
     "phrase": "Он говорил так, будто всё знал. — He spoke as if he knew everything.",
-    "tags": ["Comparisons", "Subordinate clauses"]
+    "tags": [
+      "Comparisons",
+      "Subordinate clauses"
+    ]
   },
   {
     "id": "RU160",
@@ -1857,24 +2870,33 @@
     "options": [
       "At first glance",
       "For example",
-      "Ultimately / in the end",
-      "At the same time"
+      "Ultimately / in the end"
     ],
     "correctAnswer": 2,
     "explanation": "«В конечном счёте» is a phrase meaning ultimately or when everything is considered.",
     "phrase": "В конечном счёте решение зависит от тебя. — Ultimately, the decision depends on you.",
-    "tags": ["Discourse markers", "Useful expressions"]
+    "tags": [
+      "Discourse markers",
+      "Useful expressions"
+    ]
   },
   {
     "id": "RU161",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я попросил его ___ окно».",
-    "options": ["открыл", "открывает", "открыть", "открывая"],
+    "options": [
+      "открыл",
+      "открывает",
+      "открыть"
+    ],
     "correctAnswer": 2,
     "explanation": "The verb «попросить» can be followed by a person plus an infinitive to express a request.",
     "phrase": "Я попросил его открыть окно. — I asked him to open the window. (said by a male speaker)",
-    "tags": ["Infinitives", "Requests"]
+    "tags": [
+      "Infinitives",
+      "Requests"
+    ]
   },
   {
     "id": "RU162",
@@ -1884,24 +2906,33 @@
     "options": [
       "To be evidence of",
       "To apologise for",
-      "To take care of",
-      "To participate in"
+      "To take care of"
     ],
     "correctAnswer": 0,
     "explanation": "«Свидетельствовать о» means to indicate or serve as evidence of something.",
     "phrase": "Эти данные свидетельствуют о росте цен. — These data indicate a rise in prices.",
-    "tags": ["Formal vocabulary", "Evidence"]
+    "tags": [
+      "Formal vocabulary",
+      "Evidence"
+    ]
   },
   {
     "id": "RU163",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct word: «Я позвоню тебе, ___ освобожусь».",
-    "options": ["потому что", "как только", "хотя", "несмотря на"],
+    "options": [
+      "потому что",
+      "как только",
+      "хотя"
+    ],
     "correctAnswer": 1,
     "explanation": "«Как только» means as soon as and introduces the event that triggers the next action.",
     "phrase": "Я позвоню тебе, как только освобожусь. — I'll call you as soon as I'm free.",
-    "tags": ["Time clauses", "Future tense"]
+    "tags": [
+      "Time clauses",
+      "Future tense"
+    ]
   },
   {
     "id": "RU164",
@@ -1911,46 +2942,69 @@
     "options": [
       "To interrupt",
       "To criticise",
-      "To support / maintain",
-      "To refuse"
+      "To support / maintain"
     ],
     "correctAnswer": 2,
     "explanation": "«Поддерживать» means to support a person or idea, or to maintain something.",
     "phrase": "Друзья поддерживали меня в трудный период. — My friends supported me during a difficult period.",
-    "tags": ["Relationships", "Verbs"]
+    "tags": [
+      "Relationships",
+      "Verbs"
+    ]
   },
   {
     "id": "RU165",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Документ, ___ вчера, уже отправили».",
-    "options": ["подписал", "подписывать", "подписывая", "подписанный"],
-    "correctAnswer": 3,
+    "options": [
+      "подписывать",
+      "подписывая",
+      "подписанный"
+    ],
+    "correctAnswer": 2,
     "explanation": "The passive participle «подписанный» describes a document that has been signed.",
     "phrase": "Документ, подписанный вчера, уже отправили. — The document signed yesterday has already been sent.",
-    "tags": ["Participles", "Passive voice"]
+    "tags": [
+      "Participles",
+      "Passive voice"
+    ]
   },
   {
     "id": "RU166",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «приблизительно» mean?",
-    "options": ["Approximately", "Precisely", "Suddenly", "Separately"],
+    "options": [
+      "Approximately",
+      "Precisely",
+      "Suddenly"
+    ],
     "correctAnswer": 0,
     "explanation": "«Приблизительно» means approximately or roughly.",
     "phrase": "Дорога займёт приблизительно два часа. — The journey will take approximately two hours.",
-    "tags": ["Adverbs", "Numbers"]
+    "tags": [
+      "Adverbs",
+      "Numbers"
+    ]
   },
   {
     "id": "RU167",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Он извинился ___ опоздание».",
-    "options": ["за", "на", "к", "об"],
+    "options": [
+      "за",
+      "на",
+      "к"
+    ],
     "correctAnswer": 0,
     "explanation": "The construction «извиниться за что-либо» means to apologise for something.",
     "phrase": "Он извинился за опоздание. — He apologised for being late.",
-    "tags": ["Prepositions", "Communication"]
+    "tags": [
+      "Prepositions",
+      "Communication"
+    ]
   },
   {
     "id": "RU168",
@@ -1960,24 +3014,33 @@
     "options": [
       "To be disappointed by",
       "To admire",
-      "To be afraid of",
-      "To be annoyed by"
+      "To be afraid of"
     ],
     "correctAnswer": 1,
     "explanation": "«Восхищаться» means to admire someone or something and takes the instrumental case.",
     "phrase": "Я восхищаюсь её смелостью. — I admire her courage.",
-    "tags": ["Emotions", "Verbs with cases"]
+    "tags": [
+      "Emotions",
+      "Verbs with cases"
+    ]
   },
   {
     "id": "RU169",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Он работает здесь ___ пяти лет».",
-    "options": ["с", "через", "за", "от"],
+    "options": [
+      "с",
+      "через",
+      "за"
+    ],
     "correctAnswer": 0,
     "explanation": "«С» plus a time expression marks the starting point of an ongoing period: «с пяти лет» means since the age of five.",
     "phrase": "Он работает здесь с пяти лет. — He has worked here since he was five. (The sentence is grammatical but contextually unusual.)",
-    "tags": ["Time expressions", "Prepositions"]
+    "tags": [
+      "Time expressions",
+      "Prepositions"
+    ]
   },
   {
     "id": "RU170",
@@ -1987,24 +3050,33 @@
     "options": [
       "To hide",
       "To translate",
-      "To justify / substantiate",
-      "To interrupt"
+      "To justify / substantiate"
     ],
     "correctAnswer": 2,
     "explanation": "«Обосновывать» means to provide reasons or evidence supporting a claim or decision.",
     "phrase": "Нужно обосновать своё решение. — You need to justify your decision.",
-    "tags": ["Discussion", "Formal vocabulary"]
+    "tags": [
+      "Discussion",
+      "Formal vocabulary"
+    ]
   },
   {
     "id": "RU171",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct conjunction: «Я взял зонт, ___ шёл дождь».",
-    "options": ["чтобы", "поскольку", "хотя", "если"],
+    "options": [
+      "чтобы",
+      "поскольку",
+      "хотя"
+    ],
     "correctAnswer": 1,
     "explanation": "«Поскольку» means since or because and introduces the reason for taking the umbrella.",
     "phrase": "Я взял зонт, поскольку шёл дождь. — I took an umbrella because it was raining. (said by a male speaker)",
-    "tags": ["Conjunctions", "Cause and effect"]
+    "tags": [
+      "Conjunctions",
+      "Cause and effect"
+    ]
   },
   {
     "id": "RU172",
@@ -2014,57 +3086,87 @@
     "options": [
       "To neglect / disregard",
       "To appreciate",
-      "To discover",
-      "To improve"
+      "To discover"
     ],
     "correctAnswer": 0,
     "explanation": "«Пренебрегать» means to neglect or disregard something and takes the instrumental case.",
     "phrase": "Нельзя пренебрегать правилами безопасности. — Safety rules must not be disregarded.",
-    "tags": ["Formal vocabulary", "Verbs with cases"]
+    "tags": [
+      "Formal vocabulary",
+      "Verbs with cases"
+    ]
   },
   {
     "id": "RU173",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я рад, что мне удалось ___ эту задачу».",
-    "options": ["решил", "решаю", "решить", "решением"],
+    "options": [
+      "решил",
+      "решаю",
+      "решить"
+    ],
     "correctAnswer": 2,
     "explanation": "The construction «удалось» is followed by an infinitive to describe an action that someone managed to complete.",
     "phrase": "Я рад, что мне удалось решить эту задачу. — I'm glad I managed to solve this problem.",
-    "tags": ["Infinitives", "Impersonal constructions"]
+    "tags": [
+      "Infinitives",
+      "Impersonal constructions"
+    ]
   },
   {
     "id": "RU174",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «последствие» mean?",
-    "options": ["Intention", "Consequence", "Permission", "Exception"],
+    "options": [
+      "Intention",
+      "Consequence",
+      "Permission"
+    ],
     "correctAnswer": 1,
     "explanation": "«Последствие» means a consequence or result, often of an action or event.",
     "phrase": "Каждое решение имеет свои последствия. — Every decision has its consequences.",
-    "tags": ["Abstract nouns", "Cause and effect"]
+    "tags": [
+      "Abstract nouns",
+      "Cause and effect"
+    ]
   },
   {
     "id": "RU175",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Если бы она знала адрес, она ___ к нам».",
-    "options": ["приходит", "пришла бы", "придёт", "приходить"],
+    "options": [
+      "приходит",
+      "пришла бы",
+      "придёт"
+    ],
     "correctAnswer": 1,
     "explanation": "This is a hypothetical condition. The result clause uses the past-tense form plus «бы».",
     "phrase": "Если бы она знала адрес, она пришла бы к нам. — If she knew the address, she would come to our place.",
-    "tags": ["Conditionals", "Hypothetical situations"]
+    "tags": [
+      "Conditionals",
+      "Hypothetical situations"
+    ]
   },
   {
     "id": "RU176",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «доказательство» mean?",
-    "options": ["Evidence / proof", "Rumour", "Opinion", "Prediction"],
+    "options": [
+      "Evidence / proof",
+      "Rumour",
+      "Opinion"
+    ],
     "correctAnswer": 0,
     "explanation": "«Доказательство» means evidence or proof supporting a claim.",
     "phrase": "У нас нет доказательств его вины. — We have no evidence of his guilt.",
-    "tags": ["Abstract nouns", "Reasoning"]
+    "tags": [
+      "Abstract nouns",
+      "Reasoning"
+    ]
   },
   {
     "id": "RU177",
@@ -2074,13 +3176,15 @@
     "options": [
       "упорная работа",
       "упорную работу",
-      "упорной работе",
-      "упорной работой"
+      "упорной работе"
     ],
     "correctAnswer": 2,
     "explanation": "The preposition «благодаря» takes the dative case.",
     "phrase": "Она добилась успеха благодаря упорной работе. — She achieved success thanks to hard work.",
-    "tags": ["Dative case", "Prepositions"]
+    "tags": [
+      "Dative case",
+      "Prepositions"
+    ]
   },
   {
     "id": "RU178",
@@ -2090,24 +3194,33 @@
     "options": [
       "To destroy",
       "To preserve / keep",
-      "To exchange",
-      "To compare"
+      "To exchange"
     ],
     "correctAnswer": 1,
     "explanation": "«Сохранять» means to preserve, keep, or save something.",
     "phrase": "Важно сохранять спокойствие в сложных ситуациях. — It is important to stay calm in difficult situations.",
-    "tags": ["Verbs", "Problem solving"]
+    "tags": [
+      "Verbs",
+      "Problem solving"
+    ]
   },
   {
     "id": "RU179",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct conjunction: «Он продолжал объяснять, ___ все поняли».",
-    "options": ["несмотря на", "потому что", "так как", "пока не"],
-    "correctAnswer": 3,
+    "options": [
+      "потому что",
+      "так как",
+      "пока не"
+    ],
+    "correctAnswer": 2,
     "explanation": "«Пока не» means until. In this sentence, it describes continuing to explain until everyone understood.",
     "phrase": "Он продолжал объяснять, пока все не поняли. — He continued explaining until everyone understood.",
-    "tags": ["Time clauses", "Conjunctions"]
+    "tags": [
+      "Time clauses",
+      "Conjunctions"
+    ]
   },
   {
     "id": "RU180",
@@ -2117,46 +3230,69 @@
     "options": [
       "Significant / considerable",
       "Unclear",
-      "Temporary",
-      "Ordinary"
+      "Temporary"
     ],
     "correctAnswer": 0,
     "explanation": "«Значительный» means significant, considerable, or substantial.",
     "phrase": "Мы заметили значительные изменения. — We noticed significant changes.",
-    "tags": ["Adjectives", "Descriptions"]
+    "tags": [
+      "Adjectives",
+      "Descriptions"
+    ]
   },
   {
     "id": "RU181",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Мне пришлось ___ встречу».",
-    "options": ["перенёс", "переношу", "перенести", "перенесённый"],
+    "options": [
+      "перенёс",
+      "переношу",
+      "перенести"
+    ],
     "correctAnswer": 2,
     "explanation": "The impersonal construction «пришлось» is followed by an infinitive and expresses necessity or an unavoidable action in the past.",
     "phrase": "Мне пришлось перенести встречу. — I had to reschedule the meeting.",
-    "tags": ["Infinitives", "Necessity"]
+    "tags": [
+      "Infinitives",
+      "Necessity"
+    ]
   },
   {
     "id": "RU182",
     "category": "Vocabulary",
     "level": "B1",
     "question": "What does «взаимодействие» mean?",
-    "options": ["Competition", "Interaction", "Independence", "Interruption"],
+    "options": [
+      "Competition",
+      "Interaction",
+      "Independence"
+    ],
     "correctAnswer": 1,
     "explanation": "«Взаимодействие» means interaction or cooperation between people, groups, or systems.",
     "phrase": "Эффективное взаимодействие помогает решить сложные задачи. — Effective interaction helps solve complex tasks.",
-    "tags": ["Abstract nouns", "Work"]
+    "tags": [
+      "Abstract nouns",
+      "Work"
+    ]
   },
   {
     "id": "RU183",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Она сказала, что ___ завтра».",
-    "options": ["пришла вчера", "приходит вчера", "приходить вчера", "придёт"],
-    "correctAnswer": 3,
+    "options": [
+      "приходит вчера",
+      "приходить вчера",
+      "придёт"
+    ],
+    "correctAnswer": 2,
     "explanation": "The future form «придёт» is appropriate for an action that will happen tomorrow, as reported in indirect speech.",
     "phrase": "Она сказала, что придёт завтра. — She said that she would come tomorrow.",
-    "tags": ["Reported speech", "Future tense"]
+    "tags": [
+      "Reported speech",
+      "Future tense"
+    ]
   },
   {
     "id": "RU184",
@@ -2166,24 +3302,33 @@
     "options": [
       "To postpone",
       "To carry out / implement",
-      "To prohibit",
-      "To doubt"
+      "To prohibit"
     ],
     "correctAnswer": 1,
     "explanation": "«Осуществлять» means to carry out, implement, or put a plan into practice.",
     "phrase": "Компания осуществляет новый проект. — The company is implementing a new project.",
-    "tags": ["Formal vocabulary", "Work"]
+    "tags": [
+      "Formal vocabulary",
+      "Work"
+    ]
   },
   {
     "id": "RU185",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Он настолько устал, что сразу ___».",
-    "options": ["заснул", "засыпать", "засыпает завтра", "уснул бы"],
+    "options": [
+      "заснул",
+      "засыпать",
+      "засыпает завтра"
+    ],
     "correctAnswer": 0,
     "explanation": "The past-tense perfective verb «заснул» describes the completed action of falling asleep.",
     "phrase": "Он настолько устал, что сразу заснул. — He was so tired that he fell asleep immediately.",
-    "tags": ["Result clauses", "Past tense"]
+    "tags": [
+      "Result clauses",
+      "Past tense"
+    ]
   },
   {
     "id": "RU186",
@@ -2193,24 +3338,33 @@
     "options": [
       "In contrast to",
       "As a result of",
-      "From the point of view of",
-      "In spite of"
+      "From the point of view of"
     ],
     "correctAnswer": 2,
     "explanation": "«С точки зрения» introduces a perspective or standpoint.",
     "phrase": "С точки зрения экономики это выгодное решение. — From an economic point of view, this is a beneficial decision.",
-    "tags": ["Discussion", "Useful expressions"]
+    "tags": [
+      "Discussion",
+      "Useful expressions"
+    ]
   },
   {
     "id": "RU187",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я не ожидал, что задача окажется такой ___».",
-    "options": ["сложный", "сложного", "сложным", "сложной"],
-    "correctAnswer": 3,
+    "options": [
+      "сложного",
+      "сложным",
+      "сложной"
+    ],
+    "correctAnswer": 2,
     "explanation": "After «оказаться», an adjective describing the subject commonly appears in the instrumental case: «сложной».",
     "phrase": "Я не ожидал, что задача окажется такой сложной. — I didn't expect the task to turn out to be so difficult. (said by a male speaker)",
-    "tags": ["Instrumental case", "Adjectives"]
+    "tags": [
+      "Instrumental case",
+      "Adjectives"
+    ]
   },
   {
     "id": "RU188",
@@ -2220,24 +3374,33 @@
     "options": [
       "To persuade / convince",
       "To warn",
-      "To avoid",
-      "To investigate"
+      "To avoid"
     ],
     "correctAnswer": 0,
     "explanation": "«Убеждать» means to persuade someone or convince them of something.",
     "phrase": "Мне не нужно тебя убеждать. — I don't need to convince you.",
-    "tags": ["Communication", "Verbs"]
+    "tags": [
+      "Communication",
+      "Verbs"
+    ]
   },
   {
     "id": "RU189",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «До того как ___ решение, мы обсудили все варианты».",
-    "options": ["приняли", "принять", "принимая", "принято"],
+    "options": [
+      "приняли",
+      "принять",
+      "принимая"
+    ],
     "correctAnswer": 1,
     "explanation": "The infinitive «принять» is natural here after «до того как» when the understood subject is the same as in the main clause.",
     "phrase": "До того как принять решение, мы обсудили все варианты. — Before making a decision, we discussed all the options.",
-    "tags": ["Infinitives", "Time clauses"]
+    "tags": [
+      "Infinitives",
+      "Time clauses"
+    ]
   },
   {
     "id": "RU190",
@@ -2247,24 +3410,33 @@
     "options": [
       "To introduce oneself",
       "To imagine something",
-      "To represent / constitute",
-      "To present a gift"
+      "To represent / constitute"
     ],
     "correctAnswer": 2,
     "explanation": "«Представлять собой» means to constitute or be something in essence.",
     "phrase": "Это представляет собой серьёзную проблему. — This constitutes a serious problem.",
-    "tags": ["Useful expressions", "Formal vocabulary"]
+    "tags": [
+      "Useful expressions",
+      "Formal vocabulary"
+    ]
   },
   {
     "id": "RU191",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Человек, ___ рядом со мной, оказался врачом».",
-    "options": ["сидел", "сидящий", "сидеть", "сидя"],
+    "options": [
+      "сидел",
+      "сидящий",
+      "сидеть"
+    ],
     "correctAnswer": 1,
     "explanation": "The present active participle «сидящий» describes a person who is sitting beside the speaker.",
     "phrase": "Человек, сидящий рядом со мной, оказался врачом. — The person sitting next to me turned out to be a doctor.",
-    "tags": ["Participles", "Descriptions"]
+    "tags": [
+      "Participles",
+      "Descriptions"
+    ]
   },
   {
     "id": "RU192",
@@ -2274,24 +3446,33 @@
     "options": [
       "To make an announcement",
       "To reach an agreement",
-      "To take measures / action",
-      "To make an excuse"
+      "To take measures / action"
     ],
     "correctAnswer": 2,
     "explanation": "«Принимать меры» is a common expression meaning to take steps or action to address a situation.",
     "phrase": "Нужно срочно принять меры. — We need to take action urgently.",
-    "tags": ["Collocations", "Problem solving"]
+    "tags": [
+      "Collocations",
+      "Problem solving"
+    ]
   },
   {
     "id": "RU193",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct word: «Он ушёл, не ___ ни слова».",
-    "options": ["сказав", "сказал", "говорит", "скажет"],
+    "options": [
+      "сказав",
+      "сказал",
+      "говорит"
+    ],
     "correctAnswer": 0,
     "explanation": "The adverbial participle «сказав» describes an action not performed before leaving. The construction «не сказав» means without saying.",
     "phrase": "Он ушёл, не сказав ни слова. — He left without saying a word.",
-    "tags": ["Adverbial participles", "Sentence structure"]
+    "tags": [
+      "Adverbial participles",
+      "Sentence structure"
+    ]
   },
   {
     "id": "RU194",
@@ -2301,24 +3482,33 @@
     "options": [
       "Avoidable",
       "Unavoidable / inevitable",
-      "Uncertain",
-      "Unnecessary"
+      "Uncertain"
     ],
     "correctAnswer": 1,
     "explanation": "«Неизбежный» describes something that cannot be avoided and is therefore inevitable.",
     "phrase": "Изменения — неизбежная часть жизни. — Change is an inevitable part of life.",
-    "tags": ["Adjectives", "Abstract vocabulary"]
+    "tags": [
+      "Adjectives",
+      "Abstract vocabulary"
+    ]
   },
   {
     "id": "RU195",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Она настояла на том, чтобы мы ___ раньше».",
-    "options": ["приходим", "пришли", "придём", "приходить"],
+    "options": [
+      "приходим",
+      "пришли",
+      "придём"
+    ],
     "correctAnswer": 1,
     "explanation": "After «настоять на том, чтобы», Russian commonly uses a past-tense verb form to express a demanded or desired action.",
     "phrase": "Она настояла на том, чтобы мы пришли раньше. — She insisted that we come earlier.",
-    "tags": ["Subordinate clauses", "Requests and demands"]
+    "tags": [
+      "Subordinate clauses",
+      "Requests and demands"
+    ]
   },
   {
     "id": "RU196",
@@ -2328,24 +3518,33 @@
     "options": [
       "According to",
       "In addition to",
-      "Contrary to / in defiance of",
-      "As a result of"
+      "Contrary to / in defiance of"
     ],
     "correctAnswer": 2,
     "explanation": "«Вопреки» means contrary to or in defiance of and takes the dative case.",
     "phrase": "Вопреки прогнозам, погода была хорошей. — Contrary to the forecasts, the weather was good.",
-    "tags": ["Prepositions", "Formal vocabulary"]
+    "tags": [
+      "Prepositions",
+      "Formal vocabulary"
+    ]
   },
   {
     "id": "RU197",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Я бы предпочёл, чтобы вы ___ мне заранее».",
-    "options": ["сообщили", "сообщаете", "сообщить", "сообщите бы"],
+    "options": [
+      "сообщили",
+      "сообщаете",
+      "сообщить"
+    ],
     "correctAnswer": 0,
     "explanation": "The construction «предпочёл бы, чтобы» expresses a preference and is followed by a past-tense form.",
     "phrase": "Я бы предпочёл, чтобы вы сообщили мне заранее. — I would prefer you to inform me in advance. (said by a male speaker)",
-    "tags": ["Polite requests", "Subordinate clauses"]
+    "tags": [
+      "Polite requests",
+      "Subordinate clauses"
+    ]
   },
   {
     "id": "RU198",
@@ -2355,24 +3554,33 @@
     "options": [
       "To make a complaint",
       "To make a contribution",
-      "To draw a conclusion",
-      "To change direction"
+      "To draw a conclusion"
     ],
     "correctAnswer": 1,
     "explanation": "«Внести вклад» means to make a contribution to a project, cause, or field.",
     "phrase": "Каждый может внести вклад в общее дело. — Everyone can contribute to a common cause.",
-    "tags": ["Collocations", "Abstract vocabulary"]
+    "tags": [
+      "Collocations",
+      "Abstract vocabulary"
+    ]
   },
   {
     "id": "RU199",
     "category": "Grammar",
     "level": "B1",
     "question": "Choose the correct form: «Хотя он ___ много, результат оказался скромным».",
-    "options": ["работать", "работает завтра", "работал", "поработает бы"],
+    "options": [
+      "работать",
+      "работает завтра",
+      "работал"
+    ],
     "correctAnswer": 2,
     "explanation": "The past-tense form «работал» describes an action that occurred before the result was evaluated.",
     "phrase": "Хотя он работал много, результат оказался скромным. — Although he worked a lot, the result was modest.",
-    "tags": ["Concessive clauses", "Past tense"]
+    "tags": [
+      "Concessive clauses",
+      "Past tense"
+    ]
   },
   {
     "id": "RU200",
@@ -2380,14 +3588,16 @@
     "level": "B1",
     "question": "What does «приходить к выводу» mean?",
     "options": [
-      "To avoid a conclusion",
       "To reject a proposal",
       "To repeat an argument",
       "To reach a conclusion"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "«Приходить к выводу» means to reach or arrive at a conclusion after considering information.",
     "phrase": "После обсуждения мы пришли к выводу, что нужен новый план. — After the discussion, we concluded that a new plan was needed.",
-    "tags": ["Collocations", "Reasoning"]
+    "tags": [
+      "Collocations",
+      "Reasoning"
+    ]
   }
 ]
