@@ -63,8 +63,8 @@ export const languages = [
     name: "中文",
     englishName: "Chinese",
     description:
-      "A daily Chinese quiz with ten mixed-level questions. Practise Simplified and Traditional Chinese with pinyin, vocabulary, and grammar from A1 to B2.",
-    flag: "🇨🇳",
+      "A daily Chinese quiz with five mixed-level questions. Practise Simplified and Traditional Chinese with pinyin, vocabulary, and grammar from A1 to B2.",
+    flag: "🇹🇼 🇨🇳",
     siteName: "My Daily Chinese",
   },
 ];
