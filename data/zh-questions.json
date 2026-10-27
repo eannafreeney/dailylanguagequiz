@@ -7,27 +7,23 @@
     "options": [
       "Goodbye",
       "Hello",
-      "Thank you",
-      "Please"
+      "Thank you"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "再见",
       "你好",
-      "谢谢",
-      "请"
+      "谢谢"
     ],
     "traditionalOptions": [
       "再見",
       "你好",
-      "謝謝",
-      "請"
+      "謝謝"
     ],
     "optionPinyin": [
       "zàijiàn",
       "nǐ hǎo",
-      "xièxie",
-      "qǐng"
+      "xièxie"
     ],
     "explanation": "你好 (nǐ hǎo) is the standard friendly greeting. Literally, the characters mean “you good.”",
     "tags": [
@@ -42,27 +38,23 @@
     "options": [
       "I don't understand",
       "Could you help me?",
-      "I'll be right back",
-      "That's okay"
+      "I'll be right back"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我不明白",
       "可以帮我吗？",
-      "我马上回来",
-      "没关系"
+      "我马上回来"
     ],
     "traditionalOptions": [
       "我不明白",
       "可以幫我嗎？",
-      "我馬上回來",
-      "沒關係"
+      "我馬上回來"
     ],
     "optionPinyin": [
       "wǒ bù míngbai",
       "kěyǐ bāng wǒ ma?",
-      "wǒ mǎshàng huílái",
-      "méi guānxi"
+      "wǒ mǎshàng huílái"
     ],
     "explanation": "可以 (kěyǐ) means “can/may”; 帮我 (bāng wǒ) means “help me.” 吗 / 嗎 turns the phrase into a yes-or-no question.",
     "tags": [
@@ -78,27 +70,23 @@
     "options": [
       "I think this is a good idea",
       "I forgot to bring my keys",
-      "He arrived earlier than me",
-      "Please close the door"
+      "He arrived earlier than me"
     ],
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我觉得这个主意不错。",
       "我忘了带钥匙。",
-      "他比我来得早。",
-      "请把门关上。"
+      "他比我来得早。"
     ],
     "traditionalOptions": [
       "我覺得這個主意不錯。",
       "我忘了帶鑰匙。",
-      "他比我來得早。",
-      "請把門關上。"
+      "他比我來得早。"
     ],
     "optionPinyin": [
       "wǒ juéde zhège zhǔyi búcuò",
       "wǒ wàng le dài yàoshi",
-      "tā bǐ wǒ lái de zǎo",
-      "qǐng bǎ mén guān shàng"
+      "tā bǐ wǒ lái de zǎo"
     ],
     "explanation": "我觉得 / 我覺得 (wǒ juéde) means “I think,” while 不错 / 不錯 (búcuò) means “not bad” or “pretty good.”",
     "tags": [
@@ -114,27 +102,23 @@
     "options": [
       "If I have time, I'll go",
       "Although I was tired, I still finished the work",
-      "Because it rained, we didn't go out",
-      "It is not only cheap, but also useful"
+      "Because it rained, we didn't go out"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "如果有时间，我就去。",
       "虽然很累，但是我还是完成了工作。",
-      "因为下雨，所以我们没出门。",
-      "不但便宜，而且很好用。"
+      "因为下雨，所以我们没出门。"
     ],
     "traditionalOptions": [
       "如果有時間，我就去。",
       "雖然很累，但是我還是完成了工作。",
-      "因為下雨，所以我們沒出門。",
-      "不但便宜，而且很好用。"
+      "因為下雨，所以我們沒出門。"
     ],
     "optionPinyin": [
       "rúguǒ yǒu shíjiān, wǒ jiù qù",
       "suīrán hěn lèi, dànshì wǒ háishi wánchéng le gōngzuò",
-      "yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūmén",
-      "bùdàn piányi, érqiě hěn hǎo yòng"
+      "yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūmén"
     ],
     "explanation": "虽然 / 雖然 (suīrán) introduces a concession (“although”); 但是 (dànshì) introduces the contrast (“but”).",
     "tags": [
@@ -150,27 +134,23 @@
     "options": [
       "What is your name?",
       "What is this?",
-      "Where do you live?",
-      "What time is it now?"
+      "Where do you live?"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "你叫什么名字？",
       "这是什么？",
-      "你住在哪里？",
-      "现在几点？"
+      "你住在哪里？"
     ],
     "traditionalOptions": [
       "你叫什麼名字？",
       "這是什麼？",
-      "你住在哪裡？",
-      "現在幾點？"
+      "你住在哪裡？"
     ],
     "optionPinyin": [
       "nǐ jiào shénme míngzi?",
       "zhè shì shénme?",
-      "nǐ zhù zài nǎlǐ?",
-      "xiànzài jǐ diǎn?"
+      "nǐ zhù zài nǎlǐ?"
     ],
     "explanation": "这 / 這 (zhè) means “this,” 是 (shì) means “is,” and 什么 / 什麼 (shénme) means “what.”",
     "tags": [
@@ -186,27 +166,23 @@
     "options": [
       "I have already travelled for a month",
       "I plan to travel next month",
-      "I am busy every month",
-      "I don't really like flying"
+      "I am busy every month"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我已经旅行了一个月。",
       "我打算下个月去旅行。",
-      "我每个月都很忙。",
-      "我不太喜欢坐飞机。"
+      "我每个月都很忙。"
     ],
     "traditionalOptions": [
       "我已經旅行了一個月。",
       "我打算下個月去旅行。",
-      "我每個月都很忙。",
-      "我不太喜歡坐飛機。"
+      "我每個月都很忙。"
     ],
     "optionPinyin": [
       "wǒ yǐjīng lǚxíng le yí ge yuè",
       "wǒ dǎsuàn xià ge yuè qù lǚxíng",
-      "wǒ měi ge yuè dōu hěn máng",
-      "wǒ bú tài xǐhuan zuò fēijī"
+      "wǒ měi ge yuè dōu hěn máng"
     ],
     "explanation": "打算 (dǎsuàn) means “to plan to,” and 下个月 / 下個月 (xià ge yuè) means “next month.”",
     "tags": [
@@ -222,27 +198,23 @@
     "options": [
       "I take the bus to work every day",
       "I walked home yesterday",
-      "I cook at home on weekends",
-      "I usually get up at seven"
+      "I cook at home on weekends"
     ],
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我每天坐公交车上班。",
       "我昨天走路回家。",
-      "我周末在家做饭。",
-      "我通常七点起床。"
+      "我周末在家做饭。"
     ],
     "traditionalOptions": [
       "我每天坐公車上班。",
       "我昨天走路回家。",
-      "我週末在家做飯。",
-      "我通常七點起床。"
+      "我週末在家做飯。"
     ],
     "optionPinyin": [
       "wǒ měitiān zuò gōngjiāochē shàngbān",
       "wǒ zuótiān zǒulù huí jiā",
-      "wǒ zhōumò zài jiā zuò fàn",
-      "wǒ tōngcháng qī diǎn qǐchuáng"
+      "wǒ zhōumò zài jiā zuò fàn"
     ],
     "explanation": "每天 (měitiān) means “every day”; 坐公交车 / 坐公車 (zuò gōngjiāochē) means “take the bus.”",
     "tags": [
@@ -258,27 +230,23 @@
     "options": [
       "Although we're busy, we're happy",
       "We prepared better than yesterday",
-      "If we prepare in advance, we won't be so nervous",
-      "We chat while eating"
+      "If we prepare in advance, we won't be so nervous"
     ],
     "correctAnswer": 2,
     "simplifiedOptions": [
       "我们虽然很忙，但是很开心。",
       "我们准备得比昨天好。",
-      "如果提前准备，就不会这么紧张。",
-      "我们一边吃饭，一边聊天。"
+      "如果提前准备，就不会这么紧张。"
     ],
     "traditionalOptions": [
       "我們雖然很忙，但是很開心。",
       "我們準備得比昨天好。",
-      "如果提前準備，就不會這麼緊張。",
-      "我們一邊吃飯，一邊聊天。"
+      "如果提前準備，就不會這麼緊張。"
     ],
     "optionPinyin": [
       "wǒmen suīrán hěn máng, dànshì hěn kāixīn",
       "wǒmen zhǔnbèi de bǐ zuótiān hǎo",
-      "rúguǒ tíqián zhǔnbèi, jiù bú huì zhème jǐnzhāng",
-      "wǒmen yìbiān chīfàn, yìbiān liáotiān"
+      "rúguǒ tíqián zhǔnbèi, jiù bú huì zhème jǐnzhāng"
     ],
     "explanation": "如果 (rúguǒ) means “if,” and 就 (jiù) introduces the result. 提前 (tíqián) means “in advance.”",
     "tags": [
@@ -294,27 +262,23 @@
     "options": [
       "I prefer drinking tea",
       "I rarely drink coffee",
-      "I want to buy a cup of water",
-      "I don't like this flavour"
+      "I want to buy a cup of water"
     ],
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我比较喜欢喝茶。",
       "我很少喝咖啡。",
-      "我想买一杯水。",
-      "我不喜欢这个味道。"
+      "我想买一杯水。"
     ],
     "traditionalOptions": [
       "我比較喜歡喝茶。",
       "我很少喝咖啡。",
-      "我想買一杯水。",
-      "我不喜歡這個味道。"
+      "我想買一杯水。"
     ],
     "optionPinyin": [
       "wǒ bǐjiào xǐhuan hē chá",
       "wǒ hěn shǎo hē kāfēi",
-      "wǒ xiǎng mǎi yì bēi shuǐ",
-      "wǒ bù xǐhuan zhège wèidào"
+      "wǒ xiǎng mǎi yì bēi shuǐ"
     ],
     "explanation": "比较 / 比較 (bǐjiào) softens a comparison and here means “rather/prefer”; 喜欢 / 喜歡 (xǐhuan) means “like.”",
     "tags": [
@@ -330,27 +294,23 @@
     "options": [
       "I visited China twice last year",
       "This is my first time visiting China",
-      "My friend lives in northern China",
-      "I plan to work in China for three years"
+      "My friend lives in northern China"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我去年去过中国两次。",
       "这是我第一次来中国。",
-      "我朋友住在中国北方。",
-      "我打算在中国工作三年。"
+      "我朋友住在中国北方。"
     ],
     "traditionalOptions": [
       "我去年去過中國兩次。",
       "這是我第一次來中國。",
-      "我朋友住在中國北方。",
-      "我打算在中國工作三年。"
+      "我朋友住在中國北方。"
     ],
     "optionPinyin": [
       "wǒ qùnián qù guo Zhōngguó liǎng cì",
       "zhè shì wǒ dì-yī cì lái Zhōngguó",
-      "wǒ péngyou zhù zài Zhōngguó běifāng",
-      "wǒ dǎsuàn zài Zhōngguó gōngzuò sān nián"
+      "wǒ péngyou zhù zài Zhōngguó běifāng"
     ],
     "explanation": "第一次 (dì-yī cì) means “the first time.” 来中国 / 來中國 (lái Zhōngguó) means “come to China.”",
     "tags": [
@@ -366,27 +326,23 @@
     "options": [
       "You're welcome",
       "Thank you",
-      "Sorry",
-      "Excuse me"
+      "Sorry"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "不客气",
       "谢谢",
-      "对不起",
-      "不好意思"
+      "对不起"
     ],
     "traditionalOptions": [
       "不客氣",
       "謝謝",
-      "對不起",
-      "不好意思"
+      "對不起"
     ],
     "optionPinyin": [
       "bú kèqi",
       "xièxie",
-      "duìbuqǐ",
-      "bù hǎoyìsi"
+      "duìbuqǐ"
     ],
     "explanation": "谢谢 / 謝謝 (xièxie) means “thank you.” 不客气 / 不客氣 (bú kèqi) is a common reply meaning “you're welcome.”",
     "tags": [
@@ -402,27 +358,23 @@
     "options": [
       "Two",
       "Three",
-      "Four",
-      "Five"
+      "Four"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "二",
       "三",
-      "四",
-      "五"
+      "四"
     ],
     "traditionalOptions": [
       "二",
       "三",
-      "四",
-      "五"
+      "四"
     ],
     "optionPinyin": [
       "èr",
       "sān",
-      "sì",
-      "wǔ"
+      "sì"
     ],
     "explanation": "三 (sān) means “three.” The character is the same in Simplified and Traditional Chinese.",
     "tags": [
@@ -438,27 +390,23 @@
     "options": [
       "I'd like a cup of coffee.",
       "I'd like a cup of tea.",
-      "I'd like some cold water.",
-      "I'd like to order food."
+      "I'd like some cold water."
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我要一杯咖啡。",
       "我要一杯茶。",
-      "我要一些冰水。",
-      "我要点菜。"
+      "我要一些冰水。"
     ],
     "traditionalOptions": [
       "我要一杯咖啡。",
       "我要一杯茶。",
-      "我要一些冰水。",
-      "我要點菜。"
+      "我要一些冰水。"
     ],
     "optionPinyin": [
       "wǒ yào yì bēi kāfēi",
       "wǒ yào yì bēi chá",
-      "wǒ yào yìxiē bīngshuǐ",
-      "wǒ yào diǎn cài"
+      "wǒ yào yìxiē bīngshuǐ"
     ],
     "explanation": "我要 (wǒ yào) means “I'd like” or “I want.” 一杯 (yì bēi) is a measure phrase for one cup or glass.",
     "tags": [
@@ -474,27 +422,23 @@
     "options": [
       "Where is the airport?",
       "Where is the train station?",
-      "Where is the hotel?",
-      "Where is the bus stop?"
+      "Where is the hotel?"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "机场在哪里？",
       "火车站在哪里？",
-      "酒店在哪里？",
-      "公交车站在哪里？"
+      "酒店在哪里？"
     ],
     "traditionalOptions": [
       "機場在哪裡？",
       "火車站在哪裡？",
-      "酒店在哪裡？",
-      "公車站在哪裡？"
+      "酒店在哪裡？"
     ],
     "optionPinyin": [
       "jīchǎng zài nǎlǐ",
       "huǒchēzhàn zài nǎlǐ",
-      "jiǔdiàn zài nǎlǐ",
-      "gōngchēzhàn zài nǎlǐ"
+      "jiǔdiàn zài nǎlǐ"
     ],
     "explanation": "火车站 / 火車站 (huǒchēzhàn) means “train station,” and 在哪里 / 在哪裡 (zài nǎlǐ) means “where is it?”",
     "tags": [
@@ -510,27 +454,23 @@
     "options": [
       "Yesterday",
       "Today",
-      "Tomorrow",
-      "The day before yesterday"
+      "Tomorrow"
     ],
     "correctAnswer": 2,
     "simplifiedOptions": [
       "昨天",
       "今天",
-      "明天",
-      "前天"
+      "明天"
     ],
     "traditionalOptions": [
       "昨天",
       "今天",
-      "明天",
-      "前天"
+      "明天"
     ],
     "optionPinyin": [
       "zuótiān",
       "jīntiān",
-      "míngtiān",
-      "qiántiān"
+      "míngtiān"
     ],
     "explanation": "明天 (míngtiān) means “tomorrow.” 今天 (jīntiān) means “today,” and 昨天 (zuótiān) means “yesterday.”",
     "tags": [
@@ -546,27 +486,23 @@
     "options": [
       "I started learning Chinese two days ago.",
       "I've been learning Chinese for two years.",
-      "I will study Chinese for two more years.",
-      "I studied Chinese before moving here."
+      "I will study Chinese for two more years."
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我两天前开始学中文。",
       "我学中文两年了。",
-      "我还要学两年中文。",
-      "我搬来这里之前学过中文。"
+      "我还要学两年中文。"
     ],
     "traditionalOptions": [
       "我兩天前開始學中文。",
       "我學中文兩年了。",
-      "我還要學兩年中文。",
-      "我搬來這裡之前學過中文。"
+      "我還要學兩年中文。"
     ],
     "optionPinyin": [
       "wǒ liǎng tiān qián kāishǐ xué Zhōngwén",
       "wǒ xué Zhōngwén liǎng nián le",
-      "wǒ hái yào xué liǎng nián Zhōngwén",
-      "wǒ bān lái zhèlǐ zhīqián xué guo Zhōngwén"
+      "wǒ hái yào xué liǎng nián Zhōngwén"
     ],
     "explanation": "我学中文两年了 / 我學中文兩年了 means “I've been learning Chinese for two years.” The 了 (le) marks the ongoing duration in this context.",
     "tags": [
@@ -582,27 +518,23 @@
     "options": [
       "Because it rained, we stayed home.",
       "Even though it was raining, we went out.",
-      "It stopped raining before we left.",
-      "We went out to buy an umbrella."
+      "It stopped raining before we left."
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "因为下雨，我们待在家里。",
       "虽然下着雨，我们还是出去了。",
-      "我们出门前雨就停了。",
-      "我们出去买了一把伞。"
+      "我们出门前雨就停了。"
     ],
     "traditionalOptions": [
       "因為下雨，我們待在家裡。",
       "雖然下著雨，我們還是出去了。",
-      "我們出門前雨就停了。",
-      "我們出去買了一把傘。"
+      "我們出門前雨就停了。"
     ],
     "optionPinyin": [
       "yīnwèi xiàyǔ, wǒmen dāi zài jiālǐ",
       "suīrán xiàzhe yǔ, wǒmen háishi chūqù le",
-      "wǒmen chūmén qián yǔ jiù tíng le",
-      "wǒmen chūqù mǎi le yì bǎ sǎn"
+      "wǒmen chūmén qián yǔ jiù tíng le"
     ],
     "explanation": "虽然 / 雖然 (suīrán) means “although/even though.” 还是 / 還是 (háishi) here means “still” and signals that the action happened despite the rain.",
     "tags": [
@@ -618,27 +550,23 @@
     "options": [
       "Could you tell me where this was made?",
       "Could you tell me how much this costs?",
-      "Could you tell me when the shop closes?",
-      "Could you tell me whether this is new?"
+      "Could you tell me when the shop closes?"
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "你能告诉我这是哪里制造的吗？",
       "你能告诉我这个多少钱吗？",
-      "你能告诉我商店几点关门吗？",
-      "你能告诉我这个是不是新的吗？"
+      "你能告诉我商店几点关门吗？"
     ],
     "traditionalOptions": [
       "你能告訴我這是哪裡製造的嗎？",
       "你能告訴我這個多少錢嗎？",
-      "你能告訴我商店幾點關門嗎？",
-      "你能告訴我這個是不是新的嗎？"
+      "你能告訴我商店幾點關門嗎？"
     ],
     "optionPinyin": [
       "nǐ néng gàosu wǒ zhè shì nǎlǐ zhìzào de ma",
       "nǐ néng gàosu wǒ zhège duōshǎo qián ma",
-      "nǐ néng gàosu wǒ shāngdiàn jǐ diǎn guānmén ma",
-      "nǐ néng gàosu wǒ zhège shì bú shì xīn de ma"
+      "nǐ néng gàosu wǒ shāngdiàn jǐ diǎn guānmén ma"
     ],
     "explanation": "这个多少钱 / 這個多少錢 (zhège duōshǎo qián) means “how much is this?” 你能告诉我 / 你能告訴我 (nǐ néng gàosu wǒ) means “could you tell me.”",
     "tags": [
@@ -654,27 +582,23 @@
     "options": [
       "I practise less when I feel confident.",
       "The more I practise, the more confident I become.",
-      "I was confident before I started practising.",
-      "I practise only when I need confidence."
+      "I was confident before I started practising."
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我越有信心，练习就越少。",
       "我练习得越多，就越有信心。",
-      "开始练习以前，我就很有信心。",
-      "我只有需要信心的时候才练习。"
+      "开始练习以前，我就很有信心。"
     ],
     "traditionalOptions": [
       "我越有信心，練習就越少。",
       "我練習得越多，就越有信心。",
-      "開始練習以前，我就很有信心。",
-      "我只有需要信心的時候才練習。"
+      "開始練習以前，我就很有信心。"
     ],
     "optionPinyin": [
       "wǒ yuè yǒu xìnxīn, liànxí jiù yuè shǎo",
       "wǒ liànxí de yuè duō, jiù yuè yǒu xìnxīn",
-      "kāishǐ liànxí yǐqián, wǒ jiù hěn yǒu xìnxīn",
-      "wǒ zhǐyǒu xūyào xìnxīn de shíhou cái liànxí"
+      "kāishǐ liànxí yǐqián, wǒ jiù hěn yǒu xìnxīn"
     ],
     "explanation": "越……越…… (yuè…yuè…) expresses “the more…the more…” or “the …er…the …er.”",
     "tags": [
@@ -690,27 +614,23 @@
     "options": [
       "I knew earlier, so I didn't tell you.",
       "If I had known earlier, I would have told you.",
-      "I will tell you as soon as I know.",
-      "You told me about it earlier."
+      "I will tell you as soon as I know."
     ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我早就知道了，所以没告诉你。",
       "如果我早点知道，就会告诉你了。",
-      "我一知道就会告诉你。",
-      "你早些时候告诉过我这件事。"
+      "我一知道就会告诉你。"
     ],
     "traditionalOptions": [
       "我早就知道了，所以沒告訴你。",
       "如果我早點知道，就會告訴你了。",
-      "我一知道就會告訴你。",
-      "你早些時候告訴過我這件事。"
+      "我一知道就會告訴你。"
     ],
     "optionPinyin": [
       "wǒ zǎo jiù zhīdào le, suǒyǐ méi gàosu nǐ",
       "rúguǒ wǒ zǎodiǎn zhīdào, jiù huì gàosu nǐ le",
-      "wǒ yì zhīdào jiù huì gàosu nǐ",
-      "nǐ zǎoxiē shíhou gàosu guo wǒ zhè jiàn shì"
+      "wǒ yì zhīdào jiù huì gàosu nǐ"
     ],
     "explanation": "如果 (rúguǒ) means “if.” 早一点 / 早一點 (zǎodiǎn) means “a little earlier,” and 就会……了 / 就會……了 describes the result that would have followed.",
     "tags": [
