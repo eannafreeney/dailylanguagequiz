@@ -92,23 +92,23 @@ const italianTheme: LanguageTheme = {
 };
 
 const chineseTheme: LanguageTheme = {
-  accent: "bg-blue-800",
-  accentHover: "hover:bg-blue-900",
-  accentBorderHover: "hover:border-blue-800",
-  accentSoft: "bg-blue-50",
-  accentBorder: "border-blue-200",
-  accentText: "text-blue-800",
-  focus: "focus-visible:outline-blue-700",
-  progress: "bg-blue-700",
+  accent: "bg-red-700",
+  accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
+  accentSoft: "bg-red-50",
+  accentBorder: "border-red-200",
+  accentText: "text-red-800",
+  focus: "focus-visible:outline-red-700",
+  progress: "bg-red-700",
   progressTrack: "bg-slate-200",
   radio:
     "checked:border-red-600 checked:bg-[radial-gradient(circle,_#dc2626_35%,_white_40%)]",
   selectedOption: "has-[:checked]:border-red-600 has-[:checked]:bg-red-50",
   optionHover: "hover:border-red-300 hover:bg-red-50",
   kicker: "text-red-700",
-  headerBar: "bg-blue-900 border-b-2 border-red-700",
+  headerBar: "bg-red-800 border-b-2 border-yellow-400",
   headerTitle: "text-white",
-  headerMuted: "text-blue-100",
+  headerMuted: "text-red-100",
   markText: "text-white",
   footerBar: "mt-auto border-t-4 border-yellow-400 bg-red-950 text-red-100",
 };
