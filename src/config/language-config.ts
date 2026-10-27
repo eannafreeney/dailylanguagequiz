@@ -140,7 +140,7 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
       {
         href: "Skool",
         title: "Skool Community",
-        description: "Learn Irish with Learn Irish",
+        description: "Learn Irish with Eanna",
       },
     ],
     theme: irishTheme,
