@@ -15,9 +15,10 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
   const isChinese = langCode === "zh";
 
   return (
+    <div class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-8">
     <section
       id="quiz"
-      class="mx-auto flex w-full max-w-2xl flex-col gap-4"
+      class="flex w-full min-w-0 flex-col gap-4"
       {...(isChinese
         ? {
             "x-data": "{ script: localStorage.getItem('zh-script') || 'simplified' }",
@@ -76,10 +77,20 @@ const Question = ({ question, langCode, questionNumber, totalQuestions }: Props)
           ))}
           <CheckAnswerButton langCode={langCode} />
         </form>
-        <div id="answer" class="mt-5" />
       </div>
       <p class="mt-5 text-center text-sm text-slate-500">{isChinese ? "Five questions a day. Every answer includes pinyin and an explanation." : "Five minutes a day can make a difference."}</p>
     </section>
+    <aside id="answer" aria-live="polite" class="w-full min-w-0 lg:sticky lg:top-6">
+      <div class="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 sm:p-8">
+        <p class="text-lg font-bold text-slate-800">Your answer</p>
+        <p class="mt-2 leading-relaxed text-slate-600">Choose an option on the left and select <span class="font-semibold">Check answer</span>. Your result and explanation will appear here.</p>
+        <div class="mt-5 flex items-center gap-3 text-sm text-slate-500">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg">↳</span>
+          <span>No need to scroll back and forth.</span>
+        </div>
+      </div>
+    </aside>
+    </div>
   );
 };
 export default Question;
