@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+[x-cloak] {
+  display: none !important;
+}
 @plugin "daisyui" {
   themes: emerald --default;
 }

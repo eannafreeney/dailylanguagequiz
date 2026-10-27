@@ -19,7 +19,9 @@ export const getQuestionHandler = async (c: Context) => {
     questionNumber < 0 ||
     questionNumber >= dailyQuestions.length
   ) {
-    return c.html("<p>Daily quiz complete!</p>", 200, { "X-Robots-Tag": "noindex" });
+    return c.html("<p>Daily quiz complete!</p>", 200, {
+      "X-Robots-Tag": "noindex",
+    });
   }
   const question = dailyQuestions[questionNumber];
   if (questionNumber === 0) {
@@ -67,17 +69,14 @@ export const answerQuestionHandler = async (c: Context) => {
     Number(number) !== questionNumber
   ) {
     return c.html(
-      <>
-        <CheckAnswerButton langCode={langCode} />
-        <Answer
-          status="invalid"
-          nextNumber={questionNumber}
-          langCode={langCode}
-          dailyQuestionsLength={0}
-          message="Your submission is invalid. Please try again."
-          script={script}
-        />
-      </>,
+      <Answer
+        status="invalid"
+        nextNumber={questionNumber}
+        langCode={langCode}
+        dailyQuestionsLength={0}
+        message="Your submission is invalid. Please try again."
+        script={script}
+      />,
       400,
     );
   }
@@ -114,17 +113,14 @@ export const answerQuestionHandler = async (c: Context) => {
   const isCorrect = answer === question.options[question.correctAnswer];
   if (!isCorrect) {
     return c.html(
-      <>
-        <CheckAnswerButton langCode={langCode} />
-        <Answer
-          status="incorrect"
-          langCode={langCode}
-          nextNumber={questionNumber}
-          dailyQuestionsLength={dailyQuestions.length}
-          question={question}
-          script={script}
-        />
-      </>,
+      <Answer
+        status="incorrect"
+        langCode={langCode}
+        nextNumber={questionNumber}
+        dailyQuestionsLength={dailyQuestions.length}
+        question={question}
+        script={script}
+      />,
     );
   }
 

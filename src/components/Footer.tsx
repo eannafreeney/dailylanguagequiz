@@ -1,5 +1,5 @@
 import { languageConfig } from "../config/language-config";
-import { languages } from "../lib/languages";
+import { languages, REGISTERED_LANGS } from "../lib/languages";
 import type { LangCode } from "../types";
 
 type Props = { title: string; kicker: string; langCode: LangCode };
@@ -13,6 +13,12 @@ const Footer = ({ title, kicker, langCode }: Props) => {
   }
 
   const { siteName, description } = language;
+  const otherQuizzes = languages.filter(
+    (item) =>
+      item.langCode !== langCode &&
+      item.siteUrl &&
+      REGISTERED_LANGS.has(item.langCode),
+  );
 
   const logoHover = `hover:text-${theme.accentText}`;
   const linkColor = `text-${theme.accentText} hover:text-${theme.accentText}200`;
@@ -41,8 +47,22 @@ const Footer = ({ title, kicker, langCode }: Props) => {
               {description}
             </p>
           </div>
+          {otherQuizzes.length > 0 && (
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-white">Other daily quizzes</p>
+              {otherQuizzes.map((quiz) => (
+                <a
+                  key={quiz.langCode}
+                  href={quiz.siteUrl}
+                  class="font-semibold text-slate-200 transition hover:text-white"
+                >
+                  {quiz.flag} {quiz.englishName}
+                </a>
+              ))}
+            </div>
+          )}
           {links.length > 0 && (
-            <div class="flex flex-col gap-2 text-right">
+            <div class="flex md:hidden flex-col gap-2 text-right">
               <p class="font-semibold text-white">Want to keep learning?</p>
               {links.map((link) => (
                 <a

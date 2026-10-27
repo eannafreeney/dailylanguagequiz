@@ -11,6 +11,13 @@ export const DOMAIN_TO_LANG: Record<string, string> = {
   "zh.localhost": "zh",
 };
 
+// Hosts above the local entries. Add a domain here and the footer link appears.
+export const REGISTERED_LANGS = new Set(
+  Object.entries(DOMAIN_TO_LANG)
+    .filter(([host]) => !host.endsWith("localhost") && host !== "127.0.0.1")
+    .map(([, code]) => code),
+);
+
 export const HOST_REDIRECTS: Record<string, string> = {
   "mydaily.irish": "https://dailyirishquiz.com",
   "www.mydaily.irish": "https://dailyirishquiz.com",
@@ -26,7 +33,7 @@ export const languages = [
     description:
       "A free daily Irish quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇮🇪",
-    siteName: "My Daily Irish",
+    siteName: "Daily Irish Quiz",
     siteUrl: "https://dailyirishquiz.com",
   },
   {
@@ -36,7 +43,7 @@ export const languages = [
     description:
       "A free daily German quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇩🇪",
-    siteName: "My Daily German",
+    siteName: "Daily German Quiz",
     siteUrl: "https://dailygermanquiz.com",
   },
   {
@@ -46,7 +53,7 @@ export const languages = [
     description:
       "A free daily Russian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇷🇺",
-    siteName: "My Daily Russian",
+    siteName: "Daily Russian Quiz",
   },
   {
     langCode: "it",
@@ -55,7 +62,7 @@ export const languages = [
     description:
       "A free daily Italian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇮🇹",
-    siteName: "My Daily Italian",
+    siteName: "Daily Italian Quiz",
     siteUrl: "https://dailyitalianquiz.com",
   },
   {
@@ -65,6 +72,6 @@ export const languages = [
     description:
       "A daily Chinese quiz with five mixed-level questions. Practise Simplified and Traditional Chinese with pinyin, vocabulary, and grammar from A1 to B2.",
     flag: "🇹🇼 🇨🇳",
-    siteName: "My Daily Chinese",
+    siteName: "Daily Chinese Quiz",
   },
 ];

@@ -1,6 +1,7 @@
 import type { PropsWithChildren } from "hono/jsx";
 import Header from "./Header";
 import Footer from "./Footer";
+import Newsletter from "./Newsletter";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
 
@@ -9,8 +10,8 @@ type Props = PropsWithChildren<{ langCode: LangCode }>;
 const Layout = ({ langCode, children }: Props) => {
   const language = languages.find((item) => item.langCode === langCode);
   if (!language) return null;
-  const { siteName, siteUrl, flag, englishName, description } = language;
-  const title = `${flag} ${englishName}`;
+  const { siteName, siteUrl, englishName, description } = language;
+
   const questionCount = 5;
   const pageTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
   const kicker = `Daily practice — ${questionCount} questions a day.`;
@@ -48,13 +49,10 @@ const Layout = ({ langCode, children }: Props) => {
         ></script>
       </head>
       <body class="bg-white">
-        <Header
-          title={title}
-          questionCount={questionCount}
-          langCode={langCode}
-        />
-        <main class="my-4 px-4">{children}</main>
-        <Footer title={title} kicker={kicker} langCode={langCode} />
+        <Header title={siteName} langCode={langCode} />
+        <main class="my-4 max-w-6xl mx-auto">{children}</main>
+        <Footer title={siteName} kicker={kicker} langCode={langCode} />
+        <Newsletter langCode={langCode} />
       </body>
     </html>
   );
