@@ -1,6 +1,6 @@
 # Accounts, streaks, and leaderboard implementation
 
-This feature is being built for the existing Cloudflare Workers + Hono app and D1 binding (DB). Guests can continue taking quizzes without creating an account. The current branch has the data migration and initial API foundation; the sign-in and account screens are not yet implemented.
+This feature uses the existing Cloudflare Workers + Hono app and D1 binding (DB). Drizzle ORM is the query layer; `src/lib/schema.ts` defines the typed table schema and `src/lib/db.ts` creates the D1-backed Drizzle client. Guests can continue taking quizzes without creating an account. The account page uses Alpine.js and Supabase Auth email magic links.
 
 ## Decisions
 
@@ -13,7 +13,11 @@ This feature is being built for the existing Cloudflare Workers + Hono app and D
 - **Streaks:** one streak per language. A day counts when the user completes that language's daily quiz; derive consecutive dates from completion rows.
 - **Privacy:** public leaderboard responses contain display names and aggregate scores only, never email addresses or auth tokens.
 
-## D1 migration
+## Database schema and migration
+
+Drizzle queries cover account/profile, leaderboard, streak, newsletter, email-delivery, and quiz-analytics data. The existing SQL migrations remain the schema source of truth; Drizzle does not automatically modify production tables.
+
+
 
 `20261028000000_accounts_leaderboard.sql` creates profiles, daily completions, and unique correct-answer records. It has not been applied to production.
 
