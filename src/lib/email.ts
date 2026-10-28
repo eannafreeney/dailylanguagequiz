@@ -1,4 +1,5 @@
 import { Context } from "hono";
+import type { Subscriber } from "../types";
 import { languages, REGISTERED_LANGS } from "./languages";
 import { getDb } from "./db";
 import { emailDeliveryLog, quizDailyParticipants, subscribers } from "./schema";
@@ -140,6 +141,8 @@ export function dublinYesterday(todayYmd: string) {
   const [year, month, day] = todayYmd.split("-").map(Number);
   return new Date(Date.UTC(year, month - 1, day - 1)).toISOString().slice(0, 10);
 }
+
+type DigestRow = { lang_code: string; started: number; finished: number };
 
 export function adminDigest(yesterday: string, rows: DigestRow[]) {
   const tracked = languages.filter((language) => REGISTERED_LANGS.has(language.langCode));
