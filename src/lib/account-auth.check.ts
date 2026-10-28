@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { DatabaseSync } from "node:sqlite";
+import { readFileSync } from "node:fs";
 import { calculateCurrentStreak, dublinLocalDate, hasCompletedDailyQuiz, rankLeaderboard } from "./account-auth";
 
 assert.equal(hasCompletedDailyQuiz(0), false);
@@ -46,4 +48,20 @@ assert.deepEqual(
   ],
 );
 
-console.log("account scoring helpers ok");
+
+const sqlite = new DatabaseSync(":memory:");
+sqlite.exec(readFileSync("migrations/20261028000000_accounts_leaderboard.sql", "utf8"));
+sqlite.prepare("INSERT INTO user_profiles (user_id, display_name) VALUES (?, ?)").run("user-1", "Ada");
+const insertAnswer = sqlite.prepare("INSERT OR IGNORE INTO account_quiz_answers (user_id, local_date, lang_code, question_id) VALUES (?, ?, ?, ?)");
+assert.equal(insertAnswer.run("user-1", "2026-10-28", "ga", "q1").changes, 1);
+assert.equal(insertAnswer.run("user-1", "2026-10-28", "ga", "q1").changes, 0, "duplicate correct answer should not earn another point");
+assert.equal(insertAnswer.run("user-1", "2026-10-28", "de", "q1").changes, 1, "answer credit is language-specific");
+assert.throws(() => sqlite.prepare("INSERT INTO account_quiz_answers (user_id, local_date, lang_code, question_id) VALUES (?, ?, ?, ?)").run("user-1", "2026-10-28", "xx", "q2"));
+assert.throws(() => sqlite.prepare("INSERT INTO user_profiles (user_id, display_name) VALUES (?, ?)").run("user-2", "x"));
+const insertCompletion = sqlite.prepare("INSERT OR IGNORE INTO account_quiz_completions (user_id, local_date, lang_code, score) VALUES (?, ?, ?, ?)");
+assert.equal(insertCompletion.run("user-1", "2026-10-28", "ga", 5).changes, 1);
+assert.equal(insertCompletion.run("user-1", "2026-10-28", "ga", 5).changes, 0, "only one completion per language/date");
+assert.throws(() => sqlite.prepare("INSERT INTO account_quiz_completions (user_id, local_date, lang_code, score) VALUES (?, ?, ?, ?)").run("user-1", "2026-10-29", "ga", 6));
+sqlite.close();
+
+console.log("account scoring helpers and D1-compatible constraints ok");
