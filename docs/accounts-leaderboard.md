@@ -1,43 +1,38 @@
 # Accounts, streaks, and leaderboard implementation
 
-This feature is designed for the existing Cloudflare Workers + Hono app and its existing D1 binding (DB). It keeps quiz questions accessible to guests.
+This feature is designed for the existing Cloudflare Workers + Hono app and its existing D1 binding (DB). Guests can continue taking quizzes without creating an account.
 
-## Design
+## Decisions
 
 - **Authentication:** Supabase Auth email magic links. Never store passwords in D1.
 - **Quiz and account data:** existing Cloudflare D1 database.
-- **Date boundary:** use the same Europe/Dublin local date already used by src/lib/analytics.ts, so existing quiz analytics and account streaks agree.
-- **Guest experience:** guests can complete the quiz exactly as they do today. Only a verified signed-in user gets an account completion record.
-- **Completion integrity:** only the server records a completion, after the last question has been answered correctly. The server derives the score from the quiz definition; never accept a client-supplied score.
-- **Duplicate prevention:** the primary key on account_quiz_completions permits one completion per user, local date, and language. A retry should be treated as an idempotent success.
-- **Streak:** derive consecutive dates from distinct local_date values, rather than storing a mutable streak counter that can drift. Decide whether a day counts when the user completes any quiz or only a specific language before implementing the profile UI.
-- **Leaderboard:** aggregate scores from account_quiz_completions; expose only display names and aggregate scores, never email addresses or auth tokens.
+- **Date boundary:** use the `Europe/Dublin` local date, including across daylight-saving changes.
+- **Guest experience:** guests can complete quizzes as before. Only a verified signed-in user gets account records.
+- **Answer integrity:** the Worker validates each answer against the server-side question bank. The browser never submits a score.
+- **Leaderboard:** one all-time leaderboard per language, ranked by distinct correctly answered questions. A question earns credit once per user/date/language. Equal scores share the same rank; completion time is not a tie-breaker.
+- **Streaks:** one streak per language. A day counts when the user completes that language's daily quiz; derive consecutive dates from completion rows.
+- **Privacy:** public leaderboard responses contain display names and aggregate scores only, never email addresses or auth tokens.
 
 ## D1 migration
 
-20261028000000_accounts_leaderboard.sql creates:
-
-- user_profiles: display name keyed by the verified Supabase user ID.
-- account_quiz_completions: one score per user/date/language, with indexes for leaderboard and streak queries.
-
-Apply it to a staging D1 database first, then production, using the migration workflow already configured in wrangler.jsonc.
+`20261028000000_accounts_leaderboard.sql` creates profiles, daily completions, and unique correct-answer records. It has not been applied to production.
 
 ## Required Worker configuration
 
 Set these as Cloudflare Worker secrets/variables (do not commit real values):
 
-- SUPABASE_URL
-- SUPABASE_ANON_KEY (the Supabase publishable/anon key; not a service-role key)
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY` (publishable/anon key; never a service-role key)
 
-The Worker should validate a bearer token with Supabase Auth's /auth/v1/user endpoint before reading or writing account data. All account routes must fail closed when auth configuration is missing or the token is invalid. The publishable key is not a substitute for validating the user's access token.
+The Worker validates a bearer token with Supabase Auth's `/auth/v1/user` endpoint before reading or writing private account data. Missing auth configuration must fail closed for account routes.
 
-## Implementation sequence
+## Implementation and release
 
-1. Configure Supabase Auth email sign-in and the production redirect URL(s).
-2. Add a sign-in UI that uses Supabase's browser client; guests should not be redirected away from the quiz.
-3. Add a small auth helper to validate bearer tokens in Hono.
-4. Record a signed-in user's completion in the existing final-answer path, while preserving anonymous analytics.
-5. Add profile and leaderboard endpoints; calculate streaks from distinct Dublin dates.
-6. Add profile/streak/leaderboard UI and test the guest path, invalid sessions, duplicate submissions, and timezone boundaries.
+1. Configure Supabase Auth email sign-in and allowed redirect URLs.
+2. Add optional sign-in UI without interrupting guest quizzes.
+3. Record verified correct answers and quiz completion server-side.
+4. Add profile, per-language streak, and public leaderboard UI.
+5. Test guest access, invalid sessions, duplicate submissions, and Dublin date boundaries.
+6. Apply the migration to a staging D1 database, test, then decide whether to migrate production and deploy.
 
-This is the database foundation and implementation plan, not the complete end-user feature. No production deployment or D1 migration is performed by this change.
+No production migration or deployment is performed by work on this branch.
