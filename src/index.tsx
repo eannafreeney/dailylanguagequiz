@@ -11,6 +11,7 @@ import HomePage from "./routes/home";
 import type { SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
 import { leaderboardHandler, meHandler, profileHandler, streaksHandler } from "./routes/accounts";
+import { accountPageHandler } from "./routes/account";
 
 const app = new Hono();
 
@@ -41,6 +42,7 @@ app.get("/:langCode", (c) => {
 app.post("/subscribe", subscribeHandler);
 app.get("/confirm", confirmHandler);
 app.get("/unsubscribe", unsubscribeHandler);
+app.get("/account", accountPageHandler);
 app.get("/api/me", meHandler);
 app.put("/api/profile", profileHandler);
 app.get("/api/leaderboard", leaderboardHandler);
