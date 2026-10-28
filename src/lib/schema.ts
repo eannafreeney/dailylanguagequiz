@@ -1,4 +1,5 @@
 import {
+  check,
   index,
   integer,
   primaryKey,
@@ -24,6 +25,9 @@ export const subscribers = sqliteTable(
     uniqueIndex("subscribers_token_unique").on(table.token),
     uniqueIndex("subscribers_email_lang_unique").on(table.email, table.langCode),
     index("idx_subscribers_delivery").on(table.confirmed, table.unsubscribed, table.langCode),
+    check("subscribers_lang_code_check", sql.raw("lang_code in ('ga', 'de', 'ru')")),
+    check("subscribers_confirmed_check", sql.raw("confirmed in (0, 1)")),
+    check("subscribers_unsubscribed_check", sql.raw("unsubscribed in (0, 1)")),
   ],
 );
 
@@ -58,7 +62,7 @@ export const userProfiles = sqliteTable("user_profiles", {
   displayName: text("display_name").notNull(),
   createdAt: text("created_at").notNull().default(sql`(datetime('now'))`),
   updatedAt: text("updated_at").notNull().default(sql`(datetime('now'))`),
-});
+}, (table) => [check("user_profiles_display_name_length", sql`length(${table.displayName}) between 2 and 24`)]);
 
 export const accountQuizCompletions = sqliteTable(
   "account_quiz_completions",
@@ -73,6 +77,8 @@ export const accountQuizCompletions = sqliteTable(
     primaryKey({ columns: [table.userId, table.localDate, table.langCode] }),
     index("idx_account_quiz_completions_date").on(table.localDate, table.langCode),
     index("idx_account_quiz_completions_user_date").on(table.userId, table.localDate),
+    check("account_quiz_completions_lang_code_check", sql.raw("lang_code in ('ga', 'de', 'ru', 'it', 'zh')")),
+    check("account_quiz_completions_score_check", sql`score >= 0 and score <= 5`),
   ],
 );
 
@@ -88,6 +94,7 @@ export const accountQuizAnswers = sqliteTable(
   (table) => [
     primaryKey({ columns: [table.userId, table.localDate, table.langCode, table.questionId] }),
     index("idx_account_quiz_answers_language_user").on(table.langCode, table.userId),
+    check("account_quiz_answers_lang_code_check", sql.raw("lang_code in ('ga', 'de', 'ru', 'it', 'zh')")),
   ],
 );
 
