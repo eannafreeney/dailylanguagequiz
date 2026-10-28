@@ -5,6 +5,8 @@ import { recordDailyParticipant } from "../lib/analytics";
 import { Env } from "../lib/email";
 import { getDailyQuestions, isLangCode } from "../utils";
 import { Context } from "hono";
+import { getAuthenticatedUser } from "../lib/account-auth";
+import { recordVerifiedCorrectAnswer, recordAccountCompletion } from "./accounts";
 
 export const getQuestionHandler = async (c: Context) => {
   const rawLangCode = c.req.param("langCode");
@@ -126,16 +128,28 @@ export const answerQuestionHandler = async (c: Context) => {
     );
   }
 
+  const env = (c as unknown as { env: Env }).env;
+  const user = await getAuthenticatedUser(c, env);
+  if (user) {
+    try {
+      await recordVerifiedCorrectAnswer(c, env, user.id, langCode, question.id);
+    } catch (error) {
+      console.error("Failed to record account answer", error);
+    }
+  }
+
   if (questionNumber + 1 >= dailyQuestions.length) {
     try {
-      await recordDailyParticipant(
-        c,
-        (c as unknown as { env: Env }).env,
-        langCode,
-        true,
-      );
+      await recordDailyParticipant(c, env, langCode, true);
     } catch (error) {
       console.error("Failed to record quiz completion", error);
+    }
+    if (user) {
+      try {
+        await recordAccountCompletion(c, env, user.id, langCode);
+      } catch (error) {
+        console.error("Failed to record account quiz completion", error);
+      }
     }
   }
   return c.html(
