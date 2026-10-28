@@ -1,6 +1,9 @@
 import type { Context } from "hono";
 import type { Env } from "./email";
 import { languages } from "./languages";
+import { getDb } from "./db";
+import { quizDailyParticipants } from "./schema";
+import { and, count, eq, gte, sql, desc } from "drizzle-orm";
 
 const COOKIE_NAME = "quiz_visitor";
 
@@ -40,17 +43,18 @@ export async function recordDailyParticipant(
     );
   }
   const localDate = dublinDate();
-  await env.DB.prepare(
-    "INSERT OR IGNORE INTO quiz_daily_participants (visitor_id, local_date, lang_code) VALUES (?, ?, ?)",
-  )
-    .bind(visitorId, localDate, langCode)
-    .run();
+  const db = getDb(env.DB);
+  await db.insert(quizDailyParticipants).values({
+    visitorId, localDate, langCode,
+  }).onConflictDoNothing();
   if (completed) {
-    await env.DB.prepare(
-      "UPDATE quiz_daily_participants SET completed_at = COALESCE(completed_at, datetime('now')) WHERE visitor_id = ? AND local_date = ? AND lang_code = ?",
-    )
-      .bind(visitorId, localDate, langCode)
-      .run();
+    await db.update(quizDailyParticipants).set({
+      completedAt: sql`coalesce(${quizDailyParticipants.completedAt}, datetime('now'))`,
+    }).where(and(
+      eq(quizDailyParticipants.visitorId, visitorId),
+      eq(quizDailyParticipants.localDate, localDate),
+      eq(quizDailyParticipants.langCode, langCode),
+    ));
   }
 }
 
@@ -78,9 +82,15 @@ export async function analyticsDashboard(c: Context, env: Env) {
     return c.text("Authentication required", 401);
   }
 
-  const { results } = await env.DB.prepare(
-    "SELECT local_date, lang_code, COUNT(*) AS participants, COUNT(completed_at) AS completions FROM quiz_daily_participants WHERE local_date >= date('now', '-29 days') GROUP BY local_date, lang_code ORDER BY local_date DESC, lang_code",
-  ).all<{ local_date: string; lang_code: string; participants: number; completions: number }>();
+  const results = await getDb(env.DB).select({
+    local_date: quizDailyParticipants.localDate,
+    lang_code: quizDailyParticipants.langCode,
+    participants: count(),
+    completions: sql<number>`count(${quizDailyParticipants.completedAt})`,
+  }).from(quizDailyParticipants)
+    .where(gte(quizDailyParticipants.localDate, sql`date('now', '-29 days')`))
+    .groupBy(quizDailyParticipants.localDate, quizDailyParticipants.langCode)
+    .orderBy(desc(quizDailyParticipants.localDate), quizDailyParticipants.langCode);
 
   const rows = results.map((row) =>
     `<tr><td>${row.local_date}</td><td>${languages.find((language) => language.langCode === row.lang_code)?.englishName ?? row.lang_code}</td><td class="number">${row.participants}</td><td class="number">${row.completions}</td></tr>`,
