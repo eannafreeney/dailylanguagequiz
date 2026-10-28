@@ -52,7 +52,7 @@ const Layout = ({ langCode, children }: Props) => {
         <Header title={siteName} langCode={langCode} />
         <main class="my-4 max-w-6xl mx-auto">{children}</main>
         <Footer title={siteName} kicker={kicker} langCode={langCode} />
-        <Newsletter langCode={langCode} />
+        {siteUrl && <Newsletter langCode={langCode} />}
       </body>
     </html>
   );

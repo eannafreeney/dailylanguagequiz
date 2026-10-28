@@ -1,6 +1,6 @@
 import { Context } from "hono";
 import { NewsletterForm } from "../components/Newsletter";
-import { DOMAIN_TO_LANG, languages } from "../lib/languages";
+import { DOMAIN_TO_LANG, HUB_HOSTS, languages } from "../lib/languages";
 import { getEnv, sendEmail } from "../lib/email";
 import { isLangCode } from "../utils";
 
@@ -11,12 +11,14 @@ export async function subscribeHandler(c: Context) {
   const langCode = typeof body.langCode === "string" ? body.langCode : "";
   const language = languages.find((item) => item.langCode === langCode);
   const origin = new URL(c.req.url).origin;
-  const hostLang = DOMAIN_TO_LANG[new URL(c.req.url).hostname];
+  const hostname = new URL(c.req.url).hostname;
+  const hostLang = DOMAIN_TO_LANG[hostname];
   const isAjax = (c.req.header("X-Alpine-Target") ?? "")
     .split(/\s+/)
     .includes("newsletter-form");
 
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !language || hostLang !== langCode) {
+  const onThisQuiz = hostLang === langCode || (HUB_HOSTS.has(hostname) && Boolean(language?.siteUrl));
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !language || !onThisQuiz) {
     if (isAjax) {
       return c.html(
         <NewsletterForm

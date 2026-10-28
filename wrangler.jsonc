@@ -10,6 +10,8 @@
     { "pattern": "www.dailygermanquiz.com", "custom_domain": true },
     { "pattern": "mydaily.irish", "custom_domain": true },
     { "pattern": "www.mydaily.irish", "custom_domain": true },
+    { "pattern": "dailylanguagequiz.com", "custom_domain": true },
+    { "pattern": "www.dailylanguagequiz.com", "custom_domain": true },
   ],
   "vars": {
     "EMAIL_FROM": "Daily Quiz <quiz@mydaily.irish>",

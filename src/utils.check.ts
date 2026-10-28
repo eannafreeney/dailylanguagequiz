@@ -49,16 +49,21 @@ assert.equal(
   redirectUrl("https://www.dailygermanquiz.com/"),
   "https://dailygermanquiz.com/",
 );
+assert.equal(
+  redirectUrl("https://www.dailylanguagequiz.com/zh"),
+  "https://dailylanguagequiz.com/zh",
+);
+assert.equal(redirectUrl("https://dailylanguagequiz.com/"), undefined);
 
 const irish = await app.request("https://dailyirishquiz.com/");
 assert.equal(irish.status, 200);
 const irishHtml = await irish.text();
 assert.match(irishHtml, /<html lang="en"/);
-assert.match(irishHtml, /<title>Daily Irish quiz — five questions a day<\/title>/);
+assert.match(irishHtml, /<title>Daily Irish quiz — 5 questions a day<\/title>/);
 assert.match(irishHtml, /rel="canonical" href="https:\/\/dailyirishquiz.com\/"/);
-assert.match(irishHtml, /<h1[^>]*>\s*Daily Irish quiz\s*<\/h1>/);
+assert.match(irishHtml, /Daily Irish Quiz/);
 assert.match(irishHtml, /lang="ga"/);
-assert.match(irishHtml, /My Daily Irish/);
+assert.match(irishHtml, /Question 1 of 5/);
 
 const german = await app.request("https://dailygermanquiz.com/");
 const germanHtml = await german.text();
@@ -68,6 +73,18 @@ assert.match(germanHtml, /rel="canonical" href="https:\/\/dailygermanquiz.com\/"
 const www = await app.request("https://www.dailyirishquiz.com/confirm?token=abc");
 assert.equal(www.status, 301);
 assert.equal(www.headers.get("location"), "https://dailyirishquiz.com/confirm?token=abc");
+
+const hub = await app.request("https://dailylanguagequiz.com/");
+assert.equal(hub.status, 200);
+const hubHtml = await hub.text();
+assert.match(hubHtml, /<h1[^>]*>Five questions a day\.<\/h1>/);
+assert.match(hubHtml, /href="https:\/\/dailyirishquiz\.com"/);
+assert.match(hubHtml, /href="https:\/\/dailygermanquiz\.com"/);
+assert.doesNotMatch(hubHtml, /Chinese|Russian|Italian|href="\/(?:zh|ru|it)"/);
+assert.equal((await app.request("https://dailylanguagequiz.com/zh")).status, 200);
+assert.equal((await app.request("https://www.dailylanguagequiz.com/")).status, 301);
+assert.equal((await app.request("https://example.com/")).status, 404);
+assert.doesNotMatch(irishHtml, /Five questions a day/);
 
 const fragment = await app.request("https://dailyirishquiz.com/ga/question/1");
 assert.equal(fragment.headers.get("x-robots-tag"), "noindex");

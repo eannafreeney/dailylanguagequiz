@@ -1,6 +1,6 @@
 import { LangCode, type Question } from "./types";
 import { quizzes } from "./lib/quizzes";
-import { DOMAIN_TO_LANG, HOST_REDIRECTS, languages } from "./lib/languages";
+import { DOMAIN_TO_LANG, HUB_HOSTS, HOST_REDIRECTS, languages } from "./lib/languages";
 import { Context } from "hono";
 
 const DEFAULT_DAILY_QUESTION_COUNT = 5;
@@ -32,6 +32,9 @@ export function getDailyQuestions(langCode: LangCode, now = new Date()): Questio
 
 export const getHostLang = (c: Context) =>
   DOMAIN_TO_LANG[new URL(c.req.url).hostname];
+
+export const isHubHost = (c: Context) =>
+  HUB_HOSTS.has(new URL(c.req.url).hostname);
 
 export function redirectUrl(requestUrl: string) {
   const url = new URL(requestUrl);

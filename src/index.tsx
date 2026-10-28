@@ -6,7 +6,8 @@ import { unsubscribeHandler } from "./routes/unsubscribe";
 import { languages } from "./lib/languages";
 import { Env, sendDailyEmails } from "./lib/email";
 import { analyticsDashboard } from "./lib/analytics";
-import { getHostLang, isLangCode, redirectUrl } from "./utils";
+import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
+import HomePage from "./routes/home";
 import type { SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
 
@@ -25,9 +26,11 @@ app.use("*", async (c, next) => {
 });
 
 app.get("/", (c) => {
+  if (isHubHost(c)) return c.html(<HomePage />);
   const language = languages.find((item) => item.langCode === getHostLang(c));
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
+
 app.get("/:langCode", (c) => {
   const langCode = c.req.param("langCode");
   if (!isLangCode(langCode)) return c.notFound();

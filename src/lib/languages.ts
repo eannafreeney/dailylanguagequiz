@@ -18,11 +18,19 @@ export const REGISTERED_LANGS = new Set(
     .map(([, code]) => code),
 );
 
+// A hub lists every language. It stays out of DOMAIN_TO_LANG so it is not locked to one quiz.
+export const HUB_HOSTS = new Set([
+  "dailylanguagequiz.com",
+  "www.dailylanguagequiz.com",
+  "dailylanguagequiz.localhost",
+]);
+
 export const HOST_REDIRECTS: Record<string, string> = {
   "mydaily.irish": "https://dailyirishquiz.com",
   "www.mydaily.irish": "https://dailyirishquiz.com",
   "www.dailyirishquiz.com": "https://dailyirishquiz.com",
   "www.dailygermanquiz.com": "https://dailygermanquiz.com",
+  "www.dailylanguagequiz.com": "https://dailylanguagequiz.com",
 };
 
 export const languages = [
