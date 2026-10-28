@@ -52,6 +52,41 @@ export async function leaderboardHandler(c: Context) {
   return c.json({ language: langCode, entries });
 }
 
+
+export async function streaksHandler(c: Context) {
+  const env = getEnv(c);
+  const user = await getAuthenticatedUser(c, env);
+  if (!user) return c.json({ error: "Authentication required" }, 401);
+  const { results } = await env.DB.prepare(
+    "SELECT lang_code AS langCode, local_date AS localDate FROM account_quiz_completions WHERE user_id = ? ORDER BY local_date DESC",
+  ).bind(user.id).all<{ langCode: string; localDate: string }>();
+  const byLanguage = new Map<string, Set<string>>();
+  for (const row of results) {
+    const dates = byLanguage.get(row.langCode) ?? new Set<string>();
+    dates.add(row.localDate);
+    byLanguage.set(row.langCode, dates);
+  }
+  const today = dublinLocalDate();
+  const yesterdayDate = new Date(`${today}T00:00:00Z`);
+  yesterdayDate.setUTCDate(yesterdayDate.getUTCDate() - 1);
+  const yesterday = yesterdayDate.toISOString().slice(0, 10);
+  const streaks = ["ga", "de", "ru", "it", "zh"].map((langCode) => {
+    const dates = byLanguage.get(langCode) ?? new Set<string>();
+    let cursor = dates.has(today) ? today : yesterday;
+    let count = 0;
+    if (dates.has(cursor)) {
+      while (dates.has(cursor)) {
+        count++;
+        const previous = new Date(`${cursor}T00:00:00Z`);
+        previous.setUTCDate(previous.getUTCDate() - 1);
+        cursor = previous.toISOString().slice(0, 10);
+      }
+    }
+    return { language: langCode, currentStreak: count, completedToday: dates.has(today) };
+  });
+  return c.json({ streaks });
+}
+
 export async function recordVerifiedCorrectAnswer(env: Env, userId: string, langCode: string, questionId: string) {
   const localDate = dublinLocalDate();
   await env.DB.prepare(
