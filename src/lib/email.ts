@@ -1,12 +1,12 @@
 import { Context } from "hono";
 import type { Subscriber } from "../types";
 import { languages, REGISTERED_LANGS } from "./languages";
-import { getDb } from "./db";
+import { getDb, type D1Binding } from "./db";
 import { emailDeliveryLog, quizDailyParticipants, subscribers } from "./schema";
 import { and, count, eq, sql } from "drizzle-orm";
 
 export type Env = {
-  DB: D1Database;
+  DB: D1Binding;
   RESEND_API_KEY: string;
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
