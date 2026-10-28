@@ -77,21 +77,23 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
   const localDate = `${part("year")}-${part("month")}-${part("day")}`;
   await sendAdminDigest(env, localDate);
 
-  const { results } = await env.DB.prepare(
-    "SELECT email, lang_code, token, site_url FROM subscribers WHERE confirmed=1 AND unsubscribed=0",
-  ).all<Subscriber>();
+  const db = getDb(env.DB);
+  const results = await db.select({
+    email: subscribers.email,
+    lang_code: subscribers.langCode,
+    token: subscribers.token,
+    site_url: subscribers.siteUrl,
+  }).from(subscribers).where(and(eq(subscribers.confirmed, true), eq(subscribers.unsubscribed, false)));
   console.log("[daily-email] Eligible subscribers:", results.length);
   for (const subscriber of results) {
     const message = reminderMessage(subscriber);
     if (!message) continue;
     try {
       // Claim this recipient/date before sending so a retried scheduled event won't resend.
-      const claim = await env.DB.prepare(
-        "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, ?, ?)",
-      )
-        .bind(subscriber.email, subscriber.lang_code, localDate)
-        .run();
-      if (claim.meta?.changes !== 1) continue;
+      const claim = await db.insert(emailDeliveryLog).values({
+        email: subscriber.email, langCode: subscriber.lang_code, localDate,
+      }).onConflictDoNothing().returning({ email: emailDeliveryLog.email });
+      if (claim.length === 0) continue;
       console.log(
         "[daily-email] Sending reminder for language:",
         subscriber.lang_code,
@@ -105,11 +107,11 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
       console.error("[daily-email] Reminder send failed:", error);
       // Remove the claim if sending failed, allowing a later scheduled retry to try again.
       try {
-        await env.DB.prepare(
-          "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = ? AND local_date = ?",
-        )
-          .bind(subscriber.email, subscriber.lang_code, localDate)
-          .run();
+        await db.delete(emailDeliveryLog).where(and(
+          eq(emailDeliveryLog.email, subscriber.email),
+          eq(emailDeliveryLog.langCode, subscriber.lang_code),
+          eq(emailDeliveryLog.localDate, localDate),
+        ));
       } catch (cleanupError) {
         console.error(
           "Could not release failed email claim",
@@ -164,29 +166,30 @@ async function sendAdminDigest(env: Env, localDate: string) {
     return;
   }
   const yesterday = dublinYesterday(localDate);
-  const claim = await env.DB.prepare(
-    "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, 'admin', ?)",
-  )
-    .bind(env.ADMIN_EMAIL, yesterday)
-    .run();
-  if (claim.meta?.changes !== 1) return;
+  const db = getDb(env.DB);
+  const claim = await db.insert(emailDeliveryLog).values({
+    email: env.ADMIN_EMAIL, langCode: "admin", localDate: yesterday,
+  }).onConflictDoNothing().returning({ email: emailDeliveryLog.email });
+  if (claim.length === 0) return;
   try {
-    const { results } = await env.DB.prepare(
-      "SELECT lang_code, COUNT(*) AS started, COUNT(completed_at) AS finished FROM quiz_daily_participants WHERE local_date = ? GROUP BY lang_code",
-    )
-      .bind(yesterday)
-      .all<DigestRow>();
+    const results = await db.select({
+      lang_code: quizDailyParticipants.langCode,
+      started: count(),
+      finished: sql<number>`count(${quizDailyParticipants.completedAt})`,
+    }).from(quizDailyParticipants)
+      .where(eq(quizDailyParticipants.localDate, yesterday))
+      .groupBy(quizDailyParticipants.langCode);
     const { subject, html } = adminDigest(yesterday, results);
     console.log("[daily-email] Sending admin digest for", yesterday);
     await sendEmail(env, env.ADMIN_EMAIL, subject, html);
   } catch (error) {
     console.error("[daily-email] Admin digest failed:", error);
     try {
-      await env.DB.prepare(
-        "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = 'admin' AND local_date = ?",
-      )
-        .bind(env.ADMIN_EMAIL, yesterday)
-        .run();
+      await db.delete(emailDeliveryLog).where(and(
+        eq(emailDeliveryLog.email, env.ADMIN_EMAIL),
+        eq(emailDeliveryLog.langCode, "admin"),
+        eq(emailDeliveryLog.localDate, yesterday),
+      ));
     } catch (cleanupError) {
       console.error("[daily-email] Could not release admin digest claim", cleanupError);
     }
