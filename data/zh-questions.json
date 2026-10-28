@@ -5,25 +5,11 @@
     "level": "A1",
     "question": "Hello",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "再见",
-      "你好",
-      "谢谢"
-    ],
-    "traditionalOptions": [
-      "再見",
-      "你好",
-      "謝謝"
-    ],
-    "optionPinyin": [
-      "zàijiàn",
-      "nǐ hǎo",
-      "xièxie"
-    ],
+    "simplifiedOptions": ["再见", "你好", "谢谢"],
+    "traditionalOptions": ["再見", "你好", "謝謝"],
+    "optionPinyin": ["zàijiàn", "nǐ hǎo", "xièxie"],
     "explanation": "你好 (nǐ hǎo) is the standard friendly greeting. Literally, the characters mean “you good.”",
-    "tags": [
-      "greetings"
-    ]
+    "tags": ["greetings"]
   },
   {
     "id": "ZH002",
@@ -31,26 +17,11 @@
     "level": "A2",
     "question": "Could you help me?",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "我不明白",
-      "可以帮我吗？",
-      "我马上回来"
-    ],
-    "traditionalOptions": [
-      "我不明白",
-      "可以幫我嗎？",
-      "我馬上回來"
-    ],
-    "optionPinyin": [
-      "wǒ bù míngbai",
-      "kěyǐ bāng wǒ ma?",
-      "wǒ mǎshàng huílái"
-    ],
+    "simplifiedOptions": ["我不明白", "可以帮我吗？", "我马上回来"],
+    "traditionalOptions": ["我不明白", "可以幫我嗎？", "我馬上回來"],
+    "optionPinyin": ["wǒ bù míngbai", "kěyǐ bāng wǒ ma?", "wǒ mǎshàng huílái"],
     "explanation": "可以 (kěyǐ) means “can/may”; 帮我 (bāng wǒ) means “help me.” 吗 / 嗎 turns the phrase into a yes-or-no question.",
-    "tags": [
-      "requests",
-      "politeness"
-    ]
+    "tags": ["requests", "politeness"]
   },
   {
     "id": "ZH003",
@@ -74,10 +45,7 @@
       "tā bǐ wǒ lái de zǎo"
     ],
     "explanation": "我觉得 / 我覺得 (wǒ juéde) means “I think,” while 不错 / 不錯 (búcuò) means “not bad” or “pretty good.”",
-    "tags": [
-      "opinions",
-      "sentences"
-    ]
+    "tags": ["opinions", "sentences"]
   },
   {
     "id": "ZH004",
@@ -101,10 +69,7 @@
       "yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūmén"
     ],
     "explanation": "虽然 / 雖然 (suīrán) introduces a concession (“although”); 但是 (dànshì) introduces the contrast (“but”).",
-    "tags": [
-      "contrast",
-      "grammar"
-    ]
+    "tags": ["contrast", "grammar"]
   },
   {
     "id": "ZH005",
@@ -112,26 +77,15 @@
     "level": "A1",
     "question": "What is this?",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "你叫什么名字？",
-      "这是什么？",
-      "你住在哪里？"
-    ],
-    "traditionalOptions": [
-      "你叫什麼名字？",
-      "這是什麼？",
-      "你住在哪裡？"
-    ],
+    "simplifiedOptions": ["你叫什么名字？", "这是什么？", "你住在哪里？"],
+    "traditionalOptions": ["你叫什麼名字？", "這是什麼？", "你住在哪裡？"],
     "optionPinyin": [
       "nǐ jiào shénme míngzi?",
       "zhè shì shénme?",
       "nǐ zhù zài nǎlǐ?"
     ],
     "explanation": "这 / 這 (zhè) means “this,” 是 (shì) means “is,” and 什么 / 什麼 (shénme) means “what.”",
-    "tags": [
-      "questions",
-      "everyday"
-    ]
+    "tags": ["questions", "everyday"]
   },
   {
     "id": "ZH006",
@@ -155,10 +109,7 @@
       "wǒ měi ge yuè dōu hěn máng"
     ],
     "explanation": "打算 (dǎsuàn) means “to plan to,” and 下个月 / 下個月 (xià ge yuè) means “next month.”",
-    "tags": [
-      "plans",
-      "future"
-    ]
+    "tags": ["plans", "future"]
   },
   {
     "id": "ZH007",
@@ -182,10 +133,7 @@
       "wǒ zhōumò zài jiā zuò fàn"
     ],
     "explanation": "每天 (měitiān) means “every day”; 坐公交车 / 坐公車 (zuò gōngjiāochē) means “take the bus.”",
-    "tags": [
-      "daily-life",
-      "transport"
-    ]
+    "tags": ["daily-life", "transport"]
   },
   {
     "id": "ZH008",
@@ -209,10 +157,7 @@
       "rúguǒ tíqián zhǔnbèi, jiù bú huì zhème jǐnzhāng"
     ],
     "explanation": "如果 (rúguǒ) means “if,” and 就 (jiù) introduces the result. 提前 (tíqián) means “in advance.”",
-    "tags": [
-      "conditionals",
-      "grammar"
-    ]
+    "tags": ["conditionals", "grammar"]
   },
   {
     "id": "ZH009",
@@ -236,10 +181,7 @@
       "wǒ xiǎng mǎi yì bēi shuǐ"
     ],
     "explanation": "比较 / 比較 (bǐjiào) softens a comparison and here means “rather/prefer”; 喜欢 / 喜歡 (xǐhuan) means “like.”",
-    "tags": [
-      "preferences",
-      "food-drink"
-    ]
+    "tags": ["preferences", "food-drink"]
   },
   {
     "id": "ZH010",
@@ -263,10 +205,7 @@
       "wǒ péngyou zhù zài Zhōngguó běifāng"
     ],
     "explanation": "第一次 (dì-yī cì) means “the first time.” 来中国 / 來中國 (lái Zhōngguó) means “come to China.”",
-    "tags": [
-      "experiences",
-      "time"
-    ]
+    "tags": ["experiences", "time"]
   },
   {
     "id": "ZH011",
@@ -274,26 +213,11 @@
     "level": "A1",
     "question": "Thank you",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "不客气",
-      "谢谢",
-      "对不起"
-    ],
-    "traditionalOptions": [
-      "不客氣",
-      "謝謝",
-      "對不起"
-    ],
-    "optionPinyin": [
-      "bú kèqi",
-      "xièxie",
-      "duìbuqǐ"
-    ],
+    "simplifiedOptions": ["不客气", "谢谢", "对不起"],
+    "traditionalOptions": ["不客氣", "謝謝", "對不起"],
+    "optionPinyin": ["bú kèqi", "xièxie", "duìbuqǐ"],
     "explanation": "谢谢 / 謝謝 (xièxie) means “thank you.” 不客气 / 不客氣 (bú kèqi) is a common reply meaning “you're welcome.”",
-    "tags": [
-      "greetings",
-      "politeness"
-    ]
+    "tags": ["greetings", "politeness"]
   },
   {
     "id": "ZH012",
@@ -301,26 +225,11 @@
     "level": "A1",
     "question": "Three",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "二",
-      "三",
-      "四"
-    ],
-    "traditionalOptions": [
-      "二",
-      "三",
-      "四"
-    ],
-    "optionPinyin": [
-      "èr",
-      "sān",
-      "sì"
-    ],
+    "simplifiedOptions": ["二", "三", "四"],
+    "traditionalOptions": ["二", "三", "四"],
+    "optionPinyin": ["èr", "sān", "sì"],
     "explanation": "三 (sān) means “three.” The character is the same in Simplified and Traditional Chinese.",
-    "tags": [
-      "numbers",
-      "basics"
-    ]
+    "tags": ["numbers", "basics"]
   },
   {
     "id": "ZH013",
@@ -328,26 +237,15 @@
     "level": "A2",
     "question": "I'd like a cup of tea.",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "我要一杯咖啡。",
-      "我要一杯茶。",
-      "我要一些冰水。"
-    ],
-    "traditionalOptions": [
-      "我要一杯咖啡。",
-      "我要一杯茶。",
-      "我要一些冰水。"
-    ],
+    "simplifiedOptions": ["我要一杯咖啡。", "我要一杯茶。", "我要一些冰水。"],
+    "traditionalOptions": ["我要一杯咖啡。", "我要一杯茶。", "我要一些冰水。"],
     "optionPinyin": [
       "wǒ yào yì bēi kāfēi",
       "wǒ yào yì bēi chá",
       "wǒ yào yìxiē bīngshuǐ"
     ],
     "explanation": "我要 (wǒ yào) means “I'd like” or “I want.” 一杯 (yì bēi) is a measure phrase for one cup or glass.",
-    "tags": [
-      "food-drink",
-      "requests"
-    ]
+    "tags": ["food-drink", "requests"]
   },
   {
     "id": "ZH014",
@@ -355,26 +253,15 @@
     "level": "A2",
     "question": "Where is the train station?",
     "correctAnswer": 1,
-    "simplifiedOptions": [
-      "机场在哪里？",
-      "火车站在哪里？",
-      "酒店在哪里？"
-    ],
-    "traditionalOptions": [
-      "機場在哪裡？",
-      "火車站在哪裡？",
-      "酒店在哪裡？"
-    ],
+    "simplifiedOptions": ["机场在哪里？", "火车站在哪里？", "酒店在哪里？"],
+    "traditionalOptions": ["機場在哪裡？", "火車站在哪裡？", "酒店在哪裡？"],
     "optionPinyin": [
       "jīchǎng zài nǎlǐ",
       "huǒchēzhàn zài nǎlǐ",
       "jiǔdiàn zài nǎlǐ"
     ],
     "explanation": "火车站 / 火車站 (huǒchēzhàn) means “train station,” and 在哪里 / 在哪裡 (zài nǎlǐ) means “where is it?”",
-    "tags": [
-      "directions",
-      "travel"
-    ]
+    "tags": ["directions", "travel"]
   },
   {
     "id": "ZH015",
@@ -382,26 +269,11 @@
     "level": "A2",
     "question": "Tomorrow",
     "correctAnswer": 2,
-    "simplifiedOptions": [
-      "昨天",
-      "今天",
-      "明天"
-    ],
-    "traditionalOptions": [
-      "昨天",
-      "今天",
-      "明天"
-    ],
-    "optionPinyin": [
-      "zuótiān",
-      "jīntiān",
-      "míngtiān"
-    ],
+    "simplifiedOptions": ["昨天", "今天", "明天"],
+    "traditionalOptions": ["昨天", "今天", "明天"],
+    "optionPinyin": ["zuótiān", "jīntiān", "míngtiān"],
     "explanation": "明天 (míngtiān) means “tomorrow.” 今天 (jīntiān) means “today,” and 昨天 (zuótiān) means “yesterday.”",
-    "tags": [
-      "time",
-      "everyday"
-    ]
+    "tags": ["time", "everyday"]
   },
   {
     "id": "ZH016",
@@ -425,10 +297,7 @@
       "wǒ hái yào xué liǎng nián Zhōngwén"
     ],
     "explanation": "我学中文两年了 / 我學中文兩年了 means “I've been learning Chinese for two years.” The 了 (le) marks the ongoing duration in this context.",
-    "tags": [
-      "learning",
-      "duration"
-    ]
+    "tags": ["learning", "duration"]
   },
   {
     "id": "ZH017",
@@ -452,10 +321,7 @@
       "wǒmen chūmén qián yǔ jiù tíng le"
     ],
     "explanation": "虽然 / 雖然 (suīrán) means “although/even though.” 还是 / 還是 (háishi) here means “still” and signals that the action happened despite the rain.",
-    "tags": [
-      "contrast",
-      "everyday"
-    ]
+    "tags": ["contrast", "everyday"]
   },
   {
     "id": "ZH018",
@@ -479,10 +345,7 @@
       "nǐ néng gàosu wǒ shāngdiàn jǐ diǎn guānmén ma"
     ],
     "explanation": "这个多少钱 / 這個多少錢 (zhège duōshǎo qián) means “how much is this?” 你能告诉我 / 你能告訴我 (nǐ néng gàosu wǒ) means “could you tell me.”",
-    "tags": [
-      "shopping",
-      "politeness"
-    ]
+    "tags": ["shopping", "politeness"]
   },
   {
     "id": "ZH019",
@@ -506,10 +369,7 @@
       "kāishǐ liànxí yǐqián, wǒ jiù hěn yǒu xìnxīn"
     ],
     "explanation": "越……越…… (yuè…yuè…) expresses “the more…the more…” or “the …er…the …er.”",
-    "tags": [
-      "grammar",
-      "comparisons"
-    ]
+    "tags": ["grammar", "comparisons"]
   },
   {
     "id": "ZH020",
@@ -533,9 +393,3558 @@
       "wǒ yì zhīdào jiù huì gàosu nǐ"
     ],
     "explanation": "如果 (rúguǒ) means “if.” 早一点 / 早一點 (zǎodiǎn) means “a little earlier,” and 就会……了 / 就會……了 describes the result that would have followed.",
-    "tags": [
-      "conditionals",
-      "grammar"
-    ]
+    "tags": ["conditionals", "grammar"]
+  },
+  {
+    "id": "ZH021",
+    "category": "family",
+    "level": "A1",
+    "question": "My mother",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我的爸爸", "我的朋友", "我的妈妈"],
+    "traditionalOptions": ["我的爸爸", "我的朋友", "我的媽媽"],
+    "optionPinyin": ["wǒ de bàba", "wǒ de péngyou", "wǒ de māma"],
+    "explanation": "妈妈 / 媽媽 (māma) means “mother.” 我的 (wǒ de) means “my,” and 爸爸 (bàba) is “father.”",
+    "tags": ["family", "basics"]
+  },
+  {
+    "id": "ZH022",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Not only is he smart, but he is also hard-working.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "他不但聪明，而且很努力。",
+      "他虽然聪明，但是不努力。",
+      "只要他努力，就会很聪明。"
+    ],
+    "traditionalOptions": [
+      "他不但聰明，而且很努力。",
+      "他雖然聰明，但是不努力。",
+      "只要他努力，就會很聰明。"
+    ],
+    "optionPinyin": [
+      "tā búdàn cōngmíng, érqiě hěn nǔlì",
+      "tā suīrán cōngmíng, dànshì bù nǔlì",
+      "zhǐyào tā nǔlì, jiù huì hěn cōngmíng"
+    ],
+    "explanation": "不但……而且…… (búdàn…érqiě…) means “not only…but also…” and adds a second point on top of the first.",
+    "tags": ["grammar", "conjunctions"]
+  },
+  {
+    "id": "ZH023",
+    "category": "greetings",
+    "level": "A1",
+    "question": "Good morning",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["早上好", "晚安", "下午好"],
+    "traditionalOptions": ["早上好", "晚安", "下午好"],
+    "optionPinyin": ["zǎoshang hǎo", "wǎn'ān", "xiàwǔ hǎo"],
+    "explanation": "早上好 (zǎoshang hǎo) means “good morning.” 晚安 (wǎn'ān) is “good night,” and 下午好 (xiàwǔ hǎo) is “good afternoon.”",
+    "tags": ["greetings", "time"]
+  },
+  {
+    "id": "ZH024",
+    "category": "numbers",
+    "level": "A1",
+    "question": "Five",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["四", "六", "五"],
+    "traditionalOptions": ["四", "六", "五"],
+    "optionPinyin": ["sì", "liù", "wǔ"],
+    "explanation": "五 (wǔ) means “five.” The character is the same in Simplified and Traditional Chinese.",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH025",
+    "category": "greetings",
+    "level": "A1",
+    "question": "Sorry",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["没关系", "对不起", "请"],
+    "traditionalOptions": ["沒關係", "對不起", "請"],
+    "optionPinyin": ["méi guānxi", "duìbuqǐ", "qǐng"],
+    "explanation": "对不起 / 對不起 (duìbuqǐ) means “sorry.” 没关系 / 沒關係 (méi guānxi) is a common reply meaning “it doesn't matter,” and 请 / 請 (qǐng) means “please.”",
+    "tags": ["greetings", "politeness"]
+  },
+  {
+    "id": "ZH026",
+    "category": "people",
+    "level": "A1",
+    "question": "My friend",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我的朋友", "我的老师", "我的哥哥"],
+    "traditionalOptions": ["我的朋友", "我的老師", "我的哥哥"],
+    "optionPinyin": ["wǒ de péngyou", "wǒ de lǎoshī", "wǒ de gēge"],
+    "explanation": "朋友 (péngyou) means “friend.” 老师 / 老師 (lǎoshī) is “teacher,” and 哥哥 (gēge) is “older brother.”",
+    "tags": ["people", "basics"]
+  },
+  {
+    "id": "ZH027",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "Water",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["茶", "水", "牛奶"],
+    "traditionalOptions": ["茶", "水", "牛奶"],
+    "optionPinyin": ["chá", "shuǐ", "niúnǎi"],
+    "explanation": "水 (shuǐ) means “water.” 茶 (chá) is “tea,” and 牛奶 (niúnǎi) is “milk.”",
+    "tags": ["food-drink", "basics"]
+  },
+  {
+    "id": "ZH028",
+    "category": "introductions",
+    "level": "A1",
+    "question": "My name is Li Ming.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我叫李明。", "我是老师。", "我很好。"],
+    "traditionalOptions": ["我叫李明。", "我是老師。", "我很好。"],
+    "optionPinyin": ["wǒ jiào Lǐ Míng", "wǒ shì lǎoshī", "wǒ hěn hǎo"],
+    "explanation": "我叫 (wǒ jiào) means “my name is” (literally “I am called”). 我是老师 / 我是老師 means “I am a teacher,” and 我很好 means “I'm fine.”",
+    "tags": ["introductions", "basics"]
+  },
+  {
+    "id": "ZH029",
+    "category": "colors",
+    "level": "A1",
+    "question": "Red",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["蓝色", "绿色", "红色"],
+    "traditionalOptions": ["藍色", "綠色", "紅色"],
+    "optionPinyin": ["lánsè", "lǜsè", "hóngsè"],
+    "explanation": "红色 / 紅色 (hóngsè) means “red.” 蓝色 / 藍色 (lánsè) is “blue,” and 绿色 / 綠色 (lǜsè) is “green.”",
+    "tags": ["colors", "basics"]
+  },
+  {
+    "id": "ZH030",
+    "category": "introductions",
+    "level": "A1",
+    "question": "I am a student.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我是医生。", "我是老师。", "我是学生。"],
+    "traditionalOptions": ["我是醫生。", "我是老師。", "我是學生。"],
+    "optionPinyin": ["wǒ shì yīshēng", "wǒ shì lǎoshī", "wǒ shì xuésheng"],
+    "explanation": "学生 / 學生 (xuésheng) means “student.” 医生 / 醫生 (yīshēng) is “doctor,” and 老师 / 老師 (lǎoshī) is “teacher.”",
+    "tags": ["introductions", "jobs"]
+  },
+  {
+    "id": "ZH031",
+    "category": "weather",
+    "level": "A2",
+    "question": "It's very hot today.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["今天很冷。", "今天很热。", "今天下雨。"],
+    "traditionalOptions": ["今天很冷。", "今天很熱。", "今天下雨。"],
+    "optionPinyin": ["jīntiān hěn lěng", "jīntiān hěn rè", "jīntiān xiàyǔ"],
+    "explanation": "热 / 熱 (rè) means “hot,” while 冷 (lěng) means “cold.” 下雨 (xiàyǔ) means “to rain.”",
+    "tags": ["weather", "everyday"]
+  },
+  {
+    "id": "ZH032",
+    "category": "time",
+    "level": "A2",
+    "question": "What time is it?",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["现在几点？", "今天几号？", "你几岁？"],
+    "traditionalOptions": ["現在幾點？", "今天幾號？", "你幾歲？"],
+    "optionPinyin": ["xiànzài jǐ diǎn?", "jīntiān jǐ hào?", "nǐ jǐ suì?"],
+    "explanation": "现在 / 現在 (xiànzài) means “now,” and 几点 / 幾點 (jǐ diǎn) means “what time.” 几号 / 幾號 asks for the date, and 几岁 / 幾歲 asks for someone's age.",
+    "tags": ["time", "questions"]
+  },
+  {
+    "id": "ZH033",
+    "category": "shopping",
+    "level": "A2",
+    "question": "It's too expensive.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["太便宜了。", "太贵了。", "太小了。"],
+    "traditionalOptions": ["太便宜了。", "太貴了。", "太小了。"],
+    "optionPinyin": ["tài piányi le", "tài guì le", "tài xiǎo le"],
+    "explanation": "太……了 (tài…le) means “too…”. 贵 / 貴 (guì) means “expensive,” while 便宜 (piányi) means “cheap.”",
+    "tags": ["shopping", "adjectives"]
+  },
+  {
+    "id": "ZH034",
+    "category": "health",
+    "level": "A2",
+    "question": "I have a headache.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我肚子饿了。", "我头疼。", "我很困。"],
+    "traditionalOptions": ["我肚子餓了。", "我頭疼。", "我很睏。"],
+    "optionPinyin": ["wǒ dùzi è le", "wǒ tóu téng", "wǒ hěn kùn"],
+    "explanation": "头疼 / 頭疼 (tóu téng) means “headache” (literally “head hurts”). 肚子饿 / 肚子餓 (dùzi è) means “hungry,” and 困 / 睏 (kùn) means “sleepy.”",
+    "tags": ["health", "body"]
+  },
+  {
+    "id": "ZH035",
+    "category": "hobbies",
+    "level": "A2",
+    "question": "I like watching movies.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我喜欢听音乐。", "我喜欢做饭。", "我喜欢看电影。"],
+    "traditionalOptions": ["我喜歡聽音樂。", "我喜歡做飯。", "我喜歡看電影。"],
+    "optionPinyin": [
+      "wǒ xǐhuan tīng yīnyuè",
+      "wǒ xǐhuan zuò fàn",
+      "wǒ xǐhuan kàn diànyǐng"
+    ],
+    "explanation": "看电影 / 看電影 (kàn diànyǐng) means “watch a movie.” 听音乐 / 聽音樂 means “listen to music,” and 做饭 / 做飯 means “cook.”",
+    "tags": ["hobbies", "preferences"]
+  },
+  {
+    "id": "ZH036",
+    "category": "directions",
+    "level": "A2",
+    "question": "Turn left at the corner.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["在路口往右拐。", "一直往前走。", "在路口往左拐。"],
+    "traditionalOptions": ["在路口往右拐。", "一直往前走。", "在路口往左拐。"],
+    "optionPinyin": [
+      "zài lùkǒu wǎng yòu guǎi",
+      "yìzhí wǎng qián zǒu",
+      "zài lùkǒu wǎng zuǒ guǎi"
+    ],
+    "explanation": "往左拐 (wǎng zuǒ guǎi) means “turn left.” 右 (yòu) is “right,” and 一直往前走 (yìzhí wǎng qián zǒu) means “go straight ahead.”",
+    "tags": ["directions", "travel"]
+  },
+  {
+    "id": "ZH037",
+    "category": "work",
+    "level": "A2",
+    "question": "I work in a hospital.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我在学校学习。", "我在医院工作。", "我在银行存钱。"],
+    "traditionalOptions": [
+      "我在學校學習。",
+      "我在醫院工作。",
+      "我在銀行存錢。"
+    ],
+    "optionPinyin": [
+      "wǒ zài xuéxiào xuéxí",
+      "wǒ zài yīyuàn gōngzuò",
+      "wǒ zài yínháng cún qián"
+    ],
+    "explanation": "在 (zài) marks the location, 医院 / 醫院 (yīyuàn) means “hospital,” and 工作 (gōngzuò) means “to work.”",
+    "tags": ["work", "places"]
+  },
+  {
+    "id": "ZH038",
+    "category": "food-drink",
+    "level": "A2",
+    "question": "The food here is delicious.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "这里的菜很好吃。",
+      "这里的人很多。",
+      "这里的房间很大。"
+    ],
+    "traditionalOptions": [
+      "這裡的菜很好吃。",
+      "這裡的人很多。",
+      "這裡的房間很大。"
+    ],
+    "optionPinyin": [
+      "zhèlǐ de cài hěn hǎochī",
+      "zhèlǐ de rén hěn duō",
+      "zhèlǐ de fángjiān hěn dà"
+    ],
+    "explanation": "好吃 (hǎochī) means “tasty,” and 菜 (cài) here means “dishes” or “food.” 人很多 means “lots of people,” and 房间 / 房間 means “room.”",
+    "tags": ["food-drink", "opinions"]
+  },
+  {
+    "id": "ZH039",
+    "category": "experiences",
+    "level": "B1",
+    "question": "I have never eaten Peking duck.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我吃过两次北京烤鸭。",
+      "我从来没吃过北京烤鸭。",
+      "我正在吃北京烤鸭。"
+    ],
+    "traditionalOptions": [
+      "我吃過兩次北京烤鴨。",
+      "我從來沒吃過北京烤鴨。",
+      "我正在吃北京烤鴨。"
+    ],
+    "optionPinyin": [
+      "wǒ chī guo liǎng cì Běijīng kǎoyā",
+      "wǒ cónglái méi chī guo Běijīng kǎoyā",
+      "wǒ zhèngzài chī Běijīng kǎoyā"
+    ],
+    "explanation": "从来没……过 / 從來沒……過 (cónglái méi…guo) means “have never…”. 过 / 過 (guo) marks a past experience.",
+    "tags": ["experiences", "food-drink"]
+  },
+  {
+    "id": "ZH040",
+    "category": "advice",
+    "level": "B1",
+    "question": "You should rest more.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["你不应该休息。", "你已经休息了。", "你应该多休息。"],
+    "traditionalOptions": [
+      "你不應該休息。",
+      "你已經休息了。",
+      "你應該多休息。"
+    ],
+    "optionPinyin": [
+      "nǐ bù yīnggāi xiūxi",
+      "nǐ yǐjīng xiūxi le",
+      "nǐ yīnggāi duō xiūxi"
+    ],
+    "explanation": "应该 / 應該 (yīnggāi) means “should,” and 多 (duō) before a verb means “more.” 不应该 / 不應該 would mean “shouldn't.”",
+    "tags": ["advice", "modal-verbs"]
+  },
+  {
+    "id": "ZH041",
+    "category": "comparisons",
+    "level": "B1",
+    "question": "This phone is cheaper than that one.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "这个手机和那个一样贵。",
+      "那个手机比这个便宜。",
+      "这个手机比那个便宜。"
+    ],
+    "traditionalOptions": [
+      "這個手機和那個一樣貴。",
+      "那個手機比這個便宜。",
+      "這個手機比那個便宜。"
+    ],
+    "optionPinyin": [
+      "zhège shǒujī hé nàge yíyàng guì",
+      "nàge shǒujī bǐ zhège piányi",
+      "zhège shǒujī bǐ nàge piányi"
+    ],
+    "explanation": "The pattern A 比 (bǐ) B + adjective means “A is more … than B.” Here 这个 / 這個 (this one) is the cheaper phone.",
+    "tags": ["comparisons", "shopping"]
+  },
+  {
+    "id": "ZH042",
+    "category": "plans",
+    "level": "B1",
+    "question": "I'm going to the airport to pick up a friend.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我去机场接朋友。",
+      "我去机场买票。",
+      "我在机场工作。"
+    ],
+    "traditionalOptions": [
+      "我去機場接朋友。",
+      "我去機場買票。",
+      "我在機場工作。"
+    ],
+    "optionPinyin": [
+      "wǒ qù jīchǎng jiē péngyou",
+      "wǒ qù jīchǎng mǎi piào",
+      "wǒ zài jīchǎng gōngzuò"
+    ],
+    "explanation": "接 (jiē) means “to pick up” or “to meet” someone. 去机场接朋友 / 去機場接朋友 chains two verbs: go to the airport, then pick up a friend.",
+    "tags": ["plans", "travel"]
+  },
+  {
+    "id": "ZH043",
+    "category": "opinions",
+    "level": "B1",
+    "question": "I agree with you.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我不同意你的看法。",
+      "我同意你的看法。",
+      "我没听懂你的话。"
+    ],
+    "traditionalOptions": [
+      "我不同意你的看法。",
+      "我同意你的看法。",
+      "我沒聽懂你的話。"
+    ],
+    "optionPinyin": [
+      "wǒ bù tóngyì nǐ de kànfǎ",
+      "wǒ tóngyì nǐ de kànfǎ",
+      "wǒ méi tīngdǒng nǐ de huà"
+    ],
+    "explanation": "同意 (tóngyì) means “to agree,” and 看法 (kànfǎ) means “opinion” or “view.” Adding 不 (bù) reverses the meaning to “disagree.”",
+    "tags": ["opinions", "conversation"]
+  },
+  {
+    "id": "ZH044",
+    "category": "time",
+    "level": "B1",
+    "question": "I've been waiting for you for half an hour.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我半个小时后去找你。",
+      "我每半个小时给你打电话。",
+      "我等了你半个小时了。"
+    ],
+    "traditionalOptions": [
+      "我半個小時後去找你。",
+      "我每半個小時給你打電話。",
+      "我等了你半個小時了。"
+    ],
+    "optionPinyin": [
+      "wǒ bàn ge xiǎoshí hòu qù zhǎo nǐ",
+      "wǒ měi bàn ge xiǎoshí gěi nǐ dǎ diànhuà",
+      "wǒ děng le nǐ bàn ge xiǎoshí le"
+    ],
+    "explanation": "Verb + 了 + duration expresses how long something has lasted: 等了半个小时 / 等了半個小時 means “waited for half an hour.” 后 / 後 means “after,” and 每 means “every.”",
+    "tags": ["time", "duration"]
+  },
+  {
+    "id": "ZH045",
+    "category": "everyday",
+    "level": "B1",
+    "question": "I forgot to bring my umbrella.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我带了雨伞。", "我忘了带雨伞。", "我想买雨伞。"],
+    "traditionalOptions": ["我帶了雨傘。", "我忘了帶雨傘。", "我想買雨傘。"],
+    "optionPinyin": [
+      "wǒ dài le yǔsǎn",
+      "wǒ wàng le dài yǔsǎn",
+      "wǒ xiǎng mǎi yǔsǎn"
+    ],
+    "explanation": "忘了 (wàng le) means “forgot,” and 带 / 帶 (dài) means “to bring.” 雨伞 / 雨傘 (yǔsǎn) is “umbrella.”",
+    "tags": ["everyday", "past"]
+  },
+  {
+    "id": "ZH046",
+    "category": "grammar",
+    "level": "B2",
+    "question": "As soon as I got home, it started to rain.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我一到家，就下雨了。",
+      "我回家以后，雨一直没下。",
+      "因为到家了，所以下雨了。"
+    ],
+    "traditionalOptions": [
+      "我一到家，就下雨了。",
+      "我回家以後，雨一直沒下。",
+      "因為到家了，所以下雨了。"
+    ],
+    "optionPinyin": [
+      "wǒ yí dào jiā, jiù xiàyǔ le",
+      "wǒ huí jiā yǐhòu, yǔ yìzhí méi xià",
+      "yīnwèi dào jiā le, suǒyǐ xiàyǔ le"
+    ],
+    "explanation": "一……就…… (yī…jiù…) means “as soon as…, then…”. It links two actions that happen in quick succession.",
+    "tags": ["grammar", "sequence"]
+  },
+  {
+    "id": "ZH047",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Unless you practise more, you won't improve.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "即使你不练习，也会进步。",
+      "只要你练习，就一定会进步。",
+      "除非你多练习，否则不会进步。"
+    ],
+    "traditionalOptions": [
+      "即使你不練習，也會進步。",
+      "只要你練習，就一定會進步。",
+      "除非你多練習，否則不會進步。"
+    ],
+    "optionPinyin": [
+      "jíshǐ nǐ bù liànxí, yě huì jìnbù",
+      "zhǐyào nǐ liànxí, jiù yídìng huì jìnbù",
+      "chúfēi nǐ duō liànxí, fǒuzé bú huì jìnbù"
+    ],
+    "explanation": "除非……否则…… / 除非……否則…… (chúfēi…fǒuzé…) means “unless…, otherwise…”. 只要……就…… means “as long as…,” and 即使……也…… means “even if…”.",
+    "tags": ["grammar", "conditionals"]
+  },
+  {
+    "id": "ZH048",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He was criticised by the teacher.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他批评了老师。",
+      "老师被他批评了。",
+      "他被老师批评了。"
+    ],
+    "traditionalOptions": [
+      "他批評了老師。",
+      "老師被他批評了。",
+      "他被老師批評了。"
+    ],
+    "optionPinyin": [
+      "tā pīpíng le lǎoshī",
+      "lǎoshī bèi tā pīpíng le",
+      "tā bèi lǎoshī pīpíng le"
+    ],
+    "explanation": "被 (bèi) marks the passive voice: subject + 被 + agent + verb. 他被老师批评了 / 他被老師批評了 means “he was criticised by the teacher.”",
+    "tags": ["grammar", "passive"]
+  },
+  {
+    "id": "ZH049",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Please put the book on the table.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "请把桌子放在书上。",
+      "请把书放在桌子上。",
+      "请在桌子上看书。"
+    ],
+    "traditionalOptions": [
+      "請把桌子放在書上。",
+      "請把書放在桌子上。",
+      "請在桌子上看書。"
+    ],
+    "optionPinyin": [
+      "qǐng bǎ zhuōzi fàng zài shū shàng",
+      "qǐng bǎ shū fàng zài zhuōzi shàng",
+      "qǐng zài zhuōzi shàng kàn shū"
+    ],
+    "explanation": "把 (bǎ) moves the object before the verb to show what is being handled: 把书放在桌子上 / 把書放在桌子上 means “put the book on the table.”",
+    "tags": ["grammar", "ba-construction"]
+  },
+  {
+    "id": "ZH050",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Even if it's difficult, I won't give up.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "因为很难，所以我放弃了。",
+      "如果不难，我就不放弃。",
+      "即使很难，我也不会放弃。"
+    ],
+    "traditionalOptions": [
+      "因為很難，所以我放棄了。",
+      "如果不難，我就不放棄。",
+      "即使很難，我也不會放棄。"
+    ],
+    "optionPinyin": [
+      "yīnwèi hěn nán, suǒyǐ wǒ fàngqì le",
+      "rúguǒ bù nán, wǒ jiù bú fàngqì",
+      "jíshǐ hěn nán, wǒ yě bú huì fàngqì"
+    ],
+    "explanation": "即使……也…… (jíshǐ…yě…) means “even if…, still…”. 放弃 / 放棄 (fàngqì) means “to give up.”",
+    "tags": ["grammar", "concession"]
+  },
+  {
+    "id": "ZH051",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He speaks Chinese as fluently as a Chinese person.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "他说中文说得比中国人流利。",
+      "他说中文说得跟中国人一样流利。",
+      "他说中文说得不如中国人流利。"
+    ],
+    "traditionalOptions": [
+      "他說中文說得比中國人流利。",
+      "他說中文說得跟中國人一樣流利。",
+      "他說中文說得不如中國人流利。"
+    ],
+    "optionPinyin": [
+      "tā shuō Zhōngwén shuō de bǐ Zhōngguórén liúlì",
+      "tā shuō Zhōngwén shuō de gēn Zhōngguórén yíyàng liúlì",
+      "tā shuō Zhōngwén shuō de bùrú Zhōngguórén liúlì"
+    ],
+    "explanation": "跟……一样 / 跟……一樣 (gēn…yíyàng) means “the same as…”. 比 (bǐ) means “more than,” and 不如 (bùrú) means “not as good as.”",
+    "tags": ["grammar", "comparisons"]
+  },
+  {
+    "id": "ZH052",
+    "category": "grammar",
+    "level": "B2",
+    "question": "It's not that I don't want to go; I just don't have time.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我想去，所以我没有时间。",
+      "不是我不想去，而是我没有时间。",
+      "我不想去，因为我有时间。"
+    ],
+    "traditionalOptions": [
+      "我想去，所以我沒有時間。",
+      "不是我不想去，而是我沒有時間。",
+      "我不想去，因為我有時間。"
+    ],
+    "optionPinyin": [
+      "wǒ xiǎng qù, suǒyǐ wǒ méiyǒu shíjiān",
+      "búshì wǒ bù xiǎng qù, érshì wǒ méiyǒu shíjiān",
+      "wǒ bù xiǎng qù, yīnwèi wǒ yǒu shíjiān"
+    ],
+    "explanation": "不是……而是…… (búshì…érshì…) means “it's not that…, rather…”. It corrects a possible misunderstanding by giving the real reason.",
+    "tags": ["grammar", "contrast"]
+  },
+  {
+    "id": "ZH053",
+    "category": "animals",
+    "level": "A1",
+    "question": "Dog",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["猫", "狗", "鸟"],
+    "traditionalOptions": ["貓", "狗", "鳥"],
+    "optionPinyin": ["māo", "gǒu", "niǎo"],
+    "explanation": "狗 (gǒu) means “dog.” 猫 / 貓 (māo) is “cat,” and 鸟 / 鳥 (niǎo) is “bird.”",
+    "tags": ["animals", "basics"]
+  },
+  {
+    "id": "ZH054",
+    "category": "family",
+    "level": "A1",
+    "question": "My younger sister",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我的妹妹", "我的姐姐", "我的奶奶"],
+    "traditionalOptions": ["我的妹妹", "我的姐姐", "我的奶奶"],
+    "optionPinyin": ["wǒ de mèimei", "wǒ de jiějie", "wǒ de nǎinai"],
+    "explanation": "妹妹 (mèimei) means “younger sister.” 姐姐 (jiějie) is “older sister,” and 奶奶 (nǎinai) is “grandmother” (father's side).",
+    "tags": ["family", "basics"]
+  },
+  {
+    "id": "ZH055",
+    "category": "numbers",
+    "level": "A1",
+    "question": "Ten",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["十", "八", "九"],
+    "traditionalOptions": ["十", "八", "九"],
+    "optionPinyin": ["shí", "bā", "jiǔ"],
+    "explanation": "十 (shí) means “ten.” 八 (bā) is “eight,” and 九 (jiǔ) is “nine.” The characters are the same in both scripts.",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH056",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "Rice (cooked)",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["面条", "面包", "米饭"],
+    "traditionalOptions": ["麵條", "麵包", "米飯"],
+    "optionPinyin": ["miàntiáo", "miànbāo", "mǐfàn"],
+    "explanation": "米饭 / 米飯 (mǐfàn) means “cooked rice.” 面条 / 麵條 (miàntiáo) is “noodles,” and 面包 / 麵包 (miànbāo) is “bread.”",
+    "tags": ["food-drink", "basics"]
+  },
+  {
+    "id": "ZH057",
+    "category": "greetings",
+    "level": "A1",
+    "question": "See you tomorrow.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["明天见。", "对不起。", "请坐。"],
+    "traditionalOptions": ["明天見。", "對不起。", "請坐。"],
+    "optionPinyin": ["míngtiān jiàn", "duìbuqǐ", "qǐng zuò"],
+    "explanation": "见 / 見 (jiàn) means “to see,” so 明天见 / 明天見 literally means “see (you) tomorrow.” 请坐 / 請坐 means “please sit down.”",
+    "tags": ["greetings", "time"]
+  },
+  {
+    "id": "ZH058",
+    "category": "everyday",
+    "level": "A1",
+    "question": "I'm hungry.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我渴了。", "我累了。", "我饿了。"],
+    "traditionalOptions": ["我渴了。", "我累了。", "我餓了。"],
+    "optionPinyin": ["wǒ kě le", "wǒ lèi le", "wǒ è le"],
+    "explanation": "饿 / 餓 (è) means “hungry.” 渴 (kě) is “thirsty,” and 累 (lèi) is “tired.” The 了 (le) shows a change of state.",
+    "tags": ["everyday", "feelings"]
+  },
+  {
+    "id": "ZH059",
+    "category": "places",
+    "level": "A1",
+    "question": "This is my home.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["这是我的学校。", "这是我的家。", "这是我的书。"],
+    "traditionalOptions": ["這是我的學校。", "這是我的家。", "這是我的書。"],
+    "optionPinyin": [
+      "zhè shì wǒ de xuéxiào",
+      "zhè shì wǒ de jiā",
+      "zhè shì wǒ de shū"
+    ],
+    "explanation": "家 (jiā) means “home” or “family.” 学校 / 學校 (xuéxiào) is “school,” and 书 / 書 (shū) is “book.”",
+    "tags": ["places", "basics"]
+  },
+  {
+    "id": "ZH060",
+    "category": "greetings",
+    "level": "A1",
+    "question": "How are you?",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["你好吗？", "你是谁？", "你去哪儿？"],
+    "traditionalOptions": ["你好嗎？", "你是誰？", "你去哪兒？"],
+    "optionPinyin": ["nǐ hǎo ma?", "nǐ shì shéi?", "nǐ qù nǎr?"],
+    "explanation": "你好吗 / 你好嗎 (nǐ hǎo ma) means “how are you?” 谁 / 誰 (shéi) means “who,” and 哪儿 / 哪兒 (nǎr) means “where.”",
+    "tags": ["greetings", "questions"]
+  },
+  {
+    "id": "ZH061",
+    "category": "transport",
+    "level": "A2",
+    "question": "I go to school by subway.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我骑自行车去学校。",
+      "我走路去学校。",
+      "我坐地铁去学校。"
+    ],
+    "traditionalOptions": [
+      "我騎自行車去學校。",
+      "我走路去學校。",
+      "我坐地鐵去學校。"
+    ],
+    "optionPinyin": [
+      "wǒ qí zìxíngchē qù xuéxiào",
+      "wǒ zǒulù qù xuéxiào",
+      "wǒ zuò dìtiě qù xuéxiào"
+    ],
+    "explanation": "坐地铁 / 坐地鐵 (zuò dìtiě) means “take the subway.” 骑自行车 / 騎自行車 (qí zìxíngchē) is “ride a bicycle,” and 走路 (zǒulù) is “walk.”",
+    "tags": ["transport", "daily-life"]
+  },
+  {
+    "id": "ZH062",
+    "category": "shopping",
+    "level": "A2",
+    "question": "I want to buy a pair of shoes.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我想买一件衣服。",
+      "我想买一双鞋。",
+      "我想买一顶帽子。"
+    ],
+    "traditionalOptions": [
+      "我想買一件衣服。",
+      "我想買一雙鞋。",
+      "我想買一頂帽子。"
+    ],
+    "optionPinyin": [
+      "wǒ xiǎng mǎi yí jiàn yīfu",
+      "wǒ xiǎng mǎi yì shuāng xié",
+      "wǒ xiǎng mǎi yì dǐng màozi"
+    ],
+    "explanation": "双 / 雙 (shuāng) is the measure word for pairs, and 鞋 (xié) means “shoes.” 件 (jiàn) is used for clothes, and 顶 / 頂 (dǐng) for hats.",
+    "tags": ["shopping", "measure-words"]
+  },
+  {
+    "id": "ZH063",
+    "category": "school",
+    "level": "A2",
+    "question": "The exam is tomorrow.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["考试是昨天。", "放假是明天。", "考试是明天。"],
+    "traditionalOptions": ["考試是昨天。", "放假是明天。", "考試是明天。"],
+    "optionPinyin": [
+      "kǎoshì shì zuótiān",
+      "fàngjià shì míngtiān",
+      "kǎoshì shì míngtiān"
+    ],
+    "explanation": "考试 / 考試 (kǎoshì) means “exam,” and 明天 (míngtiān) means “tomorrow.” 放假 (fàngjià) means “to have a holiday.”",
+    "tags": ["school", "time"]
+  },
+  {
+    "id": "ZH064",
+    "category": "restaurants",
+    "level": "A2",
+    "question": "The bill, please.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["请给我菜单。", "请买单。", "请给我一杯水。"],
+    "traditionalOptions": ["請給我菜單。", "請買單。", "請給我一杯水。"],
+    "optionPinyin": [
+      "qǐng gěi wǒ càidān",
+      "qǐng mǎidān",
+      "qǐng gěi wǒ yì bēi shuǐ"
+    ],
+    "explanation": "买单 / 買單 (mǎidān) is a common way to ask for the bill or to say you'll pay. 菜单 / 菜單 (càidān) means “menu.”",
+    "tags": ["restaurants", "requests"]
+  },
+  {
+    "id": "ZH065",
+    "category": "health",
+    "level": "A2",
+    "question": "I have a cold.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我感冒了。", "我迟到了。", "我搬家了。"],
+    "traditionalOptions": ["我感冒了。", "我遲到了。", "我搬家了。"],
+    "optionPinyin": ["wǒ gǎnmào le", "wǒ chídào le", "wǒ bānjiā le"],
+    "explanation": "感冒 (gǎnmào) means “to catch a cold.” 迟到 / 遲到 (chídào) means “to be late,” and 搬家 (bānjiā) means “to move house.”",
+    "tags": ["health", "everyday"]
+  },
+  {
+    "id": "ZH066",
+    "category": "weather",
+    "level": "A2",
+    "question": "It will rain tomorrow.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["昨天下雨了。", "明天会下雨。", "明天会很热。"],
+    "traditionalOptions": ["昨天下雨了。", "明天會下雨。", "明天會很熱。"],
+    "optionPinyin": [
+      "zuótiān xiàyǔ le",
+      "míngtiān huì xiàyǔ",
+      "míngtiān huì hěn rè"
+    ],
+    "explanation": "会 / 會 (huì) here expresses a prediction about the future, “will.” 昨天 (zuótiān) means “yesterday,” and 热 / 熱 (rè) means “hot.”",
+    "tags": ["weather", "future"]
+  },
+  {
+    "id": "ZH067",
+    "category": "hobbies",
+    "level": "A2",
+    "question": "I often play basketball on weekends.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我周末常常看书。",
+      "我平时很少打篮球。",
+      "我周末常常打篮球。"
+    ],
+    "traditionalOptions": [
+      "我週末常常看書。",
+      "我平時很少打籃球。",
+      "我週末常常打籃球。"
+    ],
+    "optionPinyin": [
+      "wǒ zhōumò chángcháng kàn shū",
+      "wǒ píngshí hěn shǎo dǎ lánqiú",
+      "wǒ zhōumò chángcháng dǎ lánqiú"
+    ],
+    "explanation": "常常 (chángcháng) means “often,” and 周末 / 週末 (zhōumò) means “weekend.” 打篮球 / 打籃球 (dǎ lánqiú) means “play basketball.”",
+    "tags": ["hobbies", "frequency"]
+  },
+  {
+    "id": "ZH068",
+    "category": "travel",
+    "level": "B1",
+    "question": "I'd like to book a room for two nights.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我想退房。",
+      "我想订一间房，住两个晚上。",
+      "我想订两张火车票。"
+    ],
+    "traditionalOptions": [
+      "我想退房。",
+      "我想訂一間房，住兩個晚上。",
+      "我想訂兩張火車票。"
+    ],
+    "optionPinyin": [
+      "wǒ xiǎng tuìfáng",
+      "wǒ xiǎng dìng yì jiān fáng, zhù liǎng ge wǎnshang",
+      "wǒ xiǎng dìng liǎng zhāng huǒchēpiào"
+    ],
+    "explanation": "订 / 訂 (dìng) means “to book,” and 间 / 間 (jiān) is the measure word for rooms. 退房 (tuìfáng) means “to check out.”",
+    "tags": ["travel", "hotels"]
+  },
+  {
+    "id": "ZH069",
+    "category": "technology",
+    "level": "B1",
+    "question": "My phone has run out of battery.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我的手机丢了。",
+      "我的手机坏了。",
+      "我的手机没电了。"
+    ],
+    "traditionalOptions": [
+      "我的手機丟了。",
+      "我的手機壞了。",
+      "我的手機沒電了。"
+    ],
+    "optionPinyin": [
+      "wǒ de shǒujī diū le",
+      "wǒ de shǒujī huài le",
+      "wǒ de shǒujī méi diàn le"
+    ],
+    "explanation": "没电 / 沒電 (méi diàn) literally means “no electricity,” i.e. out of battery. 丢 / 丟 (diū) means “lost,” and 坏 / 壞 (huài) means “broken.”",
+    "tags": ["technology", "everyday"]
+  },
+  {
+    "id": "ZH070",
+    "category": "emotions",
+    "level": "B1",
+    "question": "I'm a little nervous about the interview.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我对面试有点儿紧张。",
+      "我对面试非常满意。",
+      "我已经通过面试了。"
+    ],
+    "traditionalOptions": [
+      "我對面試有點兒緊張。",
+      "我對面試非常滿意。",
+      "我已經通過面試了。"
+    ],
+    "optionPinyin": [
+      "wǒ duì miànshì yǒudiǎnr jǐnzhāng",
+      "wǒ duì miànshì fēicháng mǎnyì",
+      "wǒ yǐjīng tōngguò miànshì le"
+    ],
+    "explanation": "对……紧张 / 對……緊張 (duì…jǐnzhāng) means “nervous about…”. 有点儿 / 有點兒 (yǒudiǎnr) means “a little” and often carries a slightly negative feeling.",
+    "tags": ["emotions", "work"]
+  },
+  {
+    "id": "ZH071",
+    "category": "requests",
+    "level": "B1",
+    "question": "Could you speak a bit more slowly?",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "请你说慢一点儿。",
+      "请你说快一点儿。",
+      "请你写下来。"
+    ],
+    "traditionalOptions": [
+      "請你說慢一點兒。",
+      "請你說快一點兒。",
+      "請你寫下來。"
+    ],
+    "optionPinyin": [
+      "qǐng nǐ shuō màn yìdiǎnr",
+      "qǐng nǐ shuō kuài yìdiǎnr",
+      "qǐng nǐ xiě xiàlái"
+    ],
+    "explanation": "Verb + adjective + 一点儿 / 一點兒 (yìdiǎnr) softens a request: 说慢一点儿 means “speak a bit slower.” 写下来 / 寫下來 means “write it down.”",
+    "tags": ["requests", "politeness"]
+  },
+  {
+    "id": "ZH072",
+    "category": "experiences",
+    "level": "B1",
+    "question": "I used to live in Shanghai.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我以前住在上海。",
+      "我现在住在上海。",
+      "我打算去上海住。"
+    ],
+    "traditionalOptions": [
+      "我以前住在上海。",
+      "我現在住在上海。",
+      "我打算去上海住。"
+    ],
+    "optionPinyin": [
+      "wǒ yǐqián zhù zài Shànghǎi",
+      "wǒ xiànzài zhù zài Shànghǎi",
+      "wǒ dǎsuàn qù Shànghǎi zhù"
+    ],
+    "explanation": "以前 (yǐqián) means “before” or “in the past.” 现在 / 現在 (xiànzài) means “now,” and 打算 (dǎsuàn) means “plan to.”",
+    "tags": ["experiences", "time"]
+  },
+  {
+    "id": "ZH073",
+    "category": "daily-life",
+    "level": "B1",
+    "question": "I usually get up at seven o'clock.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我通常七点睡觉。",
+      "我昨天七点起床了。",
+      "我通常七点起床。"
+    ],
+    "traditionalOptions": [
+      "我通常七點睡覺。",
+      "我昨天七點起床了。",
+      "我通常七點起床。"
+    ],
+    "optionPinyin": [
+      "wǒ tōngcháng qī diǎn shuìjiào",
+      "wǒ zuótiān qī diǎn qǐchuáng le",
+      "wǒ tōngcháng qī diǎn qǐchuáng"
+    ],
+    "explanation": "通常 (tōngcháng) means “usually,” and 起床 (qǐchuáng) means “to get up.” 睡觉 / 睡覺 (shuìjiào) means “to sleep.”",
+    "tags": ["daily-life", "habits"]
+  },
+  {
+    "id": "ZH074",
+    "category": "health",
+    "level": "B1",
+    "question": "The doctor told me to drink more water.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "医生让我少喝水。",
+      "医生让我多喝水。",
+      "医生让我多吃药。"
+    ],
+    "traditionalOptions": [
+      "醫生讓我少喝水。",
+      "醫生讓我多喝水。",
+      "醫生讓我多吃藥。"
+    ],
+    "optionPinyin": [
+      "yīshēng ràng wǒ shǎo hē shuǐ",
+      "yīshēng ràng wǒ duō hē shuǐ",
+      "yīshēng ràng wǒ duō chī yào"
+    ],
+    "explanation": "让 / 讓 (ràng) here means “to tell (someone) to.” 多 (duō) means “more” and 少 (shǎo) means “less” before a verb.",
+    "tags": ["health", "advice"]
+  },
+  {
+    "id": "ZH075",
+    "category": "preferences",
+    "level": "B1",
+    "question": "I like staying at home more.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我更喜欢出去玩。",
+      "我很少待在家里。",
+      "我更喜欢待在家里。"
+    ],
+    "traditionalOptions": [
+      "我更喜歡出去玩。",
+      "我很少待在家裡。",
+      "我更喜歡待在家裡。"
+    ],
+    "optionPinyin": [
+      "wǒ gèng xǐhuan chūqù wán",
+      "wǒ hěn shǎo dāi zài jiālǐ",
+      "wǒ gèng xǐhuan dāi zài jiālǐ"
+    ],
+    "explanation": "更 (gèng) means “even more” or “more” in comparisons, and 待 (dāi) means “to stay.” 出去玩 (chūqù wán) means “go out and have fun.”",
+    "tags": ["preferences", "comparisons"]
+  },
+  {
+    "id": "ZH076",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Because of the traffic jam, we were late.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "虽然堵车，我们还是准时到了。",
+      "只要不堵车，我们就不会迟到。",
+      "由于堵车，我们迟到了。"
+    ],
+    "traditionalOptions": [
+      "雖然堵車，我們還是準時到了。",
+      "只要不堵車，我們就不會遲到。",
+      "由於堵車，我們遲到了。"
+    ],
+    "optionPinyin": [
+      "suīrán dǔchē, wǒmen háishi zhǔnshí dào le",
+      "zhǐyào bù dǔchē, wǒmen jiù bú huì chídào",
+      "yóuyú dǔchē, wǒmen chídào le"
+    ],
+    "explanation": "由于 / 由於 (yóuyú) means “because of” or “due to,” and is a somewhat formal way to give a cause.",
+    "tags": ["grammar", "cause-effect"]
+  },
+  {
+    "id": "ZH077",
+    "category": "grammar",
+    "level": "B2",
+    "question": "No matter how busy he is, he always keeps exercising.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "如果很忙，他就不锻炼。",
+      "无论多忙，他都坚持锻炼。",
+      "因为很忙，所以他才锻炼。"
+    ],
+    "traditionalOptions": [
+      "如果很忙，他就不鍛煉。",
+      "無論多忙，他都堅持鍛煉。",
+      "因為很忙，所以他才鍛煉。"
+    ],
+    "optionPinyin": [
+      "rúguǒ hěn máng, tā jiù bù duànliàn",
+      "wúlùn duō máng, tā dōu jiānchí duànliàn",
+      "yīnwèi hěn máng, suǒyǐ tā cái duànliàn"
+    ],
+    "explanation": "无论……都…… / 無論……都…… (wúlùn…dōu…) means “no matter…, (always)…”. 坚持 / 堅持 (jiānchí) means “to persist.”",
+    "tags": ["grammar", "concession"]
+  },
+  {
+    "id": "ZH078",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He seems a bit unhappy today.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "他今天好像不太高兴。",
+      "他今天已经很高兴了。",
+      "他今天终于高兴了。"
+    ],
+    "traditionalOptions": [
+      "他今天好像不太高興。",
+      "他今天已經很高興了。",
+      "他今天終於高興了。"
+    ],
+    "optionPinyin": [
+      "tā jīntiān hǎoxiàng bú tài gāoxìng",
+      "tā jīntiān yǐjīng hěn gāoxìng le",
+      "tā jīntiān zhōngyú gāoxìng le"
+    ],
+    "explanation": "好像 (hǎoxiàng) means “seems” or “looks as if.” 终于 / 終於 (zhōngyú) means “finally,” and 不太 (bú tài) means “not very.”",
+    "tags": ["grammar", "appearance"]
+  },
+  {
+    "id": "ZH079",
+    "category": "grammar",
+    "level": "B2",
+    "question": "It is said that this restaurant is very famous.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他告诉我这家餐厅关门了。",
+      "这家餐厅比那家有名。",
+      "据说这家餐厅很有名。"
+    ],
+    "traditionalOptions": [
+      "他告訴我這家餐廳關門了。",
+      "這家餐廳比那家有名。",
+      "據說這家餐廳很有名。"
+    ],
+    "optionPinyin": [
+      "tā gàosu wǒ zhè jiā cāntīng guānmén le",
+      "zhè jiā cāntīng bǐ nà jiā yǒumíng",
+      "jùshuō zhè jiā cāntīng hěn yǒumíng"
+    ],
+    "explanation": "据说 / 據說 (jùshuō) means “it is said that,” and is used to report hearsay. 有名 (yǒumíng) means “famous.”",
+    "tags": ["grammar", "hearsay"]
+  },
+  {
+    "id": "ZH080",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He left without even saying goodbye.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "他说了再见才走。",
+      "他连再见都没说就走了。",
+      "他走了以后才说再见。"
+    ],
+    "traditionalOptions": [
+      "他說了再見才走。",
+      "他連再見都沒說就走了。",
+      "他走了以後才說再見。"
+    ],
+    "optionPinyin": [
+      "tā shuō le zàijiàn cái zǒu",
+      "tā lián zàijiàn dōu méi shuō jiù zǒu le",
+      "tā zǒu le yǐhòu cái shuō zàijiàn"
+    ],
+    "explanation": "连……都…… / 連……都…… (lián…dōu…) means “even…”. With 没 / 沒 it gives “didn't even…”, stressing how minimal the omitted action was.",
+    "tags": ["grammar", "emphasis"]
+  },
+  {
+    "id": "ZH081",
+    "category": "grammar",
+    "level": "B2",
+    "question": "In order to pass the exam, she studies every night.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "因为通过了考试，她每天晚上都学习。",
+      "通过考试以后，她每天晚上都学习。",
+      "为了通过考试，她每天晚上都学习。"
+    ],
+    "traditionalOptions": [
+      "因為通過了考試，她每天晚上都學習。",
+      "通過考試以後，她每天晚上都學習。",
+      "為了通過考試，她每天晚上都學習。"
+    ],
+    "optionPinyin": [
+      "yīnwèi tōngguò le kǎoshì, tā měitiān wǎnshang dōu xuéxí",
+      "tōngguò kǎoshì yǐhòu, tā měitiān wǎnshang dōu xuéxí",
+      "wèile tōngguò kǎoshì, tā měitiān wǎnshang dōu xuéxí"
+    ],
+    "explanation": "为了 / 為了 (wèile) means “in order to” or “for the sake of,” and introduces a purpose. 通过 / 通過 (tōngguò) means “to pass.”",
+    "tags": ["grammar", "purpose"]
+  },
+  {
+    "id": "ZH082",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Not only did he not help, he actually made things worse.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "他不但帮了忙，而且帮了很多。",
+      "他不但没帮忙，反而添了麻烦。",
+      "他虽然帮了忙，但是还是添了麻烦。"
+    ],
+    "traditionalOptions": [
+      "他不但幫了忙，而且幫了很多。",
+      "他不但沒幫忙，反而添了麻煩。",
+      "他雖然幫了忙，但是還是添了麻煩。"
+    ],
+    "optionPinyin": [
+      "tā búdàn bāng le máng, érqiě bāng le hěn duō",
+      "tā búdàn méi bāngmáng, fǎn'ér tiān le máfan",
+      "tā suīrán bāng le máng, dànshì háishi tiān le máfan"
+    ],
+    "explanation": "不但没……反而…… / 不但沒……反而…… (búdàn méi…fǎn'ér…) means “not only didn't…, but on the contrary…”. 添麻烦 / 添麻煩 (tiān máfan) means “to cause trouble.”",
+    "tags": ["grammar", "contrast"]
+  },
+  {
+    "id": "ZH083",
+    "category": "body",
+    "level": "A1",
+    "question": "Eyes",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["耳朵", "眼睛", "嘴巴"],
+    "traditionalOptions": ["耳朵", "眼睛", "嘴巴"],
+    "optionPinyin": ["ěrduo", "yǎnjing", "zuǐba"],
+    "explanation": "眼睛 (yǎnjing) means “eyes.” 耳朵 (ěrduo) is “ears,” and 嘴巴 (zuǐba) is “mouth.”",
+    "tags": ["body", "basics"]
+  },
+  {
+    "id": "ZH084",
+    "category": "numbers",
+    "level": "A1",
+    "question": "Twenty",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["十二", "三十", "二十"],
+    "traditionalOptions": ["十二", "三十", "二十"],
+    "optionPinyin": ["shí'èr", "sānshí", "èrshí"],
+    "explanation": "二十 (èrshí) means “twenty” (literally “two-ten”). 十二 (shí'èr) is “twelve,” and 三十 (sānshí) is “thirty.”",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH085",
+    "category": "jobs",
+    "level": "A1",
+    "question": "He is a teacher.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["他是老师。", "他是警察。", "他是司机。"],
+    "traditionalOptions": ["他是老師。", "他是警察。", "他是司機。"],
+    "optionPinyin": ["tā shì lǎoshī", "tā shì jǐngchá", "tā shì sījī"],
+    "explanation": "老师 / 老師 (lǎoshī) means “teacher.” 警察 (jǐngchá) is “police officer,” and 司机 / 司機 (sījī) is “driver.”",
+    "tags": ["jobs", "introductions"]
+  },
+  {
+    "id": "ZH086",
+    "category": "time",
+    "level": "A1",
+    "question": "Today is Monday.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["今天星期五。", "今天星期一。", "今天星期天。"],
+    "traditionalOptions": ["今天星期五。", "今天星期一。", "今天星期天。"],
+    "optionPinyin": [
+      "jīntiān xīngqīwǔ",
+      "jīntiān xīngqīyī",
+      "jīntiān xīngqītiān"
+    ],
+    "explanation": "星期 (xīngqī) means “week,” and the days are numbered: 星期一 is Monday, 星期五 is Friday. 星期天 (xīngqītiān) is Sunday.",
+    "tags": ["time", "days"]
+  },
+  {
+    "id": "ZH087",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "Apple",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["香蕉", "西瓜", "苹果"],
+    "traditionalOptions": ["香蕉", "西瓜", "蘋果"],
+    "optionPinyin": ["xiāngjiāo", "xīguā", "píngguǒ"],
+    "explanation": "苹果 / 蘋果 (píngguǒ) means “apple.” 香蕉 (xiāngjiāo) is “banana,” and 西瓜 (xīguā) is “watermelon.”",
+    "tags": ["food-drink", "fruit"]
+  },
+  {
+    "id": "ZH088",
+    "category": "directions",
+    "level": "A1",
+    "question": "Where is the toilet?",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["洗手间在哪里？", "学校在哪里？", "你在哪里？"],
+    "traditionalOptions": ["洗手間在哪裡？", "學校在哪裡？", "你在哪裡？"],
+    "optionPinyin": [
+      "xǐshǒujiān zài nǎlǐ?",
+      "xuéxiào zài nǎlǐ?",
+      "nǐ zài nǎlǐ?"
+    ],
+    "explanation": "洗手间 / 洗手間 (xǐshǒujiān) means “restroom” (literally “hand-washing room”). 在哪里 / 在哪裡 (zài nǎlǐ) means “where is…?”",
+    "tags": ["directions", "travel"]
+  },
+  {
+    "id": "ZH089",
+    "category": "everyday",
+    "level": "A1",
+    "question": "I don't know.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我知道。", "我不知道。", "我不想去。"],
+    "traditionalOptions": ["我知道。", "我不知道。", "我不想去。"],
+    "optionPinyin": ["wǒ zhīdào", "wǒ bù zhīdào", "wǒ bù xiǎng qù"],
+    "explanation": "知道 (zhīdào) means “to know,” and 不 (bù) negates it: 不知道 means “don't know.” 不想去 means “don't want to go.”",
+    "tags": ["everyday", "negation"]
+  },
+  {
+    "id": "ZH090",
+    "category": "seasons",
+    "level": "A2",
+    "question": "I like spring the most.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我最喜欢春天。", "我最喜欢夏天。", "我最喜欢冬天。"],
+    "traditionalOptions": [
+      "我最喜歡春天。",
+      "我最喜歡夏天。",
+      "我最喜歡冬天。"
+    ],
+    "optionPinyin": [
+      "wǒ zuì xǐhuan chūntiān",
+      "wǒ zuì xǐhuan xiàtiān",
+      "wǒ zuì xǐhuan dōngtiān"
+    ],
+    "explanation": "最 (zuì) means “most.” 春天 (chūntiān) is “spring,” 夏天 (xiàtiān) is “summer,” and 冬天 (dōngtiān) is “winter.”",
+    "tags": ["seasons", "preferences"]
+  },
+  {
+    "id": "ZH091",
+    "category": "time",
+    "level": "A2",
+    "question": "My birthday is in May.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我的生日在三月。",
+      "我的生日在八月。",
+      "我的生日在五月。"
+    ],
+    "traditionalOptions": [
+      "我的生日在三月。",
+      "我的生日在八月。",
+      "我的生日在五月。"
+    ],
+    "optionPinyin": [
+      "wǒ de shēngrì zài sān yuè",
+      "wǒ de shēngrì zài bā yuè",
+      "wǒ de shēngrì zài wǔ yuè"
+    ],
+    "explanation": "Months are formed with number + 月 (yuè): 三月 is March, 五月 is May, and 八月 is August.",
+    "tags": ["time", "months"]
+  },
+  {
+    "id": "ZH092",
+    "category": "home",
+    "level": "A2",
+    "question": "There is a TV in the living room.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "客厅里有一台电视。",
+      "厨房里有一张床。",
+      "卧室里有一张桌子。"
+    ],
+    "traditionalOptions": [
+      "客廳裡有一台電視。",
+      "廚房裡有一張床。",
+      "臥室裡有一張桌子。"
+    ],
+    "optionPinyin": [
+      "kètīng lǐ yǒu yì tái diànshì",
+      "chúfáng lǐ yǒu yì zhāng chuáng",
+      "wòshì lǐ yǒu yì zhāng zhuōzi"
+    ],
+    "explanation": "Place + 有 (yǒu) + thing means “there is…”. 客厅 / 客廳 is “living room,” 厨房 / 廚房 is “kitchen,” and 卧室 / 臥室 is “bedroom.”",
+    "tags": ["home", "existence"]
+  },
+  {
+    "id": "ZH093",
+    "category": "sports",
+    "level": "A2",
+    "question": "He can swim.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["他会跑步。", "他不会游泳。", "他会游泳。"],
+    "traditionalOptions": ["他會跑步。", "他不會游泳。", "他會游泳。"],
+    "optionPinyin": ["tā huì pǎobù", "tā bú huì yóuyǒng", "tā huì yóuyǒng"],
+    "explanation": "会 / 會 (huì) means “can” in the sense of having learned a skill. 游泳 (yóuyǒng) means “to swim,” and 跑步 (pǎobù) means “to run.”",
+    "tags": ["sports", "modal-verbs"]
+  },
+  {
+    "id": "ZH094",
+    "category": "requests",
+    "level": "A2",
+    "question": "Please wait a moment.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["请坐下。", "请等一下。", "请进。"],
+    "traditionalOptions": ["請坐下。", "請等一下。", "請進。"],
+    "optionPinyin": ["qǐng zuò xià", "qǐng děng yíxià", "qǐng jìn"],
+    "explanation": "等一下 (děng yíxià) means “wait a moment”; 一下 softens the verb. 请坐下 / 請坐下 means “please sit down,” and 请进 / 請進 means “please come in.”",
+    "tags": ["requests", "politeness"]
+  },
+  {
+    "id": "ZH095",
+    "category": "shopping",
+    "level": "A2",
+    "question": "Do you have a smaller one?",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "有大一点儿的吗？",
+      "有小一点儿的吗？",
+      "有别的颜色吗？"
+    ],
+    "traditionalOptions": [
+      "有大一點兒的嗎？",
+      "有小一點兒的嗎？",
+      "有別的顏色嗎？"
+    ],
+    "optionPinyin": [
+      "yǒu dà yìdiǎnr de ma?",
+      "yǒu xiǎo yìdiǎnr de ma?",
+      "yǒu bié de yánsè ma?"
+    ],
+    "explanation": "小一点儿 / 小一點兒 (xiǎo yìdiǎnr) means “a bit smaller,” and 的 (de) turns it into a noun phrase, “a smaller one.” 大 means “bigger.”",
+    "tags": ["shopping", "adjectives"]
+  },
+  {
+    "id": "ZH096",
+    "category": "transport",
+    "level": "A2",
+    "question": "The bus is late.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "公交车来得很早。",
+      "公交车晚点了。",
+      "公交车很多人。"
+    ],
+    "traditionalOptions": ["公車來得很早。", "公車晚點了。", "公車很多人。"],
+    "optionPinyin": [
+      "gōngjiāochē lái de hěn zǎo",
+      "gōngjiāochē wǎndiǎn le",
+      "gōngjiāochē hěn duō rén"
+    ],
+    "explanation": "晚点 / 晚點 (wǎndiǎn) means “to be late” or “delayed,” used for buses, trains and flights. 早 (zǎo) means “early.”",
+    "tags": ["transport", "time"]
+  },
+  {
+    "id": "ZH097",
+    "category": "daily-life",
+    "level": "A2",
+    "question": "I brush my teeth every morning.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我每天晚上洗澡。",
+      "我每天早上喝茶。",
+      "我每天早上刷牙。"
+    ],
+    "traditionalOptions": [
+      "我每天晚上洗澡。",
+      "我每天早上喝茶。",
+      "我每天早上刷牙。"
+    ],
+    "optionPinyin": [
+      "wǒ měitiān wǎnshang xǐzǎo",
+      "wǒ měitiān zǎoshang hē chá",
+      "wǒ měitiān zǎoshang shuā yá"
+    ],
+    "explanation": "刷牙 (shuā yá) means “to brush one's teeth,” and 洗澡 (xǐzǎo) means “to take a bath or shower.” 早上 means “morning.”",
+    "tags": ["daily-life", "habits"]
+  },
+  {
+    "id": "ZH098",
+    "category": "plans",
+    "level": "B1",
+    "question": "I'm planning to learn to drive next year.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我去年学会了开车。",
+      "我每天开车上班。",
+      "我明年打算学开车。"
+    ],
+    "traditionalOptions": [
+      "我去年學會了開車。",
+      "我每天開車上班。",
+      "我明年打算學開車。"
+    ],
+    "optionPinyin": [
+      "wǒ qùnián xuéhuì le kāichē",
+      "wǒ měitiān kāichē shàngbān",
+      "wǒ míngnián dǎsuàn xué kāichē"
+    ],
+    "explanation": "打算 (dǎsuàn) means “to plan to,” and 明年 (míngnián) means “next year.” 学会 / 學會 (xuéhuì) means “to have learned (how to).”",
+    "tags": ["plans", "future"]
+  },
+  {
+    "id": "ZH099",
+    "category": "opinions",
+    "level": "B1",
+    "question": "I think this film is boring.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我觉得这部电影很有意思。",
+      "我觉得这部电影很没意思。",
+      "我觉得这部电影很长。"
+    ],
+    "traditionalOptions": [
+      "我覺得這部電影很有意思。",
+      "我覺得這部電影很沒意思。",
+      "我覺得這部電影很長。"
+    ],
+    "optionPinyin": [
+      "wǒ juéde zhè bù diànyǐng hěn yǒu yìsi",
+      "wǒ juéde zhè bù diànyǐng hěn méi yìsi",
+      "wǒ juéde zhè bù diànyǐng hěn cháng"
+    ],
+    "explanation": "有意思 (yǒu yìsi) means “interesting,” and 没意思 / 沒意思 (méi yìsi) means “boring.” 部 (bù) is the measure word for films.",
+    "tags": ["opinions", "entertainment"]
+  },
+  {
+    "id": "ZH100",
+    "category": "comparisons",
+    "level": "B1",
+    "question": "Shanghai isn't as cold as Beijing.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "上海比北京冷。",
+      "上海和北京一样冷。",
+      "上海没有北京冷。"
+    ],
+    "traditionalOptions": [
+      "上海比北京冷。",
+      "上海和北京一樣冷。",
+      "上海沒有北京冷。"
+    ],
+    "optionPinyin": [
+      "Shànghǎi bǐ Běijīng lěng",
+      "Shànghǎi hé Běijīng yíyàng lěng",
+      "Shànghǎi méiyǒu Běijīng lěng"
+    ],
+    "explanation": "A 没有 / 沒有 B + adjective means “A is not as … as B.” 比 (bǐ) means “more than,” and 一样 / 一樣 (yíyàng) means “the same.”",
+    "tags": ["comparisons", "weather"]
+  },
+  {
+    "id": "ZH101",
+    "category": "experiences",
+    "level": "B1",
+    "question": "I've been to the Great Wall twice.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我去过两次长城。",
+      "我明天要去长城。",
+      "我想去两次长城。"
+    ],
+    "traditionalOptions": [
+      "我去過兩次長城。",
+      "我明天要去長城。",
+      "我想去兩次長城。"
+    ],
+    "optionPinyin": [
+      "wǒ qù guo liǎng cì Chángchéng",
+      "wǒ míngtiān yào qù Chángchéng",
+      "wǒ xiǎng qù liǎng cì Chángchéng"
+    ],
+    "explanation": "过 / 過 (guo) marks a past experience, and 两次 / 兩次 (liǎng cì) means “twice.” The frequency phrase comes after the verb.",
+    "tags": ["experiences", "travel"]
+  },
+  {
+    "id": "ZH102",
+    "category": "emotions",
+    "level": "B1",
+    "question": "I was very surprised to hear the news.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "听到这个消息，我很伤心。",
+      "听到这个消息，我很高兴。",
+      "听到这个消息，我很吃惊。"
+    ],
+    "traditionalOptions": [
+      "聽到這個消息，我很傷心。",
+      "聽到這個消息，我很高興。",
+      "聽到這個消息，我很吃驚。"
+    ],
+    "optionPinyin": [
+      "tīngdào zhège xiāoxi, wǒ hěn shāngxīn",
+      "tīngdào zhège xiāoxi, wǒ hěn gāoxìng",
+      "tīngdào zhège xiāoxi, wǒ hěn chījīng"
+    ],
+    "explanation": "吃惊 / 吃驚 (chījīng) means “surprised.” 伤心 / 傷心 (shāngxīn) means “sad,” and 高兴 / 高興 (gāoxìng) means “happy.”",
+    "tags": ["emotions", "feelings"]
+  },
+  {
+    "id": "ZH103",
+    "category": "work",
+    "level": "B1",
+    "question": "I have a meeting at three o'clock this afternoon.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我昨天下午开了个会。",
+      "我下午三点有个会议。",
+      "我下午三点要回家。"
+    ],
+    "traditionalOptions": [
+      "我昨天下午開了個會。",
+      "我下午三點有個會議。",
+      "我下午三點要回家。"
+    ],
+    "optionPinyin": [
+      "wǒ zuótiān xiàwǔ kāi le ge huì",
+      "wǒ xiàwǔ sān diǎn yǒu ge huìyì",
+      "wǒ xiàwǔ sān diǎn yào huí jiā"
+    ],
+    "explanation": "会议 / 會議 (huìyì) means “meeting,” and 下午三点 / 下午三點 means “three o'clock in the afternoon.” 开会 / 開會 means “to hold or attend a meeting.”",
+    "tags": ["work", "time"]
+  },
+  {
+    "id": "ZH104",
+    "category": "advice",
+    "level": "B1",
+    "question": "You must wear a seat belt.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "你可以不系安全带。",
+      "你不用系安全带。",
+      "你必须系安全带。"
+    ],
+    "traditionalOptions": [
+      "你可以不繫安全帶。",
+      "你不用繫安全帶。",
+      "你必須繫安全帶。"
+    ],
+    "optionPinyin": [
+      "nǐ kěyǐ bú jì ānquándài",
+      "nǐ búyòng jì ānquándài",
+      "nǐ bìxū jì ānquándài"
+    ],
+    "explanation": "必须 / 必須 (bìxū) means “must.” 不用 (búyòng) means “don't need to,” and 可以不 means “may choose not to.”",
+    "tags": ["advice", "modal-verbs"]
+  },
+  {
+    "id": "ZH105",
+    "category": "conversation",
+    "level": "B1",
+    "question": "Excuse me, may I ask you a question?",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "请问，我可以问你一个问题吗？",
+      "对不起，我不能问你。",
+      "谢谢，我已经问过了。"
+    ],
+    "traditionalOptions": [
+      "請問，我可以問你一個問題嗎？",
+      "對不起，我不能問你。",
+      "謝謝，我已經問過了。"
+    ],
+    "optionPinyin": [
+      "qǐngwèn, wǒ kěyǐ wèn nǐ yí ge wèntí ma?",
+      "duìbuqǐ, wǒ bù néng wèn nǐ",
+      "xièxie, wǒ yǐjīng wèn guo le"
+    ],
+    "explanation": "请问 / 請問 (qǐngwèn) is a polite opener meaning “excuse me, may I ask…”. 问问题 / 問問題 means “to ask a question.”",
+    "tags": ["conversation", "politeness"]
+  },
+  {
+    "id": "ZH106",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Since you're already here, stay and have dinner.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "虽然你来了，但是不能吃饭。",
+      "既然你来了，就留下来吃饭吧。",
+      "只有你来了，我才吃饭。"
+    ],
+    "traditionalOptions": [
+      "雖然你來了，但是不能吃飯。",
+      "既然你來了，就留下來吃飯吧。",
+      "只有你來了，我才吃飯。"
+    ],
+    "optionPinyin": [
+      "suīrán nǐ lái le, dànshì bù néng chīfàn",
+      "jìrán nǐ lái le, jiù liú xiàlái chīfàn ba",
+      "zhǐyǒu nǐ lái le, wǒ cái chīfàn"
+    ],
+    "explanation": "既然……就…… (jìrán…jiù…) means “since…, then…”. It draws a conclusion from a fact that is already true.",
+    "tags": ["grammar", "inference"]
+  },
+  {
+    "id": "ZH107",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Only if you work hard can you succeed.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "只要努力，就能成功。",
+      "即使努力，也不能成功。",
+      "只有努力，才能成功。"
+    ],
+    "traditionalOptions": [
+      "只要努力，就能成功。",
+      "即使努力，也不能成功。",
+      "只有努力，才能成功。"
+    ],
+    "optionPinyin": [
+      "zhǐyào nǔlì, jiù néng chénggōng",
+      "jíshǐ nǔlì, yě bù néng chénggōng",
+      "zhǐyǒu nǔlì, cái néng chénggōng"
+    ],
+    "explanation": "只有……才…… (zhǐyǒu…cái…) means “only if…, then…” and states a necessary condition. 只要……就…… means “as long as…,” a sufficient condition.",
+    "tags": ["grammar", "conditionals"]
+  },
+  {
+    "id": "ZH108",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He was so tired that he couldn't even open his eyes.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "他累得眼睛都睁不开了。",
+      "他累了所以睁开眼睛。",
+      "他不累，眼睛睁得很大。"
+    ],
+    "traditionalOptions": [
+      "他累得眼睛都睜不開了。",
+      "他累了所以睜開眼睛。",
+      "他不累，眼睛睜得很大。"
+    ],
+    "optionPinyin": [
+      "tā lèi de yǎnjing dōu zhēng bù kāi le",
+      "tā lèi le suǒyǐ zhēngkāi yǎnjing",
+      "tā bú lèi, yǎnjing zhēng de hěn dà"
+    ],
+    "explanation": "Adjective + 得 (de) + result means “so … that …”. 睁不开 / 睜不開 (zhēng bù kāi) is a potential complement meaning “unable to open.”",
+    "tags": ["grammar", "complements"]
+  },
+  {
+    "id": "ZH109",
+    "category": "grammar",
+    "level": "B2",
+    "question": "The meeting was postponed until next week.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "会议被提前到下周了。",
+      "会议被推迟到下周了。",
+      "会议把下周推迟了。"
+    ],
+    "traditionalOptions": [
+      "會議被提前到下週了。",
+      "會議被推遲到下週了。",
+      "會議把下週推遲了。"
+    ],
+    "optionPinyin": [
+      "huìyì bèi tíqián dào xiàzhōu le",
+      "huìyì bèi tuīchí dào xiàzhōu le",
+      "huìyì bǎ xiàzhōu tuīchí le"
+    ],
+    "explanation": "推迟 / 推遲 (tuīchí) means “to postpone,” and 提前 (tíqián) means “to bring forward.” 被 (bèi) marks the passive: the meeting was postponed.",
+    "tags": ["grammar", "passive"]
+  },
+  {
+    "id": "ZH110",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He would rather walk than trouble other people.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他宁可麻烦别人，也不愿意自己走路。",
+      "他不但走路，而且麻烦别人。",
+      "他宁可自己走路，也不愿意麻烦别人。"
+    ],
+    "traditionalOptions": [
+      "他寧可麻煩別人，也不願意自己走路。",
+      "他不但走路，而且麻煩別人。",
+      "他寧可自己走路，也不願意麻煩別人。"
+    ],
+    "optionPinyin": [
+      "tā nìngkě máfan biérén, yě bú yuànyì zìjǐ zǒulù",
+      "tā búdàn zǒulù, érqiě máfan biérén",
+      "tā nìngkě zìjǐ zǒulù, yě bú yuànyì máfan biérén"
+    ],
+    "explanation": "宁可……也不…… / 寧可……也不…… (nìngkě…yě bù…) means “would rather…than…”. What follows 宁可 is the preferred choice.",
+    "tags": ["grammar", "preference"]
+  },
+  {
+    "id": "ZH111",
+    "category": "grammar",
+    "level": "B2",
+    "question": "I never expected it to snow even in April.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "四月当然会下雪。",
+      "没想到四月还会下雪。",
+      "我知道四月会下雪。"
+    ],
+    "traditionalOptions": [
+      "四月當然會下雪。",
+      "沒想到四月還會下雪。",
+      "我知道四月會下雪。"
+    ],
+    "optionPinyin": [
+      "sìyuè dāngrán huì xiàxuě",
+      "méi xiǎngdào sìyuè hái huì xiàxuě",
+      "wǒ zhīdào sìyuè huì xiàxuě"
+    ],
+    "explanation": "没想到 / 沒想到 (méi xiǎngdào) means “didn't expect (that)…” and expresses surprise. 当然 / 當然 (dāngrán) means “of course.”",
+    "tags": ["grammar", "surprise"]
+  },
+  {
+    "id": "ZH112",
+    "category": "grammar",
+    "level": "B2",
+    "question": "As for this issue, I have no idea at all.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "关于这个问题，我一点儿也不清楚。",
+      "关于这个问题，我已经解决了。",
+      "对这个问题，我已经很清楚了。"
+    ],
+    "traditionalOptions": [
+      "關於這個問題，我一點兒也不清楚。",
+      "關於這個問題，我已經解決了。",
+      "對這個問題，我已經很清楚了。"
+    ],
+    "optionPinyin": [
+      "guānyú zhège wèntí, wǒ yìdiǎnr yě bù qīngchu",
+      "guānyú zhège wèntí, wǒ yǐjīng jiějué le",
+      "duì zhège wèntí, wǒ yǐjīng hěn qīngchu le"
+    ],
+    "explanation": "关于 / 關於 (guānyú) means “regarding.” 一点儿也不 / 一點兒也不 (yìdiǎnr yě bù) means “not at all” and adds strong negative emphasis.",
+    "tags": ["grammar", "emphasis"]
+  },
+  {
+    "id": "ZH113",
+    "category": "clothing",
+    "level": "A1",
+    "question": "Skirt",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["裤子", "裙子", "帽子"],
+    "traditionalOptions": ["褲子", "裙子", "帽子"],
+    "optionPinyin": ["kùzi", "qúnzi", "màozi"],
+    "explanation": "裙子 (qúnzi) means “skirt.” 裤子 / 褲子 (kùzi) is “trousers,” and 帽子 (màozi) is “hat.”",
+    "tags": ["clothing", "basics"]
+  },
+  {
+    "id": "ZH114",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "Coffee",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["咖啡", "牛奶", "果汁"],
+    "traditionalOptions": ["咖啡", "牛奶", "果汁"],
+    "optionPinyin": ["kāfēi", "niúnǎi", "guǒzhī"],
+    "explanation": "咖啡 (kāfēi) means “coffee.” 牛奶 (niúnǎi) is “milk,” and 果汁 (guǒzhī) is “fruit juice.”",
+    "tags": ["food-drink", "basics"]
+  },
+  {
+    "id": "ZH115",
+    "category": "greetings",
+    "level": "A1",
+    "question": "Welcome!",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["晚安！", "再见！", "欢迎！"],
+    "traditionalOptions": ["晚安！", "再見！", "歡迎！"],
+    "optionPinyin": ["wǎn'ān!", "zàijiàn!", "huānyíng!"],
+    "explanation": "欢迎 / 歡迎 (huānyíng) means “welcome.” 晚安 (wǎn'ān) is “good night,” and 再见 / 再見 (zàijiàn) is “goodbye.”",
+    "tags": ["greetings", "politeness"]
+  },
+  {
+    "id": "ZH116",
+    "category": "numbers",
+    "level": "A1",
+    "question": "One hundred",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["一千", "一百", "十"],
+    "traditionalOptions": ["一千", "一百", "十"],
+    "optionPinyin": ["yì qiān", "yì bǎi", "shí"],
+    "explanation": "一百 (yì bǎi) means “one hundred.” 一千 (yì qiān) is “one thousand,” and 十 (shí) is “ten.”",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH117",
+    "category": "family",
+    "level": "A1",
+    "question": "My older brother",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我的哥哥", "我的弟弟", "我的爸爸"],
+    "traditionalOptions": ["我的哥哥", "我的弟弟", "我的爸爸"],
+    "optionPinyin": ["wǒ de gēge", "wǒ de dìdi", "wǒ de bàba"],
+    "explanation": "哥哥 (gēge) means “older brother.” 弟弟 (dìdi) is “younger brother,” and 爸爸 (bàba) is “dad.”",
+    "tags": ["family", "basics"]
+  },
+  {
+    "id": "ZH118",
+    "category": "animals",
+    "level": "A1",
+    "question": "I like cats.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我喜欢狗。", "我喜欢猫。", "我喜欢鸟。"],
+    "traditionalOptions": ["我喜歡狗。", "我喜歡貓。", "我喜歡鳥。"],
+    "optionPinyin": ["wǒ xǐhuan gǒu", "wǒ xǐhuan māo", "wǒ xǐhuan niǎo"],
+    "explanation": "喜欢 / 喜歡 (xǐhuan) means “to like.” 猫 / 貓 (māo) is “cat,” 狗 (gǒu) is “dog,” and 鸟 / 鳥 (niǎo) is “bird.”",
+    "tags": ["animals", "preferences"]
+  },
+  {
+    "id": "ZH119",
+    "category": "places",
+    "level": "A1",
+    "question": "I'm going to the supermarket.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我去学校。", "我去医院。", "我去超市。"],
+    "traditionalOptions": ["我去學校。", "我去醫院。", "我去超市。"],
+    "optionPinyin": ["wǒ qù xuéxiào", "wǒ qù yīyuàn", "wǒ qù chāoshì"],
+    "explanation": "去 (qù) means “to go,” and 超市 (chāoshì) means “supermarket.” 学校 / 學校 is “school,” and 医院 / 醫院 is “hospital.”",
+    "tags": ["places", "basics"]
+  },
+  {
+    "id": "ZH120",
+    "category": "questions",
+    "level": "A1",
+    "question": "How much is it?",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["多少钱？", "几点了？", "你几岁？"],
+    "traditionalOptions": ["多少錢？", "幾點了？", "你幾歲？"],
+    "optionPinyin": ["duōshao qián?", "jǐ diǎn le?", "nǐ jǐ suì?"],
+    "explanation": "多少钱 / 多少錢 (duōshao qián) means “how much (money)?” 几点 / 幾點 asks “what time,” and 几岁 / 幾歲 asks “how old.”",
+    "tags": ["questions", "shopping"]
+  },
+  {
+    "id": "ZH121",
+    "category": "emotions",
+    "level": "A2",
+    "question": "I'm very happy to see you.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "见到你我很生气。",
+      "见到你我很高兴。",
+      "见到你我很累。"
+    ],
+    "traditionalOptions": [
+      "見到你我很生氣。",
+      "見到你我很高興。",
+      "見到你我很累。"
+    ],
+    "optionPinyin": [
+      "jiàndào nǐ wǒ hěn shēngqì",
+      "jiàndào nǐ wǒ hěn gāoxìng",
+      "jiàndào nǐ wǒ hěn lèi"
+    ],
+    "explanation": "见到 / 見到 (jiàndào) means “to see” or “to meet,” and 高兴 / 高興 (gāoxìng) means “happy.” 生气 / 生氣 (shēngqì) means “angry.”",
+    "tags": ["emotions", "greetings"]
+  },
+  {
+    "id": "ZH122",
+    "category": "directions",
+    "level": "A2",
+    "question": "The bank is next to the post office.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "银行在邮局对面。",
+      "银行在邮局后面。",
+      "银行在邮局旁边。"
+    ],
+    "traditionalOptions": [
+      "銀行在郵局對面。",
+      "銀行在郵局後面。",
+      "銀行在郵局旁邊。"
+    ],
+    "optionPinyin": [
+      "yínháng zài yóujú duìmiàn",
+      "yínháng zài yóujú hòumiàn",
+      "yínháng zài yóujú pángbiān"
+    ],
+    "explanation": "旁边 / 旁邊 (pángbiān) means “next to.” 对面 / 對面 (duìmiàn) means “opposite,” and 后面 / 後面 (hòumiàn) means “behind.”",
+    "tags": ["directions", "places"]
+  },
+  {
+    "id": "ZH123",
+    "category": "hobbies",
+    "level": "A2",
+    "question": "She plays the piano very well.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "她钢琴弹得很好。",
+      "她钢琴弹得不好。",
+      "她喜欢听钢琴。"
+    ],
+    "traditionalOptions": [
+      "她鋼琴彈得很好。",
+      "她鋼琴彈得不好。",
+      "她喜歡聽鋼琴。"
+    ],
+    "optionPinyin": [
+      "tā gāngqín tán de hěn hǎo",
+      "tā gāngqín tán de bù hǎo",
+      "tā xǐhuan tīng gāngqín"
+    ],
+    "explanation": "Verb + 得 (de) + adjective describes how well something is done: 弹得很好 / 彈得很好 means “plays very well.”",
+    "tags": ["hobbies", "music"]
+  },
+  {
+    "id": "ZH124",
+    "category": "daily-life",
+    "level": "A2",
+    "question": "I eat dinner at seven o'clock.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我七点吃早饭。", "我七点吃晚饭。", "我七点吃午饭。"],
+    "traditionalOptions": [
+      "我七點吃早飯。",
+      "我七點吃晚飯。",
+      "我七點吃午飯。"
+    ],
+    "optionPinyin": [
+      "wǒ qī diǎn chī zǎofàn",
+      "wǒ qī diǎn chī wǎnfàn",
+      "wǒ qī diǎn chī wǔfàn"
+    ],
+    "explanation": "晚饭 / 晚飯 (wǎnfàn) means “dinner.” 早饭 / 早飯 (zǎofàn) is “breakfast,” and 午饭 / 午飯 (wǔfàn) is “lunch.”",
+    "tags": ["daily-life", "meals"]
+  },
+  {
+    "id": "ZH125",
+    "category": "health",
+    "level": "A2",
+    "question": "I need to see a doctor.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我要去看电影。", "我要去看朋友。", "我要去看医生。"],
+    "traditionalOptions": [
+      "我要去看電影。",
+      "我要去看朋友。",
+      "我要去看醫生。"
+    ],
+    "optionPinyin": [
+      "wǒ yào qù kàn diànyǐng",
+      "wǒ yào qù kàn péngyou",
+      "wǒ yào qù kàn yīshēng"
+    ],
+    "explanation": "看医生 / 看醫生 (kàn yīshēng) means “to see a doctor” (literally “look at a doctor”). 看 (kàn) is also used in “watch a movie” and “visit a friend.”",
+    "tags": ["health", "verbs"]
+  },
+  {
+    "id": "ZH126",
+    "category": "weather",
+    "level": "A2",
+    "question": "It's snowing.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["刮风了。", "下雪了。", "出太阳了。"],
+    "traditionalOptions": ["刮風了。", "下雪了。", "出太陽了。"],
+    "optionPinyin": ["guāfēng le", "xiàxuě le", "chū tàiyáng le"],
+    "explanation": "下雪 (xiàxuě) means “to snow.” 刮风 / 刮風 (guāfēng) means “it's windy,” and 出太阳 / 出太陽 (chū tàiyáng) means “the sun comes out.”",
+    "tags": ["weather", "everyday"]
+  },
+  {
+    "id": "ZH127",
+    "category": "food-drink",
+    "level": "A2",
+    "question": "I don't eat meat.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我不吃肉。", "我不喝酒。", "我不吃辣。"],
+    "traditionalOptions": ["我不吃肉。", "我不喝酒。", "我不吃辣。"],
+    "optionPinyin": ["wǒ bù chī ròu", "wǒ bù hē jiǔ", "wǒ bù chī là"],
+    "explanation": "肉 (ròu) means “meat.” 酒 (jiǔ) means “alcohol,” and 辣 (là) means “spicy.” The characters are the same in both scripts.",
+    "tags": ["food-drink", "negation"]
+  },
+  {
+    "id": "ZH128",
+    "category": "technology",
+    "level": "B1",
+    "question": "My computer is broken and needs to be repaired.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我的电脑很新，不用修理。",
+      "我想买一台新电脑。",
+      "我的电脑坏了，需要修理。"
+    ],
+    "traditionalOptions": [
+      "我的電腦很新，不用修理。",
+      "我想買一台新電腦。",
+      "我的電腦壞了，需要修理。"
+    ],
+    "optionPinyin": [
+      "wǒ de diànnǎo hěn xīn, búyòng xiūlǐ",
+      "wǒ xiǎng mǎi yì tái xīn diànnǎo",
+      "wǒ de diànnǎo huài le, xūyào xiūlǐ"
+    ],
+    "explanation": "坏了 / 壞了 (huài le) means “broken,” 需要 (xūyào) means “need,” and 修理 (xiūlǐ) means “to repair.”",
+    "tags": ["technology", "problems"]
+  },
+  {
+    "id": "ZH129",
+    "category": "environment",
+    "level": "B1",
+    "question": "We should protect the environment.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我们应该多用塑料袋。",
+      "我们应该保护环境。",
+      "我们应该多开车。"
+    ],
+    "traditionalOptions": [
+      "我們應該多用塑膠袋。",
+      "我們應該保護環境。",
+      "我們應該多開車。"
+    ],
+    "optionPinyin": [
+      "wǒmen yīnggāi duō yòng sùliàodài",
+      "wǒmen yīnggāi bǎohù huánjìng",
+      "wǒmen yīnggāi duō kāichē"
+    ],
+    "explanation": "保护 / 保護 (bǎohù) means “to protect,” and 环境 / 環境 (huánjìng) means “environment.” 塑料袋 / 塑膠袋 (sùliàodài) means “plastic bag.”",
+    "tags": ["environment", "opinions"]
+  },
+  {
+    "id": "ZH130",
+    "category": "past",
+    "level": "B1",
+    "question": "I haven't seen him for a long time.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我很久没见到他了。",
+      "我昨天见到他了。",
+      "我常常见到他。"
+    ],
+    "traditionalOptions": [
+      "我很久沒見到他了。",
+      "我昨天見到他了。",
+      "我常常見到他。"
+    ],
+    "optionPinyin": [
+      "wǒ hěn jiǔ méi jiàndào tā le",
+      "wǒ zuótiān jiàndào tā le",
+      "wǒ chángcháng jiàndào tā"
+    ],
+    "explanation": "很久没……了 / 很久沒……了 (hěn jiǔ méi…le) means “haven't … for a long time.” 昨天 means “yesterday,” and 常常 means “often.”",
+    "tags": ["past", "duration"]
+  },
+  {
+    "id": "ZH131",
+    "category": "reasons",
+    "level": "B1",
+    "question": "I was late because I missed the bus.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我赶上了公交车，所以迟到了。",
+      "我没赶上公交车，所以迟到了。",
+      "我迟到了，所以没赶上公交车。"
+    ],
+    "traditionalOptions": [
+      "我趕上了公車，所以遲到了。",
+      "我沒趕上公車，所以遲到了。",
+      "我遲到了，所以沒趕上公車。"
+    ],
+    "optionPinyin": [
+      "wǒ gǎn shàng le gōngjiāochē, suǒyǐ chídào le",
+      "wǒ méi gǎn shàng gōngjiāochē, suǒyǐ chídào le",
+      "wǒ chídào le, suǒyǐ méi gǎn shàng gōngjiāochē"
+    ],
+    "explanation": "赶上 / 趕上 (gǎn shàng) means “to catch” a bus or train, so 没赶上 / 沒趕上 means “missed it.” 所以 (suǒyǐ) introduces the result, so the cause must come first.",
+    "tags": ["reasons", "cause-effect"]
+  },
+  {
+    "id": "ZH132",
+    "category": "opinions",
+    "level": "B1",
+    "question": "I'm very interested in Chinese history.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我对中国历史不感兴趣。",
+      "我去过中国历史博物馆。",
+      "我对中国历史很感兴趣。"
+    ],
+    "traditionalOptions": [
+      "我對中國歷史不感興趣。",
+      "我去過中國歷史博物館。",
+      "我對中國歷史很感興趣。"
+    ],
+    "optionPinyin": [
+      "wǒ duì Zhōngguó lìshǐ bù gǎn xìngqù",
+      "wǒ qù guo Zhōngguó lìshǐ bówùguǎn",
+      "wǒ duì Zhōngguó lìshǐ hěn gǎn xìngqù"
+    ],
+    "explanation": "对……感兴趣 / 對……感興趣 (duì…gǎn xìngqù) means “to be interested in…”. Adding 不 makes it “not interested.”",
+    "tags": ["opinions", "interests"]
+  },
+  {
+    "id": "ZH133",
+    "category": "culture",
+    "level": "B1",
+    "question": "During the Spring Festival, families get together.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "春节的时候，一家人会团聚。",
+      "春节的时候，大家都去上班。",
+      "春节的时候，天气很热。"
+    ],
+    "traditionalOptions": [
+      "春節的時候，一家人會團聚。",
+      "春節的時候，大家都去上班。",
+      "春節的時候，天氣很熱。"
+    ],
+    "optionPinyin": [
+      "Chūnjié de shíhou, yì jiā rén huì tuánjù",
+      "Chūnjié de shíhou, dàjiā dōu qù shàngbān",
+      "Chūnjié de shíhou, tiānqì hěn rè"
+    ],
+    "explanation": "春节 / 春節 (Chūnjié) is the Spring Festival (Chinese New Year), and 团聚 / 團聚 (tuánjù) means “to reunite.” 一家人 means “the whole family.”",
+    "tags": ["culture", "festivals"]
+  },
+  {
+    "id": "ZH134",
+    "category": "requests",
+    "level": "B1",
+    "question": "Would you mind opening the window?",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "你介意关一下门吗？",
+      "你介意开一下窗户吗？",
+      "你能帮我买窗户吗？"
+    ],
+    "traditionalOptions": [
+      "你介意關一下門嗎？",
+      "你介意開一下窗戶嗎？",
+      "你能幫我買窗戶嗎？"
+    ],
+    "optionPinyin": [
+      "nǐ jièyì guān yíxià mén ma",
+      "nǐ jièyì kāi yíxià chuānghu ma",
+      "nǐ néng bāng wǒ mǎi chuānghu ma"
+    ],
+    "explanation": "介意 (jièyì) means “to mind,” 开 / 開 means “to open,” and 关 / 關 means “to close.” 窗户 / 窗戶 (chuānghu) means “window.”",
+    "tags": ["requests", "politeness"]
+  },
+  {
+    "id": "ZH135",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Rather than complain, it's better to take action.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "与其抱怨，不如行动。",
+      "即使抱怨，也要行动。",
+      "既然抱怨，就不要行动。"
+    ],
+    "traditionalOptions": [
+      "與其抱怨，不如行動。",
+      "即使抱怨，也要行動。",
+      "既然抱怨，就不要行動。"
+    ],
+    "optionPinyin": [
+      "yǔqí bàoyuàn, bùrú xíngdòng",
+      "jíshǐ bàoyuàn, yě yào xíngdòng",
+      "jìrán bàoyuàn, jiù bú yào xíngdòng"
+    ],
+    "explanation": "与其……不如…… / 與其……不如…… (yǔqí…bùrú…) means “rather than…, it's better to…”. The second part is the preferred option.",
+    "tags": ["grammar", "preference"]
+  },
+  {
+    "id": "ZH136",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Just in case it rains, take an umbrella.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "如果下雨了，我们就回家了。",
+      "虽然下雨，我们还是出去了。",
+      "万一下雨，就带把伞吧。"
+    ],
+    "traditionalOptions": [
+      "如果下雨了，我們就回家了。",
+      "雖然下雨，我們還是出去了。",
+      "萬一下雨，就帶把傘吧。"
+    ],
+    "optionPinyin": [
+      "rúguǒ xiàyǔ le, wǒmen jiù huí jiā le",
+      "suīrán xiàyǔ, wǒmen háishi chūqù le",
+      "wànyī xiàyǔ, jiù dài bǎ sǎn ba"
+    ],
+    "explanation": "万一 / 萬一 (wànyī) means “in case” or “if by chance,” and is used for an unlikely event that you prepare for. 把 (bǎ) here is a measure word for umbrellas.",
+    "tags": ["grammar", "conditionals"]
+  },
+  {
+    "id": "ZH137",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He broke my cup.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "他的杯子被我打碎了。",
+      "他把我的杯子打碎了。",
+      "他把杯子放在桌子上了。"
+    ],
+    "traditionalOptions": [
+      "他的杯子被我打碎了。",
+      "他把我的杯子打碎了。",
+      "他把杯子放在桌子上了。"
+    ],
+    "optionPinyin": [
+      "tā de bēizi bèi wǒ dǎsuì le",
+      "tā bǎ wǒ de bēizi dǎsuì le",
+      "tā bǎ bēizi fàng zài zhuōzi shàng le"
+    ],
+    "explanation": "把 + object + verb + result describes what someone did to the object: 打碎了 (dǎsuì le) means “smashed.” The first option reverses the roles: “his cup was broken by me.”",
+    "tags": ["grammar", "ba-construction"]
+  },
+  {
+    "id": "ZH138",
+    "category": "grammar",
+    "level": "B2",
+    "question": "No wonder he's so tired; it turns out he worked all night.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他这么累，因为他睡了一整夜。",
+      "他虽然累，但是还在工作。",
+      "难怪他这么累，原来他工作了一整夜。"
+    ],
+    "traditionalOptions": [
+      "他這麼累，因為他睡了一整夜。",
+      "他雖然累，但是還在工作。",
+      "難怪他這麼累，原來他工作了一整夜。"
+    ],
+    "optionPinyin": [
+      "tā zhème lèi, yīnwèi tā shuì le yì zhěng yè",
+      "tā suīrán lèi, dànshì hái zài gōngzuò",
+      "nánguài tā zhème lèi, yuánlái tā gōngzuò le yì zhěng yè"
+    ],
+    "explanation": "难怪 / 難怪 (nánguài) means “no wonder,” and 原来 / 原來 (yuánlái) means “it turns out.” Together they show a puzzle being explained.",
+    "tags": ["grammar", "realization"]
+  },
+  {
+    "id": "ZH139",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Once you form a habit, it's hard to change.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "一旦养成习惯，就很难改变。",
+      "如果没有习惯，就很难改变。",
+      "只要养成习惯，就不用改变。"
+    ],
+    "traditionalOptions": [
+      "一旦養成習慣，就很難改變。",
+      "如果沒有習慣，就很難改變。",
+      "只要養成習慣，就不用改變。"
+    ],
+    "optionPinyin": [
+      "yídàn yǎngchéng xíguàn, jiù hěn nán gǎibiàn",
+      "rúguǒ méiyǒu xíguàn, jiù hěn nán gǎibiàn",
+      "zhǐyào yǎngchéng xíguàn, jiù búyòng gǎibiàn"
+    ],
+    "explanation": "一旦……就…… (yídàn…jiù…) means “once…, then…”. 养成 / 養成 (yǎngchéng) means “to form” (a habit).",
+    "tags": ["grammar", "conditionals"]
+  },
+  {
+    "id": "ZH140",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Compared with the past, life is much better now.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "与现在相比，过去的生活好多了。",
+      "与过去相比，现在的生活好多了。",
+      "现在的生活跟过去一样好。"
+    ],
+    "traditionalOptions": [
+      "與現在相比，過去的生活好多了。",
+      "與過去相比，現在的生活好多了。",
+      "現在的生活跟過去一樣好。"
+    ],
+    "optionPinyin": [
+      "yǔ xiànzài xiāngbǐ, guòqù de shēnghuó hǎo duō le",
+      "yǔ guòqù xiāngbǐ, xiànzài de shēnghuó hǎo duō le",
+      "xiànzài de shēnghuó gēn guòqù yíyàng hǎo"
+    ],
+    "explanation": "与……相比 / 與……相比 (yǔ…xiāngbǐ) means “compared with…”. The thing after 与 / 與 is the baseline, and 好多了 means “much better.”",
+    "tags": ["grammar", "comparisons"]
+  },
+  {
+    "id": "ZH141",
+    "category": "grammar",
+    "level": "B2",
+    "question": "You'd better leave now, otherwise you'll miss the train.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "你最好现在出发，所以会错过火车。",
+      "你最好现在出发，虽然会错过火车。",
+      "你最好现在出发，否则会错过火车。"
+    ],
+    "traditionalOptions": [
+      "你最好現在出發，所以會錯過火車。",
+      "你最好現在出發，雖然會錯過火車。",
+      "你最好現在出發，否則會錯過火車。"
+    ],
+    "optionPinyin": [
+      "nǐ zuìhǎo xiànzài chūfā, suǒyǐ huì cuòguò huǒchē",
+      "nǐ zuìhǎo xiànzài chūfā, suīrán huì cuòguò huǒchē",
+      "nǐ zuìhǎo xiànzài chūfā, fǒuzé huì cuòguò huǒchē"
+    ],
+    "explanation": "否则 / 否則 (fǒuzé) means “otherwise” and introduces the bad result of not doing what was just suggested. 错过 / 錯過 (cuòguò) means “to miss.”",
+    "tags": ["grammar", "consequences"]
+  },
+  {
+    "id": "ZH142",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Only after I came here did I realize how big China is.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "因为中国很大，所以我来了这里。",
+      "直到来了这里，我才发现中国有多大。",
+      "我早就知道中国有多大。"
+    ],
+    "traditionalOptions": [
+      "因為中國很大，所以我來了這裡。",
+      "直到來了這裡，我才發現中國有多大。",
+      "我早就知道中國有多大。"
+    ],
+    "optionPinyin": [
+      "yīnwèi Zhōngguó hěn dà, suǒyǐ wǒ lái le zhèlǐ",
+      "zhídào lái le zhèlǐ, wǒ cái fāxiàn Zhōngguó yǒu duō dà",
+      "wǒ zǎo jiù zhīdào Zhōngguó yǒu duō dà"
+    ],
+    "explanation": "直到……才…… (zhídào…cái…) means “not until…did (I)…”. 发现 / 發現 (fāxiàn) means “to discover” or “to realize.”",
+    "tags": ["grammar", "realization"]
+  },
+  {
+    "id": "ZH143",
+    "category": "colors",
+    "level": "A1",
+    "question": "White",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["黑色", "白色", "黄色"],
+    "traditionalOptions": ["黑色", "白色", "黃色"],
+    "optionPinyin": ["hēisè", "báisè", "huángsè"],
+    "explanation": "白色 (báisè) means “white.” 黑色 (hēisè) is “black,” and 黄色 / 黃色 (huángsè) is “yellow.”",
+    "tags": ["colors", "basics"]
+  },
+  {
+    "id": "ZH144",
+    "category": "introductions",
+    "level": "A1",
+    "question": "I am American.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我是美国人。", "我是中国人。", "我是日本人。"],
+    "traditionalOptions": ["我是美國人。", "我是中國人。", "我是日本人。"],
+    "optionPinyin": [
+      "wǒ shì Měiguó rén",
+      "wǒ shì Zhōngguó rén",
+      "wǒ shì Rìběn rén"
+    ],
+    "explanation": "Country name + 人 (rén, “person”) gives nationality: 美国人 / 美國人 is “American,” 中国人 / 中國人 is “Chinese,” and 日本人 is “Japanese.”",
+    "tags": ["introductions", "countries"]
+  },
+  {
+    "id": "ZH145",
+    "category": "numbers",
+    "level": "A1",
+    "question": "Seven",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["六", "八", "七"],
+    "traditionalOptions": ["六", "八", "七"],
+    "optionPinyin": ["liù", "bā", "qī"],
+    "explanation": "七 (qī) means “seven.” 六 (liù) is “six,” and 八 (bā) is “eight.” The characters are the same in both scripts.",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH146",
+    "category": "greetings",
+    "level": "A1",
+    "question": "You're welcome.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["谢谢。", "不客气。", "对不起。"],
+    "traditionalOptions": ["謝謝。", "不客氣。", "對不起。"],
+    "optionPinyin": ["xièxie", "bú kèqi", "duìbuqǐ"],
+    "explanation": "不客气 / 不客氣 (bú kèqi) means “you're welcome” (literally “don't be polite”). 谢谢 / 謝謝 is “thank you,” and 对不起 / 對不起 is “sorry.”",
+    "tags": ["greetings", "politeness"]
+  },
+  {
+    "id": "ZH147",
+    "category": "time",
+    "level": "A1",
+    "question": "Evening",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["早上", "下午", "晚上"],
+    "traditionalOptions": ["早上", "下午", "晚上"],
+    "optionPinyin": ["zǎoshang", "xiàwǔ", "wǎnshang"],
+    "explanation": "晚上 (wǎnshang) means “evening” or “night.” 早上 (zǎoshang) is “morning,” and 下午 (xiàwǔ) is “afternoon.”",
+    "tags": ["time", "basics"]
+  },
+  {
+    "id": "ZH148",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "I'd like a bowl of noodles.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我要一碗面条。", "我要一杯茶。", "我要一个苹果。"],
+    "traditionalOptions": ["我要一碗麵條。", "我要一杯茶。", "我要一個蘋果。"],
+    "optionPinyin": [
+      "wǒ yào yì wǎn miàntiáo",
+      "wǒ yào yì bēi chá",
+      "wǒ yào yí ge píngguǒ"
+    ],
+    "explanation": "碗 (wǎn) is the measure word for bowls, and 面条 / 麵條 (miàntiáo) means “noodles.” 杯 (bēi) is for cups, and 个 / 個 (ge) is a general measure word.",
+    "tags": ["food-drink", "measure-words"]
+  },
+  {
+    "id": "ZH149",
+    "category": "animals",
+    "level": "A1",
+    "question": "I have a dog.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我没有狗。", "我有一只狗。", "我喜欢狗。"],
+    "traditionalOptions": ["我沒有狗。", "我有一隻狗。", "我喜歡狗。"],
+    "optionPinyin": ["wǒ méiyǒu gǒu", "wǒ yǒu yì zhī gǒu", "wǒ xǐhuan gǒu"],
+    "explanation": "有 (yǒu) means “to have,” and 只 / 隻 (zhī) is the measure word for most animals. 没有 / 沒有 means “don't have,” and 喜欢 / 喜歡 means “like.”",
+    "tags": ["animals", "measure-words"]
+  },
+  {
+    "id": "ZH150",
+    "category": "shopping",
+    "level": "A2",
+    "question": "Can I pay by card?",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "可以便宜一点儿吗？",
+      "可以给我袋子吗？",
+      "可以刷卡吗？"
+    ],
+    "traditionalOptions": [
+      "可以便宜一點兒嗎？",
+      "可以給我袋子嗎？",
+      "可以刷卡嗎？"
+    ],
+    "optionPinyin": [
+      "kěyǐ piányi yìdiǎnr ma?",
+      "kěyǐ gěi wǒ dàizi ma?",
+      "kěyǐ shuā kǎ ma?"
+    ],
+    "explanation": "刷卡 (shuā kǎ) means “to pay by card” (literally “swipe a card”). 便宜一点儿 / 便宜一點兒 means “a bit cheaper,” and 袋子 (dàizi) means “bag.”",
+    "tags": ["shopping", "requests"]
+  },
+  {
+    "id": "ZH151",
+    "category": "travel",
+    "level": "A2",
+    "question": "I'd like one ticket to Beijing.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我要一张去上海的票。",
+      "我要一张去北京的票。",
+      "我要两张去北京的票。"
+    ],
+    "traditionalOptions": [
+      "我要一張去上海的票。",
+      "我要一張去北京的票。",
+      "我要兩張去北京的票。"
+    ],
+    "optionPinyin": [
+      "wǒ yào yì zhāng qù Shànghǎi de piào",
+      "wǒ yào yì zhāng qù Běijīng de piào",
+      "wǒ yào liǎng zhāng qù Běijīng de piào"
+    ],
+    "explanation": "张 / 張 (zhāng) is the measure word for tickets, and 去北京的票 means “a ticket to Beijing.” 一 means “one,” while 两 / 兩 means “two.”",
+    "tags": ["travel", "measure-words"]
+  },
+  {
+    "id": "ZH152",
+    "category": "daily-life",
+    "level": "A2",
+    "question": "I go to bed at eleven o'clock.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我十一点睡觉。", "我十一点起床。", "我十一点上班。"],
+    "traditionalOptions": [
+      "我十一點睡覺。",
+      "我十一點起床。",
+      "我十一點上班。"
+    ],
+    "optionPinyin": [
+      "wǒ shíyī diǎn shuìjiào",
+      "wǒ shíyī diǎn qǐchuáng",
+      "wǒ shíyī diǎn shàngbān"
+    ],
+    "explanation": "睡觉 / 睡覺 (shuìjiào) means “to sleep” or “to go to bed.” 起床 (qǐchuáng) means “to get up,” and 上班 (shàngbān) means “to go to work.”",
+    "tags": ["daily-life", "time"]
+  },
+  {
+    "id": "ZH153",
+    "category": "hobbies",
+    "level": "A2",
+    "question": "I'm learning to play the guitar.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我在学做饭。", "我在学游泳。", "我在学弹吉他。"],
+    "traditionalOptions": ["我在學做飯。", "我在學游泳。", "我在學彈吉他。"],
+    "optionPinyin": [
+      "wǒ zài xué zuò fàn",
+      "wǒ zài xué yóuyǒng",
+      "wǒ zài xué tán jítā"
+    ],
+    "explanation": "在 + verb marks an ongoing action, 学 / 學 (xué) means “to learn,” and 弹吉他 / 彈吉他 (tán jítā) means “to play the guitar.”",
+    "tags": ["hobbies", "music"]
+  },
+  {
+    "id": "ZH154",
+    "category": "weather",
+    "level": "A2",
+    "question": "It's a bit cold today, so wear more clothes.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "今天很热，少穿点儿衣服。",
+      "今天有点儿冷，多穿点儿衣服。",
+      "今天下雨，带把伞。"
+    ],
+    "traditionalOptions": [
+      "今天很熱，少穿點兒衣服。",
+      "今天有點兒冷，多穿點兒衣服。",
+      "今天下雨，帶把傘。"
+    ],
+    "optionPinyin": [
+      "jīntiān hěn rè, shǎo chuān diǎnr yīfu",
+      "jīntiān yǒudiǎnr lěng, duō chuān diǎnr yīfu",
+      "jīntiān xiàyǔ, dài bǎ sǎn"
+    ],
+    "explanation": "穿 (chuān) means “to wear” clothes. 多 (duō) means “more” and 少 (shǎo) means “less,” and 有点儿 / 有點兒 means “a bit.”",
+    "tags": ["weather", "advice"]
+  },
+  {
+    "id": "ZH155",
+    "category": "places",
+    "level": "A2",
+    "question": "The library closes at six o'clock.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "图书馆六点开门。",
+      "图书馆六点开会。",
+      "图书馆六点关门。"
+    ],
+    "traditionalOptions": [
+      "圖書館六點開門。",
+      "圖書館六點開會。",
+      "圖書館六點關門。"
+    ],
+    "optionPinyin": [
+      "túshūguǎn liù diǎn kāimén",
+      "túshūguǎn liù diǎn kāihuì",
+      "túshūguǎn liù diǎn guānmén"
+    ],
+    "explanation": "关门 / 關門 (guānmén) means “to close” (a shop or building), and 开门 / 開門 (kāimén) means “to open.” 开会 / 開會 means “to have a meeting.”",
+    "tags": ["places", "time"]
+  },
+  {
+    "id": "ZH156",
+    "category": "family",
+    "level": "A2",
+    "question": "My grandmother lives with us.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我奶奶跟我们住在一起。",
+      "我奶奶住在很远的地方。",
+      "我奶奶不住在家里。"
+    ],
+    "traditionalOptions": [
+      "我奶奶跟我們住在一起。",
+      "我奶奶住在很遠的地方。",
+      "我奶奶不住在家裡。"
+    ],
+    "optionPinyin": [
+      "wǒ nǎinai gēn wǒmen zhù zài yìqǐ",
+      "wǒ nǎinai zhù zài hěn yuǎn de dìfang",
+      "wǒ nǎinai bú zhù zài jiālǐ"
+    ],
+    "explanation": "跟……住在一起 (gēn…zhù zài yìqǐ) means “to live together with…”. 很远 / 很遠 (hěn yuǎn) means “very far.”",
+    "tags": ["family", "daily-life"]
+  },
+  {
+    "id": "ZH157",
+    "category": "health",
+    "level": "B1",
+    "question": "I've had a cough for three days.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "我三天后会咳嗽。",
+      "我咳嗽三天了。",
+      "我咳嗽了三次。"
+    ],
+    "traditionalOptions": [
+      "我三天後會咳嗽。",
+      "我咳嗽三天了。",
+      "我咳嗽了三次。"
+    ],
+    "optionPinyin": [
+      "wǒ sān tiān hòu huì késou",
+      "wǒ késou sān tiān le",
+      "wǒ késou le sān cì"
+    ],
+    "explanation": "Verb + duration + 了 (le) means “has been … for …”. 三天 means “three days,” while 三次 means “three times.”",
+    "tags": ["health", "duration"]
+  },
+  {
+    "id": "ZH158",
+    "category": "education",
+    "level": "B1",
+    "question": "I'm preparing for the HSK exam.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我正在准备HSK考试。",
+      "我已经通过了HSK考试。",
+      "我不想参加HSK考试。"
+    ],
+    "traditionalOptions": [
+      "我正在準備HSK考試。",
+      "我已經通過了HSK考試。",
+      "我不想參加HSK考試。"
+    ],
+    "optionPinyin": [
+      "wǒ zhèngzài zhǔnbèi HSK kǎoshì",
+      "wǒ yǐjīng tōngguò le HSK kǎoshì",
+      "wǒ bù xiǎng cānjiā HSK kǎoshì"
+    ],
+    "explanation": "正在 (zhèngzài) means “in the process of,” and 准备 / 準備 (zhǔnbèi) means “to prepare.” 参加 / 參加 (cānjiā) means “to take part in.”",
+    "tags": ["education", "progressive"]
+  },
+  {
+    "id": "ZH159",
+    "category": "daily-life",
+    "level": "B1",
+    "question": "Please be quiet; the baby is sleeping.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "请大声一点，宝宝在玩。",
+      "请进来，宝宝在哭。",
+      "请安静一点，宝宝在睡觉。"
+    ],
+    "traditionalOptions": [
+      "請大聲一點，寶寶在玩。",
+      "請進來，寶寶在哭。",
+      "請安靜一點，寶寶在睡覺。"
+    ],
+    "optionPinyin": [
+      "qǐng dàshēng yìdiǎn, bǎobao zài wán",
+      "qǐng jìnlái, bǎobao zài kū",
+      "qǐng ānjìng yìdiǎn, bǎobao zài shuìjiào"
+    ],
+    "explanation": "安静 / 安靜 (ānjìng) means “quiet,” and 宝宝 / 寶寶 (bǎobao) means “baby.” 大声 / 大聲 (dàshēng) means “loudly.”",
+    "tags": ["daily-life", "requests"]
+  },
+  {
+    "id": "ZH160",
+    "category": "sequence",
+    "level": "B1",
+    "question": "After I finish work, I go to the gym.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "下班以后，我去健身房。",
+      "去健身房以后，我下班。",
+      "我一边下班，一边去健身房。"
+    ],
+    "traditionalOptions": [
+      "下班以後，我去健身房。",
+      "去健身房以後，我下班。",
+      "我一邊下班，一邊去健身房。"
+    ],
+    "optionPinyin": [
+      "xiàbān yǐhòu, wǒ qù jiànshēnfáng",
+      "qù jiànshēnfáng yǐhòu, wǒ xiàbān",
+      "wǒ yìbiān xiàbān, yìbiān qù jiànshēnfáng"
+    ],
+    "explanation": "以后 / 以後 (yǐhòu) means “after,” and the earlier event comes first. 下班 (xiàbān) means “to finish work.”",
+    "tags": ["sequence", "daily-life"]
+  },
+  {
+    "id": "ZH161",
+    "category": "comparisons",
+    "level": "B1",
+    "question": "He is the tallest in our class.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "他比我们班的人矮。",
+      "他是我们班最高的。",
+      "他和我一样高。"
+    ],
+    "traditionalOptions": [
+      "他比我們班的人矮。",
+      "他是我們班最高的。",
+      "他和我一樣高。"
+    ],
+    "optionPinyin": [
+      "tā bǐ wǒmen bān de rén ǎi",
+      "tā shì wǒmen bān zuì gāo de",
+      "tā hé wǒ yíyàng gāo"
+    ],
+    "explanation": "最 (zuì) means “most” and forms superlatives: 最高 is “tallest.” 班 (bān) means “class,” and 矮 (ǎi) means “short.”",
+    "tags": ["comparisons", "school"]
+  },
+  {
+    "id": "ZH162",
+    "category": "plans",
+    "level": "B1",
+    "question": "It might rain tomorrow, so let's decide later.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "明天一定会下雨，所以我们不去了。",
+      "明天不会下雨，我们去爬山吧。",
+      "明天可能会下雨，我们以后再决定吧。"
+    ],
+    "traditionalOptions": [
+      "明天一定會下雨，所以我們不去了。",
+      "明天不會下雨，我們去爬山吧。",
+      "明天可能會下雨，我們以後再決定吧。"
+    ],
+    "optionPinyin": [
+      "míngtiān yídìng huì xiàyǔ, suǒyǐ wǒmen bú qù le",
+      "míngtiān bú huì xiàyǔ, wǒmen qù páshān ba",
+      "míngtiān kěnéng huì xiàyǔ, wǒmen yǐhòu zài juédìng ba"
+    ],
+    "explanation": "可能 (kěnéng) means “maybe” or “possibly,” while 一定 (yídìng) means “definitely.” 再 (zài) here means “then” or “later.”",
+    "tags": ["plans", "probability"]
+  },
+  {
+    "id": "ZH163",
+    "category": "requests",
+    "level": "B1",
+    "question": "Could you recommend a good restaurant?",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "你能推荐一家好餐厅吗？",
+      "你能帮我订一张机票吗？",
+      "你能告诉我现在几点吗？"
+    ],
+    "traditionalOptions": [
+      "你能推薦一家好餐廳嗎？",
+      "你能幫我訂一張機票嗎？",
+      "你能告訴我現在幾點嗎？"
+    ],
+    "optionPinyin": [
+      "nǐ néng tuījiàn yì jiā hǎo cāntīng ma?",
+      "nǐ néng bāng wǒ dìng yì zhāng jīpiào ma?",
+      "nǐ néng gàosu wǒ xiànzài jǐ diǎn ma?"
+    ],
+    "explanation": "推荐 / 推薦 (tuījiàn) means “to recommend,” and 家 (jiā) is the measure word for restaurants and businesses. 订机票 / 訂機票 means “to book a flight.”",
+    "tags": ["requests", "restaurants"]
+  },
+  {
+    "id": "ZH164",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Although he is over seventy, he still works every day.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "尽管他已经七十多岁了，还是每天工作。",
+      "因为他已经七十多岁了，所以每天工作。",
+      "如果他七十多岁了，就不工作。"
+    ],
+    "traditionalOptions": [
+      "儘管他已經七十多歲了，還是每天工作。",
+      "因為他已經七十多歲了，所以每天工作。",
+      "如果他七十多歲了，就不工作。"
+    ],
+    "optionPinyin": [
+      "jǐnguǎn tā yǐjīng qīshí duō suì le, háishi měitiān gōngzuò",
+      "yīnwèi tā yǐjīng qīshí duō suì le, suǒyǐ měitiān gōngzuò",
+      "rúguǒ tā qīshí duō suì le, jiù bù gōngzuò"
+    ],
+    "explanation": "尽管……还是…… / 儘管……還是…… (jǐnguǎn…háishi…) means “even though…, still…”. It is a somewhat formal way to express concession, similar to 虽然……但是……",
+    "tags": ["grammar", "concession"]
+  },
+  {
+    "id": "ZH165",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Take a coat so you don't catch a cold.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "带上外套，所以感冒了。",
+      "带上外套，以免感冒。",
+      "感冒了，以免带上外套。"
+    ],
+    "traditionalOptions": [
+      "帶上外套，所以感冒了。",
+      "帶上外套，以免感冒。",
+      "感冒了，以免帶上外套。"
+    ],
+    "optionPinyin": [
+      "dài shàng wàitào, suǒyǐ gǎnmào le",
+      "dài shàng wàitào, yǐmiǎn gǎnmào",
+      "gǎnmào le, yǐmiǎn dài shàng wàitào"
+    ],
+    "explanation": "以免 (yǐmiǎn) means “so as not to” or “lest.” It introduces the bad outcome that the first action is meant to prevent.",
+    "tags": ["grammar", "purpose"]
+  },
+  {
+    "id": "ZH166",
+    "category": "grammar",
+    "level": "B2",
+    "question": "I was moved by his story.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我把他的故事感动了。",
+      "他被我的故事感动了。",
+      "我被他的故事感动了。"
+    ],
+    "traditionalOptions": [
+      "我把他的故事感動了。",
+      "他被我的故事感動了。",
+      "我被他的故事感動了。"
+    ],
+    "optionPinyin": [
+      "wǒ bǎ tā de gùshi gǎndòng le",
+      "tā bèi wǒ de gùshi gǎndòng le",
+      "wǒ bèi tā de gùshi gǎndòng le"
+    ],
+    "explanation": "被……感动 / 被……感動 (bèi…gǎndòng) means “to be moved by…”. 被 marks the person affected (“I”) and introduces the cause (“his story”).",
+    "tags": ["grammar", "passive"]
+  },
+  {
+    "id": "ZH167",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Making mistakes is unavoidable when you first start learning.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "刚开始学习时，犯错是难免的。",
+      "刚开始学习时，犯错是不可能的。",
+      "刚开始学习时，犯错是不必要的。"
+    ],
+    "traditionalOptions": [
+      "剛開始學習時，犯錯是難免的。",
+      "剛開始學習時，犯錯是不可能的。",
+      "剛開始學習時，犯錯是不必要的。"
+    ],
+    "optionPinyin": [
+      "gāng kāishǐ xuéxí shí, fàncuò shì nánmiǎn de",
+      "gāng kāishǐ xuéxí shí, fàncuò shì bù kěnéng de",
+      "gāng kāishǐ xuéxí shí, fàncuò shì bú bìyào de"
+    ],
+    "explanation": "难免 / 難免 (nánmiǎn) means “unavoidable” or “bound to happen.” 犯错 / 犯錯 (fàncuò) means “to make a mistake.”",
+    "tags": ["grammar", "inevitability"]
+  },
+  {
+    "id": "ZH168",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Let's take advantage of the good weather and go for a walk.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "因为天气好，所以我们没出去。",
+      "趁着天气好，我们出去走走吧。",
+      "天气好的时候，我们已经回家了。"
+    ],
+    "traditionalOptions": [
+      "因為天氣好，所以我們沒出去。",
+      "趁著天氣好，我們出去走走吧。",
+      "天氣好的時候，我們已經回家了。"
+    ],
+    "optionPinyin": [
+      "yīnwèi tiānqì hǎo, suǒyǐ wǒmen méi chūqù",
+      "chènzhe tiānqì hǎo, wǒmen chūqù zǒuzou ba",
+      "tiānqì hǎo de shíhou, wǒmen yǐjīng huí jiā le"
+    ],
+    "explanation": "趁着 / 趁著 (chènzhe) means “taking advantage of” a good opportunity. 走走 (zǒuzou) is a reduplicated verb meaning “to stroll.”",
+    "tags": ["grammar", "opportunity"]
+  },
+  {
+    "id": "ZH169",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He failed; however, he didn't lose heart.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他失败了，因此他很灰心。",
+      "他成功了，然而他很灰心。",
+      "他失败了，然而他没有灰心。"
+    ],
+    "traditionalOptions": [
+      "他失敗了，因此他很灰心。",
+      "他成功了，然而他很灰心。",
+      "他失敗了，然而他沒有灰心。"
+    ],
+    "optionPinyin": [
+      "tā shībài le, yīncǐ tā hěn huīxīn",
+      "tā chénggōng le, rán'ér tā hěn huīxīn",
+      "tā shībài le, rán'ér tā méiyǒu huīxīn"
+    ],
+    "explanation": "然而 (rán'ér) means “however” and is a formal word signalling contrast. 因此 (yīncǐ) means “therefore,” and 灰心 (huīxīn) means “to lose heart.”",
+    "tags": ["grammar", "contrast"]
+  },
+  {
+    "id": "ZH170",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Whether or not he comes, we will start on time.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "不管他来不来，我们都会准时开始。",
+      "如果他来，我们就会准时开始。",
+      "因为他来了，所以我们准时开始。"
+    ],
+    "traditionalOptions": [
+      "不管他來不來，我們都會準時開始。",
+      "如果他來，我們就會準時開始。",
+      "因為他來了，所以我們準時開始。"
+    ],
+    "optionPinyin": [
+      "bùguǎn tā lái bu lái, wǒmen dōu huì zhǔnshí kāishǐ",
+      "rúguǒ tā lái, wǒmen jiù huì zhǔnshí kāishǐ",
+      "yīnwèi tā lái le, suǒyǐ wǒmen zhǔnshí kāishǐ"
+    ],
+    "explanation": "不管……都…… (bùguǎn…dōu…) means “regardless of whether…”. The verb-not-verb form 来不来 / 來不來 gives the two alternatives.",
+    "tags": ["grammar", "concession"]
+  },
+  {
+    "id": "ZH171",
+    "category": "grammar",
+    "level": "B2",
+    "question": "He could hardly believe his eyes.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他完全相信自己的眼睛。",
+      "他闭上了眼睛。",
+      "他简直不敢相信自己的眼睛。"
+    ],
+    "traditionalOptions": [
+      "他完全相信自己的眼睛。",
+      "他閉上了眼睛。",
+      "他簡直不敢相信自己的眼睛。"
+    ],
+    "optionPinyin": [
+      "tā wánquán xiāngxìn zìjǐ de yǎnjing",
+      "tā bì shàng le yǎnjing",
+      "tā jiǎnzhí bù gǎn xiāngxìn zìjǐ de yǎnjing"
+    ],
+    "explanation": "简直 / 簡直 (jiǎnzhí) means “simply” or “virtually” and adds emphasis. 不敢相信 (bù gǎn xiāngxìn) means “can't believe.”",
+    "tags": ["grammar", "emphasis"]
+  },
+  {
+    "id": "ZH172",
+    "category": "grammar",
+    "level": "B2",
+    "question": "She is very good at expressing her ideas.",
+    "correctAnswer": 1,
+    "simplifiedOptions": [
+      "她很不愿意表达自己的想法。",
+      "她很善于表达自己的想法。",
+      "她刚学会表达自己的想法。"
+    ],
+    "traditionalOptions": [
+      "她很不願意表達自己的想法。",
+      "她很善於表達自己的想法。",
+      "她剛學會表達自己的想法。"
+    ],
+    "optionPinyin": [
+      "tā hěn bú yuànyì biǎodá zìjǐ de xiǎngfǎ",
+      "tā hěn shànyú biǎodá zìjǐ de xiǎngfǎ",
+      "tā gāng xuéhuì biǎodá zìjǐ de xiǎngfǎ"
+    ],
+    "explanation": "善于 / 善於 (shànyú) means “to be good at,” and 表达 / 表達 (biǎodá) means “to express.” 愿意 / 願意 means “willing,” and 刚学会 / 剛學會 means “just learned how to.”",
+    "tags": ["grammar", "abilities"]
+  },
+  {
+    "id": "ZH173",
+    "category": "body",
+    "level": "A1",
+    "question": "Hand",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["手", "脚", "头"],
+    "traditionalOptions": ["手", "腳", "頭"],
+    "optionPinyin": ["shǒu", "jiǎo", "tóu"],
+    "explanation": "手 (shǒu) means “hand.” 脚 / 腳 (jiǎo) is “foot,” and 头 / 頭 (tóu) is “head.”",
+    "tags": ["body", "basics"]
+  },
+  {
+    "id": "ZH174",
+    "category": "food-drink",
+    "level": "A1",
+    "question": "Egg",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["鸡蛋", "牛肉", "鱼"],
+    "traditionalOptions": ["雞蛋", "牛肉", "魚"],
+    "optionPinyin": ["jīdàn", "niúròu", "yú"],
+    "explanation": "鸡蛋 / 雞蛋 (jīdàn) means “egg” (literally “chicken egg”). 牛肉 (niúròu) is “beef,” and 鱼 / 魚 (yú) is “fish.”",
+    "tags": ["food-drink", "basics"]
+  },
+  {
+    "id": "ZH175",
+    "category": "greetings",
+    "level": "A1",
+    "question": "Happy birthday!",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["新年快乐！", "早上好！", "生日快乐！"],
+    "traditionalOptions": ["新年快樂！", "早上好！", "生日快樂！"],
+    "optionPinyin": ["xīnnián kuàilè!", "zǎoshang hǎo!", "shēngrì kuàilè!"],
+    "explanation": "生日快乐 / 生日快樂 (shēngrì kuàilè) means “happy birthday.” 快乐 / 快樂 means “happy,” and 新年 (xīnnián) means “New Year.”",
+    "tags": ["greetings", "celebrations"]
+  },
+  {
+    "id": "ZH176",
+    "category": "numbers",
+    "level": "A1",
+    "question": "Nine",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["九", "六", "八"],
+    "traditionalOptions": ["九", "六", "八"],
+    "optionPinyin": ["jiǔ", "liù", "bā"],
+    "explanation": "九 (jiǔ) means “nine.” 六 (liù) is “six,” and 八 (bā) is “eight.” The characters are the same in both scripts.",
+    "tags": ["numbers", "basics"]
+  },
+  {
+    "id": "ZH177",
+    "category": "family",
+    "level": "A1",
+    "question": "My grandfather (father's side)",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我的奶奶", "我的爷爷", "我的爸爸"],
+    "traditionalOptions": ["我的奶奶", "我的爺爺", "我的爸爸"],
+    "optionPinyin": ["wǒ de nǎinai", "wǒ de yéye", "wǒ de bàba"],
+    "explanation": "爷爷 / 爺爺 (yéye) means “grandfather” on the father's side. 奶奶 (nǎinai) is the matching “grandmother,” and 爸爸 (bàba) is “dad.”",
+    "tags": ["family", "basics"]
+  },
+  {
+    "id": "ZH178",
+    "category": "everyday",
+    "level": "A1",
+    "question": "I'm thirsty.",
+    "correctAnswer": 2,
+    "simplifiedOptions": ["我很热。", "我累了。", "我渴了。"],
+    "traditionalOptions": ["我很熱。", "我累了。", "我渴了。"],
+    "optionPinyin": ["wǒ hěn rè", "wǒ lèi le", "wǒ kě le"],
+    "explanation": "渴 (kě) means “thirsty.” 热 / 熱 (rè) means “hot,” and 累 (lèi) means “tired.”",
+    "tags": ["everyday", "feelings"]
+  },
+  {
+    "id": "ZH179",
+    "category": "places",
+    "level": "A1",
+    "question": "He is at home.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["他在家。", "他在学校。", "他在商店。"],
+    "traditionalOptions": ["他在家。", "他在學校。", "他在商店。"],
+    "optionPinyin": ["tā zài jiā", "tā zài xuéxiào", "tā zài shāngdiàn"],
+    "explanation": "在 (zài) means “to be at,” and 家 (jiā) means “home.” 学校 / 學校 (xuéxiào) is “school,” and 商店 (shāngdiàn) is “shop.”",
+    "tags": ["places", "basics"]
+  },
+  {
+    "id": "ZH180",
+    "category": "weather",
+    "level": "A2",
+    "question": "It's windy today.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["今天刮风。", "今天下雪。", "今天很热。"],
+    "traditionalOptions": ["今天刮風。", "今天下雪。", "今天很熱。"],
+    "optionPinyin": ["jīntiān guāfēng", "jīntiān xiàxuě", "jīntiān hěn rè"],
+    "explanation": "刮风 / 刮風 (guāfēng) means “windy” (literally “the wind blows”). 下雪 (xiàxuě) means “to snow,” and 热 / 熱 (rè) means “hot.”",
+    "tags": ["weather", "everyday"]
+  },
+  {
+    "id": "ZH181",
+    "category": "directions",
+    "level": "A2",
+    "question": "How do I get to the museum?",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "博物馆几点开门？",
+      "博物馆多少钱？",
+      "博物馆怎么走？"
+    ],
+    "traditionalOptions": [
+      "博物館幾點開門？",
+      "博物館多少錢？",
+      "博物館怎麼走？"
+    ],
+    "optionPinyin": [
+      "bówùguǎn jǐ diǎn kāimén?",
+      "bówùguǎn duōshao qián?",
+      "bówùguǎn zěnme zǒu?"
+    ],
+    "explanation": "怎么走 / 怎麼走 (zěnme zǒu) means “how do I get there?” (literally “how to walk”). 几点开门 / 幾點開門 asks “what time does it open,” and 多少钱 / 多少錢 asks “how much.”",
+    "tags": ["directions", "travel"]
+  },
+  {
+    "id": "ZH182",
+    "category": "restaurants",
+    "level": "A2",
+    "question": "Is this spicy?",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["这个辣吗？", "这个贵吗？", "这个甜吗？"],
+    "traditionalOptions": ["這個辣嗎？", "這個貴嗎？", "這個甜嗎？"],
+    "optionPinyin": ["zhège là ma?", "zhège guì ma?", "zhège tián ma?"],
+    "explanation": "辣 (là) means “spicy.” 贵 / 貴 (guì) means “expensive,” and 甜 (tián) means “sweet.” 吗 / 嗎 (ma) turns a statement into a yes-or-no question.",
+    "tags": ["restaurants", "questions"]
+  },
+  {
+    "id": "ZH183",
+    "category": "daily-life",
+    "level": "A2",
+    "question": "I take a shower every evening.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我每天晚上洗澡。",
+      "我每天早上跑步。",
+      "我每天中午睡觉。"
+    ],
+    "traditionalOptions": [
+      "我每天晚上洗澡。",
+      "我每天早上跑步。",
+      "我每天中午睡覺。"
+    ],
+    "optionPinyin": [
+      "wǒ měitiān wǎnshang xǐzǎo",
+      "wǒ měitiān zǎoshang pǎobù",
+      "wǒ měitiān zhōngwǔ shuìjiào"
+    ],
+    "explanation": "洗澡 (xǐzǎo) means “to take a bath or shower,” and 晚上 (wǎnshang) means “evening.” 跑步 (pǎobù) means “to run,” and 中午 (zhōngwǔ) means “noon.”",
+    "tags": ["daily-life", "habits"]
+  },
+  {
+    "id": "ZH184",
+    "category": "school",
+    "level": "A2",
+    "question": "I have an English class tomorrow.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我明天有数学课。",
+      "我明天有音乐课。",
+      "我明天有英语课。"
+    ],
+    "traditionalOptions": [
+      "我明天有數學課。",
+      "我明天有音樂課。",
+      "我明天有英語課。"
+    ],
+    "optionPinyin": [
+      "wǒ míngtiān yǒu shùxué kè",
+      "wǒ míngtiān yǒu yīnyuè kè",
+      "wǒ míngtiān yǒu Yīngyǔ kè"
+    ],
+    "explanation": "英语 / 英語 (Yīngyǔ) means “English,” and 课 / 課 (kè) means “class” or “lesson.” 数学 / 數學 is “math,” and 音乐 / 音樂 is “music.”",
+    "tags": ["school", "subjects"]
+  },
+  {
+    "id": "ZH185",
+    "category": "health",
+    "level": "A2",
+    "question": "I have a fever.",
+    "correctAnswer": 0,
+    "simplifiedOptions": ["我发烧了。", "我咳嗽了。", "我受伤了。"],
+    "traditionalOptions": ["我發燒了。", "我咳嗽了。", "我受傷了。"],
+    "optionPinyin": ["wǒ fāshāo le", "wǒ késou le", "wǒ shòushāng le"],
+    "explanation": "发烧 / 發燒 (fāshāo) means “to have a fever.” 咳嗽 (késou) means “to cough,” and 受伤 / 受傷 (shòushāng) means “to get injured.”",
+    "tags": ["health", "symptoms"]
+  },
+  {
+    "id": "ZH186",
+    "category": "hobbies",
+    "level": "A2",
+    "question": "I like taking photos.",
+    "correctAnswer": 1,
+    "simplifiedOptions": ["我喜欢画画。", "我喜欢拍照。", "我喜欢跳舞。"],
+    "traditionalOptions": ["我喜歡畫畫。", "我喜歡拍照。", "我喜歡跳舞。"],
+    "optionPinyin": [
+      "wǒ xǐhuan huà huà",
+      "wǒ xǐhuan pāizhào",
+      "wǒ xǐhuan tiàowǔ"
+    ],
+    "explanation": "拍照 (pāizhào) means “to take photos.” 画画 / 畫畫 (huà huà) means “to draw,” and 跳舞 (tiàowǔ) means “to dance.”",
+    "tags": ["hobbies", "preferences"]
+  },
+  {
+    "id": "ZH187",
+    "category": "plans",
+    "level": "B1",
+    "question": "I haven't decided where to go yet.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我还没决定去哪里。",
+      "我已经决定去北京了。",
+      "我不知道谁去。"
+    ],
+    "traditionalOptions": [
+      "我還沒決定去哪裡。",
+      "我已經決定去北京了。",
+      "我不知道誰去。"
+    ],
+    "optionPinyin": [
+      "wǒ hái méi juédìng qù nǎlǐ",
+      "wǒ yǐjīng juédìng qù Běijīng le",
+      "wǒ bù zhīdào shéi qù"
+    ],
+    "explanation": "还没 / 還沒 (hái méi) means “not yet,” and 决定 / 決定 (juédìng) means “to decide.” 已经 / 已經 means “already,” and 谁 / 誰 means “who.”",
+    "tags": ["plans", "travel"]
+  },
+  {
+    "id": "ZH188",
+    "category": "opinions",
+    "level": "B1",
+    "question": "I think learning Chinese is not easy.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我觉得学中文不容易。",
+      "我觉得学中文很容易。",
+      "我觉得中文很有名。"
+    ],
+    "traditionalOptions": [
+      "我覺得學中文不容易。",
+      "我覺得學中文很容易。",
+      "我覺得中文很有名。"
+    ],
+    "optionPinyin": [
+      "wǒ juéde xué Zhōngwén bù róngyì",
+      "wǒ juéde xué Zhōngwén hěn róngyì",
+      "wǒ juéde Zhōngwén hěn yǒumíng"
+    ],
+    "explanation": "容易 (róngyì) means “easy,” so 不容易 means “not easy.” 有名 (yǒumíng) means “famous.”",
+    "tags": ["opinions", "learning"]
+  },
+  {
+    "id": "ZH189",
+    "category": "work",
+    "level": "B1",
+    "question": "I have to finish this report before Friday.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我这个星期五不用交报告。",
+      "我已经写完报告了。",
+      "我得在星期五以前写完这份报告。"
+    ],
+    "traditionalOptions": [
+      "我這個星期五不用交報告。",
+      "我已經寫完報告了。",
+      "我得在星期五以前寫完這份報告。"
+    ],
+    "optionPinyin": [
+      "wǒ zhège xīngqīwǔ búyòng jiāo bàogào",
+      "wǒ yǐjīng xiě wán bàogào le",
+      "wǒ děi zài xīngqīwǔ yǐqián xiě wán zhè fèn bàogào"
+    ],
+    "explanation": "得 (děi) means “must,” and 以前 (yǐqián) means “before.” 写完 / 寫完 (xiě wán) means “finish writing,” and 份 (fèn) is the measure word for reports and documents.",
+    "tags": ["work", "deadlines"]
+  },
+  {
+    "id": "ZH190",
+    "category": "experiences",
+    "level": "B1",
+    "question": "I've never been abroad.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我从来没出过国。",
+      "我去年出过两次国。",
+      "我打算明年出国。"
+    ],
+    "traditionalOptions": [
+      "我從來沒出過國。",
+      "我去年出過兩次國。",
+      "我打算明年出國。"
+    ],
+    "optionPinyin": [
+      "wǒ cónglái méi chū guo guó",
+      "wǒ qùnián chū guo liǎng cì guó",
+      "wǒ dǎsuàn míngnián chūguó"
+    ],
+    "explanation": "出国 / 出國 (chūguó) means “to go abroad,” and 从来没……过 / 從來沒……過 (cónglái méi…guo) means “have never…”. 打算 means “plan to.”",
+    "tags": ["experiences", "travel"]
+  },
+  {
+    "id": "ZH191",
+    "category": "emotions",
+    "level": "B1",
+    "question": "Don't worry; everything will be fine.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "别生气，下次再努力。",
+      "别紧张，我们明天再来。",
+      "别担心，一切都会好的。"
+    ],
+    "traditionalOptions": [
+      "別生氣，下次再努力。",
+      "別緊張，我們明天再來。",
+      "別擔心，一切都會好的。"
+    ],
+    "optionPinyin": [
+      "bié shēngqì, xià cì zài nǔlì",
+      "bié jǐnzhāng, wǒmen míngtiān zài lái",
+      "bié dānxīn, yíqiè dōu huì hǎo de"
+    ],
+    "explanation": "别 / 別 (bié) means “don't,” 担心 / 擔心 (dānxīn) means “to worry,” and 一切 (yíqiè) means “everything.” 生气 / 生氣 means “angry,” and 紧张 / 緊張 means “nervous.”",
+    "tags": ["emotions", "comfort"]
+  },
+  {
+    "id": "ZH192",
+    "category": "comparisons",
+    "level": "B1",
+    "question": "I used to be afraid of dogs, but now I'm not.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "我以前怕狗，现在不怕了。",
+      "我以前不怕狗，现在怕了。",
+      "我以前和现在都怕狗。"
+    ],
+    "traditionalOptions": [
+      "我以前怕狗，現在不怕了。",
+      "我以前不怕狗，現在怕了。",
+      "我以前和現在都怕狗。"
+    ],
+    "optionPinyin": [
+      "wǒ yǐqián pà gǒu, xiànzài bú pà le",
+      "wǒ yǐqián bú pà gǒu, xiànzài pà le",
+      "wǒ yǐqián hé xiànzài dōu pà gǒu"
+    ],
+    "explanation": "怕 (pà) means “to be afraid of,” and 不……了 (bù…le) means “no longer…”. 以前 means “before,” and 现在 / 現在 means “now.”",
+    "tags": ["comparisons", "change"]
+  },
+  {
+    "id": "ZH193",
+    "category": "requests",
+    "level": "B1",
+    "question": "Could you turn the volume down a bit?",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "你能把声音调大一点儿吗？",
+      "你能把音乐关掉吗？",
+      "你能把声音调小一点儿吗？"
+    ],
+    "traditionalOptions": [
+      "你能把聲音調大一點兒嗎？",
+      "你能把音樂關掉嗎？",
+      "你能把聲音調小一點兒嗎？"
+    ],
+    "optionPinyin": [
+      "nǐ néng bǎ shēngyīn tiáo dà yìdiǎnr ma?",
+      "nǐ néng bǎ yīnyuè guāndiào ma?",
+      "nǐ néng bǎ shēngyīn tiáo xiǎo yìdiǎnr ma?"
+    ],
+    "explanation": "调小 / 調小 (tiáo xiǎo) means “to turn down,” and 调大 / 調大 means “to turn up.” 声音 / 聲音 (shēngyīn) means “sound” or “volume,” and 关掉 / 關掉 means “to turn off.”",
+    "tags": ["requests", "politeness"]
+  },
+  {
+    "id": "ZH194",
+    "category": "grammar",
+    "level": "B2",
+    "question": "It's not so much that he's lazy as that he lacks confidence.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "与其说他懒，不如说他缺乏自信。",
+      "他不但懒，而且缺乏自信。",
+      "他虽然懒，但是很有自信。"
+    ],
+    "traditionalOptions": [
+      "與其說他懶，不如說他缺乏自信。",
+      "他不但懶，而且缺乏自信。",
+      "他雖然懶，但是很有自信。"
+    ],
+    "optionPinyin": [
+      "yǔqí shuō tā lǎn, bùrú shuō tā quēfá zìxìn",
+      "tā búdàn lǎn, érqiě quēfá zìxìn",
+      "tā suīrán lǎn, dànshì hěn yǒu zìxìn"
+    ],
+    "explanation": "与其说……不如说…… / 與其說……不如說…… (yǔqí shuō…bùrú shuō…) means “it's not so much … as …”. It offers a more accurate description in place of the first one.",
+    "tags": ["grammar", "correction"]
+  },
+  {
+    "id": "ZH195",
+    "category": "grammar",
+    "level": "B2",
+    "question": "I wanted to go out, but it just had to start raining.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "我想出去玩，所以下起雨来了。",
+      "我想出去玩，不过没有下雨。",
+      "我想出去玩，偏偏下起雨来了。"
+    ],
+    "traditionalOptions": [
+      "我想出去玩，所以下起雨來了。",
+      "我想出去玩，不過沒有下雨。",
+      "我想出去玩，偏偏下起雨來了。"
+    ],
+    "optionPinyin": [
+      "wǒ xiǎng chūqù wán, suǒyǐ xià qǐ yǔ lái le",
+      "wǒ xiǎng chūqù wán, búguò méiyǒu xiàyǔ",
+      "wǒ xiǎng chūqù wán, piānpiān xià qǐ yǔ lái le"
+    ],
+    "explanation": "偏偏 (piānpiān) means “just (unluckily)” and shows events going against one's wishes. 下起雨来 / 下起雨來 (xià qǐ yǔ lái) means “to start raining.”",
+    "tags": ["grammar", "unexpected"]
+  },
+  {
+    "id": "ZH196",
+    "category": "grammar",
+    "level": "B2",
+    "question": "As time goes by, his Chinese is getting better and better.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "随着时间的推移，他的中文越来越好。",
+      "随着时间的推移，他的中文越来越差。",
+      "虽然时间推移了，他的中文还是没变化。"
+    ],
+    "traditionalOptions": [
+      "隨著時間的推移，他的中文越來越好。",
+      "隨著時間的推移，他的中文越來越差。",
+      "雖然時間推移了，他的中文還是沒變化。"
+    ],
+    "optionPinyin": [
+      "suízhe shíjiān de tuīyí, tā de Zhōngwén yuèláiyuè hǎo",
+      "suízhe shíjiān de tuīyí, tā de Zhōngwén yuèláiyuè chà",
+      "suīrán shíjiān tuīyí le, tā de Zhōngwén háishi méi biànhuà"
+    ],
+    "explanation": "随着 / 隨著 (suízhe) means “along with” or “as,” and 越来越 / 越來越 (yuèláiyuè) means “more and more.” 差 (chà) means “poor,” so the second option says the opposite.",
+    "tags": ["grammar", "change"]
+  },
+  {
+    "id": "ZH197",
+    "category": "grammar",
+    "level": "B2",
+    "question": "The boss made him work overtime.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "他让老板加班了。",
+      "老板陪他加班了。",
+      "老板让他加班了。"
+    ],
+    "traditionalOptions": [
+      "他讓老闆加班了。",
+      "老闆陪他加班了。",
+      "老闆讓他加班了。"
+    ],
+    "optionPinyin": [
+      "tā ràng lǎobǎn jiābān le",
+      "lǎobǎn péi tā jiābān le",
+      "lǎobǎn ràng tā jiābān le"
+    ],
+    "explanation": "A 让 / 讓 (ràng) B + verb means “A makes (or lets) B do…”. The person right after 让 is the one who does the action, so here 他 (he) works overtime. 陪 (péi) means “to accompany.”",
+    "tags": ["grammar", "causative"]
+  },
+  {
+    "id": "ZH198",
+    "category": "grammar",
+    "level": "B2",
+    "question": "In fact, he knew all along; he just didn't say anything.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "其实他早就知道了，只是没说。",
+      "其实他刚知道，所以没说。",
+      "其实他不知道，所以说了。"
+    ],
+    "traditionalOptions": [
+      "其實他早就知道了，只是沒說。",
+      "其實他剛知道，所以沒說。",
+      "其實他不知道，所以說了。"
+    ],
+    "optionPinyin": [
+      "qíshí tā zǎo jiù zhīdào le, zhǐshì méi shuō",
+      "qíshí tā gāng zhīdào, suǒyǐ méi shuō",
+      "qíshí tā bù zhīdào, suǒyǐ shuō le"
+    ],
+    "explanation": "其实 / 其實 (qíshí) means “in fact,” 早就……了 (zǎo jiù…le) means “already long ago,” and 只是 (zhǐshì) means “it's just that…”.",
+    "tags": ["grammar", "emphasis"]
+  },
+  {
+    "id": "ZH199",
+    "category": "grammar",
+    "level": "B2",
+    "question": "If it hadn't been for your help, I couldn't have finished.",
+    "correctAnswer": 2,
+    "simplifiedOptions": [
+      "因为你帮忙，我才没完成。",
+      "虽然你帮忙，我还是完成了。",
+      "要不是你帮忙，我就完不成了。"
+    ],
+    "traditionalOptions": [
+      "因為你幫忙，我才沒完成。",
+      "雖然你幫忙，我還是完成了。",
+      "要不是你幫忙，我就完不成了。"
+    ],
+    "optionPinyin": [
+      "yīnwèi nǐ bāngmáng, wǒ cái méi wánchéng",
+      "suīrán nǐ bāngmáng, wǒ háishi wánchéng le",
+      "yàobushi nǐ bāngmáng, wǒ jiù wán bù chéng le"
+    ],
+    "explanation": "要不是……就…… (yàobushi…jiù…) means “if it weren't for…, then…”. 完不成 (wán bù chéng) is a potential complement meaning “unable to complete.”",
+    "tags": ["grammar", "counterfactual"]
+  },
+  {
+    "id": "ZH200",
+    "category": "grammar",
+    "level": "B2",
+    "question": "Needless to say, health is more important than money.",
+    "correctAnswer": 0,
+    "simplifiedOptions": [
+      "不用说，健康比金钱更重要。",
+      "不用说，金钱比健康更重要。",
+      "不用说，健康和金钱一样重要。"
+    ],
+    "traditionalOptions": [
+      "不用說，健康比金錢更重要。",
+      "不用說，金錢比健康更重要。",
+      "不用說，健康和金錢一樣重要。"
+    ],
+    "optionPinyin": [
+      "búyòng shuō, jiànkāng bǐ jīnqián gèng zhòngyào",
+      "búyòng shuō, jīnqián bǐ jiànkāng gèng zhòngyào",
+      "búyòng shuō, jiànkāng hé jīnqián yíyàng zhòngyào"
+    ],
+    "explanation": "不用说 / 不用說 (búyòng shuō) means “needless to say.” A 比 B 更 + adjective means “A is even more … than B,” so the word order decides which one matters more.",
+    "tags": ["grammar", "comparisons"]
   }
 ]
