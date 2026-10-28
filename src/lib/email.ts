@@ -15,6 +15,8 @@ export type Env = {
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
   ADMIN_EMAIL?: string;
+  SUPABASE_URL?: string;
+  SUPABASE_ANON_KEY?: string;
 };
 
 export const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
