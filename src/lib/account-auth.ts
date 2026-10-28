@@ -25,6 +25,33 @@ export function hasCompletedDailyQuiz(distinctCorrectAnswers: number): boolean {
   return Number.isInteger(distinctCorrectAnswers) && distinctCorrectAnswers >= 5;
 }
 
+export function calculateCurrentStreak(completedDates: Iterable<string>, today: string) {
+  const dates = new Set(completedDates);
+  const previousDate = (date: string) => {
+    const value = new Date(`${date}T00:00:00Z`);
+    value.setUTCDate(value.getUTCDate() - 1);
+    return value.toISOString().slice(0, 10);
+  };
+  const yesterday = previousDate(today);
+  let cursor = dates.has(today) ? today : yesterday;
+  let currentStreak = 0;
+  while (dates.has(cursor)) {
+    currentStreak++;
+    cursor = previousDate(cursor);
+  }
+  return { currentStreak, completedToday: dates.has(today) };
+}
+
+export function rankLeaderboard<T extends { score: number }>(rows: T[]) {
+  let rank = 0;
+  let priorScore: number | null = null;
+  return rows.map((row, index) => {
+    if (priorScore !== row.score) rank = index + 1;
+    priorScore = row.score;
+    return { ...row, rank };
+  });
+}
+
 export function dublinLocalDate(now = new Date()): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Europe/Dublin", year: "numeric", month: "2-digit", day: "2-digit",
