@@ -2416,5 +2416,64 @@
     "explanation": "Regular verbs form past-tense questions with ar, which replaces the d’ of the statement: D’ól tú becomes Ar ól tú? An is used for present and future questions. Literally: Ar ól tú an bainne? = “did-drink you the milk?”.",
     "phrase": "Ar ól tú an bainne?",
     "tags": ["past_tense", "questions", "verbs"]
+  },
+  {
+    "id": "ga-216",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “fuinneog” mean?",
+    "options": ["door", "floor", "window"],
+    "correctAnswer": 2,
+    "explanation": "Fuinneog is a feminine noun meaning “window”, so with the article it lenites: an fhuinneog. Doras is “door” and urlár is “floor”. Literally: fuinneog = “window”.",
+    "phrase": "an fhuinneog",
+    "tags": ["house", "nouns", "feminine_nouns"]
+  },
+  {
+    "id": "ga-217",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Which means “the biggest house”?",
+    "options": ["an teach is mó", "an teach níos mó", "an teach mó"],
+    "correctAnswer": 0,
+    "explanation": "The superlative is formed with is + the comparative form of the adjective, and mór becomes mó. Níos mó means “bigger” and is used when comparing, and mó can’t stand alone after the noun. Literally: an teach is mó = “the house that-is biggest”.",
+    "phrase": "an teach is mó",
+    "tags": ["superlative", "adjectives", "comparison"]
+  },
+  {
+    "id": "ga-218",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “I would go if I could”?",
+    "options": [
+      "Rachaidh mé má fhéadaim.",
+      "Rachainn dá bhféadfainn.",
+      "Rachainn má fhéadfainn."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Unreal or hypothetical conditions use dá with the conditional, and dá causes eclipsis: féadfainn → bhféadfainn. Má is for real conditions and doesn’t take the conditional, so Rachaidh mé má fhéadaim means “I will go if I can”. Literally: Rachainn dá bhféadfainn = “would-go-I if could-I”.",
+    "phrase": "Rachainn dá bhféadfainn.",
+    "tags": ["conditional", "eclipsis", "irregular_verbs"]
+  },
+  {
+    "id": "ga-219",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “He was a teacher”?",
+    "options": ["Is múinteoir é.", "Bhí sé múinteoir.", "Ba mhúinteoir é."],
+    "correctAnswer": 2,
+    "explanation": "Saying what someone is (or was) uses the copula, and its past form ba lenites the noun: múinteoir → mhúinteoir. Is múinteoir é is present tense, and bhí can’t link directly to a noun like this. Literally: Ba mhúinteoir é = “was teacher him”.",
+    "phrase": "Ba mhúinteoir é.",
+    "tags": ["copula", "past_tense", "lenition", "jobs"]
+  },
+  {
+    "id": "ga-220",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "Which means “during the night”?",
+    "options": ["i rith na hoíche", "i rith an oíche", "i rith na oíche"],
+    "correctAnswer": 0,
+    "explanation": "I rith is followed by the genitive case. Oíche is feminine, so the genitive article is na, which adds h before a vowel: na hoíche. An oíche is the plain (nominative) form. Literally: i rith na hoíche = “in course of-the night”.",
+    "phrase": "i rith na hoíche",
+    "tags": ["genitive_case", "feminine_nouns", "time", "compound_prepositions"]
   }
 ]
