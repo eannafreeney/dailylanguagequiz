@@ -52,19 +52,21 @@ export async function leaderboardHandler(c: Context) {
   return c.json({ language: langCode, entries });
 }
 
-export async function recordVerifiedCorrectAnswer(c: Context, env: Env, userId: string, langCode: string, questionId: string) {
+export async function recordVerifiedCorrectAnswer(env: Env, userId: string, langCode: string, questionId: string) {
   const localDate = dublinLocalDate();
   await env.DB.prepare(
     "INSERT OR IGNORE INTO account_quiz_answers (user_id, local_date, lang_code, question_id) VALUES (?, ?, ?, ?)",
   ).bind(userId, localDate, langCode, questionId).run();
 }
 
-export async function recordAccountCompletion(c: Context, env: Env, userId: string, langCode: string) {
+export async function recordAccountCompletion(env: Env, userId: string, langCode: string) {
   const localDate = dublinLocalDate();
   const result = await env.DB.prepare(
     "SELECT COUNT(*) AS score FROM account_quiz_answers WHERE user_id = ? AND local_date = ? AND lang_code = ?",
   ).bind(userId, localDate, langCode).first<{ score: number }>();
+  // A streak day requires all five distinct questions to be answered correctly.
+  if ((result?.score ?? 0) < 5) return;
   await env.DB.prepare(
     "INSERT OR IGNORE INTO account_quiz_completions (user_id, local_date, lang_code, score) VALUES (?, ?, ?, ?)",
-  ).bind(userId, localDate, langCode, Math.min(5, result?.score ?? 0)).run();
+  ).bind(userId, localDate, langCode, 5).run();
 }
