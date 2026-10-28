@@ -1,6 +1,9 @@
 import type { Context } from "hono";
 import type { Env } from "../lib/email";
 import { getAuthenticatedUser, dublinLocalDate } from "../lib/account-auth";
+import { getDb } from "../lib/db";
+import { accountQuizAnswers, accountQuizCompletions, userProfiles } from "../lib/schema";
+import { and, asc, count, desc, eq, sql } from "drizzle-orm";
 import { isLangCode } from "../utils";
 
 const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
@@ -9,10 +12,10 @@ export async function meHandler(c: Context) {
   const env = getEnv(c);
   const user = await getAuthenticatedUser(c, env);
   if (!user) return c.json({ error: "Authentication required" }, 401);
-  const profile = await env.DB.prepare(
-    "SELECT display_name FROM user_profiles WHERE user_id = ?",
-  ).bind(user.id).first<{ display_name: string }>();
-  return c.json({ id: user.id, displayName: profile?.display_name ?? null });
+  const db = getDb(env.DB);
+  const [profile] = await db.select({ displayName: userProfiles.displayName })
+    .from(userProfiles).where(eq(userProfiles.userId, user.id)).limit(1);
+  return c.json({ id: user.id, displayName: profile?.displayName ?? null });
 }
 
 export async function profileHandler(c: Context) {
@@ -28,9 +31,14 @@ export async function profileHandler(c: Context) {
     return c.json({ error: "Display name must be 2–24 letters, numbers, spaces, dots, dashes or underscores." }, 400);
   }
   const normalized = displayName.trim().replace(/\s+/g, " ");
-  await env.DB.prepare(
-    "INSERT INTO user_profiles (user_id, display_name) VALUES (?, ?) ON CONFLICT(user_id) DO UPDATE SET display_name = excluded.display_name, updated_at = datetime('now')",
-  ).bind(user.id, normalized).run();
+  await getDb(env.DB).insert(userProfiles).values({
+    userId: user.id,
+    displayName: normalized,
+    updatedAt: sql`datetime('now')`,
+  }).onConflictDoUpdate({
+    target: userProfiles.userId,
+    set: { displayName: normalized, updatedAt: sql`datetime('now')` },
+  });
   return c.json({ displayName: normalized });
 }
 
@@ -38,13 +46,18 @@ export async function leaderboardHandler(c: Context) {
   const env = getEnv(c);
   const langCode = c.req.query("lang");
   if (!langCode || !isLangCode(langCode)) return c.json({ error: "Invalid language" }, 400);
-  const { results } = await env.DB.prepare(
-    "SELECT p.display_name AS displayName, COUNT(a.question_id) AS score FROM user_profiles p JOIN account_quiz_answers a ON a.user_id = p.user_id WHERE a.lang_code = ? GROUP BY p.user_id, p.display_name ORDER BY score DESC, displayName COLLATE NOCASE ASC LIMIT 100",
-  ).bind(langCode).all<{ displayName: string; score: number }>();
-  // The alphabetic order is presentation only; equal scores are still equal ranks.
+  const rows = await getDb(env.DB).select({
+    displayName: userProfiles.displayName,
+    score: count(accountQuizAnswers.questionId),
+  }).from(userProfiles)
+    .innerJoin(accountQuizAnswers, eq(accountQuizAnswers.userId, userProfiles.userId))
+    .where(eq(accountQuizAnswers.langCode, langCode))
+    .groupBy(userProfiles.userId, userProfiles.displayName)
+    .orderBy(desc(count(accountQuizAnswers.questionId)), sql`lower(${userProfiles.displayName}) asc`)
+    .limit(100);
   let rank = 0;
   let priorScore: number | null = null;
-  const entries = results.map((row, index) => {
+  const entries = rows.map((row, index) => {
     if (priorScore !== row.score) rank = index + 1;
     priorScore = row.score;
     return { rank, displayName: row.displayName, score: row.score };
@@ -52,16 +65,18 @@ export async function leaderboardHandler(c: Context) {
   return c.json({ language: langCode, entries });
 }
 
-
 export async function streaksHandler(c: Context) {
   const env = getEnv(c);
   const user = await getAuthenticatedUser(c, env);
   if (!user) return c.json({ error: "Authentication required" }, 401);
-  const { results } = await env.DB.prepare(
-    "SELECT lang_code AS langCode, local_date AS localDate FROM account_quiz_completions WHERE user_id = ? ORDER BY local_date DESC",
-  ).bind(user.id).all<{ langCode: string; localDate: string }>();
+  const rows = await getDb(env.DB).select({
+    langCode: accountQuizCompletions.langCode,
+    localDate: accountQuizCompletions.localDate,
+  }).from(accountQuizCompletions)
+    .where(eq(accountQuizCompletions.userId, user.id))
+    .orderBy(desc(accountQuizCompletions.localDate));
   const byLanguage = new Map<string, Set<string>>();
-  for (const row of results) {
+  for (const row of rows) {
     const dates = byLanguage.get(row.langCode) ?? new Set<string>();
     dates.add(row.localDate);
     byLanguage.set(row.langCode, dates);
@@ -73,35 +88,37 @@ export async function streaksHandler(c: Context) {
   const streaks = ["ga", "de", "ru", "it", "zh"].map((langCode) => {
     const dates = byLanguage.get(langCode) ?? new Set<string>();
     let cursor = dates.has(today) ? today : yesterday;
-    let count = 0;
+    let currentStreak = 0;
     if (dates.has(cursor)) {
       while (dates.has(cursor)) {
-        count++;
+        currentStreak++;
         const previous = new Date(`${cursor}T00:00:00Z`);
         previous.setUTCDate(previous.getUTCDate() - 1);
         cursor = previous.toISOString().slice(0, 10);
       }
     }
-    return { language: langCode, currentStreak: count, completedToday: dates.has(today) };
+    return { language: langCode, currentStreak, completedToday: dates.has(today) };
   });
   return c.json({ streaks });
 }
 
 export async function recordVerifiedCorrectAnswer(env: Env, userId: string, langCode: string, questionId: string) {
-  const localDate = dublinLocalDate();
-  await env.DB.prepare(
-    "INSERT OR IGNORE INTO account_quiz_answers (user_id, local_date, lang_code, question_id) VALUES (?, ?, ?, ?)",
-  ).bind(userId, localDate, langCode, questionId).run();
+  await getDb(env.DB).insert(accountQuizAnswers).values({
+    userId, localDate: dublinLocalDate(), langCode, questionId,
+  }).onConflictDoNothing();
 }
 
 export async function recordAccountCompletion(env: Env, userId: string, langCode: string) {
   const localDate = dublinLocalDate();
-  const result = await env.DB.prepare(
-    "SELECT COUNT(*) AS score FROM account_quiz_answers WHERE user_id = ? AND local_date = ? AND lang_code = ?",
-  ).bind(userId, localDate, langCode).first<{ score: number }>();
-  // A streak day requires all five distinct questions to be answered correctly.
+  const [result] = await getDb(env.DB).select({
+    score: count(accountQuizAnswers.questionId),
+  }).from(accountQuizAnswers).where(and(
+    eq(accountQuizAnswers.userId, userId),
+    eq(accountQuizAnswers.localDate, localDate),
+    eq(accountQuizAnswers.langCode, langCode),
+  ));
   if ((result?.score ?? 0) < 5) return;
-  await env.DB.prepare(
-    "INSERT OR IGNORE INTO account_quiz_completions (user_id, local_date, lang_code, score) VALUES (?, ?, ?, ?)",
-  ).bind(userId, localDate, langCode, 5).run();
+  await getDb(env.DB).insert(accountQuizCompletions).values({
+    userId, localDate, langCode, score: 5,
+  }).onConflictDoNothing();
 }
