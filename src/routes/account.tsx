@@ -6,13 +6,145 @@ const AccountPage = ({ supabaseUrl, anonKey }: { supabaseUrl: string; anonKey: s
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Account & leaderboard — Daily Language Quiz</title>
+      <title>Account &amp; leaderboard — Daily Language Quiz</title>
       <link rel="stylesheet" href="/tailwind.css" />
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+      <script dangerouslySetInnerHTML={{ __html: `
+document.addEventListener("alpine:init", () => {
+  Alpine.data("accountPage", () => ({
+    supabaseUrl: document.body.dataset.supabaseUrl || "",
+    anonKey: document.body.dataset.supabaseAnonKey || "",
+    tokenKey: "dlq_access_token",
+    token: "",
+    status: "Checking account setup…",
+    email: "",
+    displayName: "",
+    signedIn: false,
+    sendingLink: false,
+    savingProfile: false,
+    selectedLanguage: "ga",
+    leaderboardLoading: false,
+    leaderboardError: "",
+    leaderboardEntries: [],
+    streaks: [],
+    languageNames: { ga: "Irish", de: "German", ru: "Russian", it: "Italian", zh: "Chinese" },
+    languages: [
+      { code: "ga", name: "Irish" },
+      { code: "de", name: "German" },
+      { code: "ru", name: "Russian" },
+      { code: "it", name: "Italian" },
+      { code: "zh", name: "Chinese" }
+    ],
+    async init() {
+      this.token = localStorage.getItem(this.tokenKey) || "";
+      const hash = new URLSearchParams(location.hash.replace(/^#/, ""));
+      const incomingToken = hash.get("access_token");
+      if (incomingToken) {
+        this.token = incomingToken;
+        localStorage.setItem(this.tokenKey, this.token);
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+      if (!this.supabaseUrl || !this.anonKey) {
+        this.status = "Account sign-in is not configured on this deployment yet. Guest quizzes remain available.";
+      } else if (this.token) {
+        await this.loadMe();
+      } else {
+        this.status = "You can browse leaderboards without an account. Sign in to save your own progress.";
+      }
+      await this.loadLeaderboard();
+    },
+    async api(path, options = {}) {
+      const headers = Object.assign({ "Content-Type": "application/json" }, options.headers || {});
+      if (this.token) headers.Authorization = "Bearer " + this.token;
+      const response = await fetch(path, Object.assign({}, options, { headers }));
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.error || "Request failed (" + response.status + ")");
+      return data;
+    },
+    async sendMagicLink() {
+      if (!this.supabaseUrl || !this.anonKey) return;
+      this.sendingLink = true;
+      try {
+        const response = await fetch(new URL("/auth/v1/otp?redirect_to=" + encodeURIComponent(location.origin + "/account"), this.supabaseUrl), {
+          method: "POST",
+          headers: { "Content-Type": "application/json", apikey: this.anonKey },
+          body: JSON.stringify({ email: this.email.trim(), create_user: true })
+        });
+        if (!response.ok) throw new Error("Could not send sign-in email. Check the address and try again.");
+        this.status = "Check your inbox for your secure sign-in link. You can close this page while you wait.";
+      } catch (error) {
+        this.status = error instanceof Error ? error.message : "Could not send sign-in email.";
+      } finally {
+        this.sendingLink = false;
+      }
+    },
+    async loadMe() {
+      try {
+        const me = await this.api("/api/me");
+        this.displayName = me.displayName || "";
+        this.signedIn = true;
+        this.status = "Signed in. Save a display name to appear on leaderboards.";
+        await this.loadStreaks();
+      } catch {
+        localStorage.removeItem(this.tokenKey);
+        this.token = "";
+        this.signedIn = false;
+        this.status = "Your sign-in link may have expired. Please request a new one.";
+      }
+    },
+    async saveProfile() {
+      this.savingProfile = true;
+      try {
+        const data = await this.api("/api/profile", {
+          method: "PUT",
+          body: JSON.stringify({ displayName: this.displayName })
+        });
+        this.displayName = data.displayName;
+        this.status = "Display name saved.";
+        await this.loadLeaderboard();
+      } catch (error) {
+        this.status = error instanceof Error ? error.message : "Could not save display name.";
+      } finally {
+        this.savingProfile = false;
+      }
+    },
+    signOut() {
+      localStorage.removeItem(this.tokenKey);
+      this.token = "";
+      this.signedIn = false;
+      this.streaks = [];
+      this.status = "You are signed out. Your saved scores remain on the leaderboard.";
+    },
+    async loadStreaks() {
+      try {
+        const data = await this.api("/api/streaks");
+        this.streaks = data.streaks;
+      } catch (error) {
+        this.status = error instanceof Error ? error.message : "Could not load streaks.";
+      }
+    },
+    async loadLeaderboard() {
+      this.leaderboardLoading = true;
+      this.leaderboardError = "";
+      try {
+        const data = await this.api("/api/leaderboard?lang=" + encodeURIComponent(this.selectedLanguage));
+        this.leaderboardEntries = data.entries || [];
+      } catch (error) {
+        this.leaderboardError = error instanceof Error ? error.message : "Could not load leaderboard.";
+      } finally {
+        this.leaderboardLoading = false;
+      }
+    }
+  }));
+});
+` }} />
     </head>
     <body
       class="min-h-screen bg-slate-50 text-slate-900"
       data-supabase-url={supabaseUrl}
       data-supabase-anon-key={anonKey}
+      x-data="accountPage"
+      x-init="init()"
     >
       <header class="border-b border-slate-200 bg-white">
         <nav class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
@@ -25,31 +157,38 @@ const AccountPage = ({ supabaseUrl, anonKey }: { supabaseUrl: string; anonKey: s
         <p class="mt-2 max-w-2xl leading-7 text-slate-600">
           Quizzes stay free to play without an account. Sign in to save correct answers, build streaks, and appear on language leaderboards.
         </p>
-        <p id="status" class="mt-5 rounded-xl bg-white p-4 text-sm text-slate-700" role="status" aria-live="polite">
-          Checking account setup…
-        </p>
-        <section id="signin-panel" class="mt-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="mt-5 rounded-xl bg-white p-4 text-sm text-slate-700" role="status" aria-live="polite" x-text="status"></p>
+        <section x-show="!signedIn" x-cloak class="mt-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 class="text-xl font-semibold">Sign in with email</h2>
           <p class="mt-1 text-sm leading-6 text-slate-600">We’ll email you a secure sign-in link. No password needed.</p>
-          <form id="signin-form" class="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
+          <form @submit.prevent="sendMagicLink()" class="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
             <label class="sr-only" for="email">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
-            <button class="rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700" type="submit">Email me a link</button>
+            <input x-model="email" id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
+            <button :disabled="sendingLink || !supabaseUrl || !anonKey" class="rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700 disabled:opacity-50" type="submit" x-text="sendingLink ? 'Sending…' : 'Email me a link'"></button>
           </form>
         </section>
-        <section id="profile-panel" class="mt-5 hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <section x-show="signedIn" x-cloak class="mt-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <h2 class="text-xl font-semibold">Leaderboard profile</h2>
-            <button id="signout" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium hover:bg-slate-50" type="button">Sign out</button>
+            <button @click="signOut()" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium hover:bg-slate-50" type="button">Sign out</button>
           </div>
           <p class="mt-1 text-sm text-slate-600">Only your display name and aggregate correct-answer score appear publicly.</p>
-          <form id="profile-form" class="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
+          <form @submit.prevent="saveProfile()" class="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
             <label class="sr-only" for="display-name">Display name</label>
-            <input id="display-name" name="displayName" minlength={2} maxlength={24} required placeholder="Choose a display name" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
-            <button class="rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700" type="submit">Save name</button>
+            <input x-model="displayName" id="display-name" name="displayName" minlength={2} maxlength={24} required placeholder="Choose a display name" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
+            <button :disabled="savingProfile" class="rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700 disabled:opacity-50" type="submit" x-text="savingProfile ? 'Saving…' : 'Save name'"></button>
           </form>
           <h3 class="mt-7 text-lg font-semibold">Your streaks</h3>
-          <div id="streaks" class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-5"><p class="text-sm text-slate-500">Loading streaks…</p></div>
+          <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <template x-for="item in streaks" :key="item.language">
+              <div class="rounded-xl bg-slate-50 p-3">
+                <p class="text-sm font-semibold" x-text="languageNames[item.language] || item.language"></p>
+                <p class="mt-1 text-2xl font-bold"><span x-text="item.currentStreak"></span> <span class="text-sm font-medium text-slate-500">days</span></p>
+                <p class="mt-1 text-xs text-slate-500" x-text="item.completedToday ? 'Completed today' : 'Complete all 5 correctly to keep your streak'"></p>
+              </div>
+            </template>
+            <p x-show="streaks.length === 0" class="text-sm text-slate-500">Your streaks will appear here after you complete a quiz.</p>
+          </div>
         </section>
         <section class="mt-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <div class="flex flex-wrap items-end justify-between gap-3">
@@ -58,118 +197,28 @@ const AccountPage = ({ supabaseUrl, anonKey }: { supabaseUrl: string; anonKey: s
               <p class="mt-1 text-sm text-slate-600">All-time total correct answers. Equal scores share the same rank.</p>
             </div>
             <label class="text-sm font-medium">Language
-              <select id="leaderboard-language" class="ml-2 rounded-lg border border-slate-300 bg-white px-3 py-2">
-                <option value="ga">Irish</option><option value="de">German</option><option value="ru">Russian</option><option value="it">Italian</option><option value="zh">Chinese</option>
+              <select x-model="selectedLanguage" @change="loadLeaderboard()" class="ml-2 rounded-lg border border-slate-300 bg-white px-3 py-2">
+                <template x-for="language in languages" :key="language.code">
+                  <option :value="language.code" x-text="language.name"></option>
+                </template>
               </select>
             </label>
           </div>
-          <div id="leaderboard" class="mt-4 overflow-x-auto"><p class="text-sm text-slate-500">Loading leaderboard…</p></div>
+          <div class="mt-4 overflow-x-auto">
+            <p x-show="leaderboardLoading" class="text-sm text-slate-500">Loading leaderboard…</p>
+            <p x-show="leaderboardError" class="text-sm text-red-700" x-text="leaderboardError"></p>
+            <p x-show="!leaderboardLoading && !leaderboardError && leaderboardEntries.length === 0" class="text-sm text-slate-500">No scores yet. Sign in and answer questions correctly to be the first!</p>
+            <table x-show="!leaderboardLoading && !leaderboardError && leaderboardEntries.length > 0" class="w-full text-left text-sm">
+              <thead><tr class="border-b border-slate-200 text-slate-500"><th class="py-3 pr-4">Rank</th><th class="py-3 pr-4">Display name</th><th class="py-3 text-right">Correct answers</th></tr></thead>
+              <tbody>
+                <template x-for="entry in leaderboardEntries" :key="entry.displayName + '-' + entry.rank + '-' + entry.score">
+                  <tr class="border-b border-slate-100"><td class="py-3 pr-4" x-text="entry.rank"></td><td class="py-3 pr-4 font-medium" x-text="entry.displayName"></td><td class="py-3 text-right tabular-nums" x-text="entry.score"></td></tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
         </section>
       </main>
-      <script dangerouslySetInnerHTML={{ __html: `
-(() => {
-  const root = document.body;
-  const supabaseUrl = root.dataset.supabaseUrl || "";
-  const anonKey = root.dataset.supabaseAnonKey || "";
-  const status = document.getElementById("status");
-  const signinPanel = document.getElementById("signin-panel");
-  const profilePanel = document.getElementById("profile-panel");
-  const tokenKey = "dlq_access_token";
-  const languageNames = {ga:"Irish",de:"German",ru:"Russian",it:"Italian",zh:"Chinese"};
-  let token = localStorage.getItem(tokenKey) || "";
-  const setStatus = (message) => { status.textContent = message; };
-  const api = async (path, options = {}) => {
-    const headers = Object.assign({"Content-Type":"application/json"}, options.headers || {});
-    if (token) headers.Authorization = "Bearer " + token;
-    const response = await fetch(path, Object.assign({}, options, {headers}));
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || "Request failed (" + response.status + ")");
-    return data;
-  };
-  const escapeText = (value) => String(value).replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
-  const loadLeaderboard = async () => {
-    const lang = document.getElementById("leaderboard-language").value;
-    const target = document.getElementById("leaderboard");
-    target.textContent = "Loading leaderboard…";
-    try {
-      const data = await api("/api/leaderboard?lang=" + encodeURIComponent(lang), {headers:{}});
-      if (!data.entries.length) { target.innerHTML = '<p class="text-sm text-slate-500">No scores yet. Sign in and answer questions correctly to be the first!</p>'; return; }
-      target.innerHTML = '<table class="w-full text-left text-sm"><thead><tr class="border-b border-slate-200 text-slate-500"><th class="py-3 pr-4">Rank</th><th class="py-3 pr-4">Display name</th><th class="py-3 text-right">Correct answers</th></tr></thead><tbody>' +
-        data.entries.map((entry) => '<tr class="border-b border-slate-100"><td class="py-3 pr-4">' + entry.rank + '</td><td class="py-3 pr-4 font-medium">' + escapeText(entry.displayName) + '</td><td class="py-3 text-right tabular-nums">' + entry.score + '</td></tr>').join("") +
-        '</tbody></table>';
-    } catch (error) { target.textContent = error.message || "Could not load leaderboard."; }
-  };
-  const loadStreaks = async () => {
-    const target = document.getElementById("streaks");
-    try {
-      const data = await api("/api/streaks");
-      target.innerHTML = data.streaks.map((item) => '<div class="rounded-xl bg-slate-50 p-3"><p class="text-sm font-semibold">' + languageNames[item.language] + '</p><p class="mt-1 text-2xl font-bold">' + item.currentStreak + ' <span class="text-sm font-medium text-slate-500">day' + (item.currentStreak === 1 ? '' : 's') + '</span></p><p class="mt-1 text-xs text-slate-500">' + (item.completedToday ? 'Completed today' : 'Complete all 5 correctly to keep your streak') + '</p></div>').join("");
-    } catch (error) { target.textContent = error.message || "Could not load streaks."; }
-  };
-  const showSignedIn = async () => {
-    signinPanel.classList.add("hidden");
-    profilePanel.classList.remove("hidden");
-    try {
-      const me = await api("/api/me");
-      document.getElementById("display-name").value = me.displayName || "";
-      setStatus("Signed in. Save a display name to appear on leaderboards.");
-      await loadStreaks();
-    } catch (error) {
-      localStorage.removeItem(tokenKey); token = "";
-      signinPanel.classList.remove("hidden"); profilePanel.classList.add("hidden");
-      setStatus("Your sign-in link may have expired. Please request a new one.");
-    }
-  };
-  const hash = new URLSearchParams(location.hash.replace(/^#/, ""));
-  const incomingToken = hash.get("access_token");
-  if (incomingToken) {
-    token = incomingToken;
-    localStorage.setItem(tokenKey, token);
-    history.replaceState(null, "", location.pathname + location.search);
-  }
-  if (!supabaseUrl || !anonKey) {
-    setStatus("Account sign-in is not configured on this deployment yet. Guest quizzes remain available.");
-    document.querySelector("#signin-form button").disabled = true;
-  } else if (token) {
-    showSignedIn();
-  } else {
-    setStatus("You can browse leaderboards without an account. Sign in to save your own progress.");
-  }
-  document.getElementById("signin-form").addEventListener("submit", async (event) => {
-    event.preventDefault();
-    if (!supabaseUrl || !anonKey) return;
-    const button = event.currentTarget.querySelector("button");
-    button.disabled = true;
-    try {
-      const email = document.getElementById("email").value.trim();
-      const response = await fetch(new URL("/auth/v1/otp?redirect_to=" + encodeURIComponent(location.origin + "/account"), supabaseUrl), {
-        method:"POST", headers:{"Content-Type":"application/json", apikey:anonKey},
-        body:JSON.stringify({email, create_user:true})
-      });
-      if (!response.ok) throw new Error("Could not send sign-in email. Check the address and try again.");
-      setStatus("Check your inbox for your secure sign-in link. You can close this page while you wait.");
-    } catch (error) { setStatus(error.message || "Could not send sign-in email."); }
-    finally { button.disabled = false; }
-  });
-  document.getElementById("profile-form").addEventListener("submit", async (event) => {
-    event.preventDefault();
-    try {
-      const data = await api("/api/profile", {method:"PUT", body:JSON.stringify({displayName:document.getElementById("display-name").value})});
-      document.getElementById("display-name").value = data.displayName;
-      setStatus("Display name saved.");
-      await loadLeaderboard();
-    } catch (error) { setStatus(error.message || "Could not save display name."); }
-  });
-  document.getElementById("signout").addEventListener("click", () => {
-    localStorage.removeItem(tokenKey); token = "";
-    profilePanel.classList.add("hidden"); signinPanel.classList.remove("hidden");
-    document.getElementById("streaks").textContent = "";
-    setStatus("You are signed out. Your saved scores remain on the leaderboard.");
-  });
-  document.getElementById("leaderboard-language").addEventListener("change", loadLeaderboard);
-  loadLeaderboard();
-})();
-` }} />
     </body>
   </html>
 );
