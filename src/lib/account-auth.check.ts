@@ -12,6 +12,8 @@ assert.equal(hasCompletedDailyQuiz(4.5), false);
 // Date capture must use the Dublin calendar, including DST and year boundaries.
 assert.equal(dublinLocalDate(new Date("2026-10-28T23:30:00.000Z")), "2026-10-28");
 assert.equal(dublinLocalDate(new Date("2026-10-28T00:30:00.000Z")), "2026-10-28");
+assert.equal(dublinLocalDate(new Date("2026-06-30T23:30:00.000Z")), "2026-07-01", "summer Dublin midnight boundary");
+assert.equal(dublinLocalDate(new Date("2026-10-24T23:30:00.000Z")), "2026-10-25", "autumn DST boundary");
 assert.equal(dublinLocalDate(new Date("2026-01-01T00:30:00.000Z")), "2026-01-01");
 
 // A gap after yesterday breaks the streak; completing today keeps it alive.
