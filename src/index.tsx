@@ -10,6 +10,7 @@ import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
 import type { SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
+import { leaderboardHandler, meHandler, profileHandler } from "./routes/accounts";
 
 const app = new Hono();
 
@@ -40,6 +41,9 @@ app.get("/:langCode", (c) => {
 app.post("/subscribe", subscribeHandler);
 app.get("/confirm", confirmHandler);
 app.get("/unsubscribe", unsubscribeHandler);
+app.get("/api/me", meHandler);
+app.put("/api/profile", profileHandler);
+app.get("/api/leaderboard", leaderboardHandler);
 app.get("/analytics", (c) =>
   analyticsDashboard(c, (c as unknown as { env: Env }).env),
 );
