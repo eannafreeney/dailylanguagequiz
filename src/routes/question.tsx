@@ -5,7 +5,7 @@ import { recordDailyParticipant } from "../lib/analytics";
 import { Env } from "../lib/email";
 import { getDailyQuestions, isLangCode } from "../utils";
 import { Context } from "hono";
-import { getAuthenticatedUser } from "../lib/account-auth";
+import { getAuthenticatedUser, dublinLocalDate } from "../lib/account-auth";
 import { recordVerifiedCorrectAnswer, recordAccountCompletion } from "./accounts";
 
 export const getQuestionHandler = async (c: Context) => {
@@ -132,8 +132,10 @@ export const answerQuestionHandler = async (c: Context) => {
   const user = await getAuthenticatedUser(c, env);
   if (user) {
     try {
-      await recordVerifiedCorrectAnswer(env, user.id, langCode, question.id);
-      await recordAccountCompletion(env, user.id, langCode);
+      // Capture one Dublin date for both writes, avoiding midnight boundary mismatches.
+      const localDate = dublinLocalDate();
+      await recordVerifiedCorrectAnswer(env, user.id, langCode, question.id, localDate);
+      await recordAccountCompletion(env, user.id, langCode, localDate);
     } catch (error) {
       console.error("Failed to record account answer or completion", error);
     }
