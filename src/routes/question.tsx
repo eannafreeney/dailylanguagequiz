@@ -133,8 +133,9 @@ export const answerQuestionHandler = async (c: Context) => {
   if (user) {
     try {
       await recordVerifiedCorrectAnswer(env, user.id, langCode, question.id);
+      await recordAccountCompletion(env, user.id, langCode);
     } catch (error) {
-      console.error("Failed to record account answer", error);
+      console.error("Failed to record account answer or completion", error);
     }
   }
 
@@ -143,13 +144,6 @@ export const answerQuestionHandler = async (c: Context) => {
       await recordDailyParticipant(c, env, langCode, true);
     } catch (error) {
       console.error("Failed to record quiz completion", error);
-    }
-    if (user) {
-      try {
-        await recordAccountCompletion(env, user.id, langCode);
-      } catch (error) {
-        console.error("Failed to record account quiz completion", error);
-      }
     }
   }
   return c.html(
