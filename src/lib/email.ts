@@ -1,15 +1,11 @@
 import { Context } from "hono";
 import { languages, REGISTERED_LANGS } from "./languages";
-
-export type Statement = {
-  bind(...values: unknown[]): Statement;
-  first<T = Record<string, unknown>>(): Promise<T | null>;
-  run(): Promise<{ success: boolean; meta?: { changes?: number } }>;
-  all<T = Record<string, unknown>>(): Promise<{ results: T[] }>;
-};
+import { getDb } from "./db";
+import { emailDeliveryLog, quizDailyParticipants, subscribers } from "./schema";
+import { and, count, eq, sql } from "drizzle-orm";
 
 export type Env = {
-  DB: { prepare(sql: string): Statement };
+  DB: D1Database;
   RESEND_API_KEY: string;
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
