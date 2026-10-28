@@ -37,7 +37,7 @@ The Worker validates a bearer token with Supabase Auth's `/auth/v1/user` endpoin
 - `GET /api/leaderboard?lang=ga` (or `de`, `ru`, `it`, `zh`): public top 100, with tied ranks preserved.
 - Correct answers are checked against the server's question bank before being counted. A language streak day is recorded only after five distinct correct answers for that date/language.
 
-These endpoints require the migration to be applied and Supabase environment variables configured. The account UI and magic-link flow are still outstanding.
+These endpoints require the migration to be applied and Supabase environment variables configured. The account page and Alpine component are implemented on this branch; browser-level validation of Supabase redirect/session behavior is still outstanding.
 
 ## Implementation and release
 
@@ -45,7 +45,7 @@ These endpoints require the migration to be applied and Supabase environment var
 2. Add optional sign-in UI without interrupting guest quizzes.
 3. Record verified correct answers and quiz completion server-side.
 4. Add profile, per-language streak, and public leaderboard UI.
-5. Test guest access, invalid sessions, duplicate submissions, and Dublin date boundaries.
+5. Run `npm run test:accounts` for scoring thresholds, tie ranks, streak boundaries, language isolation, duplicate answer/completion constraints, and Dublin date/DST boundaries. Complete browser-level checks for guest access, invalid sessions, and Supabase redirect/session behavior.
 6. Apply the migration to a staging D1 database, test, then decide whether to migrate production and deploy.
 
-No production migration or deployment is performed by work on this branch.
+The test suite checks the migration constraints in an in-memory SQLite database compatible with D1's SQLite constraints. No production migration or deployment is performed by work on this branch.
