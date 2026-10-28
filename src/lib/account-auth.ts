@@ -21,6 +21,10 @@ export async function getAuthenticatedUser(c: Context, env: Env): Promise<Authen
   }
 }
 
+export function hasCompletedDailyQuiz(distinctCorrectAnswers: number): boolean {
+  return Number.isInteger(distinctCorrectAnswers) && distinctCorrectAnswers >= 5;
+}
+
 export function dublinLocalDate(now = new Date()): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Europe/Dublin", year: "numeric", month: "2-digit", day: "2-digit",
