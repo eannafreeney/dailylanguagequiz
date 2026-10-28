@@ -3,6 +3,8 @@ import { NewsletterForm } from "../components/Newsletter";
 import { DOMAIN_TO_LANG, HUB_HOSTS, languages } from "../lib/languages";
 import { getEnv, sendEmail } from "../lib/email";
 import { isLangCode } from "../utils";
+import { getDb } from "../lib/db";
+import { subscribers } from "../lib/schema";
 
 export async function subscribeHandler(c: Context) {
   const env = getEnv(c);
@@ -33,11 +35,12 @@ export async function subscribeHandler(c: Context) {
   }
 
   const token = crypto.randomUUID() + crypto.randomUUID();
-  await env.DB.prepare(`INSERT INTO subscribers (email, lang_code, token, site_url, confirmed, unsubscribed, created_at)
-    VALUES (?, ?, ?, ?, 0, 0, datetime('now'))
-    ON CONFLICT(email, lang_code) DO UPDATE SET token=excluded.token, site_url=excluded.site_url, confirmed=0, unsubscribed=0`)
-    .bind(email, langCode, token, origin)
-    .run();
+  await getDb(env.DB).insert(subscribers).values({
+    email, langCode, token, siteUrl: origin, confirmed: false, unsubscribed: false,
+  }).onConflictDoUpdate({
+    target: [subscribers.email, subscribers.langCode],
+    set: { token, siteUrl: origin, confirmed: false, unsubscribed: false },
+  });
 
   const confirmUrl = new URL("/confirm", origin);
   confirmUrl.searchParams.set("token", token);
