@@ -19,6 +19,7 @@ assert.doesNotMatch(html, /@/);
 const one = adminDigest("2026-10-22", [{ lang_code: "ga", started: 1, finished: 1 }]);
 assert.equal(one.subject, "Yesterday's quiz: 1 person");
 assert.match(one.html, /German: 0 started, 0 finished/);
+assert.match(one.html, /Chinese: 0 started, 0 finished/);
 
 const ga = reminderMessage({ lang_code: "ga", token: "ga-token" });
 const de = reminderMessage({ lang_code: "de", token: "de-token" });
@@ -29,5 +30,8 @@ assert.equal(de?.subject, "Your daily German quiz is ready");
 assert.match(de?.html ?? "", /https:\/\/dailygermanquiz.com\//);
 assert.doesNotMatch(de?.html ?? "", /Irish|dailyirishquiz/);
 assert.equal(reminderMessage({ lang_code: "ru", token: "ru-token" }), undefined);
+const zh = reminderMessage({ lang_code: "zh", token: "zh-token" });
+assert.equal(zh?.subject, "Your daily Chinese quiz is ready");
+assert.match(zh?.html ?? "", /https:\/\/dailychinesequiz\.com\//);
 
 console.log("admin digest ok");

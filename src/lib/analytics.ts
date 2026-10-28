@@ -1,5 +1,6 @@
 import type { Context } from "hono";
 import type { Env } from "./email";
+import { languages } from "./languages";
 
 const COOKIE_NAME = "quiz_visitor";
 
@@ -82,7 +83,7 @@ export async function analyticsDashboard(c: Context, env: Env) {
   ).all<{ local_date: string; lang_code: string; participants: number; completions: number }>();
 
   const rows = results.map((row) =>
-    `<tr><td>${row.local_date}</td><td>${row.lang_code === "ga" ? "Irish" : "German"}</td><td class="number">${row.participants}</td><td class="number">${row.completions}</td></tr>`,
+    `<tr><td>${row.local_date}</td><td>${languages.find((language) => language.langCode === row.lang_code)?.englishName ?? row.lang_code}</td><td class="number">${row.participants}</td><td class="number">${row.completions}</td></tr>`,
   ).join("");
   const total = results.reduce((sum, row) => sum + row.participants, 0);
   return c.html(`<!doctype html>

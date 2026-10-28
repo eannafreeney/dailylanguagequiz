@@ -14,7 +14,7 @@ const HomePage = () => (
       <title>Daily Language Quiz</title>
       <meta
         name="description"
-        content="A free daily quiz in Irish and German. Five short questions, a little at a time."
+        content="A free daily quiz in Irish, German, and Chinese. Five short questions, a little at a time."
       />
       <link rel="canonical" href={hubUrl} />
       <meta property="og:title" content="Daily Language Quiz" />

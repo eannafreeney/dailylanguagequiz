@@ -3,6 +3,8 @@ export const DOMAIN_TO_LANG: Record<string, string> = {
   "www.dailyirishquiz.com": "ga",
   "dailygermanquiz.com": "de",
   "www.dailygermanquiz.com": "de",
+  "dailychinesequiz.com": "zh",
+  "www.dailychinesequiz.com": "zh",
   localhost: "ga",
   "127.0.0.1": "ga",
   "ga.localhost": "ga",
@@ -30,6 +32,7 @@ export const HOST_REDIRECTS: Record<string, string> = {
   "www.mydaily.irish": "https://dailyirishquiz.com",
   "www.dailyirishquiz.com": "https://dailyirishquiz.com",
   "www.dailygermanquiz.com": "https://dailygermanquiz.com",
+  "www.dailychinesequiz.com": "https://dailychinesequiz.com",
   "www.dailylanguagequiz.com": "https://dailylanguagequiz.com",
 };
 
@@ -81,5 +84,6 @@ export const languages = [
       "A daily Chinese quiz with five mixed-level questions. Practise Simplified and Traditional Chinese with pinyin, vocabulary, and grammar from A1 to B2.",
     flag: "🇹🇼 🇨🇳",
     siteName: "Daily Chinese Quiz",
+    siteUrl: "https://dailychinesequiz.com",
   },
 ];

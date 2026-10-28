@@ -8,6 +8,8 @@
     { "pattern": "www.dailyirishquiz.com", "custom_domain": true },
     { "pattern": "dailygermanquiz.com", "custom_domain": true },
     { "pattern": "www.dailygermanquiz.com", "custom_domain": true },
+    { "pattern": "dailychinesequiz.com", "custom_domain": true },
+    { "pattern": "www.dailychinesequiz.com", "custom_domain": true },
     { "pattern": "mydaily.irish", "custom_domain": true },
     { "pattern": "www.mydaily.irish", "custom_domain": true },
     { "pattern": "dailylanguagequiz.com", "custom_domain": true },

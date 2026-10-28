@@ -50,6 +50,11 @@ assert.equal(
   "https://dailygermanquiz.com/",
 );
 assert.equal(
+  redirectUrl("https://www.dailychinesequiz.com/zh"),
+  "https://dailychinesequiz.com/zh",
+);
+assert.equal(redirectUrl("https://dailychinesequiz.com/"), undefined);
+assert.equal(
   redirectUrl("https://www.dailylanguagequiz.com/zh"),
   "https://dailylanguagequiz.com/zh",
 );
@@ -70,6 +75,12 @@ const germanHtml = await german.text();
 assert.match(germanHtml, /Daily German quiz/);
 assert.match(germanHtml, /rel="canonical" href="https:\/\/dailygermanquiz.com\/"/);
 
+const chinese = await app.request("https://dailychinesequiz.com/");
+const chineseHtml = await chinese.text();
+assert.match(chineseHtml, /Daily Chinese quiz/);
+assert.match(chineseHtml, /rel="canonical" href="https:\/\/dailychinesequiz.com\/"/);
+assert.equal((await app.request("https://dailychinesequiz.com/ga")).status, 404);
+
 const www = await app.request("https://www.dailyirishquiz.com/confirm?token=abc");
 assert.equal(www.status, 301);
 assert.equal(www.headers.get("location"), "https://dailyirishquiz.com/confirm?token=abc");
@@ -80,7 +91,8 @@ const hubHtml = await hub.text();
 assert.match(hubHtml, /<h1[^>]*>Five questions a day\.<\/h1>/);
 assert.match(hubHtml, /href="https:\/\/dailyirishquiz\.com"/);
 assert.match(hubHtml, /href="https:\/\/dailygermanquiz\.com"/);
-assert.doesNotMatch(hubHtml, /Chinese|Russian|Italian|href="\/(?:zh|ru|it)"/);
+assert.match(hubHtml, /href="https:\/\/dailychinesequiz\.com"/);
+assert.doesNotMatch(hubHtml, /Russian|Italian|href="\/(?:ru|it)"/);
 assert.equal((await app.request("https://dailylanguagequiz.com/zh")).status, 200);
 assert.equal((await app.request("https://www.dailylanguagequiz.com/")).status, 301);
 assert.equal((await app.request("https://example.com/")).status, 404);

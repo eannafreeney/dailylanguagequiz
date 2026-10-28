@@ -1,6 +1,6 @@
 import { Context } from "hono";
 import { Subscriber } from "../types";
-import { languages } from "./languages";
+import { languages, REGISTERED_LANGS } from "./languages";
 
 export type Statement = {
   bind(...values: unknown[]): Statement;
@@ -145,9 +145,7 @@ export function dublinYesterday(todayYmd: string) {
 type DigestRow = { lang_code: string; started: number; finished: number };
 
 export function adminDigest(yesterday: string, rows: DigestRow[]) {
-  const tracked = languages.filter(
-    (language) => language.langCode === "ga" || language.langCode === "de",
-  );
+  const tracked = languages.filter((language) => REGISTERED_LANGS.has(language.langCode));
   const sections = tracked.map((language) => {
     const row = rows.find((item) => item.lang_code === language.langCode);
     const started = row?.started ?? 0;
