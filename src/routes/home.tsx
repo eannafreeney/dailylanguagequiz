@@ -31,6 +31,7 @@ const HomePage = () => (
           <span class="text-lg font-bold tracking-tight">
             Daily Language Quiz
           </span>
+          <a href="/account" class="ml-auto rounded-lg border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-50">Account &amp; leaderboard</a>
         </div>
       </header>
       <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
