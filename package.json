@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "typecheck": "tsc --noEmit",
+    "test:accounts": "tsx src/lib/account-auth.check.ts",
     "deploy": "npm run build:css && wrangler deploy",
     "build:css": "tailwindcss -i ./src/styles.css -o ./public/tailwind.css --minify"
   },
