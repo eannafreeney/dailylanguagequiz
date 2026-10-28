@@ -1,9 +1,9 @@
 import type { Context } from "hono";
 import type { Env } from "../lib/email";
-import { getAuthenticatedUser, dublinLocalDate, hasCompletedDailyQuiz } from "../lib/account-auth";
+import { getAuthenticatedUser, dublinLocalDate, hasCompletedDailyQuiz, calculateCurrentStreak, rankLeaderboard } from "../lib/account-auth";
 import { getDb } from "../lib/db";
 import { accountQuizAnswers, accountQuizCompletions, userProfiles } from "../lib/schema";
-import { and, asc, count, desc, eq, sql } from "drizzle-orm";
+import { and, count, desc, eq, sql } from "drizzle-orm";
 import { isLangCode } from "../utils";
 
 const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
@@ -55,13 +55,7 @@ export async function leaderboardHandler(c: Context) {
     .groupBy(userProfiles.userId, userProfiles.displayName)
     .orderBy(desc(count(accountQuizAnswers.questionId)), sql`lower(${userProfiles.displayName}) asc`)
     .limit(100);
-  let rank = 0;
-  let priorScore: number | null = null;
-  const entries = rows.map((row, index) => {
-    if (priorScore !== row.score) rank = index + 1;
-    priorScore = row.score;
-    return { rank, displayName: row.displayName, score: row.score };
-  });
+  const entries = rankLeaderboard(rows);
   return c.json({ language: langCode, entries });
 }
 
@@ -82,23 +76,10 @@ export async function streaksHandler(c: Context) {
     byLanguage.set(row.langCode, dates);
   }
   const today = dublinLocalDate();
-  const yesterdayDate = new Date(`${today}T00:00:00Z`);
-  yesterdayDate.setUTCDate(yesterdayDate.getUTCDate() - 1);
-  const yesterday = yesterdayDate.toISOString().slice(0, 10);
-  const streaks = ["ga", "de", "ru", "it", "zh"].map((langCode) => {
-    const dates = byLanguage.get(langCode) ?? new Set<string>();
-    let cursor = dates.has(today) ? today : yesterday;
-    let currentStreak = 0;
-    if (dates.has(cursor)) {
-      while (dates.has(cursor)) {
-        currentStreak++;
-        const previous = new Date(`${cursor}T00:00:00Z`);
-        previous.setUTCDate(previous.getUTCDate() - 1);
-        cursor = previous.toISOString().slice(0, 10);
-      }
-    }
-    return { language: langCode, currentStreak, completedToday: dates.has(today) };
-  });
+  const streaks = ["ga", "de", "ru", "it", "zh"].map((langCode) => ({
+    language: langCode,
+    ...calculateCurrentStreak(byLanguage.get(langCode) ?? [], today),
+  }));
   return c.json({ streaks });
 }
 
