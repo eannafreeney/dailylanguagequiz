@@ -1,6 +1,6 @@
 # Accounts, streaks, and leaderboard implementation
 
-This feature is designed for the existing Cloudflare Workers + Hono app and its existing D1 binding (DB). Guests can continue taking quizzes without creating an account.
+This feature is being built for the existing Cloudflare Workers + Hono app and D1 binding (DB). Guests can continue taking quizzes without creating an account. The current branch has the data migration and initial API foundation; the sign-in and account screens are not yet implemented.
 
 ## Decisions
 
@@ -25,6 +25,15 @@ Set these as Cloudflare Worker secrets/variables (do not commit real values):
 - `SUPABASE_ANON_KEY` (publishable/anon key; never a service-role key)
 
 The Worker validates a bearer token with Supabase Auth's `/auth/v1/user` endpoint before reading or writing private account data. Missing auth configuration must fail closed for account routes.
+
+## Current API foundation
+
+- `GET /api/me`: validates the Supabase bearer token and returns the user's ID and optional display name.
+- `PUT /api/profile`: validates the token and saves a 2–24 character display name.
+- `GET /api/leaderboard?lang=ga` (or `de`, `ru`, `it`, `zh`): public top 100, with tied ranks preserved.
+- Correct answers are checked against the server's question bank before being counted. A language streak day is recorded only after five distinct correct answers for that date/language.
+
+These endpoints require the migration to be applied and Supabase environment variables configured. The account UI and magic-link flow are still outstanding.
 
 ## Implementation and release
 
