@@ -119,7 +119,7 @@ const Question = ({
             {isChinese && (
               <input type="hidden" name="script" x-bind:value="script" />
             )}
-            {question.options.map((option, index) => (
+            {(isChinese ? question.simplifiedOptions ?? [] : question.options ?? []).map((option, index) => (
               <label
                 key={option}
                 class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-4 transition"
@@ -147,9 +147,6 @@ const Question = ({
                       </span>
                       <span class="mt-0.5 block text-sm font-medium text-red-700">
                         {question.optionPinyin?.[index] ?? ""}
-                      </span>
-                      <span class="mt-1 block text-sm text-slate-500">
-                        {option}
                       </span>
                     </>
                   ) : (

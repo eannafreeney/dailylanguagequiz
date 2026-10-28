@@ -21,6 +21,14 @@ const CompleteBanner = ({ langCode }: { langCode: LangCode }) => {
         {questionCount} questions done. Come back tomorrow to keep building your{" "}
         {language.englishName} skills.
       </p>
+      <a
+        href={`/${langCode}/question/0`}
+        x-target="quiz"
+        onclick="window.scrollTo(0, 0)"
+        class={`mt-4 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-semibold text-white shadow-sm transition focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.accent} ${theme.accentHover} ${theme.focus}`}
+      >
+        Restart quiz
+      </a>
     </div>
   );
 };

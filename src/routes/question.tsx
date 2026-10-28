@@ -96,7 +96,9 @@ export const answerQuestionHandler = async (c: Context) => {
       400,
     );
   }
-  if (!question.options.includes(answer)) {
+  const choices =
+    langCode === "zh" ? question.simplifiedOptions ?? [] : question.options ?? [];
+  if (!choices.includes(answer)) {
     return c.html(
       <Answer
         status="invalid"
@@ -110,7 +112,7 @@ export const answerQuestionHandler = async (c: Context) => {
     );
   }
 
-  const isCorrect = answer === question.options[question.correctAnswer];
+  const isCorrect = answer === choices[question.correctAnswer];
   if (!isCorrect) {
     return c.html(
       <Answer

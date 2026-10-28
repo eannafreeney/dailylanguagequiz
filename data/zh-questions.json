@@ -3,12 +3,7 @@
     "id": "ZH001",
     "category": "greetings",
     "level": "A1",
-    "question": "Select the Chinese greeting for “hello.”",
-    "options": [
-      "Goodbye",
-      "Hello",
-      "Thank you"
-    ],
+    "question": "Hello",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "再见",
@@ -34,12 +29,7 @@
     "id": "ZH002",
     "category": "requests",
     "level": "A2",
-    "question": "Select the polite request for help.",
-    "options": [
-      "I don't understand",
-      "Could you help me?",
-      "I'll be right back"
-    ],
+    "question": "Could you help me?",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我不明白",
@@ -66,12 +56,7 @@
     "id": "ZH003",
     "category": "opinions",
     "level": "B1",
-    "question": "Select the sentence expressing a positive opinion.",
-    "options": [
-      "I think this is a good idea",
-      "I forgot to bring my keys",
-      "He arrived earlier than me"
-    ],
+    "question": "I think this is a good idea",
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我觉得这个主意不错。",
@@ -98,12 +83,7 @@
     "id": "ZH004",
     "category": "grammar",
     "level": "B2",
-    "question": "Select the sentence using an “although…but” contrast.",
-    "options": [
-      "If I have time, I'll go",
-      "Although I was tired, I still finished the work",
-      "Because it rained, we didn't go out"
-    ],
+    "question": "Although I was tired, I still finished the work",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "如果有时间，我就去。",
@@ -130,12 +110,7 @@
     "id": "ZH005",
     "category": "everyday",
     "level": "A1",
-    "question": "Select the Chinese question “What is this?”",
-    "options": [
-      "What is your name?",
-      "What is this?",
-      "Where do you live?"
-    ],
+    "question": "What is this?",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "你叫什么名字？",
@@ -162,12 +137,7 @@
     "id": "ZH006",
     "category": "plans",
     "level": "B1",
-    "question": "Select the sentence about plans for next month.",
-    "options": [
-      "I have already travelled for a month",
-      "I plan to travel next month",
-      "I am busy every month"
-    ],
+    "question": "I plan to travel next month",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我已经旅行了一个月。",
@@ -194,12 +164,7 @@
     "id": "ZH007",
     "category": "daily-life",
     "level": "A2",
-    "question": "Select the sentence about commuting by bus every day.",
-    "options": [
-      "I take the bus to work every day",
-      "I walked home yesterday",
-      "I cook at home on weekends"
-    ],
+    "question": "I take the bus to work every day",
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我每天坐公交车上班。",
@@ -226,12 +191,7 @@
     "id": "ZH008",
     "category": "grammar",
     "level": "B2",
-    "question": "Select the conditional sentence about preparing in advance.",
-    "options": [
-      "Although we're busy, we're happy",
-      "We prepared better than yesterday",
-      "If we prepare in advance, we won't be so nervous"
-    ],
+    "question": "If we prepare in advance, we won't be so nervous",
     "correctAnswer": 2,
     "simplifiedOptions": [
       "我们虽然很忙，但是很开心。",
@@ -258,12 +218,7 @@
     "id": "ZH009",
     "category": "preferences",
     "level": "A2",
-    "question": "Select the sentence expressing a preference for tea.",
-    "options": [
-      "I prefer drinking tea",
-      "I rarely drink coffee",
-      "I want to buy a cup of water"
-    ],
+    "question": "I prefer drinking tea",
     "correctAnswer": 0,
     "simplifiedOptions": [
       "我比较喜欢喝茶。",
@@ -290,12 +245,7 @@
     "id": "ZH010",
     "category": "experiences",
     "level": "B1",
-    "question": "Select the sentence about a first visit to China.",
-    "options": [
-      "I visited China twice last year",
-      "This is my first time visiting China",
-      "My friend lives in northern China"
-    ],
+    "question": "This is my first time visiting China",
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我去年去过中国两次。",
@@ -323,11 +273,6 @@
     "category": "greetings",
     "level": "A1",
     "question": "Thank you",
-    "options": [
-      "You're welcome",
-      "Thank you",
-      "Sorry"
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "不客气",
@@ -355,11 +300,6 @@
     "category": "numbers",
     "level": "A1",
     "question": "Three",
-    "options": [
-      "Two",
-      "Three",
-      "Four"
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "二",
@@ -387,11 +327,6 @@
     "category": "food-drink",
     "level": "A2",
     "question": "I'd like a cup of tea.",
-    "options": [
-      "I'd like a cup of coffee.",
-      "I'd like a cup of tea.",
-      "I'd like some cold water."
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我要一杯咖啡。",
@@ -419,11 +354,6 @@
     "category": "directions",
     "level": "A2",
     "question": "Where is the train station?",
-    "options": [
-      "Where is the airport?",
-      "Where is the train station?",
-      "Where is the hotel?"
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "机场在哪里？",
@@ -451,11 +381,6 @@
     "category": "time",
     "level": "A2",
     "question": "Tomorrow",
-    "options": [
-      "Yesterday",
-      "Today",
-      "Tomorrow"
-    ],
     "correctAnswer": 2,
     "simplifiedOptions": [
       "昨天",
@@ -483,11 +408,6 @@
     "category": "learning",
     "level": "B1",
     "question": "I've been learning Chinese for two years.",
-    "options": [
-      "I started learning Chinese two days ago.",
-      "I've been learning Chinese for two years.",
-      "I will study Chinese for two more years."
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我两天前开始学中文。",
@@ -515,11 +435,6 @@
     "category": "everyday",
     "level": "B1",
     "question": "Even though it was raining, we went out.",
-    "options": [
-      "Because it rained, we stayed home.",
-      "Even though it was raining, we went out.",
-      "It stopped raining before we left."
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "因为下雨，我们待在家里。",
@@ -547,11 +462,6 @@
     "category": "shopping",
     "level": "B1",
     "question": "Could you tell me how much this costs?",
-    "options": [
-      "Could you tell me where this was made?",
-      "Could you tell me how much this costs?",
-      "Could you tell me when the shop closes?"
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "你能告诉我这是哪里制造的吗？",
@@ -579,11 +489,6 @@
     "category": "grammar",
     "level": "B2",
     "question": "The more I practise, the more confident I become.",
-    "options": [
-      "I practise less when I feel confident.",
-      "The more I practise, the more confident I become.",
-      "I was confident before I started practising."
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我越有信心，练习就越少。",
@@ -611,11 +516,6 @@
     "category": "grammar",
     "level": "B2",
     "question": "If I had known earlier, I would have told you.",
-    "options": [
-      "I knew earlier, so I didn't tell you.",
-      "If I had known earlier, I would have told you.",
-      "I will tell you as soon as I know."
-    ],
     "correctAnswer": 1,
     "simplifiedOptions": [
       "我早就知道了，所以没告诉你。",

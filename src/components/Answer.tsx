@@ -53,7 +53,10 @@ const Answer = ({
       description: "Please select one of the choices above.",
     },
   }[status];
-  const correctOption = question?.options[question.correctAnswer];
+  const correctOption =
+    question && langCode === "zh"
+      ? question.question
+      : question?.options?.[question.correctAnswer];
   const chineseOption =
     question && langCode === "zh"
       ? ((script === "traditional"
@@ -81,7 +84,7 @@ const Answer = ({
               {message ?? styles.description}
             </p>
           )}
-          {question && langCode === "zh" && status !== "invalid" && (
+          {isCorrect && question && langCode === "zh" && (
             <div class="mt-3 rounded-xl border border-red-100 bg-white/80 p-4">
               <p class="text-sm font-medium text-slate-500">Correct answer</p>
               <p lang="zh" class="mt-1 text-2xl font-bold text-slate-900">

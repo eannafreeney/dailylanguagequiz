@@ -24,7 +24,7 @@ const esc = (value: string) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]!,
   );
 
-const options = question.options
+const options = (question.options ?? [])
   .map(
     (option, index) => `
       <div class="option">
@@ -111,7 +111,7 @@ const html = `<!doctype html>
 
 if (question.explanation) assert.equal(html.includes(question.explanation), false);
 assert.equal(html.includes(question.question), true);
-for (const option of question.options) assert.equal(html.includes(option), true);
+for (const option of question.options ?? []) assert.equal(html.includes(option), true);
 
 mkdirSync(dirname(htmlPath), { recursive: true });
 writeFileSync(htmlPath, html);

@@ -3,7 +3,7 @@ import { languages } from "./lib/languages";
 export type Question = {
   id: string;
   question: string;
-  options: string[];
+  options?: string[];
   answer?: string;
   explanation?: string;
   level?: string;

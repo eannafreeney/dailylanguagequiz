@@ -1,4 +1,4 @@
-import { LangCode } from "./types";
+import { LangCode, type Question } from "./types";
 import { quizzes } from "./lib/quizzes";
 import { DOMAIN_TO_LANG, HOST_REDIRECTS, languages } from "./lib/languages";
 import { Context } from "hono";
@@ -9,8 +9,8 @@ const DAY_MS = 86_400_000;
 // One shuffle for the life of a bank. The day only picks the next slice.
 const DECK_SEED = 0x9e3779b9;
 
-export function getDailyQuestions(langCode: LangCode, now = new Date()) {
-  const deck = [...quizzes[langCode as keyof typeof quizzes]];
+export function getDailyQuestions(langCode: LangCode, now = new Date()): Question[] {
+  const deck = [...quizzes[langCode as keyof typeof quizzes]] as Question[];
   const dailyQuestionCount =
     DAILY_QUESTION_COUNTS[langCode] ?? DEFAULT_DAILY_QUESTION_COUNT;
 
