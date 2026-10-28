@@ -45,7 +45,7 @@ const AccountPage = ({ supabaseUrl, anonKey }: { supabaseUrl: string; anonKey: s
           <p class="mt-1 text-sm text-slate-600">Only your display name and aggregate correct-answer score appear publicly.</p>
           <form id="profile-form" class="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
             <label class="sr-only" for="display-name">Display name</label>
-            <input id="display-name" name="displayName" minlength="2" maxlength="24" required placeholder="Choose a display name" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
+            <input id="display-name" name="displayName" minlength={2} maxlength={24} required placeholder="Choose a display name" class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
             <button class="rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700" type="submit">Save name</button>
           </form>
           <h3 class="mt-7 text-lg font-semibold">Your streaks</h3>
