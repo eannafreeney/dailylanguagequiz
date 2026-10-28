@@ -1,6 +1,6 @@
 import type { Context } from "hono";
 import type { Env } from "../lib/email";
-import { getAuthenticatedUser, dublinLocalDate } from "../lib/account-auth";
+import { getAuthenticatedUser, dublinLocalDate, hasCompletedDailyQuiz } from "../lib/account-auth";
 import { getDb } from "../lib/db";
 import { accountQuizAnswers, accountQuizCompletions, userProfiles } from "../lib/schema";
 import { and, asc, count, desc, eq, sql } from "drizzle-orm";
@@ -102,14 +102,13 @@ export async function streaksHandler(c: Context) {
   return c.json({ streaks });
 }
 
-export async function recordVerifiedCorrectAnswer(env: Env, userId: string, langCode: string, questionId: string) {
+export async function recordVerifiedCorrectAnswer(env: Env, userId: string, langCode: string, questionId: string, localDate: string) {
   await getDb(env.DB).insert(accountQuizAnswers).values({
-    userId, localDate: dublinLocalDate(), langCode, questionId,
+    userId, localDate, langCode, questionId,
   }).onConflictDoNothing();
 }
 
-export async function recordAccountCompletion(env: Env, userId: string, langCode: string) {
-  const localDate = dublinLocalDate();
+export async function recordAccountCompletion(env: Env, userId: string, langCode: string, localDate: string) {
   const [result] = await getDb(env.DB).select({
     score: count(accountQuizAnswers.questionId),
   }).from(accountQuizAnswers).where(and(
@@ -117,7 +116,7 @@ export async function recordAccountCompletion(env: Env, userId: string, langCode
     eq(accountQuizAnswers.localDate, localDate),
     eq(accountQuizAnswers.langCode, langCode),
   ));
-  if ((result?.score ?? 0) < 5) return;
+  if (!hasCompletedDailyQuiz(result?.score ?? 0)) return;
   await getDb(env.DB).insert(accountQuizCompletions).values({
     userId, localDate, langCode, score: 5,
   }).onConflictDoNothing();
