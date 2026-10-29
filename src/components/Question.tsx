@@ -106,7 +106,7 @@ const Question = ({
             x-data="{ selectedAnswer: '', status: '' }"
             {...{
               "x-on:ajax:after":
-                "status = document.getElementById('answer')?.dataset.status || ''; if (window.matchMedia('(max-width: 1023px)').matches) requestAnimationFrame(() => document.getElementById('answer')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))",
+                "setTimeout(function () { var answerPanel = document.querySelector('#answer[data-status]'); status = answerPanel ? answerPanel.dataset.status || '' : ''; if (answerPanel && window.matchMedia('(max-width: 1023px)').matches) answerPanel.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100)",
             }}
             x-bind:class="status === 'correct' && 'pointer-events-none'"
             method="post"
