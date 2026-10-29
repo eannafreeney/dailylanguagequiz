@@ -69,7 +69,7 @@ const Answer = ({
     <div
       id="answer"
       data-status={status}
-      class={`w-full min-w-0 rounded-2xl border p-5 shadow-sm sm:p-6 lg:sticky lg:top-6 ${styles.card}`}
+      class={`w-full min-w-0 rounded-2xl border p-4 shadow-sm sm:p-6 lg:sticky lg:top-6 ${styles.card}`}
     >
       <div class="flex items-start gap-3">
         <div class="min-w-0 flex-1">
