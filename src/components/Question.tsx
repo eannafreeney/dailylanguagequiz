@@ -106,7 +106,7 @@ const Question = ({
             x-data="{ selectedAnswer: '', status: '' }"
             {...{
               "x-on:ajax:after":
-                "status = document.getElementById('answer')?.dataset.status || ''; if (window.matchMedia('(max-width: 1023px)').matches) requestAnimationFrame(() => document.getElementById('answer')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))",
+                "status = document.getElementById('answer')?.dataset.status || ''",
             }}
             x-bind:class="status === 'correct' && 'pointer-events-none'"
             method="post"
@@ -119,7 +119,10 @@ const Question = ({
             {isChinese && (
               <input type="hidden" name="script" x-bind:value="script" />
             )}
-            {(isChinese ? question.simplifiedOptions ?? [] : question.options ?? []).map((option, index) => (
+            {(isChinese
+              ? (question.simplifiedOptions ?? [])
+              : (question.options ?? [])
+            ).map((option, index) => (
               <label
                 key={option}
                 class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 transition sm:p-4"
