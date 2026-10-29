@@ -2475,5 +2475,72 @@
     "explanation": "I rith is followed by the genitive case. Oíche is feminine, so the genitive article is na, which adds h before a vowel: na hoíche. An oíche is the plain (nominative) form. Literally: i rith na hoíche = “in course of-the night”.",
     "phrase": "i rith na hoíche",
     "tags": ["genitive_case", "feminine_nouns", "time", "compound_prepositions"]
+  },
+  {
+    "id": "ga-221",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “madra rua” mean?",
+    "options": ["red dog", "fox", "wolf"],
+    "correctAnswer": 1,
+    "explanation": "Madra rua is the everyday Irish word for a fox, even though it literally means “red dog”. A wolf is mac tíre. Literally: madra rua = “red dog”.",
+    "phrase": "madra rua",
+    "tags": ["animals", "compound_words"]
+  },
+  {
+    "id": "ga-222",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Complete: Seo ___. (This is our house.)",
+    "options": ["ár teach", "ár theach", "ár dteach"],
+    "correctAnswer": 2,
+    "explanation": "The possessives ár (our), bhur (your, plural) and a (their) cause eclipsis, so teach becomes dteach. Lenition (theach) follows mo, do and a (his) instead. Literally: Seo ár dteach = “here our house”.",
+    "phrase": "Seo ár dteach.",
+    "tags": ["possessives", "eclipsis", "home"]
+  },
+  {
+    "id": "ga-223",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “I won’t get a chance”?",
+    "options": [
+      "Ní bhfaighidh mé deis.",
+      "Ní fhaighidh mé deis.",
+      "Níor fhaigh mé deis."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Faigh (get) is irregular: in the future after ní it is eclipsed rather than lenited, giving ní bhfaighidh. Níor fhaigh would be wrong anyway, since the past tense of faigh is fuair (ní bhfuair mé = I didn’t get). Literally: Ní bhfaighidh mé deis = “not will get I chance”.",
+    "phrase": "Ní bhfaighidh mé deis.",
+    "tags": ["future_tense", "irregular_verbs", "negation", "eclipsis"]
+  },
+  {
+    "id": "ga-224",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "In standard Irish, how do you say “I am buying a new car”?",
+    "options": [
+      "Tá mé ag ceannach carr nua.",
+      "Tá mé ag ceannach an carr nua.",
+      "Tá mé ag ceannach cairr nua."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A noun that is the object of a verbal noun (ag ceannach) goes into the genitive case in the Caighdeán, so carr becomes cairr. Carr nua is often heard in speech, and an carr nua means “the new car” and would need the genitive too (an chairr nua). Literally: Tá mé ag ceannach cairr nua = “am I at buying of a new car”.",
+    "phrase": "Tá mé ag ceannach cairr nua.",
+    "tags": ["genitive_case", "verbal_nouns", "present_continuous"]
+  },
+  {
+    "id": "ga-225",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "Which means “at the weekend”?",
+    "options": [
+      "an tseachtain seo chugainn",
+      "ag an deireadh seachtaine",
+      "Dé Sathairn seo caite"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Deireadh seachtaine (weekend) is built from deireadh (end) and seachtaine, the genitive of seachtain (week). An tseachtain seo chugainn means “next week”, and Dé Sathairn seo caite means “last Saturday”. Literally: ag an deireadh seachtaine = “at the end of week”.",
+    "phrase": "ag an deireadh seachtaine",
+    "tags": ["time_expressions", "genitive_case"]
   }
 ]
