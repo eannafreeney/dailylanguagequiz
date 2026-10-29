@@ -7,7 +7,7 @@ export default function SponsorStack({ langCode }: { langCode: LangCode }) {
   return (
     <aside
       aria-label="Sponsors"
-      class="hidden md:block absolute top-36 right-4 z-20 w-44"
+      class="hidden lg:block absolute top-36 right-4 z-20 w-44"
     >
       <div class="flex flex-col gap-2">
         {links.length > 0 &&
