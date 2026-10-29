@@ -21,10 +21,10 @@ const Question = ({
   return (
     <div
       id="quiz"
-      class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8 lg:px-8"
+      class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-4 px-3 sm:gap-6 sm:px-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8 lg:px-8"
     >
       <section
-        class="flex w-full min-w-0 flex-col gap-4"
+        class="flex w-full min-w-0 flex-col gap-3 sm:gap-4"
         {...(isChinese
           ? {
               "x-data":
@@ -55,7 +55,7 @@ const Question = ({
             style={`width: ${progress}%`}
           />
         </div>
-        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9">
+        <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-9">
           {isChinese ? (
             <div class="mb-5 flex items-center justify-between gap-3">
               <p
@@ -98,7 +98,7 @@ const Question = ({
           )}
           <h2
             lang={isChinese ? "en" : langCode}
-            class="mb-8 text-2xl font-bold leading-snug text-slate-900 sm:text-3xl"
+            class="mb-5 text-xl font-bold leading-snug text-slate-900 sm:mb-8 sm:text-3xl"
           >
             {question.question}
           </h2>
@@ -106,13 +106,13 @@ const Question = ({
             x-data="{ selectedAnswer: '', status: '' }"
             {...{
               "x-on:ajax:after":
-                "status = document.getElementById('answer')?.dataset.status || ''",
+                "status = document.getElementById('answer')?.dataset.status || ''; if (window.matchMedia('(max-width: 1023px)').matches) requestAnimationFrame(() => document.getElementById('answer')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))",
             }}
             x-bind:class="status === 'correct' && 'pointer-events-none'"
             method="post"
             action={`/${langCode}/answer/${questionNumber}`}
             x-target="answer"
-            class="space-y-3"
+            class="space-y-2.5 sm:space-y-3"
           >
             <input type="hidden" name="id" value={question.id} />
             <input type="hidden" name="number" value={questionNumber} />
@@ -122,7 +122,7 @@ const Question = ({
             {(isChinese ? question.simplifiedOptions ?? [] : question.options ?? []).map((option, index) => (
               <label
                 key={option}
-                class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-4 transition"
+                class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 transition sm:p-4"
                 x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'border-emerald-600 bg-emerald-50' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'border-orange-200 bg-orange-50' : ${JSON.stringify(`${theme.optionHover} ${theme.selectedOption}`)}`}
               >
                 <input
@@ -140,7 +140,7 @@ const Question = ({
                     <>
                       <span
                         lang="zh"
-                        class="block text-xl font-semibold leading-relaxed text-slate-900"
+                        class="block text-lg font-semibold leading-relaxed text-slate-900 sm:text-xl"
                         x-text={`script === 'traditional' ? ${JSON.stringify(question.traditionalOptions?.[index] ?? option)} : ${JSON.stringify(question.simplifiedOptions?.[index] ?? option)}`}
                       >
                         {question.simplifiedOptions?.[index] ?? option}
