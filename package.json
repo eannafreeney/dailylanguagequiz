@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "typecheck": "tsc --noEmit",
+    "test:accounts": "tsx src/lib/account-auth.check.ts",
     "deploy": "npm run build:css && wrangler deploy",
     "build:css": "tailwindcss -i ./src/styles.css -o ./public/tailwind.css --minify"
   },
   "dependencies": {
     "@hono/node-server": "^2.1.4",
-    "hono": "^4.13.13"
+    "hono": "^4.13.13",
+    "drizzle-orm": "^0.45.4"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
