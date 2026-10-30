@@ -158,4 +158,7 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   ru: { links: [], theme: irishTheme },
   it: { links: [], theme: italianTheme },
   zh: { links: [], theme: chineseTheme },
+  hu: { links: [], theme: italianTheme },
+  fr: { links: [], theme: irishTheme },
+  fa: { links: [], theme: germanTheme },
 };

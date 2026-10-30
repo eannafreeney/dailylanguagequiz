@@ -77,6 +77,33 @@ export const languages = [
     siteUrl: "https://dailyitalianquiz.com",
   },
   {
+    langCode: "hu",
+    name: "Magyar",
+    englishName: "Hungarian",
+    description:
+      "A free daily Hungarian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+    flag: "🇭🇺",
+    siteName: "Daily Hungarian Quiz",
+  },
+  {
+    langCode: "fr",
+    name: "Français",
+    englishName: "French",
+    description:
+      "A free daily French quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+    flag: "🇫🇷",
+    siteName: "Daily French Quiz",
+  },
+  {
+    langCode: "fa",
+    name: "فارسی",
+    englishName: "Farsi",
+    description:
+      "A free daily Farsi quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+    flag: "🇮🇷",
+    siteName: "Daily Farsi Quiz",
+  },
+  {
     langCode: "zh",
     name: "中文",
     englishName: "Chinese",

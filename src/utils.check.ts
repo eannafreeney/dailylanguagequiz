@@ -5,7 +5,7 @@ import { getDailyQuestions, redirectUrl } from "./utils";
 const start = new Date("2026-01-01T12:00:00.000Z");
 const day = (n: number) => new Date(start.getTime() + n * 86_400_000);
 
-for (const lang of ["ga", "de", "ru", "it"] as const) {
+for (const lang of ["ga", "de", "ru", "it", "hu", "fr", "fa"] as const) {
   const first = getDailyQuestions(lang, start);
   const seen = new Set<string>();
   let period = 0;
@@ -97,6 +97,15 @@ assert.match(hubHtml, /192 questions · A1–B1/);
 assert.match(hubHtml, /200 questions · A1–B2/);
 assert.doesNotMatch(hubHtml, /Russian|Italian|href="\/(?:ru|it)"/);
 assert.equal((await app.request("https://dailylanguagequiz.com/zh")).status, 200);
+const hungarian = await app.request("https://dailylanguagequiz.com/hu");
+assert.equal(hungarian.status, 200);
+assert.match(await hungarian.text(), /Daily Hungarian quiz/);
+const french = await app.request("https://dailylanguagequiz.com/fr");
+assert.equal(french.status, 200);
+assert.match(await french.text(), /Daily French quiz/);
+const farsi = await app.request("https://dailylanguagequiz.com/fa");
+assert.equal(farsi.status, 200);
+assert.match(await farsi.text(), /Daily Farsi quiz/);
 assert.equal((await app.request("https://www.dailylanguagequiz.com/")).status, 301);
 assert.equal((await app.request("https://example.com/")).status, 404);
 assert.doesNotMatch(irishHtml, /Five questions a day/);
