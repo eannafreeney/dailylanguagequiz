@@ -1,6 +1,8 @@
 import NextQuestionButton from "./NextQuestionButton";
 import type { Question, LangCode } from "../types";
 import CompleteBanner from "./CompleteBanner";
+import { languageConfig } from "../config/language-config";
+import { languageView, nativeOptions, optionLabel, phraseReadingLine } from "../lib/script";
 
 type AnswerStatus = "correct" | "incorrect" | "invalid";
 type Props = {
@@ -20,9 +22,17 @@ const Answer = ({
   langCode,
   dailyQuestionsLength,
   message,
-  script = "simplified",
+  script = "",
 }: Props) => {
   const isCorrect = status === "correct";
+  const view = languageView(langCode);
+  const native = Boolean(question && nativeOptions(question));
+  const shown = question
+    ? optionLabel(question, question.correctAnswer, script)
+    : "";
+  const reading = question?.readings?.[question.correctAnswer];
+  const phraseLine = question ? phraseReadingLine(question) : "";
+  const theme = languageConfig[langCode].theme;
   const isComplete = isCorrect && nextNumber >= dailyQuestionsLength;
   const styles = {
     correct: {
@@ -53,18 +63,6 @@ const Answer = ({
       description: "Please select one of the choices above.",
     },
   }[status];
-  const correctOption =
-    question && langCode === "zh"
-      ? question.question
-      : question?.options?.[question.correctAnswer];
-  const chineseOption =
-    question && langCode === "zh"
-      ? ((script === "traditional"
-          ? question.traditionalOptions?.[question.correctAnswer]
-          : question.simplifiedOptions?.[question.correctAnswer]) ??
-        correctOption)
-      : undefined;
-
   return (
     <div
       id="answer"
@@ -84,24 +82,47 @@ const Answer = ({
               {message ?? styles.description}
             </p>
           )}
-          {isCorrect && question && langCode === "zh" && (
-            <div class="mt-3 rounded-xl border border-red-100 bg-white/80 p-4">
+          {isCorrect && question && native && (
+            <div class="mt-3 rounded-xl border border-slate-200 bg-white/80 p-4">
               <p class="text-sm font-medium text-slate-500">Correct answer</p>
-              <p lang="zh" class="mt-1 text-2xl font-bold text-slate-900">
-                {chineseOption}
+              <p
+                lang={view.optionLang}
+                dir={view.dir === "rtl" ? "rtl" : undefined}
+                class="mt-1 text-2xl font-bold text-slate-900"
+              >
+                {shown}
               </p>
-              <p class="mt-1 text-sm font-semibold text-red-700">
-                {question.optionPinyin?.[question.correctAnswer]}
-              </p>
-              <p class="mt-1 text-sm text-slate-600">{correctOption}</p>
+              {reading && (
+                <p
+                  dir="ltr"
+                  class={`mt-1 text-sm font-semibold ${theme.accentText}`}
+                >
+                  {reading}
+                </p>
+              )}
+              <p class="mt-1 text-sm text-slate-600">{question.question}</p>
             </div>
           )}
           {isCorrect && (
             <div class="mt-2 flex flex-col gap-4">
               {question?.phrase && (
-                <p class={`text-lg font-semibold ${styles.heading}`}>
-                  {question.phrase}
-                </p>
+                <div>
+                  <p
+                    lang={view.dir === "rtl" ? view.optionLang : undefined}
+                    dir={view.dir === "rtl" ? "rtl" : undefined}
+                    class={`text-lg font-semibold ${styles.heading}`}
+                  >
+                    {question.phrase}
+                  </p>
+                  {phraseLine && (
+                    <p
+                      dir="ltr"
+                      class={`mt-0.5 text-sm font-semibold ${theme.accentText}`}
+                    >
+                      {phraseLine}
+                    </p>
+                  )}
+                </div>
               )}
               {question?.explanation && (
                 <p class={`leading-relaxed ${styles.text}`}>

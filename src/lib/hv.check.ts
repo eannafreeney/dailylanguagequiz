@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { app } from "../index";
 import { xml } from "../routes/hv";
+import { languageView, optionLabel } from "./script";
 import { getDailyQuestions } from "../utils";
 
 const env = {
@@ -30,6 +31,8 @@ assert.doesNotMatch(homeXml, /Italian/);
 
 const questions = getDailyQuestions("ga");
 const question = questions[0];
+assert.ok(question.phrase);
+question.phraseReading = "phrase-reading-check";
 const screen = await request("https://dailylanguagequiz.com/hv/ga/question/0");
 const screenXml = await screen.text();
 assert.equal(screen.status, 200);
@@ -72,6 +75,7 @@ assert.match(hitXml, /style="OptionRight"/);
 assert.doesNotMatch(hitXml, /OptionWrong/);
 assert.match(hitXml, /select-single/);
 assert.match(hitXml, /href="\/hv\/ga\/question\/1"/);
+assert.ok(hitXml.includes("phrase-reading-check"));
 
 const last = questions[questions.length - 1];
 const done = await request(
@@ -107,11 +111,15 @@ const traditional = await request(
   "https://dailylanguagequiz.com/hv/zh/question/0?script=traditional",
 );
 const traditionalXml = await traditional.text();
-const traditionalLabel = zh.traditionalOptions![0];
-if (traditionalLabel !== zh.simplifiedOptions![0]) {
+assert.equal(languageView("fa").dir, "rtl");
+assert.equal(languageView("zh").scripts[1]?.id, "traditional");
+assert.equal(languageView("ga").dir, "ltr");
+const traditionalLabel = optionLabel(zh, 0, "traditional");
+if (traditionalLabel !== zh.options![0]) {
   assert.ok(traditionalXml.includes(xml(traditionalLabel)));
 }
-assert.ok(traditionalXml.includes(`value="${xml(zh.simplifiedOptions![0])}"`));
+assert.ok(traditionalXml.includes(`value="${xml(zh.options![0])}"`));
+assert.ok(zh.readings?.[0] && traditionalXml.includes(xml(zh.readings[0])));
 
 const web = await request("https://dailyirishquiz.com/ga/answer/0", {
   method: "POST",
@@ -123,4 +131,7 @@ const web = await request("https://dailyirishquiz.com/ga/answer/0", {
   }),
 });
 assert.equal(web.status, 200);
-assert.match(await web.text(), /data-status="correct"/);
+const webHtml = await web.text();
+assert.match(webHtml, /data-status="correct"/);
+assert.ok(webHtml.includes("phrase-reading-check"));
+assert.match(webHtml, /dir="ltr"/);

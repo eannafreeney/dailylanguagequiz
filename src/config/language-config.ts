@@ -91,6 +91,72 @@ const italianTheme: LanguageTheme = {
   footerBar: "mt-auto border-t border-green-900 bg-green-950 text-green-100",
 };
 
+const frenchTheme: LanguageTheme = {
+  accent: "bg-blue-800",
+  accentHover: "hover:bg-blue-900",
+  accentBorderHover: "hover:border-blue-900",
+  accentSoft: "bg-blue-50",
+  accentBorder: "border-blue-200",
+  accentText: "text-blue-800",
+  focus: "focus-visible:outline-blue-800",
+  progress: "bg-red-600",
+  progressTrack: "bg-slate-200",
+  radio:
+    "checked:border-blue-800 checked:bg-[radial-gradient(circle,_#1e40af_35%,_white_40%)]",
+  selectedOption: "has-[:checked]:border-blue-800 has-[:checked]:bg-blue-50",
+  optionHover: "hover:border-blue-400 hover:bg-blue-50",
+  kicker: "text-red-700",
+  headerBar: "bg-blue-800 border-b-4 border-red-600",
+  headerTitle: "text-white",
+  headerMuted: "text-blue-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-red-600 bg-blue-950 text-blue-100",
+};
+
+const hungarianTheme: LanguageTheme = {
+  accent: "bg-red-700",
+  accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
+  accentSoft: "bg-red-50",
+  accentBorder: "border-red-200",
+  accentText: "text-red-800",
+  focus: "focus-visible:outline-red-700",
+  progress: "bg-green-700",
+  progressTrack: "bg-slate-200",
+  radio:
+    "checked:border-red-700 checked:bg-[radial-gradient(circle,_#b91c1c_35%,_white_40%)]",
+  selectedOption: "has-[:checked]:border-red-700 has-[:checked]:bg-red-50",
+  optionHover: "hover:border-red-300 hover:bg-red-50",
+  kicker: "text-green-800",
+  headerBar: "bg-red-700 border-b-4 border-green-700",
+  headerTitle: "text-white",
+  headerMuted: "text-red-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-green-600 bg-red-950 text-red-100",
+};
+
+const farsiTheme: LanguageTheme = {
+  accent: "bg-green-700",
+  accentHover: "hover:bg-green-800",
+  accentBorderHover: "hover:border-green-800",
+  accentSoft: "bg-green-50",
+  accentBorder: "border-green-200",
+  accentText: "text-green-800",
+  focus: "focus-visible:outline-green-700",
+  progress: "bg-red-600",
+  progressTrack: "bg-slate-200",
+  radio:
+    "checked:border-green-700 checked:bg-[radial-gradient(circle,_#15803d_35%,_white_40%)]",
+  selectedOption: "has-[:checked]:border-green-700 has-[:checked]:bg-green-50",
+  optionHover: "hover:border-green-400 hover:bg-green-50",
+  kicker: "text-red-700",
+  headerBar: "bg-white border-t-4 border-b-4 border-t-green-700 border-b-red-600",
+  headerTitle: "text-slate-900",
+  headerMuted: "text-slate-500",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-red-600 bg-green-950 text-green-100",
+};
+
 const chineseTheme: LanguageTheme = {
   accent: "bg-red-700",
   accentHover: "hover:bg-red-800",
@@ -158,7 +224,7 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   ru: { links: [], theme: irishTheme },
   it: { links: [], theme: italianTheme },
   zh: { links: [], theme: chineseTheme },
-  hu: { links: [], theme: italianTheme },
-  fr: { links: [], theme: irishTheme },
-  fa: { links: [], theme: germanTheme },
+  hu: { links: [], theme: hungarianTheme },
+  fr: { links: [], theme: frenchTheme },
+  fa: { links: [], theme: farsiTheme },
 };

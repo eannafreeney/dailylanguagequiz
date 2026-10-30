@@ -6,8 +6,9 @@
     "question": "What does “آب” (āb) mean?",
     "options": ["bread", "water", "rice"],
     "correctAnswer": 1,
-    "explanation": "“آب” (āb) means “water”. “bread” is نان (nān) and “rice” is برنج (berenj). Literally: yek livān āb mikhāham. = “one glass water want-I”.",
+    "explanation": "“آب” (āb) means “water”. “bread” is نان (nān) and “rice” is برنج (berenj).",
     "phrase": "یک لیوان آب می‌خواهم.",
+    "phraseReading": "yek livān āb mikhāham",
     "tags": ["food", "drink", "nouns"]
   },
   {
@@ -17,8 +18,9 @@
     "question": "What does “نان” (nān) mean?",
     "options": ["bread", "rice", "cheese"],
     "correctAnswer": 0,
-    "explanation": "“نان” (nān) means “bread”. “rice” is برنج (berenj) and “cheese” is پنیر (panir). Literally: nān-e tāze dust dāram. = “bread-of fresh friend have-I (= I like fresh bread)”.",
+    "explanation": "“نان” (nān) means “bread”. “rice” is برنج (berenj) and “cheese” is پنیر (panir).",
     "phrase": "نان تازه دوست دارم.",
+    "phraseReading": "nān-e tāze dust dāram",
     "tags": ["food", "nouns"]
   },
   {
@@ -28,8 +30,9 @@
     "question": "What does “برنج” (berenj) mean?",
     "options": ["rice (uncooked)", "tea", "meat"],
     "correctAnswer": 0,
-    "explanation": "“برنج” (berenj) means “rice (uncooked)”. “tea” is چای (chāy) and “meat” is گوشت (gusht). Cooked rice is پلو (polo). Literally: berenj va morgh mikhoram. = “rice and chicken eat-I”.",
+    "explanation": "“برنج” (berenj) means “rice (uncooked)”. “tea” is چای (chāy) and “meat” is گوشت (gusht). Cooked rice is پلو (polo).",
     "phrase": "برنج و مرغ می‌خورم.",
+    "phraseReading": "berenj va morgh mikhoram",
     "tags": ["food", "nouns"]
   },
   {
@@ -39,8 +42,9 @@
     "question": "What does “چای” (chāy) mean?",
     "options": ["coffee", "tea", "juice"],
     "correctAnswer": 1,
-    "explanation": "“چای” (chāy) means “tea”. “coffee” is قهوه (ghahve) and “juice” is آب‌میوه (ābmive). Literally: yek chāy mikhāham. = “one tea want-I”.",
+    "explanation": "“چای” (chāy) means “tea”. “coffee” is قهوه (ghahve) and “juice” is آب‌میوه (ābmive).",
     "phrase": "یک چای می‌خواهم.",
+    "phraseReading": "yek chāy mikhāham",
     "tags": ["drink", "nouns"]
   },
   {
@@ -50,8 +54,9 @@
     "question": "What does “شیر” (shir) mean?",
     "options": ["milk", "yoghurt", "cheese"],
     "correctAnswer": 0,
-    "explanation": "“شیر” (shir) means “milk”. “yoghurt” is ماست (māst) and “cheese” is پنیر (panir). Shir also means “lion” and “water tap”, so context matters. Literally: shir-e garm mikhoram. = “milk-of warm eat-I”.",
+    "explanation": "“شیر” (shir) means “milk”. “yoghurt” is ماست (māst) and “cheese” is پنیر (panir). Shir also means “lion” and “water tap”, so context matters.",
     "phrase": "شیر گرم می‌خورم.",
+    "phraseReading": "shir-e garm mikhoram",
     "tags": ["drink", "nouns"]
   },
   {
@@ -61,8 +66,9 @@
     "question": "What does “سیب” (sib) mean?",
     "options": ["pear", "grape", "apple"],
     "correctAnswer": 2,
-    "explanation": "“سیب” (sib) means “apple”. “pear” is گلابی (golābi) and “grape” is انگور (angur). Literally: man sib dust dāram. = “I apple friend have-I (= I like apples)”.",
+    "explanation": "“سیب” (sib) means “apple”. “pear” is گلابی (golābi) and “grape” is انگور (angur).",
     "phrase": "من سیب دوست دارم.",
+    "phraseReading": "man sib dust dāram",
     "tags": ["food", "fruit", "nouns"]
   },
   {
@@ -72,8 +78,9 @@
     "question": "What does “گربه” (gorbe) mean?",
     "options": ["dog", "cat", "bird"],
     "correctAnswer": 1,
-    "explanation": "“گربه” (gorbe) means “cat”. “dog” is سگ (sag) and “bird” is پرنده (parande). Literally: gorbe ru-ye miz ast. = “cat on table is”.",
+    "explanation": "“گربه” (gorbe) means “cat”. “dog” is سگ (sag) and “bird” is پرنده (parande).",
     "phrase": "گربه روی میز است.",
+    "phraseReading": "gorbe ru-ye miz ast",
     "tags": ["animals", "nouns"]
   },
   {
@@ -83,8 +90,9 @@
     "question": "What does “سگ” (sag) mean?",
     "options": ["dog", "horse", "fish"],
     "correctAnswer": 0,
-    "explanation": "“سگ” (sag) means “dog”. “horse” is اسب (asb) and “fish” is ماهی (māhi). Literally: sag-e man bozorg ast. = “dog-of me big is”.",
+    "explanation": "“سگ” (sag) means “dog”. “horse” is اسب (asb) and “fish” is ماهی (māhi).",
     "phrase": "سگ من بزرگ است.",
+    "phraseReading": "sag-e man bozorg ast",
     "tags": ["animals", "nouns"]
   },
   {
@@ -94,8 +102,9 @@
     "question": "What does “خانه” (khāne) mean?",
     "options": ["house / home", "door", "window"],
     "correctAnswer": 0,
-    "explanation": "“خانه” (khāne) means “house / home”. “door” is در (dar) and “window” is پنجره (panjare). Literally: khāne-ye mā kuchak ast. = “house-of us small is”.",
+    "explanation": "“خانه” (khāne) means “house / home”. “door” is در (dar) and “window” is پنجره (panjare).",
     "phrase": "خانه ما کوچک است.",
+    "phraseReading": "khāne-ye mā kuchak ast",
     "tags": ["household", "nouns"]
   },
   {
@@ -105,8 +114,9 @@
     "question": "What does “در” (dar) mean?",
     "options": ["wall", "window", "door"],
     "correctAnswer": 2,
-    "explanation": "“در” (dar) means “door”. “wall” is دیوار (divār) and “window” is پنجره (panjare). Dar also means “in”. Literally: dar rā bebband. = “door OBJ close!”.",
+    "explanation": "“در” (dar) means “door”. “wall” is دیوار (divār) and “window” is پنجره (panjare). Dar also means “in”.",
     "phrase": "در را ببند.",
+    "phraseReading": "dar rā bebband",
     "tags": ["household", "nouns"]
   },
   {
@@ -116,8 +126,9 @@
     "question": "What does “میز” (miz) mean?",
     "options": ["table", "chair", "bed"],
     "correctAnswer": 0,
-    "explanation": "“میز” (miz) means “table”. “chair” is صندلی (sandali) and “bed” is تخت (takht). Literally: ghazā ru-ye miz ast. = “food on table is”.",
+    "explanation": "“میز” (miz) means “table”. “chair” is صندلی (sandali) and “bed” is تخت (takht).",
     "phrase": "غذا روی میز است.",
+    "phraseReading": "ghazā ru-ye miz ast",
     "tags": ["household", "nouns"]
   },
   {
@@ -127,8 +138,9 @@
     "question": "What does “صندلی” (sandali) mean?",
     "options": ["lamp", "chair", "carpet"],
     "correctAnswer": 1,
-    "explanation": "“صندلی” (sandali) means “chair”. “lamp” is چراغ (cherāgh) and “carpet” is فرش (farsh). Literally: ru-ye sandali benshin. = “on chair sit!”.",
+    "explanation": "“صندلی” (sandali) means “chair”. “lamp” is چراغ (cherāgh) and “carpet” is فرش (farsh).",
     "phrase": "روی صندلی بنشین.",
+    "phraseReading": "ru-ye sandali benshin",
     "tags": ["household", "nouns"]
   },
   {
@@ -138,8 +150,9 @@
     "question": "What does “کتاب” (ketāb) mean?",
     "options": ["pen", "book", "notebook"],
     "correctAnswer": 1,
-    "explanation": "“کتاب” (ketāb) means “book”. “pen” is خودکار (khodkār) and “notebook” is دفتر (daftar). Literally: in ketāb khub ast. = “this book good is”.",
+    "explanation": "“کتاب” (ketāb) means “book”. “pen” is خودکار (khodkār) and “notebook” is دفتر (daftar).",
     "phrase": "این کتاب خوب است.",
+    "phraseReading": "in ketāb khub ast",
     "tags": ["school", "nouns"]
   },
   {
@@ -149,8 +162,9 @@
     "question": "What does “خودکار” (khodkār) mean?",
     "options": ["pen (ballpoint)", "pencil", "eraser"],
     "correctAnswer": 0,
-    "explanation": "“خودکار” (khodkār) means “pen (ballpoint)”. “pencil” is مداد (medād) and “eraser” is پاک‌کن (pāk-kon). Literally: khodkār dāri? = “pen have-you?”.",
+    "explanation": "“خودکار” (khodkār) means “pen (ballpoint)”. “pencil” is مداد (medād) and “eraser” is پاک‌کن (pāk-kon).",
     "phrase": "خودکار داری؟",
+    "phraseReading": "khodkār dāri?",
     "tags": ["school", "nouns"]
   },
   {
@@ -160,8 +174,9 @@
     "question": "What does “مدرسه” (madrese) mean?",
     "options": ["university", "school", "hospital"],
     "correctAnswer": 1,
-    "explanation": "“مدرسه” (madrese) means “school”. “university” is دانشگاه (dāneshgāh) and “hospital” is بیمارستان (bimārestān). Literally: madrese sā'at-e hasht shoru' mishavad. = “school hour-of eight start becomes”.",
+    "explanation": "“مدرسه” (madrese) means “school”. “university” is دانشگاه (dāneshgāh) and “hospital” is بیمارستان (bimārestān).",
     "phrase": "مدرسه ساعت هشت شروع می‌شود.",
+    "phraseReading": "madrese sā'at-e hasht shoru' mishavad",
     "tags": ["places", "nouns"]
   },
   {
@@ -171,8 +186,9 @@
     "question": "What does “دانشگاه” (dāneshgāh) mean?",
     "options": ["school", "university", "library"],
     "correctAnswer": 1,
-    "explanation": "“دانشگاه” (dāneshgāh) means “university”. “school” is مدرسه (madrese) and “library” is کتابخانه (ketābkhāne). Literally: u dar dāneshgāh dars mikhānad. = “he/she in university lesson reads (= studies)”.",
+    "explanation": "“دانشگاه” (dāneshgāh) means “university”. “school” is مدرسه (madrese) and “library” is کتابخانه (ketābkhāne).",
     "phrase": "او در دانشگاه درس می‌خواند.",
+    "phraseReading": "u dar dāneshgāh dars mikhānad",
     "tags": ["places", "nouns"]
   },
   {
@@ -182,8 +198,9 @@
     "question": "What does “مغازه” (maghāze) mean?",
     "options": ["bank", "shop", "park"],
     "correctAnswer": 1,
-    "explanation": "“مغازه” (maghāze) means “shop”. “bank” is بانک (bānk) and “park” is پارک (pārk). Literally: maghāze bāz ast. = “shop open is”.",
+    "explanation": "“مغازه” (maghāze) means “shop”. “bank” is بانک (bānk) and “park” is پارک (pārk).",
     "phrase": "مغازه باز است.",
+    "phraseReading": "maghāze bāz ast",
     "tags": ["places", "nouns"]
   },
   {
@@ -193,8 +210,9 @@
     "question": "What does “بیمارستان” (bimārestān) mean?",
     "options": ["hospital", "school", "restaurant"],
     "correctAnswer": 0,
-    "explanation": "“بیمارستان” (bimārestān) means “hospital”. “school” is مدرسه (madrese) and “restaurant” is رستوران (restorān). Literally: bimārestān dur ast. = “hospital far is”.",
+    "explanation": "“بیمارستان” (bimārestān) means “hospital”. “school” is مدرسه (madrese) and “restaurant” is رستوران (restorān).",
     "phrase": "بیمارستان دور است.",
+    "phraseReading": "bimārestān dur ast",
     "tags": ["places", "nouns"]
   },
   {
@@ -204,8 +222,9 @@
     "question": "What does “رستوران” (restorān) mean?",
     "options": ["hotel", "museum", "restaurant"],
     "correctAnswer": 2,
-    "explanation": "“رستوران” (restorān) means “restaurant”. “hotel” is هتل (hotel) and “museum” is موزه (muze). Literally: in restorān khub ast. = “this restaurant good is”.",
+    "explanation": "“رستوران” (restorān) means “restaurant”. “hotel” is هتل (hotel) and “museum” is موزه (muze).",
     "phrase": "این رستوران خوب است.",
+    "phraseReading": "in restorān khub ast",
     "tags": ["places", "nouns"]
   },
   {
@@ -215,8 +234,9 @@
     "question": "What does “دوست” (dust) mean?",
     "options": ["neighbour", "friend", "teacher"],
     "correctAnswer": 1,
-    "explanation": "“دوست” (dust) means “friend”. “neighbour” is همسایه (hamsāye) and “teacher” is معلم (mo'allem). Dust dāshtan (“to have as a friend”) means “to like”. Literally: u dust-e man ast. = “he/she friend-of me is”.",
+    "explanation": "“دوست” (dust) means “friend”. “neighbour” is همسایه (hamsāye) and “teacher” is معلم (mo'allem). Dust dāshtan (“to have as a friend”) means “to like”.",
     "phrase": "او دوست من است.",
+    "phraseReading": "u dust-e man ast",
     "tags": ["people", "nouns"]
   },
   {
@@ -226,8 +246,9 @@
     "question": "What does “مادر” (mādar) mean?",
     "options": ["father", "mother", "sister"],
     "correctAnswer": 1,
-    "explanation": "“مادر” (mādar) means “mother”. “father” is پدر (pedar) and “sister” is خواهر (khāhar). Literally: mādar-e man mo'allem ast. = “mother-of me teacher is”.",
+    "explanation": "“مادر” (mādar) means “mother”. “father” is پدر (pedar) and “sister” is خواهر (khāhar).",
     "phrase": "مادر من معلم است.",
+    "phraseReading": "mādar-e man mo'allem ast",
     "tags": ["family", "nouns"]
   },
   {
@@ -237,8 +258,9 @@
     "question": "What does “پدر” (pedar) mean?",
     "options": ["father", "son / boy", "daughter / girl"],
     "correctAnswer": 0,
-    "explanation": "“پدر” (pedar) means “father”. “son / boy” is پسر (pesar) and “daughter / girl” is دختر (dokhtar). Literally: pedaram kār mikonad. = “father-my work does”.",
+    "explanation": "“پدر” (pedar) means “father”. “son / boy” is پسر (pesar) and “daughter / girl” is دختر (dokhtar).",
     "phrase": "پدرم کار می‌کند.",
+    "phraseReading": "pedaram kār mikonad",
     "tags": ["family", "nouns"]
   },
   {
@@ -248,8 +270,9 @@
     "question": "What does “برادر” (barādar) mean?",
     "options": ["brother", "sister", "uncle"],
     "correctAnswer": 0,
-    "explanation": "“برادر” (barādar) means “brother”. “sister” is خواهر (khāhar) and “uncle” is عمو (amu). Literally: man yek barādar dāram. = “I one brother have-I”.",
+    "explanation": "“برادر” (barādar) means “brother”. “sister” is خواهر (khāhar) and “uncle” is عمو (amu).",
     "phrase": "من یک برادر دارم.",
+    "phraseReading": "man yek barādar dāram",
     "tags": ["family", "nouns"]
   },
   {
@@ -259,8 +282,9 @@
     "question": "What does “قرمز” (ghermez) mean?",
     "options": ["red", "blue", "green"],
     "correctAnswer": 0,
-    "explanation": "“قرمز” (ghermez) means “red”. “blue” is آبی (ābi) and “green” is سبز (sabz). Literally: māshin ghermez ast. = “car red is”.",
+    "explanation": "“قرمز” (ghermez) means “red”. “blue” is آبی (ābi) and “green” is سبز (sabz).",
     "phrase": "ماشین قرمز است.",
+    "phraseReading": "māshin ghermez ast",
     "tags": ["colours", "adjectives"]
   },
   {
@@ -270,8 +294,9 @@
     "question": "What does “آبی” (ābi) mean?",
     "options": ["blue", "yellow", "black"],
     "correctAnswer": 0,
-    "explanation": "“آبی” (ābi) means “blue”. “yellow” is زرد (zard) and “black” is سیاه (siyāh). Ābi comes from āb (water). Literally: āsemān ābi ast. = “sky blue is”.",
+    "explanation": "“آبی” (ābi) means “blue”. “yellow” is زرد (zard) and “black” is سیاه (siyāh). Ābi comes from āb (water).",
     "phrase": "آسمان آبی است.",
+    "phraseReading": "āsemān ābi ast",
     "tags": ["colours", "adjectives"]
   },
   {
@@ -281,8 +306,9 @@
     "question": "What does “سفید” (sefid) mean?",
     "options": ["black", "grey", "white"],
     "correctAnswer": 2,
-    "explanation": "“سفید” (sefid) means “white”. “black” is سیاه (siyāh) and “grey” is خاکستری (khākestari). Literally: barf sefid ast. = “snow white is”.",
+    "explanation": "“سفید” (sefid) means “white”. “black” is سیاه (siyāh) and “grey” is خاکستری (khākestari).",
     "phrase": "برف سفید است.",
+    "phraseReading": "barf sefid ast",
     "tags": ["colours", "adjectives"]
   },
   {
@@ -292,8 +318,9 @@
     "question": "What does “بزرگ” (bozorg) mean?",
     "options": ["small", "big", "cold"],
     "correctAnswer": 1,
-    "explanation": "“بزرگ” (bozorg) means “big”. “small” is کوچک (kuchak) and “cold” is سرد (sard). Literally: shahr bozorg ast. = “city big is”.",
+    "explanation": "“بزرگ” (bozorg) means “big”. “small” is کوچک (kuchak) and “cold” is سرد (sard).",
     "phrase": "شهر بزرگ است.",
+    "phraseReading": "shahr bozorg ast",
     "tags": ["adjectives"]
   },
   {
@@ -303,8 +330,9 @@
     "question": "What does “کوچک” (kuchak) mean?",
     "options": ["tall / high", "small", "fast"],
     "correctAnswer": 1,
-    "explanation": "“کوچک” (kuchak) means “small”. “tall / high” is بلند (boland) and “fast” is سریع (sari'). Literally: otāgh kuchak ast. = “room small is”.",
+    "explanation": "“کوچک” (kuchak) means “small”. “tall / high” is بلند (boland) and “fast” is سریع (sari').",
     "phrase": "اتاق کوچک است.",
+    "phraseReading": "otāgh kuchak ast",
     "tags": ["adjectives"]
   },
   {
@@ -314,8 +342,9 @@
     "question": "What does “گرم” (garm) mean?",
     "options": ["cold", "warm / hot", "wet"],
     "correctAnswer": 1,
-    "explanation": "“گرم” (garm) means “warm / hot”. “cold” is سرد (sard) and “wet” is خیس (khis). Literally: emruz havā garm ast. = “today weather hot is”.",
+    "explanation": "“گرم” (garm) means “warm / hot”. “cold” is سرد (sard) and “wet” is خیس (khis).",
     "phrase": "امروز هوا گرم است.",
+    "phraseReading": "emruz havā garm ast",
     "tags": ["weather", "adjectives"]
   },
   {
@@ -325,8 +354,9 @@
     "question": "What does “سریع” (sari') mean?",
     "options": ["slow", "heavy", "fast"],
     "correctAnswer": 2,
-    "explanation": "“سریع” (sari') means “fast”. “slow” is آهسته (āheste) and “heavy” is سنگین (sangin). Literally: ghatār sari' ast. = “train fast is”.",
+    "explanation": "“سریع” (sari') means “fast”. “slow” is آهسته (āheste) and “heavy” is سنگین (sangin).",
     "phrase": "قطار سریع است.",
+    "phraseReading": "ghatār sari' ast",
     "tags": ["adjectives"]
   },
   {
@@ -336,8 +366,9 @@
     "question": "What does “زیبا” (zibā) mean?",
     "options": ["beautiful", "ugly", "tired"],
     "correctAnswer": 0,
-    "explanation": "“زیبا” (zibā) means “beautiful”. “ugly” is زشت (zesht) and “tired” is خسته (khaste). Literally: in shahr zibā ast. = “this city beautiful is”.",
+    "explanation": "“زیبا” (zibā) means “beautiful”. “ugly” is زشت (zesht) and “tired” is خسته (khaste).",
     "phrase": "این شهر زیبا است.",
+    "phraseReading": "in shahr zibā ast",
     "tags": ["adjectives"]
   },
   {
@@ -347,8 +378,9 @@
     "question": "What does “گرسنه” (gorosne) mean?",
     "options": ["hungry", "thirsty", "tired"],
     "correctAnswer": 0,
-    "explanation": "“گرسنه” (gorosne) means “hungry”. “thirsty” is تشنه (teshne) and “tired” is خسته (khaste). Literally: man gorosne hastam. = “I hungry am-I”.",
+    "explanation": "“گرسنه” (gorosne) means “hungry”. “thirsty” is تشنه (teshne) and “tired” is خسته (khaste).",
     "phrase": "من گرسنه هستم.",
+    "phraseReading": "man gorosne hastam",
     "tags": ["feelings", "adjectives"]
   },
   {
@@ -358,8 +390,9 @@
     "question": "What does “خسته” (khaste) mean?",
     "options": ["tired", "happy", "sad / upset"],
     "correctAnswer": 0,
-    "explanation": "“خسته” (khaste) means “tired”. “happy” is خوشحال (khoshhāl) and “sad / upset” is ناراحت (nārāhat). Literally: man kheyli khaste hastam. = “I very tired am-I”.",
+    "explanation": "“خسته” (khaste) means “tired”. “happy” is خوشحال (khoshhāl) and “sad / upset” is ناراحت (nārāhat).",
     "phrase": "من خیلی خسته هستم.",
+    "phraseReading": "man kheyli khaste hastam",
     "tags": ["feelings", "adjectives"]
   },
   {
@@ -369,8 +402,9 @@
     "question": "What does “خوشحال” (khoshhāl) mean?",
     "options": ["sad", "happy", "angry"],
     "correctAnswer": 1,
-    "explanation": "“خوشحال” (khoshhāl) means “happy”. “sad” is غمگین (ghamgin) and “angry” is عصبانی (asabāni). Literally: az didan-e shomā khoshhālam. = “from seeing-of you happy-I-am (= nice to see you)”.",
+    "explanation": "“خوشحال” (khoshhāl) means “happy”. “sad” is غمگین (ghamgin) and “angry” is عصبانی (asabāni).",
     "phrase": "از دیدن شما خوشحالم.",
+    "phraseReading": "az didan-e shomā khoshhālam",
     "tags": ["feelings", "adjectives"]
   },
   {
@@ -380,8 +414,9 @@
     "question": "What does “خوردن” (khordan) mean?",
     "options": ["to read", "to sleep", "to eat"],
     "correctAnswer": 2,
-    "explanation": "“خوردن” (khordan) means “to eat”. “to read” is خواندن (khāndan) and “to sleep” is خوابیدن (khābidan). Khordan is also used for drinking tea, water, etc. Literally: sobhāne mikhoram. = “breakfast eat-I”.",
+    "explanation": "“خوردن” (khordan) means “to eat”. “to read” is خواندن (khāndan) and “to sleep” is خوابیدن (khābidan). Khordan is also used for drinking tea, water, etc.",
     "phrase": "صبحانه می‌خورم.",
+    "phraseReading": "sobhāne mikhoram",
     "tags": ["verbs"]
   },
   {
@@ -391,8 +426,9 @@
     "question": "What does “رفتن” (raftan) mean?",
     "options": ["to come", "to stay", "to go"],
     "correctAnswer": 2,
-    "explanation": "“رفتن” (raftan) means “to go”. “to come” is آمدن (āmadan) and “to stay” is ماندن (māndan). Literally: be khāne miravam. = “to house go-I”.",
+    "explanation": "“رفتن” (raftan) means “to go”. “to come” is آمدن (āmadan) and “to stay” is ماندن (māndan).",
     "phrase": "به خانه می‌روم.",
+    "phraseReading": "be khāne miravam",
     "tags": ["verbs"]
   },
   {
@@ -402,8 +438,9 @@
     "question": "What does “دیدن” (didan) mean?",
     "options": ["to hear", "to see", "to write"],
     "correctAnswer": 1,
-    "explanation": "“دیدن” (didan) means “to see”. “to hear” is شنیدن (shenidan) and “to write” is نوشتن (neveshtan). Literally: film rā mibinam. = “film OBJ see-I”.",
+    "explanation": "“دیدن” (didan) means “to see”. “to hear” is شنیدن (shenidan) and “to write” is نوشتن (neveshtan).",
     "phrase": "فیلم را می‌بینم.",
+    "phraseReading": "film rā mibinam",
     "tags": ["verbs"]
   },
   {
@@ -413,8 +450,9 @@
     "question": "What does “خواندن” (khāndan) mean?",
     "options": ["to write", "to read", "to say"],
     "correctAnswer": 1,
-    "explanation": "“خواندن” (khāndan) means “to read”. “to write” is نوشتن (neveshtan) and “to say” is گفتن (goftan). Khāndan also means “to sing” and “to call”. Literally: ketāb mikhānam. = “book read-I”.",
+    "explanation": "“خواندن” (khāndan) means “to read”. “to write” is نوشتن (neveshtan) and “to say” is گفتن (goftan). Khāndan also means “to sing” and “to call”.",
     "phrase": "کتاب می‌خوانم.",
+    "phraseReading": "ketāb mikhānam",
     "tags": ["verbs"]
   },
   {
@@ -424,8 +462,9 @@
     "question": "What does “نوشتن” (neveshtan) mean?",
     "options": ["to read", "to write", "to run"],
     "correctAnswer": 1,
-    "explanation": "“نوشتن” (neveshtan) means “to write”. “to read” is خواندن (khāndan) and “to run” is دویدن (davidan). Literally: nāme minevisam. = “letter write-I”.",
+    "explanation": "“نوشتن” (neveshtan) means “to write”. “to read” is خواندن (khāndan) and “to run” is دویدن (davidan).",
     "phrase": "نامه می‌نویسم.",
+    "phraseReading": "nāme minevisam",
     "tags": ["verbs"]
   },
   {
@@ -435,8 +474,9 @@
     "question": "What does “صبحانه” (sobhāne) mean?",
     "options": ["lunch", "breakfast", "dinner"],
     "correctAnswer": 1,
-    "explanation": "“صبحانه” (sobhāne) means “breakfast”. “lunch” is ناهار (nāhār) and “dinner” is شام (shām). Literally: sobhāne sā'at-e haft ast. = “breakfast hour-of seven is”.",
+    "explanation": "“صبحانه” (sobhāne) means “breakfast”. “lunch” is ناهار (nāhār) and “dinner” is شام (shām).",
     "phrase": "صبحانه ساعت هفت است.",
+    "phraseReading": "sobhāne sā'at-e haft ast",
     "tags": ["food", "meals"]
   },
   {
@@ -446,8 +486,9 @@
     "question": "What does “اتوبوس” (otobus) mean?",
     "options": ["train", "bus", "plane"],
     "correctAnswer": 1,
-    "explanation": "“اتوبوس” (otobus) means “bus”. “train” is قطار (ghatār) and “plane” is هواپیما (havāpeymā). Literally: otobus dir miyāyad. = “bus late comes”.",
+    "explanation": "“اتوبوس” (otobus) means “bus”. “train” is قطار (ghatār) and “plane” is هواپیما (havāpeymā).",
     "phrase": "اتوبوس دیر می‌آید.",
+    "phraseReading": "otobus dir miyāyad",
     "tags": ["transport", "nouns"]
   },
   {
@@ -457,8 +498,9 @@
     "question": "What does “قطار” (ghatār) mean?",
     "options": ["train", "taxi", "metro"],
     "correctAnswer": 0,
-    "explanation": "“قطار” (ghatār) means “train”. “taxi” is تاکسی (tāksi) and “metro” is مترو (metro). Literally: ghatār be tehrān miravad. = “train to Tehran goes”.",
+    "explanation": "“قطار” (ghatār) means “train”. “taxi” is تاکسی (tāksi) and “metro” is مترو (metro).",
     "phrase": "قطار به تهران می‌رود.",
+    "phraseReading": "ghatār be tehrān miravad",
     "tags": ["transport", "nouns"]
   },
   {
@@ -468,8 +510,9 @@
     "question": "What does “فرودگاه” (forudgāh) mean?",
     "options": ["airport", "station / stop", "port"],
     "correctAnswer": 0,
-    "explanation": "“فرودگاه” (forudgāh) means “airport”. “station / stop” is ایستگاه (istgāh) and “port” is بندر (bandar). Literally: forudgāh nazdik ast. = “airport near is”.",
+    "explanation": "“فرودگاه” (forudgāh) means “airport”. “station / stop” is ایستگاه (istgāh) and “port” is بندر (bandar).",
     "phrase": "فرودگاه نزدیک است.",
+    "phraseReading": "forudgāh nazdik ast",
     "tags": ["transport", "places"]
   },
   {
@@ -479,8 +522,9 @@
     "question": "What does “شهر” (shahr) mean?",
     "options": ["village", "street", "city"],
     "correctAnswer": 2,
-    "explanation": "“شهر” (shahr) means “city”. “village” is روستا (rustā) and “street” is خیابان (khiyābān). Literally: tehrān shahr-e bozorgi ast. = “Tehran city-of big is”.",
+    "explanation": "“شهر” (shahr) means “city”. “village” is روستا (rustā) and “street” is خیابان (khiyābān).",
     "phrase": "تهران شهر بزرگی است.",
+    "phraseReading": "tehrān shahr-e bozorgi ast",
     "tags": ["places", "nouns"]
   },
   {
@@ -490,8 +534,9 @@
     "question": "What does “دکتر” (doktor) mean?",
     "options": ["teacher", "doctor", "driver"],
     "correctAnswer": 1,
-    "explanation": "“دکتر” (doktor) means “doctor”. “teacher” is معلم (mo'allem) and “driver” is راننده (rānande). Literally: doktor mehrabān ast. = “doctor kind is”.",
+    "explanation": "“دکتر” (doktor) means “doctor”. “teacher” is معلم (mo'allem) and “driver” is راننده (rānande).",
     "phrase": "دکتر مهربان است.",
+    "phraseReading": "doktor mehrabān ast",
     "tags": ["jobs", "nouns"]
   },
   {
@@ -501,8 +546,9 @@
     "question": "What does “پول” (pul) mean?",
     "options": ["price", "money", "card"],
     "correctAnswer": 1,
-    "explanation": "“پول” (pul) means “money”. “price” is قیمت (gheymat) and “card” is کارت (kārt). Literally: pul nadāram. = “money not-have-I”.",
+    "explanation": "“پول” (pul) means “money”. “price” is قیمت (gheymat) and “card” is کارت (kārt).",
     "phrase": "پول ندارم.",
+    "phraseReading": "pul nadāram",
     "tags": ["shopping", "nouns"]
   },
   {
@@ -512,8 +558,9 @@
     "question": "What does “گران” (gerān) mean?",
     "options": ["cheap", "free of charge", "expensive"],
     "correctAnswer": 2,
-    "explanation": "“گران” (gerān) means “expensive”. “cheap” is ارزان (arzān) and “free of charge” is رایگان (rāygān). Literally: in kheyli gerān ast. = “this very expensive is”.",
+    "explanation": "“گران” (gerān) means “expensive”. “cheap” is ارزان (arzān) and “free of charge” is رایگان (rāygān).",
     "phrase": "این خیلی گران است.",
+    "phraseReading": "in kheyli gerān ast",
     "tags": ["shopping", "adjectives"]
   },
   {
@@ -523,8 +570,9 @@
     "question": "What does “باران” (bārān) mean?",
     "options": ["snow", "wind", "rain"],
     "correctAnswer": 2,
-    "explanation": "“باران” (bārān) means “rain”. “snow” is برف (barf) and “wind” is باد (bād). Literally: bārān miyāyad. = “rain comes”.",
+    "explanation": "“باران” (bārān) means “rain”. “snow” is برف (barf) and “wind” is باد (bād).",
     "phrase": "باران می‌آید.",
+    "phraseReading": "bārān miyāyad",
     "tags": ["weather", "nouns"]
   },
   {
@@ -534,8 +582,9 @@
     "question": "What does “سر” (sar) mean?",
     "options": ["hand", "head", "foot / leg"],
     "correctAnswer": 1,
-    "explanation": "“سر” (sar) means “head”. “hand” is دست (dast) and “foot / leg” is پا (pā). Literally: saram dard mikonad. = “head-my pain does (= I have a headache)”.",
+    "explanation": "“سر” (sar) means “head”. “hand” is دست (dast) and “foot / leg” is پا (pā).",
     "phrase": "سرم درد می‌کند.",
+    "phraseReading": "saram dard mikonad",
     "tags": ["body", "nouns"]
   },
   {
@@ -545,590 +594,9 @@
     "question": "What does “دست” (dast) mean?",
     "options": ["eye", "hand", "ear"],
     "correctAnswer": 1,
-    "explanation": "“دست” (dast) means “hand”. “eye” is چشم (cheshm) and “ear” is گوش (gush). Literally: dastam dard mikonad. = “hand-my pain does (= my hand hurts)”.",
+    "explanation": "“دست” (dast) means “hand”. “eye” is چشم (cheshm) and “ear” is گوش (gush).",
     "phrase": "دستم درد می‌کند.",
+    "phraseReading": "dastam dard mikonad",
     "tags": ["body", "nouns"]
-  },
-  {
-    "id": "fa-51",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “سلام” (salām) mean?",
-    "options": ["Hello", "Goodbye", "Thank you"],
-    "correctAnswer": 0,
-    "explanation": "“سلام” (salām) means “Hello”. “Goodbye” is خداحافظ (khodāhāfez) and “Thank you” is مرسی (mersi). Literally: salām, hāl-e shomā chetor ast? = “peace, state-of you how is”.",
-    "phrase": "سلام، حال شما چطور است؟",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "fa-52",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “مرسی” (mersi) mean?",
-    "options": ["Please", "Sorry", "Thanks"],
-    "correctAnswer": 2,
-    "explanation": "“مرسی” (mersi) means “Thanks”. “Please” is لطفاً (lotfan) and “Sorry” is ببخشید (bebakhshid). Mersi is borrowed from French; ممنون (mamnun) is also “thanks”. Literally: mersi az komaket. = “thanks from help-your”.",
-    "phrase": "مرسی از کمکت.",
-    "tags": ["greetings", "politeness"]
-  },
-  {
-    "id": "fa-53",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “ببخشید” (bebakhshid) mean?",
-    "options": ["Thanks", "Please", "Excuse me / Sorry"],
-    "correctAnswer": 2,
-    "explanation": "“ببخشید” (bebakhshid) means “Excuse me / Sorry”. “Thanks” is مرسی (mersi) and “Please” is لطفاً (lotfan). Literally: bebakhshid, istgāh kojāst? = “forgive, station where-is”.",
-    "phrase": "ببخشید، ایستگاه کجاست؟",
-    "tags": ["politeness", "survival"]
-  },
-  {
-    "id": "fa-54",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “لطفاً” (lotfan) mean?",
-    "options": ["Welcome", "Yes", "Please"],
-    "correctAnswer": 2,
-    "explanation": "“لطفاً” (lotfan) means “Please”. “Welcome” is خوش آمدید (khosh āmadid) and “Yes” is بله (bale). Literally: lotfan āheste sohbat konid. = “please slowly talk do-you”.",
-    "phrase": "لطفاً آهسته صحبت کنید.",
-    "tags": ["politeness"]
-  },
-  {
-    "id": "fa-55",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “صبح بخیر” (sobh bekheyr) mean?",
-    "options": ["Good evening", "Good night", "Good morning"],
-    "correctAnswer": 2,
-    "explanation": "“صبح بخیر” (sobh bekheyr) means “Good morning”. “Good evening” is عصر بخیر ('asr bekheyr) and “Good night” is شب بخیر (shab bekheyr). Literally: sobh bekheyr = “morning to-good”.",
-    "phrase": "صبح بخیر",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "fa-56",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “شب بخیر” (shab bekheyr) mean?",
-    "options": ["Good night", "Good morning", "Goodbye"],
-    "correctAnswer": 0,
-    "explanation": "“شب بخیر” (shab bekheyr) means “Good night”. “Good morning” is صبح بخیر (sobh bekheyr) and “Goodbye” is خداحافظ (khodāhāfez). Literally: shab bekheyr = “night to-good”.",
-    "phrase": "شب بخیر",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "fa-57",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “خداحافظ” (khodāhāfez) mean?",
-    "options": ["Goodbye", "Hello", "Thank you"],
-    "correctAnswer": 0,
-    "explanation": "“خداحافظ” (khodāhāfez) means “Goodbye”. “Hello” is سلام (salām) and “Thank you” is مرسی (mersi). Literally: khodāhāfez = “God protector”.",
-    "phrase": "خداحافظ",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "fa-58",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “حال شما چطور است؟” (hāl-e shomā chetor ast?) mean?",
-    "options": [
-      "What's your name?",
-      "Where are you from?",
-      "How are you? (formal)"
-    ],
-    "correctAnswer": 2,
-    "explanation": "“حال شما چطور است؟” (hāl-e shomā chetor ast?) means “How are you? (formal)”. “What's your name?” is اسم شما چیست؟ (esm-e shomā chist?) and “Where are you from?” is اهل کجا هستید؟ (ahl-e kojā hastid?). Literally: hāl-e shomā chetor ast? = “state-of you how is”.",
-    "phrase": "حال شما چطور است؟",
-    "tags": ["greetings", "questions"]
-  },
-  {
-    "id": "fa-59",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “اسمت چیه؟” (esmet chiye?) mean?",
-    "options": [
-      "What's your name? (informal, spoken)",
-      "How old are you?",
-      "Where do you live?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "“اسمت چیه؟” (esmet chiye?) means “What's your name? (informal, spoken)”. “How old are you?” is چند سالته؟ (chand sālete?) and “Where do you live?” is کجا زندگی می‌کنی؟ (kojā zendegi mikoni?). Literally: esmet chiye? = “name-your what-is”.",
-    "phrase": "اسمت چیه؟",
-    "tags": ["greetings", "questions"]
-  },
-  {
-    "id": "fa-60",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “اهل کجا هستی؟” (ahl-e kojā hasti?) mean?",
-    "options": [
-      "Where are you from?",
-      "Where are you going?",
-      "What do you do?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "“اهل کجا هستی؟” (ahl-e kojā hasti?) means “Where are you from?”. “Where are you going?” is کجا می‌روی؟ (kojā miravi?) and “What do you do?” is چه کار می‌کنی؟ (che kār mikoni?). Literally: ahl-e kojā hasti? = “native-of where are-you”.",
-    "phrase": "اهل کجا هستی؟",
-    "tags": ["questions"]
-  },
-  {
-    "id": "fa-61",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “نمی‌فهمم” (nemifahmam) mean?",
-    "options": ["I don't know", "I don't understand", "I don't want"],
-    "correctAnswer": 1,
-    "explanation": "“نمی‌فهمم” (nemifahmam) means “I don't understand”. “I don't know” is نمی‌دانم (nemidānam) and “I don't want” is نمی‌خواهم (nemikhāham). Literally: nemifahmam = “not-understand-I”.",
-    "phrase": "نمی‌فهمم",
-    "tags": ["survival"]
-  },
-  {
-    "id": "fa-62",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “خواهش می‌کنم” (khāhesh mikonam) mean?",
-    "options": ["Thanks", "Goodbye", "You're welcome (also: please)"],
-    "correctAnswer": 2,
-    "explanation": "“خواهش می‌کنم” (khāhesh mikonam) means “You're welcome (also: please)”. “Thanks” is مرسی (mersi) and “Goodbye” is خداحافظ (khodāhāfez). Literally: khāhesh mikonam = “request I-do”.",
-    "phrase": "خواهش می‌کنم",
-    "tags": ["politeness"]
-  },
-  {
-    "id": "fa-63",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “این چقدر است؟” (in cheghadr ast?) mean?",
-    "options": ["What is this?", "How much is this?", "Where is this?"],
-    "correctAnswer": 1,
-    "explanation": "“این چقدر است؟” (in cheghadr ast?) means “How much is this?”. “What is this?” is این چیست؟ (in chist?) and “Where is this?” is این کجاست؟ (in kojāst?). Literally: in cheghadr ast? = “this how-much is”.",
-    "phrase": "این چقدر است؟",
-    "tags": ["shopping", "questions"]
-  },
-  {
-    "id": "fa-64",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “دستشویی کجاست؟” (dastshuyi kojāst?) mean?",
-    "options": [
-      "Where is the station?",
-      "What time is it?",
-      "Where is the toilet?"
-    ],
-    "correctAnswer": 2,
-    "explanation": "“دستشویی کجاست؟” (dastshuyi kojāst?) means “Where is the toilet?”. “Where is the station?” is ایستگاه کجاست؟ (istgāh kojāst?) and “What time is it?” is ساعت چند است؟ (sā'at chand ast?). Literally: dastshuyi kojāst? = “toilet where-is”.",
-    "phrase": "دستشویی کجاست؟",
-    "tags": ["survival", "questions"]
-  },
-  {
-    "id": "fa-65",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “انگلیسی صحبت می‌کنید؟” (engelisi sohbat mikonid?) mean?",
-    "options": [
-      "Do you speak Persian?",
-      "Do you speak English?",
-      "Do you understand?"
-    ],
-    "correctAnswer": 1,
-    "explanation": "“انگلیسی صحبت می‌کنید؟” (engelisi sohbat mikonid?) means “Do you speak English?”. “Do you speak Persian?” is فارسی صحبت می‌کنید؟ (fārsi sohbat mikonid?) and “Do you understand?” is متوجه می‌شوید؟ (motavajjeh mishavid?). Literally: engelisi sohbat mikonid? = “English talk do-you”.",
-    "phrase": "انگلیسی صحبت می‌کنید؟",
-    "tags": ["survival", "questions"]
-  },
-  {
-    "id": "fa-66",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “نوش جان!” (nush-e jān!) mean?",
-    "options": ["Cheers!", "Welcome", "Bon appétit! (said to someone eating)"],
-    "correctAnswer": 2,
-    "explanation": "“نوش جان!” (nush-e jān!) means “Bon appétit! (said to someone eating)”. “Cheers!” is به سلامتی (be salāmati) and “Welcome” is خوش آمدید (khosh āmadid). Literally: nush-e jān! = “nectar-of soul”.",
-    "phrase": "نوش جان!",
-    "tags": ["food", "politeness"]
-  },
-  {
-    "id": "fa-67",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “تولدت مبارک!” (tavalodet mobārak!) mean?",
-    "options": ["Happy Nowruz", "Welcome", "Happy birthday!"],
-    "correctAnswer": 2,
-    "explanation": "“تولدت مبارک!” (tavalodet mobārak!) means “Happy birthday!”. “Happy Nowruz” is نوروز مبارک (nowruz mobārak) and “Welcome” is خوش آمدید (khosh āmadid). Literally: tavalodet mobārak! = “birth-your blessed”.",
-    "phrase": "تولدت مبارک!",
-    "tags": ["celebrations"]
-  },
-  {
-    "id": "fa-68",
-    "category": "Phrases",
-    "level": "A1",
-    "question": "What does “کمک!” (komak!) mean?",
-    "options": ["Stop!", "Help!", "Fire!"],
-    "correctAnswer": 1,
-    "explanation": "“کمک!” (komak!) means “Help!”. “Stop!” is ایست (ist) and “Fire!” is آتش (ātash). Literally: komak! = “help”.",
-    "phrase": "کمک!",
-    "tags": ["survival"]
-  },
-  {
-    "id": "fa-69",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “هفت” (haft) mean?",
-    "options": ["seven", "six", "eight"],
-    "correctAnswer": 0,
-    "explanation": "“هفت” (haft) means “seven”. “six” is شش (shesh) and “eight” is هشت (hasht). Haft (seven) looks like hafte (هفته, week). Literally: yek hafte haft ruz dārad. = “one week seven day has”.",
-    "phrase": "یک هفته هفت روز دارد.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "fa-70",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “بیست” (bist) mean?",
-    "options": ["twenty", "ten", "thirty"],
-    "correctAnswer": 0,
-    "explanation": "“بیست” (bist) means “twenty”. “ten” is ده (dah) and “thirty” is سی (si). Literally: bist sāl dāram. = “twenty year have-I (= I'm 20)”.",
-    "phrase": "بیست سال دارم.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "fa-71",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “صد” (sad) mean?",
-    "options": ["one hundred", "one thousand", "ten"],
-    "correctAnswer": 0,
-    "explanation": "“صد” (sad) means “one hundred”. “one thousand” is هزار (hezār) and “ten” is ده (dah). Literally: sad nafar āmadand. = “hundred person came”.",
-    "phrase": "صد نفر آمدند.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "fa-72",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “دوشنبه” (doshanbe) mean?",
-    "options": ["Tuesday", "Monday", "Sunday"],
-    "correctAnswer": 1,
-    "explanation": "“دوشنبه” (doshanbe) means “Monday”. “Tuesday” is سه‌شنبه (seshanbe) and “Sunday” is یکشنبه (yekshanbe). The Iranian week starts on Saturday (شنبه, shanbe). Literally: doshanbe be madrese miravam. = “Monday to school go-I”.",
-    "phrase": "دوشنبه به مدرسه می‌روم.",
-    "tags": ["days", "time"]
-  },
-  {
-    "id": "fa-73",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “جمعه” (jom'e) mean?",
-    "options": ["Thursday", "Friday", "Saturday"],
-    "correctAnswer": 1,
-    "explanation": "“جمعه” (jom'e) means “Friday”. “Thursday” is پنجشنبه (panjshanbe) and “Saturday” is شنبه (shanbe). Friday is the main weekend day in Iran. Literally: jom'e ta'til ast. = “Friday holiday is”.",
-    "phrase": "جمعه تعطیل است.",
-    "tags": ["days", "time"]
-  },
-  {
-    "id": "fa-74",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “دیروز” (diruz) mean?",
-    "options": ["today", "tomorrow", "yesterday"],
-    "correctAnswer": 2,
-    "explanation": "“دیروز” (diruz) means “yesterday”. “today” is امروز (emruz) and “tomorrow” is فردا (fardā). Literally: diruz bārān āmad. = “yesterday rain came”.",
-    "phrase": "دیروز باران آمد.",
-    "tags": ["time"]
-  },
-  {
-    "id": "fa-75",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “ساعت” (sā'at) mean?",
-    "options": ["minute", "hour / clock / o'clock", "day"],
-    "correctAnswer": 1,
-    "explanation": "“ساعت” (sā'at) means “hour / clock / o'clock”. “minute” is دقیقه (daghighe) and “day” is روز (ruz). Literally: sā'at chand ast? = “hour how-many is”.",
-    "phrase": "ساعت چند است؟",
-    "tags": ["time"]
-  },
-  {
-    "id": "fa-76",
-    "category": "Numbers & Time",
-    "level": "A1",
-    "question": "What does “صبح” (sobh) mean?",
-    "options": ["evening", "morning", "night"],
-    "correctAnswer": 1,
-    "explanation": "“صبح” (sobh) means “morning”. “evening” is عصر ('asr) and “night” is شب (shab). Literally: sobh zud bidār mishavam. = “morning early awake become-I”.",
-    "phrase": "صبح زود بیدار می‌شوم.",
-    "tags": ["time"]
-  },
-  {
-    "id": "fa-77",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “او” (u) mean?",
-    "options": ["we", "they", "he / she"],
-    "correctAnswer": 2,
-    "explanation": "Persian has no grammatical gender, so او (u) means both “he” and “she”. “We” is ما (mā) and “they” is آن‌ها (ānhā). Literally: u dāneshju ast. = “he/she student is”.",
-    "phrase": "او دانشجو است.",
-    "tags": ["pronouns"]
-  },
-  {
-    "id": "fa-78",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “شما” (shomā) mean?",
-    "options": ["I", "you (formal or plural)", "he / she"],
-    "correctAnswer": 1,
-    "explanation": "شما (shomā) is the polite “you” and also the plural “you”. “I” is من (man) and “he/she” is او (u). Literally: shomā mo'allem hastid? = “you teacher are-you”.",
-    "phrase": "شما معلم هستید؟",
-    "tags": ["pronouns"]
-  },
-  {
-    "id": "fa-79",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “She is a student”?",
-    "options": ["او دانشجو هستم.", "او دانشجو هستند.", "او دانشجو است."],
-    "correctAnswer": 2,
-    "explanation": "For he/she/it the verb is است (ast). هستم (hastam) goes with “I” and هستند (hastand) with “they”. Literally: u dāneshju ast. = “he/she student is”.",
-    "phrase": "او دانشجو است.",
-    "tags": ["verbs", "to be"]
-  },
-  {
-    "id": "fa-80",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "Complete: “من دانشجو ___.” (man dāneshju ___.) (I am a student)",
-    "options": ["هستی", "هستم", "هستیم"],
-    "correctAnswer": 1,
-    "explanation": "Present of “to be”: هستم (hastam) I am, هستی (hasti) you are, است (ast) he/she is, هستیم (hastim) we are. Literally: man dāneshju hastam. = “I student am-I”.",
-    "phrase": "من دانشجو هستم.",
-    "tags": ["verbs", "to be"]
-  },
-  {
-    "id": "fa-81",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What is the plural of “کتاب” (ketāb, book)?",
-    "options": ["کتابان", "کتابین", "کتاب‌ها"],
-    "correctAnswer": 2,
-    "explanation": "The normal plural ending is ها (-hā). The ending ان (-ān) is mostly used for people, e.g. دانشجویان (students). Literally: ketāb-hā ru-ye miz hastand. = “books on table are”.",
-    "phrase": "کتاب‌ها روی میز هستند.",
-    "tags": ["plurals"]
-  },
-  {
-    "id": "fa-82",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “two books”?",
-    "options": ["دو کتاب‌ها", "دو کتابان", "دو کتاب"],
-    "correctAnswer": 2,
-    "explanation": "After a number the noun stays singular. Literally: do ketāb dāram. = “two book have-I”.",
-    "phrase": "دو کتاب دارم.",
-    "tags": ["numbers", "plurals"]
-  },
-  {
-    "id": "fa-83",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "How do you say “my book”?",
-    "options": ["من کتاب", "کتاب به من", "کتاب من"],
-    "correctAnswer": 2,
-    "explanation": "The possessor follows the noun, linked by an unwritten -e (ezāfe): ketāb-e man. “من کتاب” would be “I book” and “کتاب به من” means “book to me”. Literally: ketāb-e man ru-ye miz ast. = “book-of me on table is”.",
-    "phrase": "کتاب من روی میز است.",
-    "tags": ["possession", "ezafe"]
-  },
-  {
-    "id": "fa-84",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “خانه‌ام” (khāne-am) mean?",
-    "options": ["my house", "your house", "his / her house"],
-    "correctAnswer": 0,
-    "explanation": "The suffix ـم (-am) means “my”, ـت (-at) “your” and ـش (-ash) “his/her”: خانه‌ات (khāne-at) = your house, خانه‌اش (khāne-ash) = his/her house. Literally: khāne-am bozorg ast. = “house-my big is”.",
-    "phrase": "خانه‌ام بزرگ است.",
-    "tags": ["possession"]
-  },
-  {
-    "id": "fa-85",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “کتابش” (ketābash) mean?",
-    "options": ["my book", "your book", "his / her book"],
-    "correctAnswer": 2,
-    "explanation": "The suffix ـش (-ash) means “his/her”. My book is کتابم (ketābam) and your book is کتابت (ketābat). Literally: ketābash khub ast. = “book-his/her good is”.",
-    "phrase": "کتابش خوب است.",
-    "tags": ["possession"]
-  },
-  {
-    "id": "fa-86",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "Which sentence has the natural word order for “I eat an apple”?",
-    "options": ["من سیب می‌خورم.", "من می‌خورم سیب.", "می‌خورم من سیب."],
-    "correctAnswer": 0,
-    "explanation": "Persian is subject–object–verb: the verb comes last. Literally: man sib mikhoram. = “I apple eat-I”.",
-    "phrase": "من سیب می‌خورم.",
-    "tags": ["word order"]
-  },
-  {
-    "id": "fa-87",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "Complete: “تو چای ___.” (to chāy ___.) (You drink tea)",
-    "options": ["می‌خوری", "می‌خورم", "می‌خورد"],
-    "correctAnswer": 0,
-    "explanation": "Present = می‌ + stem + ending: می‌خورم (I), می‌خوری (you), می‌خورد (he/she). Khordan is used for “drinking” tea too. Literally: to chāy mikhori. = “you tea eat-you”.",
-    "phrase": "تو چای می‌خوری.",
-    "tags": ["verbs", "present tense"]
-  },
-  {
-    "id": "fa-88",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "Complete: “او به مدرسه ___.” (u be madrese ___.) (She goes to school)",
-    "options": ["می‌روم", "می‌روید", "می‌رود"],
-    "correctAnswer": 2,
-    "explanation": "می‌رود (miravad) = he/she goes, می‌روم (miravam) = I go, می‌روید (miravid) = you (formal/plural) go. Literally: u be madrese miravad. = “he/she to school goes”.",
-    "phrase": "او به مدرسه می‌رود.",
-    "tags": ["verbs", "present tense"]
-  },
-  {
-    "id": "fa-89",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "How do you say “I went”?",
-    "options": ["رفتم", "می‌روم", "خواهم رفت"],
-    "correctAnswer": 0,
-    "explanation": "Past = past stem رفت (raft) + ending: رفتم (raftam). می‌روم means “I go” and خواهم رفت means “I will go”. Literally: man diruz be madrese raftam. = “I yesterday to school went-I”.",
-    "phrase": "من دیروز به مدرسه رفتم.",
-    "tags": ["verbs", "past tense"]
-  },
-  {
-    "id": "fa-90",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "How do you say “I ate”?",
-    "options": ["می‌خورم", "خواهم خورد", "خوردم"],
-    "correctAnswer": 2,
-    "explanation": "The past stem of خوردن is خورد (khord), so “I ate” is خوردم (khordam). می‌خورم = I eat; خواهم خورد = I will eat. Literally: nāhār khordam. = “lunch ate-I”.",
-    "phrase": "ناهار خوردم.",
-    "tags": ["verbs", "past tense"]
-  },
-  {
-    "id": "fa-91",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "What does “فردا می‌روم” (fardā miravam) mean?",
-    "options": [
-      "I'm going / I will go tomorrow",
-      "I went yesterday",
-      "I don't go"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Spoken Persian often uses the present tense for the near future. The formal future is خواهم رفت (khāham raft). Literally: fardā miravam. = “tomorrow go-I”.",
-    "phrase": "فردا می‌روم.",
-    "tags": ["verbs", "future"]
-  },
-  {
-    "id": "fa-92",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “I don't want”?",
-    "options": ["می‌خواهم", "خواستم", "نمی‌خواهم"],
-    "correctAnswer": 2,
-    "explanation": "Add the negative prefix نـ (ne-) before می‌: نمی‌خواهم (nemikhāham). می‌خواهم = I want; خواستم = I wanted. Literally: chāy nemikhāham. = “tea not-want-I”.",
-    "phrase": "چای نمی‌خواهم.",
-    "tags": ["negation", "verbs"]
-  },
-  {
-    "id": "fa-93",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “I have a dog”?",
-    "options": ["من یک سگ هستم.", "من سگ نیستم.", "من یک سگ دارم."],
-    "correctAnswer": 2,
-    "explanation": "“Have” is دارم (dāram) from داشتن. هستم means “I am” (so the second option says “I am a dog”) and نیستم means “I am not”. Literally: man yek sag dāram. = “I one dog have-I”.",
-    "phrase": "من یک سگ دارم.",
-    "tags": ["verbs", "possession"]
-  },
-  {
-    "id": "fa-94",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “I like tea”?",
-    "options": ["من چای دوست دارم.", "من چای دوست هستم.", "من چای دارم."],
-    "correctAnswer": 0,
-    "explanation": "“To like” is دوست داشتن (dust dāshtan), literally “to have as a friend”. The third option means “I have tea”. Literally: man chāy dust dāram. = “I tea friend have-I”.",
-    "phrase": "من چای دوست دارم.",
-    "tags": ["verbs", "likes"]
-  },
-  {
-    "id": "fa-95",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "How do you say “She is not here”?",
-    "options": ["او اینجا نیست.", "او اینجا است.", "او اینجا نیستند."],
-    "correctAnswer": 0,
-    "explanation": "نیست (nist) is the negative of است (ast). Other forms: نیستم (I'm not), نیستند (they aren't). Literally: u injā nist. = “he/she here isn't”.",
-    "phrase": "او اینجا نیست.",
-    "tags": ["negation", "to be"]
-  },
-  {
-    "id": "fa-96",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “کجا” (kojā) mean?",
-    "options": ["why", "how", "where"],
-    "correctAnswer": 2,
-    "explanation": "کجا (kojā) = where, چرا (cherā) = why, چطور (chetor) = how. Literally: kojā miravi? = “where go-you”.",
-    "phrase": "کجا می‌روی؟",
-    "tags": ["question words"]
-  },
-  {
-    "id": "fa-97",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "What does “چند” (chand) mean?",
-    "options": ["how many / how much", "why", "where"],
-    "correctAnswer": 0,
-    "explanation": "چند (chand) asks for numbers or amounts. “Why” is چرا and “where” is کجا. Literally: chand nafar hastid? = “how-many person are-you”.",
-    "phrase": "چند نفر هستید؟",
-    "tags": ["question words"]
-  },
-  {
-    "id": "fa-98",
-    "category": "Grammar",
-    "level": "A1",
-    "question": "Complete: “من ___ ایران هستم.” (man ___ irān hastam.) (I am from Iran)",
-    "options": ["به", "با", "از"],
-    "correctAnswer": 2,
-    "explanation": "از (az) = from, به (be) = to, با (bā) = with. Literally: man az irān hastam. = “I from Iran am-I”.",
-    "phrase": "من از ایران هستم.",
-    "tags": ["prepositions"]
-  },
-  {
-    "id": "fa-99",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "What is the job of “را” (rā) in “کتاب را می‌خوانم” (ketāb rā mikhānam)?",
-    "options": [
-      "It means “and”",
-      "It means “with”",
-      "It marks a specific (definite) direct object"
-    ],
-    "correctAnswer": 2,
-    "explanation": "را (rā) follows a definite direct object: “I'm reading the book”. Without it, کتاب می‌خوانم means “I read books” in general. “And” is و (va) and “with” is با (bā). Literally: ketāb rā mikhānam. = “book OBJ read-I”.",
-    "phrase": "کتاب را می‌خوانم.",
-    "tags": ["grammar", "object marker"]
-  },
-  {
-    "id": "fa-100",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "What does “نان هست؟” (nān hast?) mean?",
-    "options": [
-      "Is there any bread?",
-      "Is the bread fresh?",
-      "Where is the bread?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "هست (hast) expresses existence or availability; the negative is نیست (nist). “Is the bread fresh?” would be نان تازه است؟ and “Where is the bread?” is نان کجاست؟. Literally: nān hast? = “bread is?”.",
-    "phrase": "نان هست؟",
-    "tags": ["verbs", "existence"]
   }
 ]

@@ -1,5 +1,6 @@
 import type { Context } from "hono";
-import { gradeAnswer, type Grade, type Script } from "../lib/grade";
+import { gradeAnswer, type Grade } from "../lib/grade";
+import { activeScript, languageView, nativeOptions, optionLabel, phraseReadingLine } from "../lib/script";
 import { recordDailyParticipant } from "../lib/analytics";
 import type { Env } from "../lib/email";
 import { REGISTERED_LANGS, languages } from "../lib/languages";
@@ -32,6 +33,7 @@ const STYLES = `
 <style id="Kicker" fontSize="13" lineHeight="18" fontWeight="600" color="#64748b" marginBottom="4" />
 <style id="Count" fontSize="13" lineHeight="18" fontWeight="600" color="#334155" marginBottom="12" />
 <style id="Prompt" fontSize="22" lineHeight="30" fontWeight="700" color="#0f172a" marginBottom="20" />
+<style id="PromptRtl" fontSize="22" lineHeight="30" fontWeight="700" color="#0f172a" marginBottom="20" textAlign="right" />
 <style id="Track" flexDirection="row" height="8" backgroundColor="#e2e8f0" borderRadius="4" marginBottom="20" />
 <style id="Card" borderWidth="1" borderColor="#e2e8f0" borderRadius="18" padding="16" marginBottom="12" />
 <style id="Flag" fontSize="28" marginBottom="8" />
@@ -41,14 +43,19 @@ const STYLES = `
 <style id="OptionRight" flexDirection="row" alignItems="center" justifyContent="space-between" borderWidth="1" borderColor="#059669" backgroundColor="#ecfdf5" borderRadius="16" padding="14" marginBottom="10" />
 <style id="OptionCopy" flex="1" marginRight="12" />
 <style id="OptionLabel" fontSize="16" lineHeight="22" color="#1e293b" />
+<style id="OptionLabelRtl" fontSize="16" lineHeight="22" color="#1e293b" textAlign="right" />
 <style id="OptionLabelWrong" fontSize="16" lineHeight="22" fontWeight="700" color="#b91c1c" />
+<style id="OptionLabelWrongRtl" fontSize="16" lineHeight="22" fontWeight="700" color="#b91c1c" textAlign="right" />
 <style id="OptionLabelRight" fontSize="16" lineHeight="22" fontWeight="700" color="#065f46" />
+<style id="OptionLabelRightRtl" fontSize="16" lineHeight="22" fontWeight="700" color="#065f46" textAlign="right" />
 <style id="Letter" fontSize="14" color="#94a3b8" />
 <style id="Pinyin" fontSize="14" lineHeight="20" color="#b91c1c" marginTop="2" />
 <style id="Hint" fontSize="16" lineHeight="22" color="#475569" marginTop="8" />
 <style id="Wrong" fontSize="16" lineHeight="22" fontWeight="700" color="#9a3412" marginTop="4" marginBottom="8" />
 <style id="Right" fontSize="18" lineHeight="24" fontWeight="700" color="#065f46" marginTop="4" />
+<style id="RightRtl" fontSize="18" lineHeight="24" fontWeight="700" color="#065f46" marginTop="4" textAlign="right" />
 <style id="Phrase" fontSize="18" lineHeight="24" fontWeight="600" color="#064e3b" marginTop="8" />
+<style id="PhraseRtl" fontSize="18" lineHeight="24" fontWeight="600" color="#064e3b" marginTop="8" textAlign="right" />
 <style id="Button" backgroundColor="#0f172a" borderRadius="14" paddingTop="14" paddingBottom="14" paddingLeft="16" paddingRight="16" marginTop="16" alignItems="center" />
 <style id="ButtonLabel" color="#ffffff" fontSize="16" lineHeight="22" fontWeight="700" />
 <style id="Row" flexDirection="row" marginBottom="16" />
@@ -115,44 +122,23 @@ function button(href: string, label: string, action?: string) {
   return `<view style="Button" href="${xml(href)}"${actionAttr}><text style="ButtonLabel">${xml(label)}</text></view>`;
 }
 
-function choicesFor(question: Question, langCode: LangCode) {
-  return langCode === "zh"
-    ? (question.simplifiedOptions ?? [])
-    : (question.options ?? []);
-}
-
-function optionLabel(
-  question: Question,
-  langCode: LangCode,
-  script: Script,
-  index: number,
-  value: string,
-) {
-  if (langCode !== "zh") return value;
-  return (
-    (script === "traditional"
-      ? question.traditionalOptions?.[index]
-      : question.simplifiedOptions?.[index]) ?? value
-  );
-}
-
 function answersMarkup(
   langCode: LangCode,
   question: Question,
   questionNumber: number,
-  script: Script,
+  script: string,
   picked: string | undefined,
   reveal: string | undefined,
   standalone: boolean,
 ) {
   const ns = standalone ? ` xmlns="${NS}"` : "";
-  const choices = choicesFor(question, langCode);
+  const choices = question.options ?? [];
   const correctValue = choices[question.correctAnswer];
+  const rtl = nativeOptions(question) && languageView(langCode).dir === "rtl";
   const options = choices
     .map((value, index) => {
-      const label = optionLabel(question, langCode, script, index, value);
-      const hint =
-        langCode === "zh" ? (question.optionPinyin?.[index] ?? "") : "";
+      const label = optionLabel(question, index, script);
+      const hint = question.readings?.[index] ?? "";
       const isPicked = picked !== undefined && value === picked;
       const rowStyle =
         isPicked && value === correctValue
@@ -162,12 +148,19 @@ function answersMarkup(
             : "Option";
       const labelStyle =
         isPicked && value === correctValue
-          ? "OptionLabelRight"
+          ? rtl
+            ? "OptionLabelRightRtl"
+            : "OptionLabelRight"
           : isPicked
-            ? "OptionLabelWrong"
-            : "OptionLabel";
+            ? rtl
+              ? "OptionLabelWrongRtl"
+              : "OptionLabelWrong"
+            : rtl
+              ? "OptionLabelRtl"
+              : "OptionLabel";
       const query = new URLSearchParams({ id: question.id });
-      if (script === "traditional") query.set("script", "traditional");
+      const defaultScript = languageView(langCode).scripts[0]?.id ?? "";
+      if (script && script !== defaultScript) query.set("script", script);
       const href = `/hv/${langCode}/answer/${questionNumber}?${query}`;
       const select = `<behavior trigger="select" action="replace" verb="post" href="${xml(href)}" target="answers" show-during-load="loading" />`;
       const revealMarkup =
@@ -184,7 +177,7 @@ function quizView(
   langCode: LangCode,
   question: Question,
   questionNumber: number,
-  script: Script,
+  script: string,
   standalone: boolean,
 ) {
   const ns = standalone ? ` xmlns="${NS}"` : "";
@@ -203,27 +196,24 @@ function quizView(
 function correctAnswerBlock(
   langCode: LangCode,
   question: Question,
-  script: Script,
+  script: string,
 ) {
-  const choices = choicesFor(question, langCode);
-  const value = choices[question.correctAnswer] ?? "";
-  const label = optionLabel(
-    question,
-    langCode,
-    script,
-    question.correctAnswer,
-    value,
-  );
+  const label = optionLabel(question, question.correctAnswer, script);
+  const view = languageView(langCode);
+  const native = nativeOptions(question);
+  const rightStyle = native && view.dir === "rtl" ? "RightRtl" : "Right";
   const parts = [
     `<text style="Hint">Correct answer</text>`,
-    `<text style="Right">${xml(label)}</text>`,
+    `<text style="${rightStyle}">${xml(label)}</text>`,
   ];
-  if (langCode === "zh") {
-    const pinyin = question.optionPinyin?.[question.correctAnswer];
-    if (pinyin) parts.push(`<text style="Pinyin">${xml(pinyin)}</text>`);
-    parts.push(`<text style="Hint">${xml(question.question)}</text>`);
-  } else if (question.phrase && question.phrase !== label) {
-    parts.push(`<text style="Phrase">${xml(question.phrase)}</text>`);
+  const reading = question.readings?.[question.correctAnswer];
+  if (reading) parts.push(`<text style="Pinyin">${xml(reading)}</text>`);
+  if (native) parts.push(`<text style="Hint">${xml(question.question)}</text>`);
+  else if (question.phrase && question.phrase !== label) {
+    const phraseStyle = view.dir === "rtl" ? "PhraseRtl" : "Phrase";
+    parts.push(`<text style="${phraseStyle}">${xml(question.phrase)}</text>`);
+    const line = phraseReadingLine(question);
+    if (line) parts.push(`<text style="Pinyin">${xml(line)}</text>`);
   }
   return parts.join("");
 }
@@ -252,18 +242,21 @@ function resultCopy(langCode: LangCode, grade: Grade, streakCount = 1) {
   }
   if (!question) return `<text style="Wrong">Try again.</text>`;
   const parts = [`<text style="Right">Correct</text>`];
-  if (langCode === "zh") {
-    const shown =
-      (grade.script === "traditional"
-        ? question.traditionalOptions?.[question.correctAnswer]
-        : question.simplifiedOptions?.[question.correctAnswer]) ?? "";
-    parts.push(`<text style="Prompt">${xml(shown)}</text>`);
-    const pinyin = question.optionPinyin?.[question.correctAnswer];
-    if (pinyin) parts.push(`<text style="Pinyin">${xml(pinyin)}</text>`);
+  const view = languageView(langCode);
+  if (nativeOptions(question)) {
+    const shown = optionLabel(question, question.correctAnswer, grade.script);
+    const promptStyle = view.dir === "rtl" ? "PromptRtl" : "Prompt";
+    parts.push(`<text style="${promptStyle}">${xml(shown)}</text>`);
+    const reading = question.readings?.[question.correctAnswer];
+    if (reading) parts.push(`<text style="Pinyin">${xml(reading)}</text>`);
     parts.push(`<text style="Hint">${xml(question.question)}</text>`);
   }
-  if (question.phrase)
-    parts.push(`<text style="Phrase">${xml(question.phrase)}</text>`);
+  if (question.phrase) {
+    const phraseStyle = view.dir === "rtl" ? "PhraseRtl" : "Phrase";
+    parts.push(`<text style="${phraseStyle}">${xml(question.phrase)}</text>`);
+    const line = phraseReadingLine(question);
+    if (line) parts.push(`<text style="Pinyin">${xml(line)}</text>`);
+  }
   if (question.explanation)
     parts.push(`<text style="Hint">${xml(question.explanation)}</text>`);
   if (grade.complete) {
@@ -276,7 +269,8 @@ function resultCopy(langCode: LangCode, grade: Grade, streakCount = 1) {
       ),
     );
   } else {
-    const next = `/hv/${langCode}/question/${grade.nextNumber}${grade.script === "traditional" ? "?script=traditional" : ""}`;
+    const defaultScript = view.scripts[0]?.id ?? "";
+    const next = `/hv/${langCode}/question/${grade.nextNumber}${grade.script && grade.script !== defaultScript ? `?script=${grade.script}` : ""}`;
     parts.push(button(next, "Next question"));
   }
   return parts.join("");
@@ -331,17 +325,20 @@ export const hvQuestion = async (c: Context) => {
       console.error("Failed to record quiz start", error);
     }
   }
-  const script: Script =
-    langCode === "zh" && c.req.query("script") === "traditional"
-      ? "traditional"
-      : "simplified";
+  const script = activeScript(langCode, c.req.query("script"));
   const language = languages.find((item) => item.langCode === langCode);
+  const view = languageView(langCode);
   const done = questionNumber + 1;
   const left = Math.max(dailyQuestions.length - done, 0);
   const styles = `${STYLES}<style id="Fill" flex="${done}" height="8" backgroundColor="#059669" borderRadius="4" /><style id="Rest" flex="${left}" height="8" />`;
   const scriptRow =
-    langCode === "zh"
-      ? `<view style="Row"><text style="${script === "simplified" ? "LinkOn" : "Link"}" action="reload" href="${xml(`/hv/zh/question/${questionNumber}?script=simplified`)}">Simplified</text><text style="${script === "traditional" ? "LinkOn" : "Link"}" action="reload" href="${xml(`/hv/zh/question/${questionNumber}?script=traditional`)}">Traditional</text></view>`
+    view.scripts.length > 1
+      ? `<view style="Row">${view.scripts
+          .map(
+            (item) =>
+              `<text style="${script === item.id ? "LinkOn" : "Link"}" action="reload" href="${xml(`/hv/${langCode}/question/${questionNumber}?script=${item.id}`)}">${xml(item.label)}</text>`,
+          )
+          .join("")}</view>`
       : "";
   const body = `<text style="Title">${xml(language?.englishName ?? "")}</text><text style="Kicker">Daily practice${question.level ? ` · ${xml(question.level)}` : ""}</text><text style="Count">Question ${done} of ${dailyQuestions.length}</text><view style="Track"><view style="Fill" />${left ? `<view style="Rest" />` : ""}</view><text style="Prompt">${xml(question.question)}</text>${scriptRow}${quizView(langCode, question, questionNumber, script, false)}<spinner id="loading" hide="true" />`;
   return hxml(c, screen(styles, body));

@@ -11,6 +11,9 @@ export const DOMAIN_TO_LANG: Record<string, string> = {
   "de.localhost": "de",
   "it.localhost": "it",
   "zh.localhost": "zh",
+  "hu.localhost": "hu",
+  "fr.localhost": "fr",
+  "fa.localhost": "fa",
 };
 
 // Hosts above the local entries. Add a domain here and the footer link appears.
@@ -102,6 +105,9 @@ export const languages = [
       "A free daily Farsi quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇮🇷",
     siteName: "Daily Farsi Quiz",
+    dir: "rtl",
+    promptLang: "en",
+    optionLang: "fa",
   },
   {
     langCode: "zh",
@@ -112,5 +118,12 @@ export const languages = [
     flag: "🇹🇼 🇨🇳",
     siteName: "Daily Chinese Quiz",
     siteUrl: "https://dailychinesequiz.com",
+    promptLang: "en",
+    optionLang: "zh",
+    // ponytail: the quiz switch is binary. A third orthography needs a picker.
+    scripts: [
+      { id: "simplified", label: "Simplified" },
+      { id: "traditional", label: "Traditional" },
+    ],
   },
 ];

@@ -1,22 +1,17 @@
 import type { LangCode, Question } from "../types";
+import { activeScript } from "./script";
 import { getDailyQuestions } from "../utils";
-
-export type Script = "simplified" | "traditional";
 
 export type Grade = {
   status: "correct" | "incorrect" | "invalid";
   httpStatus: 200 | 400;
   message?: string;
-  script: Script;
+  script: string;
   question?: Question;
   nextNumber: number;
   dailyQuestionsLength: number;
   complete: boolean;
 };
-
-function scriptOf(langCode: LangCode, value: unknown): Script {
-  return langCode === "zh" && value === "traditional" ? "traditional" : "simplified";
-}
 
 function textField(value: unknown) {
   return typeof value === "string" ? value : undefined;
@@ -27,7 +22,7 @@ export function gradeAnswer(
   questionNumber: number,
   fields: { id?: unknown; answer?: unknown; number?: unknown; script?: unknown },
 ): Grade {
-  const script = scriptOf(langCode, fields.script);
+  const script = activeScript(langCode, fields.script);
   const id = textField(fields.id);
   const answer = textField(fields.answer);
   const number = textField(fields.number);
@@ -66,8 +61,7 @@ export function gradeAnswer(
     };
   }
 
-  const choices =
-    langCode === "zh" ? (question.simplifiedOptions ?? []) : (question.options ?? []);
+  const choices = question.options ?? [];
   const correct = answer === choices[question.correctAnswer];
   if (!choices.includes(answer)) {
     return {
