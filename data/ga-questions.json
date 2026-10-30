@@ -2542,5 +2542,72 @@
     "explanation": "Deireadh seachtaine (weekend) is built from deireadh (end) and seachtaine, the genitive of seachtain (week). An tseachtain seo chugainn means “next week”, and Dé Sathairn seo caite means “last Saturday”. Literally: ag an deireadh seachtaine = “at the end of week”.",
     "phrase": "ag an deireadh seachtaine",
     "tags": ["time_expressions", "genitive_case"]
+  },
+  {
+    "id": "ga-226",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “scáthán” mean?",
+    "options": ["mirror", "umbrella", "ladder"],
+    "correctAnswer": 0,
+    "explanation": "Scáthán means “mirror”. An umbrella is scáth fearthainne and a ladder is dréimire. Literally: Tá scáthán sa seomra folctha = “is mirror in-the room bathing”.",
+    "phrase": "Tá scáthán sa seomra folctha.",
+    "tags": ["household", "nouns"]
+  },
+  {
+    "id": "ga-227",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "How do you say “I am afraid of dogs”?",
+    "options": [
+      "Tá eagla agam roimh mhadraí.",
+      "Tá eagla orm ar mhadraí.",
+      "Tá eagla orm roimh mhadraí."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fear is something that is “on” you in Irish, so it’s eagla orm, and you are afraid “before” something, so it takes roimh, which lenites: madraí → mhadraí. Literally: Tá eagla orm roimh mhadraí = “is fear on-me before dogs”.",
+    "phrase": "Tá eagla orm roimh mhadraí.",
+    "tags": ["emotions", "prepositions", "lenition"]
+  },
+  {
+    "id": "ga-228",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “I used to go to the beach every summer”?",
+    "options": [
+      "Rachaidh mé go dtí an trá gach samhradh.",
+      "Théinn go dtí an trá gach samhradh.",
+      "Rachainn go dtí an trá gach samhradh."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Repeated past actions use the past habitual: téigh → théinn (“I used to go”). Rachaidh mé is future (“I will go”) and rachainn is conditional (“I would go”). Literally: Théinn go dtí an trá gach samhradh = “used-to-go-I to the beach every summer”.",
+    "phrase": "Théinn go dtí an trá gach samhradh.",
+    "tags": ["past_habitual", "irregular_verbs", "seasons"]
+  },
+  {
+    "id": "ga-229",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "How do you say “It would be better for us to wait”?",
+    "options": [
+      "B’fhearr dúinn fanacht.",
+      "Ba fearr dúinn fanacht.",
+      "B’fhearr againn fanacht."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The conditional copula ba lenites the next word and becomes b’ before a vowel or fh: ba + fearr → b’fhearr. “For us” here is dúinn (do + sinn), not againn. Literally: B’fhearr dúinn fanacht = “would-be better for-us waiting”.",
+    "phrase": "B’fhearr dúinn fanacht.",
+    "tags": ["copula", "conditional", "comparative", "lenition"]
+  },
+  {
+    "id": "ga-230",
+    "category": "Vocabulary",
+    "level": "A2",
+    "question": "Which means “the third day”?",
+    "options": ["an trí lá", "an triúr lá", "an tríú lá"],
+    "correctAnswer": 2,
+    "explanation": "Ordinal numbers mostly end in -ú: trí (three) → tríú (third). Triúr is only for counting people. Literally: an tríú lá = “the third day”.",
+    "phrase": "an tríú lá",
+    "tags": ["numbers", "ordinals"]
   }
 ]
