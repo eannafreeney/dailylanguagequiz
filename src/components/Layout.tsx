@@ -1,9 +1,11 @@
 import type { PropsWithChildren } from "hono/jsx";
+import { raw } from "hono/html";
 import Header from "./Header";
 import Footer from "./Footer";
 import Newsletter from "./Newsletter";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
+import { streakClientScript } from "../lib/streak";
 
 type Props = PropsWithChildren<{ langCode: LangCode }>;
 
@@ -35,6 +37,7 @@ const Layout = ({ langCode, children }: Props) => {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={description} />
         <link rel="stylesheet" href="/tailwind.css" />
+        <script>{raw(streakClientScript())}</script>
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"

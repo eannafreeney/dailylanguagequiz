@@ -6,8 +6,11 @@ const CompleteBanner = ({ langCode }: { langCode: LangCode }) => {
   const language = languages.find((item) => item.langCode === langCode)!;
   const { theme } = languageConfig[langCode];
   const questionCount = 5;
+  const text = langCode === "ga" ? "text-emerald-800" : "text-slate-700";
   return (
     <div
+      x-data="{ streakLabel: '' }"
+      x-init={`streakLabel = window.recordQuizStreak ? recordQuizStreak('${langCode}') : ''`}
       class={`mt-6 border-t pt-6 ${langCode === "ga" ? "border-emerald-200" : theme.accentBorder}`}
     >
       <p
@@ -16,8 +19,12 @@ const CompleteBanner = ({ langCode }: { langCode: LangCode }) => {
         🎉 You’ve completed today’s quiz!
       </p>
       <p
-        class={`mt-2 leading-relaxed ${langCode === "ga" ? "text-emerald-800" : "text-slate-700"}`}
-      >
+        x-cloak
+        x-show="streakLabel"
+        x-text="streakLabel"
+        class={`mt-2 font-semibold ${text}`}
+      ></p>
+      <p class={`mt-2 leading-relaxed ${text}`}>
         {questionCount} questions done. Come back tomorrow to keep building your{" "}
         {language.englishName} skills.
       </p>

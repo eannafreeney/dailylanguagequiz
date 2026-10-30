@@ -1,6 +1,6 @@
 import { LangCode } from "../types";
 import Layout from "../components/Layout";
-import Question from "../components/Question";
+import QuizPanel from "../components/QuizPanel";
 import { languages } from "../lib/languages";
 import { getDailyQuestions } from "../utils";
 import SponsorStack from "../components/SponsorStack";
@@ -16,7 +16,7 @@ const LanguagePage = ({ langCode }: Props) => {
   return (
     <Layout langCode={langCode}>
       <section class="mx-auto flex flex-col gap-6 my-6">
-        <Question
+        <QuizPanel
           question={firstQuestion}
           questionNumber={0}
           totalQuestions={dailyQuestions.length}

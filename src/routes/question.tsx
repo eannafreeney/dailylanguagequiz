@@ -1,6 +1,6 @@
 import Answer from "../components/Answer";
 import CheckAnswerButton from "../components/CheckAnswerButton";
-import Question from "../components/Question";
+import Question from "../components/QuizPanel";
 import { recordDailyParticipant } from "../lib/analytics";
 import { Env } from "../lib/email";
 import { getDailyQuestions, isLangCode } from "../utils";
@@ -97,7 +97,9 @@ export const answerQuestionHandler = async (c: Context) => {
     );
   }
   const choices =
-    langCode === "zh" ? question.simplifiedOptions ?? [] : question.options ?? [];
+    langCode === "zh"
+      ? (question.simplifiedOptions ?? [])
+      : (question.options ?? []);
   if (!choices.includes(answer)) {
     return c.html(
       <Answer

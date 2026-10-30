@@ -1,4 +1,17 @@
 import { languages, REGISTERED_LANGS } from "../lib/languages";
+import { quizzes } from "../lib/quizzes";
+import type { Question } from "../types";
+
+const CEFR = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+function quizCardStats(questions: Question[]) {
+  const levels = CEFR.filter((level) => questions.some((question) => question.level === level));
+  // ponytail: first-to-last label. A gap (A1 and B2 only) still reads as a range.
+  const range =
+    levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0];
+  const count = `${questions.length} question${questions.length === 1 ? "" : "s"}`;
+  return range ? `${count} · ${range}` : count;
+}
 
 const hubUrl = "https://dailylanguagequiz.com/";
 
@@ -55,6 +68,9 @@ const HomePage = () => (
                   {language.englishName}
                 </span>
                 <span class="text-sm text-slate-500">{language.name}</span>
+                <span class="mt-3 text-sm font-medium text-slate-600">
+                  {quizCardStats(quizzes[language.langCode as keyof typeof quizzes])}
+                </span>
               </a>
             </li>
           ))}
