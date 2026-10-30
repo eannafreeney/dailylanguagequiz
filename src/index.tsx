@@ -10,6 +10,7 @@ import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
 import type { SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
+import { hvAnswer, hvEntrypoint, hvHome, hvQuestion } from "./routes/hv";
 
 const app = new Hono();
 
@@ -30,6 +31,11 @@ app.get("/", (c) => {
   const language = languages.find((item) => item.langCode === getHostLang(c));
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
+
+app.get("/hv", hvEntrypoint);
+app.get("/hv/home", hvHome);
+app.get("/hv/:langCode/question/:questionNumber", hvQuestion);
+app.post("/hv/:langCode/answer/:questionNumber", hvAnswer);
 
 app.get("/:langCode", (c) => {
   const langCode = c.req.param("langCode");

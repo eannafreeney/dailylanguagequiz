@@ -1,8 +1,8 @@
 import Answer from "../components/Answer";
-import CheckAnswerButton from "../components/CheckAnswerButton";
 import Question from "../components/QuizPanel";
 import { recordDailyParticipant } from "../lib/analytics";
 import { Env } from "../lib/email";
+import { gradeAnswer } from "../lib/grade";
 import { getDailyQuestions, isLangCode } from "../utils";
 import { Context } from "hono";
 
@@ -54,81 +54,8 @@ export const answerQuestionHandler = async (c: Context) => {
   const langCode = rawLangCode;
   const questionNumber = Number(c.req.param("questionNumber"));
   const body = await c.req.parseBody();
-  const { id, answer, number, script: submittedScript } = body;
-  const script =
-    langCode === "zh" && submittedScript === "traditional"
-      ? "traditional"
-      : "simplified";
-
-  if (
-    typeof id !== "string" ||
-    typeof number !== "string" ||
-    typeof answer !== "string" ||
-    !Number.isInteger(questionNumber) ||
-    questionNumber < 0 ||
-    Number(number) !== questionNumber
-  ) {
-    return c.html(
-      <Answer
-        status="invalid"
-        nextNumber={questionNumber}
-        langCode={langCode}
-        dailyQuestionsLength={0}
-        message="Your submission is invalid. Please try again."
-        script={script}
-      />,
-      400,
-    );
-  }
-
-  const dailyQuestions = getDailyQuestions(langCode);
-  const question = dailyQuestions[questionNumber];
-  if (!question || question.id !== id) {
-    return c.html(
-      <Answer
-        status="invalid"
-        langCode={langCode}
-        nextNumber={questionNumber}
-        dailyQuestionsLength={dailyQuestions.length}
-        message="We couldn't find that question. Please refresh and try again."
-        script={script}
-      />,
-      400,
-    );
-  }
-  const choices =
-    langCode === "zh"
-      ? (question.simplifiedOptions ?? [])
-      : (question.options ?? []);
-  if (!choices.includes(answer)) {
-    return c.html(
-      <Answer
-        status="invalid"
-        langCode={langCode}
-        nextNumber={questionNumber}
-        dailyQuestionsLength={dailyQuestions.length}
-        question={question}
-        script={script}
-      />,
-      400,
-    );
-  }
-
-  const isCorrect = answer === choices[question.correctAnswer];
-  if (!isCorrect) {
-    return c.html(
-      <Answer
-        status="incorrect"
-        langCode={langCode}
-        nextNumber={questionNumber}
-        dailyQuestionsLength={dailyQuestions.length}
-        question={question}
-        script={script}
-      />,
-    );
-  }
-
-  if (questionNumber + 1 >= dailyQuestions.length) {
+  const grade = gradeAnswer(langCode, questionNumber, body);
+  if (grade.complete) {
     try {
       await recordDailyParticipant(
         c,
@@ -143,11 +70,13 @@ export const answerQuestionHandler = async (c: Context) => {
   return c.html(
     <Answer
       langCode={langCode}
-      status="correct"
-      question={question}
-      nextNumber={questionNumber + 1}
-      dailyQuestionsLength={dailyQuestions.length}
-      script={script}
+      status={grade.status}
+      question={grade.question}
+      nextNumber={grade.nextNumber}
+      dailyQuestionsLength={grade.dailyQuestionsLength}
+      message={grade.message}
+      script={grade.script}
     />,
+    grade.httpStatus,
   );
 };

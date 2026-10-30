@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      padding: 0 88px 72px;
+      display: flex;
+      flex-direction: column;
+    }
+    .stripe { height: 18px; background: #10b981; margin: 0 -88px; }
+    .sheet {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .kicker {
+      margin: 0;
+      color: #c2410c;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .level {
+      display: inline-block;
+      margin-left: 16px;
+      background: #ecfdf5;
+      color: #065f46;
+      border-radius: 12px;
+      padding: 4px 14px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    h1 {
+      margin: 36px 0 0;
+      font-size: 58px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+    .choices { margin-top: 56px; text-align: left; }
+    .option { display: flex; align-items: center; gap: 28px; margin-top: 36px; }
+    .option:first-child { margin-top: 0; }
+    .letter {
+      width: 76px; height: 76px; border-radius: 20px;
+      background: #047857; color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 700; flex: none;
+    }
+    .label { font-size: 36px; font-weight: 600; line-height: 1.25; }
+    .foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; }
+    .ask { margin: 0; color: #64748b; font-size: 28px; }
+    .brand { text-align: right; }
+    .name { margin: 0; color: #047857; font-size: 32px; font-weight: 700; }
+    .url { margin: 6px 0 0; color: #64748b; font-size: 24px; }
+  </style>
+</head>
+<body>
+  <div class="stripe"></div>
+  <div class="sheet">
+    <p class="kicker">Today's question<span class="level">A2</span></p>
+    <h1 lang="ga">What does “Tá an banc in aice leis an stáisiún” mean?</h1>
+    <div class="choices">
+      <div class="option">
+        <span class="letter">A</span>
+        <span class="label">The bank is inside the station.</span>
+      </div>
+      <div class="option">
+        <span class="letter">B</span>
+        <span class="label">The bank is near the station.</span>
+      </div>
+      <div class="option">
+        <span class="letter">C</span>
+        <span class="label">The bank is behind the station.</span>
+      </div></div>
+  </div>
+  <footer class="foot">
+    <p class="ask">Comment A, B, or C</p>
+    <div class="brand">
+      <p class="name">Daily Irish Quiz</p>
+      <p class="url">dailyirishquiz.com</p>
+    </div>
+  </footer>
+</body>
+</html>

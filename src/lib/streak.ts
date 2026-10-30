@@ -19,9 +19,45 @@ export function streakLabel(count: number) {
   return count === 1 ? "1 day in a row." : `${count} days in a row.`;
 }
 
+export function ordinal(count: number) {
+  const teen = count % 100;
+  if (teen >= 11 && teen <= 13) return count + "th";
+  const last = count % 10;
+  if (last === 1) return count + "st";
+  if (last === 2) return count + "nd";
+  if (last === 3) return count + "rd";
+  return count + "th";
+}
+
+export function finishedLine(count: number, siteName: string) {
+  return `I just finished my ${ordinal(count)} day on the ${siteName}.`;
+}
+
+export function shareQuizResult(count: number, siteName: string, url: string) {
+  const text = finishedLine(count, siteName);
+  const body = url ? `${text}\n${url}` : text;
+  const nav = globalThis.navigator;
+  if (nav?.share) {
+    return nav.share({ text: body }).then(
+      () => "shared",
+      () => "",
+    );
+  }
+  if (nav?.clipboard?.writeText) {
+    return nav.clipboard.writeText(body).then(
+      () => "copied",
+      () => "",
+    );
+  }
+  return Promise.resolve("");
+}
+
 export function streakClientScript() {
   return `${nextStreak.toString()}
 ${streakLabel.toString()}
+${ordinal.toString()}
+${finishedLine.toString()}
+${shareQuizResult.toString()}
 function recordQuizStreak(langCode) {
   var today = new Date().toISOString().slice(0, 10);
   var key = "quiz-streak:" + langCode;
@@ -30,7 +66,7 @@ function recordQuizStreak(langCode) {
   if (!prev || typeof prev.count !== "number" || typeof prev.last !== "string" || prev.count < 1) prev = null;
   var next = nextStreak(prev, today);
   try { localStorage.setItem(key, JSON.stringify(next)); } catch (e) {}
-  return streakLabel(next.count);
+  return { label: streakLabel(next.count), count: next.count };
 }
 `;
 }
