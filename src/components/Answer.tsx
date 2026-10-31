@@ -67,6 +67,11 @@ const Answer = ({
     <div
       id="answer"
       data-status={status}
+      x-init={
+        status === "correct" || status === "incorrect"
+          ? `if (window.recordAttempt) recordAttempt('${langCode}', ${isCorrect ? nextNumber - 1 : nextNumber}, ${isCorrect}, ${dailyQuestionsLength})`
+          : undefined
+      }
       class={`w-full min-w-0 rounded-2xl border p-4 shadow-sm sm:p-6 lg:sticky lg:top-6 ${styles.card}`}
     >
       <div class="flex items-start gap-3">
@@ -139,7 +144,9 @@ const Answer = ({
           )}
         </div>
       </div>
-      {isComplete && <CompleteBanner langCode={langCode} />}
+      {isComplete && (
+        <CompleteBanner langCode={langCode} total={dailyQuestionsLength} />
+      )}
     </div>
   );
 };

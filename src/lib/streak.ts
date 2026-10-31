@@ -33,23 +33,8 @@ export function finishedLine(count: number, siteName: string) {
   return `I just finished my ${ordinal(count)} day on the ${siteName}.`;
 }
 
-export function shareQuizResult(count: number, siteName: string, url: string) {
-  const text = finishedLine(count, siteName);
-  const body = url ? `${text}\n${url}` : text;
-  const nav = globalThis.navigator;
-  if (nav?.share) {
-    return nav.share({ text: body }).then(
-      () => "shared",
-      () => "",
-    );
-  }
-  if (nav?.clipboard?.writeText) {
-    return nav.clipboard.writeText(body).then(
-      () => "copied",
-      () => "",
-    );
-  }
-  return Promise.resolve("");
+export function firstTryLine(first: number, total: number) {
+  return `${first} of ${total} on the first try.`;
 }
 
 export function streakClientScript() {
@@ -57,7 +42,7 @@ export function streakClientScript() {
 ${streakLabel.toString()}
 ${ordinal.toString()}
 ${finishedLine.toString()}
-${shareQuizResult.toString()}
+${firstTryLine.toString()}
 function recordQuizStreak(langCode) {
   var today = new Date().toISOString().slice(0, 10);
   var key = "quiz-streak:" + langCode;
@@ -67,6 +52,40 @@ function recordQuizStreak(langCode) {
   var next = nextStreak(prev, today);
   try { localStorage.setItem(key, JSON.stringify(next)); } catch (e) {}
   return { label: streakLabel(next.count), count: next.count };
+}
+function quizFirstTries(langCode, total) {
+  var today = new Date().toISOString().slice(0, 10);
+  var prev = null;
+  try { prev = JSON.parse(localStorage.getItem("quiz-first:" + langCode) || "null"); } catch (e) { prev = null; }
+  if (!prev || prev.date !== today || typeof prev.first !== "number" || !Array.isArray(prev.seen)) {
+    return { first: 0, total: total };
+  }
+  return { first: prev.first, total: total };
+}
+function recordAttempt(langCode, questionNumber, correct, total) {
+  var today = new Date().toISOString().slice(0, 10);
+  var key = "quiz-first:" + langCode;
+  var prev = null;
+  try { prev = JSON.parse(localStorage.getItem(key) || "null"); } catch (e) { prev = null; }
+  if (!prev || prev.date !== today || typeof prev.first !== "number" || !Array.isArray(prev.seen)) {
+    prev = { date: today, first: 0, seen: [] };
+  }
+  if (prev.seen.indexOf(questionNumber) === -1) {
+    prev.seen.push(questionNumber);
+    if (correct) prev.first += 1;
+    try { localStorage.setItem(key, JSON.stringify(prev)); } catch (e) {}
+  }
+  return { first: prev.first, total: total };
+}
+function liveStreakLabel(langCode) {
+  var today = new Date().toISOString().slice(0, 10);
+  var parts = today.split("-").map(Number);
+  var yesterday = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2] - 1)).toISOString().slice(0, 10);
+  var prev = null;
+  try { prev = JSON.parse(localStorage.getItem("quiz-streak:" + langCode) || "null"); } catch (e) { prev = null; }
+  if (!prev || typeof prev.count !== "number" || typeof prev.last !== "string" || prev.count < 1) return "";
+  if (prev.last !== today && prev.last !== yesterday) return "";
+  return streakLabel(prev.count).replace(/\.$/, "");
 }
 `;
 }

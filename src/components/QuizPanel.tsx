@@ -42,6 +42,7 @@ const QuizPanel = ({
           questionNumber={questionNumber}
           totalQuestions={totalQuestions}
           theme={theme}
+          langCode={langCode}
         />
         <ProgressBar progress={progress} theme={theme} />
       </div>
@@ -84,6 +85,7 @@ type HeaderProps = {
   questionNumber: number;
   totalQuestions: number;
   theme: LanguageConfig["theme"];
+  langCode: LangCode;
 };
 
 const Header = ({
@@ -91,10 +93,19 @@ const Header = ({
   questionNumber,
   totalQuestions,
   theme,
+  langCode,
 }: HeaderProps) => (
-  <div class="flex items-center justify-between">
+  <div class="flex items-center justify-between gap-3">
     <span class="flex items-center gap-2 text-sm font-medium text-slate-500">
       Daily practice
+      <span
+        x-data="{ label: '' }"
+        x-init={`if (window.liveStreakLabel) label = liveStreakLabel('${langCode}')`}
+        x-cloak
+        x-show="label"
+        x-text="label"
+        class={`font-semibold ${theme.accentText}`}
+      ></span>
       {question.level && (
         <span
           class={`rounded-lg px-2 py-0.5 text-xs font-bold ${theme.accentSoft} ${theme.accentText}`}
@@ -149,8 +160,13 @@ const Bar = ({
         >
           {englishName} · {nativeName}
         </p>
-        <div class="flex items-center gap-2 text-sm" aria-label={`${englishName} script`}>
-          <span x-bind:class={`script === '${primary.id}' ? 'font-bold text-blue-900' : 'text-slate-500'`}>
+        <div
+          class="flex items-center gap-2 text-sm"
+          aria-label={`${englishName} script`}
+        >
+          <span
+            x-bind:class={`script === '${primary.id}' ? 'font-bold text-blue-900' : 'text-slate-500'`}
+          >
             {primary.label}
           </span>
           <button
@@ -167,7 +183,9 @@ const Bar = ({
               x-bind:class={`script === '${alternate.id}' ? 'translate-x-5' : 'translate-x-0.5'`}
             ></span>
           </button>
-          <span x-bind:class={`script === '${alternate.id}' ? 'font-bold text-blue-900' : 'text-slate-500'`}>
+          <span
+            x-bind:class={`script === '${alternate.id}' ? 'font-bold text-blue-900' : 'text-slate-500'`}
+          >
             {alternate.label}
           </span>
         </div>
@@ -219,78 +237,99 @@ const AnswerCard = ({
   dir,
   alternateScript,
 }: AnswerCardProps) => (
-  <form
-    x-data="{ selectedAnswer: '', status: '' }"
-    {...{
-      "x-on:ajax:after":
-        "status = document.getElementById('answer')?.dataset.status || ''",
-    }}
-    x-bind:class="status === 'correct' && 'pointer-events-none'"
-    method="post"
-    action={`/${langCode}/answer/${questionNumber}`}
-    x-target="answer"
-    class="space-y-2.5 sm:space-y-3"
-  >
-    <input type="hidden" name="id" value={question.id} />
-    <input type="hidden" name="number" value={questionNumber} />
-    {hasScripts && <input type="hidden" name="script" x-bind:value="script" />}
-    {(question.options ?? []).map((option, index) => {
-      const reading = question.readings?.[index];
-      const native = nativeOptions(question);
-      return (
-      <label
-        key={option}
-        class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 transition sm:p-4"
-        x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'border-emerald-600 bg-emerald-50' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'border-orange-200 bg-orange-50' : ${JSON.stringify(`${theme.optionHover} ${theme.selectedOption}`)}`}
-      >
-        <input
-          type="radio"
-          name="answer"
-          value={option}
-          x-model="selectedAnswer"
-          x-on:change="$el.form.requestSubmit()"
-          required
-          class={`h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-slate-300 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.focus}`}
-          x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'checked:border-emerald-600 checked:bg-[radial-gradient(circle,_#059669_35%,_white_40%)]' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'checked:border-orange-700 checked:bg-[radial-gradient(circle,_#c2410c_35%,_white_40%)]' : ${JSON.stringify(theme.radio)}`}
-        />
-        <span class="flex-1">
-          {native ? (
-            <>
-              <span
-                lang={optionLang}
-                dir={dir === "rtl" ? "rtl" : undefined}
-                class="block text-lg font-semibold leading-relaxed text-slate-900 sm:text-xl"
-                {...(alternateScript
-                  ? {
-                      "x-text": `script === ${JSON.stringify(alternateScript)} ? ${JSON.stringify(question.variants?.[alternateScript]?.[index] ?? option)} : ${JSON.stringify(option)}`,
-                    }
-                  : {})}
-              >
-                {option}
-              </span>
-              {reading && (
+  <>
+    <form
+      x-data="{ selectedAnswer: '', status: '' }"
+      {...{
+        "x-on:ajax:after":
+          "status = document.getElementById('answer')?.dataset.status || ''",
+      }}
+      x-bind:class="status === 'correct' && 'pointer-events-none'"
+      method="post"
+      action={`/${langCode}/answer/${questionNumber}`}
+      x-target="answer"
+      class="space-y-2.5 sm:space-y-3"
+    >
+      <input type="hidden" name="id" value={question.id} />
+      <input type="hidden" name="number" value={questionNumber} />
+      {hasScripts && (
+        <input type="hidden" name="script" x-bind:value="script" />
+      )}
+      {(question.options ?? []).map((option, index) => {
+        const reading = question.readings?.[index];
+        const native = nativeOptions(question);
+        return (
+          <label
+            key={option}
+            class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 transition sm:p-4"
+            x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'border-emerald-600 bg-emerald-50' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'border-orange-200 bg-orange-50' : ${JSON.stringify(`${theme.optionHover} ${theme.selectedOption}`)}`}
+          >
+            <input
+              type="radio"
+              name="answer"
+              value={option}
+              x-model="selectedAnswer"
+              x-on:change="$el.form.requestSubmit()"
+              required
+              class={`h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-slate-300 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.focus}`}
+              x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'checked:border-emerald-600 checked:bg-[radial-gradient(circle,_#059669_35%,_white_40%)]' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'checked:border-orange-700 checked:bg-[radial-gradient(circle,_#c2410c_35%,_white_40%)]' : ${JSON.stringify(theme.radio)}`}
+            />
+            <span class="flex-1">
+              {native ? (
+                <>
+                  <span
+                    lang={optionLang}
+                    dir={dir === "rtl" ? "rtl" : undefined}
+                    class="block text-lg font-semibold leading-relaxed text-slate-900 sm:text-xl"
+                    {...(alternateScript
+                      ? {
+                          "x-text": `script === ${JSON.stringify(alternateScript)} ? ${JSON.stringify(question.variants?.[alternateScript]?.[index] ?? option)} : ${JSON.stringify(option)}`,
+                        }
+                      : {})}
+                  >
+                    {option}
+                  </span>
+                  {reading && (
+                    <span
+                      dir="ltr"
+                      class={`mt-0.5 block text-sm font-medium ${theme.accentText}`}
+                    >
+                      {reading}
+                    </span>
+                  )}
+                </>
+              ) : (
                 <span
-                  dir="ltr"
-                  class={`mt-0.5 block text-sm font-medium ${theme.accentText}`}
+                  lang={langCode}
+                  class="text-base font-medium text-slate-800"
                 >
-                  {reading}
+                  {option}
                 </span>
               )}
-            </>
-          ) : (
-            <span lang={langCode} class="text-base font-medium text-slate-800">
-              {option}
             </span>
-          )}
-        </span>
-        <span class="text-sm text-slate-400">
-          {String.fromCharCode(65 + index)}
-        </span>
-      </label>
-      );
-    })}
-  </form>
+            <span class="text-sm text-slate-400">
+              {String.fromCharCode(65 + index)}
+            </span>
+          </label>
+        );
+      })}
+    </form>
+    <p class="pt-1">
+      <a
+        href={reportHref(langCode, question.id, question.question)}
+        class={`text-sm text-slate-400 underline-offset-2 hover:text-slate-600 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.focus}`}
+      >
+        Something off?
+      </a>
+    </p>
+  </>
 );
+
+function reportHref(langCode: string, id: string, sentence: string) {
+  const subject = `Quiz question ${id}`;
+  const body = `${langCode} · ${id}\n\n${sentence}\n\n`;
+  return `mailto:quiz@mydaily.irish?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
 
 const AnswerAside = () => (
   <aside
@@ -300,9 +339,7 @@ const AnswerAside = () => (
   >
     <div class="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 sm:p-8">
       <p class="text-lg font-bold text-slate-800">Your answer</p>
-      <p class="mt-2 leading-relaxed text-slate-600">
-        Choose an option on the left.
-      </p>
+      <p class="mt-2 leading-relaxed text-slate-600">Choose an option.</p>
     </div>
   </aside>
 );
