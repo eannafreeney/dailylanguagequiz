@@ -52,6 +52,10 @@ const Layout = ({ langCode, children }: Props) => {
           defer
           src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
+        <script
+          defer
+          src="https://marketing-hq.onrender.com/marketing-hq-analytics.js"
+        ></script>
       </head>
       <body class="bg-white">
         <Header title={siteName} langCode={langCode} />
