@@ -2609,5 +2609,72 @@
     "explanation": "Ordinal numbers mostly end in -ú: trí (three) → tríú (third). Triúr is only for counting people. Literally: an tríú lá = “the third day”.",
     "phrase": "an tríú lá",
     "tags": ["numbers", "ordinals"]
+  },
+  {
+    "id": "ga-231",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “rothar” mean?",
+    "options": ["a bus", "a boat", "a bicycle"],
+    "correctAnswer": 2,
+    "explanation": "Rothar is a bicycle (from roth, “wheel”). A bus is bus and a boat is bád. Literally: Tá rothar nua agam = “is bicycle new at me”.",
+    "phrase": "Tá rothar nua agam.",
+    "tags": ["transport", "nouns"]
+  },
+  {
+    "id": "ga-232",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Complete: Rinne mé m’obair bhaile ___. (I did my homework after dinner.)",
+    "options": [
+      "tar éis an dinnéir",
+      "tar éis an dinnéar",
+      "tar éis dinnéar an"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Compound prepositions like tar éis are followed by the genitive case, so dinnéar becomes dinnéir after the article an. The article also has to come before the noun. Literally: Rinne mé m’obair bhaile tar éis an dinnéir = “did I my work home after the dinner”.",
+    "phrase": "Rinne mé m’obair bhaile tar éis an dinnéir.",
+    "tags": ["compound_prepositions", "genitive", "past_tense"]
+  },
+  {
+    "id": "ga-233",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Complete: Bhuail mé ___ inné. (I met Seán yesterday.)",
+    "options": ["ar Sheán", "le Seán", "Seán"],
+    "correctAnswer": 1,
+    "explanation": "To meet someone is buail le in Irish. Bhuail mé Seán would mean “I hit Seán”, and ar isn’t used here. Literally: Bhuail mé le Seán inné = “struck I with Seán yesterday”.",
+    "phrase": "Bhuail mé le Seán inné.",
+    "tags": ["verb_prepositions", "past_tense", "idioms"]
+  },
+  {
+    "id": "ga-234",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “I am twenty years old”?",
+    "options": [
+      "Is fiche bliain mé.",
+      "Tá mé fiche bliana d’aois.",
+      "Tá mé fiche bliain d’aois."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Age uses tá with d’aois. After fiche, Irish uses the singular form bliain; the special plural bliana goes with trí to deich (e.g. trí bliana, seacht mbliana). The copula is doesn’t express age. Literally: Tá mé fiche bliain d’aois = “am I twenty year of age”.",
+    "phrase": "Tá mé fiche bliain d’aois.",
+    "tags": ["numbers", "age", "counting"]
+  },
+  {
+    "id": "ga-235",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "How do you say “I have done the work”?",
+    "options": [
+      "Tá an obair déanta agam.",
+      "Tá mé déanta an obair.",
+      "Tá an obair ag déanamh agam."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Irish expresses a completed result with tá + the verbal adjective (déanta) + ag. Tá mé déanta would mean “I am done/made”, and ag déanamh means the work is still in progress. Literally: Tá an obair déanta agam = “is the work done at me”.",
+    "phrase": "Tá an obair déanta agam.",
+    "tags": ["verbal_adjective", "perfect_aspect", "prepositional_pronouns"]
   }
 ]
