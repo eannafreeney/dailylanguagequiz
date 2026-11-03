@@ -258,22 +258,31 @@ const AnswerCard = ({
       {(question.options ?? []).map((option, index) => {
         const reading = question.readings?.[index];
         const native = nativeOptions(question);
+        const choice = JSON.stringify(option);
+        const picked = `selectedAnswer === ${choice} && !status`;
+        const correct = `selectedAnswer === ${choice} && status === 'correct'`;
+        const wrong = `selectedAnswer === ${choice} && status === 'incorrect'`;
+        // iPad Safari never submits this form from a radio change: taps land on the
+        // label, appearance:none radios don't check, and requestSubmit() needs a button.
         return (
-          <label
+          <button
             key={option}
-            class="flex cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 transition sm:p-4"
-            x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'border-emerald-600 bg-emerald-50' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'border-orange-200 bg-orange-50' : ${JSON.stringify(`${theme.optionHover} ${theme.selectedOption}`)}`}
+            type="submit"
+            name="answer"
+            value={option}
+            x-on:click={`selectedAnswer = ${choice}`}
+            x-bind:data-picked={picked}
+            x-bind:data-correct={correct}
+            x-bind:data-wrong={wrong}
+            class={`flex w-full cursor-pointer items-center gap-4 rounded-2xl border border-slate-200 p-3 text-left transition focus-visible:outline-2 focus-visible:outline-offset-2 data-correct:border-emerald-600 data-correct:bg-emerald-50 data-wrong:border-orange-200 data-wrong:bg-orange-50 sm:p-4 ${theme.focus} ${theme.optionHover} ${theme.selectedOption}`}
           >
-            <input
-              type="radio"
-              name="answer"
-              value={option}
-              x-model="selectedAnswer"
-              x-on:change="$el.form.requestSubmit()"
-              required
-              class={`h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-slate-300 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 ${theme.focus}`}
-              x-bind:class={`selectedAnswer === ${JSON.stringify(option)} && status === 'correct' ? 'checked:border-emerald-600 checked:bg-[radial-gradient(circle,_#059669_35%,_white_40%)]' : selectedAnswer === ${JSON.stringify(option)} && status === 'incorrect' ? 'checked:border-orange-700 checked:bg-[radial-gradient(circle,_#c2410c_35%,_white_40%)]' : ${JSON.stringify(theme.radio)}`}
-            />
+            <span
+              aria-hidden="true"
+              class={`h-5 w-5 shrink-0 rounded-full border-2 border-slate-300 bg-white data-correct:border-emerald-600 data-correct:bg-[radial-gradient(circle,_#059669_35%,_white_40%)] data-wrong:border-orange-700 data-wrong:bg-[radial-gradient(circle,_#c2410c_35%,_white_40%)] ${theme.radio}`}
+              x-bind:data-picked={picked}
+              x-bind:data-correct={correct}
+              x-bind:data-wrong={wrong}
+            ></span>
             <span class="flex-1">
               {native ? (
                 <>
@@ -310,7 +319,7 @@ const AnswerCard = ({
             <span class="text-sm text-slate-400">
               {String.fromCharCode(65 + index)}
             </span>
-          </label>
+          </button>
         );
       })}
     </form>

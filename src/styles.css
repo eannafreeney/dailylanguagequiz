@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* iPad treats the first tap as hover when :hover changes the row, and never clicks. */
+@custom-variant fine-hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @slot;
+    }
+  }
+}
+
 [x-cloak] {
   display: none !important;
 }

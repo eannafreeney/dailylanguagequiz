@@ -121,6 +121,14 @@ if (traditionalLabel !== zh.options![0]) {
 assert.ok(traditionalXml.includes(`value="${xml(zh.options![0])}"`));
 assert.ok(zh.readings?.[0] && traditionalXml.includes(xml(zh.readings[0])));
 
+const quiz = await request("https://dailyirishquiz.com/");
+const quizHtml = await quiz.text();
+const submits =
+  quizHtml.match(/<button\b[^>]*\btype="submit"[^>]*\bname="answer"/g) ?? [];
+assert.equal(quiz.status, 200);
+assert.equal(submits.length, question.options!.length);
+assert.doesNotMatch(quizHtml, /requestSubmit/);
+
 const web = await request("https://dailyirishquiz.com/ga/answer/0", {
   method: "POST",
   headers: { "content-type": "application/x-www-form-urlencoded" },
