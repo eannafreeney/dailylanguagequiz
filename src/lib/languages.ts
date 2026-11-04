@@ -80,7 +80,6 @@ export const languages = [
       "A free daily Italian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇮🇹",
     siteName: "Daily Italian Quiz",
-    siteUrl: "https://dailyitalianquiz.com",
     published: true,
   },
   {
