@@ -28,9 +28,10 @@ assert.match(homeXml, /German/);
 assert.match(homeXml, /Chinese/);
 assert.match(homeXml, /Hungarian/);
 assert.match(homeXml, /French/);
-assert.match(homeXml, /Farsi/);
+assert.match(homeXml, /Spanish/);
+assert.match(homeXml, /Italian/);
 assert.doesNotMatch(homeXml, /Russian/);
-assert.doesNotMatch(homeXml, /Italian/);
+assert.doesNotMatch(homeXml, /Farsi/);
 
 const questions = getDailyQuestions("ga");
 const question = questions[0];

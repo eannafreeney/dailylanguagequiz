@@ -5,6 +5,7 @@ import itQuestions from "../../data/it-questions.json";
 import zhQuestions from "../../data/zh-questions.json";
 import huQuestions from "../../data/hu-questions.json";
 import frQuestions from "../../data/fr-questions.json";
+import esQuestions from "../../data/es-questions.json";
 import faQuestions from "../../data/fa-questions.json";
 
 export const quizzes = {
@@ -15,5 +16,6 @@ export const quizzes = {
   zh: zhQuestions,
   hu: huQuestions,
   fr: frQuestions,
+  es: esQuestions,
   fa: faQuestions,
 };

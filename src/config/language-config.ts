@@ -135,6 +135,28 @@ const hungarianTheme: LanguageTheme = {
   footerBar: "mt-auto border-t-4 border-green-600 bg-red-950 text-red-100",
 };
 
+const spanishTheme: LanguageTheme = {
+  accent: "bg-red-700",
+  accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
+  accentSoft: "bg-red-50",
+  accentBorder: "border-red-200",
+  accentText: "text-red-800",
+  focus: "focus-visible:outline-red-700",
+  progress: "bg-yellow-400",
+  progressTrack: "bg-slate-200",
+  radio:
+    "data-picked:border-red-700 data-picked:bg-[radial-gradient(circle,_#b91c1c_35%,_white_40%)]",
+  selectedOption: "data-picked:border-red-700 data-picked:bg-red-50",
+  optionHover: "fine-hover:border-yellow-400 fine-hover:bg-red-50",
+  kicker: "text-yellow-600",
+  headerBar: "bg-red-700 border-b-4 border-yellow-400",
+  headerTitle: "text-white",
+  headerMuted: "text-red-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-yellow-400 bg-red-950 text-red-100",
+};
+
 const farsiTheme: LanguageTheme = {
   accent: "bg-green-700",
   accentHover: "hover:bg-green-800",
@@ -226,5 +248,6 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   zh: { links: [], theme: chineseTheme },
   hu: { links: [], theme: hungarianTheme },
   fr: { links: [], theme: frenchTheme },
+  es: { links: [], theme: spanishTheme },
   fa: { links: [], theme: farsiTheme },
 };
