@@ -49,6 +49,7 @@ export const languages = [
     flag: "🇮🇪",
     siteName: "Daily Irish Quiz",
     siteUrl: "https://dailyirishquiz.com",
+    published: true,
   },
   {
     langCode: "de",
@@ -59,6 +60,7 @@ export const languages = [
     flag: "🇩🇪",
     siteName: "Daily German Quiz",
     siteUrl: "https://dailygermanquiz.com",
+    published: true,
   },
   {
     langCode: "ru",
@@ -68,6 +70,7 @@ export const languages = [
       "A free daily Russian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇷🇺",
     siteName: "Daily Russian Quiz",
+    published: false,
   },
   {
     langCode: "it",
@@ -78,6 +81,7 @@ export const languages = [
     flag: "🇮🇹",
     siteName: "Daily Italian Quiz",
     siteUrl: "https://dailyitalianquiz.com",
+    published: true,
   },
   {
     langCode: "hu",
@@ -87,6 +91,7 @@ export const languages = [
       "A free daily Hungarian quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇭🇺",
     siteName: "Daily Hungarian Quiz",
+    published: true,
   },
   {
     langCode: "fr",
@@ -96,6 +101,7 @@ export const languages = [
       "A free daily French quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇫🇷",
     siteName: "Daily French Quiz",
+    published: true,
   },
   {
     langCode: "fa",
@@ -108,6 +114,7 @@ export const languages = [
     dir: "rtl",
     promptLang: "en",
     optionLang: "fa",
+    published: false,
   },
   {
     langCode: "zh",
@@ -125,5 +132,20 @@ export const languages = [
       { id: "simplified", label: "Simplified" },
       { id: "traditional", label: "Traditional" },
     ],
+    published: true,
   },
 ];
+
+export const publishedLanguages = languages.filter(
+  (language) => language.published,
+);
+
+// Custom domains stay on their own host. Everyone else lives on the hub.
+export function quizHref(
+  language: { langCode: string; siteUrl?: string },
+  onHub = false,
+) {
+  if (language.siteUrl) return language.siteUrl;
+  const path = `/${language.langCode}`;
+  return onHub ? path : `https://dailylanguagequiz.com${path}`;
+}

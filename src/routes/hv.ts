@@ -3,7 +3,7 @@ import { gradeAnswer, type Grade } from "../lib/grade";
 import { activeScript, languageView, nativeOptions, optionLabel, phraseReadingLine } from "../lib/script";
 import { recordDailyParticipant } from "../lib/analytics";
 import type { Env } from "../lib/email";
-import { REGISTERED_LANGS, languages } from "../lib/languages";
+import { languages, publishedLanguages } from "../lib/languages";
 import type { LangCode, Question } from "../types";
 import { finishedLine, nextStreak, type Streak } from "../lib/streak";
 import { getDailyQuestions, isLangCode } from "../utils";
@@ -13,10 +13,6 @@ const HXML = "application/vnd.hyperview+xml";
 
 // ponytail: fixed top padding instead of a safe-area custom element.
 // Upgrade by registering Hyperview's SafeAreaView and dropping paddingTop.
-
-const published = languages.filter(
-  (language) => language.siteUrl && REGISTERED_LANGS.has(language.langCode),
-);
 
 export function xml(value: string) {
   return value
@@ -283,7 +279,7 @@ export const hvEntrypoint = (c: Context) =>
   );
 
 export const hvHome = (c: Context) => {
-  const cards = published
+  const cards = publishedLanguages
     .map(
       (language) =>
         `<view style="Card" href="/hv/${language.langCode}/question/0"><text style="Flag">${xml(language.flag)}</text><text style="CardTitle">${xml(language.englishName)}</text><text style="Muted">${xml(language.name)}</text></view>`,

@@ -1,4 +1,4 @@
-import { languages, REGISTERED_LANGS } from "../lib/languages";
+import { publishedLanguages, quizHref } from "../lib/languages";
 import { quizzes } from "../lib/quizzes";
 import type { Question } from "../types";
 
@@ -17,10 +17,6 @@ function quizCardStats(questions: Question[]) {
 
 const hubUrl = "https://dailylanguagequiz.com/";
 
-const published = languages.filter(
-  (language) => language.siteUrl && REGISTERED_LANGS.has(language.langCode),
-);
-
 const HomePage = () => (
   <html lang="en">
     <head>
@@ -29,7 +25,7 @@ const HomePage = () => (
       <title>Daily Language Quiz</title>
       <meta
         name="description"
-        content="A free daily quiz in Irish, German, and Chinese. Five short questions, a little at a time."
+        content="A free daily quiz. Five short questions, a little at a time."
       />
       <link rel="canonical" href={hubUrl} />
       <meta property="og:title" content="Daily Language Quiz" />
@@ -61,10 +57,10 @@ const HomePage = () => (
           changes every day.
         </p>
         <ul class="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2">
-          {published.map((language) => (
+          {publishedLanguages.map((language) => (
             <li key={language.langCode}>
               <a
-                href={language.siteUrl}
+                href={quizHref(language, true)}
                 class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-400"
               >
                 <span class="text-2xl" aria-hidden="true">

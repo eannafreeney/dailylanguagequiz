@@ -1,5 +1,5 @@
 import { languageConfig } from "../config/language-config";
-import { languages, REGISTERED_LANGS } from "../lib/languages";
+import { languages, quizHref } from "../lib/languages";
 import type { LangCode } from "../types";
 
 type Props = { title: string; kicker: string; langCode: LangCode };
@@ -14,10 +14,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
 
   const { siteName, description } = language;
   const otherQuizzes = languages.filter(
-    (item) =>
-      item.langCode !== langCode &&
-      item.siteUrl &&
-      REGISTERED_LANGS.has(item.langCode),
+    (item) => item.langCode !== langCode && item.published,
   );
 
   const logoHover = `hover:text-${theme.accentText}`;
@@ -53,7 +50,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
               {otherQuizzes.map((quiz) => (
                 <a
                   key={quiz.langCode}
-                  href={quiz.siteUrl}
+                  href={quizHref(quiz)}
                   class="font-semibold text-slate-200 transition hover:text-white"
                 >
                   {quiz.flag} {quiz.englishName}

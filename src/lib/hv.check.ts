@@ -26,6 +26,9 @@ const homeXml = await home.text();
 assert.match(homeXml, /Irish/);
 assert.match(homeXml, /German/);
 assert.match(homeXml, /Chinese/);
+assert.match(homeXml, /Hungarian/);
+assert.match(homeXml, /French/);
+assert.match(homeXml, /Farsi/);
 assert.doesNotMatch(homeXml, /Russian/);
 assert.doesNotMatch(homeXml, /Italian/);
 
