@@ -2676,5 +2676,123 @@
     "explanation": "Irish expresses a completed result with tá + the verbal adjective (déanta) + ag. Tá mé déanta would mean “I am done/made”, and ag déanamh means the work is still in progress. Literally: Tá an obair déanta agam = “is the work done at me”.",
     "phrase": "Tá an obair déanta agam.",
     "tags": ["verbal_adjective", "perfect_aspect", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-236",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “bróga” mean?",
+    "options": ["socks", "boots", "shoes"],
+    "correctAnswer": 2,
+    "explanation": "Bróga is the plural of bróg (a shoe). Socks are stocaí, and boots are buataisí. Literally: bróga = “shoes”.",
+    "phrase": "Tá bróga nua orm.",
+    "tags": ["clothing", "nouns", "plurals"]
+  },
+  {
+    "id": "ga-237",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Complete: Ba mhaith liom ticéad ___. (I'd like to buy a ticket.)",
+    "options": ["a cheannach", "a ceannach", "cheannach"],
+    "correctAnswer": 0,
+    "explanation": "When a verbal noun has a direct object before it, Irish uses a plus a lenited verbal noun: a cheannach. Leaving out the lenition (a ceannach) or dropping a is wrong. Literally: ticéad a cheannach = “ticket to buying”.",
+    "phrase": "Ba mhaith liom ticéad a cheannach.",
+    "tags": ["verbal_noun", "lenition", "infinitive_clause"]
+  },
+  {
+    "id": "ga-238",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "Complete: Chuir mé glaoch ___ inné. (I phoned her yesterday.)",
+    "options": ["léi", "uirthi", "chuici"],
+    "correctAnswer": 1,
+    "explanation": "The idiom is cuir glaoch ar (“to phone”), so “on her” is the prepositional pronoun uirthi. Léi means “with her”, and chuici means “towards her”. Literally: Chuir mé glaoch uirthi = “put I a call on-her”.",
+    "phrase": "Chuir mé glaoch uirthi inné.",
+    "tags": ["verb_prepositions", "prepositional_pronouns", "idioms"]
+  },
+  {
+    "id": "ga-239",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Which means “our friends”?",
+    "options": ["ár cairde", "ár gcairde", "ár gcara"],
+    "correctAnswer": 1,
+    "explanation": "Ár (“our”) causes eclipsis, so cairde becomes gcairde. Ár cairde misses that mutation, and ár gcara is singular (“our friend”). Literally: ár gcairde = “our friends”.",
+    "phrase": "Is iad ár gcairde iad.",
+    "tags": ["eclipsis", "possessives", "people"]
+  },
+  {
+    "id": "ga-240",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "How do you say “Irish is spoken here”?",
+    "options": [
+      "Labhraíonn Gaeilge anseo.",
+      "Tá labhairt Gaeilge anseo.",
+      "Labhraítear Gaeilge anseo."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The autonomous present labhraítear means “is spoken” / “one speaks”. Labhraíonn needs a personal subject, and tá labhairt Gaeilge is not a valid passive. Literally: Labhraítear Gaeilge anseo = “is spoken Irish here”.",
+    "phrase": "Labhraítear Gaeilge anseo.",
+    "tags": ["autonomous", "passive", "present_tense"]
+  },
+  {
+    "id": "ga-241",
+    "category": "Vocabulary",
+    "level": "A1",
+    "question": "What does “tráthnóna” mean?",
+    "options": ["morning", "afternoon", "midnight"],
+    "correctAnswer": 1,
+    "explanation": "Tráthnóna means afternoon (and early evening). Morning is maidin, and midnight is meán oíche. Literally: tráthnóna = “afternoon”.",
+    "phrase": "Feicfidh mé thú tráthnóna.",
+    "tags": ["time", "nouns"]
+  },
+  {
+    "id": "ga-242",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "Complete: Cheannaigh sí é ___. (She bought it for ten euro.)",
+    "options": ["ar dheich euro", "le deich euro", "faoi dheich euro"],
+    "correctAnswer": 0,
+    "explanation": "Irish uses ar for the price paid, and ar lenites: ar dheich euro. Le means “with”, and faoi means “under” or “about”. Literally: ar dheich euro = “on ten euro”.",
+    "phrase": "Cheannaigh sí é ar dheich euro.",
+    "tags": ["prepositions", "lenition", "numbers", "shopping"]
+  },
+  {
+    "id": "ga-243",
+    "category": "Grammar",
+    "level": "B1",
+    "question": "How do you say “I haven’t seen her in a long time”?",
+    "options": [
+      "Níor fheic mé le fada í.",
+      "Ní fheicim le fada í.",
+      "Ní fhaca mé le fada í."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Feic is irregular: after ní the past dependent is fhaca, not fheic. Níor is for regular past verbs, and ní fheicim is present tense. Literally: Ní fhaca mé le fada í = “not saw I for long her”.",
+    "phrase": "Ní fhaca mé le fada í.",
+    "tags": ["irregular_verbs", "past_tense", "negation", "time_expressions"]
+  },
+  {
+    "id": "ga-244",
+    "category": "Grammar",
+    "level": "B2",
+    "question": "Which means “before I leave”?",
+    "options": ["sula imím", "sula n-imím", "roimh mé a imeacht"],
+    "correctAnswer": 1,
+    "explanation": "Sula (“before”) takes the dependent form with an n-prefix before a vowel: sula n-imím. Sula imím misses that prefix, and roimh mé a imeacht is not a valid clause. Literally: sula n-imím = “before I leave”.",
+    "phrase": "Glaoigh orm sula n-imím.",
+    "tags": ["subordinate_clauses", "eclipsis", "present_habitual"]
+  },
+  {
+    "id": "ga-245",
+    "category": "Grammar",
+    "level": "A2",
+    "question": "How do you say “Turn off the light”?",
+    "options": ["Múch an solas.", "Las an solas.", "Dún an solas."],
+    "correctAnswer": 0,
+    "explanation": "Múch means “extinguish” or “turn off” a light. Las means “light” or “turn on”, and dún means “close”. Literally: Múch an solas = “extinguish the light”.",
+    "phrase": "Múch an solas, le do thoil.",
+    "tags": ["imperatives", "household", "commands"]
   }
 ]
