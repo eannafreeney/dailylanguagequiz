@@ -245,6 +245,28 @@ const welshTheme: LanguageTheme = {
   footerBar: "mt-auto border-t-4 border-red-700 bg-green-950 text-green-100",
 };
 
+const czechTheme: LanguageTheme = {
+  accent: "bg-blue-800",
+  accentHover: "hover:bg-blue-900",
+  accentBorderHover: "hover:border-blue-900",
+  accentSoft: "bg-red-50",
+  accentBorder: "border-red-200",
+  accentText: "text-blue-800",
+  focus: "focus-visible:outline-blue-800",
+  progress: "bg-red-600",
+  progressTrack: "bg-slate-200",
+  radio:
+    "data-picked:border-blue-800 data-picked:bg-[radial-gradient(circle,_#1e40af_35%,_white_40%)]",
+  selectedOption: "data-picked:border-blue-800 data-picked:bg-red-50",
+  optionHover: "fine-hover:border-red-300 fine-hover:bg-red-50",
+  kicker: "text-red-700",
+  headerBar: "bg-blue-800 border-b-4 border-red-600",
+  headerTitle: "text-white",
+  headerMuted: "text-blue-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-red-600 bg-blue-950 text-blue-100",
+};
+
 // Language navigation and visual tokens are isolated here so language identities stay separate.
 export const languageConfig: Record<LangCode, LanguageConfig> = {
   ga: {
@@ -295,5 +317,6 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   es: { links: [], theme: spanishTheme },
   gd: { links: [], theme: gaelicTheme },
   cy: { links: [], theme: welshTheme },
+  cs: { links: [], theme: czechTheme },
   fa: { links: [], theme: farsiTheme },
 };

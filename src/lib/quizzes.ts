@@ -9,6 +9,7 @@ import esQuestions from "../../data/es-questions.json";
 import faQuestions from "../../data/fa-questions.json";
 import gdQuestions from "../../data/gd-questions.json";
 import cyQuestions from "../../data/cy-questions.json";
+import csQuestions from "../../data/cz-questions.json";
 
 export const quizzes = {
   ga: gaQuestions,
@@ -22,4 +23,5 @@ export const quizzes = {
   fa: faQuestions,
   gd: gdQuestions,
   cy: cyQuestions,
+  cs: csQuestions,
 };

@@ -32,6 +32,7 @@ assert.match(homeXml, /Spanish/);
 assert.match(homeXml, /Italian/);
 assert.match(homeXml, /Scots Gaelic/);
 assert.match(homeXml, /Welsh/);
+assert.match(homeXml, /Czech/);
 assert.doesNotMatch(homeXml, /Russian/);
 assert.doesNotMatch(homeXml, /Farsi/);
 
