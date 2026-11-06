@@ -15,6 +15,8 @@ export const DOMAIN_TO_LANG: Record<string, string> = {
   "fr.localhost": "fr",
   "fa.localhost": "fa",
   "es.localhost": "es",
+  "gd.localhost": "gd",
+  "cy.localhost": "cy",
 };
 
 // Hosts above the local entries. Add a domain here and the footer link appears.
@@ -111,6 +113,26 @@ export const languages = [
       "A free daily Spanish quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
     flag: "🇪🇸",
     siteName: "Daily Spanish Quiz",
+    published: true,
+  },
+  {
+    langCode: "gd",
+    name: "Gàidhlig",
+    englishName: "Scots Gaelic",
+    description:
+      "A free daily Scots Gaelic quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+    flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    siteName: "Daily Scots Gaelic Quiz",
+    published: true,
+  },
+  {
+    langCode: "cy",
+    name: "Cymraeg",
+    englishName: "Welsh",
+    description:
+      "A free daily Welsh quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+    flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    siteName: "Daily Welsh Quiz",
     published: true,
   },
   {

@@ -201,6 +201,50 @@ const chineseTheme: LanguageTheme = {
   footerBar: "mt-auto border-t-4 border-yellow-400 bg-red-950 text-red-100",
 };
 
+const gaelicTheme: LanguageTheme = {
+  accent: "bg-blue-800",
+  accentHover: "hover:bg-blue-900",
+  accentBorderHover: "hover:border-blue-900",
+  accentSoft: "bg-blue-50",
+  accentBorder: "border-blue-200",
+  accentText: "text-blue-800",
+  focus: "focus-visible:outline-blue-800",
+  progress: "bg-blue-700",
+  progressTrack: "bg-slate-200",
+  radio:
+    "data-picked:border-blue-800 data-picked:bg-[radial-gradient(circle,_#1e40af_35%,_white_40%)]",
+  selectedOption: "data-picked:border-blue-800 data-picked:bg-blue-50",
+  optionHover: "fine-hover:border-blue-400 fine-hover:bg-blue-50",
+  kicker: "text-slate-600",
+  headerBar: "bg-blue-900 border-b-4 border-white",
+  headerTitle: "text-white",
+  headerMuted: "text-blue-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-white bg-blue-950 text-blue-100",
+};
+
+const welshTheme: LanguageTheme = {
+  accent: "bg-red-700",
+  accentHover: "hover:bg-red-800",
+  accentBorderHover: "hover:border-red-800",
+  accentSoft: "bg-green-50",
+  accentBorder: "border-green-200",
+  accentText: "text-red-800",
+  focus: "focus-visible:outline-red-700",
+  progress: "bg-green-700",
+  progressTrack: "bg-slate-200",
+  radio:
+    "data-picked:border-red-700 data-picked:bg-[radial-gradient(circle,_#b91c1c_35%,_white_40%)]",
+  selectedOption: "data-picked:border-red-700 data-picked:bg-green-50",
+  optionHover: "fine-hover:border-green-400 fine-hover:bg-green-50",
+  kicker: "text-green-800",
+  headerBar: "bg-green-700 border-b-4 border-red-700",
+  headerTitle: "text-white",
+  headerMuted: "text-green-100",
+  markText: "text-white",
+  footerBar: "mt-auto border-t-4 border-red-700 bg-green-950 text-green-100",
+};
+
 // Language navigation and visual tokens are isolated here so language identities stay separate.
 export const languageConfig: Record<LangCode, LanguageConfig> = {
   ga: {
@@ -249,5 +293,7 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
   hu: { links: [], theme: hungarianTheme },
   fr: { links: [], theme: frenchTheme },
   es: { links: [], theme: spanishTheme },
+  gd: { links: [], theme: gaelicTheme },
+  cy: { links: [], theme: welshTheme },
   fa: { links: [], theme: farsiTheme },
 };
