@@ -2,6 +2,7 @@ import type { LangCode, Question as QuizQuestion } from "../types";
 import { LanguageConfig, languageConfig } from "../config/language-config";
 import { languages } from "../lib/languages";
 import { languageView, nativeOptions } from "../lib/script";
+import SponsorStack from "./SponsorStack";
 
 type Props = {
   question: QuizQuestion;
@@ -34,47 +35,51 @@ const QuizPanel = ({
   return (
     <div
       id="quiz"
-      class="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-4 px-3 sm:gap-6 sm:px-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8 lg:px-8"
+      class="mx-auto flex w-full max-w-6xl flex-col gap-4 px-3 sm:gap-6 sm:px-6 lg:px-8"
     >
-      <div class="flex w-full min-w-0 flex-col gap-3 sm:gap-4 lg:col-span-2">
-        <Header
-          question={question}
-          questionNumber={questionNumber}
-          totalQuestions={totalQuestions}
-          theme={theme}
-          langCode={langCode}
-        />
-        <ProgressBar progress={progress} theme={theme} />
-      </div>
-      <section
-        class="flex w-full min-w-0 flex-col gap-3 sm:gap-4"
-        {...alpineAttributes}
-      >
-        <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-9">
-          <Bar
-            theme={theme}
-            hasScripts={hasScripts}
-            englishName={language.englishName}
-            nativeName={language.name}
-            scripts={view.scripts}
-            scriptKey={scriptKey}
-          />
-
-          <Question question={question} promptLang={view.promptLang} />
-
-          <AnswerCard
+      <div class="grid w-full grid-cols-1 items-start gap-4 sm:gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8">
+        <div class="flex w-full min-w-0 flex-col gap-3 sm:gap-4 lg:col-span-2">
+          <Header
             question={question}
-            langCode={langCode}
             questionNumber={questionNumber}
+            totalQuestions={totalQuestions}
             theme={theme}
-            hasScripts={hasScripts}
-            optionLang={view.optionLang}
-            dir={view.dir}
-            alternateScript={view.scripts[1]?.id}
+            langCode={langCode}
           />
+          <ProgressBar progress={progress} theme={theme} />
         </div>
-      </section>
-      <AnswerAside />
+        <section
+          class="flex w-full min-w-0 flex-col gap-3 sm:gap-4"
+          {...alpineAttributes}
+        >
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-9">
+            <Bar
+              theme={theme}
+              hasScripts={hasScripts}
+              englishName={language.englishName}
+              nativeName={language.name}
+              scripts={view.scripts}
+              scriptKey={scriptKey}
+            />
+
+            <Question question={question} promptLang={view.promptLang} />
+
+            <AnswerCard
+              question={question}
+              langCode={langCode}
+              questionNumber={questionNumber}
+              theme={theme}
+              hasScripts={hasScripts}
+              optionLang={view.optionLang}
+              dir={view.dir}
+              alternateScript={view.scripts[1]?.id}
+            />
+          </div>
+        </section>
+        <AnswerAside />
+      </div>
+      {/* ponytail: outside #answer so alpine ajax swaps don't wipe sponsors */}
+      <SponsorStack langCode={langCode} />
     </div>
   );
 };

@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import QuizPanel from "../components/QuizPanel";
 import { languages } from "../lib/languages";
 import { getDailyQuestions } from "../utils";
-import SponsorStack from "../components/SponsorStack";
 
 type Props = { langCode: LangCode };
 
@@ -23,7 +22,6 @@ const LanguagePage = ({ langCode }: Props) => {
           langCode={langCode}
         />
       </section>
-      <SponsorStack langCode={langCode} />
     </Layout>
   );
 };
