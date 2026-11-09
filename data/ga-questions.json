@@ -15,8 +15,8 @@
     "category": "introductions",
     "level": "A1",
     "question": "Complete: Is ___ mé. (I am a teacher.)",
-    "options": ["múinteora", "múinteoir", "an múinteoir"],
-    "correctAnswer": 1,
+    "options": ["múinteoir", "múinteora", "an múinteoir"],
+    "correctAnswer": 0,
     "explanation": "Is múinteoir mé is a standard way to say “I am a teacher.” Literally: Is múinteoir mé = “is a teacher me”.",
     "phrase": "Is múinteoir mé.",
     "tags": ["people", "copula", "work"]
@@ -26,8 +26,8 @@
     "category": "daily_life",
     "level": "A1",
     "question": "How do you say “I have a book”?",
-    "options": ["Is leabhar mé.", "Tá mé leabhar.", "Tá leabhar agam."],
-    "correctAnswer": 2,
+    "options": ["Tá leabhar agam.", "Is leabhar mé.", "Tá mé leabhar."],
+    "correctAnswer": 0,
     "explanation": "Irish expresses possession with tá + thing + ag + person: Tá leabhar agam. Literally: Tá leabhar agam = “is a book at me”.",
     "phrase": "Tá leabhar agam.",
     "tags": ["possession", "prepositional_pronouns"]
@@ -37,8 +37,8 @@
     "category": "places",
     "level": "A1",
     "question": "Complete: Tá an cat ___ an gcathaoir. (The cat is on the chair.)",
-    "options": ["ar", "chuig", "ó"],
-    "correctAnswer": 0,
+    "options": ["chuig", "ó", "ar"],
+    "correctAnswer": 2,
     "explanation": "Ar means “on”. Ar an gcathaoir means “on the chair”. Literally: Tá an cat ar an gcathaoir = “is the cat on the chair”.",
     "phrase": "Tá an cat ar an gcathaoir.",
     "tags": ["prepositions", "eclipsis"]
@@ -48,8 +48,8 @@
     "category": "greetings",
     "level": "A1",
     "question": "Which is a common Irish greeting?",
-    "options": ["Dia duit.", "Oíche mhaith.", "Slán."],
-    "correctAnswer": 0,
+    "options": ["Oíche mhaith.", "Slán.", "Dia duit."],
+    "correctAnswer": 2,
     "explanation": "Dia duit is a common way to say “hello”. Oíche mhaith means “good night”, and slán means “goodbye”. Literally: Dia duit = “God to you”. Oíche mhaith = “night good”. Slán = “safe”.",
     "phrase": "Dia duit.",
     "tags": ["greetings"]
@@ -59,8 +59,8 @@
     "category": "places",
     "level": "A1",
     "question": "Complete: Chuaigh mé ___ an siopa. (I went to the shop.)",
-    "options": ["ag", "ó", "chuig"],
-    "correctAnswer": 2,
+    "options": ["chuig", "ag", "ó"],
+    "correctAnswer": 0,
     "explanation": "Chuig can mean “to” or “towards” and introduces a destination. Literally: Chuaigh mé chuig an siopa = “went I towards the shop”.",
     "phrase": "Chuaigh mé chuig an siopa.",
     "tags": ["prepositions", "past_tense", "travel"]
@@ -70,8 +70,8 @@
     "category": "health",
     "level": "A1",
     "question": "How do you say “I am tired”?",
-    "options": ["Tá mé tuirse.", "Tá tuirse orm.", "Is tuirse mé."],
-    "correctAnswer": 1,
+    "options": ["Tá mé tuirse.", "Is tuirse mé.", "Tá tuirse orm."],
+    "correctAnswer": 2,
     "explanation": "Tá tuirse orm is a common expression meaning “I am tired”, literally “tiredness is on me”. Literally: Tá tuirse orm = “is tiredness on me” (orm = ar + mé, “on me”).",
     "phrase": "Tá tuirse orm.",
     "tags": ["feelings", "prepositional_pronouns"]
@@ -81,8 +81,8 @@
     "category": "daily_life",
     "level": "A1",
     "question": "Complete: ___ sé anseo anois. (He is here now.)",
-    "options": ["Beidh", "Bhí", "Tá"],
-    "correctAnswer": 2,
+    "options": ["Beidh", "Tá", "Bhí"],
+    "correctAnswer": 1,
     "explanation": "Tá is the present form of bí. Bhí is past tense, and beidh is future tense. Literally: Tá sé anseo anois = “is he here now”.",
     "phrase": "Tá sé anseo anois.",
     "tags": ["verb_to_be", "present_tense"]
@@ -93,11 +93,11 @@
     "level": "A1",
     "question": "How do you say “She speaks Irish”?",
     "options": [
+      "Labhraíonn sí Gaeilge.",
       "Sí labhraíonn Gaeilge.",
-      "Labhraíonn Gaeilge sí.",
-      "Labhraíonn sí Gaeilge."
+      "Labhraíonn Gaeilge sí."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "The usual word order is verb + subject + object: Labhraíonn sí Gaeilge. Literally: Labhraíonn sí Gaeilge = “speaks she Irish”.",
     "phrase": "Labhraíonn sí Gaeilge.",
     "tags": ["word_order", "languages"]
@@ -112,32 +112,6 @@
     "explanation": "After ag in this progressive construction, use the verbal noun: ag imirt. Literally: Tá siad ag imirt peile = “are they at playing of football”.",
     "phrase": "Tá siad ag imirt peile.",
     "tags": ["verbal_noun", "sports", "progressive"]
-  },
-  {
-    "id": "ga-011",
-    "category": "daily_life",
-    "level": "A2",
-    "question": "How do you say “We went home”?",
-    "options": [
-      "Chuaigh muid abhaile.",
-      "Téann muid abhaile.",
-      "Tá muid abhaile."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Chuaigh is the past-tense form of téigh, meaning “to go”. Abhaile means “home” when describing movement towards home. Literally: Chuaigh muid abhaile = “went we homewards”.",
-    "phrase": "Chuaigh muid abhaile.",
-    "tags": ["past_tense", "irregular_verbs", "home"]
-  },
-  {
-    "id": "ga-012",
-    "category": "food",
-    "level": "A2",
-    "question": "Complete: D’ith mé ___. (I ate the apple.)",
-    "options": ["na húlla", "an úll", "an t-úll"],
-    "correctAnswer": 2,
-    "explanation": "An t-úll means “the apple”. The t- is used before a vowel after the singular definite article. Literally: D’ith mé an t-úll = “ate I the apple”.",
-    "phrase": "D’ith mé an t-úll.",
-    "tags": ["past_tense", "definite_article", "nouns"]
   },
   {
     "id": "ga-013",
@@ -156,11 +130,11 @@
     "level": "A1",
     "question": "Which means “I am going home now”?",
     "options": [
-      "Tá mé ag dul abhaile anois.",
       "Chuaigh mé abhaile inné.",
-      "Tá mé sa bhaile anois."
+      "Tá mé sa bhaile anois.",
+      "Tá mé ag dul abhaile anois."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Ag dul abhaile means “going home”. Sa bhaile means “at home”, while inné means “yesterday”. Literally: Tá mé ag dul abhaile anois = “am I at going homewards now”.",
     "phrase": "Tá mé ag dul abhaile anois.",
     "tags": ["progressive", "home", "directions"]
@@ -170,8 +144,8 @@
     "category": "communication",
     "level": "A1",
     "question": "How do you ask “Where are you?”",
-    "options": ["Cad atá tú?", "Cá bhfuil tú?", "Cé atá tú?"],
-    "correctAnswer": 1,
+    "options": ["Cad atá tú?", "Cé atá tú?", "Cá bhfuil tú?"],
+    "correctAnswer": 2,
     "explanation": "Cá bhfuil tú? asks about someone's location. Cad means “what” and cé means “who”. Literally: Cá bhfuil tú? = “where is you?”.",
     "phrase": "Cá bhfuil tú?",
     "tags": ["questions", "places"]
@@ -181,8 +155,8 @@
     "category": "introductions",
     "level": "A1",
     "question": "Complete: ___ is ainm duit? (What is your name?)",
-    "options": ["Cad", "Cá", "Cé"],
-    "correctAnswer": 0,
+    "options": ["Cá", "Cad", "Cé"],
+    "correctAnswer": 1,
     "explanation": "Cad is ainm duit? is a common way to ask someone's name. Literally: Cad is ainm duit? = “what is name to you?”.",
     "phrase": "Cad is ainm duit?",
     "tags": ["questions", "names"]
@@ -203,8 +177,8 @@
     "category": "food",
     "level": "A1",
     "question": "Complete: Tá cupán tae ___ an mbord. (There is a cup of tea on the table.)",
-    "options": ["ar", "ó", "faoi"],
-    "correctAnswer": 0,
+    "options": ["ó", "faoi", "ar"],
+    "correctAnswer": 2,
     "explanation": "Ar an mbord means “on the table”. The form of the noun changes after the preposition and article. Literally: Tá cupán tae ar an mbord = “is a cup of tea on the table”.",
     "phrase": "Tá cupán tae ar an mbord.",
     "tags": ["prepositions", "eclipsis", "drinks"]
@@ -230,14 +204,743 @@
     "level": "A1",
     "question": "Choose the sentence meaning “The children are playing.”",
     "options": [
+      "Tá na páistí ag súgradh.",
       "Na páistí tá súgradh.",
-      "Tá ag súgradh na páistí.",
-      "Tá na páistí ag súgradh."
+      "Tá ag súgradh na páistí."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "The progressive construction uses tá + subject + ag + verbal noun. Literally: Tá na páistí ag súgradh = “are the children at playing”.",
     "phrase": "Tá na páistí ag súgradh.",
     "tags": ["progressive", "family"]
+  },
+  {
+    "id": "ga-028",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "Complete: Tá am ___ . (You have time.)",
+    "options": ["agat", "duit", "ort"],
+    "correctAnswer": 0,
+    "explanation": "Agat means “at you” and is used in expressions of possession: tá am agat, “you have time”. Literally: Tá am agat = “is time at you”.",
+    "phrase": "Tá am agat.",
+    "tags": ["possession", "time"]
+  },
+  {
+    "id": "ga-038",
+    "category": "introductions",
+    "level": "A1",
+    "question": "Complete: Is as ___ mé. (I am from Ireland.)",
+    "options": ["Éireann", "Éirinn", "Éire"],
+    "correctAnswer": 1,
+    "explanation": "Is as Éirinn mé is the standard expression for “I am from Ireland”. Literally: Is as Éirinn mé = “is out-of Ireland me”.",
+    "phrase": "Is as Éirinn mé.",
+    "tags": ["copula", "places", "origin"]
+  },
+  {
+    "id": "ga-040",
+    "category": "places",
+    "level": "A1",
+    "question": "Which word means “here”?",
+    "options": ["anseo", "inné", "amárach"],
+    "correctAnswer": 0,
+    "explanation": "Anseo means “here”; inné means “yesterday”, and amárach means “tomorrow”. Literally: anseo = “in this (place)”.",
+    "phrase": "Tá an leabhar anseo.",
+    "tags": ["adverbs", "nouns"]
+  },
+  {
+    "id": "ga-056",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does “Tá brón orm” mean?",
+    "options": ["I am excited.", "I am sorry.", "I am ready."],
+    "correctAnswer": 1,
+    "explanation": "Tá brón orm literally means “sadness is on me” and is commonly used to express sorrow or say “I'm sorry.” Literally: Tá brón orm = “is sadness on me”.",
+    "phrase": "Tá brón orm.",
+    "tags": ["feelings", "apology"]
+  },
+  {
+    "id": "ga-057",
+    "category": "communication",
+    "level": "A1",
+    "question": "Choose the correct Irish for “I understand.”",
+    "options": ["Tuigim.", "Cloisim.", "Feicim."],
+    "correctAnswer": 0,
+    "explanation": "Tuigim means “I understand.” Feicim means “I see,” and cloisim means “I hear.” Literally: Tuigim = “I-understand”; feicim = “I-see”; cloisim = “I-hear” (the -im ending means “I”).",
+    "phrase": "Tuigim an cheist.",
+    "tags": ["verbs", "present_tense"]
+  },
+  {
+    "id": "ga-059",
+    "category": "communication",
+    "level": "A1",
+    "question": "How do you say “I know” in Irish?",
+    "options": ["Tá a fhios agam.", "Tá mé réidh.", "Tá mé ann."],
+    "correctAnswer": 0,
+    "explanation": "Tá a fhios agam means “I know.” Literally, it expresses that knowledge is known to me. Literally: Tá a fhios agam = “is its knowledge at me”.",
+    "phrase": "Tá a fhios agam.",
+    "tags": ["knowledge", "possession"]
+  },
+  {
+    "id": "ga-061",
+    "category": "introductions",
+    "level": "A1",
+    "question": "Complete: ___ mise Seán.",
+    "options": ["Tá", "Bíonn", "Is"],
+    "correctAnswer": 2,
+    "explanation": "Is mise Seán means “I am Seán.” Is is used in identification sentences. Literally: Is mise Seán = “is me Seán” (mise is the emphatic form of mé).",
+    "phrase": "Is mise Seán.",
+    "tags": ["copula", "names"]
+  },
+  {
+    "id": "ga-062",
+    "category": "people",
+    "level": "A1",
+    "question": "How do you say “She is a teacher” in Irish?",
+    "options": ["Is múinteoir é.", "Tá múinteoir í.", "Is múinteoir í."],
+    "correctAnswer": 2,
+    "explanation": "Is múinteoir í means “She is a teacher.” The pronoun í refers to a female person. Literally: Is múinteoir í = “is teacher she”.",
+    "phrase": "Is múinteoir í.",
+    "tags": ["copula", "work"]
+  },
+  {
+    "id": "ga-064",
+    "category": "people",
+    "level": "A1",
+    "question": "Choose the correct Irish for “We are friends.”",
+    "options": ["Is cara muid.", "Is cairde muid.", "Tá cairde sinn."],
+    "correctAnswer": 1,
+    "explanation": "Is cairde muid means “We are friends.” Cairde is the plural of cara, “friend.” Literally: Is cairde muid = “is friends us”.",
+    "phrase": "Is cairde muid.",
+    "tags": ["copula", "plurals", "friends"]
+  },
+  {
+    "id": "ga-065",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does “Cá bhfuil tú i do chónaí?” mean?",
+    "options": [
+      "Where do you live?",
+      "Where are you going?",
+      "Where are you working?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cá bhfuil tú i do chónaí? means “Where do you live?” Literally: Cá bhfuil tú i do chónaí? = “where is you in your dwelling?”.",
+    "phrase": "Cá bhfuil tú i do chónaí?",
+    "tags": ["questions", "origin"]
+  },
+  {
+    "id": "ga-066",
+    "category": "introductions",
+    "level": "A1",
+    "question": "Choose the correct Irish for “I live in Dublin.”",
+    "options": [
+      "Tá mé ag dul go Baile Átha Cliath.",
+      "Tá mé as Baile Átha Cliath.",
+      "Tá mé i mo chónaí i mBaile Átha Cliath."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tá mé i mo chónaí i mBaile Átha Cliath means “I live in Dublin.” Literally: Tá mé i mo chónaí i mBaile Átha Cliath = “am I in my dwelling in Town-of-the-Hurdle-Ford”.",
+    "phrase": "Tá mé i mo chónaí i mBaile Átha Cliath.",
+    "tags": ["places", "eclipsis"]
+  },
+  {
+    "id": "ga-067",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does “Cad as duit?” mean?",
+    "options": [
+      "Where are you from?",
+      "How old are you?",
+      "What is your name?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cad as duit? is a way to ask “Where are you from?” Literally: Cad as duit? = “what out-of to you?”.",
+    "phrase": "Cad as duit?",
+    "tags": ["questions", "origin"]
+  },
+  {
+    "id": "ga-069",
+    "category": "travel",
+    "level": "A1",
+    "question": "Complete: Tá mé ag dul ___ an siopa.",
+    "options": ["ar", "sa", "go dtí"],
+    "correctAnswer": 2,
+    "explanation": "Tá mé ag dul go dtí an siopa means “I am going to the shop.” Literally: Tá mé ag dul go dtí an siopa = “am I at going to the shop”.",
+    "phrase": "Tá mé ag dul go dtí an siopa.",
+    "tags": ["progressive", "places"]
+  },
+  {
+    "id": "ga-071",
+    "category": "work_study",
+    "level": "A1",
+    "question": "Choose the correct Irish for “I am going to school.”",
+    "options": [
+      "Tá mé ag dul ar scoil.",
+      "Tá mé ar scoil.",
+      "Tá mé ag teacht ón scoil."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tá mé ag dul ar scoil means “I am going to school.” Literally: Tá mé ag dul ar scoil = “am I at going on school”.",
+    "phrase": "Tá mé ag dul ar scoil.",
+    "tags": ["progressive", "education"]
+  },
+  {
+    "id": "ga-073",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "Complete: Tá sí ag ___ leabhar.",
+    "options": ["léigh", "léann", "léamh"],
+    "correctAnswer": 2,
+    "explanation": "Tá sí ag léamh leabhar means “She is reading a book.” The progressive uses ag plus the verbal noun. Literally: Tá sí ag léamh leabhar = “is she at reading of a book”.",
+    "phrase": "Tá sí ag léamh leabhar.",
+    "tags": ["progressive", "reading"]
+  },
+  {
+    "id": "ga-075",
+    "category": "food",
+    "level": "A1",
+    "question": "What does “Tá sé ag ól uisce” mean?",
+    "options": [
+      "He is buying water.",
+      "He is drinking water.",
+      "He is looking for water."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tá sé ag ól uisce means “He is drinking water.” Literally: Tá sé ag ól uisce = “is he at drinking water”.",
+    "phrase": "Tá sé ag ól uisce.",
+    "tags": ["progressive", "drinks"]
+  },
+  {
+    "id": "ga-077",
+    "category": "social",
+    "level": "A1",
+    "question": "How do you say “I like music” in Irish?",
+    "options": [
+      "Is maith mé ceol.",
+      "Is maith liom ceol.",
+      "Tá maith agam ceol."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Is maith liom ceol means “I like music.” Irish uses the construction is maith liom. Literally: Is maith liom ceol = “is good with me music”.",
+    "phrase": "Is maith liom ceol.",
+    "tags": ["likes", "questions"]
+  },
+  {
+    "id": "ga-079",
+    "category": "social",
+    "level": "A1",
+    "question": "Choose the correct Irish for “Do you like tea?”",
+    "options": [
+      "An maith leat tae?",
+      "Is maith tú tae?",
+      "An bhfuil tae leat maith?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An maith leat tae? means “Do you like tea?” Literally: An maith leat tae? = “is-good with you tea?”.",
+    "phrase": "An maith leat tae?",
+    "tags": ["likes", "questions"]
+  },
+  {
+    "id": "ga-082",
+    "category": "home",
+    "level": "A1",
+    "question": "Choose the correct Irish for “This house is small.”",
+    "options": [
+      "Tá an teach seo nua.",
+      "Tá an teach seo mór.",
+      "Tá an teach seo beag."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Beag means “small.” Teach means “house.” Literally: Tá an teach seo beag = “is the house this small”.",
+    "phrase": "Tá an teach seo beag.",
+    "tags": ["adjectives", "demonstratives"]
+  },
+  {
+    "id": "ga-084",
+    "category": "weather",
+    "level": "A1",
+    "question": "How do you say “It is raining” in Irish?",
+    "options": [
+      "Tá an ghrian ag taitneamh.",
+      "Tá sé ag cur sneachta.",
+      "Tá sé ag cur báistí."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tá sé ag cur báistí means “It is raining.” Literally: Tá sé ag cur báistí = “is it at putting of rain”.",
+    "phrase": "Tá sé ag cur báistí.",
+    "tags": ["weather", "time"]
+  },
+  {
+    "id": "ga-087",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does “Tá sé fuar inniu” mean?",
+    "options": ["It is late today.", "It is cold today.", "It is warm today."],
+    "correctAnswer": 1,
+    "explanation": "Inniu means “today,” and fuar means “cold.” Literally: Tá sé fuar inniu = “is it cold today”.",
+    "phrase": "Tá sé fuar inniu.",
+    "tags": ["weather", "time"]
+  },
+  {
+    "id": "ga-107",
+    "category": "home",
+    "level": "A1",
+    "question": "How do you say “The cat is under the table” in Irish?",
+    "options": [
+      "Tá an cat os cionn an bhoird.",
+      "Tá an cat faoin mbord.",
+      "Tá an cat ar an mbord."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Faoin mbord means “under the table.” Literally: Tá an cat faoin mbord = “is the cat under-the table” (faoin = faoi + an).",
+    "phrase": "Tá an cat faoin mbord.",
+    "tags": ["prepositions", "places"]
+  },
+  {
+    "id": "ga-114",
+    "category": "people",
+    "level": "A1",
+    "question": "What does “Tá beirt deartháireacha agam” mean?",
+    "options": [
+      "I have two children.",
+      "I have two sisters.",
+      "I have two brothers."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Deartháireacha means “brothers,” and beirt is used when counting people. Literally: Tá beirt deartháireacha agam = “is two-people brothers at me”.",
+    "phrase": "Tá beirt deartháireacha agam.",
+    "tags": ["family", "numbers"]
+  },
+  {
+    "id": "ga-115",
+    "category": "people",
+    "level": "A1",
+    "question": "How do you say “I have one sister” in Irish?",
+    "options": [
+      "Tá beirt deirfiúracha agam.",
+      "Tá deartháir amháin agam.",
+      "Tá deirfiúr amháin agam."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tá deirfiúr amháin agam means “I have one sister.” Literally: Tá deirfiúr amháin agam = “is sister one at me”.",
+    "phrase": "Tá deirfiúr amháin agam.",
+    "tags": ["family", "numbers"]
+  },
+  {
+    "id": "ga-117",
+    "category": "people",
+    "level": "A1",
+    "question": "Complete: Seo ___ chara.",
+    "options": ["mo", "muid", "mé"],
+    "correctAnswer": 0,
+    "explanation": "Seo mo chara means “This is my friend.” Mo causes lenition, so cara becomes chara. Literally: Seo mo chara = “this-is my friend”.",
+    "phrase": "Seo mo chara.",
+    "tags": ["possessives", "lenition", "friends"]
+  },
+  {
+    "id": "ga-121",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "Choose the correct Irish for “Please sit down.”",
+    "options": [
+      "Éirigh suas, le do thoil.",
+      "Suigh síos, le do thoil.",
+      "Tar isteach, le do thoil."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Suigh síos, le do thoil means “Please sit down.” Literally: Suigh síos, le do thoil = “sit down, with your will”.",
+    "phrase": "Suigh síos, le do thoil.",
+    "tags": ["imperative", "politeness"]
+  },
+  {
+    "id": "ga-123",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "How do you say “Come in” in Irish?",
+    "options": ["Téigh amach.", "Tar isteach.", "Suigh síos."],
+    "correctAnswer": 1,
+    "explanation": "Tar isteach means “Come in.” Téigh amach means “Go out.” Literally: Tar isteach = “come inwards”.",
+    "phrase": "Tar isteach.",
+    "tags": ["imperative", "politeness"]
+  },
+  {
+    "id": "ga-125",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "Choose the correct Irish for “Be careful!”",
+    "options": ["Bí sásta!", "Bí ciúin!", "Bí cúramach!"],
+    "correctAnswer": 2,
+    "explanation": "Bí cúramach means “Be careful.” Literally: Bí cúramach = “be careful”.",
+    "phrase": "Bí cúramach!",
+    "tags": ["imperative", "politeness"]
+  },
+  {
+    "id": "ga-131",
+    "category": "communication",
+    "level": "A1",
+    "question": "Choose the correct Irish for “I speak a little Irish.”",
+    "options": [
+      "Labhraím beagán Gaeilge.",
+      "Léim beagán Gaeilge.",
+      "Scríobhaim beagán Gaeilge."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Labhraím means “I speak,” and beagán means “a little.” Literally: Labhraím beagán Gaeilge = “I-speak a-little Irish”.",
+    "phrase": "Labhraím beagán Gaeilge.",
+    "tags": ["languages", "present_tense"]
+  },
+  {
+    "id": "ga-134",
+    "category": "work_study",
+    "level": "A1",
+    "question": "What does “Tá mé ag foghlaim gach lá” mean?",
+    "options": [
+      "I learn every day.",
+      "I teach every week.",
+      "I study only at night."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Gach lá means “every day.” Literally: Tá mé ag foghlaim gach lá = “am I at learning every day”.",
+    "phrase": "Tá mé ag foghlaim gach lá.",
+    "tags": ["progressive", "time"]
+  },
+  {
+    "id": "ga-152",
+    "category": "basics",
+    "level": "A1",
+    "question": "Which Irish word means “ten”?",
+    "options": ["fiche", "deich", "seacht"],
+    "correctAnswer": 1,
+    "explanation": "Deich means “ten”. Fiche means “twenty” and seacht means “seven”.",
+    "phrase": "Tá deich leabhar agam.",
+    "tags": ["numbers"]
+  },
+  {
+    "id": "ga-154",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "What is “Monday” in Irish?",
+    "options": ["Dé hAoine", "Dé Luain", "Dé Máirt"],
+    "correctAnswer": 1,
+    "explanation": "Dé Luain is Monday. Dé Máirt is Tuesday and Dé hAoine is Friday. Literally: Dé Luain = “day of the Moon” (luan = moon).",
+    "phrase": "Tá mé ag obair Dé Luain.",
+    "tags": ["days", "time"]
+  },
+  {
+    "id": "ga-156",
+    "category": "basics",
+    "level": "A1",
+    "question": "What does “dearg” mean?",
+    "options": ["green", "red", "blue"],
+    "correctAnswer": 1,
+    "explanation": "Dearg means “red”. Glas is “green” and gorm is “blue”.",
+    "phrase": "Tá an carr dearg.",
+    "tags": ["colours", "adjectives"]
+  },
+  {
+    "id": "ga-160",
+    "category": "food",
+    "level": "A1",
+    "question": "What does “arán” mean?",
+    "options": ["butter", "bread", "milk"],
+    "correctAnswer": 1,
+    "explanation": "Arán means “bread”. Im is “butter” and bainne is “milk”.",
+    "phrase": "Ithim arán gach lá.",
+    "tags": ["nouns"]
+  },
+  {
+    "id": "ga-162",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "What does “Cén t-am é?” mean?",
+    "options": ["What day is it?", "Where is the time?", "What time is it?"],
+    "correctAnswer": 2,
+    "explanation": "Cén t-am é? asks the time. Cén lá é? would ask the day. Literally: Cén t-am é? = “what time is-it?”.",
+    "phrase": "Cén t-am é?",
+    "tags": ["time", "questions"]
+  },
+  {
+    "id": "ga-165",
+    "category": "health",
+    "level": "A1",
+    "question": "What does “Tá pian i mo chos” mean?",
+    "options": [
+      "I have a pain in my head.",
+      "I have a pain in my foot.",
+      "I have a pain in my hand."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cos means “foot”, and it is lenited after mo: i mo chos. Literally: Tá pian i mo chos = “is pain in my foot”.",
+    "phrase": "Tá pian i mo chos.",
+    "tags": ["body", "nouns"]
+  },
+  {
+    "id": "ga-167",
+    "category": "directions",
+    "level": "A1",
+    "question": "How do you say “Turn right” in Irish?",
+    "options": ["Téigh díreach ar aghaidh.", "Cas ar dheis.", "Cas ar chlé."],
+    "correctAnswer": 1,
+    "explanation": "Cas ar dheis means “Turn right”. Cas ar chlé means “Turn left”. Literally: Cas ar dheis = “turn on right”.",
+    "phrase": "Cas ar dheis.",
+    "tags": ["directions"]
+  },
+  {
+    "id": "ga-168",
+    "category": "daily_life",
+    "level": "A1",
+    "question": "Which Irish word means “January”?",
+    "options": ["Márta", "Eanáir", "Feabhra"],
+    "correctAnswer": 1,
+    "explanation": "Eanáir is January. Feabhra is February and Márta is March.",
+    "phrase": "Tá sé fuar i mí Eanáir.",
+    "tags": ["months", "time"]
+  },
+  {
+    "id": "ga-170",
+    "category": "weather",
+    "level": "A1",
+    "question": "What does “samhradh” mean?",
+    "options": ["summer", "spring", "winter"],
+    "correctAnswer": 0,
+    "explanation": "Samhradh is “summer”. Geimhreadh is “winter” and earrach is “spring”.",
+    "phrase": "Tá sé te sa samhradh.",
+    "tags": ["seasons", "time"]
+  },
+  {
+    "id": "ga-172",
+    "category": "communication",
+    "level": "A1",
+    "question": "Complete: An ___ tú ag obair? (Are you working?)",
+    "options": ["bhfuil", "bhí", "tá"],
+    "correctAnswer": 0,
+    "explanation": "Questions use an + the eclipsed form bhfuil: An bhfuil tú ag obair? Literally: An bhfuil tú ag obair? = “is you at working?”.",
+    "phrase": "An bhfuil tú ag obair?",
+    "tags": ["questions", "responses"]
+  },
+  {
+    "id": "ga-173",
+    "category": "communication",
+    "level": "A1",
+    "question": "What is the usual answer meaning “yes” to “An bhfuil tú ag obair?”",
+    "options": ["Tá.", "Is ea.", "Ní hea."],
+    "correctAnswer": 0,
+    "explanation": "Irish answers a yes/no question by repeating the verb: An bhfuil...? → Tá (yes) or Níl (no). Is ea / Ní hea answer questions with is. Literally: Tá = “is”; Níl = “is-not”; Is ea = “is it”; Ní hea = “is-not it”.",
+    "phrase": "An bhfuil tú ag obair? Tá.",
+    "tags": ["questions", "responses"]
+  },
+  {
+    "id": "ga-175",
+    "category": "home",
+    "level": "A1",
+    "question": "How do you say “I close the door” in Irish?",
+    "options": [
+      "Dúnaim an doras.",
+      "Cnagaim ar an doras.",
+      "Osclaím an doras."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dúnaim means “I close”. Osclaím means “I open” and cnagaim means “I knock”. Literally: Dúnaim an doras = “I-close the door”.",
+    "phrase": "Dúnaim an doras.",
+    "tags": ["verbs", "imperative"]
+  },
+  {
+    "id": "ga-184",
+    "category": "greetings",
+    "level": "A1",
+    "question": "How do you ask “How are you?” in Irish?",
+    "options": ["Cad is ainm duit?", "Conas atá tú?", "Cá bhfuil tú?"],
+    "correctAnswer": 1,
+    "explanation": "Conas atá tú? means “How are you?” Cad is ainm duit? asks for a name. Literally: Conas atá tú? = “how that-is you?”.",
+    "phrase": "Conas atá tú?",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "ga-185",
+    "category": "greetings",
+    "level": "A1",
+    "question": "How do you say “I'm well, thank you”?",
+    "options": [
+      "Tá mé go maith, go raibh maith agat.",
+      "Is mise Seán, go raibh maith agat.",
+      "Tá mé go dona, go raibh maith agat."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go maith means “well”. Go dona means “badly”. Literally: Tá mé go maith, go raibh maith agat = “am I well, may-be good at you”.",
+    "phrase": "Tá mé go maith, go raibh maith agat.",
+    "tags": ["greetings", "feelings"]
+  },
+  {
+    "id": "ga-187",
+    "category": "greetings",
+    "level": "A1",
+    "question": "Which means “Good morning”?",
+    "options": ["Oíche mhaith", "Maidin mhaith", "Tráthnóna maith"],
+    "correctAnswer": 1,
+    "explanation": "Maidin mhaith is “good morning”. Tráthnóna maith is “good afternoon/evening” and oíche mhaith is “good night”. Literally: Maidin mhaith = “morning good”.",
+    "phrase": "Maidin mhaith duit.",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "ga-196",
+    "category": "communication",
+    "level": "A1",
+    "question": "Which question word means “why”?",
+    "options": ["Conas", "Cén fáth", "Cathain"],
+    "correctAnswer": 1,
+    "explanation": "Cén fáth means “why”. Cathain is “when” and conas is “how”. Literally: Cén fáth = “what the reason”.",
+    "phrase": "Cén fáth a bhfuil tú tuirseach?",
+    "tags": ["questions"]
+  },
+  {
+    "id": "ga-197",
+    "category": "shopping",
+    "level": "A1",
+    "question": "What does “Cé mhéad?” mean?",
+    "options": ["How much? / How many?", "How old?", "How long?"],
+    "correctAnswer": 0,
+    "explanation": "Cé mhéad? asks about quantity or price. Literally: Cé mhéad? = “what amount?”.",
+    "phrase": "Cé mhéad atá ar an arán?",
+    "tags": ["questions", "money"]
+  },
+  {
+    "id": "ga-198",
+    "category": "introductions",
+    "level": "A1",
+    "question": "What does “Cén aois thú?” mean?",
+    "options": ["How old are you?", "Where are you from?", "What time is it?"],
+    "correctAnswer": 0,
+    "explanation": "Cén aois thú? asks someone's age. Literally: Cén aois thú? = “what age you?”.",
+    "phrase": "Cén aois thú?",
+    "tags": ["questions", "age"]
+  },
+  {
+    "id": "ga-199",
+    "category": "politeness",
+    "level": "A1",
+    "question": "What does “Gabh mo leithscéal” mean?",
+    "options": ["Thank you.", "Goodbye.", "Excuse me."],
+    "correctAnswer": 2,
+    "explanation": "Gabh mo leithscéal means “excuse me” or “pardon me”. Literally: Gabh mo leithscéal = “take my excuse”.",
+    "phrase": "Gabh mo leithscéal.",
+    "tags": ["politeness", "thanks"]
+  },
+  {
+    "id": "ga-200",
+    "category": "politeness",
+    "level": "A1",
+    "question": "How do you say “Thank you very much”?",
+    "options": [
+      "Dia duit.",
+      "Go raibh maith agat.",
+      "Go raibh míle maith agat."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Go raibh míle maith agat means “thank you very much”. Go raibh maith agat is plain “thank you”. Literally: Go raibh míle maith agat = “may-be a-thousand good at you”.",
+    "phrase": "Go raibh míle maith agat.",
+    "tags": ["politeness", "thanks"]
+  },
+  {
+    "id": "ga-208",
+    "category": "places",
+    "level": "A1",
+    "question": "What does “leabharlann” mean?",
+    "options": ["bookshop", "bookcase", "library"],
+    "correctAnswer": 2,
+    "explanation": "Leabharlann combines leabhar (book) and lann (a place or building), so it means a library. A bookshop is siopa leabhar. Literally: leabharlann = “book-place”.",
+    "phrase": "leabharlann",
+    "tags": ["places", "compound_words"]
+  },
+  {
+    "id": "ga-216",
+    "category": "home",
+    "level": "A1",
+    "question": "What does “fuinneog” mean?",
+    "options": ["door", "window", "floor"],
+    "correctAnswer": 1,
+    "explanation": "Fuinneog is a feminine noun meaning “window”, so with the article it lenites: an fhuinneog. Doras is “door” and urlár is “floor”. Literally: fuinneog = “window”.",
+    "phrase": "an fhuinneog",
+    "tags": ["house", "nouns", "feminine_nouns"]
+  },
+  {
+    "id": "ga-221",
+    "category": "animals",
+    "level": "A1",
+    "question": "What does “madra rua” mean?",
+    "options": ["red dog", "fox", "wolf"],
+    "correctAnswer": 1,
+    "explanation": "Madra rua is the everyday Irish word for a fox, even though it literally means “red dog”. A wolf is mac tíre. Literally: madra rua = “red dog”.",
+    "phrase": "madra rua",
+    "tags": ["animals", "compound_words"]
+  },
+  {
+    "id": "ga-226",
+    "category": "home",
+    "level": "A1",
+    "question": "What does “scáthán” mean?",
+    "options": ["umbrella", "ladder", "mirror"],
+    "correctAnswer": 2,
+    "explanation": "Scáthán means “mirror”. An umbrella is scáth fearthainne and a ladder is dréimire. Literally: Tá scáthán sa seomra folctha = “is mirror in-the room bathing”.",
+    "phrase": "Tá scáthán sa seomra folctha.",
+    "tags": ["household", "nouns"]
+  },
+  {
+    "id": "ga-231",
+    "category": "travel",
+    "level": "A1",
+    "question": "What does “rothar” mean?",
+    "options": ["a bus", "a bicycle", "a boat"],
+    "correctAnswer": 1,
+    "explanation": "Rothar is a bicycle (from roth, “wheel”). A bus is bus and a boat is bád. Literally: Tá rothar nua agam = “is bicycle new at me”.",
+    "phrase": "Tá rothar nua agam.",
+    "tags": ["transport", "nouns"]
+  },
+  {
+    "id": "ga-236",
+    "category": "shopping",
+    "level": "A1",
+    "question": "What does “bróga” mean?",
+    "options": ["socks", "shoes", "boots"],
+    "correctAnswer": 1,
+    "explanation": "Bróga is the plural of bróg (a shoe). Socks are stocaí, and boots are buataisí. Literally: bróga = “shoes”.",
+    "phrase": "Tá bróga nua orm.",
+    "tags": ["clothing", "nouns", "plurals"]
+  },
+  {
+    "id": "ga-241",
+    "category": "time",
+    "level": "A1",
+    "question": "What does “tráthnóna” mean?",
+    "options": ["afternoon", "morning", "midnight"],
+    "correctAnswer": 0,
+    "explanation": "Tráthnóna means afternoon (and early evening). Morning is maidin, and midnight is meán oíche. Literally: tráthnóna = “afternoon”.",
+    "phrase": "Feicfidh mé thú tráthnóna.",
+    "tags": ["time", "nouns"]
+  },
+  {
+    "id": "ga-011",
+    "category": "daily_life",
+    "level": "A2",
+    "question": "How do you say “We went home”?",
+    "options": [
+      "Téann muid abhaile.",
+      "Tá muid abhaile.",
+      "Chuaigh muid abhaile."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chuaigh is the past-tense form of téigh, meaning “to go”. Abhaile means “home” when describing movement towards home. Literally: Chuaigh muid abhaile = “went we homewards”.",
+    "phrase": "Chuaigh muid abhaile.",
+    "tags": ["past_tense", "irregular_verbs", "home"]
+  },
+  {
+    "id": "ga-012",
+    "category": "food",
+    "level": "A2",
+    "question": "Complete: D’ith mé ___. (I ate the apple.)",
+    "options": ["na húlla", "an t-úll", "an úll"],
+    "correctAnswer": 1,
+    "explanation": "An t-úll means “the apple”. The t- is used before a vowel after the singular definite article. Literally: D’ith mé an t-úll = “ate I the apple”.",
+    "phrase": "D’ith mé an t-úll.",
+    "tags": ["past_tense", "definite_article", "nouns"]
   },
   {
     "id": "ga-022",
@@ -256,11 +959,11 @@
     "level": "A2",
     "question": "How do you say “I saw the woman”?",
     "options": [
-      "Chonaic an bhean mé.",
       "Chonaic mé an bhean.",
+      "Chonaic an bhean mé.",
       "Feic mé an bhean."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Chonaic mé means “I saw”. Chonaic an bhean mé would mean “The woman saw me”. Literally: Chonaic mé an bhean = “saw I the woman”.",
     "phrase": "Chonaic mé an bhean.",
     "tags": ["past_tense", "irregular_verbs", "word_order"]
@@ -281,8 +984,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "Which means “the books”?",
-    "options": ["an leabhair", "na leabhar", "na leabhair"],
-    "correctAnswer": 2,
+    "options": ["na leabhair", "an leabhair", "na leabhar"],
+    "correctAnswer": 0,
     "explanation": "Leabhair is the plural of leabhar, and na is used with plural definite nouns. Literally: na leabhair = “the (plural) books”.",
     "phrase": "Tá na leabhair ar an mbord.",
     "tags": ["plurals", "nouns"]
@@ -292,8 +995,8 @@
     "category": "health",
     "level": "A2",
     "question": "Complete: Tá mé níos ___ inniu. (I am better today.)",
-    "options": ["fearr", "maith", "go maith"],
-    "correctAnswer": 0,
+    "options": ["maith", "fearr", "go maith"],
+    "correctAnswer": 1,
     "explanation": "Níos fearr means “better”. Fearr is the comparative form of maith. Literally: Tá mé níos fearr inniu = “am I more better today”.",
     "phrase": "Tá mé níos fearr inniu.",
     "tags": ["comparison", "feelings"]
@@ -312,17 +1015,6 @@
     "explanation": "Níos sine ná means “older than”. Ná introduces the comparison. Literally: Tá sí níos sine ná mé = “is she more old than me”.",
     "phrase": "Tá sí níos sine ná mé.",
     "tags": ["comparison", "family"]
-  },
-  {
-    "id": "ga-028",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "Complete: Tá am ___ . (You have time.)",
-    "options": ["agat", "duit", "ort"],
-    "correctAnswer": 0,
-    "explanation": "Agat means “at you” and is used in expressions of possession: tá am agat, “you have time”. Literally: Tá am agat = “is time at you”.",
-    "phrase": "Tá am agat.",
-    "tags": ["possession", "time"]
   },
   {
     "id": "ga-029",
@@ -355,8 +1047,8 @@
     "category": "shopping",
     "level": "A2",
     "question": "How do you say “I have no money”?",
-    "options": ["Níl airgead mé.", "Ní agam airgead.", "Níl aon airgead agam."],
-    "correctAnswer": 2,
+    "options": ["Níl aon airgead agam.", "Níl airgead mé.", "Ní agam airgead."],
+    "correctAnswer": 0,
     "explanation": "Níl aon airgead agam means “I have no money”. Irish expresses possession with agam. Literally: Níl aon airgead agam = “is-not any money at me”.",
     "phrase": "Níl aon airgead agam.",
     "tags": ["possession", "negation", "money"]
@@ -378,11 +1070,11 @@
     "level": "A2",
     "question": "How do you say “I will go tomorrow”?",
     "options": [
-      "Rachaidh mé amárach.",
       "Chuaigh mé amárach.",
-      "Téann mé amárach."
+      "Téann mé amárach.",
+      "Rachaidh mé amárach."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Rachaidh is the future form of téigh, “to go”. Amárach means “tomorrow”. Literally: Rachaidh mé amárach = “will-go I tomorrow”.",
     "phrase": "Rachaidh mé amárach.",
     "tags": ["future_tense", "irregular_verbs", "time"]
@@ -436,72 +1128,24 @@
     "tags": ["prepositional_pronouns", "past_tense"]
   },
   {
-    "id": "ga-038",
-    "category": "introductions",
-    "level": "A1",
-    "question": "Complete: Is as ___ mé. (I am from Ireland.)",
-    "options": ["Éirinn", "Éireann", "Éire"],
-    "correctAnswer": 0,
-    "explanation": "Is as Éirinn mé is the standard expression for “I am from Ireland”. Literally: Is as Éirinn mé = “is out-of Ireland me”.",
-    "phrase": "Is as Éirinn mé.",
-    "tags": ["copula", "places", "origin"]
-  },
-  {
     "id": "ga-039",
     "category": "communication",
     "level": "A2",
     "question": "How do you ask “What are you doing?”",
     "options": [
-      "Cad atá tú a dhéanamh?",
       "Cá bhfuil tú ag déanamh?",
-      "Cé atá tú a dhéanamh?"
+      "Cé atá tú a dhéanamh?",
+      "Cad atá tú a dhéanamh?"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Cad atá tú a dhéanamh? asks what someone is doing. Literally: Cad atá tú a dhéanamh? = “what that-is you to do?”.",
     "phrase": "Cad atá tú a dhéanamh?",
     "tags": ["questions", "progressive"]
   },
   {
-    "id": "ga-040",
-    "category": "places",
-    "level": "A1",
-    "question": "Which word means “here”?",
-    "options": ["anseo", "inné", "amárach"],
-    "correctAnswer": 0,
-    "explanation": "Anseo means “here”; inné means “yesterday”, and amárach means “tomorrow”. Literally: anseo = “in this (place)”.",
-    "phrase": "Tá an leabhar anseo.",
-    "tags": ["adverbs", "nouns"]
-  },
-  {
-    "id": "ga-041",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which sentence expresses living somewhere for two years, continuing until now?",
-    "options": [
-      "Tá mé i mo chónaí anseo le dhá bhliain.",
-      "Bhí mé i mo chónaí anseo dhá bhliain ó shin.",
-      "Beidh mé i mo chónaí anseo i gceann dhá bhliain."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Le dhá bhliain can describe a situation that has continued for two years. Ó shin means “ago”, and i gceann dhá bhliain means “in two years' time”. Literally: Tá mé i mo chónaí anseo le dhá bhliain = “am I in my dwelling here with two years”.",
-    "phrase": "Tá mé i mo chónaí anseo le dhá bhliain.",
-    "tags": ["time_expressions", "present_tense"]
-  },
-  {
-    "id": "ga-042",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: Ní raibh ___ agam. (I had no choice.)",
-    "options": ["aon rogha", "aon roghaí", "roghaí aon"],
-    "correctAnswer": 0,
-    "explanation": "Ní raibh aon rogha agam means “I had no choice”. Aon rogha means “any choice”. Literally: Ní raibh aon rogha agam = “not was any choice at me”.",
-    "phrase": "Ní raibh aon rogha agam.",
-    "tags": ["negation", "past_tense", "quantifiers"]
-  },
-  {
     "id": "ga-043",
-    "category": "Grammar",
-    "level": "B1",
+    "category": "communication",
+    "level": "A2",
     "question": "Which expression means “although”?",
     "options": ["má", "mar", "cé go"],
     "correctAnswer": 2,
@@ -516,39 +1160,13 @@
     "question": "How do you say “I would like a cup of tea”?",
     "options": [
       "Is maith liom cupán tae anois.",
-      "Ba mhaith mé cupán tae.",
-      "Ba mhaith liom cupán tae."
+      "Ba mhaith liom cupán tae.",
+      "Ba mhaith mé cupán tae."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Ba mhaith liom expresses “I would like”. Literally: Ba mhaith liom cupán tae = “would-be good with me a cup of tea”.",
     "phrase": "Ba mhaith liom cupán tae.",
     "tags": ["wants", "conditional", "food"]
-  },
-  {
-    "id": "ga-046",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: Dá mbeadh níos mó ama agam, ___ níos mó leabhar. (If I had more time, I would read more books.)",
-    "options": ["léifinn", "léigh mé", "léim"],
-    "correctAnswer": 0,
-    "explanation": "Léifinn means “I would read”. Dá mbeadh introduces a hypothetical condition. Literally: Dá mbeadh níos mó ama agam, léifinn níos mó leabhar = “if would-be more of-time at me, I-would-read more of-books”.",
-    "phrase": "Dá mbeadh níos mó ama agam, léifinn níos mó leabhar.",
-    "tags": ["conditional", "hypotheticals"]
-  },
-  {
-    "id": "ga-047",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which expression means “I used to play football”?",
-    "options": [
-      "Ba ghnách liom peil a imirt.",
-      "Tá mé ag imirt peile.",
-      "Imreoidh mé peil."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Ba ghnách liom + verbal noun expresses a habitual past action: “I used to…”. Literally: Ba ghnách liom peil a imirt = “was usual with me football to play”.",
-    "phrase": "Ba ghnách liom peil a imirt.",
-    "tags": ["habitual_past", "verbal_noun"]
   },
   {
     "id": "ga-048",
@@ -573,416 +1191,23 @@
     "tags": ["conditionals", "time"]
   },
   {
-    "id": "ga-050",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: Ní hamháin go bhfuil sí cliste, ___ tá sí cineálta freisin. (Not only is she clever, but she is also kind.)",
-    "options": ["ach", "mar", "nó"],
-    "correctAnswer": 0,
-    "explanation": "Ní hamháin ... ach ... freisin means “not only ... but also”. Literally: Ní hamháin go bhfuil sí cliste, ach tá sí cineálta freisin = “not only that is she clever, but is she kind also”.",
-    "phrase": "Ní hamháin go bhfuil sí cliste, ach tá sí cineálta freisin.",
-    "tags": ["conjunctions", "correlatives"]
-  },
-  {
-    "id": "ga-051",
-    "category": "health",
-    "level": "A1",
-    "question": "How do you say “I am hungry” in Irish?",
-    "options": ["Tá eagla orm.", "Tá ocras orm.", "Tá tart orm."],
-    "correctAnswer": 1,
-    "explanation": "Tá ocras orm means “I am hungry.” Tá tart orm means “I am thirsty,” and tá eagla orm means “I am afraid.” Literally: Tá ocras orm = “is hunger on me”.",
-    "phrase": "Tá ocras orm.",
-    "tags": ["feelings", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-052",
-    "category": "health",
-    "level": "A1",
-    "question": "How do you say “I am thirsty” in Irish?",
-    "options": ["Tá tuirse orm.", "Tá áthas orm.", "Tá tart orm."],
-    "correctAnswer": 2,
-    "explanation": "Tá tart orm means “I am thirsty.” Irish expresses these feelings using orm, meaning “on me.” Literally: Tá tart orm = “is thirst on me”.",
-    "phrase": "Tá tart orm.",
-    "tags": ["feelings", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-054",
-    "category": "health",
-    "level": "A1",
-    "question": "How do you say “I have a cold” in Irish?",
-    "options": ["Tá ocras orm.", "Tá mé gnóthach.", "Tá slaghdán orm."],
-    "correctAnswer": 2,
-    "explanation": "Tá slaghdán orm means “I have a cold” (literally “a cold is on me”). Tá ocras orm means “I am hungry.” Literally: Tá slaghdán orm = “is a cold on me”.",
-    "phrase": "Tá slaghdán orm.",
-    "tags": ["feelings", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-055",
-    "category": "health",
-    "level": "A1",
-    "question": "Complete: Tá áthas ___ orm. (I am very happy.)",
-    "options": ["le", "mór", "go"],
-    "correctAnswer": 1,
-    "explanation": "Tá áthas mór orm means “I am very happy” or “I have great joy.” Tá an-áthas orm is also common. Literally: Tá áthas mór orm = “is joy great on me”.",
-    "phrase": "Tá áthas mór orm.",
-    "tags": ["feelings", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-056",
-    "category": "politeness",
-    "level": "A1",
-    "question": "What does “Tá brón orm” mean?",
-    "options": ["I am sorry.", "I am excited.", "I am ready."],
-    "correctAnswer": 0,
-    "explanation": "Tá brón orm literally means “sadness is on me” and is commonly used to express sorrow or say “I'm sorry.” Literally: Tá brón orm = “is sadness on me”.",
-    "phrase": "Tá brón orm.",
-    "tags": ["feelings", "apology"]
-  },
-  {
-    "id": "ga-057",
-    "category": "communication",
-    "level": "A1",
-    "question": "Choose the correct Irish for “I understand.”",
-    "options": ["Cloisim.", "Feicim.", "Tuigim."],
-    "correctAnswer": 2,
-    "explanation": "Tuigim means “I understand.” Feicim means “I see,” and cloisim means “I hear.” Literally: Tuigim = “I-understand”; feicim = “I-see”; cloisim = “I-hear” (the -im ending means “I”).",
-    "phrase": "Tuigim an cheist.",
-    "tags": ["verbs", "present_tense"]
-  },
-  {
-    "id": "ga-059",
-    "category": "communication",
-    "level": "A1",
-    "question": "How do you say “I know” in Irish?",
-    "options": ["Tá a fhios agam.", "Tá mé réidh.", "Tá mé ann."],
-    "correctAnswer": 0,
-    "explanation": "Tá a fhios agam means “I know.” Literally, it expresses that knowledge is known to me. Literally: Tá a fhios agam = “is its knowledge at me”.",
-    "phrase": "Tá a fhios agam.",
-    "tags": ["knowledge", "possession"]
-  },
-  {
-    "id": "ga-060",
-    "category": "communication",
-    "level": "A1",
-    "question": "What does “Níl a fhios agam” mean?",
-    "options": ["I don't know.", "I don't want it.", "I don't have it."],
-    "correctAnswer": 0,
-    "explanation": "Níl a fhios agam means “I don't know.” Literally: Níl a fhios agam = “is-not its knowledge at me”.",
-    "phrase": "Níl a fhios agam.",
-    "tags": ["knowledge", "possession"]
-  },
-  {
-    "id": "ga-061",
-    "category": "introductions",
-    "level": "A1",
-    "question": "Complete: ___ mise Seán.",
-    "options": ["Is", "Tá", "Bíonn"],
-    "correctAnswer": 0,
-    "explanation": "Is mise Seán means “I am Seán.” Is is used in identification sentences. Literally: Is mise Seán = “is me Seán” (mise is the emphatic form of mé).",
-    "phrase": "Is mise Seán.",
-    "tags": ["copula", "names"]
-  },
-  {
-    "id": "ga-062",
-    "category": "people",
-    "level": "A1",
-    "question": "How do you say “She is a teacher” in Irish?",
-    "options": ["Is múinteoir é.", "Tá múinteoir í.", "Is múinteoir í."],
-    "correctAnswer": 2,
-    "explanation": "Is múinteoir í means “She is a teacher.” The pronoun í refers to a female person. Literally: Is múinteoir í = “is teacher she”.",
-    "phrase": "Is múinteoir í.",
-    "tags": ["copula", "work"]
-  },
-  {
-    "id": "ga-063",
-    "category": "people",
-    "level": "A1",
-    "question": "How do you say “He is a doctor” in Irish?",
-    "options": ["Is dochtúir é.", "Tá dochtúir é.", "Is dochtúir í."],
-    "correctAnswer": 0,
-    "explanation": "Is dochtúir é means “He is a doctor.” Literally: Is dochtúir é = “is doctor he”.",
-    "phrase": "Is dochtúir é.",
-    "tags": ["copula", "work"]
-  },
-  {
-    "id": "ga-064",
-    "category": "people",
-    "level": "A1",
-    "question": "Choose the correct Irish for “We are friends.”",
-    "options": ["Is cara muid.", "Tá cairde sinn.", "Is cairde muid."],
-    "correctAnswer": 2,
-    "explanation": "Is cairde muid means “We are friends.” Cairde is the plural of cara, “friend.” Literally: Is cairde muid = “is friends us”.",
-    "phrase": "Is cairde muid.",
-    "tags": ["copula", "plurals", "friends"]
-  },
-  {
-    "id": "ga-065",
-    "category": "introductions",
-    "level": "A1",
-    "question": "What does “Cá bhfuil tú i do chónaí?” mean?",
-    "options": [
-      "Where do you live?",
-      "Where are you going?",
-      "Where are you working?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Cá bhfuil tú i do chónaí? means “Where do you live?” Literally: Cá bhfuil tú i do chónaí? = “where is you in your dwelling?”.",
-    "phrase": "Cá bhfuil tú i do chónaí?",
-    "tags": ["questions", "origin"]
-  },
-  {
-    "id": "ga-066",
-    "category": "introductions",
-    "level": "A1",
-    "question": "Choose the correct Irish for “I live in Dublin.”",
-    "options": [
-      "Tá mé ag dul go Baile Átha Cliath.",
-      "Tá mé i mo chónaí i mBaile Átha Cliath.",
-      "Tá mé as Baile Átha Cliath."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá mé i mo chónaí i mBaile Átha Cliath means “I live in Dublin.” Literally: Tá mé i mo chónaí i mBaile Átha Cliath = “am I in my dwelling in Town-of-the-Hurdle-Ford”.",
-    "phrase": "Tá mé i mo chónaí i mBaile Átha Cliath.",
-    "tags": ["places", "eclipsis"]
-  },
-  {
-    "id": "ga-067",
-    "category": "introductions",
-    "level": "A1",
-    "question": "What does “Cad as duit?” mean?",
-    "options": [
-      "Where are you from?",
-      "How old are you?",
-      "What is your name?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Cad as duit? is a way to ask “Where are you from?” Literally: Cad as duit? = “what out-of to you?”.",
-    "phrase": "Cad as duit?",
-    "tags": ["questions", "origin"]
-  },
-  {
-    "id": "ga-069",
-    "category": "travel",
-    "level": "A1",
-    "question": "Complete: Tá mé ag dul ___ an siopa.",
-    "options": ["ar", "sa", "go dtí"],
-    "correctAnswer": 2,
-    "explanation": "Tá mé ag dul go dtí an siopa means “I am going to the shop.” Literally: Tá mé ag dul go dtí an siopa = “am I at going to the shop”.",
-    "phrase": "Tá mé ag dul go dtí an siopa.",
-    "tags": ["progressive", "places"]
-  },
-  {
-    "id": "ga-070",
-    "category": "travel",
-    "level": "A1",
-    "question": "What does “Tá mé ag teacht abhaile” mean?",
-    "options": [
-      "I am coming home.",
-      "I am leaving home.",
-      "I am cleaning the house."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Tá mé ag teacht abhaile means “I am coming home.” Literally: Tá mé ag teacht abhaile = “am I at coming homewards”.",
-    "phrase": "Tá mé ag teacht abhaile.",
-    "tags": ["progressive", "home"]
-  },
-  {
-    "id": "ga-071",
-    "category": "work_study",
-    "level": "A1",
-    "question": "Choose the correct Irish for “I am going to school.”",
-    "options": [
-      "Tá mé ar scoil.",
-      "Tá mé ag dul ar scoil.",
-      "Tá mé ag teacht ón scoil."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá mé ag dul ar scoil means “I am going to school.” Literally: Tá mé ag dul ar scoil = “am I at going on school”.",
-    "phrase": "Tá mé ag dul ar scoil.",
-    "tags": ["progressive", "education"]
-  },
-  {
-    "id": "ga-072",
-    "category": "home",
-    "level": "A1",
-    "question": "What does “Tá mé ag obair sa bhaile” mean?",
-    "options": [
-      "I am going home from work.",
-      "I am looking for a house.",
-      "I am working at home."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Sa bhaile means “at home,” so the sentence means “I am working at home.” Literally: Tá mé ag obair sa bhaile = “am I at working in-the home”.",
-    "phrase": "Tá mé ag obair sa bhaile.",
-    "tags": ["progressive", "work"]
-  },
-  {
-    "id": "ga-073",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "Complete: Tá sí ag ___ leabhar.",
-    "options": ["léamh", "léigh", "léann"],
-    "correctAnswer": 0,
-    "explanation": "Tá sí ag léamh leabhar means “She is reading a book.” The progressive uses ag plus the verbal noun. Literally: Tá sí ag léamh leabhar = “is she at reading of a book”.",
-    "phrase": "Tá sí ag léamh leabhar.",
-    "tags": ["progressive", "reading"]
-  },
-  {
-    "id": "ga-074",
-    "category": "food",
-    "level": "A1",
-    "question": "Choose the correct Irish for “They are eating.”",
-    "options": ["Tá siad ag ól.", "Tá siad ag ithe.", "Tá siad ag codladh."],
-    "correctAnswer": 1,
-    "explanation": "Tá siad ag ithe means “They are eating.” Literally: Tá siad ag ithe = “are they at eating”.",
-    "phrase": "Tá siad ag ithe.",
-    "tags": ["progressive", "drinks"]
-  },
-  {
-    "id": "ga-075",
-    "category": "food",
-    "level": "A1",
-    "question": "What does “Tá sé ag ól uisce” mean?",
-    "options": [
-      "He is buying water.",
-      "He is drinking water.",
-      "He is looking for water."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá sé ag ól uisce means “He is drinking water.” Literally: Tá sé ag ól uisce = “is he at drinking water”.",
-    "phrase": "Tá sé ag ól uisce.",
-    "tags": ["progressive", "drinks"]
-  },
-  {
-    "id": "ga-077",
-    "category": "social",
-    "level": "A1",
-    "question": "How do you say “I like music” in Irish?",
-    "options": [
-      "Is maith mé ceol.",
-      "Is maith liom ceol.",
-      "Tá maith agam ceol."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Is maith liom ceol means “I like music.” Irish uses the construction is maith liom. Literally: Is maith liom ceol = “is good with me music”.",
-    "phrase": "Is maith liom ceol.",
-    "tags": ["likes", "questions"]
-  },
-  {
-    "id": "ga-079",
-    "category": "social",
-    "level": "A1",
-    "question": "Choose the correct Irish for “Do you like tea?”",
-    "options": [
-      "An maith leat tae?",
-      "Is maith tú tae?",
-      "An bhfuil tae leat maith?"
-    ],
-    "correctAnswer": 0,
-    "explanation": "An maith leat tae? means “Do you like tea?” Literally: An maith leat tae? = “is-good with you tea?”.",
-    "phrase": "An maith leat tae?",
-    "tags": ["likes", "questions"]
-  },
-  {
     "id": "ga-080",
     "category": "social",
     "level": "A2",
     "question": "Complete: Is fearr liom tae ___ caife.",
-    "options": ["ó", "le", "ná"],
-    "correctAnswer": 2,
+    "options": ["ná", "ó", "le"],
+    "correctAnswer": 0,
     "explanation": "Is fearr liom tae ná caife means “I prefer tea to coffee.” Ná is used in this comparison. Literally: Is fearr liom tae ná caife = “is better with me tea than coffee”.",
     "phrase": "Is fearr liom tae ná caife.",
     "tags": ["preferences", "comparison"]
-  },
-  {
-    "id": "ga-082",
-    "category": "home",
-    "level": "A1",
-    "question": "Choose the correct Irish for “This house is small.”",
-    "options": [
-      "Tá an teach seo nua.",
-      "Tá an teach seo mór.",
-      "Tá an teach seo beag."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Beag means “small.” Teach means “house.” Literally: Tá an teach seo beag = “is the house this small”.",
-    "phrase": "Tá an teach seo beag.",
-    "tags": ["adjectives", "demonstratives"]
-  },
-  {
-    "id": "ga-083",
-    "category": "weather",
-    "level": "A1",
-    "question": "What does “Tá an aimsir go hálainn” mean?",
-    "options": [
-      "The weather is terrible.",
-      "The weather is lovely.",
-      "The weather is cold."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá an aimsir go hálainn means “The weather is lovely.” Literally: Tá an aimsir go hálainn = “is the weather lovely(ly)” (go + adjective forms an adverb).",
-    "phrase": "Tá an aimsir go hálainn.",
-    "tags": ["weather", "time"]
-  },
-  {
-    "id": "ga-084",
-    "category": "weather",
-    "level": "A1",
-    "question": "How do you say “It is raining” in Irish?",
-    "options": [
-      "Tá an ghrian ag taitneamh.",
-      "Tá sé ag cur báistí.",
-      "Tá sé ag cur sneachta."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá sé ag cur báistí means “It is raining.” Literally: Tá sé ag cur báistí = “is it at putting of rain”.",
-    "phrase": "Tá sé ag cur báistí.",
-    "tags": ["weather", "time"]
-  },
-  {
-    "id": "ga-085",
-    "category": "weather",
-    "level": "A1",
-    "question": "What does “Tá sé ag cur sneachta” mean?",
-    "options": ["It is snowing.", "It is windy.", "It is sunny."],
-    "correctAnswer": 0,
-    "explanation": "Tá sé ag cur sneachta means “It is snowing.” Literally: Tá sé ag cur sneachta = “is it at putting of snow”.",
-    "phrase": "Tá sé ag cur sneachta.",
-    "tags": ["weather", "time"]
-  },
-  {
-    "id": "ga-086",
-    "category": "weather",
-    "level": "A1",
-    "question": "Choose the correct Irish for “It is sunny.”",
-    "options": [
-      "Tá sé dorcha.",
-      "Tá sé ag cur báistí.",
-      "Tá an ghrian ag taitneamh."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Tá an ghrian ag taitneamh means “The sun is shining.” Literally: Tá an ghrian ag taitneamh = “is the sun at shining”.",
-    "phrase": "Tá an ghrian ag taitneamh.",
-    "tags": ["weather", "time"]
-  },
-  {
-    "id": "ga-087",
-    "category": "weather",
-    "level": "A1",
-    "question": "What does “Tá sé fuar inniu” mean?",
-    "options": ["It is late today.", "It is warm today.", "It is cold today."],
-    "correctAnswer": 2,
-    "explanation": "Inniu means “today,” and fuar means “cold.” Literally: Tá sé fuar inniu = “is it cold today”.",
-    "phrase": "Tá sé fuar inniu.",
-    "tags": ["weather", "time"]
   },
   {
     "id": "ga-088",
     "category": "work_study",
     "level": "A2",
     "question": "Complete: Chuaigh mé ___ an obair inné.",
-    "options": ["ó", "faoi", "go dtí"],
-    "correctAnswer": 2,
+    "options": ["ó", "go dtí", "faoi"],
+    "correctAnswer": 1,
     "explanation": "Chuaigh mé go dtí an obair inné means “I went to work yesterday.” Literally: Chuaigh mé go dtí an obair inné = “went I to the work yesterday”.",
     "phrase": "Chuaigh mé go dtí an obair inné.",
     "tags": ["past_tense", "irregular_verbs"]
@@ -993,11 +1218,11 @@
     "level": "A2",
     "question": "What does “D'ith mé bricfeasta” mean?",
     "options": [
+      "I ate breakfast.",
       "I made breakfast.",
-      "I skipped breakfast.",
-      "I ate breakfast."
+      "I skipped breakfast."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "D'ith mé means “I ate.” Bricfeasta means “breakfast.” Literally: D’ith mé bricfeasta = “ate I breakfast”.",
     "phrase": "D'ith mé bricfeasta.",
     "tags": ["past_tense", "meals"]
@@ -1033,8 +1258,8 @@
     "category": "travel",
     "level": "A2",
     "question": "Complete: ___ mé abhaile go déanach.",
-    "options": ["Tháinig", "Tiocfaidh", "Tagann"],
-    "correctAnswer": 0,
+    "options": ["Tiocfaidh", "Tagann", "Tháinig"],
+    "correctAnswer": 2,
     "explanation": "Tháinig mé abhaile go déanach means “I came home late.” Tháinig is the past tense of tar. Literally: Tháinig mé abhaile go déanach = “came I homewards late”.",
     "phrase": "Tháinig mé abhaile go déanach.",
     "tags": ["past_tense", "irregular_verbs"]
@@ -1044,8 +1269,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "What does “Ní dheachaigh mé amach” mean?",
-    "options": ["I went out.", "I won't go out.", "I didn't go out."],
-    "correctAnswer": 2,
+    "options": ["I didn't go out.", "I went out.", "I won't go out."],
+    "correctAnswer": 0,
     "explanation": "Ní dheachaigh mé amach means “I didn't go out.” Literally: Ní dheachaigh mé amach = “not went I out”.",
     "phrase": "Ní dheachaigh mé amach.",
     "tags": ["negation", "past_tense"]
@@ -1081,8 +1306,8 @@
     "category": "work_study",
     "level": "A2",
     "question": "Complete: Amárach, ___ sé ag obair.",
-    "options": ["beidh", "bhíonn", "bhí"],
-    "correctAnswer": 0,
+    "options": ["bhíonn", "beidh", "bhí"],
+    "correctAnswer": 1,
     "explanation": "Beidh sé ag obair means “He will be working.” Amárach means “tomorrow.” Literally: Beidh sé ag obair = “will-be he at working”.",
     "phrase": "Amárach, beidh sé ag obair.",
     "tags": ["future_tense", "progressive"]
@@ -1093,11 +1318,11 @@
     "level": "A2",
     "question": "What does “Ní bheidh mé sa bhaile anocht” mean?",
     "options": [
-      "I won't be at home tonight.",
       "I am at home now.",
-      "I wasn't at home last night."
+      "I wasn't at home last night.",
+      "I won't be at home tonight."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Ní bheidh mé sa bhaile anocht means “I won't be at home tonight.” Literally: Ní bheidh mé sa bhaile anocht = “not will-be I in-the home tonight”.",
     "phrase": "Ní bheidh mé sa bhaile anocht.",
     "tags": ["future_tense", "negation"]
@@ -1108,11 +1333,11 @@
     "level": "A2",
     "question": "Choose the correct Irish for “Can you help me?”",
     "options": [
-      "An bhfuil tú ag cabhrú liom?",
       "An féidir leat cabhrú liom?",
+      "An bhfuil tú ag cabhrú liom?",
       "An maith leat cabhrú liom?"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "An féidir leat cabhrú liom? means “Can you help me?” Literally: An féidir leat cabhrú liom? = “is possible with you to-help with me?”.",
     "phrase": "An féidir leat cabhrú liom?",
     "tags": ["ability", "requests", "questions"]
@@ -1122,8 +1347,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "What does “Caithfidh mé imeacht” mean?",
-    "options": ["I have to leave.", "I might leave.", "I have already left."],
-    "correctAnswer": 0,
+    "options": ["I might leave.", "I have already left.", "I have to leave."],
+    "correctAnswer": 2,
     "explanation": "Caithfidh mé imeacht means “I have to leave.” Literally: Caithfidh mé imeacht = “must I leave” (caithfidh is the verb used for “must”).",
     "phrase": "Caithfidh mé imeacht.",
     "tags": ["obligation"]
@@ -1134,11 +1359,11 @@
     "level": "A2",
     "question": "Choose the correct Irish for “I want to learn Irish.”",
     "options": [
-      "Ba mhaith liom Gaeilge a fhoghlaim.",
       "Tá Gaeilge foghlamtha agam.",
+      "Ba mhaith liom Gaeilge a fhoghlaim.",
       "Ní fhoghlaimím Gaeilge."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "Ba mhaith liom Gaeilge a fhoghlaim means “I would like to learn Irish.” Literally: Ba mhaith liom Gaeilge a fhoghlaim = “would-be good with me Irish to learn”.",
     "phrase": "Ba mhaith liom Gaeilge a fhoghlaim.",
     "tags": ["wants", "education"]
@@ -1148,8 +1373,8 @@
     "category": "shopping",
     "level": "A2",
     "question": "What does “Níl aon rud agam” mean?",
-    "options": ["I have nothing.", "I have something.", "I have everything."],
-    "correctAnswer": 0,
+    "options": ["I have something.", "I have nothing.", "I have everything."],
+    "correctAnswer": 1,
     "explanation": "Níl aon rud agam means “I have nothing.” Literally: Níl aon rud agam = “is-not any thing at me”.",
     "phrase": "Níl aon rud agam.",
     "tags": ["possession", "negation"]
@@ -1160,11 +1385,11 @@
     "level": "A2",
     "question": "Choose the correct Irish for “Someone is here.”",
     "options": [
+      "Tá duine éigin anseo.",
       "Tá rud éigin anseo.",
-      "Tá áit éigin anseo.",
-      "Tá duine éigin anseo."
+      "Tá áit éigin anseo."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Duine éigin means “someone.” Rud éigin means “something.” Literally: Tá duine éigin anseo = “is person some here”.",
     "phrase": "Tá duine éigin anseo.",
     "tags": ["indefinite_words"]
@@ -1176,28 +1401,13 @@
     "question": "What does “Tá rud éigin mícheart” mean?",
     "options": [
       "Everything is ready.",
-      "Something is wrong.",
-      "Someone is missing."
+      "Someone is missing.",
+      "Something is wrong."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Rud éigin means “something,” and mícheart means “wrong.” Literally: Tá rud éigin mícheart = “is thing some wrong” (mí- = “un-”, ceart = “right”).",
     "phrase": "Tá rud éigin mícheart.",
     "tags": ["indefinite_words"]
-  },
-  {
-    "id": "ga-107",
-    "category": "home",
-    "level": "A1",
-    "question": "How do you say “The cat is under the table” in Irish?",
-    "options": [
-      "Tá an cat faoin mbord.",
-      "Tá an cat os cionn an bhoird.",
-      "Tá an cat ar an mbord."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Faoin mbord means “under the table.” Literally: Tá an cat faoin mbord = “is the cat under-the table” (faoin = faoi + an).",
-    "phrase": "Tá an cat faoin mbord.",
-    "tags": ["prepositions", "places"]
   },
   {
     "id": "ga-108",
@@ -1206,27 +1416,12 @@
     "question": "What does “Tá an banc in aice leis an stáisiún” mean?",
     "options": [
       "The bank is inside the station.",
-      "The bank is near the station.",
-      "The bank is behind the station."
-    ],
-    "correctAnswer": 1,
-    "explanation": "In aice le means “beside” or “near.” Literally: Tá an banc in aice leis an stáisiún = “is the bank in side with the station”.",
-    "phrase": "Tá an banc in aice leis an stáisiún.",
-    "tags": ["prepositions", "places"]
-  },
-  {
-    "id": "ga-109",
-    "category": "home",
-    "level": "A1",
-    "question": "Choose the correct Irish for “The dog is in the garden.”",
-    "options": [
-      "Tá an madra ar an ngairdín.",
-      "Tá an madra ón ngairdín.",
-      "Tá an madra sa ghairdín."
+      "The bank is behind the station.",
+      "The bank is near the station."
     ],
     "correctAnswer": 2,
-    "explanation": "Sa ghairdín means “in the garden.” Literally: Tá an madra sa ghairdín = “is the dog in-the garden”.",
-    "phrase": "Tá an madra sa ghairdín.",
+    "explanation": "In aice le means “beside” or “near.” Literally: Tá an banc in aice leis an stáisiún = “is the bank in side with the station”.",
+    "phrase": "Tá an banc in aice leis an stáisiún.",
     "tags": ["prepositions", "places"]
   },
   {
@@ -1235,11 +1430,11 @@
     "level": "A2",
     "question": "What does “Tá an siopa os comhair an tí” mean?",
     "options": [
+      "The shop is in front of the house.",
       "The shop is behind the house.",
-      "The shop is inside the house.",
-      "The shop is in front of the house."
+      "The shop is inside the house."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Os comhair means “in front of.” Literally: Tá an siopa os comhair an tí = “is the shop above face of the house”.",
     "phrase": "Tá an siopa os comhair an tí.",
     "tags": ["prepositions", "places"]
@@ -1249,8 +1444,8 @@
     "category": "directions",
     "level": "A2",
     "question": "Complete: Tá an carr idir an teach agus ___ scoil.",
-    "options": ["an", "sa", "na"],
-    "correctAnswer": 0,
+    "options": ["sa", "na", "an"],
+    "correctAnswer": 2,
     "explanation": "Idir an teach agus an scoil means “between the house and the school.” Literally: Tá an carr idir an teach agus an scoil = “is the car between the house and the school”.",
     "phrase": "Tá an carr idir an teach agus an scoil.",
     "tags": ["prepositions", "places"]
@@ -1260,8 +1455,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "What does “Tá mo mhála liom” mean?",
-    "options": ["My bag is new.", "My bag is lost.", "My bag is with me."],
-    "correctAnswer": 2,
+    "options": ["My bag is with me.", "My bag is new.", "My bag is lost."],
+    "correctAnswer": 0,
     "explanation": "Mo mhála means “my bag,” and liom means “with me.” Literally: Tá mo mhála liom = “is my bag with me”.",
     "phrase": "Tá mo mhála liom.",
     "tags": ["prepositional_pronouns", "possession"]
@@ -1273,43 +1468,13 @@
     "question": "Choose the correct Irish for “Her name is Máire.”",
     "options": [
       "Is í Máire a ainm.",
-      "Is é Máire a hainm.",
-      "Máire atá a hainm."
+      "Máire atá a hainm.",
+      "Is é Máire a hainm."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Is é Máire a hainm is a standard way to say “Her name is Máire.” A hainm means “her name.” Literally: Is é Máire a hainm = “is it Máire her name”.",
     "phrase": "Is é Máire a hainm.",
     "tags": ["copula", "names", "possessives"]
-  },
-  {
-    "id": "ga-114",
-    "category": "people",
-    "level": "A1",
-    "question": "What does “Tá beirt deartháireacha agam” mean?",
-    "options": [
-      "I have two children.",
-      "I have two brothers.",
-      "I have two sisters."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Deartháireacha means “brothers,” and beirt is used when counting people. Literally: Tá beirt deartháireacha agam = “is two-people brothers at me”.",
-    "phrase": "Tá beirt deartháireacha agam.",
-    "tags": ["family", "numbers"]
-  },
-  {
-    "id": "ga-115",
-    "category": "people",
-    "level": "A1",
-    "question": "How do you say “I have one sister” in Irish?",
-    "options": [
-      "Tá deirfiúr amháin agam.",
-      "Tá beirt deirfiúracha agam.",
-      "Tá deartháir amháin agam."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Tá deirfiúr amháin agam means “I have one sister.” Literally: Tá deirfiúr amháin agam = “is sister one at me”.",
-    "phrase": "Tá deirfiúr amháin agam.",
-    "tags": ["family", "numbers"]
   },
   {
     "id": "ga-116",
@@ -1327,27 +1492,16 @@
     "tags": ["possession", "copula"]
   },
   {
-    "id": "ga-117",
-    "category": "people",
-    "level": "A1",
-    "question": "Complete: Seo ___ chara.",
-    "options": ["mo", "muid", "mé"],
-    "correctAnswer": 0,
-    "explanation": "Seo mo chara means “This is my friend.” Mo causes lenition, so cara becomes chara. Literally: Seo mo chara = “this-is my friend”.",
-    "phrase": "Seo mo chara.",
-    "tags": ["possessives", "lenition", "friends"]
-  },
-  {
     "id": "ga-118",
     "category": "communication",
     "level": "A2",
     "question": "What does “Cé leis an peann seo?” mean?",
     "options": [
-      "Where is this pen?",
       "Whose pen is this?",
+      "Where is this pen?",
       "Who is holding this pen?"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Cé leis? asks “Whose is it?” Literally: Cé leis an peann seo? = “who with-him the pen this?”.",
     "phrase": "Cé leis an peann seo?",
     "tags": ["questions", "possession"]
@@ -1368,71 +1522,12 @@
     "tags": ["past_tense", "irregular_verbs"]
   },
   {
-    "id": "ga-121",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "Choose the correct Irish for “Please sit down.”",
-    "options": [
-      "Suigh síos, le do thoil.",
-      "Éirigh suas, le do thoil.",
-      "Tar isteach, le do thoil."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Suigh síos, le do thoil means “Please sit down.” Literally: Suigh síos, le do thoil = “sit down, with your will”.",
-    "phrase": "Suigh síos, le do thoil.",
-    "tags": ["imperative", "politeness"]
-  },
-  {
-    "id": "ga-122",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What does “Éirigh suas!” mean?",
-    "options": ["Stand up!", "Come in!", "Sit down!"],
-    "correctAnswer": 0,
-    "explanation": "Éirigh suas means “Stand up!” or “Get up!” Literally: Éirigh suas = “rise up”.",
-    "phrase": "Éirigh suas!",
-    "tags": ["imperative", "politeness"]
-  },
-  {
-    "id": "ga-123",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "How do you say “Come in” in Irish?",
-    "options": ["Téigh amach.", "Suigh síos.", "Tar isteach."],
-    "correctAnswer": 2,
-    "explanation": "Tar isteach means “Come in.” Téigh amach means “Go out.” Literally: Tar isteach = “come inwards”.",
-    "phrase": "Tar isteach.",
-    "tags": ["imperative", "politeness"]
-  },
-  {
-    "id": "ga-124",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What does “Fan nóiméad” mean?",
-    "options": ["Come back tomorrow.", "Call me later.", "Wait a minute."],
-    "correctAnswer": 2,
-    "explanation": "Fan means “wait” or “stay,” and nóiméad means “minute.” Literally: Fan nóiméad = “stay a minute”.",
-    "phrase": "Fan nóiméad.",
-    "tags": ["imperative", "politeness"]
-  },
-  {
-    "id": "ga-125",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "Choose the correct Irish for “Be careful!”",
-    "options": ["Bí cúramach!", "Bí sásta!", "Bí ciúin!"],
-    "correctAnswer": 0,
-    "explanation": "Bí cúramach means “Be careful.” Literally: Bí cúramach = “be careful”.",
-    "phrase": "Bí cúramach!",
-    "tags": ["imperative", "politeness"]
-  },
-  {
     "id": "ga-126",
     "category": "daily_life",
     "level": "A2",
     "question": "What does “Ná bí buartha” mean?",
-    "options": ["Don't be noisy.", "Don't be worried.", "Don't be late."],
-    "correctAnswer": 1,
+    "options": ["Don't be noisy.", "Don't be late.", "Don't be worried."],
+    "correctAnswer": 2,
     "explanation": "Ná bí buartha means “Don't worry” or “Don't be worried.” Literally: Ná bí buartha = “don’t be worried”.",
     "phrase": "Ná bí buartha.",
     "tags": ["imperative", "negation"]
@@ -1442,8 +1537,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "Choose the correct Irish for “Don't touch that!”",
-    "options": ["Ná habair é sin!", "Ná bain leis sin!", "Ná déan é sin!"],
-    "correctAnswer": 1,
+    "options": ["Ná habair é sin!", "Ná déan é sin!", "Ná bain leis sin!"],
+    "correctAnswer": 2,
     "explanation": "Ná bain leis sin means “Don't touch that!” Literally: Ná bain leis sin = “don’t touch with that”.",
     "phrase": "Ná bain leis sin!",
     "tags": ["imperative", "negation"]
@@ -1484,29 +1579,14 @@
     "level": "A2",
     "question": "What does “Cad is brí leis sin?” mean?",
     "options": [
-      "Who said that?",
       "What does that mean?",
+      "Who said that?",
       "How do you spell that?"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "Cad is brí leis sin? means “What does that mean?” Literally: Cad is brí leis sin? = “what is meaning with that?”.",
     "phrase": "Cad is brí leis sin?",
     "tags": ["questions", "meaning"]
-  },
-  {
-    "id": "ga-131",
-    "category": "communication",
-    "level": "A1",
-    "question": "Choose the correct Irish for “I speak a little Irish.”",
-    "options": [
-      "Léim beagán Gaeilge.",
-      "Labhraím beagán Gaeilge.",
-      "Scríobhaim beagán Gaeilge."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Labhraím means “I speak,” and beagán means “a little.” Literally: Labhraím beagán Gaeilge = “I-speak a-little Irish”.",
-    "phrase": "Labhraím beagán Gaeilge.",
-    "tags": ["languages", "present_tense"]
   },
   {
     "id": "ga-132",
@@ -1514,29 +1594,14 @@
     "level": "A2",
     "question": "What does “Tá mé ag iarraidh Gaeilge a chleachtadh” mean?",
     "options": [
-      "I am trying to practise Irish.",
       "I have stopped studying Irish.",
-      "I am teaching Irish."
+      "I am teaching Irish.",
+      "I am trying to practise Irish."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Tá mé ag iarraidh ... a chleachtadh means “I am trying/wanting to practise ...” Literally: Tá mé ag iarraidh Gaeilge a chleachtadh = “am I at seeking Irish to practise”.",
     "phrase": "Tá mé ag iarraidh Gaeilge a chleachtadh.",
     "tags": ["progressive", "languages"]
-  },
-  {
-    "id": "ga-134",
-    "category": "work_study",
-    "level": "A1",
-    "question": "What does “Tá mé ag foghlaim gach lá” mean?",
-    "options": [
-      "I teach every week.",
-      "I learn every day.",
-      "I study only at night."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Gach lá means “every day.” Literally: Tá mé ag foghlaim gach lá = “am I at learning every day”.",
-    "phrase": "Tá mé ag foghlaim gach lá.",
-    "tags": ["progressive", "time"]
   },
   {
     "id": "ga-135",
@@ -1545,10 +1610,10 @@
     "question": "Choose the correct Irish for “I read the newspaper every morning.”",
     "options": [
       "Éistim leis an nuachtán gach maidin.",
-      "Scríobhaim an nuachtán gach maidin.",
-      "Léim an nuachtán gach maidin."
+      "Léim an nuachtán gach maidin.",
+      "Scríobhaim an nuachtán gach maidin."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "Léim means “I read” in the present tense. Gach maidin means “every morning.” Literally: Léim an nuachtán gach maidin = “I-read the newspaper every morning”.",
     "phrase": "Léim an nuachtán gach maidin.",
     "tags": ["present_tense", "time"]
@@ -1558,8 +1623,8 @@
     "category": "communication",
     "level": "A2",
     "question": "What does “Éist liom” mean?",
-    "options": ["Talk to me.", "Listen to me.", "Look at me."],
-    "correctAnswer": 1,
+    "options": ["Listen to me.", "Talk to me.", "Look at me."],
+    "correctAnswer": 0,
     "explanation": "Éist liom means “Listen to me.” Literally: Éist liom = “listen with me”.",
     "phrase": "Éist liom.",
     "tags": ["prepositional_pronouns", "talking"]
@@ -1569,8 +1634,8 @@
     "category": "communication",
     "level": "A2",
     "question": "Complete: Tá mé ag caint ___ mo mháthair.",
-    "options": ["ó", "faoi", "le"],
-    "correctAnswer": 2,
+    "options": ["ó", "le", "faoi"],
+    "correctAnswer": 1,
     "explanation": "Tá mé ag caint le mo mháthair means “I am talking to my mother.” Literally: Tá mé ag caint le mo mháthair = “am I at talking with my mother”.",
     "phrase": "Tá mé ag caint le mo mháthair.",
     "tags": ["prepositional_pronouns", "talking"]
@@ -1597,10 +1662,10 @@
     "question": "Choose the correct Irish for “I agree with you.”",
     "options": [
       "Táim ag argóint leat.",
-      "Aontaím leat.",
-      "Táim ag fanacht leat."
+      "Táim ag fanacht leat.",
+      "Aontaím leat."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "Aontaím leat means “I agree with you.” Literally: Aontaím leat = “I-agree with-you”.",
     "phrase": "Aontaím leat.",
     "tags": ["agreement", "prepositional_pronouns"]
@@ -1611,11 +1676,11 @@
     "level": "A2",
     "question": "What does “Ní aontaím leat” mean?",
     "options": [
-      "I don't agree with you.",
       "I agree with you.",
-      "I don't know you."
+      "I don't know you.",
+      "I don't agree with you."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Ní aontaím leat means “I don't agree with you.” Literally: Ní aontaím leat = “not I-agree with-you”.",
     "phrase": "Ní aontaím leat.",
     "tags": ["agreement", "prepositional_pronouns"]
@@ -1625,8 +1690,8 @@
     "category": "social",
     "level": "A2",
     "question": "Complete: Tá mé sásta ___ an toradh.",
-    "options": ["le", "do", "ó"],
-    "correctAnswer": 0,
+    "options": ["do", "ó", "le"],
+    "correctAnswer": 2,
     "explanation": "Tá mé sásta leis an toradh means “I am happy with the result.” Literally: Tá mé sásta leis an toradh = “am I satisfied with-the result”.",
     "phrase": "Tá mé sásta leis an toradh.",
     "tags": ["feelings", "prepositional_pronouns"]
@@ -1636,8 +1701,8 @@
     "category": "social",
     "level": "A2",
     "question": "What does “Tá díomá orm” mean?",
-    "options": ["I am confused.", "I am disappointed.", "I am delighted."],
-    "correctAnswer": 1,
+    "options": ["I am disappointed.", "I am confused.", "I am delighted."],
+    "correctAnswer": 0,
     "explanation": "Tá díomá orm means “I am disappointed.” Literally: Tá díomá orm = “is disappointment on me”.",
     "phrase": "Tá díomá orm.",
     "tags": ["feelings", "prepositional_pronouns"]
@@ -1648,11 +1713,11 @@
     "level": "A2",
     "question": "Choose the correct Irish for “I am proud of you.”",
     "options": [
-      "Tá mé bródúil asat.",
       "Tá mé sásta leat.",
-      "Tá mé buartha fút."
+      "Tá mé buartha fút.",
+      "Tá mé bródúil asat."
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Tá mé bródúil asat means “I am proud of you.” Literally: Tá mé bródúil asat = “am I proud out-of-you”.",
     "phrase": "Tá mé bródúil asat.",
     "tags": ["feelings", "prepositional_pronouns"]
@@ -1663,339 +1728,14 @@
     "level": "A2",
     "question": "What does “Tá imní orm faoi” mean?",
     "options": [
+      "I am worried about it.",
       "I am looking for it.",
-      "I am pleased with it.",
-      "I am worried about it."
+      "I am pleased with it."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "Tá imní orm faoi means “I am worried about” something. Literally: Tá imní orm faoi = “is worry on me about-it”.",
     "phrase": "Tá imní orm faoi na scrúduithe.",
     "tags": ["feelings", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-146",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "What does “Má bhíonn am agam, cabhróidh mé leat” mean?",
-    "options": [
-      "I don't have time to help you.",
-      "I helped you when I had time.",
-      "If I have time, I will help you."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Má bhíonn am agam, cabhróidh mé leat means “If I have time, I will help you.” Literally: Má bhíonn am agam, cabhróidh mé leat = “if is (habitually) time at me, will-help I with-you”.",
-    "phrase": "Má bhíonn am agam, cabhróidh mé leat.",
-    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
-  },
-  {
-    "id": "ga-147",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Choose the correct Irish for “I stayed at home because I was sick.”",
-    "options": [
-      "D'fhan mé sa bhaile mar bhí mé tinn.",
-      "Fanfaidh mé sa bhaile mar tá mé sláintiúil.",
-      "Chuaigh mé amach mar bhí mé tinn."
-    ],
-    "correctAnswer": 0,
-    "explanation": "D'fhan mé sa bhaile means “I stayed at home,” and mar means “because.” Literally: D’fhan mé sa bhaile mar bhí mé tinn = “stayed I in-the home because was I sick”.",
-    "phrase": "D'fhan mé sa bhaile mar bhí mé tinn.",
-    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
-  },
-  {
-    "id": "ga-148",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "What does “Sula dtéann tú, glaoigh orm” mean?",
-    "options": [
-      "After you arrive, call me.",
-      "If you leave, don't call me.",
-      "Before you go, call me."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Sula means “before,” and glaoigh orm means “call me.” Literally: Sula dtéann tú, glaoigh orm = “before that-goes you, call on me”.",
-    "phrase": "Sula dtéann tú, glaoigh orm.",
-    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
-  },
-  {
-    "id": "ga-149",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Choose the correct Irish for “I have never been to Galway.”",
-    "options": [
-      "Tá mé i nGaillimh gach lá.",
-      "Rachaidh mé go Gaillimh amárach.",
-      "Ní raibh mé riamh i nGaillimh."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Ní raibh mé riamh i nGaillimh means “I have never been to Galway.” Literally: Ní raibh mé riamh i nGaillimh = “not was I ever in Galway”.",
-    "phrase": "Ní raibh mé riamh i nGaillimh.",
-    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
-  },
-  {
-    "id": "ga-150",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "What does “Tá súil agam go bhfeicfidh mé thú arís” mean?",
-    "options": [
-      "I don't want to see you again.",
-      "I know I saw you yesterday.",
-      "I hope I will see you again."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Tá súil agam means “I hope,” and go bhfeicfidh mé thú arís means “that I will see you again.” Literally: Tá súil agam go bhfeicfidh mé thú arís = “is hope at me that will-see I you again”.",
-    "phrase": "Tá súil agam go bhfeicfidh mé thú arís.",
-    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
-  },
-  {
-    "id": "ga-151",
-    "category": "basics",
-    "level": "A1",
-    "question": "What does “a cúig” mean?",
-    "options": ["five", "three", "seven"],
-    "correctAnswer": 0,
-    "explanation": "A cúig is the counting form of “five”. Trí is “three” and seacht is “seven”.",
-    "phrase": "Tá sé a cúig a chlog.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "ga-152",
-    "category": "basics",
-    "level": "A1",
-    "question": "Which Irish word means “ten”?",
-    "options": ["fiche", "deich", "seacht"],
-    "correctAnswer": 1,
-    "explanation": "Deich means “ten”. Fiche means “twenty” and seacht means “seven”.",
-    "phrase": "Tá deich leabhar agam.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "ga-153",
-    "category": "basics",
-    "level": "A1",
-    "question": "What does “fiche” mean?",
-    "options": ["twenty", "one hundred", "twelve"],
-    "correctAnswer": 0,
-    "explanation": "Fiche means “twenty”. “Twelve” is dhá dheag and “one hundred” is céad.",
-    "phrase": "Tá fiche duine anseo.",
-    "tags": ["numbers"]
-  },
-  {
-    "id": "ga-154",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What is “Monday” in Irish?",
-    "options": ["Dé hAoine", "Dé Luain", "Dé Máirt"],
-    "correctAnswer": 1,
-    "explanation": "Dé Luain is Monday. Dé Máirt is Tuesday and Dé hAoine is Friday. Literally: Dé Luain = “day of the Moon” (luan = moon).",
-    "phrase": "Tá mé ag obair Dé Luain.",
-    "tags": ["days", "time"]
-  },
-  {
-    "id": "ga-155",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What does “Dé Sathairn” mean?",
-    "options": ["Saturday", "Friday", "Sunday"],
-    "correctAnswer": 0,
-    "explanation": "Dé Sathairn is Saturday. Dé Domhnaigh is Sunday and Dé hAoine is Friday. Literally: Dé Sathairn = “day of Saturn”.",
-    "phrase": "Tá mé sa bhaile Dé Sathairn.",
-    "tags": ["days", "time"]
-  },
-  {
-    "id": "ga-156",
-    "category": "basics",
-    "level": "A1",
-    "question": "What does “dearg” mean?",
-    "options": ["green", "red", "blue"],
-    "correctAnswer": 1,
-    "explanation": "Dearg means “red”. Glas is “green” and gorm is “blue”.",
-    "phrase": "Tá an carr dearg.",
-    "tags": ["colours", "adjectives"]
-  },
-  {
-    "id": "ga-157",
-    "category": "basics",
-    "level": "A1",
-    "question": "Choose the Irish word for “green”.",
-    "options": ["buí", "glas", "gorm"],
-    "correctAnswer": 1,
-    "explanation": "Glas means “green”. Gorm is “blue” and buí is “yellow”.",
-    "phrase": "Tá an féar glas.",
-    "tags": ["colours", "adjectives"]
-  },
-  {
-    "id": "ga-158",
-    "category": "basics",
-    "level": "A1",
-    "question": "What does “bán” mean?",
-    "options": ["white", "yellow", "black"],
-    "correctAnswer": 0,
-    "explanation": "Bán means “white”. Dubh is “black” and buí is “yellow”.",
-    "phrase": "Tá an sneachta bán.",
-    "tags": ["colours", "adjectives"]
-  },
-  {
-    "id": "ga-160",
-    "category": "food",
-    "level": "A1",
-    "question": "What does “arán” mean?",
-    "options": ["bread", "butter", "milk"],
-    "correctAnswer": 0,
-    "explanation": "Arán means “bread”. Im is “butter” and bainne is “milk”.",
-    "phrase": "Ithim arán gach lá.",
-    "tags": ["nouns"]
-  },
-  {
-    "id": "ga-161",
-    "category": "food",
-    "level": "A1",
-    "question": "What does “uibheacha” mean?",
-    "options": ["cheese", "eggs", "fish"],
-    "correctAnswer": 1,
-    "explanation": "Uibheacha is the plural of ubh, “egg”. Cáis is “cheese” and iasc is “fish”.",
-    "phrase": "Tá uibheacha agus arán ar an mbord.",
-    "tags": ["nouns"]
-  },
-  {
-    "id": "ga-162",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What does “Cén t-am é?” mean?",
-    "options": ["What day is it?", "Where is the time?", "What time is it?"],
-    "correctAnswer": 2,
-    "explanation": "Cén t-am é? asks the time. Cén lá é? would ask the day. Literally: Cén t-am é? = “what time is-it?”.",
-    "phrase": "Cén t-am é?",
-    "tags": ["time", "questions"]
-  },
-  {
-    "id": "ga-163",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "How do you say “It is one o'clock” in Irish?",
-    "options": [
-      "Tá sé a naoi a chlog.",
-      "Tá sé a haon a chlog.",
-      "Tá sé a trí a chlog."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Tá sé a haon a chlog means “It is one o'clock”. The other options give three and nine o'clock. Literally: Tá sé a haon a chlog = “is it one of-the-bell (o’clock)” (clog = bell).",
-    "phrase": "Tá sé a haon a chlog.",
-    "tags": ["time", "questions"]
-  },
-  {
-    "id": "ga-164",
-    "category": "health",
-    "level": "A1",
-    "question": "What does “ceann” mean?",
-    "options": ["hand", "head", "foot"],
-    "correctAnswer": 1,
-    "explanation": "Ceann means “head”. Lámh is “hand” and cos is “foot”.",
-    "phrase": "Tá pian i mo cheann.",
-    "tags": ["body", "nouns"]
-  },
-  {
-    "id": "ga-165",
-    "category": "health",
-    "level": "A1",
-    "question": "What does “Tá pian i mo chos” mean?",
-    "options": [
-      "I have a pain in my head.",
-      "I have a pain in my hand.",
-      "I have a pain in my foot."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Cos means “foot”, and it is lenited after mo: i mo chos. Literally: Tá pian i mo chos = “is pain in my foot”.",
-    "phrase": "Tá pian i mo chos.",
-    "tags": ["body", "nouns"]
-  },
-  {
-    "id": "ga-166",
-    "category": "directions",
-    "level": "A1",
-    "question": "What does “ar chlé” mean?",
-    "options": ["straight ahead", "on the left", "on the right"],
-    "correctAnswer": 1,
-    "explanation": "Ar chlé means “on the left”. Ar dheis is “on the right” and díreach ar aghaidh is “straight ahead”. Literally: ar chlé = “on left”.",
-    "phrase": "Tá an banc ar chlé.",
-    "tags": ["directions"]
-  },
-  {
-    "id": "ga-167",
-    "category": "directions",
-    "level": "A1",
-    "question": "How do you say “Turn right” in Irish?",
-    "options": ["Cas ar dheis.", "Téigh díreach ar aghaidh.", "Cas ar chlé."],
-    "correctAnswer": 0,
-    "explanation": "Cas ar dheis means “Turn right”. Cas ar chlé means “Turn left”. Literally: Cas ar dheis = “turn on right”.",
-    "phrase": "Cas ar dheis.",
-    "tags": ["directions"]
-  },
-  {
-    "id": "ga-168",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "Which Irish word means “January”?",
-    "options": ["Márta", "Feabhra", "Eanáir"],
-    "correctAnswer": 2,
-    "explanation": "Eanáir is January. Feabhra is February and Márta is March.",
-    "phrase": "Tá sé fuar i mí Eanáir.",
-    "tags": ["months", "time"]
-  },
-  {
-    "id": "ga-169",
-    "category": "daily_life",
-    "level": "A1",
-    "question": "What does “Meitheamh” mean?",
-    "options": ["June", "May", "July"],
-    "correctAnswer": 0,
-    "explanation": "Meitheamh is June. Bealtaine is May and Iúil is July.",
-    "phrase": "Tá lá breithe agam i mí an Mheithimh.",
-    "tags": ["months", "time"]
-  },
-  {
-    "id": "ga-170",
-    "category": "weather",
-    "level": "A1",
-    "question": "What does “samhradh” mean?",
-    "options": ["spring", "winter", "summer"],
-    "correctAnswer": 2,
-    "explanation": "Samhradh is “summer”. Geimhreadh is “winter” and earrach is “spring”.",
-    "phrase": "Tá sé te sa samhradh.",
-    "tags": ["seasons", "time"]
-  },
-  {
-    "id": "ga-171",
-    "category": "weather",
-    "level": "A1",
-    "question": "Which Irish word means “autumn”?",
-    "options": ["earrach", "samhradh", "fómhar"],
-    "correctAnswer": 2,
-    "explanation": "Fómhar is “autumn”. Earrach is “spring” and samhradh is “summer”.",
-    "phrase": "Tá sé fuar san fhómhar.",
-    "tags": ["seasons", "time"]
-  },
-  {
-    "id": "ga-172",
-    "category": "communication",
-    "level": "A1",
-    "question": "Complete: An ___ tú ag obair? (Are you working?)",
-    "options": ["bhí", "tá", "bhfuil"],
-    "correctAnswer": 2,
-    "explanation": "Questions use an + the eclipsed form bhfuil: An bhfuil tú ag obair? Literally: An bhfuil tú ag obair? = “is you at working?”.",
-    "phrase": "An bhfuil tú ag obair?",
-    "tags": ["questions", "responses"]
-  },
-  {
-    "id": "ga-173",
-    "category": "communication",
-    "level": "A1",
-    "question": "What is the usual answer meaning “yes” to “An bhfuil tú ag obair?”",
-    "options": ["Tá.", "Is ea.", "Ní hea."],
-    "correctAnswer": 0,
-    "explanation": "Irish answers a yes/no question by repeating the verb: An bhfuil...? → Tá (yes) or Níl (no). Is ea / Ní hea answer questions with is. Literally: Tá = “is”; Níl = “is-not”; Is ea = “is it”; Ní hea = “is-not it”.",
-    "phrase": "An bhfuil tú ag obair? Tá.",
-    "tags": ["questions", "responses"]
   },
   {
     "id": "ga-174",
@@ -2013,49 +1753,12 @@
     "tags": ["habitual", "frequency"]
   },
   {
-    "id": "ga-175",
-    "category": "home",
-    "level": "A1",
-    "question": "How do you say “I close the door” in Irish?",
-    "options": [
-      "Dúnaim an doras.",
-      "Cnagaim ar an doras.",
-      "Osclaím an doras."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Dúnaim means “I close”. Osclaím means “I open” and cnagaim means “I knock”. Literally: Dúnaim an doras = “I-close the door”.",
-    "phrase": "Dúnaim an doras.",
-    "tags": ["verbs", "imperative"]
-  },
-  {
-    "id": "ga-176",
-    "category": "home",
-    "level": "A1",
-    "question": "What does “Dún an doras” mean?",
-    "options": ["Knock on the door.", "Open the door.", "Close the door."],
-    "correctAnswer": 2,
-    "explanation": "Dún is the imperative of dún, “to close”.",
-    "phrase": "Dún an doras, le do thoil.",
-    "tags": ["verbs", "imperative"]
-  },
-  {
-    "id": "ga-177",
-    "category": "home",
-    "level": "A2",
-    "question": "Which means “the door of the house”?",
-    "options": ["doras an teach", "doras an tí", "doras na tí"],
-    "correctAnswer": 1,
-    "explanation": "After a noun, the genitive of teach with the article is an tí: doras an tí. Literally: doras an tí = “door of-the house”.",
-    "phrase": "Tá doras an tí oscailte.",
-    "tags": ["genitive", "plurals", "nouns"]
-  },
-  {
     "id": "ga-178",
     "category": "home",
     "level": "A2",
     "question": "What is the plural of “teach” (house)?",
-    "options": ["tigh", "teacha", "tithe"],
-    "correctAnswer": 2,
+    "options": ["tigh", "tithe", "teacha"],
+    "correctAnswer": 1,
     "explanation": "Tithe is the plural of teach.",
     "phrase": "Tá tithe nua sa bhaile mór.",
     "tags": ["genitive", "plurals", "nouns"]
@@ -2076,8 +1779,8 @@
     "category": "people",
     "level": "A2",
     "question": "Choose the Irish for “her house”.",
-    "options": ["a teach", "a dteach", "a theach"],
-    "correctAnswer": 0,
+    "options": ["a dteach", "a teach", "a theach"],
+    "correctAnswer": 1,
     "explanation": "A (her) causes no mutation: a teach. A (his) lenites (a theach) and a (their) eclipses (a dteach). Literally: a teach = “her house”.",
     "phrase": "Tá a teach mór.",
     "tags": ["possessives", "mutations"]
@@ -2087,8 +1790,8 @@
     "category": "communication",
     "level": "A2",
     "question": "Which means “with you” (one person)?",
-    "options": ["leis", "linn", "leat"],
-    "correctAnswer": 2,
+    "options": ["leat", "leis", "linn"],
+    "correctAnswer": 0,
     "explanation": "Leat means “with you”. Leis is “with him” and linn is “with us”. Literally: leat = “with-you” (le + tú).",
     "phrase": "Tá mé ag teacht leat.",
     "tags": ["prepositional_pronouns"]
@@ -2098,67 +1801,19 @@
     "category": "communication",
     "level": "A2",
     "question": "Which means “on him”?",
-    "options": ["orm", "air", "uirthi"],
-    "correctAnswer": 1,
+    "options": ["orm", "uirthi", "air"],
+    "correctAnswer": 2,
     "explanation": "Air means “on him”. Uirthi is “on her” and orm is “on me”. Literally: air = “on-him” (ar + é).",
     "phrase": "Tá hata air.",
     "tags": ["prepositional_pronouns"]
-  },
-  {
-    "id": "ga-184",
-    "category": "greetings",
-    "level": "A1",
-    "question": "How do you ask “How are you?” in Irish?",
-    "options": ["Conas atá tú?", "Cad is ainm duit?", "Cá bhfuil tú?"],
-    "correctAnswer": 0,
-    "explanation": "Conas atá tú? means “How are you?” Cad is ainm duit? asks for a name. Literally: Conas atá tú? = “how that-is you?”.",
-    "phrase": "Conas atá tú?",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "ga-185",
-    "category": "greetings",
-    "level": "A1",
-    "question": "How do you say “I'm well, thank you”?",
-    "options": [
-      "Is mise Seán, go raibh maith agat.",
-      "Tá mé go dona, go raibh maith agat.",
-      "Tá mé go maith, go raibh maith agat."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Go maith means “well”. Go dona means “badly”. Literally: Tá mé go maith, go raibh maith agat = “am I well, may-be good at you”.",
-    "phrase": "Tá mé go maith, go raibh maith agat.",
-    "tags": ["greetings", "feelings"]
-  },
-  {
-    "id": "ga-186",
-    "category": "greetings",
-    "level": "A1",
-    "question": "What does “Slán abhaile” mean?",
-    "options": ["Safe home (goodbye)", "Welcome home", "Come home"],
-    "correctAnswer": 0,
-    "explanation": "Slán abhaile is a friendly goodbye wishing someone a safe journey home. Literally: Slán abhaile = “safe homewards”.",
-    "phrase": "Slán abhaile, a chara!",
-    "tags": ["greetings"]
-  },
-  {
-    "id": "ga-187",
-    "category": "greetings",
-    "level": "A1",
-    "question": "Which means “Good morning”?",
-    "options": ["Oíche mhaith", "Maidin mhaith", "Tráthnóna maith"],
-    "correctAnswer": 1,
-    "explanation": "Maidin mhaith is “good morning”. Tráthnóna maith is “good afternoon/evening” and oíche mhaith is “good night”. Literally: Maidin mhaith = “morning good”.",
-    "phrase": "Maidin mhaith duit.",
-    "tags": ["greetings"]
   },
   {
     "id": "ga-188",
     "category": "politeness",
     "level": "A2",
     "question": "What does “Go n-éirí leat” mean?",
-    "options": ["Goodbye", "Thank you", "Good luck"],
-    "correctAnswer": 2,
+    "options": ["Goodbye", "Good luck", "Thank you"],
+    "correctAnswer": 1,
     "explanation": "Go n-éirí leat means “may you succeed”, used to say good luck. Literally: Go n-éirí leat = “that may-succeed with you”.",
     "phrase": "Go n-éirí leat sa scrúdú.",
     "tags": ["wishes", "celebrations"]
@@ -2168,8 +1823,8 @@
     "category": "politeness",
     "level": "A2",
     "question": "What does “Lá breithe sona duit” mean?",
-    "options": ["Happy birthday", "Happy Christmas", "Happy New Year"],
-    "correctAnswer": 0,
+    "options": ["Happy Christmas", "Happy birthday", "Happy New Year"],
+    "correctAnswer": 1,
     "explanation": "Lá breithe sona duit means “happy birthday”. Nollaig shona duit means “happy Christmas”. Literally: Lá breithe sona duit = “day of-birth happy to you”.",
     "phrase": "Lá breithe sona duit, a Mháire!",
     "tags": ["wishes", "celebrations"]
@@ -2179,8 +1834,8 @@
     "category": "daily_life",
     "level": "A2",
     "question": "Complete: ___ raibh mé ann. (I wasn't there.)",
-    "options": ["Níl", "Ní", "Nach"],
-    "correctAnswer": 1,
+    "options": ["Ní", "Níl", "Nach"],
+    "correctAnswer": 0,
     "explanation": "Ní raibh is the negative past of bí. Níl is the negative present. Literally: Ní raibh mé ann = “not was I there”.",
     "phrase": "Ní raibh mé ann.",
     "tags": ["negation", "past_tense"]
@@ -2190,8 +1845,8 @@
     "category": "communication",
     "level": "A2",
     "question": "What does “Nach bhfuil tú sásta?” mean?",
-    "options": ["Are you happy?", "You are not happy.", "Aren't you happy?"],
-    "correctAnswer": 2,
+    "options": ["Aren't you happy?", "Are you happy?", "You are not happy."],
+    "correctAnswer": 0,
     "explanation": "Nach bhfuil...? is the negative question form, meaning “isn't/aren't...?” Literally: Nach bhfuil tú sásta? = “is-not-that you satisfied?”.",
     "phrase": "Nach bhfuil tú sásta?",
     "tags": ["questions", "negation"]
@@ -2201,19 +1856,19 @@
     "category": "weather",
     "level": "A2",
     "question": "What does “Ní raibh sé fuar” mean?",
-    "options": ["It wasn't cold.", "It isn't cold.", "It won't be cold."],
-    "correctAnswer": 0,
+    "options": ["It isn't cold.", "It won't be cold.", "It wasn't cold."],
+    "correctAnswer": 2,
     "explanation": "Ní raibh is the negative past of bí, so the sentence is in the past tense. Literally: Ní raibh sé fuar = “not was it cold”.",
     "phrase": "Ní raibh sé fuar.",
     "tags": ["negation", "past_tense"]
   },
   {
     "id": "ga-193",
-    "category": "Grammar",
-    "level": "B1",
+    "category": "weather",
+    "level": "A2",
     "question": "Complete: Má ___ an aimsir go maith, rachaidh mé amach. (If the weather is good, I'll go out.)",
-    "options": ["tá", "bhí", "beidh"],
-    "correctAnswer": 0,
+    "options": ["bhí", "beidh", "tá"],
+    "correctAnswer": 2,
     "explanation": "After má, the present tense of bí is used for a future-looking condition: Má tá an aimsir go maith... Literally: Má tá an aimsir go maith = “if is the weather good”.",
     "phrase": "Má tá an aimsir go maith, rachaidh mé amach.",
     "tags": ["conditionals", "weather"]
@@ -2230,307 +1885,19 @@
     "tags": ["needs"]
   },
   {
-    "id": "ga-195",
-    "category": "communication",
-    "level": "A1",
-    "question": "What does “Cathain” mean?",
-    "options": ["how", "when", "why"],
-    "correctAnswer": 1,
-    "explanation": "Cathain means “when”. Cén fáth is “why” and conas is “how”.",
-    "phrase": "Cathain a thiocfaidh tú abhaile?",
-    "tags": ["questions"]
-  },
-  {
-    "id": "ga-196",
-    "category": "communication",
-    "level": "A1",
-    "question": "Which question word means “why”?",
-    "options": ["Conas", "Cén fáth", "Cathain"],
-    "correctAnswer": 1,
-    "explanation": "Cén fáth means “why”. Cathain is “when” and conas is “how”. Literally: Cén fáth = “what the reason”.",
-    "phrase": "Cén fáth a bhfuil tú tuirseach?",
-    "tags": ["questions"]
-  },
-  {
-    "id": "ga-197",
-    "category": "shopping",
-    "level": "A1",
-    "question": "What does “Cé mhéad?” mean?",
-    "options": ["How old?", "How much? / How many?", "How long?"],
-    "correctAnswer": 1,
-    "explanation": "Cé mhéad? asks about quantity or price. Literally: Cé mhéad? = “what amount?”.",
-    "phrase": "Cé mhéad atá ar an arán?",
-    "tags": ["questions", "money"]
-  },
-  {
-    "id": "ga-198",
-    "category": "introductions",
-    "level": "A1",
-    "question": "What does “Cén aois thú?” mean?",
-    "options": ["Where are you from?", "What time is it?", "How old are you?"],
-    "correctAnswer": 2,
-    "explanation": "Cén aois thú? asks someone's age. Literally: Cén aois thú? = “what age you?”.",
-    "phrase": "Cén aois thú?",
-    "tags": ["questions", "age"]
-  },
-  {
-    "id": "ga-199",
-    "category": "politeness",
-    "level": "A1",
-    "question": "What does “Gabh mo leithscéal” mean?",
-    "options": ["Excuse me.", "Thank you.", "Goodbye."],
-    "correctAnswer": 0,
-    "explanation": "Gabh mo leithscéal means “excuse me” or “pardon me”. Literally: Gabh mo leithscéal = “take my excuse”.",
-    "phrase": "Gabh mo leithscéal.",
-    "tags": ["politeness", "thanks"]
-  },
-  {
-    "id": "ga-200",
-    "category": "politeness",
-    "level": "A1",
-    "question": "How do you say “Thank you very much”?",
-    "options": [
-      "Dia duit.",
-      "Go raibh míle maith agat.",
-      "Go raibh maith agat."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Go raibh míle maith agat means “thank you very much”. Go raibh maith agat is plain “thank you”. Literally: Go raibh míle maith agat = “may-be a-thousand good at you”.",
-    "phrase": "Go raibh míle maith agat.",
-    "tags": ["politeness", "thanks"]
-  },
-  {
-    "id": "ga-201",
-    "category": "places",
-    "level": "A2",
-    "question": "Complete: Tá cónaí ar mo dheirfiúr i ___. (My sister lives in Cork.)",
-    "options": ["Corcaigh", "Chorcaigh", "gCorcaigh"],
-    "correctAnswer": 2,
-    "explanation": "The preposition i (“in”) eclipses a following consonant, so c becomes gc: i gCorcaigh. Tá cónaí ar is a common way to say someone lives somewhere. Literally: Tá cónaí ar mo dheirfiúr i gCorcaigh = “is living on my sister in Cork”.",
-    "phrase": "Tá cónaí ar mo dheirfiúr i gCorcaigh.",
-    "tags": ["eclipsis", "prepositions", "family"]
-  },
-  {
-    "id": "ga-202",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which means “four children”?",
-    "options": ["ceithre páistí", "ceathrar páistí", "ceathair páiste"],
-    "correctAnswer": 1,
-    "explanation": "When counting people, Irish uses the personal numbers (beirt, triúr, ceathrar…): ceathrar páistí. Ceithre needs a singular noun (ceithre pháiste), and ceathair is only used for counting on its own. Literally: ceathrar páistí = “a foursome of children”.",
-    "phrase": "Tá ceathrar páistí agam.",
-    "tags": ["numbers", "plurals", "personal_numbers"]
-  },
-  {
-    "id": "ga-203",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: ___ sí an doras. (She didn’t close the door.)",
-    "options": ["Níor dhún", "Ní dhún", "Níor dún"],
-    "correctAnswer": 0,
-    "explanation": "Regular verbs form the negative past tense with níor plus lenition: dún becomes níor dhún. Ní is used in other tenses, and the verb must be lenited after níor. Literally: Níor dhún sí an doras = “did not close she the door”.",
-    "phrase": "Níor dhún sí an doras.",
-    "tags": ["negation", "past_tense", "lenition"]
-  },
-  {
-    "id": "ga-204",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which means “about her”?",
-    "options": ["faoi", "fúinn", "fúithi"],
-    "correctAnswer": 2,
-    "explanation": "The preposition faoi (“under, about”) combines with pronouns: faoi (about him), fúithi (about her), fúinn (about us). Literally: fúithi = “under/about her”.",
-    "phrase": "Bhí siad ag caint fúithi.",
-    "tags": ["prepositional_pronouns"]
-  },
-  {
-    "id": "ga-205",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I was born in Belfast”?",
-    "options": [
-      "Rug mé i mBéal Feirste.",
-      "Rugadh mé i mBéal Feirste.",
-      "Rugadh liom i mBéal Feirste."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Irish uses the autonomous (impersonal) past form rugadh for “was born”. Rug mé means “I caught” or “I gave birth”, and liom doesn’t fit here. Note the eclipsis after i: Béal → mBéal. Literally: Rugadh mé i mBéal Feirste = “was born me in Belfast”.",
-    "phrase": "Rugadh mé i mBéal Feirste.",
-    "tags": ["passive", "past_tense", "eclipsis", "places"]
-  },
-  {
-    "id": "ga-206",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which means “the top of the street”?",
-    "options": ["barr an sráid", "barr na sráid", "barr na sráide"],
-    "correctAnswer": 2,
-    "explanation": "Sráid is a feminine noun, so in the genitive the article becomes na and the noun takes its genitive form sráide. Barr an sráid uses the wrong article, and barr na sráid forgets to change the noun. Literally: barr na sráide = “top of-the street”.",
-    "phrase": "barr na sráide",
-    "tags": ["genitive_case", "feminine_nouns", "places"]
-  },
-  {
-    "id": "ga-207",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "How do you say “I am doing it” (it = an tionscadal, the project)?",
-    "options": ["Tá mé á dhéanamh.", "Tá mé ag déanamh é.", "Tá mé á déanamh."],
-    "correctAnswer": 0,
-    "explanation": "When the object of a verbal noun is a pronoun, Irish puts it before the verbal noun using á. Tionscadal is masculine, so á lenites: á dhéanamh. Á déanamh would refer to a feminine noun, and ag déanamh é is an anglicism. Literally: Tá mé á dhéanamh = “am I at-its doing”.",
-    "phrase": "Tá mé á dhéanamh.",
-    "tags": ["verbal_noun", "object_pronouns", "lenition"]
-  },
-  {
-    "id": "ga-208",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “leabharlann” mean?",
-    "options": ["bookshop", "library", "bookcase"],
-    "correctAnswer": 1,
-    "explanation": "Leabharlann combines leabhar (book) and lann (a place or building), so it means a library. A bookshop is siopa leabhar. Literally: leabharlann = “book-place”.",
-    "phrase": "leabharlann",
-    "tags": ["places", "compound_words"]
-  },
-  {
-    "id": "ga-209",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Which means “the man who lives next door”?",
-    "options": [
-      "an fear tá ina chónaí béal dorais",
-      "an fear a bhfuil ina chónaí béal dorais",
-      "an fear atá ina chónaí béal dorais"
-    ],
-    "correctAnswer": 2,
-    "explanation": "When the relative clause refers to the subject, tá becomes the direct relative form atá (a + tá). A bhfuil is the indirect relative, used in phrases like an fear a bhfuil a mhac tinn, and plain tá can’t follow the noun here. Literally: an fear atá ina chónaí béal dorais = “the man who-is in his dwelling mouth of door”.",
-    "phrase": "an fear atá ina chónaí béal dorais",
-    "tags": ["relative_clauses", "present_tense", "people"]
-  },
-  {
     "id": "ga-210",
-    "category": "Grammar",
+    "category": "food",
     "level": "A2",
     "question": "Complete: ___ tú an bainne? (Did you drink the milk?)",
-    "options": ["Ar ól", "An ól", "Ar d’ól"],
-    "correctAnswer": 0,
+    "options": ["An ól", "Ar ól", "Ar d’ól"],
+    "correctAnswer": 1,
     "explanation": "Regular verbs form past-tense questions with ar, which replaces the d’ of the statement: D’ól tú becomes Ar ól tú? An is used for present and future questions. Literally: Ar ól tú an bainne? = “did-drink you the milk?”.",
     "phrase": "Ar ól tú an bainne?",
     "tags": ["past_tense", "questions", "verbs"]
   },
   {
-    "id": "ga-216",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “fuinneog” mean?",
-    "options": ["door", "floor", "window"],
-    "correctAnswer": 2,
-    "explanation": "Fuinneog is a feminine noun meaning “window”, so with the article it lenites: an fhuinneog. Doras is “door” and urlár is “floor”. Literally: fuinneog = “window”.",
-    "phrase": "an fhuinneog",
-    "tags": ["house", "nouns", "feminine_nouns"]
-  },
-  {
-    "id": "ga-217",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "Which means “the biggest house”?",
-    "options": ["an teach is mó", "an teach níos mó", "an teach mó"],
-    "correctAnswer": 0,
-    "explanation": "The superlative is formed with is + the comparative form of the adjective, and mór becomes mó. Níos mó means “bigger” and is used when comparing, and mó can’t stand alone after the noun. Literally: an teach is mó = “the house that-is biggest”.",
-    "phrase": "an teach is mó",
-    "tags": ["superlative", "adjectives", "comparison"]
-  },
-  {
-    "id": "ga-218",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I would go if I could”?",
-    "options": [
-      "Rachaidh mé má fhéadaim.",
-      "Rachainn dá bhféadfainn.",
-      "Rachainn má fhéadfainn."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Unreal or hypothetical conditions use dá with the conditional, and dá causes eclipsis: féadfainn → bhféadfainn. Má is for real conditions and doesn’t take the conditional, so Rachaidh mé má fhéadaim means “I will go if I can”. Literally: Rachainn dá bhféadfainn = “would-go-I if could-I”.",
-    "phrase": "Rachainn dá bhféadfainn.",
-    "tags": ["conditional", "eclipsis", "irregular_verbs"]
-  },
-  {
-    "id": "ga-219",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “He was a teacher”?",
-    "options": ["Is múinteoir é.", "Bhí sé múinteoir.", "Ba mhúinteoir é."],
-    "correctAnswer": 2,
-    "explanation": "Saying what someone is (or was) uses the copula, and its past form ba lenites the noun: múinteoir → mhúinteoir. Is múinteoir é is present tense, and bhí can’t link directly to a noun like this. Literally: Ba mhúinteoir é = “was teacher him”.",
-    "phrase": "Ba mhúinteoir é.",
-    "tags": ["copula", "past_tense", "lenition", "jobs"]
-  },
-  {
-    "id": "ga-220",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "Which means “during the night”?",
-    "options": ["i rith na hoíche", "i rith an oíche", "i rith na oíche"],
-    "correctAnswer": 0,
-    "explanation": "I rith is followed by the genitive case. Oíche is feminine, so the genitive article is na, which adds h before a vowel: na hoíche. An oíche is the plain (nominative) form. Literally: i rith na hoíche = “in course of-the night”.",
-    "phrase": "i rith na hoíche",
-    "tags": ["genitive_case", "feminine_nouns", "time", "compound_prepositions"]
-  },
-  {
-    "id": "ga-221",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “madra rua” mean?",
-    "options": ["red dog", "fox", "wolf"],
-    "correctAnswer": 1,
-    "explanation": "Madra rua is the everyday Irish word for a fox, even though it literally means “red dog”. A wolf is mac tíre. Literally: madra rua = “red dog”.",
-    "phrase": "madra rua",
-    "tags": ["animals", "compound_words"]
-  },
-  {
-    "id": "ga-222",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "Complete: Seo ___. (This is our house.)",
-    "options": ["ár teach", "ár theach", "ár dteach"],
-    "correctAnswer": 2,
-    "explanation": "The possessives ár (our), bhur (your, plural) and a (their) cause eclipsis, so teach becomes dteach. Lenition (theach) follows mo, do and a (his) instead. Literally: Seo ár dteach = “here our house”.",
-    "phrase": "Seo ár dteach.",
-    "tags": ["possessives", "eclipsis", "home"]
-  },
-  {
-    "id": "ga-223",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I won’t get a chance”?",
-    "options": [
-      "Ní bhfaighidh mé deis.",
-      "Ní fhaighidh mé deis.",
-      "Níor fhaigh mé deis."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Faigh (get) is irregular: in the future after ní it is eclipsed rather than lenited, giving ní bhfaighidh. Níor fhaigh would be wrong anyway, since the past tense of faigh is fuair (ní bhfuair mé = I didn’t get). Literally: Ní bhfaighidh mé deis = “not will get I chance”.",
-    "phrase": "Ní bhfaighidh mé deis.",
-    "tags": ["future_tense", "irregular_verbs", "negation", "eclipsis"]
-  },
-  {
-    "id": "ga-224",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "In standard Irish, how do you say “I am buying a new car”?",
-    "options": [
-      "Tá mé ag ceannach carr nua.",
-      "Tá mé ag ceannach an carr nua.",
-      "Tá mé ag ceannach cairr nua."
-    ],
-    "correctAnswer": 2,
-    "explanation": "A noun that is the object of a verbal noun (ag ceannach) goes into the genitive case in the Caighdeán, so carr becomes cairr. Carr nua is often heard in speech, and an carr nua means “the new car” and would need the genitive too (an chairr nua). Literally: Tá mé ag ceannach cairr nua = “am I at buying of a new car”.",
-    "phrase": "Tá mé ag ceannach cairr nua.",
-    "tags": ["genitive_case", "verbal_nouns", "present_continuous"]
-  },
-  {
     "id": "ga-225",
-    "category": "Vocabulary",
+    "category": "time",
     "level": "A2",
     "question": "Which means “at the weekend”?",
     "options": [
@@ -2544,212 +1911,41 @@
     "tags": ["time_expressions", "genitive_case"]
   },
   {
-    "id": "ga-226",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “scáthán” mean?",
-    "options": ["mirror", "umbrella", "ladder"],
-    "correctAnswer": 0,
-    "explanation": "Scáthán means “mirror”. An umbrella is scáth fearthainne and a ladder is dréimire. Literally: Tá scáthán sa seomra folctha = “is mirror in-the room bathing”.",
-    "phrase": "Tá scáthán sa seomra folctha.",
-    "tags": ["household", "nouns"]
-  },
-  {
-    "id": "ga-227",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "How do you say “I am afraid of dogs”?",
-    "options": [
-      "Tá eagla agam roimh mhadraí.",
-      "Tá eagla orm ar mhadraí.",
-      "Tá eagla orm roimh mhadraí."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Fear is something that is “on” you in Irish, so it’s eagla orm, and you are afraid “before” something, so it takes roimh, which lenites: madraí → mhadraí. Literally: Tá eagla orm roimh mhadraí = “is fear on-me before dogs”.",
-    "phrase": "Tá eagla orm roimh mhadraí.",
-    "tags": ["emotions", "prepositions", "lenition"]
-  },
-  {
-    "id": "ga-228",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I used to go to the beach every summer”?",
-    "options": [
-      "Rachaidh mé go dtí an trá gach samhradh.",
-      "Théinn go dtí an trá gach samhradh.",
-      "Rachainn go dtí an trá gach samhradh."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Repeated past actions use the past habitual: téigh → théinn (“I used to go”). Rachaidh mé is future (“I will go”) and rachainn is conditional (“I would go”). Literally: Théinn go dtí an trá gach samhradh = “used-to-go-I to the beach every summer”.",
-    "phrase": "Théinn go dtí an trá gach samhradh.",
-    "tags": ["past_habitual", "irregular_verbs", "seasons"]
-  },
-  {
-    "id": "ga-229",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "How do you say “It would be better for us to wait”?",
-    "options": [
-      "B’fhearr dúinn fanacht.",
-      "Ba fearr dúinn fanacht.",
-      "B’fhearr againn fanacht."
-    ],
-    "correctAnswer": 0,
-    "explanation": "The conditional copula ba lenites the next word and becomes b’ before a vowel or fh: ba + fearr → b’fhearr. “For us” here is dúinn (do + sinn), not againn. Literally: B’fhearr dúinn fanacht = “would-be better for-us waiting”.",
-    "phrase": "B’fhearr dúinn fanacht.",
-    "tags": ["copula", "conditional", "comparative", "lenition"]
-  },
-  {
     "id": "ga-230",
-    "category": "Vocabulary",
+    "category": "time",
     "level": "A2",
     "question": "Which means “the third day”?",
-    "options": ["an trí lá", "an triúr lá", "an tríú lá"],
-    "correctAnswer": 2,
+    "options": ["an tríú lá", "an trí lá", "an triúr lá"],
+    "correctAnswer": 0,
     "explanation": "Ordinal numbers mostly end in -ú: trí (three) → tríú (third). Triúr is only for counting people. Literally: an tríú lá = “the third day”.",
     "phrase": "an tríú lá",
     "tags": ["numbers", "ordinals"]
   },
   {
-    "id": "ga-231",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “rothar” mean?",
-    "options": ["a bus", "a boat", "a bicycle"],
-    "correctAnswer": 2,
-    "explanation": "Rothar is a bicycle (from roth, “wheel”). A bus is bus and a boat is bád. Literally: Tá rothar nua agam = “is bicycle new at me”.",
-    "phrase": "Tá rothar nua agam.",
-    "tags": ["transport", "nouns"]
-  },
-  {
-    "id": "ga-232",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: Rinne mé m’obair bhaile ___. (I did my homework after dinner.)",
-    "options": [
-      "tar éis an dinnéir",
-      "tar éis an dinnéar",
-      "tar éis dinnéar an"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Compound prepositions like tar éis are followed by the genitive case, so dinnéar becomes dinnéir after the article an. The article also has to come before the noun. Literally: Rinne mé m’obair bhaile tar éis an dinnéir = “did I my work home after the dinner”.",
-    "phrase": "Rinne mé m’obair bhaile tar éis an dinnéir.",
-    "tags": ["compound_prepositions", "genitive", "past_tense"]
-  },
-  {
     "id": "ga-233",
-    "category": "Grammar",
+    "category": "people",
     "level": "A2",
     "question": "Complete: Bhuail mé ___ inné. (I met Seán yesterday.)",
-    "options": ["ar Sheán", "le Seán", "Seán"],
-    "correctAnswer": 1,
+    "options": ["ar Sheán", "Seán", "le Seán"],
+    "correctAnswer": 2,
     "explanation": "To meet someone is buail le in Irish. Bhuail mé Seán would mean “I hit Seán”, and ar isn’t used here. Literally: Bhuail mé le Seán inné = “struck I with Seán yesterday”.",
     "phrase": "Bhuail mé le Seán inné.",
     "tags": ["verb_prepositions", "past_tense", "idioms"]
   },
   {
-    "id": "ga-234",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I am twenty years old”?",
-    "options": [
-      "Is fiche bliain mé.",
-      "Tá mé fiche bliana d’aois.",
-      "Tá mé fiche bliain d’aois."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Age uses tá with d’aois. After fiche, Irish uses the singular form bliain; the special plural bliana goes with trí to deich (e.g. trí bliana, seacht mbliana). The copula is doesn’t express age. Literally: Tá mé fiche bliain d’aois = “am I twenty year of age”.",
-    "phrase": "Tá mé fiche bliain d’aois.",
-    "tags": ["numbers", "age", "counting"]
-  },
-  {
-    "id": "ga-235",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "How do you say “I have done the work”?",
-    "options": [
-      "Tá an obair déanta agam.",
-      "Tá mé déanta an obair.",
-      "Tá an obair ag déanamh agam."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Irish expresses a completed result with tá + the verbal adjective (déanta) + ag. Tá mé déanta would mean “I am done/made”, and ag déanamh means the work is still in progress. Literally: Tá an obair déanta agam = “is the work done at me”.",
-    "phrase": "Tá an obair déanta agam.",
-    "tags": ["verbal_adjective", "perfect_aspect", "prepositional_pronouns"]
-  },
-  {
-    "id": "ga-236",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “bróga” mean?",
-    "options": ["socks", "boots", "shoes"],
-    "correctAnswer": 2,
-    "explanation": "Bróga is the plural of bróg (a shoe). Socks are stocaí, and boots are buataisí. Literally: bróga = “shoes”.",
-    "phrase": "Tá bróga nua orm.",
-    "tags": ["clothing", "nouns", "plurals"]
-  },
-  {
     "id": "ga-237",
-    "category": "Grammar",
+    "category": "shopping",
     "level": "A2",
     "question": "Complete: Ba mhaith liom ticéad ___. (I'd like to buy a ticket.)",
-    "options": ["a cheannach", "a ceannach", "cheannach"],
-    "correctAnswer": 0,
+    "options": ["a ceannach", "a cheannach", "cheannach"],
+    "correctAnswer": 1,
     "explanation": "When a verbal noun has a direct object before it, Irish uses a plus a lenited verbal noun: a cheannach. Leaving out the lenition (a ceannach) or dropping a is wrong. Literally: ticéad a cheannach = “ticket to buying”.",
     "phrase": "Ba mhaith liom ticéad a cheannach.",
     "tags": ["verbal_noun", "lenition", "infinitive_clause"]
   },
   {
-    "id": "ga-238",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "Complete: Chuir mé glaoch ___ inné. (I phoned her yesterday.)",
-    "options": ["léi", "uirthi", "chuici"],
-    "correctAnswer": 1,
-    "explanation": "The idiom is cuir glaoch ar (“to phone”), so “on her” is the prepositional pronoun uirthi. Léi means “with her”, and chuici means “towards her”. Literally: Chuir mé glaoch uirthi = “put I a call on-her”.",
-    "phrase": "Chuir mé glaoch uirthi inné.",
-    "tags": ["verb_prepositions", "prepositional_pronouns", "idioms"]
-  },
-  {
-    "id": "ga-239",
-    "category": "Grammar",
-    "level": "A2",
-    "question": "Which means “our friends”?",
-    "options": ["ár cairde", "ár gcairde", "ár gcara"],
-    "correctAnswer": 1,
-    "explanation": "Ár (“our”) causes eclipsis, so cairde becomes gcairde. Ár cairde misses that mutation, and ár gcara is singular (“our friend”). Literally: ár gcairde = “our friends”.",
-    "phrase": "Is iad ár gcairde iad.",
-    "tags": ["eclipsis", "possessives", "people"]
-  },
-  {
-    "id": "ga-240",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "How do you say “Irish is spoken here”?",
-    "options": [
-      "Labhraíonn Gaeilge anseo.",
-      "Tá labhairt Gaeilge anseo.",
-      "Labhraítear Gaeilge anseo."
-    ],
-    "correctAnswer": 2,
-    "explanation": "The autonomous present labhraítear means “is spoken” / “one speaks”. Labhraíonn needs a personal subject, and tá labhairt Gaeilge is not a valid passive. Literally: Labhraítear Gaeilge anseo = “is spoken Irish here”.",
-    "phrase": "Labhraítear Gaeilge anseo.",
-    "tags": ["autonomous", "passive", "present_tense"]
-  },
-  {
-    "id": "ga-241",
-    "category": "Vocabulary",
-    "level": "A1",
-    "question": "What does “tráthnóna” mean?",
-    "options": ["morning", "afternoon", "midnight"],
-    "correctAnswer": 1,
-    "explanation": "Tráthnóna means afternoon (and early evening). Morning is maidin, and midnight is meán oíche. Literally: tráthnóna = “afternoon”.",
-    "phrase": "Feicfidh mé thú tráthnóna.",
-    "tags": ["time", "nouns"]
-  },
-  {
     "id": "ga-242",
-    "category": "Grammar",
+    "category": "shopping",
     "level": "A2",
     "question": "Complete: Cheannaigh sí é ___. (She bought it for ten euro.)",
     "options": ["ar dheich euro", "le deich euro", "faoi dheich euro"],
@@ -2759,34 +1955,8 @@
     "tags": ["prepositions", "lenition", "numbers", "shopping"]
   },
   {
-    "id": "ga-243",
-    "category": "Grammar",
-    "level": "B1",
-    "question": "How do you say “I haven’t seen her in a long time”?",
-    "options": [
-      "Níor fheic mé le fada í.",
-      "Ní fheicim le fada í.",
-      "Ní fhaca mé le fada í."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Feic is irregular: after ní the past dependent is fhaca, not fheic. Níor is for regular past verbs, and ní fheicim is present tense. Literally: Ní fhaca mé le fada í = “not saw I for long her”.",
-    "phrase": "Ní fhaca mé le fada í.",
-    "tags": ["irregular_verbs", "past_tense", "negation", "time_expressions"]
-  },
-  {
-    "id": "ga-244",
-    "category": "Grammar",
-    "level": "B2",
-    "question": "Which means “before I leave”?",
-    "options": ["sula imím", "sula n-imím", "roimh mé a imeacht"],
-    "correctAnswer": 1,
-    "explanation": "Sula (“before”) takes the dependent form with an n-prefix before a vowel: sula n-imím. Sula imím misses that prefix, and roimh mé a imeacht is not a valid clause. Literally: sula n-imím = “before I leave”.",
-    "phrase": "Glaoigh orm sula n-imím.",
-    "tags": ["subordinate_clauses", "eclipsis", "present_habitual"]
-  },
-  {
     "id": "ga-245",
-    "category": "Grammar",
+    "category": "home",
     "level": "A2",
     "question": "How do you say “Turn off the light”?",
     "options": ["Múch an solas.", "Las an solas.", "Dún an solas."],
@@ -2794,5 +1964,1358 @@
     "explanation": "Múch means “extinguish” or “turn off” a light. Las means “light” or “turn on”, and dún means “close”. Literally: Múch an solas = “extinguish the light”.",
     "phrase": "Múch an solas, le do thoil.",
     "tags": ["imperatives", "household", "commands"]
+  },
+  {
+    "id": "ga-041",
+    "category": "time",
+    "level": "B1",
+    "question": "Which sentence expresses living somewhere for two years, continuing until now?",
+    "options": [
+      "Tá mé i mo chónaí anseo le dhá bhliain.",
+      "Bhí mé i mo chónaí anseo dhá bhliain ó shin.",
+      "Beidh mé i mo chónaí anseo i gceann dhá bhliain."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le dhá bhliain can describe a situation that has continued for two years. Ó shin means “ago”, and i gceann dhá bhliain means “in two years' time”. Literally: Tá mé i mo chónaí anseo le dhá bhliain = “am I in my dwelling here with two years”.",
+    "phrase": "Tá mé i mo chónaí anseo le dhá bhliain.",
+    "tags": ["time_expressions", "present_tense"]
+  },
+  {
+    "id": "ga-042",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Complete: Ní raibh ___ agam. (I had no choice.)",
+    "options": ["aon roghaí", "roghaí aon", "aon rogha"],
+    "correctAnswer": 2,
+    "explanation": "Ní raibh aon rogha agam means “I had no choice”. Aon rogha means “any choice”. Literally: Ní raibh aon rogha agam = “not was any choice at me”.",
+    "phrase": "Ní raibh aon rogha agam.",
+    "tags": ["negation", "past_tense", "quantifiers"]
+  },
+  {
+    "id": "ga-046",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Complete: Dá mbeadh níos mó ama agam, ___ níos mó leabhar. (If I had more time, I would read more books.)",
+    "options": ["léigh mé", "léim", "léifinn"],
+    "correctAnswer": 2,
+    "explanation": "Léifinn means “I would read”. Dá mbeadh introduces a hypothetical condition. Literally: Dá mbeadh níos mó ama agam, léifinn níos mó leabhar = “if would-be more of-time at me, I-would-read more of-books”.",
+    "phrase": "Dá mbeadh níos mó ama agam, léifinn níos mó leabhar.",
+    "tags": ["conditional", "hypotheticals"]
+  },
+  {
+    "id": "ga-047",
+    "category": "social",
+    "level": "B1",
+    "question": "Which expression means “I used to play football”?",
+    "options": [
+      "Tá mé ag imirt peile.",
+      "Imreoidh mé peil.",
+      "Ba ghnách liom peil a imirt."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ba ghnách liom + verbal noun expresses a habitual past action: “I used to…”. Literally: Ba ghnách liom peil a imirt = “was usual with me football to play”.",
+    "phrase": "Ba ghnách liom peil a imirt.",
+    "tags": ["habitual_past", "verbal_noun"]
+  },
+  {
+    "id": "ga-050",
+    "category": "communication",
+    "level": "B1",
+    "question": "Complete: Ní hamháin go bhfuil sí cliste, ___ tá sí cineálta freisin. (Not only is she clever, but she is also kind.)",
+    "options": ["mar", "ach", "nó"],
+    "correctAnswer": 1,
+    "explanation": "Ní hamháin ... ach ... freisin means “not only ... but also”. Literally: Ní hamháin go bhfuil sí cliste, ach tá sí cineálta freisin = “not only that is she clever, but is she kind also”.",
+    "phrase": "Ní hamháin go bhfuil sí cliste, ach tá sí cineálta freisin.",
+    "tags": ["conjunctions", "correlatives"]
+  },
+  {
+    "id": "ga-146",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "What does “Má bhíonn am agam, cabhróidh mé leat” mean?",
+    "options": [
+      "If I have time, I will help you.",
+      "I don't have time to help you.",
+      "I helped you when I had time."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Má bhíonn am agam, cabhróidh mé leat means “If I have time, I will help you.” Literally: Má bhíonn am agam, cabhróidh mé leat = “if is (habitually) time at me, will-help I with-you”.",
+    "phrase": "Má bhíonn am agam, cabhróidh mé leat.",
+    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
+  },
+  {
+    "id": "ga-147",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Choose the correct Irish for “I stayed at home because I was sick.”",
+    "options": [
+      "Fanfaidh mé sa bhaile mar tá mé sláintiúil.",
+      "D'fhan mé sa bhaile mar bhí mé tinn.",
+      "Chuaigh mé amach mar bhí mé tinn."
+    ],
+    "correctAnswer": 1,
+    "explanation": "D'fhan mé sa bhaile means “I stayed at home,” and mar means “because.” Literally: D’fhan mé sa bhaile mar bhí mé tinn = “stayed I in-the home because was I sick”.",
+    "phrase": "D'fhan mé sa bhaile mar bhí mé tinn.",
+    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
+  },
+  {
+    "id": "ga-148",
+    "category": "communication",
+    "level": "B1",
+    "question": "What does “Sula dtéann tú, glaoigh orm” mean?",
+    "options": [
+      "Before you go, call me.",
+      "After you arrive, call me.",
+      "If you leave, don't call me."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sula means “before,” and glaoigh orm means “call me.” Literally: Sula dtéann tú, glaoigh orm = “before that-goes you, call on me”.",
+    "phrase": "Sula dtéann tú, glaoigh orm.",
+    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
+  },
+  {
+    "id": "ga-149",
+    "category": "places",
+    "level": "B1",
+    "question": "Choose the correct Irish for “I have never been to Galway.”",
+    "options": [
+      "Ní raibh mé riamh i nGaillimh.",
+      "Tá mé i nGaillimh gach lá.",
+      "Rachaidh mé go Gaillimh amárach."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ní raibh mé riamh i nGaillimh means “I have never been to Galway.” Literally: Ní raibh mé riamh i nGaillimh = “not was I ever in Galway”.",
+    "phrase": "Ní raibh mé riamh i nGaillimh.",
+    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
+  },
+  {
+    "id": "ga-150",
+    "category": "communication",
+    "level": "B1",
+    "question": "What does “Tá súil agam go bhfeicfidh mé thú arís” mean?",
+    "options": [
+      "I hope I will see you again.",
+      "I don't want to see you again.",
+      "I know I saw you yesterday."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tá súil agam means “I hope,” and go bhfeicfidh mé thú arís means “that I will see you again.” Literally: Tá súil agam go bhfeicfidh mé thú arís = “is hope at me that will-see I you again”.",
+    "phrase": "Tá súil agam go bhfeicfidh mé thú arís.",
+    "tags": ["conditionals", "conjunctions", "subordinate_clauses"]
+  },
+  {
+    "id": "ga-177",
+    "category": "home",
+    "level": "B1",
+    "question": "Which means “the door of the house”?",
+    "options": ["doras an teach", "doras na tí", "doras an tí"],
+    "correctAnswer": 2,
+    "explanation": "After a noun, the genitive of teach with the article is an tí: doras an tí. Literally: doras an tí = “door of-the house”.",
+    "phrase": "Tá doras an tí oscailte.",
+    "tags": ["genitive", "plurals", "nouns"]
+  },
+  {
+    "id": "ga-201",
+    "category": "places",
+    "level": "B1",
+    "question": "Complete: Tá cónaí ar mo dheirfiúr i ___. (My sister lives in Cork.)",
+    "options": ["Corcaigh", "gCorcaigh", "Chorcaigh"],
+    "correctAnswer": 1,
+    "explanation": "The preposition i (“in”) eclipses a following consonant, so c becomes gc: i gCorcaigh. Tá cónaí ar is a common way to say someone lives somewhere. Literally: Tá cónaí ar mo dheirfiúr i gCorcaigh = “is living on my sister in Cork”.",
+    "phrase": "Tá cónaí ar mo dheirfiúr i gCorcaigh.",
+    "tags": ["eclipsis", "prepositions", "family"]
+  },
+  {
+    "id": "ga-202",
+    "category": "people",
+    "level": "B1",
+    "question": "Which means “four children”?",
+    "options": ["ceithre páistí", "ceathrar páistí", "ceathair páiste"],
+    "correctAnswer": 1,
+    "explanation": "When counting people, Irish uses the personal numbers (beirt, triúr, ceathrar…): ceathrar páistí. Ceithre needs a singular noun (ceithre pháiste), and ceathair is only used for counting on its own. Literally: ceathrar páistí = “a foursome of children”.",
+    "phrase": "Tá ceathrar páistí agam.",
+    "tags": ["numbers", "plurals", "personal_numbers"]
+  },
+  {
+    "id": "ga-203",
+    "category": "home",
+    "level": "B1",
+    "question": "Complete: ___ sí an doras. (She didn’t close the door.)",
+    "options": ["Níor dhún", "Ní dhún", "Níor dún"],
+    "correctAnswer": 0,
+    "explanation": "Regular verbs form the negative past tense with níor plus lenition: dún becomes níor dhún. Ní is used in other tenses, and the verb must be lenited after níor. Literally: Níor dhún sí an doras = “did not close she the door”.",
+    "phrase": "Níor dhún sí an doras.",
+    "tags": ["negation", "past_tense", "lenition"]
+  },
+  {
+    "id": "ga-204",
+    "category": "communication",
+    "level": "B1",
+    "question": "Which means “about her”?",
+    "options": ["fúithi", "faoi", "fúinn"],
+    "correctAnswer": 0,
+    "explanation": "The preposition faoi (“under, about”) combines with pronouns: faoi (about him), fúithi (about her), fúinn (about us). Literally: fúithi = “under/about her”.",
+    "phrase": "Bhí siad ag caint fúithi.",
+    "tags": ["prepositional_pronouns"]
+  },
+  {
+    "id": "ga-205",
+    "category": "places",
+    "level": "B1",
+    "question": "How do you say “I was born in Belfast”?",
+    "options": [
+      "Rugadh mé i mBéal Feirste.",
+      "Rug mé i mBéal Feirste.",
+      "Rugadh liom i mBéal Feirste."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Irish uses the autonomous (impersonal) past form rugadh for “was born”. Rug mé means “I caught” or “I gave birth”, and liom doesn’t fit here. Note the eclipsis after i: Béal → mBéal. Literally: Rugadh mé i mBéal Feirste = “was born me in Belfast”.",
+    "phrase": "Rugadh mé i mBéal Feirste.",
+    "tags": ["passive", "past_tense", "eclipsis", "places"]
+  },
+  {
+    "id": "ga-206",
+    "category": "places",
+    "level": "B1",
+    "question": "Which means “the top of the street”?",
+    "options": ["barr an sráid", "barr na sráide", "barr na sráid"],
+    "correctAnswer": 1,
+    "explanation": "Sráid is a feminine noun, so in the genitive the article becomes na and the noun takes its genitive form sráide. Barr an sráid uses the wrong article, and barr na sráid forgets to change the noun. Literally: barr na sráide = “top of-the street”.",
+    "phrase": "barr na sráide",
+    "tags": ["genitive_case", "feminine_nouns", "places"]
+  },
+  {
+    "id": "ga-209",
+    "category": "people",
+    "level": "B1",
+    "question": "Which means “the man who lives next door”?",
+    "options": [
+      "an fear tá ina chónaí béal dorais",
+      "an fear a bhfuil ina chónaí béal dorais",
+      "an fear atá ina chónaí béal dorais"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the relative clause refers to the subject, tá becomes the direct relative form atá (a + tá). A bhfuil is the indirect relative, used in phrases like an fear a bhfuil a mhac tinn, and plain tá can’t follow the noun here. Literally: an fear atá ina chónaí béal dorais = “the man who-is in his dwelling mouth of door”.",
+    "phrase": "an fear atá ina chónaí béal dorais",
+    "tags": ["relative_clauses", "present_tense", "people"]
+  },
+  {
+    "id": "ga-217",
+    "category": "home",
+    "level": "B1",
+    "question": "Which means “the biggest house”?",
+    "options": ["an teach níos mó", "an teach mó", "an teach is mó"],
+    "correctAnswer": 2,
+    "explanation": "The superlative is formed with is + the comparative form of the adjective, and mór becomes mó. Níos mó means “bigger” and is used when comparing, and mó can’t stand alone after the noun. Literally: an teach is mó = “the house that-is biggest”.",
+    "phrase": "an teach is mó",
+    "tags": ["superlative", "adjectives", "comparison"]
+  },
+  {
+    "id": "ga-218",
+    "category": "travel",
+    "level": "B1",
+    "question": "How do you say “I would go if I could”?",
+    "options": [
+      "Rachainn dá bhféadfainn.",
+      "Rachaidh mé má fhéadaim.",
+      "Rachainn má fhéadfainn."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unreal or hypothetical conditions use dá with the conditional, and dá causes eclipsis: féadfainn → bhféadfainn. Má is for real conditions and doesn’t take the conditional, so Rachaidh mé má fhéadaim means “I will go if I can”. Literally: Rachainn dá bhféadfainn = “would-go-I if could-I”.",
+    "phrase": "Rachainn dá bhféadfainn.",
+    "tags": ["conditional", "eclipsis", "irregular_verbs"]
+  },
+  {
+    "id": "ga-219",
+    "category": "work_study",
+    "level": "B1",
+    "question": "How do you say “He was a teacher”?",
+    "options": ["Is múinteoir é.", "Ba mhúinteoir é.", "Bhí sé múinteoir."],
+    "correctAnswer": 1,
+    "explanation": "Saying what someone is (or was) uses the copula, and its past form ba lenites the noun: múinteoir → mhúinteoir. Is múinteoir é is present tense, and bhí can’t link directly to a noun like this. Literally: Ba mhúinteoir é = “was teacher him”.",
+    "phrase": "Ba mhúinteoir é.",
+    "tags": ["copula", "past_tense", "lenition", "jobs"]
+  },
+  {
+    "id": "ga-222",
+    "category": "home",
+    "level": "B1",
+    "question": "Complete: Seo ___. (This is our house.)",
+    "options": ["ár teach", "ár dteach", "ár theach"],
+    "correctAnswer": 1,
+    "explanation": "The possessives ár (our), bhur (your, plural) and a (their) cause eclipsis, so teach becomes dteach. Lenition (theach) follows mo, do and a (his) instead. Literally: Seo ár dteach = “here our house”.",
+    "phrase": "Seo ár dteach.",
+    "tags": ["possessives", "eclipsis", "home"]
+  },
+  {
+    "id": "ga-223",
+    "category": "plans",
+    "level": "B1",
+    "question": "How do you say “I won’t get a chance”?",
+    "options": [
+      "Ní bhfaighidh mé deis.",
+      "Ní fhaighidh mé deis.",
+      "Níor fhaigh mé deis."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Faigh (get) is irregular: in the future after ní it is eclipsed rather than lenited, giving ní bhfaighidh. Níor fhaigh would be wrong anyway, since the past tense of faigh is fuair (ní bhfuair mé = I didn’t get). Literally: Ní bhfaighidh mé deis = “not will get I chance”.",
+    "phrase": "Ní bhfaighidh mé deis.",
+    "tags": ["future_tense", "irregular_verbs", "negation", "eclipsis"]
+  },
+  {
+    "id": "ga-227",
+    "category": "health",
+    "level": "B1",
+    "question": "How do you say “I am afraid of dogs”?",
+    "options": [
+      "Tá eagla agam roimh mhadraí.",
+      "Tá eagla orm roimh mhadraí.",
+      "Tá eagla orm ar mhadraí."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fear is something that is “on” you in Irish, so it’s eagla orm, and you are afraid “before” something, so it takes roimh, which lenites: madraí → mhadraí. Literally: Tá eagla orm roimh mhadraí = “is fear on-me before dogs”.",
+    "phrase": "Tá eagla orm roimh mhadraí.",
+    "tags": ["emotions", "prepositions", "lenition"]
+  },
+  {
+    "id": "ga-228",
+    "category": "travel",
+    "level": "B1",
+    "question": "How do you say “I used to go to the beach every summer”?",
+    "options": [
+      "Rachaidh mé go dtí an trá gach samhradh.",
+      "Rachainn go dtí an trá gach samhradh.",
+      "Théinn go dtí an trá gach samhradh."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Repeated past actions use the past habitual: téigh → théinn (“I used to go”). Rachaidh mé is future (“I will go”) and rachainn is conditional (“I would go”). Literally: Théinn go dtí an trá gach samhradh = “used-to-go-I to the beach every summer”.",
+    "phrase": "Théinn go dtí an trá gach samhradh.",
+    "tags": ["past_habitual", "irregular_verbs", "seasons"]
+  },
+  {
+    "id": "ga-232",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Complete: Rinne mé m’obair bhaile ___. (I did my homework after dinner.)",
+    "options": [
+      "tar éis an dinnéar",
+      "tar éis dinnéar an",
+      "tar éis an dinnéir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Compound prepositions like tar éis are followed by the genitive case, so dinnéar becomes dinnéir after the article an. The article also has to come before the noun. Literally: Rinne mé m’obair bhaile tar éis an dinnéir = “did I my work home after the dinner”.",
+    "phrase": "Rinne mé m’obair bhaile tar éis an dinnéir.",
+    "tags": ["compound_prepositions", "genitive", "past_tense"]
+  },
+  {
+    "id": "ga-234",
+    "category": "people",
+    "level": "B1",
+    "question": "How do you say “I am twenty years old”?",
+    "options": [
+      "Is fiche bliain mé.",
+      "Tá mé fiche bliain d’aois.",
+      "Tá mé fiche bliana d’aois."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Age uses tá with d’aois. After fiche, Irish uses the singular form bliain; the special plural bliana goes with trí to deich (e.g. trí bliana, seacht mbliana). The copula is doesn’t express age. Literally: Tá mé fiche bliain d’aois = “am I twenty year of age”.",
+    "phrase": "Tá mé fiche bliain d’aois.",
+    "tags": ["numbers", "age", "counting"]
+  },
+  {
+    "id": "ga-238",
+    "category": "communication",
+    "level": "B1",
+    "question": "Complete: Chuir mé glaoch ___ inné. (I phoned her yesterday.)",
+    "options": ["léi", "chuici", "uirthi"],
+    "correctAnswer": 2,
+    "explanation": "The idiom is cuir glaoch ar (“to phone”), so “on her” is the prepositional pronoun uirthi. Léi means “with her”, and chuici means “towards her”. Literally: Chuir mé glaoch uirthi = “put I a call on-her”.",
+    "phrase": "Chuir mé glaoch uirthi inné.",
+    "tags": ["verb_prepositions", "prepositional_pronouns", "idioms"]
+  },
+  {
+    "id": "ga-239",
+    "category": "people",
+    "level": "B1",
+    "question": "Which means “our friends”?",
+    "options": ["ár gcairde", "ár cairde", "ár gcara"],
+    "correctAnswer": 0,
+    "explanation": "Ár (“our”) causes eclipsis, so cairde becomes gcairde. Ár cairde misses that mutation, and ár gcara is singular (“our friend”). Literally: ár gcairde = “our friends”.",
+    "phrase": "Is iad ár gcairde iad.",
+    "tags": ["eclipsis", "possessives", "people"]
+  },
+  {
+    "id": "ga-243",
+    "category": "people",
+    "level": "B1",
+    "question": "How do you say “I haven’t seen her in a long time”?",
+    "options": [
+      "Ní fhaca mé le fada í.",
+      "Níor fheic mé le fada í.",
+      "Ní fheicim le fada í."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Feic is irregular: after ní the past dependent is fhaca, not fheic. Níor is for regular past verbs, and ní fheicim is present tense. Literally: Ní fhaca mé le fada í = “not saw I for long her”.",
+    "phrase": "Ní fhaca mé le fada í.",
+    "tags": ["irregular_verbs", "past_tense", "negation", "time_expressions"]
+  },
+  {
+    "id": "ga-256",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Complete: ___ teach dá mbeadh airgead agam. (I would buy a house if I had money.)",
+    "options": ["Cheannóidh mé", "Cheannóinn", "Ceannaím"],
+    "correctAnswer": 1,
+    "explanation": "Dá mbeadh introduces an unreal condition, so the main clause takes the conditional: cheannóinn (“I would buy”). Cheannóidh mé is future, and ceannaím is present. Literally: Cheannóinn teach dá mbeadh airgead agam = “would-buy-I a house if would-be money at me”.",
+    "phrase": "Cheannóinn teach dá mbeadh airgead agam.",
+    "tags": ["conditional", "hypotheticals", "verbs"]
+  },
+  {
+    "id": "ga-257",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you say “I used to read every night”?",
+    "options": ["Léifinn gach oíche.", "Léim gach oíche.", "Léinn gach oíche."],
+    "correctAnswer": 2,
+    "explanation": "Léinn is the past habitual of léigh (“I used to read”). Léifinn is conditional (“I would read”) and léim is present (“I read”). Literally: Léinn gach oíche = “used-to-read-I every night”.",
+    "phrase": "Léinn gach oíche.",
+    "tags": ["past_habitual", "verbs", "time"]
+  },
+  {
+    "id": "ga-258",
+    "category": "places",
+    "level": "B1",
+    "question": "How do you say “She used to live in Galway”?",
+    "options": [
+      "Bhíodh sí ina cónaí i nGaillimh.",
+      "Bhíodh sí ina chónaí i nGaillimh.",
+      "Bíonn sí ina cónaí i nGaillimh."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bhíodh is the past habitual of bí. Ina means “in her” here and causes no mutation (ina cónaí); ina chónaí would mean “in his dwelling”. Bíonn is present habitual. Literally: Bhíodh sí ina cónaí i nGaillimh = “used-to-be she in-her dwelling in Galway”.",
+    "phrase": "Bhíodh sí ina cónaí i nGaillimh.",
+    "tags": ["past_habitual", "possessives", "eclipsis"]
+  },
+  {
+    "id": "ga-259",
+    "category": "social",
+    "level": "B1",
+    "question": "How do you say “He would help you if he could”?",
+    "options": [
+      "Chabhródh sé leat dá bhféadfadh sé.",
+      "Cabhróidh sé leat dá bhféadfadh sé.",
+      "Chabhródh sé leat dá féadfadh sé."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Both halves of a hypothetical sentence are conditional: chabhródh (“would help”) and dá bhféadfadh (“if he could”, with eclipsis after dá). Cabhróidh is future, and dá féadfadh misses the eclipsis. Literally: Chabhródh sé leat dá bhféadfadh sé = “would-help he with-you if could he”.",
+    "phrase": "Chabhródh sé leat dá bhféadfadh sé.",
+    "tags": ["conditional", "eclipsis", "hypotheticals"]
+  },
+  {
+    "id": "ga-260",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you say “What would you do if you won the lottery?”",
+    "options": [
+      "Cad a dhéanfá dá mbuafá an crannchur?",
+      "Cad a dhéanfaidh tú dá mbuafá an crannchur?",
+      "Cad a dhéanfá dá buafá an crannchur?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Déanfá is the conditional of déan (“you would do”), and dá eclipses the next verb: dá mbuafá. A future verb (déanfaidh) doesn’t match a hypothetical, and dá buafá forgets the eclipsis. Literally: Cad a dhéanfá dá mbuafá an crannchur = “what that would-do-you if would-win-you the lottery”.",
+    "phrase": "Cad a dhéanfá dá mbuafá an crannchur?",
+    "tags": ["conditional", "eclipsis", "questions"]
+  },
+  {
+    "id": "ga-261",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you say “I used to see them every day”?",
+    "options": [
+      "Chínn iad gach lá.",
+      "D’fheicfinn iad gach lá.",
+      "Chonaic mé iad gach lá."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Feic has a special past habitual, chínn (“I used to see”). D’fheicfinn is conditional (“I would see”), and chonaic mé is the simple past (“I saw”). Literally: Chínn iad gach lá = “used-to-see-I them every day”.",
+    "phrase": "Chínn iad gach lá.",
+    "tags": ["past_habitual", "irregular_verbs"]
+  },
+  {
+    "id": "ga-262",
+    "category": "home",
+    "level": "B1",
+    "question": "Complete: An leabhar ___ ar an mbord. (The book that is on the table.)",
+    "options": ["a bhfuil", "atá", "tá"],
+    "correctAnswer": 1,
+    "explanation": "When the relative word is the subject, tá becomes the direct relative form atá: an leabhar atá ar an mbord. A bhfuil is the indirect relative, and tá alone can’t follow the noun. Literally: an leabhar atá ar an mbord = “the book that-is on the table”.",
+    "phrase": "an leabhar atá ar an mbord",
+    "tags": ["relative_clauses", "direct_relative"]
+  },
+  {
+    "id": "ga-263",
+    "category": "time",
+    "level": "B1",
+    "question": "Which means “at the end of the day”?",
+    "options": [
+      "ag deireadh an lá",
+      "ag deireadh an lae",
+      "ag deireadh na lae"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Deireadh (“end”) is followed by the genitive: lá becomes lae, and the masculine article stays an. Ag deireadh an lá keeps the nominative, and na is the feminine or plural article. Literally: ag deireadh an lae = “at end of-the day”.",
+    "phrase": "ag deireadh an lae",
+    "tags": ["genitive_case", "compound_prepositions", "time_expressions"]
+  },
+  {
+    "id": "ga-264",
+    "category": "places",
+    "level": "B1",
+    "question": "Which means “in front of the school”?",
+    "options": [
+      "os comhair an scoil",
+      "os comhair na scoil",
+      "os comhair na scoile"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Os comhair is followed by the genitive. Scoil is feminine, so the genitive article is na and the noun becomes scoile. The other options keep the wrong article or the plain noun. Literally: os comhair na scoile = “above face of-the school”.",
+    "phrase": "os comhair na scoile",
+    "tags": ["genitive_case", "compound_prepositions", "feminine_nouns"]
+  },
+  {
+    "id": "ga-265",
+    "category": "directions",
+    "level": "B1",
+    "question": "Which means “in the middle of the road”?",
+    "options": ["i lár an bóthar", "i lár na bóthair", "i lár an bhóthair"],
+    "correctAnswer": 2,
+    "explanation": "I lár (“in the middle of”) takes the genitive. Bóthar is masculine, so the article stays an and the noun lenites and changes: an bhóthair. Na is the feminine or plural article. Literally: i lár an bhóthair = “in middle of-the road”.",
+    "phrase": "i lár an bhóthair",
+    "tags": ["genitive_case", "compound_prepositions", "lenition"]
+  },
+  {
+    "id": "ga-266",
+    "category": "places",
+    "level": "B1",
+    "question": "Which means “beside the river”?",
+    "options": ["cois an abhainn", "cois na abhainn", "cois na habhann"],
+    "correctAnswer": 2,
+    "explanation": "Cois (“beside”) is followed by the genitive. Abhainn is feminine, so the genitive is na habhann, with h before the vowel. Literally: cois na habhann = “beside of-the river”.",
+    "phrase": "cois na habhann",
+    "tags": ["genitive_case", "compound_prepositions", "feminine_nouns"]
+  },
+  {
+    "id": "ga-267",
+    "category": "home",
+    "level": "B1",
+    "question": "How do you say “The door was opened”?",
+    "options": [
+      "Osclaíonn an doras.",
+      "Osclaíodh an doras.",
+      "Tá an doras oscailte."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The autonomous past ending states an action with no named doer: osclaíodh (“was opened”). Osclaíonn is present, and tá an doras oscailte describes a state (“is open”). Literally: Osclaíodh an doras = “was-opened the door”.",
+    "phrase": "Osclaíodh an doras.",
+    "tags": ["autonomous", "passive", "past_tense"]
+  },
+  {
+    "id": "ga-268",
+    "category": "communication",
+    "level": "B1",
+    "question": "How do you say “Irish will be spoken here tomorrow”?",
+    "options": [
+      "Labhraítear Gaeilge anseo amárach.",
+      "Labhraíodh Gaeilge anseo amárach.",
+      "Labhrófar Gaeilge anseo amárach."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The autonomous future of labhair is labhrófar (“will be spoken”). Labhraítear is present and labhraíodh is past, so neither fits amárach. Literally: Labhrófar Gaeilge anseo amárach = “will-be-spoken Irish here tomorrow”.",
+    "phrase": "Labhrófar Gaeilge anseo amárach.",
+    "tags": ["autonomous", "passive", "future_tense"]
+  },
+  {
+    "id": "ga-269",
+    "category": "work_study",
+    "level": "B1",
+    "question": "How do you say “The school was closed last year”?",
+    "options": [
+      "Dúnfar an scoil anuraidh.",
+      "Dún an scoil anuraidh.",
+      "Dúnadh an scoil anuraidh."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dúnadh is the autonomous past of dún (“was closed”). Dúnfar is future, and dún is the command form. Literally: Dúnadh an scoil anuraidh = “was-closed the school last year”.",
+    "phrase": "Dúnadh an scoil anuraidh.",
+    "tags": ["autonomous", "passive", "past_tense"]
+  },
+  {
+    "id": "ga-270",
+    "category": "communication",
+    "level": "B1",
+    "question": "How do you say “I was told he is sick”?",
+    "options": [
+      "Dúirt mé liom go bhfuil sé tinn.",
+      "Tá ráite agam go bhfuil sé tinn.",
+      "Dúradh liom go bhfuil sé tinn."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dúradh is the autonomous past of abair, and liom marks who was told: dúradh liom (“it was said to me”). Dúirt mé liom would mean “I said to me”, and tá ráite agam means “I have said”. Literally: Dúradh liom go bhfuil sé tinn = “was-said with-me that is he sick”.",
+    "phrase": "Dúradh liom go bhfuil sé tinn.",
+    "tags": ["autonomous", "passive", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-271",
+    "category": "social",
+    "level": "B1",
+    "question": "Complete: Tá mé ag iarraidh ___ a fheiceáil. (I want to see you.)",
+    "options": ["thú", "tú", "duit"],
+    "correctAnswer": 0,
+    "explanation": "When a pronoun is the object of a verbal noun, it comes before a + the verbal noun and takes the object form thú, not tú. Duit means “to you”. Literally: Tá mé ag iarraidh thú a fheiceáil = “am I at wanting you to see”.",
+    "phrase": "Tá mé ag iarraidh thú a fheiceáil.",
+    "tags": ["verbal_noun", "object_pronouns", "lenition"]
+  },
+  {
+    "id": "ga-272",
+    "category": "plans",
+    "level": "B1",
+    "question": "How do you say “We are about to sell the house”?",
+    "options": [
+      "Táimid chun díol an teach.",
+      "Táimid chun a díol an teach.",
+      "Táimid chun an teach a dhíol."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chun + verbal noun expresses an intention or something about to happen, and the object comes before a + the lenited verbal noun: an teach a dhíol. Putting the object after the verbal noun is English word order. Literally: Táimid chun an teach a dhíol = “are-we to the house to sell”.",
+    "phrase": "Táimid chun an teach a dhíol.",
+    "tags": ["verbal_noun", "lenition", "plans"]
+  },
+  {
+    "id": "ga-273",
+    "category": "communication",
+    "level": "B1",
+    "question": "How do you ask “Did you see him?”",
+    "options": ["An chonaic tú é?", "Ar fheic tú é?", "An bhfaca tú é?"],
+    "correctAnswer": 2,
+    "explanation": "Feic is irregular, and its past uses the dependent form faca after question words: an bhfaca...? (with eclipsis). Chonaic is the independent form (Chonaic mé é), and ar fheic uses the regular pattern. Literally: An bhfaca tú é? = “saw you him?”.",
+    "phrase": "An bhfaca tú é?",
+    "tags": ["irregular_verbs", "past_tense", "questions", "eclipsis"]
+  },
+  {
+    "id": "ga-274",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you ask “Did you do it?”",
+    "options": ["Ar rinne tú é?", "An rinne tú é?", "An ndearna tú é?"],
+    "correctAnswer": 2,
+    "explanation": "Déan is irregular: the past is rinne in statements, but after question words and ní the dependent form ndearna / dhearna is used: an ndearna tú é? Rinne tú é is the statement form. Literally: An ndearna tú é? = “did-do you it?”.",
+    "phrase": "An ndearna tú é?",
+    "tags": ["irregular_verbs", "past_tense", "questions", "eclipsis"]
+  },
+  {
+    "id": "ga-275",
+    "category": "plans",
+    "level": "B1",
+    "question": "How do you ask “Will you come?”",
+    "options": ["An dtiocfaidh tú?", "An tiocfaidh tú?", "An dtiocfá?"],
+    "correctAnswer": 0,
+    "explanation": "The future of tar is tiocfaidh, and questions use the eclipsed form: an dtiocfaidh tú? An tiocfaidh forgets the eclipsis, and an dtiocfá is conditional (“would you come?”). Literally: An dtiocfaidh tú? = “will-come you?”.",
+    "phrase": "An dtiocfaidh tú?",
+    "tags": ["irregular_verbs", "future_tense", "questions", "eclipsis"]
+  },
+  {
+    "id": "ga-276",
+    "category": "plans",
+    "level": "B1",
+    "question": "How do you ask “Will he get it?”",
+    "options": ["An faighidh sé é?", "An bhfaighidh sé é?", "An bhfuair sé é?"],
+    "correctAnswer": 1,
+    "explanation": "The future of faigh is faighidh, and after an it is eclipsed: an bhfaighidh. Faighidh without eclipsis is wrong, and bhfuair is past (“did he get?”). Literally: An bhfaighidh sé é? = “will-get he it?”.",
+    "phrase": "An bhfaighidh sé é?",
+    "tags": ["irregular_verbs", "future_tense", "questions", "eclipsis"]
+  },
+  {
+    "id": "ga-277",
+    "category": "shopping",
+    "level": "B1",
+    "question": "How do you say “I didn’t get it”?",
+    "options": ["Ní bhfuair mé é.", "Níor fhaigh mé é.", "Ní fuair mé é."],
+    "correctAnswer": 0,
+    "explanation": "The past tense of faigh is fuair, and after ní it takes eclipsis: ní bhfuair. Níor fhaigh invents a regular past that doesn’t exist, and ní fuair misses the eclipsis. Literally: Ní bhfuair mé é = “not got I it”.",
+    "phrase": "Ní bhfuair mé é.",
+    "tags": ["irregular_verbs", "past_tense", "negation", "eclipsis"]
+  },
+  {
+    "id": "ga-278",
+    "category": "people",
+    "level": "B1",
+    "question": "How do you say “She is as tall as me”?",
+    "options": [
+      "Tá sí chomh ard liom.",
+      "Tá sí chomh hard ná mé.",
+      "Tá sí chomh hard liom."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chomh (“as”) puts h before a vowel (chomh hard), and “as … as” is completed with le: liom (“with me”). Ná means “than” and belongs with níos. Literally: Tá sí chomh hard liom = “is she as tall with-me”.",
+    "phrase": "Tá sí chomh hard liom.",
+    "tags": ["comparison", "adjectives", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-279",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Which means “the worst day”?",
+    "options": ["an lá níos measa", "an lá is measa", "an lá is dona"],
+    "correctAnswer": 1,
+    "explanation": "The superlative uses is plus the comparative form, and dona (“bad”) has the irregular comparative measa: an lá is measa. Níos measa means “worse”, and is dona isn’t a comparative form. Literally: an lá is measa = “the day that-is worst”.",
+    "phrase": "an lá is measa",
+    "tags": ["superlative", "comparison", "adjectives"]
+  },
+  {
+    "id": "ga-280",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you say “I have been learning Irish for three years”?",
+    "options": [
+      "Bhí mé ag foghlaim Gaeilge le trí bliana.",
+      "Tá mé ag foghlaim Gaeilge ó trí bliana.",
+      "Tá mé ag foghlaim Gaeilge le trí bliana."
+    ],
+    "correctAnswer": 2,
+    "explanation": "For an action that continues up to now, Irish uses the present tense with le: Tá mé ... le trí bliana. Bhí would describe a finished period, and ó means “since”. After trí the special plural bliana is used. Literally: Tá mé ag foghlaim Gaeilge le trí bliana = “am I at learning Irish with three years”.",
+    "phrase": "Tá mé ag foghlaim Gaeilge le trí bliana.",
+    "tags": ["time_expressions", "present_tense", "numbers"]
+  },
+  {
+    "id": "ga-281",
+    "category": "work_study",
+    "level": "B1",
+    "question": "How do you say “I have just finished the work”?",
+    "options": [
+      "Tá mé tar éis críochnú an obair.",
+      "Tá mé tar éis an obair a chríochnú.",
+      "Tá mé tar éis ag críochnú an obair."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tá mé tar éis + verbal noun expresses “have just done”, and the object goes before a + the verbal noun: an obair a chríochnú. Putting the object after the verbal noun follows English order, and ag can’t follow tar éis. Literally: Tá mé tar éis an obair a chríochnú = “am I after the work to finish”.",
+    "phrase": "Tá mé tar éis an obair a chríochnú.",
+    "tags": ["perfect_aspect", "verbal_noun", "lenition"]
+  },
+  {
+    "id": "ga-282",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "How do you say “I forgot my keys”?",
+    "options": [
+      "Rinne mé dearmad mo chuid eochracha.",
+      "Rinne mé dearmad le mo chuid eochracha.",
+      "Rinne mé dearmad ar mo chuid eochracha."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The idiom is dearmad a dhéanamh ar (“to forget”), so the thing forgotten follows ar. Without a preposition, or with le, the idiom breaks. Literally: Rinne mé dearmad ar mo chuid eochracha = “made I forgetfulness on my share of keys”.",
+    "phrase": "Rinne mé dearmad ar mo chuid eochracha.",
+    "tags": ["verb_prepositions", "idioms", "past_tense"]
+  },
+  {
+    "id": "ga-283",
+    "category": "social",
+    "level": "B1",
+    "question": "How do you say “I am looking forward to it”?",
+    "options": [
+      "Tá mé ag tnúth air.",
+      "Tá mé ag tnúth leis.",
+      "Tá mé ag tnúth ann."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ag tnúth le means “looking forward to”, so “it” is leis (le + é). Air means “on it” and ann means “in it”, neither of which this idiom uses. Literally: Tá mé ag tnúth leis = “am I at longing with-it”.",
+    "phrase": "Tá mé ag tnúth leis.",
+    "tags": ["verb_prepositions", "idioms", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-284",
+    "category": "social",
+    "level": "B1",
+    "question": "How do you say “I am interested in music”?",
+    "options": [
+      "Tá suim orm sa cheol.",
+      "Tá suim agam sa cheol.",
+      "Tá suim liom sa cheol."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Interest is something you have: tá suim agam i (“I have an interest in”). I + an becomes sa, which lenites: sa cheol. Suim orm and suim liom use the wrong pronoun. Literally: Tá suim agam sa cheol = “is interest at-me in-the music”.",
+    "phrase": "Tá suim agam sa cheol.",
+    "tags": ["prepositional_pronouns", "idioms", "lenition"]
+  },
+  {
+    "id": "ga-285",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "Which means “It depends on the weather”?",
+    "options": [
+      "Braitheann sé leis an aimsir.",
+      "Braitheann sé ar an aimsir.",
+      "Braitheann sé faoin aimsir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Brath ar (“to depend on”) takes ar: braitheann sé ar an aimsir. Le (“with”) and faoi (“under, about”) aren’t used with this verb. Literally: Braitheann sé ar an aimsir = “depends it on the weather”.",
+    "phrase": "Braitheann sé ar an aimsir.",
+    "tags": ["verb_prepositions", "idioms", "weather"]
+  },
+  {
+    "id": "ga-286",
+    "category": "social",
+    "level": "B1",
+    "question": "Which means “I would rather stay”?",
+    "options": [
+      "B’fhearr liom fanacht.",
+      "Is fearr liom fanacht.",
+      "Ba fearr liom fanacht."
+    ],
+    "correctAnswer": 0,
+    "explanation": "B’fhearr liom expresses “I would prefer” (conditional copula ba + fearr, contracted to b’fhearr). Is fearr liom means “I prefer” in general, and ba fearr leaves out the contraction. Literally: B’fhearr liom fanacht = “would-be better with-me staying”.",
+    "phrase": "B’fhearr liom fanacht.",
+    "tags": ["copula", "conditional", "preferences"]
+  },
+  {
+    "id": "ga-287",
+    "category": "travel",
+    "level": "B1",
+    "question": "How do you ask “Where did you go?”",
+    "options": ["Cá chuaigh tú?", "Cá ndeachaigh tú?", "Cá dtéann tú?"],
+    "correctAnswer": 1,
+    "explanation": "After cá (“where”), téigh uses its dependent past form ndeachaigh (with eclipsis), not the independent chuaigh. Cá dtéann tú? is present tense (“where do you go?”). Literally: Cá ndeachaigh tú? = “where went you?”.",
+    "phrase": "Cá ndeachaigh tú?",
+    "tags": ["irregular_verbs", "past_tense", "questions", "eclipsis"]
+  },
+  {
+    "id": "ga-288",
+    "category": "people",
+    "level": "B1",
+    "question": "Which means “the girl’s book”?",
+    "options": ["leabhar an chailín", "leabhar an cailín", "leabhar na cailín"],
+    "correctAnswer": 0,
+    "explanation": "A masculine noun in the genitive singular keeps the article an but lenites: an chailín. Leabhar an cailín forgets the lenition, and na is the feminine article. Literally: leabhar an chailín = “book of-the girl”.",
+    "phrase": "leabhar an chailín",
+    "tags": ["genitive_case", "lenition", "nouns"]
+  },
+  {
+    "id": "ga-289",
+    "category": "daily_life",
+    "level": "B1",
+    "question": "What does “Is cuma liom” mean?",
+    "options": ["I don’t understand.", "I don’t mind.", "I don’t know."],
+    "correctAnswer": 1,
+    "explanation": "Is cuma liom means “I don’t mind” or “I don’t care”, literally “it’s the same with me”. Níl a fhios agam is “I don’t know”, and ní thuigim is “I don’t understand”. Literally: Is cuma liom = “is same with-me”.",
+    "phrase": "Is cuma liom.",
+    "tags": ["idioms", "copula", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-290",
+    "category": "communication",
+    "level": "B1",
+    "question": "How do you say “You are right”?",
+    "options": ["Tá an ceart agat.", "Tá ceart ort.", "Is ceart tú."],
+    "correctAnswer": 0,
+    "explanation": "Being right is something you “have”: tá an ceart agat. The other options mix up the preposition or use the copula incorrectly. Literally: Tá an ceart agat = “is the right at-you”.",
+    "phrase": "Tá an ceart agat.",
+    "tags": ["idioms", "possession", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-291",
+    "category": "social",
+    "level": "B1",
+    "question": "How do you say “Which do you prefer, tea or coffee?”",
+    "options": [
+      "Cé is fearr leat, tae nó caife?",
+      "Cé acu is fearr leat, tae nó caife?",
+      "Cén fáth is fearr leat, tae nó caife?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cé acu...? means “which of them?” and is used to choose between options. Cé alone means “who”, and cén fáth means “why”. Literally: Cé acu is fearr leat = “which of-them is better with-you”.",
+    "phrase": "Cé acu is fearr leat, tae nó caife?",
+    "tags": ["questions", "preferences", "comparison"]
+  },
+  {
+    "id": "ga-207",
+    "category": "work_study",
+    "level": "B2",
+    "question": "How do you say “I am doing it” (it = an tionscadal, the project)?",
+    "options": ["Tá mé ag déanamh é.", "Tá mé á dhéanamh.", "Tá mé á déanamh."],
+    "correctAnswer": 1,
+    "explanation": "When the object of a verbal noun is a pronoun, Irish puts it before the verbal noun using á. Tionscadal is masculine, so á lenites: á dhéanamh. Á déanamh would refer to a feminine noun, and ag déanamh é is an anglicism. Literally: Tá mé á dhéanamh = “am I at-its doing”.",
+    "phrase": "Tá mé á dhéanamh.",
+    "tags": ["verbal_noun", "object_pronouns", "lenition"]
+  },
+  {
+    "id": "ga-220",
+    "category": "time",
+    "level": "B2",
+    "question": "Which means “during the night”?",
+    "options": ["i rith na hoíche", "i rith an oíche", "i rith na oíche"],
+    "correctAnswer": 0,
+    "explanation": "I rith is followed by the genitive case. Oíche is feminine, so the genitive article is na, which adds h before a vowel: na hoíche. An oíche is the plain (nominative) form. Literally: i rith na hoíche = “in course of-the night”.",
+    "phrase": "i rith na hoíche",
+    "tags": ["genitive_case", "feminine_nouns", "time", "compound_prepositions"]
+  },
+  {
+    "id": "ga-224",
+    "category": "shopping",
+    "level": "B2",
+    "question": "In standard Irish, how do you say “I am buying a new car”?",
+    "options": [
+      "Tá mé ag ceannach cairr nua.",
+      "Tá mé ag ceannach carr nua.",
+      "Tá mé ag ceannach an carr nua."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A noun that is the object of a verbal noun (ag ceannach) goes into the genitive case in the Caighdeán, so carr becomes cairr. Carr nua is often heard in speech, and an carr nua means “the new car” and would need the genitive too (an chairr nua). Literally: Tá mé ag ceannach cairr nua = “am I at buying of a new car”.",
+    "phrase": "Tá mé ag ceannach cairr nua.",
+    "tags": ["genitive_case", "verbal_nouns", "present_continuous"]
+  },
+  {
+    "id": "ga-229",
+    "category": "social",
+    "level": "B2",
+    "question": "How do you say “It would be better for us to wait”?",
+    "options": [
+      "Ba fearr dúinn fanacht.",
+      "B’fhearr dúinn fanacht.",
+      "B’fhearr againn fanacht."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The conditional copula ba lenites the next word and becomes b’ before a vowel or fh: ba + fearr → b’fhearr. “For us” here is dúinn (do + sinn), not againn. Literally: B’fhearr dúinn fanacht = “would-be better for-us waiting”.",
+    "phrase": "B’fhearr dúinn fanacht.",
+    "tags": ["copula", "conditional", "comparative", "lenition"]
+  },
+  {
+    "id": "ga-235",
+    "category": "work_study",
+    "level": "B2",
+    "question": "How do you say “I have done the work”?",
+    "options": [
+      "Tá mé déanta an obair.",
+      "Tá an obair déanta agam.",
+      "Tá an obair ag déanamh agam."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Irish expresses a completed result with tá + the verbal adjective (déanta) + ag. Tá mé déanta would mean “I am done/made”, and ag déanamh means the work is still in progress. Literally: Tá an obair déanta agam = “is the work done at me”.",
+    "phrase": "Tá an obair déanta agam.",
+    "tags": ["verbal_adjective", "perfect_aspect", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-240",
+    "category": "communication",
+    "level": "B2",
+    "question": "How do you say “Irish is spoken here”?",
+    "options": [
+      "Labhraíonn Gaeilge anseo.",
+      "Labhraítear Gaeilge anseo.",
+      "Tá labhairt Gaeilge anseo."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The autonomous present labhraítear means “is spoken” / “one speaks”. Labhraíonn needs a personal subject, and tá labhairt Gaeilge is not a valid passive. Literally: Labhraítear Gaeilge anseo = “is spoken Irish here”.",
+    "phrase": "Labhraítear Gaeilge anseo.",
+    "tags": ["autonomous", "passive", "present_tense"]
+  },
+  {
+    "id": "ga-244",
+    "category": "communication",
+    "level": "B2",
+    "question": "Which means “before I leave”?",
+    "options": ["sula n-imím", "sula imím", "roimh mé a imeacht"],
+    "correctAnswer": 0,
+    "explanation": "Sula (“before”) takes the dependent form with an n-prefix before a vowel: sula n-imím. Sula imím misses that prefix, and roimh mé a imeacht is not a valid clause. Literally: sula n-imím = “before I leave”.",
+    "phrase": "Glaoigh orm sula n-imím.",
+    "tags": ["subordinate_clauses", "eclipsis", "present_habitual"]
+  },
+  {
+    "id": "ga-246",
+    "category": "people",
+    "level": "B2",
+    "question": "Which means “the woman who buys the bread”?",
+    "options": [
+      "an bhean a gceannaíonn an t-arán",
+      "an bhean a cheannaíonn an t-arán",
+      "an bhean a ceannaíonn an t-arán"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When the relative word is the subject, Irish uses the direct relative a, which lenites the verb: a cheannaíonn. A gceannaíonn (eclipsis) is the indirect relative, and a ceannaíonn forgets the lenition. Literally: an bhean a cheannaíonn an t-arán = “the woman that buys the bread”.",
+    "phrase": "an bhean a cheannaíonn an t-arán",
+    "tags": ["relative_clauses", "direct_relative", "lenition"]
+  },
+  {
+    "id": "ga-247",
+    "category": "people",
+    "level": "B2",
+    "question": "Which means “the woman whose son is ill”?",
+    "options": [
+      "an bhean a bhfuil a mac tinn",
+      "an bhean atá a mac tinn",
+      "an bhean a bhfuil a mhac tinn"
+    ],
+    "correctAnswer": 0,
+    "explanation": "“Whose” is expressed with the indirect relative (a + eclipsis: a bhfuil) followed by a possessive. A (her) causes no mutation: a mac. A mhac would mean “his son”, and atá is the direct relative, which can’t introduce a possessive. Literally: an bhean a bhfuil a mac tinn = “the woman that is her son ill”.",
+    "phrase": "an bhean a bhfuil a mac tinn",
+    "tags": ["relative_clauses", "indirect_relative", "possessives"]
+  },
+  {
+    "id": "ga-248",
+    "category": "people",
+    "level": "B2",
+    "question": "Which means “the man who is not happy”?",
+    "options": [
+      "an fear nach tá sásta",
+      "an fear ná bhfuil sásta",
+      "an fear nach bhfuil sásta"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The negative relative of bí is nach bhfuil (nach + eclipsis). Nach tá keeps the positive form of the verb, and ná is a different word (“than, nor”). Literally: an fear nach bhfuil sásta = “the man that-not is happy”.",
+    "phrase": "an fear nach bhfuil sásta",
+    "tags": ["relative_clauses", "negation", "eclipsis"]
+  },
+  {
+    "id": "ga-249",
+    "category": "daily_life",
+    "level": "B2",
+    "question": "Which means “the day I was there”?",
+    "options": [
+      "an lá a bhí mé ann",
+      "an lá a raibh mé ann",
+      "an lá atá mé ann"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Here the relative word (the day) is not the subject or object, so the indirect relative is needed, and the past of bí after it is raibh. A bhí is the direct form, used when the relative word is the subject (an fear a bhí ann). Literally: an lá a raibh mé ann = “the day that was I there”.",
+    "phrase": "an lá a raibh mé ann",
+    "tags": ["relative_clauses", "indirect_relative", "past_tense"]
+  },
+  {
+    "id": "ga-250",
+    "category": "daily_life",
+    "level": "B2",
+    "question": "Which means “the book that I read”?",
+    "options": [
+      "an leabhar a léigh mé é",
+      "an leabhar léigh mé",
+      "an leabhar a léigh mé"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A direct relative needs a, and no pronoun is repeated afterwards: the book is already the object. Adding é is an English-influenced mistake, and dropping a leaves the clause unmarked. Literally: an leabhar a léigh mé = “the book that read I”.",
+    "phrase": "an leabhar a léigh mé",
+    "tags": ["relative_clauses", "direct_relative", "past_tense"]
+  },
+  {
+    "id": "ga-251",
+    "category": "people",
+    "level": "B2",
+    "question": "Which means “the girl I give the book to”?",
+    "options": [
+      "an cailín a tugaim an leabhar di",
+      "an cailín a dtugaim an leabhar",
+      "an cailín a dtugaim an leabhar di"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the relative word is governed by a preposition, Irish uses the indirect relative (a + eclipsis: a dtugaim) and repeats the prepositional pronoun (di, “to her”). Without eclipsis or without di the clause is incomplete. Literally: an cailín a dtugaim an leabhar di = “the girl that I-give the book to-her”.",
+    "phrase": "an cailín a dtugaim an leabhar di",
+    "tags": [
+      "relative_clauses",
+      "indirect_relative",
+      "prepositional_pronouns",
+      "eclipsis"
+    ]
+  },
+  {
+    "id": "ga-252",
+    "category": "work_study",
+    "level": "B2",
+    "question": "Which means “the people who are always late”?",
+    "options": [
+      "na daoine a mbíonn déanach i gcónaí",
+      "na daoine atá bíonn déanach i gcónaí",
+      "na daoine a bhíonn déanach i gcónaí"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The habitual form bíonn takes the direct relative a, which lenites it: a bhíonn. A mbíonn (eclipsis) is the indirect relative, used when the relative word is governed by a preposition. Literally: na daoine a bhíonn déanach i gcónaí = “the people that are-habitually late always”.",
+    "phrase": "na daoine a bhíonn déanach i gcónaí",
+    "tags": ["relative_clauses", "direct_relative", "habitual"]
+  },
+  {
+    "id": "ga-253",
+    "category": "people",
+    "level": "B2",
+    "question": "Which means “the man who didn’t come”?",
+    "options": [
+      "an fear nár tháinig",
+      "an fear nach tháinig",
+      "an fear nár dtáinig"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the past tense the negative relative is nár + lenition: nár tháinig. Nach (+ eclipsis) is used for present and future, and nár dtáinig wrongly eclipses. Literally: an fear nár tháinig = “the man that-not came”.",
+    "phrase": "an fear nár tháinig",
+    "tags": ["relative_clauses", "negation", "past_tense", "irregular_verbs"]
+  },
+  {
+    "id": "ga-254",
+    "category": "daily_life",
+    "level": "B2",
+    "question": "Which means “everything that I said”?",
+    "options": [
+      "gach rud ar dúirt mé",
+      "gach rud a dúirt mé",
+      "gach rud a ndúirt mé"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The direct relative of an irregular past form is a + the verb: a dúirt. A ndúirt is the dependent form used after ní or an, and ar dúirt confuses this with the past-tense indirect relative. Literally: gach rud a dúirt mé = “everything that said I”.",
+    "phrase": "gach rud a dúirt mé",
+    "tags": ["relative_clauses", "direct_relative", "irregular_verbs"]
+  },
+  {
+    "id": "ga-255",
+    "category": "places",
+    "level": "B2",
+    "question": "Which means “the people who live here”?",
+    "options": [
+      "na daoine atá ina chónaí anseo",
+      "na daoine atá ina gcónaí anseo",
+      "na daoine a bhfuil ina gcónaí anseo"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The relative word is the subject, so the direct relative atá is used. Ina (“in their”) agrees with the plural and eclipses: ina gcónaí. Ina chónaí means “in his dwelling”, and a bhfuil is the indirect relative. Literally: na daoine atá ina gcónaí anseo = “the people that-are in their dwelling here”.",
+    "phrase": "na daoine atá ina gcónaí anseo",
+    "tags": ["relative_clauses", "direct_relative", "possessives", "eclipsis"]
+  },
+  {
+    "id": "ga-292",
+    "category": "shopping",
+    "level": "B2",
+    "question": "Which means “the price of the tickets”?",
+    "options": ["praghas na dticéad", "praghas na ticéad", "praghas an ticéid"],
+    "correctAnswer": 0,
+    "explanation": "In the genitive plural with the article, Irish uses na followed by eclipsis: na dticéad. Without eclipsis the phrase is incomplete, and an ticéid is a singular form (“of the ticket”). Literally: praghas na dticéad = “price of-the tickets”.",
+    "phrase": "praghas na dticéad",
+    "tags": ["genitive_case", "eclipsis", "plurals"]
+  },
+  {
+    "id": "ga-293",
+    "category": "places",
+    "level": "B2",
+    "question": "Which means “the name of the village”?",
+    "options": [
+      "ainm an tsráidbhaile",
+      "ainm an sráidbhaile",
+      "ainm na sráidbhaile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sráidbhaile is masculine, and in the genitive after the article an a masculine noun starting with s takes a t- prefix: an tsráidbhaile. Ainm an sráidbhaile misses the t-, and na is the wrong article. Literally: ainm an tsráidbhaile = “name of-the village”.",
+    "phrase": "ainm an tsráidbhaile",
+    "tags": ["genitive_case", "mutations", "nouns"]
+  },
+  {
+    "id": "ga-294",
+    "category": "communication",
+    "level": "B2",
+    "question": "How do you say “It is said that he is ill”?",
+    "options": [
+      "Deirtear go bhfuil sé tinn.",
+      "Deir go bhfuil sé tinn.",
+      "Deirim go bhfuil sé tinn."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Deirtear is the autonomous present of abair (“it is said”). Deir needs a named subject, and deirim means “I say”. Literally: Deirtear go bhfuil sé tinn = “is-said that is he ill”.",
+    "phrase": "Deirtear go bhfuil sé tinn.",
+    "tags": ["autonomous", "passive", "present_tense"]
+  },
+  {
+    "id": "ga-295",
+    "category": "daily_life",
+    "level": "B2",
+    "question": "How do you say “One must stay here”?",
+    "options": [
+      "Caithfidh fanacht anseo.",
+      "Caithfidh sé fanacht anseo.",
+      "Caithfear fanacht anseo."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The autonomous caithfear expresses an impersonal “one must”. Caithfidh needs a named subject, so it can’t stand alone, and caithfidh sé would mean “he must”. Literally: Caithfear fanacht anseo = “must-be staying here”.",
+    "phrase": "Caithfear fanacht anseo.",
+    "tags": ["autonomous", "obligation", "verbal_noun"]
+  },
+  {
+    "id": "ga-296",
+    "category": "politeness",
+    "level": "B2",
+    "question": "What does “Go ndéana Dia trócaire air” express?",
+    "options": [
+      "A prayer for someone who has died",
+      "A wish for a happy birthday",
+      "A greeting when meeting someone"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go ndéana ... uses the subjunctive to express a wish: “may God have mercy on him”. It is said when someone has died. Literally: Go ndéana Dia trócaire air = “that may-do God mercy on-him”.",
+    "phrase": "Go ndéana Dia trócaire air.",
+    "tags": ["subjunctive", "wishes", "set_phrases"]
+  },
+  {
+    "id": "ga-297",
+    "category": "greetings",
+    "level": "B2",
+    "question": "Complete the full traditional greeting: Go ___ Dia duit.",
+    "options": ["mbeannaí", "beannaíonn", "mbeannaigh"],
+    "correctAnswer": 0,
+    "explanation": "Dia duit is a shortened form of Go mbeannaí Dia duit (“may God bless you”). The subjunctive mbeannaí follows go with eclipsis. Beannaíonn is present, and mbeannaigh is the wrong ending. Literally: Go mbeannaí Dia duit = “that may-bless God to-you”.",
+    "phrase": "Go mbeannaí Dia duit.",
+    "tags": ["subjunctive", "greetings", "set_phrases"]
+  },
+  {
+    "id": "ga-298",
+    "category": "politeness",
+    "level": "B2",
+    "question": "What does “Go maire tú an céad” mean?",
+    "options": [
+      "May you have a good day",
+      "May you succeed",
+      "May you live to be a hundred"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Go maire tú is a subjunctive wish (“may you live”), and an céad means “the hundred”. It is a traditional toast or birthday wish. Literally: Go maire tú an céad = “that may-live you the hundred”.",
+    "phrase": "Go maire tú an céad!",
+    "tags": ["subjunctive", "wishes", "set_phrases"]
+  },
+  {
+    "id": "ga-299",
+    "category": "home",
+    "level": "B2",
+    "question": "How do you say “I am putting them on the table”?",
+    "options": [
+      "Tá mé á chur ar an mbord.",
+      "Tá mé á gcur ar an mbord.",
+      "Tá mé á cur ar an mbord."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A plural pronoun object is expressed with á before the verbal noun, and plural á eclipses: á gcur. Á chur (lenition) means “it” (masculine), and á cur (no mutation) means “it” (feminine). Literally: Tá mé á gcur ar an mbord = “am I at-their putting on the table”.",
+    "phrase": "Tá mé á gcur ar an mbord.",
+    "tags": ["verbal_noun", "object_pronouns", "eclipsis"]
+  },
+  {
+    "id": "ga-300",
+    "category": "communication",
+    "level": "B2",
+    "question": "How do you say “It was Seán who broke the window”?",
+    "options": [
+      "Tá Seán a bhris an fhuinneog.",
+      "Is Seán bhris an fhuinneog.",
+      "Is é Seán a bhris an fhuinneog."
+    ],
+    "correctAnswer": 2,
+    "explanation": "To emphasise a person, Irish uses a cleft sentence: is é + noun + a + verb. Tá can’t introduce the clause, and dropping é and a breaks the pattern. Literally: Is é Seán a bhris an fhuinneog = “is him Seán that broke the window”.",
+    "phrase": "Is é Seán a bhris an fhuinneog.",
+    "tags": ["copula", "cleft_sentences", "relative_clauses"]
+  },
+  {
+    "id": "ga-301",
+    "category": "plans",
+    "level": "B2",
+    "question": "How do you say “He was supposed to come yesterday”?",
+    "options": [
+      "Bhí sé tar éis teacht inné.",
+      "Bhí sé teacht inné.",
+      "Bhí sé le teacht inné."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bí + le + verbal noun expresses what was planned or due to happen: bhí sé le teacht. Bhí sé tar éis teacht means “he had just come”, and leaving out le is ungrammatical. Literally: Bhí sé le teacht inné = “was he with coming yesterday”.",
+    "phrase": "Bhí sé le teacht inné.",
+    "tags": ["verbal_noun", "idioms", "past_tense"]
+  },
+  {
+    "id": "ga-302",
+    "category": "plans",
+    "level": "B2",
+    "question": "How do you say “If I had known, I would have come”?",
+    "options": [
+      "Dá mbeadh a fhios agam, thiocfainn.",
+      "Má bhí a fhios agam, thiocfainn.",
+      "Dá mbeadh a fhios agam, tiocfaidh mé."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Irish uses dá + conditional for hypothetical conditions, including “if I had known”, with a conditional main clause: thiocfainn (“I would come / would have come”). Má is for real conditions, and tiocfaidh mé is future. Literally: Dá mbeadh a fhios agam, thiocfainn = “if would-be its knowledge at-me, would-come-I”.",
+    "phrase": "Dá mbeadh a fhios agam, thiocfainn.",
+    "tags": ["conditional", "hypotheticals", "irregular_verbs"]
+  },
+  {
+    "id": "ga-303",
+    "category": "communication",
+    "level": "B2",
+    "question": "Complete: Fág luath ___ mbeidh tú in am. (Leave early so that you will be on time.)",
+    "options": ["cé go", "ionas go", "sula"],
+    "correctAnswer": 1,
+    "explanation": "Ionas go means “so that” and is followed by the eclipsed verb form: ionas go mbeidh. Cé go means “although” and sula means “before”. Literally: Fág luath ionas go mbeidh tú in am = “leave early so that will-be you in time”.",
+    "phrase": "Fág luath ionas go mbeidh tú in am.",
+    "tags": ["subordinate_clauses", "conjunctions", "eclipsis"]
+  },
+  {
+    "id": "ga-304",
+    "category": "communication",
+    "level": "B2",
+    "question": "What does “Is mór an trua é” mean?",
+    "options": [
+      "It’s a great pity.",
+      "It’s a big problem.",
+      "It’s a long road."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Trua means “pity”, and is mór an trua é is a common way to say “it’s a great pity”. Literally: Is mór an trua é = “is great the pity it”.",
+    "phrase": "Is mór an trua é.",
+    "tags": ["idioms", "copula", "expressions"]
+  },
+  {
+    "id": "ga-305",
+    "category": "daily_life",
+    "level": "B2",
+    "question": "What does “Ní mór dom imeacht” mean?",
+    "options": ["I may leave.", "I have left.", "I must leave."],
+    "correctAnswer": 2,
+    "explanation": "Ní mór + do expresses necessity: ní mór dom means “I must”, despite the negative ní. Literally: Ní mór dom imeacht = “not great to-me leaving”.",
+    "phrase": "Ní mór dom imeacht.",
+    "tags": ["obligation", "idioms", "prepositional_pronouns"]
+  },
+  {
+    "id": "ga-306",
+    "category": "social",
+    "level": "B2",
+    "question": "How do you say “He made me laugh”?",
+    "options": [
+      "Rinne sé gáire mé.",
+      "Chuir sé ag gáire mé.",
+      "Bhí sé ag gáire mé."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cuir ag + verbal noun is the causative: chuir sé ag gáire mé (“he put me laughing”). The other options don’t express making someone do something. Literally: Chuir sé ag gáire mé = “put he at laughing me”.",
+    "phrase": "Chuir sé ag gáire mé.",
+    "tags": ["causative", "verbal_noun", "idioms"]
+  },
+  {
+    "id": "ga-307",
+    "category": "plans",
+    "level": "B2",
+    "question": "How do you say “I intend to go to Galway”?",
+    "options": [
+      "Tá intinn orm dul go Gaillimh.",
+      "Tá sé ar intinn liom dul go Gaillimh.",
+      "Tá sé ar intinn agam dul go Gaillimh."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The set phrase is tá sé ar intinn agam (“I intend”): the intention is “on” the mind, and the person takes agam. The other options mix up the prepositions. Literally: Tá sé ar intinn agam dul go Gaillimh = “is it on intention at-me to-go to Galway”.",
+    "phrase": "Tá sé ar intinn agam dul go Gaillimh.",
+    "tags": ["idioms", "prepositional_pronouns", "plans"]
+  },
+  {
+    "id": "ga-308",
+    "category": "communication",
+    "level": "B2",
+    "question": "What does “dar liom” mean?",
+    "options": ["after me", "with me", "in my opinion"],
+    "correctAnswer": 2,
+    "explanation": "Dar liom introduces an opinion: dar liom, tá sé ceart (“in my opinion, it is right”). Literally: dar liom = “seems with-me”.",
+    "phrase": "Dar liom, tá an ceart agat.",
+    "tags": ["idioms", "opinions", "prepositional_pronouns"]
   }
 ]
