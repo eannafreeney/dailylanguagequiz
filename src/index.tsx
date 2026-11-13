@@ -10,7 +10,7 @@ import { Env, sendDailyEmails } from "./lib/email";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
-import type { SchedulerContext, SchedulerController } from "./types";
+import type { LangCode, SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
 import { hvAnswer, hvEntrypoint, hvHome, hvQuestion } from "./routes/hv";
 
@@ -65,7 +65,7 @@ app.post("/hv/:langCode/answer/:questionNumber", hvAnswer);
 app.get("/:slug", (c) => {
   const slug = c.req.param("slug");
   const pathLanguage = languages.find((item) => item.langCode === slug);
-  if (pathLanguage) return c.html(<LanguagePage langCode={pathLanguage.langCode as any} />);
+  if (pathLanguage) return c.html(<LanguagePage langCode={pathLanguage.langCode as LangCode} />);
 
   const hostLang = getHostLang(c);
   if (!hostLang || !isLangCode(hostLang)) return c.notFound();
