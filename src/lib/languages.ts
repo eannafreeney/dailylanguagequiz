@@ -46,10 +46,11 @@ export const HOST_REDIRECTS: Record<string, string> = {
 export const languages = [
   {
     langCode: "ga",
+    htmlLang: "ga",
     name: "Gaeilge",
     englishName: "Irish",
     description:
-      "A free daily Irish quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+      "Take a free daily Irish language quiz with five fresh questions across CEFR levels A1 to B2. Answer each question correctly to move on, and see how many you get right on your first try. No sign-up needed.",
     flag: "🇮🇪",
     siteName: "Daily Irish Quiz",
     siteUrl: "https://dailyirishquiz.com",
@@ -57,6 +58,7 @@ export const languages = [
   },
   {
     langCode: "de",
+    htmlLang: "de",
     name: "Deutsch",
     englishName: "German",
     description:
@@ -68,6 +70,7 @@ export const languages = [
   },
   {
     langCode: "ru",
+    htmlLang: "ru",
     name: "Русский",
     englishName: "Russian",
     description:
@@ -78,6 +81,7 @@ export const languages = [
   },
   {
     langCode: "it",
+    htmlLang: "it",
     name: "Italiano",
     englishName: "Italian",
     description:
@@ -88,6 +92,7 @@ export const languages = [
   },
   {
     langCode: "hu",
+    htmlLang: "hu",
     name: "Magyar",
     englishName: "Hungarian",
     description:
@@ -98,6 +103,7 @@ export const languages = [
   },
   {
     langCode: "fr",
+    htmlLang: "fr",
     name: "Français",
     englishName: "French",
     description:
@@ -108,6 +114,7 @@ export const languages = [
   },
   {
     langCode: "es",
+    htmlLang: "es",
     name: "Español",
     englishName: "Spanish",
     description:
@@ -118,6 +125,7 @@ export const languages = [
   },
   {
     langCode: "gd",
+    htmlLang: "gd",
     name: "Gàidhlig",
     englishName: "Scots Gaelic",
     description:
@@ -128,6 +136,7 @@ export const languages = [
   },
   {
     langCode: "cy",
+    htmlLang: "cy",
     name: "Cymraeg",
     englishName: "Welsh",
     description:
@@ -138,6 +147,7 @@ export const languages = [
   },
   {
     langCode: "cs",
+    htmlLang: "cs",
     name: "Čeština",
     englishName: "Czech",
     description:
@@ -148,6 +158,7 @@ export const languages = [
   },
   {
     langCode: "fa",
+    htmlLang: "fa",
     name: "فارسی",
     englishName: "Farsi",
     description:
@@ -161,6 +172,7 @@ export const languages = [
   },
   {
     langCode: "zh",
+    htmlLang: "zh",
     name: "中文",
     englishName: "Chinese",
     description:

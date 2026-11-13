@@ -5,20 +5,15 @@ import type { LangCode } from "../types";
 type Props = { title: string; kicker: string; langCode: LangCode };
 
 const Footer = ({ title, kicker, langCode }: Props) => {
-  const { links, theme } = languageConfig[langCode];
+  const { links, theme, seo } = languageConfig[langCode];
   const language = languages.find((item) => item.langCode === langCode);
 
-  if (!language) {
-    return null;
-  }
+  if (!language) return null;
 
   const { siteName, description } = language;
   const otherQuizzes = languages.filter(
     (item) => item.langCode !== langCode && item.published,
   );
-
-  const logoHover = `hover:text-${theme.accentText}`;
-  const linkColor = `text-${theme.accentText} hover:text-${theme.accentText}200`;
 
   return (
     <footer class={theme.footerBar}>
@@ -27,7 +22,7 @@ const Footer = ({ title, kicker, langCode }: Props) => {
           <div>
             <a
               href="/"
-              class={`inline-flex items-center gap-2 text-lg font-bold tracking-tight text-white ${logoHover}`}
+              class={`inline-flex items-center gap-2 text-lg font-bold tracking-tight text-white hover:opacity-80`}
             >
               <span
                 class={`flex h-8 w-8 items-center justify-center rounded-lg ${theme.accent} text-sm ${theme.markText}`}
@@ -37,13 +32,23 @@ const Footer = ({ title, kicker, langCode }: Props) => {
               </span>
               {title}
             </a>
-            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">
-              {kicker}
-            </p>
-            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">
-              {description}
-            </p>
+            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">{kicker}</p>
+            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">{description}</p>
           </div>
+          {seo?.pages.length ? (
+            <nav aria-label="About this quiz" class="flex flex-col gap-2">
+              <p class="font-semibold text-white">Learn more</p>
+              {seo.pages.map((page) => (
+                <a
+                  key={page.slug}
+                  href={`/${page.slug}`}
+                  class="font-semibold text-slate-200 transition hover:text-white"
+                >
+                  {page.heading}
+                </a>
+              ))}
+            </nav>
+          ) : null}
           {otherQuizzes.length > 0 && (
             <div class="flex flex-col gap-2">
               <p class="font-semibold text-white">Other daily quizzes</p>
@@ -67,10 +72,9 @@ const Footer = ({ title, kicker, langCode }: Props) => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class={`font-semibold transition ${linkColor}`}
+                  class={`font-semibold transition ${theme.accentText} hover:opacity-80`}
                 >
-                  {link.title}
-                  <span aria-hidden="true"> ↗</span>
+                  {link.title}<span aria-hidden="true"> ↗</span>
                 </a>
               ))}
             </div>

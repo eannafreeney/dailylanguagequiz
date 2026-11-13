@@ -21,7 +21,29 @@ export type LanguageTheme = {
   markText: string;
   footerBar: string;
 };
-export type LanguageConfig = { links: LanguageLink[]; theme: LanguageTheme };
+export type SeoPageSection = { heading: string; paragraphs: string[] };
+export type SeoContentPage = {
+  slug: string;
+  title: string;
+  description: string;
+  heading: string;
+  intro: string;
+  sections: SeoPageSection[];
+  ctaLabel: string;
+};
+export type LanguageSeoConfig = {
+  homeTitle: string;
+  homeDescription: string;
+  homeHeading: string;
+  homeIntro: string;
+  homeSections: SeoPageSection[];
+  pages: SeoContentPage[];
+};
+export type LanguageConfig = {
+  links: LanguageLink[];
+  theme: LanguageTheme;
+  seo?: LanguageSeoConfig;
+};
 
 const irishTheme: LanguageTheme = {
   accent: "bg-emerald-700",
@@ -298,6 +320,62 @@ export const languageConfig: Record<LangCode, LanguageConfig> = {
       },
     ],
     theme: irishTheme,
+    seo: {
+      homeTitle: "Free Daily Irish Language Quiz | Test Your Gaeilge",
+      homeDescription: "Take a free daily Irish language quiz: five fresh questions across CEFR levels A1 to B2. Answer each question correctly to move on and score how many you get right first time. No sign-up needed.",
+      homeHeading: "Test your Irish with a free daily Irish language quiz",
+      homeIntro: "Take five fresh Irish questions every day, with questions drawn from four CEFR levels: A1, A2, B1 and B2. The mix changes daily, so each visit brings a new challenge.",
+      homeSections: [
+        {
+          heading: "Five questions, one at a time",
+          paragraphs: [
+            "Answer each question correctly to unlock the next one. Your result is based on how many questions you answer correctly on your first attempt, out of five. You can take part for free, with no account or registration.",
+          ],
+        },
+        {
+          heading: "Questions from beginner to upper-intermediate",
+          paragraphs: [
+            "The daily challenge includes Irish questions at A1 beginner, A2 elementary, B1 intermediate and B2 upper-intermediate level. Because the five-question mix changes each day, you get to practise different parts of your Irish over time.",
+          ],
+        },
+      ],
+      pages: [
+        {
+          slug: "irish-levels",
+          title: "Irish Language Levels A1 to B2 Explained | Daily Irish Quiz",
+          description: "Learn what A1, A2, B1 and B2 mean for Irish learners, and how the five-question Daily Irish Quiz uses these CEFR levels.",
+          heading: "Irish language levels: what do A1, A2, B1 and B2 mean?",
+          intro: "The Daily Irish Quiz gives you five new Irish questions each day. Questions are drawn from four CEFR levels, from A1 beginner to B2 upper-intermediate, so your daily challenge can include a mixture of easier and more demanding questions.",
+          sections: [
+            {
+              heading: "A1 — Beginner",
+              paragraphs: ["Understand and use familiar everyday expressions, introduce yourself, and answer simple questions when someone speaks slowly and clearly."],
+            },
+            {
+              heading: "A2 — Elementary",
+              paragraphs: ["Understand common phrases about everyday topics such as family, work, shopping and your immediate surroundings, and communicate in simple routine situations."],
+            },
+            {
+              heading: "B1 — Intermediate",
+              paragraphs: ["Understand the main points of clear speech and writing on familiar topics, manage many situations while travelling, and describe experiences or plans."],
+            },
+            {
+              heading: "B2 — Upper-intermediate",
+              paragraphs: ["Understand the main ideas of more complex material, communicate with greater fluency, and explain opinions on a range of topics."],
+            },
+            {
+              heading: "How the Daily Irish Quiz works",
+              paragraphs: [
+                "Every day you get five fresh questions. The questions can come from any of the four levels, and the combination changes from day to day. You answer one question at a time and must get it right before you can move on to the next.",
+                "Your score is based on how many of the five questions you answer correctly on your first attempt. It is a daily practice score, not an official CEFR assessment or a formal measure of your overall Irish proficiency.",
+                "There is no account to create and no subscription. Just take the daily challenge and come back tomorrow for five more questions.",
+              ],
+            },
+          ],
+          ctaLabel: "Take today's Irish quiz",
+        },
+      ],
+    },
   },
   de: {
     links: [
