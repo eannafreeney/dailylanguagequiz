@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import LanguagePage from "./routes/language";
+import IrishLevelsPage from "./routes/irish-levels";
 import { subscribeHandler } from "./routes/subscribe";
 import { confirmHandler } from "./routes/confirm";
 import { unsubscribeHandler } from "./routes/unsubscribe";
@@ -32,6 +33,34 @@ app.get("/", (c) => {
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
 
+app.get("/irish-levels", (c) => {
+  if (getHostLang(c) !== "ga") return c.notFound();
+  return c.html(<IrishLevelsPage />);
+});
+
+app.get("/sitemap.xml", (c) => {
+  const hostLang = getHostLang(c);
+  const language = languages.find((item) => item.langCode === hostLang);
+  const baseUrl = language?.siteUrl;
+  if (!baseUrl) return c.notFound();
+  const paths = hostLang === "ga" ? ["/", "/irish-levels"] : ["/"];
+  const urls = paths.map((path) => `<url><loc>${baseUrl}${path}</loc></url>`).join("");
+  return c.body(
+    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>` ,
+    200,
+    { "Content-Type": "application/xml; charset=UTF-8" },
+  );
+});
+
+app.get("/robots.txt", (c) => {
+  const language = languages.find((item) => item.langCode === getHostLang(c));
+  if (!language?.siteUrl) return c.notFound();
+  return c.text(
+    `User-agent: *\nAllow: /\nDisallow: /subscribe\nDisallow: /confirm\nDisallow: /unsubscribe\nDisallow: /analytics\nDisallow: /*/question/\nSitemap: ${language.siteUrl}/sitemap.xml\n`,
+    200,
+    { "Content-Type": "text/plain; charset=UTF-8" },
+  );
+});
 app.get("/hv", hvEntrypoint);
 app.get("/hv/home", hvHome);
 app.get("/hv/:langCode/question/:questionNumber", hvQuestion);
