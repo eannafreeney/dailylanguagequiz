@@ -12,7 +12,6 @@ const INK = "#1D302B";
 const MUTED = "#65756D";
 
 type FontSubset = { url: string; ranges: Array<[number, number]> };
-let fontSubsetsPromise: Promise<FontSubset[]> | undefined;
 const fontBufferCache = new Map<string, Promise<Uint8Array>>();
 
 function parseFontRanges(value: string): Array<[number, number]> {
@@ -23,8 +22,9 @@ function parseFontRanges(value: string): Array<[number, number]> {
   });
 }
 
-async function getFontSubsets(): Promise<FontSubset[]> {
-  fontSubsetsPromise ??= fetch("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap")
+async function getFontSubsets(text: string): Promise<FontSubset[]> {
+  const stylesheetUrl = `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap&text=${encodeURIComponent(text)}`;
+  return fetch(stylesheetUrl)
     .then(async (response) => {
       if (!response.ok) throw new Error("Could not load social image font stylesheet");
       const css = await response.text();
@@ -33,17 +33,16 @@ async function getFontSubsets(): Promise<FontSubset[]> {
         if (!/font-family:\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
         const url = /src:\s*url\(([^)]+)\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
         const range = /unicode-range:\s*([^;]+)/i.exec(block)?.[1];
-        if (!url || !range) return [];
-        return [{ url, ranges: parseFontRanges(range) }];
+        if (!url) return [];
+        return [{ url, ranges: range ? parseFontRanges(range) : [[0, 0x10ffff] as [number, number]] }];
       });
     });
-  return fontSubsetsPromise;
 }
 
 async function getFontBuffers(svg: string): Promise<Uint8Array[]> {
   const visibleText = [...svg.matchAll(/>([^<>]+)</g)].map((match) => match[1]).join("");
   const codePoints = [...visibleText].map((character) => character.codePointAt(0) ?? 0);
-  const subsets = await getFontSubsets();
+  const subsets = await getFontSubsets([...new Set([...visibleText])].join(""));
   const urls = [...new Set(subsets
     .filter((subset) => codePoints.some((point) => subset.ranges.some(([min, max]) => point >= min && point <= max)))
     .map((subset) => subset.url))];
