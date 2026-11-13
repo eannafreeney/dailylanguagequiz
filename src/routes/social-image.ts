@@ -115,7 +115,7 @@ function cover(language: (typeof languages)[number]) {
     <circle cx="865" cy="350" r="118" fill="${LIME}"/>
     <circle cx="865" cy="350" r="78" fill="${GREEN}"/>
     <path d="M820 350l31 31 61-70" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-    ${text(language.englishName, 100, 535, 18, 94, GREEN, 800)}
+    ${text(language.name, 100, 535, 18, 94, GREEN, 800)}
     <text x="104" y="720" fill="${INK}" font-family="Noto Sans SC" font-size="48" font-weight="700">Today's five-question challenge</text>
     <text x="104" y="800" fill="${MUTED}" font-family="Noto Sans SC" font-size="34">Swipe through, choose your answers,</text>
     <text x="104" y="850" fill="${MUTED}" font-family="Noto Sans SC" font-size="34">then take the full quiz online.</text>
