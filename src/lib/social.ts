@@ -33,7 +33,7 @@ function parseChannelMap(value?: string): BufferChannelMap {
     throw new Error("SOCIAL_BUFFER_CHANNELS must be a JSON object keyed by language code");
   const channels: BufferChannelMap = {};
   for (const [code, channelId] of Object.entries(parsed)) {
-    if (isLangCode(code) && typeof channelId === "string" && channelId.trim()) channels[code] = channelId.trim();
+    if (isLangCode(code) && languages.some((item) => item.langCode === code && item.published) && typeof channelId === "string" && channelId.trim()) channels[code] = channelId.trim();
   }
   return channels;
 }
