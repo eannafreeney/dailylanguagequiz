@@ -34,15 +34,6 @@ app.get("/", (c) => {
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
 
-app.get("/:slug", (c) => {
-  const langCode = getHostLang(c);
-  if (!langCode || !isLangCode(langCode)) return c.notFound();
-  const page = languageConfig[langCode].seo?.pages.find(
-    (item) => item.slug === c.req.param("slug"),
-  );
-  return page ? c.html(<SeoPage langCode={langCode} page={page} />) : c.notFound();
-});
-
 app.get("/sitemap.xml", (c) => {
   const hostLang = getHostLang(c);
   const language = languages.find((item) => item.langCode === hostLang);
@@ -71,10 +62,15 @@ app.get("/hv/home", hvHome);
 app.get("/hv/:langCode/question/:questionNumber", hvQuestion);
 app.post("/hv/:langCode/answer/:questionNumber", hvAnswer);
 
-app.get("/:langCode", (c) => {
-  const langCode = c.req.param("langCode");
-  if (!isLangCode(langCode)) return c.notFound();
-  return c.html(<LanguagePage langCode={langCode} />);
+app.get("/:slug", (c) => {
+  const slug = c.req.param("slug");
+  const pathLanguage = languages.find((item) => item.langCode === slug);
+  if (pathLanguage) return c.html(<LanguagePage langCode={pathLanguage.langCode as any} />);
+
+  const hostLang = getHostLang(c);
+  if (!hostLang || !isLangCode(hostLang)) return c.notFound();
+  const page = languageConfig[hostLang].seo?.pages.find((item) => item.slug === slug);
+  return page ? c.html(<SeoPage langCode={hostLang} page={page} />) : c.notFound();
 });
 
 app.post("/subscribe", subscribeHandler);
