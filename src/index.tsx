@@ -7,6 +7,7 @@ import { unsubscribeHandler } from "./routes/unsubscribe";
 import { languages } from "./lib/languages";
 import { languageConfig } from "./config/language-config";
 import { Env, sendDailyEmails } from "./lib/email";
+import { sendDailySocialPosts } from "./lib/social";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
@@ -86,6 +87,7 @@ export default {
   fetch: app.fetch,
   scheduled(controller: SchedulerController, env: Env, ctx: SchedulerContext) {
     ctx.waitUntil(sendDailyEmails(env, controller.scheduledTime));
+    ctx.waitUntil(sendDailySocialPosts(env, controller.scheduledTime));
   },
 };
 export { app };

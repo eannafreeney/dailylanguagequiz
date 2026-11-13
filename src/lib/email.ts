@@ -15,6 +15,9 @@ export type Env = {
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
   ADMIN_EMAIL?: string;
+  SOCIAL_BUFFER_API_KEY?: string;
+  SOCIAL_BUFFER_CHANNELS?: string;
+  SOCIAL_IMAGE_URL?: string;
 };
 
 export const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
