@@ -140,7 +140,10 @@ export async function socialImageHandler(c: Context) {
   }
 
   const renderer = await Resvg.async(svg);
-  return new Response(renderer.render().asPng(), {
+  const png = renderer.render().asPng();
+  const body = new ArrayBuffer(png.byteLength);
+  new Uint8Array(body).set(png);
+  return new Response(body, {
     headers: {
       "Content-Type": "image/png",
       "Cache-Control": "public, max-age=86400, s-maxage=86400",
