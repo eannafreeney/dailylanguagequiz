@@ -8,7 +8,7 @@ function Newsletter({ langCode }: { langCode: LangCode }) {
         x-show="!open"
         x-cloak
         x-on:click="open = true"
-        class="cursor-pointer rounded-full border border-stone-200 bg-[#fffefa] px-3 py-2 text-sm font-semibold text-emerald-800 shadow-lg hover:bg-emerald-50"
+        class="btn btn-primary min-h-11 cursor-pointer rounded-full px-5 text-sm font-semibold shadow-lg"
       >
         Remind me
       </button>
@@ -106,7 +106,7 @@ export function NewsletterForm({
         placeholder="you@example.com"
       />
       <button
-        class="min-h-11 cursor-pointer rounded-lg bg-emerald-800 px-4 text-sm font-semibold text-white hover:bg-emerald-900"
+        class="btn btn-primary min-h-11 cursor-pointer rounded-lg px-4 text-sm font-semibold"
         type="submit"
       >
         Remind me
