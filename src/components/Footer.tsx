@@ -44,6 +44,17 @@ const Footer = ({ title, kicker, langCode }: Props) => {
               {description}
             </p>
           </div>
+          {langCode === "ga" && (
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-white">About the quiz</p>
+              <a
+                href="/irish-levels"
+                class="font-semibold text-slate-200 transition hover:text-white"
+              >
+                Irish levels explained
+              </a>
+            </div>
+          )}
           {otherQuizzes.length > 0 && (
             <div class="flex flex-col gap-2">
               <p class="font-semibold text-white">Other daily quizzes</p>
