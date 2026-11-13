@@ -36,7 +36,7 @@ app.get("/", (c) => {
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
 
-app.get("/social-media/:langCode/:date/:slide{[^/]+[.].png}", socialImageHandler);
+app.get("/social-media/:langCode/:date/:slide{[^/]+[.]png}", socialImageHandler);
 
 app.get("/sitemap.xml", (c) => {
   const hostLang = getHostLang(c);
