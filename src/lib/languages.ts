@@ -49,7 +49,7 @@ export const languages = [
     name: "Gaeilge",
     englishName: "Irish",
     description:
-      "A free daily Irish quiz with five short questions. Practise phrases, grammar, and everyday sentences, a little at a time.",
+      "Take a free daily Irish language quiz with five fresh questions across CEFR levels A1 to B2. Answer each question correctly to move on, and see how many you get right on your first try. No sign-up needed.",
     flag: "🇮🇪",
     siteName: "Daily Irish Quiz",
     siteUrl: "https://dailyirishquiz.com",
