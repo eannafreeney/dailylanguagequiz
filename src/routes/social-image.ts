@@ -119,7 +119,7 @@ export async function socialImageHandler(c: Context) {
   const langCode = c.req.param("langCode");
   const date = c.req.param("date");
   const slide = c.req.param("slide");
-  if (!isLangCode(langCode) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return c.notFound();
+  if (!isLangCode(langCode) || !date || !slide || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return c.notFound();
 
   const language = languages.find((item) => item.langCode === langCode);
   if (!language?.published) return c.notFound();
