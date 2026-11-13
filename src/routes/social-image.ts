@@ -40,9 +40,9 @@ type FontSubset = { url: string; ranges: Array<[number, number]> };
 const fontBufferCache = new Map<string, Promise<Uint8Array>>();
 
 function parseFontRanges(value: string): Array<[number, number]> {
-  return [...value.matchAll(/U\\+([0-9A-F?]+)(?:-([0-9A-F?]+))?/gi)].map((match) => {
-    const min = Number.parseInt(match[1].replace(/\\?/g, "0"), 16);
-    const max = Number.parseInt((match[2] ?? match[1]).replace(/\\?/g, "F"), 16);
+  return [...value.matchAll(/U\+([0-9A-F?]+)(?:-([0-9A-F?]+))?/gi)].map((match) => {
+    const min = Number.parseInt(match[1].replace(/\?/g, "0"), 16);
+    const max = Number.parseInt((match[2] ?? match[1]).replace(/\?/g, "F"), 16);
     return [min, max] as [number, number];
   });
 }
@@ -52,11 +52,11 @@ async function getFontSubsets(text: string): Promise<FontSubset[]> {
   return fetch(stylesheetUrl).then(async (response) => {
     if (!response.ok) throw new Error("Could not load social image font stylesheet");
     const css = await response.text();
-    return [...css.matchAll(/@font-face\\s*{([^}]+)}/g)].flatMap((match) => {
+    return [...css.matchAll(/@font-face\s*{([^}]+)}/g)].flatMap((match) => {
       const block = match[1];
-      if (!/font-family:\\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
-      const url = /src:\\s*url\\(([^)]+)\\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
-      const range = /unicode-range:\\s*([^;]+)/i.exec(block)?.[1];
+      if (!/font-family:\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
+      const url = /src:\s*url\\(([^)]+)\\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
+      const range = /unicode-range:\s*([^;]+)/i.exec(block)?.[1];
       if (!url) return [];
       return [{ url, ranges: range ? parseFontRanges(range) : [[0, 0x10ffff] as [number, number]] }];
     });
@@ -92,7 +92,7 @@ function xml(value: string) {
 
 function charUnits(ch: string) {
   const point = ch.codePointAt(0) ?? 0;
-  if (/\\s/.test(ch)) return 0.35;
+  if (/\s/.test(ch)) return 0.35;
   return point > 0x2e7f ? 1.8 : 1;
 }
 
@@ -101,8 +101,8 @@ function charUnits(ch: string) {
 function wrapLines(value: string, limit: number) {
   const input = value.trim();
   if (!input) return [""];
-  const hasSpaces = /\\s/.test(input);
-  const tokens = hasSpaces ? input.split(/\\s+/) : Array.from(input);
+  const hasSpaces = /\s/.test(input);
+  const tokens = hasSpaces ? input.split(/\s+/) : Array.from(input);
   const result: string[] = [];
   let line = "";
   let width = 0;
@@ -199,7 +199,7 @@ function question(language: (typeof languages)[number], q: { question: string; o
 }
 
 function ending(language: (typeof languages)[number], theme: Palette) {
-  const domain = quizHref(language).replace(/^https?:\\/\\//, "");
+  const domain = quizHref(language).replace(/^https?:\/\//, "");
   return frame(`
     ${svgText("YOU MADE IT TO THE END", 100, 190, 25, theme.muted, 700)}
     <circle cx="540" cy="450" r="190" fill="${theme.accentSoft}"/>
@@ -218,7 +218,7 @@ export async function socialImageHandler(c: Context) {
   const langCode = c.req.param("langCode");
   const date = c.req.param("date");
   const slide = c.req.param("slide").replace(/[.]png$/, "");
-  if (!isLangCode(langCode) || !date || !slide || !/^\\d{4}-\\d{2}-\\d{2}$/.test(date)) return c.notFound();
+  if (!isLangCode(langCode) || !date || !slide || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return c.notFound();
 
   const language = languages.find((item) => item.langCode === langCode);
   if (!language?.published) return c.notFound();
@@ -227,7 +227,7 @@ export async function socialImageHandler(c: Context) {
 
   const daily = getDailyQuestions(langCode, dateAtNoon);
   if (daily.length !== 5) return c.notFound();
-  const theme = paletteForLanguage(langCode);
+  const theme = paletteFor(langCode);
 
   let svg: string;
   if (slide === "cover") svg = cover(language, theme);
