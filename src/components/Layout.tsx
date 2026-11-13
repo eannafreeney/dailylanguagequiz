@@ -25,6 +25,7 @@ const Layout = ({
   const language = languages.find((item) => item.langCode === langCode);
   if (!language) return null;
   const { siteName, siteUrl, englishName, description } = language;
+  const htmlLang = language.htmlLang ?? language.langCode;
 
   const questionCount = 5;
   const defaultTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
@@ -34,7 +35,7 @@ const Layout = ({
   const canonical = siteUrl ? `${siteUrl}${canonicalPath}` : undefined;
 
   return (
-    <html lang="en" data-theme="emerald">
+    <html lang={htmlLang} data-theme="emerald">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -45,7 +46,7 @@ const Layout = ({
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:locale" content="en" />
+        <meta property="og:locale" content={htmlLang} />
         {canonical && <meta property="og:url" content={canonical} />}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
