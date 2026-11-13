@@ -1,10 +1,11 @@
 import { Hono } from "hono";
 import LanguagePage from "./routes/language";
-import IrishLevelsPage from "./routes/irish-levels";
+import SeoPage from "./components/SeoPage";
 import { subscribeHandler } from "./routes/subscribe";
 import { confirmHandler } from "./routes/confirm";
 import { unsubscribeHandler } from "./routes/unsubscribe";
 import { languages } from "./lib/languages";
+import { languageConfig } from "./config/language-config";
 import { Env, sendDailyEmails } from "./lib/email";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
@@ -33,9 +34,13 @@ app.get("/", (c) => {
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
 
-app.get("/irish-levels", (c) => {
-  if (getHostLang(c) !== "ga") return c.notFound();
-  return c.html(<IrishLevelsPage />);
+app.get("/:slug", (c) => {
+  const langCode = getHostLang(c);
+  if (!langCode || !isLangCode(langCode)) return c.notFound();
+  const page = languageConfig[langCode].seo?.pages.find(
+    (item) => item.slug === c.req.param("slug"),
+  );
+  return page ? c.html(<SeoPage langCode={langCode} page={page} />) : c.notFound();
 });
 
 app.get("/sitemap.xml", (c) => {
@@ -43,7 +48,7 @@ app.get("/sitemap.xml", (c) => {
   const language = languages.find((item) => item.langCode === hostLang);
   const baseUrl = language?.siteUrl;
   if (!baseUrl) return c.notFound();
-  const paths = hostLang === "ga" ? ["/", "/irish-levels"] : ["/"];
+  const paths = ["/", ...(hostLang && isLangCode(hostLang) ? languageConfig[hostLang].seo?.pages.map((page) => `/${page.slug}`) ?? [] : [])];
   const urls = paths.map((path) => `<url><loc>${baseUrl}${path}</loc></url>`).join("");
   return c.body(
     `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>` ,
