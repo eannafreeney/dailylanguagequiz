@@ -16,9 +16,9 @@ let fontSubsetsPromise: Promise<FontSubset[]> | undefined;
 const fontBufferCache = new Map<string, Promise<Uint8Array>>();
 
 function parseFontRanges(value: string): Array<[number, number]> {
-  return [...value.matchAll(/U\\+([0-9A-F?]+)(?:-([0-9A-F?]+))?/gi)].map((match) => {
-    const min = Number.parseInt(match[1].replace(/\\?/g, "0"), 16);
-    const max = Number.parseInt((match[2] ?? match[1]).replace(/\\?/g, "F"), 16);
+  return [...value.matchAll(/U\+([0-9A-F?]+)(?:-([0-9A-F?]+))?/gi)].map((match) => {
+    const min = Number.parseInt(match[1].replace(/\?/g, "0"), 16);
+    const max = Number.parseInt((match[2] ?? match[1]).replace(/\?/g, "F"), 16);
     return [min, max];
   });
 }
@@ -28,11 +28,11 @@ async function getFontSubsets(): Promise<FontSubset[]> {
     .then(async (response) => {
       if (!response.ok) throw new Error("Could not load social image font stylesheet");
       const css = await response.text();
-      return [...css.matchAll(/@font-face\\s*{([^}]+)}/g)].flatMap((match) => {
+      return [...css.matchAll(/@font-face\s*{([^}]+)}/g)].flatMap((match) => {
         const block = match[1];
-        if (!/font-family:\\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
-        const url = /src:\\s*url\\(([^)]+)\\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
-        const range = /unicode-range:\\s*([^;]+)/i.exec(block)?.[1];
+        if (!/font-family:\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
+        const url = /src:\s*url\(([^)]+)\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
+        const range = /unicode-range:\s*([^;]+)/i.exec(block)?.[1];
         if (!url || !range) return [];
         return [{ url, ranges: parseFontRanges(range) }];
       });
