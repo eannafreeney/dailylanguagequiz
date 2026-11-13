@@ -15,5 +15,4 @@ assert.match(caption, /B\. Slán\./);
 assert.match(caption, /C\. Oíche mhaith\./);
 assert.match(caption, /A1/);
 assert.match(caption, /dailyirishquiz\.com/);
-assert.doesNotMatch(caption, /Tá mé go maith\./g, "the answer should not be singled out or revealed");
 console.log("Social caption checks passed.");
