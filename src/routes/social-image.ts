@@ -19,7 +19,7 @@ function parseFontRanges(value: string): Array<[number, number]> {
   return [...value.matchAll(/U\+([0-9A-F?]+)(?:-([0-9A-F?]+))?/gi)].map((match) => {
     const min = Number.parseInt(match[1].replace(/\?/g, "0"), 16);
     const max = Number.parseInt((match[2] ?? match[1]).replace(/\?/g, "F"), 16);
-    return [min, max];
+    return [min, max] as [number, number];
   });
 }
 
