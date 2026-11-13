@@ -8,35 +8,48 @@ import { languages } from "../lib/languages";
 import { shareQuizResultClientScript } from "../../client/shareQuizResult";
 import { streakClientScript } from "../lib/streak";
 
-type Props = PropsWithChildren<{ langCode: LangCode }>;
+type Props = PropsWithChildren<{
+  langCode: LangCode;
+  pageTitle?: string;
+  pageDescription?: string;
+  canonicalPath?: string;
+}>;
 
-const Layout = ({ langCode, children }: Props) => {
+const Layout = ({
+  langCode,
+  children,
+  pageTitle,
+  pageDescription,
+  canonicalPath = "/",
+}: Props) => {
   const language = languages.find((item) => item.langCode === langCode);
   if (!language) return null;
   const { siteName, siteUrl, englishName, description } = language;
 
   const questionCount = 5;
-  const pageTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
+  const defaultTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
+  const title = pageTitle ?? defaultTitle;
+  const metaDescription = pageDescription ?? description;
   const kicker = `Daily practice — ${questionCount} questions a day.`;
-  const canonical = siteUrl ? `${siteUrl}/` : undefined;
+  const canonical = siteUrl ? `${siteUrl}${canonicalPath}` : undefined;
 
   return (
     <html lang="en" data-theme="emerald">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{pageTitle}</title>
-        <meta name="description" content={description} />
+        <title>{title}</title>
+        <meta name="description" content={metaDescription} />
         {canonical && <link rel="canonical" href={canonical} />}
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
         <meta property="og:locale" content="en" />
         {canonical && <meta property="og:url" content={canonical} />}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={description} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDescription} />
         <link rel="stylesheet" href="/tailwind.css" />
         <script>{raw(streakClientScript())}</script>
         <script>{raw(shareQuizResultClientScript())}</script>
