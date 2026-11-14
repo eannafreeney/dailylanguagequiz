@@ -164,30 +164,38 @@ function cover(language: (typeof languages)[number], theme: Palette) {
 
 function question(language: (typeof languages)[number], q: { question: string; options?: string[]; level?: string }, index: number, theme: Palette) {
   const promptLines = wrapLines(q.question, 27);
-  const promptSize = promptLines.length > 3 ? 43 : promptLines.length > 2 ? 48 : 54;
-  const promptLineHeight = Math.round(promptSize * 1.28);
-  const promptStart = 385;
+  const promptSize = promptLines.length > 4 ? 39 : promptLines.length > 3 ? 43 : promptLines.length > 2 ? 48 : 54;
+  const promptLineHeight = Math.round(promptSize * 1.2);
+  const promptStart = 350;
   const prompt = promptLines.map((line, i) => svgText(line, 105, promptStart + i * promptLineHeight, promptSize, theme.accentDark, 750)).join("");
+
   const options = q.options ?? [];
-  const startY = promptStart + promptLines.length * promptLineHeight + 54;
-  const gap = 16;
-  const availableHeight = Math.max(0, 1120 - startY);
-  const cardHeight = Math.min(148, Math.max(82, (availableHeight - gap * Math.max(0, options.length - 1)) / Math.max(1, options.length)));
+  const startY = promptStart + promptLines.length * promptLineHeight + (promptLines.length === 1 ? 52 : 38);
+  const bottomY = 1145;
+  const availableHeight = Math.max(1, bottomY - startY);
+  const gap = Math.min(18, Math.max(10, availableHeight * 0.025));
+  const optionLines = options.map((option) => wrapLines(option, 33));
+  const baseHeights = optionLines.map((lines) => Math.max(82, 38 + lines.length * 34));
+  const desiredHeight = baseHeights.reduce((sum, height) => sum + height, 0) + gap * Math.max(0, options.length - 1);
+  const scale = Math.min(1, availableHeight / Math.max(1, desiredHeight));
+
   const optionMarkup = options.map((option, i) => {
-    const y = startY + i * (cardHeight + gap);
-    const optionLines = wrapLines(option, 33);
-    const optionFont = optionLines.length >= 3 ? 24 : optionLines.length === 2 ? 27 : 30;
-    const lineHeight = Math.round(optionFont * 1.28);
-    const textHeight = (optionLines.length - 1) * lineHeight;
+    const cardHeight = baseHeights[i] * scale;
+    const y = startY + baseHeights.slice(0, i).reduce((sum, height) => sum + height * scale, 0) + gap * i;
+    const lines = optionLines[i];
+    const optionFont = (lines.length >= 3 ? 22 : lines.length === 2 ? 26 : 29) * scale;
+    const lineHeight = optionFont * 1.24;
+    const textHeight = (lines.length - 1) * lineHeight;
     const firstBaseline = y + cardHeight / 2 - textHeight / 2 + optionFont * 0.35;
-    const optionText = optionLines.map((line, n) =>
+    const optionText = lines.map((line, n) =>
       `<text x="200" y="${firstBaseline + n * lineHeight}" fill="${theme.ink}" font-family="Noto Sans SC" font-size="${optionFont}" font-weight="600">${xml(line)}</text>`,
     ).join("");
     return `<rect x="100" y="${y}" width="880" height="${cardHeight}" rx="22" fill="#FFFFFF" stroke="${theme.border}" stroke-width="2"/>
-      <circle cx="151" cy="${y + cardHeight / 2}" r="25" fill="${theme.accent}"/>
-      ${svgText(String.fromCharCode(65 + i), 151, y + cardHeight / 2 + 9, 25, "#FFFFFF", 700, "middle")}
+      <circle cx="151" cy="${y + cardHeight / 2}" r="${Math.min(25, cardHeight * 0.28)}" fill="${theme.accent}"/>
+      ${svgText(String.fromCharCode(65 + i), 151, y + cardHeight / 2 + optionFont * 0.3, Math.min(25, optionFont), "#FFFFFF", 700, "middle")}
       ${optionText}`;
   }).join("");
+
   const level = q.level
     ? `<rect x="790" y="260" width="190" height="54" rx="27" fill="${theme.accentSoft}"/>${svgText(q.level, 885, 296, 25, theme.accentDark, 700, "middle")}`
     : "";
@@ -197,7 +205,6 @@ function question(language: (typeof languages)[number], q: { question: string; o
     ${level}${prompt}${optionMarkup}
   `, `0${index + 2} / 07`, language.siteName, theme);
 }
-
 function ending(language: (typeof languages)[number], theme: Palette) {
   const domain = quizHref(language).replace(/^https?:\/\//, "");
   return frame(`
