@@ -8,6 +8,7 @@ import { languages } from "./lib/languages";
 import { languageConfig } from "./config/language-config";
 import { Env, sendDailyEmails } from "./lib/email";
 import { sendDailySocialPosts } from "./lib/social";
+import { socialImageHandler } from "./routes/social-image";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
@@ -34,6 +35,8 @@ app.get("/", (c) => {
   const language = languages.find((item) => item.langCode === getHostLang(c));
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
 });
+
+app.get("/social-media/:langCode/:date/:slide{[^/]+[.]png}", socialImageHandler);
 
 app.get("/sitemap.xml", (c) => {
   const hostLang = getHostLang(c);
