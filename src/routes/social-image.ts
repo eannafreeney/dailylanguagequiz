@@ -55,7 +55,7 @@ async function getFontSubsets(text: string): Promise<FontSubset[]> {
     return [...css.matchAll(/@font-face\s*{([^}]+)}/g)].flatMap((match) => {
       const block = match[1];
       if (!/font-family:\s*['"]?Noto Sans SC['"]?/i.test(block)) return [];
-      const url = /src:\s*url\\(([^)]+)\\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
+      const url = /src:\s*url\(([^)]+)\)/i.exec(block)?.[1]?.replace(/['"]/g, "");
       const range = /unicode-range:\s*([^;]+)/i.exec(block)?.[1];
       if (!url) return [];
       return [{ url, ranges: range ? parseFontRanges(range) : [[0, 0x10ffff] as [number, number]] }];
