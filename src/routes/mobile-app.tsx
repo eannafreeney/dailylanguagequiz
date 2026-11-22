@@ -30,6 +30,37 @@ const MobileAppPage = ({ langCode }: Props) => (
           <div class="absolute -bottom-5 -left-5 rounded-2xl bg-amber-300 px-4 py-3 font-bold text-slate-900 shadow-lg">5 minutes a day</div>
         </div>
       </div>
+
+      <section id="install-instructions" class="mt-20 border-t border-slate-200 pt-12">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Quick setup</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950">Install on your phone</h2>
+          <p class="mt-4 text-slate-600">Daily Language Quiz is a web app, so you can add it straight to your home screen. You do not need to visit an app store.</p>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-xl">🤖</span><h3 class="text-xl font-bold text-slate-950">Android</h3></div>
+            <p class="mt-2 text-sm text-slate-600">For the smoothest install, open this page in Google Chrome.</p>
+            <ol class="mt-5 list-inside list-decimal space-y-3 text-sm leading-6 text-slate-700">
+              <li>Tap the <strong>Install the app</strong> button. If Chrome shows an installation prompt, tap <strong>Install</strong>.</li>
+              <li>If no prompt appears, tap Chrome's three-dot menu in the top-right corner.</li>
+              <li>Choose <strong>Install app</strong> or <strong>Add to Home screen</strong> (wording varies by device).</li>
+              <li>Confirm by tapping <strong>Install</strong> or <strong>Add</strong>. The app icon will appear on your home screen or in your app list.</li>
+            </ol>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-xl">🍎</span><h3 class="text-xl font-bold text-slate-950">iPhone and iPad</h3></div>
+            <p class="mt-2 text-sm text-slate-600">On iOS, use Safari to add the app to your Home Screen.</p>
+            <ol class="mt-5 list-inside list-decimal space-y-3 text-sm leading-6 text-slate-700">
+              <li>Open this page in <strong>Safari</strong>, not an in-app browser such as one inside a social media app.</li>
+              <li>Tap the <strong>Share</strong> button — the square with an upward arrow.</li>
+              <li>Scroll through the options and tap <strong>Add to Home Screen</strong>. If it is not visible, scroll down, tap <strong>Edit Actions</strong>, and add it.</li>
+              <li>Keep the suggested name, then tap <strong>Add</strong> in the top-right corner. The Daily Language Quiz icon will appear on your Home Screen.</li>
+            </ol>
+          </div>
+        </div>
+        <p class="mx-auto mt-5 max-w-3xl text-center text-xs leading-5 text-slate-500">Already installed? Open Daily Language Quiz from your home screen. Menu labels may differ slightly depending on your browser and device.</p>
+      </section>
       <div class="mt-20 grid gap-8 border-t border-slate-200 pt-10 sm:grid-cols-3">
         <div><div class="text-2xl">⚡</div><h2 class="mt-3 font-bold text-slate-900">One-tap access</h2><p class="mt-2 text-sm leading-6 text-slate-600">Add the quiz to your home screen and launch it like any other app.</p></div>
         <div><div class="text-2xl">📚</div><h2 class="mt-3 font-bold text-slate-900">A little every day</h2><p class="mt-2 text-sm leading-6 text-slate-600">Five focused questions make daily language practice easy to keep up.</p></div>
