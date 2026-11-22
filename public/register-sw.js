@@ -17,6 +17,10 @@ const isIos = /iphone|ipad|ipod/i.test(window.navigator.userAgent) ||
 const isStandalone = window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone === true;
 
+document.querySelectorAll("[data-install-app-trigger]").forEach((trigger) => {
+  trigger.addEventListener("click", () => installButton?.click());
+});
+
 if (installButton) {
   if (isStandalone) {
     installButton.closest("#install-app-container")?.remove();
