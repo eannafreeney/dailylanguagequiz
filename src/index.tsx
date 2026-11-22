@@ -8,6 +8,7 @@ import { Env, sendDailyEmails } from "./lib/email";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
+import MobileAppPage from "./routes/mobile-app";
 import type { SchedulerContext, SchedulerController } from "./types";
 import { answerQuestionHandler, getQuestionHandler } from "./routes/question";
 
@@ -29,6 +30,11 @@ app.get("/", (c) => {
   if (isHubHost(c)) return c.html(<HomePage />);
   const language = languages.find((item) => item.langCode === getHostLang(c));
   return language ? c.html(<LanguagePage {...language} />) : c.notFound();
+});
+
+app.get("/mobile-app", (c) => {
+  const langCode = getHostLang(c) ?? "ga";
+  return c.html(<MobileAppPage langCode={langCode as import("./types").LangCode} />);
 });
 
 app.get("/:langCode", (c) => {
