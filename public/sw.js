@@ -3,6 +3,8 @@ const APP_SHELL = [
   "/offline.html",
   "/tailwind.css",
   "/icons/app-icon.svg",
+  "/icons/app-icon-192.png",
+  "/icons/app-icon-512.png",
   "/manifest.webmanifest"
 ];
 
