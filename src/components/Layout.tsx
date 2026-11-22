@@ -22,6 +22,9 @@ const Layout = ({ langCode, children }: Props) => {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#047857" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="icon" href="/icons/app-icon.svg" type="image/svg+xml" />
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
         {canonical && <link rel="canonical" href={canonical} />}
