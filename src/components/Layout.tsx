@@ -39,6 +39,9 @@ const Layout = ({
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#047857" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="icon" href="/icons/app-icon.svg" type="image/svg+xml" />
         <title>{title}</title>
         <meta name="description" content={metaDescription} />
         {canonical && <link rel="canonical" href={canonical} />}
@@ -52,6 +55,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={metaDescription} />
         <link rel="stylesheet" href="/tailwind.css" />
+        <script defer src="/register-sw.js"></script>
         <script>{raw(streakClientScript())}</script>
         <script>{raw(shareQuizResultClientScript())}</script>
         <script
@@ -76,6 +80,17 @@ const Layout = ({
         <main class="my-4 max-w-6xl mx-auto">{children}</main>
         <Footer title={siteName} kicker={kicker} langCode={langCode} />
         {siteUrl && <Newsletter langCode={langCode} />}
+        <div class="fixed bottom-5 left-4 z-50 sm:bottom-6 sm:left-6" id="install-app-container">
+          <button id="install-app-button" type="button" class="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-4 py-3 text-sm font-semibold text-white shadow-lg ring-1 ring-emerald-900/10 transition hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 7v8m-3-3 3 3 3-3M9 18h6"/></svg>
+            Install App
+          </button>
+          <div id="install-app-help" hidden class="mb-3 w-72 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-xl">
+            <p class="font-semibold text-slate-900">Add Daily Quiz to your home screen</p>
+            <p id="install-app-help-copy" class="mt-2 leading-6">Use your browser menu and choose “Install app” or “Add to Home Screen”.</p>
+            <button id="install-app-help-close" type="button" class="mt-3 font-semibold text-emerald-700">Got it</button>
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -30,7 +30,8 @@ const Header = ({ title, langCode }: Props) => {
             </span>
           </span>
         </a>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-4">
+          <a href="/mobile-app" class={`text-sm font-semibold transition hover:underline ${theme.headerTitle}`}>Mobile App</a>
           <span
             class={`hidden sm:block text-sm font-medium ${theme.headerMuted}`}
           >
