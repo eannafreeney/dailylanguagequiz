@@ -38,6 +38,7 @@ const Layout = ({ langCode, children }: Props) => {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={description} />
         <link rel="stylesheet" href="/tailwind.css" />
+        <script defer src="/register-sw.js"></script>
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"
