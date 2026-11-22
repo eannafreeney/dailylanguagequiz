@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Daily Language Quiz",
+  "short_name": "Daily Quiz",
+  "description": "Build your language skills with five questions a day.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#047857",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
