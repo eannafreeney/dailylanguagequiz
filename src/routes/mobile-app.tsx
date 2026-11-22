@@ -11,7 +11,7 @@ const MobileAppPage = ({ langCode }: Props) => (
           <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Daily Language Quiz · Mobile</p>
           <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">Your daily language practice. Now on your home screen.</h1>
           <p class="mt-5 text-lg leading-8 text-slate-600">Install Daily Language Quiz for an app-like experience. Open it with one tap, practise wherever you are, and build a little momentum every day.</p>
-          <button type="button" onclick="document.getElementById('install-app-button')?.click()" class="mt-8 inline-flex items-center justify-center rounded-xl bg-emerald-700 px-6 py-3.5 font-semibold text-white shadow-sm transition hover:bg-emerald-800">Install the app</button>
+          <button type="button" data-install-app-trigger class="mt-8 inline-flex items-center justify-center rounded-xl bg-emerald-700 px-6 py-3.5 font-semibold text-white shadow-sm transition hover:bg-emerald-800">Install the app</button>
           <p class="mt-3 text-sm text-slate-500">Free to install. No app store required.</p>
         </div>
         <div class="relative mx-auto w-full max-w-sm">
@@ -38,7 +38,7 @@ const MobileAppPage = ({ langCode }: Props) => (
       <div class="mt-14 rounded-3xl bg-slate-950 px-6 py-10 text-center text-white sm:px-10">
         <h2 class="text-2xl font-bold">Make language learning a daily habit.</h2>
         <p class="mx-auto mt-3 max-w-xl text-slate-300">Install Daily Language Quiz and keep your next five questions just a tap away.</p>
-        <button type="button" onclick="document.getElementById('install-app-button')?.click()" class="mt-6 rounded-xl bg-white px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-50">Install App</button>
+        <button type="button" data-install-app-trigger class="mt-6 rounded-xl bg-white px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-50">Install App</button>
       </div>
     </section>
   </Layout>
