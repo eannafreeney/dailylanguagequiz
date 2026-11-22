@@ -1,10 +1,21 @@
-import { languages, REGISTERED_LANGS } from "../lib/languages";
+import { publishedLanguages, quizHref } from "../lib/languages";
+import { quizzes } from "../lib/quizzes";
+import type { Question } from "../types";
+
+const CEFR = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+function quizCardStats(questions: Question[]) {
+  const levels = CEFR.filter((level) =>
+    questions.some((question) => question.level === level),
+  );
+  // ponytail: first-to-last label. A gap (A1 and B2 only) still reads as a range.
+  const range =
+    levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0];
+  const count = `${questions.length} question${questions.length === 1 ? "" : "s"}`;
+  return range ? `${count} · ${range}` : count;
+}
 
 const hubUrl = "https://dailylanguagequiz.com/";
-
-const published = languages.filter(
-  (language) => language.siteUrl && REGISTERED_LANGS.has(language.langCode),
-);
 
 const HomePage = () => (
   <html lang="en">
@@ -14,13 +25,17 @@ const HomePage = () => (
       <title>Daily Language Quiz</title>
       <meta
         name="description"
-        content="A free daily quiz in Irish, German, and Chinese. Five short questions, a little at a time."
+        content="A free daily quiz. Five short questions, a little at a time."
       />
       <link rel="canonical" href={hubUrl} />
       <meta property="og:title" content="Daily Language Quiz" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={hubUrl} />
       <link rel="stylesheet" href="/tailwind.css" />
+      <script
+        defer
+        src="https://marketing-hq.onrender.com/marketing-hq-analytics.js"
+      ></script>
     </head>
     <body class="bg-white text-slate-900">
       <header class="border-b border-slate-200">
@@ -42,10 +57,10 @@ const HomePage = () => (
           changes every day.
         </p>
         <ul class="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2">
-          {published.map((language) => (
+          {publishedLanguages.map((language) => (
             <li key={language.langCode}>
               <a
-                href={language.siteUrl}
+                href={quizHref(language, true)}
                 class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-400"
               >
                 <span class="text-2xl" aria-hidden="true">
@@ -55,6 +70,11 @@ const HomePage = () => (
                   {language.englishName}
                 </span>
                 <span class="text-sm text-slate-500">{language.name}</span>
+                <span class="mt-3 text-sm font-medium text-slate-600">
+                  {quizCardStats(
+                    quizzes[language.langCode as keyof typeof quizzes],
+                  )}
+                </span>
               </a>
             </li>
           ))}

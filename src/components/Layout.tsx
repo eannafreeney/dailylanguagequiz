@@ -1,44 +1,63 @@
 import type { PropsWithChildren } from "hono/jsx";
+import { raw } from "hono/html";
 import Header from "./Header";
 import Footer from "./Footer";
 import Newsletter from "./Newsletter";
 import { LangCode } from "../types";
 import { languages } from "../lib/languages";
+import { shareQuizResultClientScript } from "../../client/shareQuizResult";
+import { streakClientScript } from "../lib/streak";
 
-type Props = PropsWithChildren<{ langCode: LangCode }>;
+type Props = PropsWithChildren<{
+  langCode: LangCode;
+  pageTitle?: string;
+  pageDescription?: string;
+  canonicalPath?: string;
+}>;
 
-const Layout = ({ langCode, children }: Props) => {
+const Layout = ({
+  langCode,
+  children,
+  pageTitle,
+  pageDescription,
+  canonicalPath = "/",
+}: Props) => {
   const language = languages.find((item) => item.langCode === langCode);
   if (!language) return null;
   const { siteName, siteUrl, englishName, description } = language;
+  const htmlLang = language.htmlLang ?? language.langCode;
 
   const questionCount = 5;
-  const pageTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
+  const defaultTitle = `Daily ${englishName} quiz — ${questionCount} questions a day`;
+  const title = pageTitle ?? defaultTitle;
+  const metaDescription = pageDescription ?? description;
   const kicker = `Daily practice — ${questionCount} questions a day.`;
-  const canonical = siteUrl ? `${siteUrl}/` : undefined;
+  const canonical = siteUrl ? `${siteUrl}${canonicalPath}` : undefined;
 
   return (
-    <html lang="en" data-theme="emerald">
+    <html lang={htmlLang} data-theme="emerald">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#047857" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="icon" href="/icons/app-icon.svg" type="image/svg+xml" />
-        <title>{pageTitle}</title>
-        <meta name="description" content={description} />
+        <title>{title}</title>
+        <meta name="description" content={metaDescription} />
         {canonical && <link rel="canonical" href={canonical} />}
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:locale" content="en" />
+        <meta property="og:locale" content={htmlLang} />
         {canonical && <meta property="og:url" content={canonical} />}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={description} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDescription} />
         <link rel="stylesheet" href="/tailwind.css" />
         <script defer src="/register-sw.js"></script>
+        <script>{raw(streakClientScript())}</script>
+        <script>{raw(shareQuizResultClientScript())}</script>
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"
@@ -50,6 +69,10 @@ const Layout = ({ langCode, children }: Props) => {
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <script
+          defer
+          src="https://marketing-hq.onrender.com/marketing-hq-analytics.js"
         ></script>
       </head>
       <body class="bg-white">

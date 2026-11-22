@@ -8,10 +8,10 @@ export type Question = {
   explanation?: string;
   level?: string;
   phrase?: string;
+  phraseReading?: string;
   correctAnswer: number;
-  simplifiedOptions?: string[];
-  traditionalOptions?: string[];
-  optionPinyin?: string[];
+  readings?: string[];
+  variants?: Record<string, string[]>;
 };
 
 export type LangCode = (typeof languages)[number]["langCode"];

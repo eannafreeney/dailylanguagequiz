@@ -1,4 +1,7 @@
 node_modules
+.expo
+mobile/ios
+mobile/android
 dist
 .wrangler
 wrangler.dev.jsonc
