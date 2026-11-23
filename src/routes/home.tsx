@@ -39,16 +39,24 @@ const HomePage = () => (
     </head>
     <body class="bg-white text-slate-900">
       <header class="border-b border-slate-200">
-        <div class="mx-auto flex max-w-6xl items-center gap-3 px-4 py-4 sm:px-6 lg:px-8">
-          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-sm font-bold text-white">
-            D.
-          </span>
-          <span class="text-lg font-bold tracking-tight">
-            Daily Language Quiz
-          </span>
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-sm font-bold text-white">
+              D.
+            </span>
+            <span class="text-lg font-bold tracking-tight">
+              Daily Language Quiz
+            </span>
+          </div>
+          <a
+            href="/mobile-app"
+            class="shrink-0 text-sm font-semibold text-slate-700 transition hover:text-slate-950 hover:underline"
+          >
+            Mobile App
+          </a>
         </div>
       </header>
-      <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-10 lg:px-8">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
           Five questions a day.
         </h1>
