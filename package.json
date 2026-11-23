@@ -9,6 +9,7 @@
     "build:css": "tailwindcss -i ./src/styles.css -o ./public/tailwind.css --minify"
   },
   "dependencies": {
+    "@block65/webcrypto-web-push": "^1.0.0",
     "@hono/node-server": "^2.1.4",
     "hono": "^4.13.13"
   },
