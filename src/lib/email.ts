@@ -48,6 +48,7 @@ export async function sendEmail(
 }
 
 export async function sendDailyEmails(env: Env, scheduledTime: number) {
+  // Use the scheduled instant, not runtime start time, to avoid missing the 08:00 window if execution is delayed.
   const now = new Date(scheduledTime);
   console.log("[daily-email] Scheduled time:", now.toISOString());
   const parts = new Intl.DateTimeFormat("en-GB", {
@@ -86,25 +87,43 @@ export async function sendDailyEmails(env: Env, scheduledTime: number) {
     const message = reminderMessage(subscriber);
     if (!message) continue;
     try {
+      // Claim this recipient/date before sending so a retried scheduled event won't resend.
       const claim = await env.DB.prepare(
         "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, ?, ?)",
       )
         .bind(subscriber.email, subscriber.lang_code, localDate)
         .run();
       if (claim.meta?.changes !== 1) continue;
-      console.log("[daily-email] Sending reminder for language:", subscriber.lang_code);
+      console.log(
+        "[daily-email] Sending reminder for language:",
+        subscriber.lang_code,
+      );
       await sendEmail(env, subscriber.email, message.subject, message.html);
-      console.log("[daily-email] Resend accepted reminder for language:", subscriber.lang_code);
+      console.log(
+        "[daily-email] Resend accepted reminder for language:",
+        subscriber.lang_code,
+      );
     } catch (error) {
       console.error("[daily-email] Reminder send failed:", error);
+      // Remove the claim if sending failed, allowing a later scheduled retry to try again.
       try {
         await env.DB.prepare(
           "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = ? AND local_date = ?",
-        ).bind(subscriber.email, subscriber.lang_code, localDate).run();
+        )
+          .bind(subscriber.email, subscriber.lang_code, localDate)
+          .run();
       } catch (cleanupError) {
-        console.error("Could not release failed email claim", subscriber.lang_code, cleanupError);
+        console.error(
+          "Could not release failed email claim",
+          subscriber.lang_code,
+          cleanupError,
+        );
       }
-      console.error("Could not send daily quiz email", subscriber.lang_code, error);
+      console.error(
+        "Could not send daily quiz email",
+        subscriber.lang_code,
+        error,
+      );
     }
   }
 }
@@ -151,12 +170,16 @@ async function sendAdminDigest(env: Env, localDate: string) {
   const yesterday = dublinYesterday(localDate);
   const claim = await env.DB.prepare(
     "INSERT OR IGNORE INTO email_delivery_log (email, lang_code, local_date) VALUES (?, 'admin', ?)",
-  ).bind(env.ADMIN_EMAIL, yesterday).run();
+  )
+    .bind(env.ADMIN_EMAIL, yesterday)
+    .run();
   if (claim.meta?.changes !== 1) return;
   try {
     const { results } = await env.DB.prepare(
       "SELECT lang_code, COUNT(*) AS started, COUNT(completed_at) AS finished FROM quiz_daily_participants WHERE local_date = ? GROUP BY lang_code",
-    ).bind(yesterday).all<DigestRow>();
+    )
+      .bind(yesterday)
+      .all<DigestRow>();
     const { subject, html } = adminDigest(yesterday, results);
     console.log("[daily-email] Sending admin digest for", yesterday);
     await sendEmail(env, env.ADMIN_EMAIL, subject, html);
@@ -165,7 +188,9 @@ async function sendAdminDigest(env: Env, localDate: string) {
     try {
       await env.DB.prepare(
         "DELETE FROM email_delivery_log WHERE email = ? AND lang_code = 'admin' AND local_date = ?",
-      ).bind(env.ADMIN_EMAIL, yesterday).run();
+      )
+        .bind(env.ADMIN_EMAIL, yesterday)
+        .run();
     } catch (cleanupError) {
       console.error("[daily-email] Could not release admin digest claim", cleanupError);
     }
