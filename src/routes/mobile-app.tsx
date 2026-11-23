@@ -45,7 +45,7 @@ const MobileAppPage = ({ langCode }: Props) => (
             <button id="disable-daily-reminder" type="button" hidden class="rounded-xl border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">Turn reminders off</button>
           </div>
           <p id="daily-reminder-status" class="mt-4 text-sm text-slate-600" role="status" aria-live="polite">Reminders are off. Enable them to receive a notification on this device.</p>
-          <p class="mt-3 text-xs leading-5 text-slate-500">Your browser will ask for permission. On iPhone and iPad, install this app on your Home Screen first (iOS 16.4 or later), then enable notifications. Your reminder time follows this device's timezone.</p>
+          <p class="mt-3 text-xs leading-5 text-slate-500">Your browser will ask for permission. On iPhone and iPad, install this app on your Home Screen first (iOS 16.4 or later), then enable notifications. Your reminder time follows this device's timezone and can be set in 15-minute increments.</p>
         </div>
       </section>
 

@@ -1,6 +1,5 @@
 import type { Context } from "hono";
 import { buildPushPayload, type PushSubscription, type VapidKeys } from "@block65/webcrypto-web-push";
-import type { LangCode } from "../types";
 import { languages } from "../lib/languages";
 
 type PushEnv = {
