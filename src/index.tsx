@@ -7,6 +7,7 @@ import { unsubscribeHandler } from "./routes/unsubscribe";
 import { languages } from "./lib/languages";
 import { languageConfig } from "./config/language-config";
 import { Env, sendDailyEmails } from "./lib/email";
+import { sendDailyPushReminders, pushConfigHandler, savePushSubscriptionHandler, disablePushSubscriptionHandler } from "./routes/push";
 import { analyticsDashboard } from "./lib/analytics";
 import { getHostLang, isHubHost, isLangCode, redirectUrl } from "./utils";
 import HomePage from "./routes/home";
@@ -40,6 +41,10 @@ app.get("/mobile-app", (c) => {
   return c.html(<MobileAppPage langCode={langCode as LangCode} />);
 });
 
+app.get("/api/push/config", pushConfigHandler);
+app.post("/api/push/subscribe", savePushSubscriptionHandler);
+app.post("/api/push/disable", disablePushSubscriptionHandler);
+
 app.get("/sitemap.xml", (c) => {
   const hostLang = getHostLang(c);
   const language = languages.find((item) => item.langCode === hostLang);
@@ -48,7 +53,7 @@ app.get("/sitemap.xml", (c) => {
   const paths = ["/", ...(hostLang && isLangCode(hostLang) ? languageConfig[hostLang].seo?.pages.map((page) => `/${page.slug}`) ?? [] : [])];
   const urls = paths.map((path) => `<url><loc>${baseUrl}${path}</loc></url>`).join("");
   return c.body(
-    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>` ,
+    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`,
     200,
     { "Content-Type": "application/xml; charset=UTF-8" },
   );
@@ -91,7 +96,10 @@ app.post("/:langCode/answer/:questionNumber", answerQuestionHandler);
 export default {
   fetch: app.fetch,
   scheduled(controller: SchedulerController, env: Env, ctx: SchedulerContext) {
-    ctx.waitUntil(sendDailyEmails(env, controller.scheduledTime));
+    ctx.waitUntil(Promise.all([
+      sendDailyEmails(env, controller.scheduledTime),
+      sendDailyPushReminders(env, controller.scheduledTime),
+    ]));
   },
 };
 export { app };

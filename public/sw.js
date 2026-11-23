@@ -32,7 +32,6 @@ self.addEventListener("fetch", (event) => {
 
   if (request.method !== "GET" || url.origin !== self.location.origin) return;
 
-  // Never cache quiz routes or dynamic HTML: questions and answer feedback must stay fresh.
   if (url.pathname.startsWith("/answer/") || url.pathname.includes("/answer/") ||
       url.pathname.includes("/question/")) return;
 
@@ -60,4 +59,36 @@ self.addEventListener("fetch", (event) => {
       })
     );
   }
+});
+
+self.addEventListener("push", (event) => {
+  let data = {};
+  try {
+    data = event.data ? event.data.json() : {};
+  } catch {
+    data = { title: "Your daily language quiz is ready", body: "Take five minutes to practise today." };
+  }
+  event.waitUntil(
+    self.registration.showNotification(data.title || "Daily Language Quiz", {
+      body: data.body || "Your daily quiz is ready.",
+      icon: data.icon || "/icons/app-icon.svg",
+      badge: "/icons/app-icon.svg",
+      data: { url: data.url || "/" },
+      tag: "daily-language-quiz-reminder",
+      renotify: false,
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const targetUrl = new URL(event.notification.data?.url || "/", self.location.origin).href;
+  event.waitUntil(
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
+      for (const client of windowClients) {
+        if (client.url === targetUrl && "focus" in client) return client.focus();
+      }
+      if (clients.openWindow) return clients.openWindow(targetUrl);
+    })
+  );
 });

@@ -24,7 +24,7 @@
       "invocation_logs": true,
     },
   },
-  "triggers": { "crons": ["0 * * * *"] },
+  "triggers": { "crons": ["*/15 * * * *"] },
   "d1_databases": [
     {
       "binding": "DB",

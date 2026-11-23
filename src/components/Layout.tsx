@@ -56,6 +56,7 @@ const Layout = ({
         <meta name="twitter:description" content={metaDescription} />
         <link rel="stylesheet" href="/tailwind.css" />
         <script defer src="/register-sw.js"></script>
+        <script defer src="/push-settings.js"></script>
         <script>{raw(streakClientScript())}</script>
         <script>{raw(shareQuizResultClientScript())}</script>
         <script

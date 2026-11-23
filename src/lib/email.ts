@@ -15,6 +15,9 @@ export type Env = {
   EMAIL_FROM: string;
   ANALYTICS_PASSWORD?: string;
   ADMIN_EMAIL?: string;
+  VAPID_PUBLIC_KEY?: string;
+  VAPID_PRIVATE_KEY?: string;
+  VAPID_SUBJECT?: string;
 };
 
 export const getEnv = (c: Context) => (c as unknown as { env: Env }).env;
