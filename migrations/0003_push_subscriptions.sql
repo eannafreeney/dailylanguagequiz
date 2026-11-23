@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS push_subscriptions (
   timezone TEXT NOT NULL,
   reminder_time TEXT NOT NULL DEFAULT '09:00',
   lang_code TEXT NOT NULL,
+  site_url TEXT NOT NULL,
   enabled INTEGER NOT NULL DEFAULT 1 CHECK (enabled IN (0, 1)),
   last_sent_local_date TEXT,
   created_at TEXT NOT NULL DEFAULT (datetime('now')),

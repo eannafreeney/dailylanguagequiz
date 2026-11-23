@@ -6,6 +6,7 @@
   if (!enableButton || !disableButton || !timeInput || !status) return;
 
   const TOKEN_KEY = "daily-language-quiz-push-token";
+  const TIME_KEY = "daily-language-quiz-reminder-time";
   const languageCode = document.documentElement.lang === "de" ? "de"
     : document.documentElement.lang === "zh" ? "zh" : "ga";
   const setStatus = (message, error = false) => {
@@ -40,6 +41,7 @@
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "Could not save reminder settings.");
     localStorage.setItem(TOKEN_KEY, data.token);
+    localStorage.setItem(TIME_KEY, timeInput.value);
   };
 
   const refresh = async () => {
@@ -142,6 +144,6 @@
     }
   });
 
-  if (!timeInput.value) timeInput.value = "09:00";
+  timeInput.value = localStorage.getItem(TIME_KEY) || "09:00";
   refresh();
 })();

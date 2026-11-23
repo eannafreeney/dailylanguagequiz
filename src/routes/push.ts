@@ -25,6 +25,7 @@ type PushSubscriptionRow = {
   timezone: string;
   reminder_time: string;
   lang_code: string;
+  site_url: string;
   last_sent_local_date: string | null;
 };
 
@@ -43,8 +44,18 @@ const validTimezone = (value: unknown): value is string => {
 const validSubscription = (value: unknown): value is PushSubscription => {
   if (!value || typeof value !== "object") return false;
   const item = value as PushSubscription;
-  return typeof item.endpoint === "string" &&
-    item.endpoint.startsWith("https://") &&
+  if (typeof item.endpoint !== "string") return false;
+  let endpoint: URL;
+  try { endpoint = new URL(item.endpoint); } catch { return false; }
+  const host = endpoint.hostname.toLowerCase();
+  const allowedHost = host === "fcm.googleapis.com" ||
+    host === "updates.push.services.mozilla.com" ||
+    host === "push.services.mozilla.com" ||
+    host === "web.push.apple.com" ||
+    host.endsWith(".push.apple.com") ||
+    host === "wns.windows.com" ||
+    host.endsWith(".notify.windows.com");
+  return endpoint.protocol === "https:" && allowedHost &&
     !!item.keys &&
     typeof item.keys.p256dh === "string" &&
     typeof item.keys.auth === "string";
@@ -87,10 +98,11 @@ export async function savePushSubscriptionHandler(c: Context) {
   }
 
   const id = crypto.randomUUID();
+  const siteUrl = new URL(c.req.url).origin;
   await env.DB.prepare(
     `INSERT INTO push_subscriptions
-      (id, endpoint, subscription_json, timezone, reminder_time, lang_code, enabled, last_sent_local_date, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, 1, NULL, datetime('now'))
+      (id, endpoint, subscription_json, timezone, reminder_time, lang_code, site_url, enabled, last_sent_local_date, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, 1, NULL, datetime('now'))
      ON CONFLICT(endpoint) DO UPDATE SET
        id = excluded.id,
        subscription_json = excluded.subscription_json,
@@ -106,6 +118,7 @@ export async function savePushSubscriptionHandler(c: Context) {
     body.timezone,
     body.reminderTime,
     body.langCode,
+    siteUrl,
   ).run();
 
   return c.json({ token: id, enabled: true });
@@ -152,7 +165,7 @@ export async function sendDailyPushReminders(env: PushEnv, scheduledTime: number
     return;
   }
   const { results } = await env.DB.prepare(
-    "SELECT id, endpoint, subscription_json, timezone, reminder_time, lang_code, last_sent_local_date FROM push_subscriptions WHERE enabled = 1",
+    "SELECT id, endpoint, subscription_json, timezone, reminder_time, lang_code, site_url, last_sent_local_date FROM push_subscriptions WHERE enabled = 1",
   ).all<PushSubscriptionRow>();
 
   for (const row of results) {
@@ -172,13 +185,12 @@ export async function sendDailyPushReminders(env: PushEnv, scheduledTime: number
 
     try {
       const language = languages.find((item) => item.langCode === row.lang_code);
-      const siteUrl = language?.siteUrl ?? "https://dailylanguagequiz.com";
       const subscription = JSON.parse(row.subscription_json) as PushSubscription;
       const payload = await buildPushPayload({
         data: JSON.stringify({
           title: "Your daily language quiz is ready",
           body: `Take five minutes to practise ${language?.englishName ?? "your language"} today.`,
-          url: siteUrl,
+          url: row.site_url,
           icon: "/icons/app-icon.svg",
         }),
         options: { ttl: 60 * 60 * 12 },
