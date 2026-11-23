@@ -98,7 +98,6 @@ export async function savePushSubscriptionHandler(c: Context) {
        reminder_time = excluded.reminder_time,
        lang_code = excluded.lang_code,
        enabled = 1,
-       last_sent_local_date = NULL,
        updated_at = datetime('now')`,
   ).bind(
     id,

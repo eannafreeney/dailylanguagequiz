@@ -31,6 +31,24 @@ const MobileAppPage = ({ langCode }: Props) => (
         </div>
       </div>
 
+      <section id="daily-reminders" class="mt-20 rounded-3xl border border-emerald-200 bg-emerald-50/60 p-6 sm:p-8">
+        <div class="mx-auto max-w-2xl">
+          <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Optional notifications</p>
+          <h2 class="mt-3 text-2xl font-extrabold tracking-tight text-slate-950">A gentle daily reminder</h2>
+          <p class="mt-3 leading-7 text-slate-600">Get one notification each day when your new five-question quiz is ready. Choose a time that suits you. You can turn reminders off whenever you like.</p>
+          <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-end">
+            <label class="block flex-1 text-sm font-semibold text-slate-800" for="daily-reminder-time">
+              Reminder time (your local time)
+              <input id="daily-reminder-time" type="time" value="09:00" step="900" class="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 shadow-sm" />
+            </label>
+            <button id="enable-daily-reminder" type="button" class="rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white transition hover:bg-emerald-800">Enable daily reminder</button>
+            <button id="disable-daily-reminder" type="button" hidden class="rounded-xl border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">Turn reminders off</button>
+          </div>
+          <p id="daily-reminder-status" class="mt-4 text-sm text-slate-600" role="status" aria-live="polite">Reminders are off. Enable them to receive a notification on this device.</p>
+          <p class="mt-3 text-xs leading-5 text-slate-500">Your browser will ask for permission. On iPhone and iPad, install this app on your Home Screen first (iOS 16.4 or later), then enable notifications. Your reminder time follows this device's timezone.</p>
+        </div>
+      </section>
+
       <section id="install-instructions" class="mt-20 border-t border-slate-200 pt-12">
         <div class="mx-auto max-w-3xl text-center">
           <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Quick setup</p>
